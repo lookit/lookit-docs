@@ -1,5 +1,5 @@
 ==================================
-Guidelines for Contributors
+Guidelines for contributors
 ==================================
 
 Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science!  The Lookit project has three different code repos.  The content of this page applies to all of the repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments), and ``exp-addons`` (specific frames, subrepo of ember-lookit-frameplayer).

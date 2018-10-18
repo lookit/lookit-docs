@@ -1,4 +1,4 @@
-Building your Experiment
+Building your experiment
 ========================
 
 Prerequisites

@@ -1,7 +1,7 @@
 Installation: lookit-api (Django project)
 =========================================
 
-This is the codebase for Experimenter and Lookit, excluding the actual
+``lookit-api`` is the codebase for Experimenter and Lookit, excluding the actual
 studies themselves. Any functionality you see as a researcher or a
 participant (e.g., signing up, adding a child, editing or deploying a
 study, downloading data) is part of the ``lookit-api`` repo. The

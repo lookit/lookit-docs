@@ -1,4 +1,4 @@
-Setup for local frame development
+Setup for custom frame development
 =================================
 
 Suppose that for your study, you need a frame that’s not part of the
