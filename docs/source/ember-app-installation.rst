@@ -54,7 +54,7 @@ npm).
 
 .. code:: bash
 
-    git clone https://github.com/CenterForOpenScience/ember-lookit-frameplayer.git
+    git clone https://github.com/lookit/ember-lookit-frameplayer.git
     cd ember-lookit-frameplayer
     git submodule init
     git submodule update

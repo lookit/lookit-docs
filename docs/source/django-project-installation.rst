@@ -10,7 +10,7 @@ administering research studies, meant for researchers. The Lookit
 platform is participant-facing, where users can signup and take part in
 studies. This project is built using Django and PostgreSQL. (The studies
 themselves use Ember.js; see Ember portion of codebase,
-`ember-lookit-frameplayer <https://github.com/CenterForOpenScience/ember-lookit-frameplayer>`__.),
+`ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`__.),
 It was initially developed by the `Center for Open
 Science <https://cos.io/>`__.
 

@@ -14,13 +14,13 @@ and Handlebars HTML template that compose a **block** of an experiment
 
 Experimenter is composed of three main modules:
 
--  `lookit-api <https://github.com/CenterForOpenScience/lookit-api>`__:
+-  `lookit-api <https://github.com/lookit/lookit-api>`__:
    The repo containing the Experimenter Django app. The Lookit Django
    app is also in this repo.
--  `ember-lookit-frameplayer <https://github.com/CenterForOpenScience/ember-lookit-frameplayer>`__:
+-  `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`__:
    A small Ember app that allows the API in lookit-api to talk to the
    exp-player
--  `exp-player <https://github.com/CenterForOpenScience/exp-addons/tree/develop/exp-player>`__:
+-  `exp-player <https://github.com/lookit/exp-addons/tree/develop/exp-player>`__:
    the built-in rendering engine for experiments built in Experimenter.
    Contained in exp-addons.
 
@@ -29,7 +29,7 @@ By nature of the way the ember-lookit-frameplayer repository is
 structured, this will mean making changes in the
 ``ember-lookit-frameplayer/lib/exp-player`` directory. These changes can
 be committed as part of the
-`exp-addons <https://github.com/CenterForOpenScience/exp-addons>`__ git
+`exp-addons <https://github.com/lookit/exp-addons>`__ git
 submodule (installed under ``ember-lookit-frameplayer/lib``).
 
 To start developing your own frames, you will want to first follow the
