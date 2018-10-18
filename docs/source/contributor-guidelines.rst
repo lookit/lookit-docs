@@ -2,7 +2,9 @@
 Guidelines for contributors
 ==================================
 
-Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science!  The Lookit project has three different code repos.  The content of this page applies to all of the repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments), and ``exp-addons`` (specific frames, subrepo of ember-lookit-frameplayer).
+Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science!  
+
+The content of this page applies to all four Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments), ``exp-addons`` (specific frames, subrepo of ember-lookit-frameplayer), and  ``current-docs`` (specific frames, subrepo of ember-lookit-frameplayer).
 
 This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
 
@@ -11,7 +13,9 @@ At a high level, you should plan to make feature-specific branches off of the ``
 Getting started
 ~~~~~~~~~~~~~~~~~~~
 
-First create your own fork of lookit-api and/or ember-lookit-frameplayer. Then follow the directions for installation of lookit-api or ember-lookit-frameplayer. If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to the `exp-addons` repo or possibly `ember-lookit-frameplayer`.
+First create your own fork of lookit-api, ember-lookit-frameplayer, and/or lookit-docs. Follow the directions for installation of lookit-api or ember-lookit-frameplayer if needed. 
+
+>> **Where's the code I need?** If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to the `exp-addons` repo or possibly `ember-lookit-frameplayer`.
 
 Ignoring some files
 ~~~~~~~~~~~~~~~~~~~~
@@ -24,11 +28,11 @@ You may want to configure a global .gitignore on your machine and include your v
 Add your own feature and submit a Pull Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following instructions describe how to submit a pull request to the `lookit-api`, `ember-lookit-frameplayer`, or `exp-addons` repos.  
+The following instructions describe how to submit a pull request to the `lookit-api`, `ember-lookit-frameplayer`, `exp-addons`, or `lookit-docs` repos.  
 
 Keep your commit history clean and merge process simple by following these steps before starting on any new feature.
 
-One time only, add the repo as a remote to your fork, e.g., if you are contributing to `lookit-api` you would run a command like this:
+One time only, add the original repo as a remote to your fork, e.g., if you are contributing to `lookit-api` you would run a command like this:
 
 SSH::
 
@@ -78,8 +82,7 @@ Next, push all your local changes to your own fork. You should push your code (m
 
     git push --set-upstream origin feature/my-validation-feature
 
-When your branch is ready (e.g., has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), 
-then click `new pull request`.   Change the base to `develop` and the compare to `feature/my-validation-feature`. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by Lookit staff; changes may be requested before changes are merged into the develop branch. To allow Lookit staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
+When your branch is ready (e.g., has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), then click `new pull request`.   Change the base to `develop` and the compare to `feature/my-validation-feature`. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by Lookit staff; changes may be requested before changes are merged into the develop branch. To allow Lookit staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
 
 IMPORTANT: WHEN YOUR PR IS ACCEPTED, stop using your branch right away (or delete it altogether).  New features (or enhanced versions of your existing feature) should be created on brand new branches (after pulling in all the fresh changes from ``develop``).
 
@@ -87,7 +90,7 @@ IMPORTANT: WHEN YOUR PR IS ACCEPTED, stop using your branch right away (or delet
 Editing the Lookit documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Documentation for use of the Lookit platform (what you're reading now!), including *both* the Django site lookit-api and the Ember application ember-lookit-frameplayer used for the actual studies, lives in the lookit-api repo under ``/lookit-api/docs/source``.
+Documentation for use of the Lookit platform (what you're reading now!), including *both* the Django site lookit-api and the Ember application ember-lookit-frameplayer used for the actual studies, lives in the `lookit-docs repo <https://github.com/lookit/lookit-docs/>`_  under ``docs``.
 
 The file ``index.rst`` contains the table of contents (look for ``toctree``). Documentation is written using `ReStructured Text (RST) markup <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. It is also possible to add Markdown (.md) files and have them included in the documentation, but for consistency we are trying to keep all documentation in .rst format. If you are more familiar with Markdown, you can convert between formats using `Pandoc <https://pandoc.org/>`_, e.g.::
 
@@ -95,15 +98,14 @@ The file ``index.rst`` contains the table of contents (look for ``toctree``). Do
 
 If you are making substantial changes, you will want to take a look at how those changes look locally by using Sphinx to build your own local copy of the documentation. To do this, first create another virtual environment and install the requirements for Sphinx there::
 
-    /lookit-api $ virtualenv -p python3 denv
-    /lookit-api $ source denv/bin/activate
-    (denv) /lookit-api $ pip install -r docs/requirements.txt
+    /lookit-docs $ virtualenv -p python3 denv
+    /lookit-docs $ source denv/bin/activate
+    (denv) /lookit-docs $ pip install -r docs/requirements.txt
     
 You can then build the docs from within the ``docs`` directory::
 
-    (denv) /lookit-api/docs $ make html
+    (denv) /lookit-docs/docs $ make html
 
 Navigate to ``docs/build/html/index.html`` from your favorite web browser to inspect the docs.
 
-If you are *only* editing the documentation, please submit a PR to the ``lookit-api/current-docs`` branch rather than ``lookit-api/develop``. This allows us to do more casual and faster review of your changes, as merging them in will update the docs automatically served by
-ReadTheDocs at https://lookit.readthedocs.io without triggering deployment of the staging server. (TODO: Eventually, yes, the docs can be in a separate repo or subrepo.)
+To edit the documentation, please submit a PR to the ``lookit-docs/develop`` branch; when it's merged, the docs served by ReadTheDocs at https://lookit.readthedocs.io will be automatically updated! (Note that it is easy to have ReadTheDocs serve multiple versions of the documentation, from different branches; we just haven't reached the point of that being more useful than confusing yet.)
