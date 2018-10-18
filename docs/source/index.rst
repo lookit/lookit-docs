@@ -8,8 +8,7 @@ Welcome to Lookit's documentation!
 
 The `Lookit codebase <https://github.com/lookit/>`_ contains three repositories:
 
-* `lookit-api <https://github.com/lookit/lookit-api>`_, a Django application that houses what were previously separate Experimenter and Lookit applications. Experimenter is a
-platform for designing and administering research studies, meant for researchers. The Lookit platform is participant-facing, where users can signup and take part in studies.
+* `lookit-api <https://github.com/lookit/lookit-api>`_, a Django application that houses what were previously separate Experimenter and Lookit applications. Experimenter is a platform for designing and administering research studies, meant for researchers. The Lookit platform is participant-facing, where users can signup and take part in studies.
 
 * `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`_, an Ember app that runs studies in the web browser
 
