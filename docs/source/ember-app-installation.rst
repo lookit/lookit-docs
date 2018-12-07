@@ -82,8 +82,13 @@ Running / Development
 
 If you are making changes to frame definitions in ``exp-addons``, you
 will want to use ``yarn link`` as described in the ``exp-addons`` README
-so your updated local code is used. If you change any dependencies,
-should also use yarn to update the lockfile and commit it.
+so your updated local code is used. TODO: Sometimes Kim runs into yarn link 
+mysteriously not working, and has to redo. Note that the `yarn link` commands may 
+say things are already linked - that is LIES. Run `sudo yarn link` to force it to 
+redo and try again.
+
+If you change any dependencies, make sure to update and commit the yarn.lock file in 
+addition to package.json.
 
 Code Generators
 ~~~~~~~~~~~~~~~

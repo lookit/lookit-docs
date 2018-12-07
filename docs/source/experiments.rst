@@ -153,10 +153,11 @@ A typical Lookit study might contain the following frame types:
     would be put together with a randomizer]
 10. exp-lookit-exit-survey
 
-For now, before any fullscreen frames, a frame that extends
-exp-frame-base-unsafe (like exp-lookit-instructions) needs to be used so
-that the transition to fullscreen works smoothly. A more flexible way to
-achieve this behavior is in the works!
+Any frame that comes before a fullscreen frame needs to have an actual next button
+that triggers the move to the next frame - browsers (by design) will not let you automatically
+trigger fullscreen mode without any user action. Non-fullscreen frames will automatically
+exit fullscreen if needed.
+
 
 Randomizer frames
 -----------------
