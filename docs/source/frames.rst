@@ -315,6 +315,16 @@ not affect other projects.
    instead of ``video-widget`` and ``should-be-centered``, use names
    like ``exp-myframe-video-widget`` and
    ``exp-myframe-should-be-centered``.
+   
+Researchers using your frame can force it to be shown fullscreen (even if that is not 
+the typical intended use) by passing the parameter ``displayFullscreenOverride``. If you
+have not also set the ``displayFullscreen`` property of your frame to ``true``, then the
+``#experiment-player`` element will have class ``player-fullscreen-override`` but not 
+``player-fullscreen``, to allow display to more closely mimic what it would be in 
+non-fullscreen mode for things like forms and text pages. 
+
+If you create an (intentionally) fullscreen frame, then the element you make fullscreen will have class
+``player-fullscreen`` while it is fullscreen, which you can use for styling.
 
 \* You may notice that style files have a special extension ``.scss``.
 That is because styles in experimenter are actually written in
@@ -363,8 +373,7 @@ FullScreen
 This mixin is helpful when you want to show something (like a video) in
 fullscreen mode without distractions. You will need to specify the part
 of the page that will become full screen. By design, most browsers
-require that you interact with the page at least once before full screen
-mode can become active.
+require that you interact with the page to trigger fullscreen mode.
 
 MediaReload
 ^^^^^^^^^^^
