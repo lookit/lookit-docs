@@ -408,6 +408,17 @@ frames, e.g. ``exp-lookit-exit-survey``. Make sure to include:
 -  All outputs (data saved)
 -  Any events recorded
 
+To check how your documentation will appear, run `yarn run docs` from the `exp-player` 
+directory, then use `yuidoc --server` to see the docs served locally. 
+
+Include a screenshot in your frame documentation if possible! If your frame kind is 
+`exp-smithlab-monkey-game`, name the screenshot 
+`exp-player/screenshots/ExpSmithlabMonkeyGame.png` (i.e., go from
+dashes to CamelCase). For a simple frame, an actual screenshot is fine. If there are several 
+"phases" to your frame or different ways it can work, you may want to make a diagram 
+instead. When you run `yarn run docs`, this screenshot gets copied over to the YUIdoc theme
+for the project. Both copies of the screenshot should be committed in git.
+
 Ember debugging
 ~~~~~~~~~~~~~~~
 
