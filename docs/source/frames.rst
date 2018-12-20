@@ -417,7 +417,9 @@ Include a screenshot in your frame documentation if possible! If your frame kind
 dashes to CamelCase). For a simple frame, an actual screenshot is fine. If there are several 
 "phases" to your frame or different ways it can work, you may want to make a diagram 
 instead. When you run ``yarn run docs``, this screenshot gets copied over to the YUIdoc theme
-for the project. Both copies of the screenshot should be committed in git.
+for the project and to the ``docs/assets`` directory. The former is used locally, the latter
+when serving from github pages. Both the copy in ``exp-player/screenshots`` and the one in
+``docs/assets`` should be committed using git; the one in the theme directory doesn't have to be.
 
 Ember debugging
 ~~~~~~~~~~~~~~~
