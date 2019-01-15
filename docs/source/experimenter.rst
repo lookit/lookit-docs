@@ -83,11 +83,7 @@ Here's an explanation of some the field names:
 - *Minimum/Maximum Age cutoffs*: Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days. Participants under the age range see a warning indicating that their data may not be used, and suggesting that they wait until they're in the age range. Participants over the age range just see a warning indicating that their data may not be used. Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age.
 - *Discoverable* - Do you want to make this study public or not?  If marked discoverable, once the study is activated, it will appear on the Lookit site.
 - *Build Study* - This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. You can add these later under localhost:8000/exp/studies/<study_id>/edit/build/. For detailed information about specifying your study protocol, see `Building an Experiment`_.
-- *Study Type* - The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember (found in exp-addons) and there is an exp-player component that can cycle through these frames.
-    - The *addons_repo_url* is the repo where the frames and the player are stored.  This is the default addons_repo_url: https://github.com/lookit/exp-addons.  If you want to add new frames, fork this repo, and set the addons_repo_url to your fork.
-    - The *last_known_addons_sha* is the commit of your addons_repo_url that you want to point to.  If you don't add this, it will point to the latest commit in the default branch of the repo at addons_repo_url. You can set the default in Github.
-    - The *last_known_player_sha* is the commit of the ember app https://github.com/lookit/ember-lookit-frameplayer that talks to our API and passes that info onto the frame player. If you don't add this, it will point to the latest commit in the default branch.
-    - **If you don't want any customization and want to use the existing player and frames, just select the defaults and press "Create study"**
+- *Study Type* - The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember (found in exp-addons) and there is an exp-player component that can cycle through these frames. For details, see `Editing study type`_
 
 .. image:: _static/img/create_study.png
     :alt: Creating a study
@@ -145,7 +141,7 @@ On the study edit page, https://lookit.mit.edu/exp/studies/<study_id>/edit/ you 
 To edit fields, change the information and click Save Changes in the middle of the page.  If your study has already been approved, then the save button will be red.  Otherwise it will be green. If your study has already been approved, then editing key details will automatically put the study in a rejected state.  You must resubmit your
 study and get it approved again by an organization admin to run the study on the Lookit platform.
 
-At the bottom of the edit study page, there is a Build Study link.  This will take you to https://lookit.mit.edu/exp/studies/<study_id>/edit/build, where you can make edits to your study's structure (the frames, or pages, in your experiment), and the sequence of those frames.  You can also make advanced edits to the commits we are using to build your study.
+At the bottom of the edit study page, you can make edits to your study's structure (the frames, or pages, in your experiment), and the sequence of those frames.  You can also make advanced edits to the commits we are using to build your study.
 
 You can also change the study's status on this page. The current status is displayed, as well as a dropdown with the available states, and a comments block.  Only users that have permission to edit the study state can make these changes, meaning organization
 admins, or study admins.  The available states where you can move the study depend on what state is next in the sequence, as well as your current level of permissions.  For example, if a study's current state is "Created", that study
@@ -190,7 +186,7 @@ Editing study structure
 -------------------------
 For information about how to specify what happens during your study, see `Building an Experiment`_.
 
-To edit a study's structure, navigate to https://lookit.mit.edu/exp/studies/<study_id>/edit/build/. You must be a study admin or org admin to view this page. From here, you can edit the study's structure and the study type.
+To edit a study's structure, navigate to https://lookit.mit.edu/exp/studies/<study_id>/edit/. You must be a study admin or org admin to view this page. From here, you can edit the study's structure and the study type.
 The study structure specifies the frames (or pages) of your experiment, and also specifies the sequence.
 
 .. image:: _static/img/build_study.png
@@ -202,20 +198,29 @@ If your study has already been approved, then clicking "Save" will automatically
 .. image:: _static/img/json_editor.png
     :alt: Edit JSON
 
-If you wish to preview your study, click "Try Experiment".  You will get an email 7-10 minutes later, possibly longer, with a link to preview your study.  We are building the study and putting on Google Cloud Storage for you to preview. These builds,
-though not instantaneous, keeps the studies separate from one another.  These studies are all pulling from common code, so it is possible that someone edits a frame, and that edit breaks someone else's study. By storing builds on Google Cloud Storage,
-pointing to specific commits, we can keep edits to frames from unintentionally breaking another study.
+To preview your study, click "Try Experiment". (You will need to build preview dependencies first if you haven't yet, or if you've changed the study type or which code to use.)
 
 -------------------------
 Editing study type
 -------------------------
-To edit a study's type, navigate to https://lookit.mit.edu/exp/studies/<study_id>/edit/build/.
+To edit a study's type, navigate to https://lookit.mit.edu/exp/studies/<study_id>/edit/.
 
-The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember (found in exp-addons) and there is an exp-player component that can cycle through these frames.
-    - The *addons_repo_url* is the repo where the frames and the player are stored.  This is the default addons_repo_url: https://github.com/lookit/exp-addons.  If you want to add new frames, fork this repo, and set the addons_repo_url to your fork.
-    - The *last_known_addons_sha* is the commit of your addons_repo_url that you want to point to.  If you don't add this, it will point to the latest commit in the default branch of the repo at addons_repo_url. You can set the default in Github.
-    - The *last_known_player_sha* is the commit of the ember app https://github.com/lookit/ember-lookit-frameplayer that talks to our API and passes that info onto the frame player. If you don't add this, it will point to the latest commit in the default branch.
-    - **If you don't want any customization and want to use the existing player and frames, just select the defaults and press "Create study"    -** These are advanced options! If you want to use existing frames, and the existing player, just leave the defaults as-is.
+The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in exp-addons, and the exp-player component in ember-lookit-frameplayer can cycle through these frames.
+
+**If you don't want any customization and want to use the existing player and frames, just select the defaults.** These are advanced options! 
+
+What does each field mean?
+
+    - The ``addons_repo_url`` is the repo where the frames and the player are stored.  This is the default addons_repo_url: https://github.com/lookit/exp-addons.  Advanced users may want to define their own custom frames for use with Lookit studies beyond those provided in the core library. (For more information about how to do this, see https://lookit.readthedocs.io/en/develop/developing-frames.html.) To use your own frame definitions, set the addons_repo_url to your own fork of the exp-addons repo (e.g., https://github.com/yourname/exp-addons instead of https://github.com/lookit/exp-addons). You can then choose any commit SHA from your own repo.
+
+    - The ``last_known_addons_sha`` is the commit of your addons_repo_url that you want to point to. The addons repo defines the individual frames you can use in your study, like surveys or the consent page. If you leave this field blank, it will be resolved to the latest commit in the default branch of the repo at addons_repo_url. (You can set the default in Github if you're using your own fork.) The commit SHA uniquely identifies a particular update to the code; it is a long string like ``a427f62d9b0a76340c0c2a0f30055525b2543e8a``. To browse commits available for Lookit's exp-addons repo and see what might have changed, you can look through https://github.com/lookit/exp-addons/commits/.
+
+    - The ``last_known_player_sha`` is the commit of the ember app https://github.com/lookit/ember-lookit-frameplayer that talks to our API and passes that info onto the frame player. If you don't add this, it will point to the latest commit in the default branch. To browse commits available for the experiment player ember-lookit-frameplayer and see what might have changed, you can look through https://github.com/lookit/ember-lookit-frameplayer/commits/.
+
+Leave the fields ``last_known_addons_sha`` and ``last_known_player_sha`` blank to use the defaults - the latest versions of the experiment player and experiment frames that Lookit provides (or the experiment frames in your own fork if you've set the ``addons_repo_url``). When you build dependencies, the commit SHAs (unique IDs) of the latest versions will be fetched and filled in, so that you will continue to use this version for your experiment unless you deliberately update.
+
+**Important:** Whenever you update the code versions you are using, you will need to build dependencies again to preview and to activate your study. This build process creates a special environment just for your study using exactly the code you selected, so that your study will continue to run as you designed it. By storing builds on Google Cloud Storage,
+pointing to specific commits, we can keep edits to frames from unintentionally breaking another study. You only need to build dependencies when you have changed the commit SHAs here - not when you update your study JSON or other data like the age range.
 
 -----------------------------------
 Viewing Individual Study Responses
