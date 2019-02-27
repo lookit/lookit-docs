@@ -22,12 +22,10 @@ longitudinal designs.
 Prerequisites
 -------------
 
-You will need the following things properly installed on your computer.
+You will need the following tools properly installed on your computer.
 
 -  `Git <http://git-scm.com/>`__
 -  `Node.js <http://nodejs.org/>`__ (with NPM)
--  `Bower <http://bower.io/>`__
--  `Ember CLI <http://ember-cli.com/>`__
 
 Installation
 ------------
@@ -40,7 +38,6 @@ npm).
     git clone https://github.com/lookit/ember-lookit-frameplayer.git
     cd ember-lookit-frameplayer
     yarn install --pure-lockfile
-    bower install
 
 Create or open a file named ‘.env’ in the root of the
 ember-lookit-frameplayer directory, and add the following entries to use
@@ -88,5 +85,4 @@ generated using YUIDoc:
 
 At the moment, this is a manual process: whatever files are in the top
 level /docs/ folder of the master branch will be served via GitHub
-pages. New documentation releases will require manually making a new
-“release” to update the master branch, which can be done on request.
+pages.

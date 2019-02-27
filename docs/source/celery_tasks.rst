@@ -18,8 +18,8 @@ What happens
 
 The build process uses `celery <http://www.celeryproject.org/>`__,
 `docker <https://www.docker.com/>`__,
-`ember-cli <https://ember-cli.com/>`__,
-`yarn <https://yarnpkg.com/en/>`__, and `bower <https://bower.io/>`__.
+`ember-cli <https://ember-cli.com/>`__, and
+`yarn <https://yarnpkg.com/en/>`__.
 
 When a build or preview is requested a celery task is put into the build
 queue.
@@ -48,7 +48,7 @@ rebuilds of unchanged images are very fast.
 
 The container is started passing several environment variables. It
 installs python3 and several other dependencies with ``apt-get``. Then
-it installs yarn, bower, and ember-cli@2.8 globally with npm. Next it
+it installs yarn, and ember-cli@2.8 globally with npm. Next it
 mounts the ``ember-build/checkouts`` directory to ``/checkouts`` inside
 the container and the ``ember-build/deployments`` directory to
 ``/deployments`` inside the container. It copies
@@ -60,8 +60,7 @@ container (``/checkout-dir/`` inside the container) for faster file
 access. A couple of ``sed`` replacements are done where there are
 experiment specific data that needs to be hardcoded prior to
 ``ember-build`` running. The ``environment`` files are copied into the
-correct places. Then ``yarn install --pure-lockfile`` and
-``bower install --allow-root`` are run for and
+correct places. Then ``yarn install --pure-lockfile`` is run for and
 ``ember-lookit-frameplayer``. Once those have completed ``ember-build -prod``
 is run to create a distributable copy of the app. The contents of the
 ``dist`` folder is then copied into the study output directory. The
