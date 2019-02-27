@@ -12,30 +12,21 @@ We use the term ‘frame’ to describe the combination of JavaScript file
 and Handlebars HTML template that compose a **block** of an experiment
 (see “Building your experiment”).
 
-Experimenter is composed of three main modules:
+Experimenter is composed of two main modules:
 
 -  `lookit-api <https://github.com/lookit/lookit-api>`__:
    The repo containing the Experimenter Django app. The Lookit Django
    app is also in this repo.
 -  `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`__:
    A small Ember app that allows the API in lookit-api to talk to the
-   exp-player
--  `exp-player <https://github.com/lookit/exp-addons/tree/develop/exp-player>`__:
-   the built-in rendering engine for experiments built in Experimenter.
-   Contained in exp-addons.
+   exp-player and provides the rendering engine and experiment frames for Lookit studies
 
-Generally, all ‘frame’ development will happen in the exp-player module.
-By nature of the way the ember-lookit-frameplayer repository is
-structured, this will mean making changes in the
-``ember-lookit-frameplayer/lib/exp-player`` directory. These changes can
-be committed as part of the
-`exp-addons <https://github.com/lookit/exp-addons>`__ git
-submodule (installed under ``ember-lookit-frameplayer/lib``).
+Generally, all ‘frame’ development will happen in ember-lookit-frameplayer.
 
 To start developing your own frames, you will want to first follow the
 “Setup for local frame development” steps. To use the frame definitions
 you have created when posting a study on Lookit, you can specify your
-own exp-addons repo to use (see “Using the experimenter interface”).
+own ember-lookit-frameplayer repo to use (see “Using the experimenter interface”).
 
 Getting Started
 ~~~~~~~~~~~~~~~
@@ -290,14 +281,14 @@ common web standard called
 
 To add custom styles for a pre-existing component, you will need to
 create a file ``<component-name.scss>`` in the
-``addon/styles/components`` directory of ``exp-addons``. Then add a line
-to the top of ``addon/styles/addon.scss``, telling it to use that style.
+``styles/components`` directory of ``ember-lookit-frameplayer``. Then add a line
+to the top of ``styles/app.scss``, telling it to use that style.
 For example,
 
 ``@import "components/exp-video-physics";``
 
-Remember that anything in exp-addons is shared code. Below are a few
-good tips to help your addon stay isolated and distinct, so that it does
+Remember that anything in ember-lookit-frameplayer is shared code. Below are a few
+good tips to help your new frame stay isolated and distinct, so that it does
 not affect other projects.
 
 -  To protect other frames from being affected by your new styles, add a
@@ -306,7 +297,7 @@ not affect other projects.
    file with ``.exp-myframe`` to ensure that only your own frame is
    affected. Until we have a better solution, this practice will be
    enforced if you submit a pull request to add your frames to the
-   common Lookit exp-addons repo.
+   common Lookit ember-lookit-frameplayer repo.
 
 -  To help protect your *own* frame’s styling from possible future style
    changes (improperly) added by other people, you can give new classes
@@ -363,9 +354,9 @@ or functions. If the mixin has a function ``doFoo``, you can use that
 from your frame simply by calling ``this.doFoo()``.
 
 Below is a brief introduction to each of the common mixins; for more
-detail, see sample usages throughout the exp-addons codebase and the
+detail, see sample usages throughout the ember-lookit-frameplayer codebase and the
 mixin-specific docs
-`here <https://lookit.github.io/exp-addons/modules/mixins.html>`__
+`here <https://lookit.github.io/ember-lookit-frameplayer/modules/mixins.html>`__
 
 FullScreen
 ^^^^^^^^^^
@@ -396,8 +387,8 @@ Documenting your frame
 ~~~~~~~~~~~~~~~~~~~~~~
 
 We use `YUIdoc <http://yui.github.io/yuidoc/>`__ for generating
-“automatic” documentation of exp-addons frames, available
-`here <https://lookit.github.io/exp-addons/modules/frames.html>`__. If
+“automatic” documentation of ember-lookit-frameplayer frames, available
+`here <https://lookit.github.io/ember-lookit-frameplayer/modules/frames.html>`__. If
 you want to contribute your frames to the main Lookit codebase, please
 include YUIdoc-formatted comments following the example of existing
 frames, e.g. ``exp-lookit-exit-survey``. Make sure to include:
@@ -408,7 +399,7 @@ frames, e.g. ``exp-lookit-exit-survey``. Make sure to include:
 -  All outputs (data saved)
 -  Any events recorded
 
-To check how your documentation will appear, run ``yarn run docs`` from the ``exp-player`` 
+To check how your documentation will appear, run ``yarn run docs`` from the ``ember-lookit-frameplayer`` 
 directory, then use ``yuidoc --server`` to see the docs served locally. 
 
 Include a screenshot in your frame documentation if possible! If your frame kind is 

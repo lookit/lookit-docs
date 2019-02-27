@@ -6,13 +6,13 @@ using WebRTC as the interface to the webcam and
 `Pipe <https://addpipe.com/>`__ for video streaming and processing.
 
 Lookit frames that collect video data make use of an Ember mixin
-``VideoRecord`` included in exp-addons, which makes a
+``VideoRecord`` included in ember-lookit-frameplayer, which makes a
 ``VideoRecorderObject`` available for use in the code for that frame.
 This object includes methods for showing/hiding the webcam view,
 starting/pausing/resuming/stopping video recording,
 installing/destroying the recorder, and checking the current video
 timestamp (see
-https://lookit.github.io/exp-addons/classes/VideoRecorderObject.html).
+https://lookit.github.io/ember-lookit-frameplayer/classes/VideoRecorderObject.html).
 The programmer designing a new frame can therefore flexibly indicate
 when recording should begin and end, as well as recording video
 timestamps for any events recorded during this frame (e.g., so that

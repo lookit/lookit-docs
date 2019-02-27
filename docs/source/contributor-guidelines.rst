@@ -4,16 +4,16 @@ Guidelines for contributors
 
 Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
 
-The content of this page applies to all four Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments), ``exp-addons`` (specific frames, subrepo of ember-lookit-frameplayer), and  ``current-docs`` (specific frames, subrepo of ember-lookit-frameplayer).
+The content of this page applies to all four Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments & components to use), and  ``current-docs`` (specific frames, subrepo of ember-lookit-frameplayer).
 
->> **Where's the code I need?** If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to the `exp-addons` repo or possibly `ember-lookit-frameplayer`.
+>> **Where's the code I need?** If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to `ember-lookit-frameplayer`.
 
 Prerequisites
 ~~~~~~~~~~~~~~~
 
 To contribute to the `lookit-api` codebase, it will be very helpful to have a (a) a strong grasp of Python and (b) some familiarity with the Django framework. Learning Python is outside the scope of these docs, but if you want someplace to start, we highly recommend `Think Python <http://greenteapress.com/thinkpython2/html/index.html>`_. If you're already familiar with Python but haven't used the web framework Django, we highly recommend taking the time to complete `the official tutorial <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_.
 
-To contribute to the `ember-lookit-frameplayer` or `exp-addons` codebases - e.g., when creating your own experiment frames - it will be helpful to have (a) a strong grasp of Javascript and (b) some familiarity with Ember.js. However, we're really not using that much of the functionality of Ember, and if you're just making some new frames, we would recommend getting started by trying out modifications of an existing frame to get your feet wet, rather than trying to learn Ember from scratch.
+To contribute to the `ember-lookit-frameplayer` codebase - e.g., when creating your own experiment frames - it will be helpful to have (a) a strong grasp of Javascript and (b) some familiarity with Ember.js. However, we're really not using that much of the functionality of Ember, and if you're just making some new frames, we would recommend getting started by trying out modifications of an existing frame to get your feet wet, rather than trying to learn Ember from scratch.
 
 To contribute to these docs, you'll just need to be able to edit `ReStructured Text  <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ files! You don't need to learn anything in advance - just look up syntax when you're not sure how to make a link, include an image, etc.
 
@@ -82,7 +82,7 @@ On `lookit-api`, you should then update dependencies like this::
     python manage.py migrate
     python manage.py test
     
-On `ember-lookit-frameplayer` and `exp-addons`, you should update dependencies using the package manager yarn as described in the `exp-addons` README file.
+On `ember-lookit-frameplayer`, you should update dependencies using the package manager yarn.
 
 Next, push all your local changes to your own fork. You should push your code (making sure to replace `feature/my-validation-feature` with whatever your branch is actually called)::
 
@@ -106,9 +106,9 @@ For more information see https://docs.djangoproject.com/en/2.1/topics/testing/.
 In `ember-lookit-frameplayer` you should generally edit the tests under `tests/`, but as 
 you will see there is currently very little coverage. Just try to leave it better than you found it.
 
-In `exp-addons`, you should generally add a test file under `tests/unit/components/` if you have created a new frame. As you can see, we do not have a strong convention for this yet except for randomizer frames.
+In `ember-lookit-frameplayer`, you should generally add a test file under `tests/unit/components/` if you have created a new frame. As you can see, we do not have a strong convention for this yet except for randomizer frames.
 
-To learn more about how testing is supposed to work for `ember-lookit-frameplayer` and `exp-addons`, see https://guides.emberjs.com/v2.11.0/testing/.
+To learn more about how testing is supposed to work for `ember-lookit-frameplayer`, see https://guides.emberjs.com/v2.11.0/testing/.
 
 If you are editing the documentation, please don't write tests! Just actually try building it so you'll notice if something's not formatted the way you expected.
 

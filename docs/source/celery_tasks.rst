@@ -8,19 +8,10 @@ The business requirements for this project included the ability for
 experiments to rely on versioned dependencies without causing conflicts
 between experiments.
 
-The experiment application is dependent upon two separate git repos.
-
--  ``exp-addons``
--  ``lookit-frame-player``
-
-Each is pinned to the **HEAD** of the **default branch** when they are
-previewed. Each time they are previewed this hash is updated to the
-current head of the default branch.
-
+The experiment application is dependent on the ``ember-lookit-frameplayer`` repo.
 Researchers have the ability to specify a custom github url for the
-``exp-addons`` repo. They can also specify SHAs for the commits that
-they would like to use for both the ``exp-addons`` and the
-``lookit-frame-player`` repo. These fields are on the Build Study Page.
+``ember-lookit-frameplayer`` repo. They can also specify a SHA for the commit that
+they would like to use. These fields are on the Build Study Page.
 
 What happens
 ------------
@@ -44,16 +35,12 @@ move through the workflow or be previewed or deployed concurrently.
 
 The SHAs are checked in the study model’s metadata field, if they are
 empty or invalid the **HEAD** of the default branch is used. This
-requires HTTPS calls to github for both the ``exp-addons`` and
-``lookit-frame-player`` repositories.
+requires HTTPS calls to github for the 
+``ember-lookit-frameplayer`` repository.
 
 A zip file of each repo is downloaded to a temporary directory and
 extracted. The ``lookit-frame-player`` archive is extracted in the
-*checkout directory*
-(``ember_build/checkouts/{player_sha}_{addons_sha}``). The
-``exp-addons`` archive is extracted into
-``ember_build/checkouts/{player_sha}_{addons_sha}/lib/``, it acts as an
-ember addon.
+*checkout directory* (``ember_build/checkouts/{player_sha}``).
 
 A docker image is built based on the node:8.2.1-slim image. It is
 rebuilt every time because it doesn’t change very often and docker
@@ -74,8 +61,8 @@ access. A couple of ``sed`` replacements are done where there are
 experiment specific data that needs to be hardcoded prior to
 ``ember-build`` running. The ``environment`` files are copied into the
 correct places. Then ``yarn install --pure-lockfile`` and
-``bower install --allow-root`` are run for both ``exp-addons`` and
-``lookit-frame-player``. Once those have completed ``ember-build -prod``
+``bower install --allow-root`` are run for and
+``ember-lookit-frameplayer``. Once those have completed ``ember-build -prod``
 is run to create a distributable copy of the app. The contents of the
 ``dist`` folder is then copied into the study output directory. The
 container is now destroyed.
