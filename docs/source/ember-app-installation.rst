@@ -26,6 +26,7 @@ You will need the following tools properly installed on your computer.
 
 -  `Git <http://git-scm.com/>`__
 -  `Node.js <http://nodejs.org/>`__ (with NPM)
+-  `Bower <http://bower.io/>`__
 
 Installation
 ------------
@@ -38,6 +39,7 @@ npm).
     git clone https://github.com/lookit/ember-lookit-frameplayer.git
     cd ember-lookit-frameplayer
     yarn install --pure-lockfile
+    bower install
 
 Create or open a file named ‘.env’ in the root of the
 ember-lookit-frameplayer directory, and add the following entries to use
