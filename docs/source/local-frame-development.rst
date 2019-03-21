@@ -2,12 +2,12 @@ Setup for custom frame development
 =================================
 
 Suppose that for your study, you need a frame that’s not part of the
-standard exp-addons library. Maybe you want to use a particular game
+standard ember-lookit-frameplayer library. Maybe you want to use a particular game
 you’ve already implemented in Javascript, or you want to slightly change
 how one of the existing frames works, or you want to hard-code a
 particular complicated counterbalancing scheme. That’s okay! You can add
-a new frame to your own version of the exp-addons repository, and tell
-Experimenter to use your Github fork of exp-addons when building your
+a new frame to your own version of the ember-lookit-frameplayer repository, and tell
+Experimenter to use your Github fork ofember-lookit-frameplayer when building your
 study. But for efficiency, you will probably want to run Lookit on your
 own computer as you implement your new frame, so that you can test out
 changes immediately rather than repeatedly pushing your changes to
@@ -18,7 +18,7 @@ Overview
 --------
 
 Even though we will probably just be changing the frame definitions in
-exp-addons, we will need to install *both* the the Django app
+ember-lookit-frameplayer, we will need to install *both* the the Django app
 (``lookit-api``) and the Ember app (``ember-lookit-frameplayer``), tell
 them how to talk to each other, and run both of those servers locally.
 In Experimenter, we need to add an organization to our superuser, and
@@ -100,10 +100,7 @@ Ember App steps
 1. Follow the instructions to install the `ember
    app <ember-app-installation.html>`__ locally.
 
-2. If you are going to be making changes to frames, you should use
-   ``npm link`` for local development. This allows you to make changes
-   to the code without having to push to github. In the terminal:
-   ``$ cd ember-lookit-frameplayer  $ npm link lib/exp-player`` If you
+2. If you
    make changes to the frames, you should see notifications that files
    have changed in the console where your ember server is running, like
    this:
@@ -234,3 +231,12 @@ chrome://settings/content/siteDetails?site=https://localhost:4200.
 
 If not using https locally, replace the https://localhost:4200 addresses
 with http://localhost:4200.
+
+Further Reading / Useful Links
+--------------------------------
+
+- http://emberjs.com/
+- http://ember-cli.com/
+- Development Browser Extensions
+  - https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
+  - https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/

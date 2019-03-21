@@ -63,6 +63,32 @@ and wav files in a directory to mp3 and ogg files:
            sp.call(['ffmpeg', '-i', os.path.join(audioPath, audio), \
                   os.path.join(audioPath, 'ogg', shortname + '.ogg')])
 
+Making dummy stimuli
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes you may not have your stimuli actually ready yet, but you want to make sure your
+experiment will work as intended once they're ready. Here's an example of using ffmpeg to
+make some "dummy" images of text to represent distinct exemplars of various categories. 
+You could also create videos by setting the duration in seconds (here d=0.01) to something 
+longer and using an mp4 or webm extension for output instead of jpg.
+
+.. code:: python
+
+    import os
+    import subprocess as sp
+    import sys
+
+    baseDir = '/Users/kms/Desktop/labelsconcepts/img/'
+
+    for catDir in ['nov1', 'nov2', 'nov3', 'cats', 'dogs', 'iguanas', 'manatees', 'squirrels']:
+        os.mkdir(os.path.join(baseDir, catDir));
+        for iIm in range(1, 12):
+            text = catDir + '.' + str(iIm)
+            output = os.path.join(baseDir, catDir, str(iIm) + '.jpg')
+            sp.call(['ffmpeg', '-f', 'lavfi', '-i', 'color=c=gray:s=640x480:d=0.01', '-vf', 
+                "drawtext=fontfile=drawtext='fontfile=/Library/Fonts/Arial Black.ttf':text='" + text + "':fontsize=64:fontcolor=black:x=10:y=10",
+                output])
+
 Directory structure
 ~~~~~~~~~~~~~~~~~~~
 

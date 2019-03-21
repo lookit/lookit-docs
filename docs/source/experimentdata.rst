@@ -18,7 +18,7 @@ frame nicknames as defined in the study definition JSON). Each frame
 type may save different data, e.g. form responses; frames that record
 webcam video include the video filename(s). The data captured by a
 particular frame are listed in the frame documentation at
-http://lookit.github.io/exp-addons, under ‘Methods’ >
+http://lookit.github.io/ember-lookit-frameplayer, under ‘Methods’ >
 ‘serializeContent’. Additionally, event data is captured for each frame
 and included under an eventTimings key within the frame data JSON,
 minimally including a timestamped event when the user proceeds to the
@@ -188,7 +188,7 @@ below:
    containing mappings from condition names to their values for this
    session. The data stored by a particular randomizer can be found
    under ``methods: conditions`` in the `randomizer
-   documentation <http://lookit.github.io/exp-addons/modules/randomizers.html>`__
+   documentation <http://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`__
 -  *global_event_timings*: A list of events recorded during the study,
    not tied to a particular frame. Currently used for recording early
    exit from the study; an example value is:
@@ -275,7 +275,7 @@ events during an experiment, and by default contains the ‘nextFrame’
 event which records when the user progressed to the next **frame** in
 the ‘sequence’. You can see which events a particular frame records by
 looking at the ‘Events’ tab in its `frame
-documentation <http://lookit.github.io/exp-addons/modules/frames.html>`__.
+documentation <http://lookit.github.io/ember-lookit-frameplayer/modules/frames.html>`__.
 Events recorded by a frame that does video recording will include
 additional information, for instance to indicate when relative to the
 video stream this event happened.
@@ -284,4 +284,4 @@ The other properties besides ‘eventTimings’ are dependent on the
 **frame** type. You can see which other properties a particular frame
 type records by looking at the parameters of the ``serializeContent``
 method under the ‘Methods’ tab in its `frame
-documentation <http://lookit.github.io/exp-addons/modules/frames.html>`__.
+documentation <http://lookit.github.io/ember-lookit-frameplayer/modules/frames.html>`__.

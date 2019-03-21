@@ -172,12 +172,12 @@ of frames, so that for instance you can specify your 12 looking-time
 trials all at once.
 
 For complete documentation of available randomizers, see
-https://lookit.github.io/exp-addons/modules/randomizers.html.
+https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html.
 
 To use a randomizer frame, set the frame ``"kind"`` to ``"choice"`` and
 ``"sampler"`` to the appropriate type of randomizer. We will focus here
 on the most commonly-used and general randomizer type, called
-`random-parameter-set <https://lookit.github.io/exp-addons/classes/randomParameterSet.html>`__.
+`random-parameter-set <https://lookit.github.io/ember-lookit-frameplayer/classes/randomParameterSet.html>`__.
 
 To select this randomizer, you need to define a frame that has the
 appropriate ``"kind"`` and ``"sampler"``:
@@ -697,8 +697,8 @@ Finding and using specific frames
 ---------------------------------
 
 For the most current documentation of individual frames available to
-use, please see https://lookit.github.io/exp-addons/modules/frames.html
-and https://lookit.github.io/exp-addons/modules/randomizers.html.
+use, please see https://lookit.github.io/ember-lookit-frameplayer/modules/frames.html
+and https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html.
 
 For each frame, you will find an **example** of using it in a JSON
 schema; documentation of the **properties** which can be defined in the
