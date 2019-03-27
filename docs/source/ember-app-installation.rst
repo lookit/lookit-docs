@@ -48,7 +48,13 @@ account to send video to) and ``PIPE_ENVIRONMENT`` (which environment,
 e.g. development, staging, or production). These are available upon
 request if you need to use the actual Lookit environments. (If you are
 doing a very large amount of local testing, we may ask that you set up
-your own Pipe account.)
+your own Pipe account.) Your .env file should look like this:
+
+   ::
+
+      PIPE_ACCOUNT_HASH='<account hash here>'
+      PIPE_ENVIRONMENT=<environment here>
+
 
 Running / Development
 ---------------------

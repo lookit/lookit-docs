@@ -109,22 +109,16 @@ Ember App steps
 
       file changed components/exp-video-config/template.hbs
 
-3. Add your token to the header. This will allow your Ember app to talk
-   to your local API. In the ember-frame-player directory, open the
-   application adapter directory at
-   ``ember-lookit-frameplayer/app/adapters/application.js``. Add an
-   “Authorization” key beneath the X-CSRFTOKEN line. The word ‘Token’
-   must be included. Save the file.
+3. Add your token and lookit-api local host address 
+   to the ember-lookit-frameplayer/.env file. This will allow your Ember app to talk
+   to your local API. Your .env file will now look like this:
 
-   .. code:: js
+   ::
 
-      headers: Ember.computed(function() {
-              // Add cookie to http header
-              return {
-                  'X-CSRFTOKEN': Ember.get(document.cookie.match(/csrftoken\=([^;]*)/), '1'),
-                  'Authorization': 'Token <add-your-token-here>'
-              };
-          }).volatile(),
+      PIPE_ACCOUNT_HASH='<account hash here>'
+      PIPE_ENVIRONMENT=<environment here>
+      LOOKIT_API_KEY='Token <token here>'
+      LOOKIT_API_HOST='http://localhost:8000'
 
 4. If you want to use the HTML5 video recorder, you’ll need to set up to
    use https locally. Open ``ember-lookit-frameplayer/.ember-cli`` and
@@ -149,7 +143,7 @@ Ember App steps
    Leave the challenge password blank and enter ``localhost`` as the
    Common Name.
 
-5. Run the ember server.
+5. Run the ember server: ``ember serve``
 
 Starting up once initial setup is completed
 -------------------------------------------
