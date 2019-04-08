@@ -5,15 +5,32 @@ Audio and video files
 ~~~~~~~~~~~~~~~~~~~~~
 
 Most experiments will involve using audio and/or video files! You are
-responsible for hosting these somewhere (contact MIT if you need help
+responsible for creating these and hosting them somewhere (contact MIT if you need help
 finding a place to put them).
+
+You may find that there are more 'stimuli' to create than you'd have in the lab, because 
+in the lab you have the luxury of being present to explain what's going on. When you design
+an online study, you may need to record many of the things you'd say in the lab, or create 
+pictures or demos to show how things work. This includes not just storybook audio, but 
+little clips like "We're almost done!" or "Okay, go ahead and turn around now." 
 
 For basic editing of audio files, if you don’t already have a system in
 place, we highly recommend `Audacity <http://www.audacityteam.org/>`__.
 You can create many “tracks” or select portions of a longer recording
 using labels, and export them all at once; you can easily adjust volume
 so it’s similar across your stimuli; and the simple “noise reduction”
-filter works well.
+filter works well. At a minimum, even if these are not 'stimuli' per se (e.g., verbal instructions), 
+we recommend 
+
+1. Using **noise reduction** to make speech clearer and remove any background 'buzz' during pauses. First select a segment of silence to analyze, then apply noise reduction across the whole audio recording; you may need to play around with the defaults to get excellent noise reduction without distortion, but it does a pretty good job out of the box.
+
+2. Using the **'amplify'** filter to make all stimuli and instructions approximately equally loud (by default, it makes a segment of audio as loud as possible without clipping).
+
+3. **Trimming** ALL of the silence from the beginning and end of the audio clip. This silence may not be especially noticable when you simply play the file, but it translates into an unnecessary delay between whenever you trigger the audio file to play in your study and when the relevant sound actually starts.
+
+For editing of video files, we recommend getting comfortable with the command-line tool
+`ffmpeg <https://ffmpeg.org/>`__. It’s a bit of a pain to get used to,
+but then you'll be able to do almost anything you can imagine with audio and video files.
 
 File formats
 ~~~~~~~~~~~~
@@ -26,10 +43,7 @@ overview of this topic, see
 MIT’s standard practice is to provide mp3 and ogg formats for audio, and
 webm and mp4 (H.264 video codec + AAC audio codec) for video, to cover
 modern browsers. The easiest way to create the appropriate files,
-especially if you have a lot to convert, is to use the command-line tool
-`ffmpeg <https://ffmpeg.org/>`__. It’s a bit of a pain to get used to,
-but then you can do almost anything you might want to with audio and
-video files.
+especially if you have a lot to convert, is to use ffmpeg.
 
 Here’s an example command to convert a video file INPUTPATH to mp4 with
 reasonable quality/filesize and using H.264 & AAC codecs:
@@ -41,7 +55,7 @@ And to make a webm file:
 ``ffmpeg -i INPUTPATH -c:v libvpx -b:v 1000k -maxrate 1000k -bufsize 2000k -c:a libvorbis -b:a 128k -speed 2``
 
 Converting all your audio and video files can be easily automated in
-python. Here’s an example script that uses ffmpeg to convert all the m4a
+Python. Here’s an example script that uses ffmpeg to convert all the m4a
 and wav files in a directory to mp3 and ogg files:
 
 .. code:: python
@@ -92,17 +106,18 @@ longer and using an mp4 or webm extension for output instead of jpg.
 Directory structure
 ~~~~~~~~~~~~~~~~~~~
 
-For convenience, several of the newer frames allow you to define a base
+For convenience, many Lookit experiment frames use an `expand-assets mixin <https://lookit.github.io/ember-lookit-frameplayer/classes/ExpandAssets.html>`_ that allows you to define a base
 directory (``baseDir``) as part of the frame definition, so that instead
 of providing full paths to your stimuli (including multiple file
 formats) you can give relative paths and specify the audio and/or video
-formats to expect (``audioTypes`` and ``videoTypes``).
+formats to expect (``audioTypes`` and ``videoTypes``). 
 
-**Images**: Anything without ``://`` in the string is assumed to be a
+For instance, the `exp-lookit-story-page frame <https://lookit.github.io/ember-lookit-frameplayer/classes/ExpLookitStoryPage.html>`_ allows this - you can see at the very top of the docs that it uses ExpandAssets, and under 'Properties' you can see the ``baseDir``, `audioTypes``, and ``videoTypes`` arguments.
+
+**Images**: Anything without ``://`` in the string will be assumed to be a
 relative image source.
 
-**Audio/video sources**: you will be providing a list of objects
-describing the source, like this:
+**Audio/video sources**: If you want to provide full paths to stimuli, you will be providing a list of sources, like this:
 
 .. code:: json
 
@@ -118,16 +133,7 @@ describing the source, like this:
    ]
 
 Instead of listing multiple sources, which are generally the same file
-in different formats, you can alternately list a single source like
-this:
-
-.. code:: json
-
-   [
-       {
-           "stub": "myAudioFile"
-       }
-   ]
+in different formats, you can alternately list a single string like ``"myAudioFile"``. 
 
 If you use this option, your stimuli will be expected to be organized
 into directories based on type.
@@ -136,12 +142,12 @@ into directories based on type.
    format when specifying the image path)
 -  **baseDir/ext/**: all audio/video media files with extension ``ext``
 
-**Example**: Suppose you set ``baseDir: 'http://stimuli.org/mystudy/``
-and then specified an image source as ``train.jpg``. That image location
+**Example**: Suppose you set ``"baseDir": "http://stimuli.org/mystudy/"``
+and then specified an image source as ``"train.jpg"``. That image location
 would be expanded to ``http://stimuli.org/mystudy/img/train.jpg``. If
 you specified that the audio types you were using were ``mp3`` and
-``ogg`` (the default) by setting ``audioTypes: ['mp3', 'ogg']``, and
-specified an audio source as ``[{"stub": "honk"}]``, then audio files
+``ogg`` (the default) by setting ``"audioTypes": ["mp3", "ogg"]``, and
+specified an audio source as ``"honk"``, then audio files
 would be expected to be located at
 ``http://stimuli.org/mystudy/mp3/honk.mp3`` and
 ``http://stimuli.org/mystudy/ogg/honk.ogg``.

@@ -21,14 +21,14 @@ Contents:
 .. toctree::
    :maxdepth: 4
 
-   for-researchers
+   researchers
    
-   developing-frames
+   frame-dev
    
-   django-project-installation
-   ember-app-installation
+   install-django-project
+   install-ember-app
    
-   lookit-api
+   implementation
    
    contributor-guidelines
    

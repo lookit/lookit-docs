@@ -1,5 +1,5 @@
 Setup for custom frame development
-=================================
+===================================
 
 Suppose that for your study, you need a frame that’s not part of the
 standard ember-lookit-frameplayer library. Maybe you want to use a particular game

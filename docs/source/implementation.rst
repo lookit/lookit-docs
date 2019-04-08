@@ -7,6 +7,6 @@ How various aspects of the Django app work (and why they were set up that way) t
 .. toctree::
    :maxdepth: 2
 
-   permissions
-   workflow
-   celery_tasks
+   implementation-permissions
+   implementation-workflow
+   implementation-celery-tasks

@@ -4,7 +4,7 @@ Guidelines for contributors
 
 Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
 
-The content of this page applies to all four Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments & components to use), and  ``current-docs`` (specific frames, subrepo of ember-lookit-frameplayer).
+The content of this page applies to all three Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments & components to use), and  ``lookit-docs`` (specific frames, subrepo of ember-lookit-frameplayer).
 
 >> **Where's the code I need?** If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to `ember-lookit-frameplayer`.
 
@@ -99,7 +99,7 @@ Writing your tests
 
 In `lookit-api`, you should generally add to or edit the `tests.py` file in the appropriate app (e.g., `exp/tests.py`). You can run tests like this::
 
-python manage.py test
+    python manage.py test
 
 For more information see https://docs.djangoproject.com/en/2.1/topics/testing/.
 

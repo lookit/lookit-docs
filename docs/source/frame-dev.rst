@@ -5,7 +5,7 @@ Developing new frames
 .. toctree::
    :maxdepth: 2
 
-   local-frame-development
-   frames
-   video_capture
-   random
+   frame-dev-setup
+   frame-dev-creation
+   frame-dev-video-capture
+   frame-dev-randomizers

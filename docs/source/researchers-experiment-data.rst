@@ -40,12 +40,12 @@ event.)
            "id": 1190,
            "uuid": "d96b3ba5-6806-4c09-86e2-77456163eb5a",
            "sequence": [
-               "0-0-video-config",
-               "1-1-video-consent",
-               "2-2-instructions",
-               "3-3-mood-survey",
-               "4-4-pref-phys-videos",
-               "5-5-exit-survey"
+               "0-video-config",
+               "1-video-consent",
+               "2-instructions",
+               "3-mood-survey",
+               "4-pref-phys-videos",
+               "5-exit-survey"
            ],
            "conditions": {
                "4-pref-phys-videos": {
@@ -54,7 +54,7 @@ event.)
                }
            },
            "exp_data": {
-               "3-3-mood-survey": {
+               "3-mood-survey": {
                    "active": "4",
                    "rested": "1",
                    "healthy": "2",
@@ -65,7 +65,7 @@ event.)
                        }
                    ]
                },
-               "0-0-video-config": {
+               "0-video-config": {
                    "eventTimings": [
                        {
                            "pipeId": "",
@@ -76,7 +76,7 @@ event.)
                        }
                    ]
                },
-               "2-2-instructions": {
+               "2-instructions": {
                    "eventTimings": [
                        {
                            "eventType": "exp-physics-intro:nextFrame",
@@ -84,7 +84,7 @@ event.)
                        }
                    ]
                },
-               "1-1-video-consent": {
+               "1-video-consent": {
                    "videoId": "videoStream_0f620873-2847-4eeb-9854-df7898934c17_1-video-consent_d96b3ba5-6806-4c09-86e2-77456163eb5a_1530921346557_292",
                    "videoList": [
                        "videoStream_0f620873-2847-4eeb-9854-df7898934c17_1-video-consent_d96b3ba5-6806-4c09-86e2-77456163eb5a_1530921346557_292"
@@ -99,7 +99,7 @@ event.)
                        }
                    ]
                },
-               "5-5-exit-survey": {
+               "5-exit-survey": {
                    "feedback": "",
                    "birthDate": "2018-07-03T04:00:00.000Z",
                    "useOfMedia": "private",
@@ -112,7 +112,7 @@ event.)
                    ],
                    "databraryShare": "no"
                },
-               "4-4-pref-phys-videos": {
+               "4-pref-phys-videos": {
                    "videoId": "videoStream_0f620873-2847-4eeb-9854-df7898934c17_4-pref-phys-videos_d96b3ba5-6806-4c09-86e2-77456163eb5a_1530921371545_923",
                    "videoList": [
                        "videoStream_0f620873-2847-4eeb-9854-df7898934c17_4-pref-phys-videos_d96b3ba5-6806-4c09-86e2-77456163eb5a_1530921371545_923"
@@ -172,7 +172,7 @@ below:
 -  *sequence*: The sequence of **frames** the subject actually saw
    (after running randomization, etc.). Does not include frames skipped
    if they left early. The frame names follow the pattern
-   ``<order>-<order>-<frame.id>``, where ``<order>`` is the order in the
+   ``<order>-<frame.id>``, where ``<order>`` is the order in the
    overall sequence where this **frame** appeared, and ``<frame.id>`` is
    the identifier of the frame as defined in the ‘frames’ property of
    the experiment structure.
@@ -225,9 +225,9 @@ fields are shown):
 
    {
        "sequence": [
-           "0-0-intro-video",
-           "1-1-survey",
-           "2-2-exit-survey"
+           "0-intro-video",
+           "1-survey",
+           "2-exit-survey"
        ],
        "conditions": {
            "1-survey": {
@@ -239,13 +239,13 @@ fields are shown):
            }
        },
        "exp_data": {
-           "0-0-intro-video": {
+           "0-intro-video": {
                "eventTimings": [{
                    "eventType": "nextFrame",
                    "timestamp": "2016-03-23T16:28:20.753Z"
                }]
            },
-           "1-1-survey": {
+           "1-survey": {
                "formData": {
                    "name": "Sam",
                    "favPie": "pecan"
@@ -255,7 +255,7 @@ fields are shown):
                    "timestamp": "2016-03-23T16:28:26.925Z"
                }]
            },
-           "2-2-exit-survey": {
+           "2-exit-survey": {
                "formData": {
                    "thoughts": "Great!",
                    "wouldParticipateAgain": "Yes"

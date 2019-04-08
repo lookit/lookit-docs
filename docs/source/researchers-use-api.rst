@@ -5,7 +5,7 @@ Using the API
 =======================
 What is the API for?
 =======================
-Using the Lookit API allows you to programatically retrieve or update data (other than video data), rather than manually downloading JSON or CSV files from the Experimenter site. It is also currently the only way to update feedback to participants, although a way to do that on the Experimenter site is coming soon!
+Using the Lookit API allows you to programatically retrieve or update data (other than video data), rather than manually downloading JSON or CSV files from the Experimenter site. It is also currently the only way to update feedback to participants, although a way to do that via the experimenter interface is coming soon!
 
 Researchers do not in general need to use the API in order to use Lookit to run their studies, but it is available if needed. 
 
