@@ -4,6 +4,9 @@ Experiment data (non-video)
 What data can I access?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can access:
+- response data from responses for which you have confirmed consent in the Consent Manager
+- account, demographic, and child data from those responses: you will see these accounts under 'Manage Participants'; if some siblings but not others have participated in one of your studies and you have confirmed consent, you will only see those siblings.
 
 Accessing experiment data
 ~~~~~~~~~~~~~~~~~~~~~~~~~
