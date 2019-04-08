@@ -20,4 +20,5 @@ Contents:
    researchers-create-experiment
    researchers-prep-stimuli
    researchers-experiment-data
+   researchers-manage-consent
    researchers-use-api

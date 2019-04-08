@@ -1,6 +1,10 @@
 Experiment data (non-video)
 ===========================
 
+What data can I access?
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 Accessing experiment data
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 

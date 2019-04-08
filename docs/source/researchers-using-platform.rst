@@ -20,7 +20,7 @@ If you don't have the appropriate type of OSF account yet, you can register to c
     :width: 300
     :align: center
 
-If you have not previously logged in to Lookit (or Lookit staging), you should now see a message that 'Your request to join Experimenter has been submitted. You will receive a notification by email when this is completed.' like the image below. **Please tell us** once you have requested access so we can approve you promptly! New researchers require approval to access Lookit, which is easy (one of us clicking a button) but not automatic. 
+If you have not previously logged in to Lookit (or Lookit staging), you should now see a message that 'Your request to join Experimenter has been submitted. You will receive a notification by email when this is completed.' **Please tell us** once you have requested access so we can approve you promptly! New researchers require approval to access Lookit, which is easy (one of us clicking a button) but not automatic. 
 
 .. image:: _static/img/dashboard.png
     :alt: Login to experimenter image
