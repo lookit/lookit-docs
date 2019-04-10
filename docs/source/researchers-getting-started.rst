@@ -22,7 +22,7 @@ If you are preparing a new study to run on Lookit, you will first need to make s
 
 3. Implement your study on the staging server
 
-   - Follow these instructions to get access and log on
+   - Follow `these instructions <researchers-using-platform.html#logging-in>`_ to get access and log on
    - We'll give you access to a study called 'Example study' that you can play around with. Try participating in the original 'Example study' as a participant on the staging server, and check that you can see and approve your consent video in the Consent Manager.
    - Clone the example study so you have your own copy you can edit. Change its title to something like 'Smith getting started study.' Build preview dependencies for your study. 
    - Try previewing your study to see what it's like. Make a minor change to the study JSON and preview again to see that you see it.
