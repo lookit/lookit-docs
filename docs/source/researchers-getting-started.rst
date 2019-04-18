@@ -9,7 +9,7 @@ If you are preparing a new study to run on Lookit, you will first need to make s
 
 1. Some reading: 
 
-   - Please make sure you have *actually read* the `Terms of Use <https://lookit.mit.edu/termsofuse/>`_.
+   - **Please make sure you have *actually read* the `Terms of Use <https://lookit.mit.edu/termsofuse/>`_.** There's a bit of legal boilerplate in there, but the bulk is meaningful content about precautions you need to take to protect participant privacy, restrictions on protocols that can be run on Lookit, and what data you (and Lookit) can use and publish. It's important that as the researcher using the platform you actually understand and agree to these terms. 
    - Skim through this portion of the documentation ('Using Lookit: for researchers').
    - Skim through `the wiki <https://github.com/lookit/research-resources/wiki>`_ just so you know what information is available there.
 
