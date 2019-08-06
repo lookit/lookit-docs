@@ -14,3 +14,4 @@ Using Lookit: for researchers
    researchers-experiment-data
    researchers-manage-consent
    researchers-use-api
+   researchers-set-eligibility-criteria
