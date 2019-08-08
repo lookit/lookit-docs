@@ -9,9 +9,9 @@ Using Lookit: for researchers
    researchers-getting-started
    researchers-helpful-resources
    researchers-using-platform
+   researchers-set-study-fields
    researchers-create-experiment
    researchers-prep-stimuli
    researchers-experiment-data
    researchers-manage-consent
    researchers-use-api
-   researchers-set-eligibility-criteria
