@@ -37,51 +37,31 @@ Exit URL
 =============================
 Must enter a URL. After the participant has completed the study, they will be automatically redirected to the exit URL. Typically this is just `https://lookit.mit.edu/`
 
-=============================
-Participant eligibility
-=============================
- Freeform participant-facing eligibility string, of the form 'For...' (e.g., 'For babies under 1 year old'). This is **not** directly used to automatically check eligibility, so you can include criteria that may not yet be possible to check for automatically - e.g., this study is for girls whose favorite color is orange. Make this readable so participants understand if their child can take part in the study. Age limits specified here should be carefully considered with respect to the minimum/maximum age cutoffs (next) which **are** used for automatic verification of eligibility. 
+====================================
+Participant eligibility description
+====================================
+Freeform participant-facing eligibility string, of the form 'For...' (e.g., 'For babies under 1 year old'). Make this readable so participants understand if their child can take part in the study.
+
+This is **not** directly used to automatically check eligibility, so you can include criteria that may not yet be possible to check for automatically - e.g., this study is for girls whose favorite color is orange. 
+
+Age limits specified here should be carefully considered with respect to the `minimum and maximum age cutoffs`_ which **are** used for automatic verification of eligibility. 
 
 =============================
-Minimum/maximum age cutoffs
+Criteria expression
 =============================
-Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days. Participants under the age range see a warning indicating that their data may not be used, and suggesting that they wait until they're in the age range. Participants over the age range just see a warning indicating that their data may not be used. Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age. 
+Providing this expression allows you to specify more detailed eligibility criteria for your study than a single age range. When a parent selects a child to participate in a study, he or she will see a warning under any of the following conditions:
 
-  Note that these ages do **not** in all cases correspond exactly to the child's age in 'calendar months' or 'calendar years' (e.g., 'one month' if that month is February). In general, you want to avoid a situation where the parent thinks their child should be eligible based on the participant eligibility string (e.g., "my child is one month old, she was born February 3rd and it's March 4th!") but sees a warning when trying to participate. You can do this by narrowing the eligibility criteria in the freeform string and/or by expanding them in the cutoffs here. If one has to align better with your actual inclusion criteria, in general you want that to be the minimum/maximum age cutoffs.
-  
-=============================
-Duration
-=============================
-Approximately how long does it take to do your study, start to finish? (Try it if you're not sure; include time to read the instructions.) You can give an estimate or range.
+- The child is under the minimum age specified (see `minimum and maximum age cutoffs`_)
+- The child is over the maximum age specified (see `minimum and maximum age cutoffs`_)
+- The child is within the specified age range, but doesn't meet the eligibility criteria defined in this expression
 
-===============================
-Researcher contact information
-===============================
-This should give the name of the PI for your study, and an email address where the PI or study staff can be reached with questions. Format: PIs Name (contact: youremail@lab.edu). This is displayed to participants on the study detail page before they choose to participate, as well as substituted into your consent form and exit survey, so in general the name needs to be the person who's listed as PI on your IRB protocol (although it may not need to be their personal email address). 
-  
-=============================
-Discoverable
-=============================
-Do you want this study to be listed on the Lookit studies page when it's active? Check this box to list the study there. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also occasionally set a study to non-discoverable temporarily so you can try it out as a participant without actually recruiting!
+Note that while a warning is displayed, ineligible participants are not actually prevented from participating; this is deliberate, to remove any motivation for a curious parent to fudge the details to see what the study is like.
 
-=============================
-Build study
-=============================
-This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. You can add these later under /exp/studies/<study_id>/edit/build/. For detailed information about specifying your study protocol, see `Building an Experiment`_.
+You may want to use the criteria expression to specify additional eligibility criteria beyond an age range - for instance, if your study is for a special population like kids with ASD or bilingual kids. You do **not** need to specify your age range here in general; participant eligibility checks will require the child meet the `minimum and maximum age cutoffs`_ AND these critera.
 
-=============================
-Study type
-=============================
-The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember and there is an exp-player component that can cycle through these frames. For details, see `Editing study type`_
+Every child in the Lookit database has a number of fields associated with it, ranging from gestational age to languages spoken in the home, which can be used in determining eligibility. In the study edit and create views, you can formulate your criteria expression as a boolean expression with embedded relational expressions, using a domain specific query language. 
 
-
-=============================
-Eligibility criteria
-=============================
-Eligibility criteria determines which children can participate in your study.
-
-In the study edit and create views, you can formulate these criteria as a boolean expression with embedded relational expressions, using a domain specific query language. 
-Every child in the Lookit database has a number of fields associated with it, ranging from gestational age to languages spoken in the home.
+You can put together your expressions using the query fields below; the operators `AND`, `OR`, `NOT`, `<`, `<=`, `=`, `>`, and `>=`; and parentheses. If your expression is invalid you will see an error when you try to save your study.
 
 ----------------------------------
 Query fields
@@ -93,25 +73,31 @@ Query fields
     +-----------------------------------------------------+-------------------+---------------------------------------------------------------------+---------------------------------------------------------+
     | speaks_[`LANGCODE <#language-codes>`_]              | N/A               | speaks_en, NOT speaks_ja, speaks_ru                                 | See below for full list of available options.           |
     +-----------------------------------------------------+-------------------+---------------------------------------------------------------------+---------------------------------------------------------+
-    | gestational_age_in_weeks                            | integer or string | gestational_age_in_weeks <= 40, gestational_age_in_weeks = na       |                                                         |
+    | gestational_age_in_weeks                            | integer or string | gestational_age_in_weeks <= 40, gestational_age_in_weeks = na       | Values are 23 through 40 and na                                                        |
     +-----------------------------------------------------+-------------------+---------------------------------------------------------------------+---------------------------------------------------------+
     | gender                                              | string            | gender = f, gender !=o                                              | Male (m), Female (f), Other (o), or Not Available (na). |
     +-----------------------------------------------------+-------------------+---------------------------------------------------------------------+---------------------------------------------------------+
     | age_in_days                                         | integer           | age_in_days <= 1095, age_in_days > 365                              |                                                         |
     +-----------------------------------------------------+-------------------+---------------------------------------------------------------------+---------------------------------------------------------+
 
---------------------
-Query Examples
---------------------
+-----------------------------
+Criteria expression examples
+-----------------------------
 
 Deaf children only
     ``deaf``
 
-Multiple-birth children between the ages of 1 and 3
-    ``multiple_birth AND (age_in_days <= 1095 AND age_in_days >= 365)``
+Multiple-birth children who are either under 1 year old or over 3 years old
+    ``multiple_birth AND (age_in_days >= 1095 OR age_in_days <= 365)``
+    
+Girls who are exposed to both English and Spanish
+    ``gender = f AND speaks_en AND speaks_es``
+    
+Children born late preterm whose adjusted age is about 6 weeks
+    ``(gestational_age_in_weeks = 34 AND (age_in_days >= 72 AND age_in_days < 102)) OR (gestational_age_in_weeks = 35 AND (age_in_days >= 65 AND age_in_days < 95)) OR (gestational_age_in_weeks = 36 AND (age_in_days >= 58 AND age_in_days < 88))`` 
 
 --------------------------------
-Characteristics and Conditions
+Characteristics and conditions
 --------------------------------
 
     +------------------------+-----------------------------------------------+
@@ -129,7 +115,7 @@ Characteristics and Conditions
     +------------------------+-----------------------------------------------+
 
 --------------------------------
-Language Codes
+Language codes
 --------------------------------
 
     +----+----------------------+
@@ -253,6 +239,39 @@ Language Codes
     +----+----------------------+
     |yue |Yue                   |
     +----+----------------------+
+
+================================
+Minimum and maximum age cutoffs
+================================
+Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days. Participants under the age range see a warning indicating that their data may not be used, and suggesting that they wait until they're in the age range. Participants over the age range just see a warning indicating that their data may not be used. Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age. 
+
+Note that these ages do **not** in all cases correspond exactly to the child's age in 'calendar months' or 'calendar years' (e.g., 'one month' if that month is February). In general, you want to avoid a situation where the parent thinks their child should be eligible based on the participant eligibility string (e.g., "my child is one month old, she was born February 3rd and it's March 4th!") but sees a warning when trying to participate. You can do this by narrowing the eligibility criteria in the freeform string and/or by expanding them in the cutoffs here. If one has to align better with your actual inclusion criteria, in general you want that to be the minimum/maximum age cutoffs.
+  
+=============================
+Duration
+=============================
+Approximately how long does it take to do your study, start to finish? (Try it if you're not sure; include time to read the instructions.) You can give an estimate or range.
+
+===============================
+Researcher contact information
+===============================
+This should give the name of the PI for your study, and an email address where the PI or study staff can be reached with questions. Format: PIs Name (contact: youremail@lab.edu). This is displayed to participants on the study detail page before they choose to participate, as well as substituted into your consent form and exit survey, so in general the name needs to be the person who's listed as PI on your IRB protocol (although it may not need to be their personal email address). 
+  
+=============================
+Discoverable
+=============================
+Do you want this study to be listed on the Lookit studies page when it's active? Check this box to list the study there. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also occasionally set a study to non-discoverable temporarily so you can try it out as a participant without actually recruiting!
+
+=============================
+Build study
+=============================
+This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. You can add these later under /exp/studies/<study_id>/edit/build/. For detailed information about specifying your study protocol, see `Building an Experiment`_.
+
+=============================
+Study type
+=============================
+The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember and there is an exp-player component that can cycle through these frames. For details, see `Editing study type`_
+
 
 
 
