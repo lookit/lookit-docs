@@ -9,6 +9,7 @@ Using Lookit: for researchers
    researchers-getting-started
    researchers-helpful-resources
    researchers-using-platform
+   researchers-set-study-fields
    researchers-create-experiment
    researchers-prep-stimuli
    researchers-experiment-data
