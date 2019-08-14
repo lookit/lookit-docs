@@ -1,9 +1,13 @@
+.. _Technical_glossary:
+
+===================
 Technical Glossary
-~~~~~~~~~~~~~~~~~~~
+===================
 
 
 
-
+Internal Resources
+___________________
 Docker
 ------
 
@@ -118,6 +122,46 @@ can minimize the interaction between outside traffic and your personal machine.
 When trying to stream videos on the development stage, AWS will need an address to send the video to. Ngrok will create
 a dummy link for this purpose and then send the video from this dummy address to your PC.
 
+
+
+
+
+
+
+External Resources
+___________________
+
+Google Cloud
+-------------
+
+The Cloud service is where all the studies are stored.
+
+
+Amazon Web Services
+--------------------
+
+This is where the consent videos are stored??
+
+Celery
+-------
+
+This is what runs the long term tasks
+
+Authenticator
+---------------
+
+Allows you to log into your account securely
+
+Lookit Ember Frameplayer
+------------------------
+
+Consent manager videos
+
+ADDPIPE
+-------
+
+ADDPIPE is used to record the video and audio. It connects to the hardware of your computer and films for you. It also
+converts recorded files to ,mp4. https://addpipe.com/about
 
 
 

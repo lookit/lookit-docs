@@ -5,7 +5,7 @@ Lookit API Local Machine Setup
 Prerequisites
 ~~~~~~~~~~~~~
 Before you can get the API running on your machine, there are a few steps you need to take to ensure everything will work
-properly.
+properly. Information about these programs can be found in the :ref:`Technical_glossary`
 
 Install Docker
 --------------
@@ -124,11 +124,6 @@ To connect to your local host run this command:
 
 
 
-Install SSL Certificates
-------------------------
-
-
-
 Setup
 ~~~~~
 
@@ -137,40 +132,7 @@ Setup
 
 
 
-External Resources
-~~~~~~~~~~~~~~~~~~~
 
-Google Cloud
--------------
-
-The Cloud service is where all the studies are stored.
-
-
-Amazon Web Services
---------------------
-
-This is where the consent videos are stored??
-
-Celery
--------
-
-This is what runs the long term tasks
-
-Authenticator
----------------
-
-Allows you to log into your account securely
-
-Lookit Ember Frameplayer
-------------------------
-
-Consent manager videos
-
-ADDPIPE
--------
-
-ADDPIPE is used to record the video and audio. It connects to the hardware of your computer and films for you. It also
-converts recorded files to ,mp4. https://addpipe.com/about
 
 How Do These Programs Work Together?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -194,9 +156,6 @@ they backlogged the HTTPs request cycle. Programs like celery are used to keep t
 
 When you want to build a study, celery sends that request to Docker, which then sends the study static files back to celery.
 After building the study, celery sends deployable static files to Google Cloud.
-
-
-
 
 
 .. image:: _static/img/use-case.png
