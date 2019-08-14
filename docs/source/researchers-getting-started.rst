@@ -26,7 +26,7 @@ We are unfortunately not yet able to accommodate most requests to run studies on
 4. Prepare the content of your study - this is the relatively non-technical (but surprisingly time-consuming) side!
 
    - `Create all of the stimuli you'll need <researchers-prep-stimuli.html>`_!
-   - Write the text of your study description, prepare a thumbnail image, etc. following the descriptions of each item you'll need to prepare `here <researchers-using-platform.html#creating-a-study>`_. 
+   - Write the text of your study description, prepare a thumbnail image, etc. following  `the descriptions of each item you'll need to prepare <researchers-set-study-fields.html>`_. 
    - Write the text of any study overview, instructions, and debriefing as described `here <researchers-create-experiment.html#a-lookit-study-schema-general-principles-and-instructions>`_.
 
 

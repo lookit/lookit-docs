@@ -12,7 +12,7 @@ This object includes methods for showing/hiding the webcam view,
 starting/pausing/resuming/stopping video recording,
 installing/destroying the recorder, and checking the current video
 timestamp (see
-https://lookit.github.io/ember-lookit-frameplayer/classes/VideoRecorderObject.html).
+https://lookit.github.io/ember-lookit-frameplayer/classes/video-recorder.html).
 The programmer designing a new frame can therefore flexibly indicate
 when recording should begin and end, as well as recording video
 timestamps for any events recorded during this frame (e.g., so that
@@ -40,10 +40,9 @@ Limitations
 
 One technical challenge imposed by webcam video streaming is that a
 connection to the server must be established before webcam recording can
-be quickly turned on and off, and this process may take up to several
-seconds. Each experiment frame records a separate video clip and
-establishes a separate connection to the server, so frames must be
-designed to wait for recording to begin before proceeding to a portion
+be quickly turned on, and this process may take up to several
+seconds. If you are setting up your frame to create a separate video clip, you will need to 
+design your frame to wait for recording to begin before proceeding to a portion
 of the trial where video data is required. This fits well with typical
 study designs using looking time or preferential looking, where the
 child’s attention is returned to the center of the screen between
@@ -54,9 +53,12 @@ trial. When collecting verbal responses, the study frame can simply
 pause until the connection is established or, similarly, proceed with an
 initial portion of the trial where video data is not required.
 
-Currently, continuous webcam recording across frames is not possible on
-Lookit; any periods of continuous recording must be within a single
-frame. This is not a hard technical limitation, though.
+You can also plan for users of your frame to turn on continuous recording using multi-frame 
+or 'session' recordings; see the 
+`startSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_startSessionRecording>`_  
+and `endSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_endSessionRecording>`_ 
+parameters of the base frame. 
+
 
 How it works
 ~~~~~~~~~~~~

@@ -194,7 +194,12 @@ A typical Lookit study might contain the following frame types:
     If you are compensating participants, restate what the compensation is (and any conditions), and let them know when to expect their payment! E.g.: "To thank you for your participation, we'll be emailing you a $4 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child."
 
 
+Recording webcam video
+-----------------------
 
+Some frames include functionality to record video from the participant's webcam during some or all of the frame. This will be described in the frame's documentation, including any parameters you can set to turn on/off or otherwise change the behavior of the recording. Recording may start/stop automatically in the background, or the participant may click to start and stop recording or even immediately view their recording. For test trials, the webcam is generally not displayed to the participant while recording, as it would be more interesting than almost all stimuli we could create. 
+
+You also have the option to start or stop a multi-frame or 'session-level' recording on **any** frame, by using the `startSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_startSessionRecording>`_  and `endSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_endSessionRecording>`_ parameters. The recording will start at the beginning of the frame with startSessionRecording set to true, and end at the end of the frame with endSessionRecording set to true. In between, recording will continue, and all events captured will include the name of the video and the approximate time relative to the start of that video.
 
 
 Randomizer frames
