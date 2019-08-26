@@ -169,7 +169,6 @@ recorded and may be included in the eventTimings object sent with the
 data are also described.
 
 
-
 A Lookit study schema: general principles and instructions
 ------------------------------------------------------------
 
@@ -201,6 +200,46 @@ Some frames include functionality to record video from the participant's webcam 
 
 You also have the option to start or stop a multi-frame or 'session-level' recording on **any** frame, by using the `startSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_startSessionRecording>`_  and `endSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_endSessionRecording>`_ parameters. The recording will start at the beginning of the frame with startSessionRecording set to true, and end at the end of the frame with endSessionRecording set to true. In between, recording will continue, and all events captured will include the name of the video and the approximate time relative to the start of that video.
 
+Frame groups
+-----------------
+
+Sometimes it may be convenient to group several frames together. To do this, set the frame ``"kind"`` to ``"group"``. You will also need to provide a ``"frameList"`` which is a list of frames that go in this group. You can optionally provide a ``"commonFrameProperties"`` object which provides default parameter-value pairs to add to each frame in the list (any parameters additionally defined in the ``frameList`` will take precedence). As with other frames, ``"parameters"`` can be defined on the frame group to allow substitution of values. 
+
+Here is an example of a frame group that just contains two text frames:
+
+.. code:: json
+
+    "testFrameGroup": {
+        "kind": "group",
+        "frameList": [
+            {
+                "id": "first-test-trial",
+                "blocks": [
+                    {
+                        text: "Hello and welcome to the study"
+                    }
+                ]
+            },
+            {
+                "id": "second-test-trial",
+                "blocks": [
+                    {
+                        text: "Some more info"
+                    }
+                ]
+            }
+        ],
+        "commonFrameProperties": {
+            "kind":  "exp-lookit-text"
+        }
+    }
+
+
+Defining frame parameters
+---------------------------
+
+Rather than inserting actual values for frame properties such as stimulus image locations, you may want sometimes want to use a variable the way you would in a programming language - for instance, so that you can show the same cat picture throughout a group of frames, without having to replace it in ten separate places if you decide to use a different one.
+You can accomplish this (and more, including selecting randomly from or cycling through lists of values) by setting the ``"parameters"`` property on any frame (including frame groups and randomizers). For details, see the `exp-frame-base documentation <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_parameters>`_.
 
 Randomizer frames
 -----------------

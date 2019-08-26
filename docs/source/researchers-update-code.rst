@@ -16,7 +16,7 @@ In the future, there may be changes in the Lookit frameplayer code that you want
 .. image:: _static/img/update_code/initial_state.png
     :alt: Filled in sha value 
     
-If you want to know more about what code is currently being used, you can go to ``[player_repo_url]/commit/[last_known_player_sha]``. In the example above, that would be `<https://github.com/lookit/ember-lookit-frameplayer/commit/c4ee4a8b5c7921f9b6a4f027de84d7122ebfe1b8`_. 
+If you want to know more about what code is currently being used, you can go to ``[player_repo_url]/commit/[last_known_player_sha]``. In the example above, that would be `<https://github.com/lookit/ember-lookit-frameplayer/commit/c4ee4a8b5c7921f9b6a4f027de84d7122ebfe1b8>`_. 
 
 You can edit the ``player_repo_url`` to use a different repo entirely, like your own fork. The steps are the same regardless of which repo you're using, but pointing to your own code is more advanced. We'll focus here on just updating the version of the central Lookit code you're using.
 
