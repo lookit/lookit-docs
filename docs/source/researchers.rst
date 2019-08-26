@@ -11,6 +11,7 @@ Using Lookit: for researchers
    researchers-using-platform
    researchers-set-study-fields
    researchers-create-experiment
+   researchers-condition-assignment
    researchers-update-code
    researchers-prep-stimuli
    researchers-experiment-data
