@@ -30,8 +30,8 @@ The Lookit "staging server" is a separate instance of the platform from the "pro
 
 4. Once your request is approved, you can return to `<https://staging-lookit.cos.io/exp/>`_ to log in. You should now see a "Manage Studies" page. Bookmark this address!
 
-If you need help
------------------
+Where to go for help
+---------------------
 If you need help as you're completing this tutorial - or later when you're creating and running studies on Lookit - here's where to go:
 
 - The 'researchers' or 'tech support' **Slack channels** in the Lookit workspace. First search to see if someone has asked the same question before! If not, post in one of these channels to get support from Lookit staff and/or other researchers who may have dealt with the same issue. (If you need help specifically from Lookit staff, feel free to add `@Kim` to your post to tag Kim, but under almost all circumstances the question should still go in one of the public channels rather than a private chat, so that other people can see the answers.)
@@ -45,7 +45,7 @@ If you need help as you're completing this tutorial - or later when you're creat
 
     <iframe src="https://calendar.google.com/calendar/embed?src=lknsv8otbu5333qu0mhdq0b7ng%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 
-Exercises:
+Exercises
 ----------
 
 1. Say hello in the "general" channel of the Lookit Slack workspace.
