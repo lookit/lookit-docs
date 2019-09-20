@@ -173,6 +173,9 @@ Now you can proceed through the study as a participant. At the end, you'll see a
 Step 3: Get comfortable making changes to how your study works
 ---------------------------------------------------------------
 
+[WIP, placeholder outlines from here on]
+
+
 1. Reorder the sequence & preview again to see
 
 2. Change text in the intro frame

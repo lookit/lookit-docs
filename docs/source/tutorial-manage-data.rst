@@ -1,6 +1,6 @@
-##################################
-Managing study data
-##################################
+#############################################
+Managing study data [WIP, placeholder only]
+#############################################
 
 
     Adding someone else to your study (try it out)
