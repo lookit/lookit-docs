@@ -94,7 +94,9 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
        "lives_left": 7
        "enemies": ["dog", "laser", "spider"]
    }
-   
+ 
+.. raw:: html
+ 
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
         <p>There's a comma missing!</p>
@@ -112,7 +114,9 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
             "foods": ["cumin seeds, but not in a food, only plain", "bananas, but only in the grocery store, not after"]
        }
    }
-   
+
+.. raw:: html
+    
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
         <p>There are commas INSIDE the favorite words.</p>
@@ -128,7 +132,9 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
        "mood": "loving",
        "mood": "exhausted"
    }
-   
+
+.. raw:: html
+  
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
         <p>That may be accurate, but JSON would like the keys to be unique. Try making mood into a list, or change the second one to energy_level or something.</p>
@@ -143,7 +149,9 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
        "age_class"; 'child',
        "is_adorable": True
    }
-   
+ 
+.. raw:: html
+ 
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
         <p>There are several things to fix here - if you changed something and got a different error message, you're probably on the right track! Work down the list of requirements for JSON from the overview, and note that the "true" value is all lowercase.</p>
