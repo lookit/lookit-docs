@@ -38,7 +38,7 @@ piece of code. To begin developing your own frame:
 
 .. code:: bash
 
-   cd ember-lookit-frameplayer/lib/exp-player
+   cd ember-lookit-frameplayer
    ember generate exp-frame exp-<your_name>
 
 Where ``<your_name>`` corresponds with the frame name of your choice.
@@ -46,21 +46,22 @@ Where ``<your_name>`` corresponds with the frame name of your choice.
 A Simple Example
 ^^^^^^^^^^^^^^^^
 
-Let’s walk though a basic example of ‘exp-consent-form’:
+Let’s walk though a basic example of ‘exp-cat-test’:
 
 .. code:: bash
 
    $ ember generate exp-frame
    installing exp-frame
-     create addon/components/exp-consent-form/component.js
-     create addon/components/exp-consent-form/template.hbs
-     create app/components/exp-consent-form.js
+      create app/components/exp-cat-test/component.js
+      create app/components/exp-cat-test/template.hbs
+      create app/styles/components/exp-cat-test.scss
 
-Notice this created three new files: -
-``addon/components/exp-consent-form/component.js``: the JS file for your
-‘frame’ - ``addon/components/exp-consent-form/template.hbs``: the
-Handlebars template for your ‘frame’ -
-``app/components/exp-consent-form.js``: a boilerplate file that exposes
+Notice this created three new files: 
+- ``app/components/exp-cat-test/component.js``: the JS file for your
+‘frame’ 
+- ``app/components/exp-cat-test/template.hbs``: the
+Handlebars template for your ‘frame’ 
+- ``app/styles/components/exp-cat-test.scss``: a boilerplate file that exposes
 the new frame to the Ember app- you will almost never need to modify
 this file.
 
@@ -68,21 +69,35 @@ Let’s take a deeper look at the ``component.js`` file:
 
 .. code:: javascript
 
-   import ExpFrameBaseComponent from 'exp-player/components/exp-frame-base/component';
+   import ExpFrameBaseComponent from '../exp-frame-base/component';
    import layout from './template';
 
    export default ExpFrameBaseComponent.extend({
-       type: 'exp-consent-form',
+       type: 'exp-cat-test',
        layout: layout,
+       frameSchemaProperties: {
+            // define configurable parameters of your frame here in valid JSON Schema format.
+            // See http://json-schema.org/latest/json-schema-validation.html#rfc.section.5
+            // for what forms of validation are available. The frame configuration - i.e. the
+            // object in the study JSON that defines a frame of this type - will be validated
+            // against a JSON Schema {type: 'object', properties: frameSchemaProperties}.
+            // Each property should have a YUIdoc comment as shown in the example below.
+
+            /**
+             * Whether to show a picture of a cat.
+             *
+             * @property {Boolean} showCatPicture
+             * @default false
+             */
+            showCatPicture: {
+                type: 'boolean',
+                default: false,
+                description: 'Whether to show a picture of a cat.'
+            }
+       },
        meta: {
-           name: 'ExpConsentForm',
+           name: 'ExpCatTest',
            description: 'TODO: a description of this frame goes here.',
-           parameters: {
-               type: 'object',
-               properties: {
-                   // define configurable parameters here
-               }
-           },
            data: {
                type: 'object',
                properties: {
@@ -96,52 +111,75 @@ The first section:
 
 .. code:: javascript
 
-   import ExpFrameBaseComponent from 'exp-player/components/exp-frame-base';
+   import ExpFrameBaseComponent from '../exp-frame-base/component';
    import layout from './template';
 
    export default ExpFrameBaseComponent.extend({
-       type: 'exp-consent-form',
+       type: 'exp-cat-test',
        layout: layout,
    ...
    })
 
-does several things: - imports the ``ExpFrameBaseComponent``: this is
-the superclass that all ‘frames’ must extend - imports the ``layout``:
-this tells Ember what template to use - extends
-``ExpFrameBaseComponent`` and specifies ``layout: layout``
+does several things: 
+- imports the ``ExpFrameBaseComponent``: this is
+the superclass that all ‘frames’ must extend 
+- imports the ``layout``: this tells Ember what template to use 
+- extends ``ExpFrameBaseComponent`` and specifies ``layout: layout``
 
-Next is the ‘meta’ section:
+Next are the parameters and ‘meta’ section:
 
 .. code:: javascript
 
-       ...
-       meta: {
-           name: 'ExpConsentForm',
-           description: 'TODO: a description of this frame goes here.',
-           parameters: {
-               type: 'object',
-               properties: {
-                   // define configurable parameters here
-               }
-           },
-           data: {
-               type: 'object',
-               properties: {
-                   // define data to be sent to the server here
-               }
-           }
-       }
+    ...
+
+    frameSchemaProperties: {
+        showCatPicture: {
+            type: 'boolean',
+            default: false,
+            description: 'Whether to show a picture of a cat.'
+        }
+    },
+
+    frameSchemaRequired: ['showCatPicture'],
+
+    meta: {
+        name: 'ExpCatTest',
+        description: 'TODO: a description of this frame goes here.',
+        data: {
+             /**
+             * Parameters captured and sent to the server
+             *
+             * @method serializeContent
+             * @param {String} whatTheChildThoughtAboutTheCat Child response to cat
+             */
+            type: 'object',
+            properties: {
+                // define data to be sent to the server here
+                whatTheChildThoughtAboutTheCat: {
+                    type: 'string'
+                }
+            }
+        }
+    },
    ...
 
-which is composed of: - name (optional): A human readable name for this
-‘frame’ - description (optional): A human readable description for this
-‘frame’. - parameters: JSON Schema defining what configuration
+The ``frameSchemaProperties`` field should be the JSON Schema defining what configuration
 parameters this ‘frame’ accepts. When you define an experiment that uses
 the frame, you will be able to specify configuration as part of the
 experiment definition. Any parameters in this section will be
 automatically added as properties of the component, and directly
-accessible as ``propertyName`` from templates or component logic. -
-data: JSON Schema defining what data this ‘frame’ outputs. Properties
+accessible as ``propertyName`` from templates or component logic. 
+
+The ``frameSchemaRequired`` field is a list of any values in ``frameSchemaProperties``
+that should be required to be defined by the user of the frame.
+
+
+The 'meta' field is composed of: 
+- name (optional): A human readable name for this
+‘frame’ 
+- description (optional): A human readable description for this
+‘frame’. 
+- data: JSON Schema defining what data this ‘frame’ outputs. Properties
 defined in this section represent properties of the component that will
 get serialized and sent to the server as part of the payload for this
 experiment. You can get these values by binding a value to an input box,
@@ -180,15 +218,11 @@ the expected parameters:
                properties: {
                    title: {
                        type: 'string',
-                       default: 'Notice of Consent'
+                       default: 'An adorable cat'
                    },
-                   body: {
+                   question: {
                        type: 'string',
-                       default: 'Do you consent to participate in this study?'
-                   },
-                   consentLabel: {
-                       type: 'string',
-                       default: 'I agree'
+                       default: 'Check here if you think this is an excellent cat'
                    }
                }
            }
@@ -203,7 +237,7 @@ And also the output data:
        data: {
            type: 'object',
                properties: {
-                   consentGranted: {
+                   answer: {
                        type: 'boolean',
                        default: false
                    }
@@ -212,20 +246,20 @@ And also the output data:
        }
    ...
 
-Since we indicated above that this ‘frame’ has a ``consentGranted``
+Since we indicated above that this ‘frame’ has an ``answer``
 property, let’s add it to the ‘frame’ definition:
 
 .. code:: javascript
 
    export default ExpFrameBaseComponent.extend({
        ...,
-       consentGranted: null,
+       answer: null,
        meta: {
        ...
        }
    ...
 
-Next let’s update ``template.hbs`` to look more like a consent form:
+Next let’s update ``template.hbs`` to look more like a test trial:
 
 ::
 
@@ -236,31 +270,30 @@ Next let’s update ``template.hbs`` to look more like a consent form:
      <hr >
      <div class="input-group">
        <span>
-         {{ consentLabel }}
+         {{ question }}
        </span>
-       {{input type="checkbox" checked=consentGranted}}
+       {{input type="checkbox" checked=answer}}
      </div>
    </div>
    <div class="row exp-controls">
      <!-- Next/Last/Previous controls. Modify as appropriate -->
      <div class="btn-group">
-       <button class="btn btn-default" {{ action 'previous' }} > Previous </button>
        <button class="btn btn-default pull-right" {{ action 'next' }} > Next </button>
      </div>
    </div>
 
-We don’t want to let the participant navigate backwards or to continue
+In this silly example we don’t want to let the participant continue
 unless they’ve checked the box, so let’s change the footer to:
 
 ::
 
    <div class="row exp-controls">
      <div class="btn-group">
-       <button class="btn btn-default pull-right" disabled={{ consentNotGranted }} {{ action 'next' }} > Next </button>
+       <button class="btn btn-default pull-right" disabled={{ excellentNotChecked }} {{ action 'next' }} > Next </button>
      </div>
    </div>
 
-Notice the new property ``consentNotGranted``; this will require a new
+Notice the new property ``excellentNotChecked``; this will require a new
 computed field in our JS file:
 
 .. code:: javascript
@@ -268,7 +301,7 @@ computed field in our JS file:
        meta: {
            ...
        },
-       consentNotGranted: Ember.computed.not('consentGranted')
+       excellentNotChecked: Ember.computed.not('answer')
    });
 
 Adding CSS styling
@@ -336,8 +369,9 @@ your component.js file would define:
 
 .. code:: javascript
 
-   import ExpFrameBaseComponent from 'exp-player/components/exp-frame-base/component';
+   import ExpFrameBaseComponent from '../exp-frame-base/component';
    import layout from './template';
+   import VideoRecord from '../../mixins/video-record';
 
    export default ExpFrameBaseComponent.extend(VideoRecord, {
        type: 'exp-consent-form',
@@ -348,7 +382,7 @@ your component.js file would define:
    });
 
 Your frame can extend any number of mixins. For now, be careful to
-check, when you use a mixin, that your frame does not defining any
+check, when you use a mixin, that your frame does not define any
 properties or functions that will conflict with the mixin’s properties
 or functions. If the mixin has a function ``doFoo``, you can use that
 from your frame simply by calling ``this.doFoo()``.
@@ -404,8 +438,8 @@ directory, then use ``yuidoc --server`` to see the docs served locally.
 
 Include a screenshot in your frame documentation if possible! If your frame kind is 
 ``exp-smithlab-monkey-game``, name the screenshot 
-``exp-player/screenshots/ExpSmithlabMonkeyGame.png`` (i.e., go from
-dashes to CamelCase). For a simple frame, an actual screenshot is fine. If there are several 
+``exp-player/screenshots/Exp-smithlab-monkey-game.png`` (i.e., capitalize just the first letter). 
+For a simple frame, an actual screenshot is fine. If there are several 
 "phases" to your frame or different ways it can work, you may want to make a diagram 
 instead. When you run ``yarn run docs``, this screenshot gets copied over to the YUIdoc theme
 for the project and to the ``docs/assets`` directory. The former is used locally, the latter

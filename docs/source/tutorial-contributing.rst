@@ -4,7 +4,7 @@ Contributing to the codebase
 
 Lookit is an open-source project, meaning that the code is freely available and anyone can contribute. This includes the actual Lookit platform, the components used in studies, and the documentation. Community contributions and input are critical to the project!
 
-In this section, you'll make your first "Pull request" (PR) to propose a change to the documentation[#]_. Your change will just be to add yourself to a list of tutorial participants. This way, you'll be comfortable making substantive changes whenever you're ready!
+In this section, you'll make your first "Pull request" (PR) to propose a change to the documentation [#]_. Your change will just be to add yourself to a list of tutorial participants. This way, you'll be comfortable making substantive changes whenever you're ready!
 
 Later on in the tutorial, if you come across something confusing or you have an idea to improve the instructions or exercises, you can follow these same instructions to make the fix yourself - or request that Lookit staff address it.
 

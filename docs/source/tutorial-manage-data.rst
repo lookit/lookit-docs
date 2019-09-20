@@ -3,7 +3,7 @@ Managing study data
 ##################################
 
 
-
+    Adding someone else to your study (try it out)
     Trying as a participant to make fake data (need to let everyone "approve" on staging?)
         Tip: aim webcam at computer
     Consent manager

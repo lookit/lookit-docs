@@ -6,7 +6,7 @@ To get started, you need to get on Lookit!
 
 Step 1: Join the Lookit Slack workspace
 ----------------------------------------
-Click `here <https://join.slack.com/t/lookit-mit/shared_invite/enQtNzI0MTE2MzAzMzE4LTM3NTBlM2YxZWQ5Zjc4NjhiNGNhODNiNmQ3Mzg5NzYzYmY1ZTUwZDVlY2NkN2I5ZGRhNjQ0YTM3MTZjNTNmY2Y>`_ to join the Lookit Slack workspace. If you haven't used Slack before, you'll need to create an account; otherwise it will be added to your other workspaces. 
+Click `here <https://join.slack.com/t/lookit-mit/shared_invite/enQtNzU4MDAzNjYwMTAwLTZhNDM0NzU2MGMxZWNhZjcxZDU1ZWUyYzIzZjlkM2UyNTRiZjkyZmEwZjMxOGVmMDM3ZmNlNzMwM2Q5NTYwODU>`_ to join the Lookit Slack workspace. If you haven't used Slack before, you'll need to create an account; otherwise it will be added to your other workspaces. 
 
 Slack is a messaging platform that serves as the primary tool for communicatation about development and use of the Lookit platform. The Lookit Slack workspace is essentially a collection of "chat rooms" for various topics. You can use Slack via a web interface, a desktop app, and/or on your phone. 
 
@@ -52,4 +52,4 @@ Exercises
 
 2. Get a feel for the participant experience! Go to the main participant-facing portion of the staging server, https://staging-lookit.cos.io. Go to 'Studies,' select the study called 'Example study,' and participate in it! You'll be prompted to complete the demographic survey and register at least one child before you can start. We recommend making up responses and not using your real personal information on the staging server, as many researchers will have access to it and it is NOT treated as actual data (with all the care that entails). E.g., please don't enter your kids' actual birthdays or health info.
 
-3. [Extra credit] If you have young kids, take part in a currently-running study on the production server - the experience is different with a squirming kid in your lap! Create an account on the production server by going to https://lookit.mit.edu and clicking 'Sign up.' So that you can later make a researcher account, use a *different* email account to register than you use for your regular OSF account, if you have one. For instance, use a personal instead of work email. Please enter actual data on the production server - you are participating in real research here.
+3. [Extra credit] If you have young kids, take part in a currently-running study on the production server - the experience is different with a squirming kid in your lap! Create an account on the production server by going to https://lookit.mit.edu and clicking 'Sign up.' So that you can later make a researcher account, use a *different* email account to register than you use for your regular OSF account, if you have one. For instance, use a personal instead of work email. Please enter actual, not made-up, data on the production server - you are participating in real research here.
