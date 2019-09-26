@@ -15,7 +15,9 @@ Table of contents:
 
    tutorial-access
    tutorial-contributing
-   tutorial-study-setup
+   tutorial-first-study
+   tutorial-second-study
+   tutorial-protocol-exercises
    tutorial-manage-data
    tutorial-github
    tutorial-next-steps
