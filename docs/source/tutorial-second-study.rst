@@ -271,72 +271,72 @@ Almost done with the preparations! We're just going to give particpants one more
 
 .. code:: json
 
-"final-instructions": {
-    "kind": "exp-lookit-instructions",
-    "blocks": [
-        {
-            "text": "The video section will take about 3 minutes to complete. After that, you will be able to select a level of privacy for your data."
-        },
-        {
-            "title": "Study overview",
-            "listblocks": [
-                {
-                    "text": "To get your baby's attention, first they will see a moving shape and hear a chime. "
-                },
-                {
-                    "text": "Then your baby will watch four videos, each about 20 seconds long."
-                }
-            ]
-        },
-        {
-            "title": "During the videos",
-            "listblocks": [
-                {
-                    "text": "Please face away from the screen, holding your infant so they can look over your shoulder. Please don't look at the videos yourself--we may not be able to use your infant’s data in that case.",
-                    "image": {
-                        "alt": "Father holding child looking over his shoulder",
-                        "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
-                    }
-                },
-                {
-                    "text": "Don’t worry if your baby isn’t looking at the screen the entire time! Please just try to keep them facing the screen so they can look if they want to."
-                }
-            ]
-        },
-        {
-            "title": "Pausing and stopping",
-            "listblocks": [
-                {
-                    "text": "If your child gets fussy or distracted, or you need to attend to something else for a moment, you can pause the study by pressing the space bar."
-                },
-                {
-                    "text": "If you need to end the study early, try closing the window or tab and you should see an 'exit' option pop up. You’ll be prompted to note any technical problems you might be experiencing and to select a privacy level for your videos."
-                }
-            ]
-        },
-        {
-            "text": "Please turn the volume up so it's easy to hear but still comfortable.",
-            "title": "Test your audio",
-            "mediaBlock": {
-                "text": "You should hear 'Ready to go?'",
-                "isVideo": false,
-                "sources": [
+   "final-instructions": {
+        "kind": "exp-lookit-instructions",
+        "blocks": [
+            {
+                "text": "The video section will take about 3 minutes to complete. After that, you will be able to select a level of privacy for your data."
+            },
+            {
+                "title": "Study overview",
+                "listblocks": [
                     {
-                        "src": "MP3_SOURCE_HERE",
-                        "type": "audio/mp3"
+                        "text": "To get your baby's attention, first they will see a moving shape and hear a chime. "
                     },
                     {
-                        "src": "OGG_SOURCE_HERE",
-                        "type": "audio/ogg"
+                        "text": "Then your baby will watch four videos, each about 20 seconds long."
                     }
-                ],
-                "mustPlay": true,
-                "warningText": "Please try playing the sample audio."
+                ]
+            },
+            {
+                "title": "During the videos",
+                "listblocks": [
+                    {
+                        "text": "Please face away from the screen, holding your infant so they can look over your shoulder. Please don't look at the videos yourself--we may not be able to use your infant’s data in that case.",
+                        "image": {
+                            "alt": "Father holding child looking over his shoulder",
+                            "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
+                        }
+                    },
+                    {
+                        "text": "Don’t worry if your baby isn’t looking at the screen the entire time! Please just try to keep them facing the screen so they can look if they want to."
+                    }
+                ]
+            },
+            {
+                "title": "Pausing and stopping",
+                "listblocks": [
+                    {
+                        "text": "If your child gets fussy or distracted, or you need to attend to something else for a moment, you can pause the study by pressing the space bar."
+                    },
+                    {
+                        "text": "If you need to end the study early, try closing the window or tab and you should see an 'exit' option pop up. You’ll be prompted to note any technical problems you might be experiencing and to select a privacy level for your videos."
+                    }
+                ]
+            },
+            {
+                "text": "Please turn the volume up so it's easy to hear but still comfortable.",
+                "title": "Test your audio",
+                "mediaBlock": {
+                    "text": "You should hear 'Ready to go?'",
+                    "isVideo": false,
+                    "sources": [
+                        {
+                            "src": "MP3_SOURCE_HERE",
+                            "type": "audio/mp3"
+                        },
+                        {
+                            "src": "OGG_SOURCE_HERE",
+                            "type": "audio/ogg"
+                        }
+                    ],
+                    "mustPlay": true,
+                    "warningText": "Please try playing the sample audio."
+                }
             }
-        }
-    ],
-    "nextButtonText": "Start the videos! \n (You'll have a moment to turn around.)"
-}
+        ],
+        "nextButtonText": "Start the videos! \n (You'll have a moment to turn around.)"
+    }
 
 The JSON above sets up several sections ("blocks") with bulleted lists of information. (For a real study you might also consider splitting this frame into several frames - a study overview, "during the videos" directions, pausing and stopping, and the audio test. More things to click through, but less text on the page.)
 
@@ -395,7 +395,7 @@ Again, you will need to browse the `available audio and video files <http://www.
 
    You want your audio instructions to be as concise as possible, but still friendly and complete. Figuring out all the different audio files you need is often a lesson in just how much communication you take for granted in the lab!
    
-   Save your JSON and take a look at what happens. You should see three phases: a spinning ball with some audio instructions; a "calibration" section where an attention-grabber pops back and forth on the screen (so that your coders will be able to verify they can see the child looking back and forth), and then a test video where two women are talking but we can only hear one of them.
+Save your JSON and take a look at what happens. You should see three phases: a spinning ball with some audio instructions; a "calibration" section where an attention-grabber pops back and forth on the screen (so that your coders will be able to verify they can see the child looking back and forth), and then a test video where two women are talking but we can only hear one of them.
     
 7. Survey
 ~~~~~~~~~
@@ -458,7 +458,11 @@ Save your JSON and take a look at the preview. You should see a simple form with
         
 You don't need to understand all the syntax above - but even if it looks pretty opaque, you can probably see the basic structure. There are two questions Q1 and Q2 defined in "properties," with some corresponding additional information under "options." Each one has some actual question text (the "title"), some options from 0 to 6, and will be shown as radio buttons. 
 
-Go ahead and try adding the next question - call it "Q3": "Parents should pay attention to what their child likes and dislikes." It will have the same format and possible answers as the others. You can copy and paste the information about "Q2" under both "properties" and "options" and just edit it!
+Go ahead and try adding the next question (call it "Q3"): 
+
+"Parents should pay attention to what their child likes and dislikes." 
+
+It will have the same format and possible answers as the others. You can copy and paste the information about "Q2" under both "properties" and "options" and just edit it!
     
 8. Exit survey
 ~~~~~~~~~~~~~~
