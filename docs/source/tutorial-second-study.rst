@@ -486,14 +486,178 @@ Finally, pretend that your baby has fussed out partway through, and try pressing
 Set up counterbalancing
 -----------------------
 
-Set up stimuli for test trial
-------------------------------
-Note about there being instructions for this
+Your plan for this study is actually to have four test trials. Either the audio will come from the left speaker, right speaker, right speaker, left speaker; or it will come from right speaker, left speaker, left speaker, right speaker.
+
+To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study JSON is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`_. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
+
+We will be providing the randomizer with three main things: a list of frames (``frameList``), a set of properties all the frames should share, just for convenience (``commonFrameProperties``), and a list of sets of parameters to substitute in (``parameterSets``)- the randomizer will choose one of these at the start of the study and do the substitution. 
+
+Let's start with just a skeleton of our test trials frame:
+
+.. code:: json
+
+   "test-trials": {
+        "kind": "choice",
+        "sampler": "random-parameter-set",
+        "frameList": [],
+        "parameterSets": [],
+        "commonFrameProperties": {}
+    }
+
+For each of the four test trials, we're going to want to use an exp-lookit-video frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
+
+.. code:: json
+
+   "commonFrameProperties": {
+        "kind": "exp-lookit-video",
+        "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
+        "testCount": 1,
+        "audioTypes": [
+            "ogg",
+            "mp3"
+        ],
+        "pauseAudio": "pause_HO",
+        "videoTypes": [
+            "webm",
+            "mp4"
+        ],
+        "attnSources": "attentiongrabber",
+        "introSources": [],
+        "musicSources": [],
+        "unpauseAudio": "return_after_pause_HO",
+        "announceLength": 3,
+        "calibrationLength": 0,
+        "calibrationPositions": [
+            "left",
+            "right",
+            "left",
+            "right",
+            "center"
+        ],
+        "calibrationAudioSources": "chimes",
+        "calibrationVideoSources": "attentiongrabber"
+    }
+    
+Note that we set ``"calibrationLength": 0`` above. That's because we only want to do calibration on the first trial, so we'll use 0 as the default and just override it on the first trial.
+
+Now let's expand that ``frameList``. The only things that vary each frame are going to be the actual test stimuli (``sources`` and ``altSources``) and the announcement audio. Here's what our frame list would look like for the left, right, right, left condition. Notice that we add one more frame at the very end where we skip the test trial entirely, and don't do recording - we just use that to do an announcement phase where we tell the parent they're all done and can turn back around!
+
+.. code:: json
+
+   "frameList": [
+        {
+            "sources": "abba1",
+            "altSources": "baab1",
+            "audioSources": "video_1_HO_intro",
+            "calibrationLength": 2000
+        },
+        {
+            "sources": "abba2",
+            "altSources": "baab2",
+            "audioSources": "video_02_HO"
+        },
+        {
+            "sources": "abba3",
+            "altSources": "baab3",
+            "audioSources": "video_03_HO"
+        },
+        {
+            "sources": "abba4",
+            "altSources": "baab4",
+            "audioSources": "video_04_HO"
+        },
+        {
+            "sources": [],
+            "altSources": [],
+            "doRecording": false,
+            "audioSources": "all_done_HO"
+        }
+    ]
+    
+That's great, but it hard-codes in the stimuli for this counterbalancing condition. Actually, sometimes we want to use "abba[N]" as the primary videos (and "baab[N]" as the backup in case the parent pauses during the test), and other times we want to use "baab[N]" as the primary videos. That's just what this randomizer is for! We'll stick in placeholders for the sources/altSources like this:
+
+.. code:: json
+
+   "frameList": [
+        {
+            "sources": "VIDEO1",
+            "altSources": "ALTVIDEO1",
+            "audioSources": "video_1_HO_intro",
+            "calibrationLength": 2000
+        },
+        {
+            "sources": "VIDEO2",
+            "altSources": "ALTVIDEO2",
+            "audioSources": "video_02_HO"
+        },
+        {
+            "sources": "VIDEO3",
+            "altSources": "ALTVIDEO3",
+            "audioSources": "video_03_HO"
+        },
+        {
+            "sources": "VIDEO4",
+            "altSources": "ALTVIDEO4",
+            "audioSources": "video_04_HO"
+        },
+        {
+            "sources": [],
+            "altSources": [],
+            "doRecording": false,
+            "audioSources": "all_done_HO",
+            "calibrationLength": 0
+        }
+    ]
+    
+Then we also need to define the ``parameterSets``, which will let us define values for ``VIDEO1``, ``VIDEO2``, etc. The ``parameterSets`` value is a list of sets; each set should define all the values we need for one condition:
+
+.. code:: json
+
+   "parameterSets": [
+        {
+            "VIDEO1": "abba1",
+            "VIDEO2": "abba2",
+            "VIDEO3": "abba3",
+            "VIDEO4": "abba4",
+            "ALTVIDEO1": "baab1",
+            "ALTVIDEO2": "baab2",
+            "ALTVIDEO3": "baab3",
+            "ALTVIDEO4": "baab4"
+        },
+        {
+            "VIDEO1": "baab1",
+            "VIDEO2": "baab2",
+            "VIDEO3": "baab3",
+            "VIDEO4": "baab4",
+            "ALTVIDEO1": "abba1",
+            "ALTVIDEO2": "abba2",
+            "ALTVIDEO3": "abba3",
+            "ALTVIDEO4": "abba4"
+        }
+    ]
+    
+By default, half of kids will be assigned to the first set, and half to the second. That's what we want here, so we don't need to do anything more. But if you wanted to assign more kids to one condition (for instance, because you had enough data from one condition) or assign kids to conditions based on their ages, you could also provide a ``parameterSetWeights`` property for this randomizer. 
+
+Putting it all together, you should now have a test-trials randomizer frame with ``frameList``, ``parameterSets``, and ``commonFrameProperties`` defined. Give it a try - a few times! Sometimes you should see one condition, and sometimes the other. (If you really want to see how a particular parameterSet works, that's another reason to provide the ``parameterSetWeights`` - e.g., you could set that to ``[1, 0]`` to only use the first set.)
+
+About creating and hosting your stimuli
+----------------------------------------
+
+In this example, you used stimuli already posted for you at `<www.mit.edu/~kimscott/intermodal/>`. When you create your own studies, note that you'll in general need to create and host your own stimuli. There are lots of good (and cheap) solutions for hosting your content, for instance Google CloudFront and Amazon AWS. Because researchers' needs here will vary substantially, stimulus creation and hosting is outside the scope of this tutorial. However, resources are available under :ref:`stim_prep`.
+
+About communicating with parents
+---------------------------------
+
+One of the biggest challenges we have observed for researchers transitioning to running studies online isn't technical: it's the difference in communication medium. Instead of talking with parents face-to-face, answering the questions they bring up and tuning your explanations based on how they respond, you now have to anticipate the wide variety of ways people might be confused or concerned. And you're communicating, often in text, with sleep-deprived parents at home who are holding squirming infants on their laps (and perhaps trying to keep siblings occupied too!). 
+
+It is HARD, for instance, to write a few-sentence "elevator pitch" for your study that really explains - in an accessible way! - what your question is and why it's interesting. For most scientists, this is substantially harder than regular scientific writing. 
+
+You may realize there's more than you thought to explain about how to do your study (e.g. how to avoid biasing the child), and that you want to add some training trials with feedback, video instructions, or more detailed audio instructions. It's also very hard to condense text instructions into something concise, non-condescending, and complete. (The examples above aren't perfect!)
+
+So this is a general note of caution: yes, in some respects it's easy to "throw a study up on Lookit." (Or at least we're trying to make it easy!) But it will likely take you longer than you expect to go from "We know exactly how we want our study to work" to "We're up and running," in large part because of these sorts of details. And it is absolutely worth putting in the work to come up with a study protocol that doesn't just "work" but is really clear and easy to follow for parents - not least because we're all sharing the same subject pool and reputation as a fun place to do studies. 
 
 Using the documentation to learn about more advanced features
 --------------------------------------------------------------
 
-Notes about communicating with parents
-------------------------------------------------------
+We hope that working through some examples has been helpful, but the Lookit documentation goes beyond just the tutorial! You can explore using the sidebar on the left to view detailed guides to preparing your study (including advanced topics not covered in this tutorial), managing your data, and developing your own custom frames. We recommend using the search function within the documentation, which ensures your results come only from the current, up-to-date version of the docs, rather than any archived older versions that might pop up on Google.
 
-importance in online testing. Instructions, debriefing, overview.

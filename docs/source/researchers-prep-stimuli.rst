@@ -1,3 +1,5 @@
+.. _stim_prep:
+
 Preparing your stimuli
 ======================
 

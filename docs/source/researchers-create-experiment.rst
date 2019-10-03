@@ -246,6 +246,8 @@ Defining frame parameters
 Rather than inserting actual values for frame properties such as stimulus image locations, you may want sometimes want to use a variable the way you would in a programming language - for instance, so that you can show the same cat picture throughout a group of frames, without having to replace it in ten separate places if you decide to use a different one.
 You can accomplish this (and more, including selecting randomly from or cycling through lists of values) by setting the ``"parameters"`` property on any frame (including frame groups and randomizers). For details, see the `exp-frame-base documentation <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_parameters>`_.
 
+.. _random_parameter_set:
+
 Randomizer frames
 -----------------
 
