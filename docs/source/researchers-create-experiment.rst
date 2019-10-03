@@ -171,6 +171,8 @@ recorded and may be included in the eventTimings object sent with the
 data are also described.
 
 
+.. _typical_study_schema:
+
 A Lookit study schema: general principles and instructions
 ------------------------------------------------------------
 
