@@ -18,7 +18,7 @@ a model for *containers*, analogous to the class-object relationship in object-o
 application plus the necessary libraries and binaries needed to build a *container*. Since they are templates, *images*
 are what can be shared when exchanging containerized applications. On the other hand, containers are an ephemeral running
 of a process, which makes it impossible to share them. Instances of the class, or objects, are to Class as a *container*
-is to an *image*. A *container* is a running instance of an *image*. [*]_
+is to an *image*. A *container* runs a program in the context of an *image*. [*]_
 
 Docker is software that allows you to create isolated, independent environments, much like a virtual machine. To
 understand how Docker accomplishes these feats, you must first understand both the PPID/PID hierarchy of the Linux
@@ -34,9 +34,9 @@ distributions of Linux, the ``init`` process was used. [#]_ The job of this proc
 any orphaned processes (child processes whose parent processes have been killed). All of these programs can interact
 with each other through shared memory and message passing method.
 
-Shared memory is easily understood via the Producer, Consumer analogy. Imagine you have two processes, a producer
-process and a consumer process. When the producer process creates a good, it will put it in a store where the consumer
-process can find and consume it. This store is shared memory.
+Shared memory is easily understood via the Producer, Consumer scenario. Imagine you have two people, a producer
+and a consumer. When the producer creates a good, it will put it in a store where the consumer can find and consume it.
+This store is like shared memory.
 
 The message passing method utilized communication links to connect two processes and allow them to send messages to each
 other. After a link is established, processes can send messages that contain a header and a body. The header contains
@@ -45,16 +45,19 @@ the metadata, such as the type of message, recipient, length, etc.
 These communication methods allow for processes to interact with each other, and, as you can imagine, this creates a
 problem when it comes to isolation.
 
-Programs can interact with each other when they're in the same *namespace*, which I refer to as a ``systemd`` tree. [#]_ In
-other words, all the programs that stem from the same ``systemd`` command can interact with each other, but if you were
-to have a second ``systemd`` tree, its programs could be isolated from those of the first. This is where Docker comes in.
-Docker creates a new namespace, a.k.a. a *userspace*. When the Docker process is run, it is launched from the real
-``systemd`` process and given a normal PID. A new feature released by Linux in 2008, however, allows Docker to have more
-than one PID. With this new feature, *userspaces* come with a table that can map a relative PID seen by your container
-in said *userspace* to the actual PID seen by your machine. This allows Docker to take on PID 1 in your container.
+that systemd is a daemon process which creates a global namespace, and child processes create their own nested namespaces within the context of their parent namespace.
+
+Programs can interact with each other when they're in the same *namespace*, referred to as a ``systemd`` tree. [#]_ In
+other words, the ``systemd`` is a daemon process that creates a global namespace, and all programs that share the same
+``systemd`` command can interact with each other. Child processes create their own ``systemd``, or nested namespaces,
+withing the context of their parent namespace. Docker utilizes this to create a new namespace, a.k.a. a *userspace*. When
+the Docker process is run, it is launched from the real ``systemd`` process and given a normal PID. A new feature released
+by Linux in 2008 allows Docker to have more than one PID. With this new feature, the nested namespace comes with a table
+that can map a relative PID seen by your container in said nested nameapce to the actual PID seen by your machine.
+This allows Docker to take on PID 1 in your container.
 
 Now, all programs that stem from the Docker branch will see Docker in the same way they see the ``systemd`` process. It is
-the root node, and they will not leave the branch, effectively cutting off interaction between those processes and the
+the root node, and they will not leave the nested namespace, effectively cutting off interaction between those processes and the
 ones on the rest of the real ``systemd`` tree.
 
 Though this is a step closer to isolation, it is not quite there yet. Even though processes can't interact with the main
@@ -113,14 +116,31 @@ Ngrok
 
 Ngrok is used in the development process to act as a tunnel into your PC. It is not secure to allow access into your PC
 or local address through a public channel, as this can open you up to malicious attacks. Ngrok allows you to securely
-provide acces to your local address through something public, like the internet. When Ngrok is running on your machine,
+provide access to your local address through something public, like the internet. When Ngrok is running on your machine,
 it gets the port of the network service, which is usually a web server, and then connects to the Ngrok cloud service.
 This cloud service takes in traffic and requests from a public address and then relays that traffic directly to the
 Ngrok process running on your machine, which then passes it along to the local address you specify. By doing this, you
 can minimize the interaction between outside traffic and your personal machine.
 
-When trying to stream videos on the development stage, AWS will need an address to send the video to. Ngrok will create
+When trying to stream videos in the development stage, the ember frameplayer will stream the video to PIPE's webservers,
+which will then write a request to AWS S3. A webhook will then send this video data back to the dummy url generated by ngrok,
+which then tunnels it to your local machine.
+
+
+
+.. When trying to stream videos on the development stage, AWS will SEND to PIPe need an address to send the video to. Ngrok will create
 a dummy link for this purpose and then send the video from this dummy address to your PC.
+
+
+.. From the deployed ember framplayer app the video is streamed to pipe's webservers, which forward/write request to video
+data to AWS S3 instance. Webhook (allows us to say send a payload to a certain address when u finish doing this) sends request
+back to url generated by ngrok which serves as a local tunnel to your computer since u cant point a webhook to local host
+
+.. In short, video data goes through this process: [Frameplayer app]--pipe client-->[Pipe service]--AWS storage trigger-->[AWS S3],
+then when the trigger finishes storing, it trips the “Finished uploading to S3” webhook that then sends a payload back
+to the lookit-API server, which has a handler that renames the file that was just stored in S3, among other things
+so that handler receives a payload from Pipe’s “finished uploading to S3 webhook”
+i.e., it’s Pipe telling lookit-API “hey, I finished putting some video in S3. Here’s some identifying data about that video.”
 
 
 
@@ -134,13 +154,13 @@ ___________________
 Google Cloud
 -------------
 
-The Cloud service is where all the studies are stored.
+The Cloud service is where all the code for the studies and
 
 
 Amazon Web Services
 --------------------
 
-This is where the consent videos are stored??
+This is where al web-cam video recorded is stored
 
 Celery
 -------
@@ -155,13 +175,17 @@ Allows you to log into your account securely
 Lookit Ember Frameplayer
 ------------------------
 
-Consent manager videos
 
-ADDPIPE
+The frameplayer that provides the functionality for the experiments themselves. It parses the JSON documents
+specifying the study protocol into a sequence of "frames" and runs them. For more information, see :ref:`frame_development`
+
+
+PIPE
 -------
 
-ADDPIPE is used to record the video and audio. It connects to the hardware of your computer and films for you. It also
-converts recorded files to ,mp4. https://addpipe.com/about
+
+PIPE is a wrapper around the webRTC recorder that handles streaming. It is used to record the video and audio. WebRTC is
+what connects to the hardware of your computer and films for you. PIPE converts recorded files to ,mp4. https://addpipe.com/about
 
 
 

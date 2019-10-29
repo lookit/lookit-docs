@@ -136,3 +136,164 @@ To fix, try running something like:
    $ pip install --install-option="--include-path=/usr/local/include" --install-option="--library-path=/usr/local/lib" pygraphviz
 
 Then run ``sh up.sh again.``
+
+Continued Installation for developers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you want to work on the functionality of Lookit, there are a few more installations steps you need to take. More information
+about the following programs can be found in the :ref:`Technical_glossary`
+
+Install Docker
+--------------
+
+Follow  `these instructions <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04>`_.
+Make sure you select the proper OS.
+
+
+Install Postgres
+----------------
+
+**For Linux Users**
+
+Before you get started, update your system with this command:
+
+``sudo apt-get update``
+
+Make sure you have python3 and pip installed:
+
+``sudo apt install python3``
+
+``sudo apt install python-pip``
+
+Now, begin to install Postgres:
+
+``sudo apt-get install PostgreSQL PostgreSQL-contrib``
+
+Run the following command. It will take inside the Postgres world.
+
+``sudo -u postgres psql postgres``
+
+Every command now should start with postgres=#
+
+In the postgres world, run the following commands:
+
+``#\password postgres``
+
+You should be prompted to enter a new password. Don’t type anything, just hit enter twice. This should clear the password.
+
+postgres=# ``create database lookit``
+
+postgres=# ``grant all privileges on database lookit to postgres``
+
+If at this point you still do not have access to the lookit database, run the following commands:
+
+``sudo vi /etc/postgresql/10/main/pg_hba.conf``
+
+``pg_ctl reload``
+
+A long document with # on the leftmost side of almost every line should open up. Scroll to the bottom. There will be a
+few lines that don’t start with #. They might be a different color and will start with either local or host. The last word
+in each of those lines should be trust. If it is not, switch into editing mode ( hit esc then type i and hit enter ) and
+change them to say trust. Then, save the file ( hit esc and then type :x before hitting enter ). You should now have access.
+
+
+
+
+
+Install RabbitMQ
+----------------
+
+**For Linux Users**
+
+First, run the following command:
+
+``sudo apt install rabbitmq-server``
+
+Now that rabbitmq server is installed, create an admin user with the following commands:
+
+``sudo rabbitmqctl add_user admin password``
+
+``sudo rabbitmqctl set_user_tags admin administrator``
+
+``sudo rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"``
+
+Make sure that the server is up and running:
+
+``sudo systemctl stop rabbitmq-server.service``
+
+``sudo systemctl start rabbitmq-server.service``
+
+``sudo systemctl enable rabbitmq-server.service``
+
+If you are having problems creating a user or getting the server running, try the following commands:
+
+``sudo rabbitmq-plugins enable rabbitmq_management``
+
+``sudo chown -R rabbitmq:rabbitmq /var/lib/rabbitmq/``
+
+``sudo rabbitmqadmin declare queue --vhost=/ name=email``
+
+``sudo rabbitmqadmin declare queue --vhost=/ name=builds``
+
+``sudo rabbitmqadmin list queues``
+
+When you run the last command, you should see the following ASCII art: ::
+
+    +--------+----------+
+    | name  | messages  |
+    +--------+----------+
+    | builds|     0     |
+    | email |     0	|
+    +--------+----------+
+
+
+Install Ngrok
+-------------
+
+**For Linux Users**
+
+To install, run this command:
+
+``sudo snap install ngrok``
+
+To connect to your local host run this command:
+
+``ngrok http “[https://localhost:8000](https://localhost:8000)"``
+
+
+
+
+How Do These Programs Work Together?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+The following diagrams illustrate how different parts of the API interact with each other. For more information about
+these programs, please reference the :ref:`Technical_glossary`
+
+.. image:: _static/img/RabbitMQ.png
+
+Every time the user makes a request, the request is sent through μWSGI. For certain requests that take more than a few
+seconds (e.g., building study dependencies, sending mail, etc.), the WSGI handler defers the work by kicking off a new
+celery task. The payload for this task is mediated by the RabbitMQ service. If the request is short enough, HTTP will
+handle the request on its own.
+
+
+
+.. image:: _static/img/celery.png
+
+Celery is used to build and relay tasks and make Lookit more efficient. Lengthy requests are mediated by RabbitMQ for celery to
+complete on the side. The tasks sent to celery are ones that would ruin the user experience if
+they backlogged the HTTPs request cycle. Programs like celery are used to keep the request cycle short.
+
+
+.. image:: _static/img/docker.png
+
+When you want to build a study, celery sends that request to Docker, which groups individual studies into nice containers
+for reproducibility of the experiment functionality and protection from later changes to the code. Docker then sends the
+study static files back to celery. After building the study, celery sends deployable static files to Google Cloud.
+
+
+
+.. image:: _static/img/use-case.png
+
+This is a diagram of all interactions possible with the Lookit API. On the rightmost side are all external resources being
+used/

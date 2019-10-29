@@ -1,3 +1,5 @@
+.. _frame_development:
+
 Creating custom frames
 ==========================
 
