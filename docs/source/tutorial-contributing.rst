@@ -56,7 +56,7 @@ The PR will now be in a list for Lookit staff to review. You can return to this 
 .. image:: _static/img/tutorial/pr_tab.png
     :alt: See all PRs on GitHub
 
-This process is the easiest way to make a change to a particular file in the documentation. If you want to edit multiple files, add new files, and/or reorganize things, you will probably want to try out your changes locally before submitting your PR. You can learn more in the `Contributor Guidelines`_. You don't need to know how to do that for the purposes of this tutorial, though - just know it's *possible* to deal with multiple files at once.
+This process is the easiest way to make a change to a particular file in the documentation. If you want to edit multiple files, add new files, and/or reorganize things, you will probably want to try out your changes locally before submitting your PR. You can learn more in the :ref:`section on Contributor Guidelines<Contributor Guidelines>`. You don't need to know how to do that for the purposes of this tutorial, though - just know it's *possible* to deal with multiple files at once.
 
 
 List of tutorial participants
@@ -72,20 +72,20 @@ What if you notice a problem while using Lookit, or something unclear in the doc
 .. image:: _static/img/tutorial/issues_tab.png
     :alt: See all issues on GitHub
 
-To track bug reports and feature requests, we use GitHub **issues**. You can see issues by clicking on the "Issues" tab in the appropriate repository:
+To track bug reports and feature requests, we use GitHub **issues**. You can see issues by clicking on the "Issues" tab in the appropriate repository or "repo":
 
-- `lookit-api <https://github.com/lookit/lookit-api>`_ for the Lookit site: issues with anything to do with participant login or data, how current and past studies are displayed to participants, how you view data and manage your studies
+- `lookit-api <https://github.com/lookit/lookit-api>`_ is the repo for the Lookit site: issues with anything to do with participant login or data, how current and past studies are displayed to participants, how you view data and manage your studies
 
-- `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`_ for the experiment components themselves: issues with how particular frames behave, frames you'd find useful, counterbalancing/condition assignment, etc.
+- `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`_ is the repo for the experiment components themselves: issues with how particular frames behave, frames you'd find useful, counterbalancing/condition assignment, etc.
 
-- `lookit-docs <https://github.com/lookit/lookit-docs>`_ for the documentation: anything about the docs you're reading now!
+- `lookit-docs <https://github.com/lookit/lookit-docs>`_ is the repo for the documentation: anything about the docs you're reading now!
 
 To request a feature or report a bug, first search the existing issues to see if your idea is already there.
 
 .. image:: _static/img/tutorial/search_issues.png
     :alt: Search issues on GitHub
 
-If so, comment on it so Lookit staff know there's more interest! If not, click the green "New issue" button at the top right.
+If so, comment on it or add a thumbs-up reaction so Lookit staff know there's more interest! If not, click the green "New issue" button at the top right.
 
 .. image:: _static/img/tutorial/new_issue.png
     :alt: Create new issue on GitHub

@@ -5,7 +5,7 @@ Building a real study from the ground up
 Now that you've gotten your feet wet and are comfortable using Lookit's experimenter interface to modify your study JSON, it's time to take a closer look at how to build your own study. In this section, you'll build a functional infant study "from the ground up," adding frames one at a time. 
 
 Introduction: intermodal matching study
----------------
+---------------------------------------
 
 Imagine you're looking to replicate the finding that infants can detect which moving face "goes with" a speech stream, an ability known as intermodal matching. In your study, babies will watch several short videos of two women's faces - one face on the left and one on the right. Both women are talking, but babies only hear the audio from one of them in each clip. (There are four trials, and who's talking is counterbalanced - babies either hear left, right, right, left audio or right, left, left, right audio.) You plan to code the video collected on Lookit for preferential looking - whether the child is looking to the left of the screen, right of the screen, or away. Because you are eventually hoping to develop a measure that can be used to detect individual differences linked to social development, you are also including a short survey on parenting beliefs.
 
@@ -265,7 +265,7 @@ There are a few stimuli above that you'll need to insert. You can see all the st
 Then make sure to also add "video-preview-exp" and "video-preview" (in that order!) to your ``sequence``. You can put these at the start of the sequence to make them easy to see right away. Save and take a look at the preview!
 
 5. Instructions
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Almost done with the preparations! We're just going to give particpants one more frame with directions so these are fresh in their minds. This time we'll use an exp-lookit-instructions frame, which allows showing a fairly flexible combination of text, audio, video, and the user's own webcam. Here's a starting point for the frame to add:
 
@@ -648,13 +648,13 @@ In this example, you used stimuli already posted for you at `<www.mit.edu/~kimsc
 About communicating with parents
 ---------------------------------
 
-One of the biggest challenges we have observed for researchers transitioning to running studies online isn't technical: it's the difference in communication medium. Instead of talking with parents face-to-face, answering the questions they bring up and tuning your explanations based on how they respond, you now have to anticipate the wide variety of ways people might be confused or concerned. And you're communicating, often in text, with sleep-deprived parents at home who are holding squirming infants on their laps (and perhaps trying to keep siblings occupied too!). 
+One of the biggest challenges we have observed for researchers transitioning to running studies online isn't technical: it's the difference in communication medium. Instead of talking with parents face-to-face--answering the questions they bring up and tuning your explanations based on how they respond--you now have to anticipate the wide variety of ways people might be confused or concerned. And you're communicating, generally using text, with sleep-deprived parents at home who are holding squirming infants on their laps (and perhaps trying to keep siblings occupied too). 
 
 It is HARD, for instance, to write a few-sentence "elevator pitch" for your study that really explains - in an accessible way! - what your question is and why it's interesting. For most scientists, this is substantially harder than regular scientific writing. 
 
-You may realize there's more than you thought to explain about how to do your study (e.g. how to avoid biasing the child), and that you want to add some training trials with feedback, video instructions, or more detailed audio instructions. It's also very hard to condense text instructions into something concise, non-condescending, and complete. (The examples above aren't perfect!)
+It's also very hard to condense text instructions into something concise, non-condescending, and complete. (The examples above aren't perfect!) You may realize there's more than you thought to explain about how to do your study (e.g. how to avoid biasing the child), and that you want to add some training trials with feedback, video instructions, or more detailed audio instructions. 
 
-So this is a general note of caution: yes, in some respects it's easy to "throw a study up on Lookit." (Or at least we're trying to make it easy!) But it will likely take you longer than you expect to go from "We know exactly how we want our study to work" to "We're up and running," in large part because of these sorts of details. And it is absolutely worth putting in the work to come up with a study protocol that doesn't just "work" but is really clear and easy to follow for parents - not least because we're all sharing the same subject pool and reputation as a fun place to do studies. 
+So this is a general note of caution: yes, in some respects it's easy to "throw a study up on Lookit." (Or at least we're trying to make it easy!) But it will likely take you longer than you expect to go from "We know exactly how we want our study to work" to "We're up and running," in large part because of these sorts of details. And it is absolutely worth putting in the time to come up with a study protocol that doesn't just "work" but is clear and easy to follow for parents - not least because we're all sharing the same subject pool and reputation as a fun place to do studies. 
 
 Using the documentation to learn about more advanced features
 --------------------------------------------------------------

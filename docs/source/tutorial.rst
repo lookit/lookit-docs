@@ -19,5 +19,4 @@ Table of contents:
    tutorial-second-study
    tutorial-protocol-exercises
    tutorial-manage-data
-   tutorial-github
    tutorial-next-steps

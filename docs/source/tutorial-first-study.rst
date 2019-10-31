@@ -460,7 +460,7 @@ Return to the study edit page and open up the JSON editor again. Remove that "ne
     
 Try deleting one of these lines, like ``"PIContact": "Jane Smith at (123) 456-7890",``. Close, save, and refresh your preview. Once you get to the consent page, you should see an error like this complaining about the missing parameter:
 
-.. image:: _static/img/tutorial/sequence_error.png
+.. image:: _static/img/tutorial/missing_parameter.png
     :alt: Example missing parameter error
     
 Note that this doesn't stop the frame from working at all (that bit of text is just missing from the consent form if you look carefully) - but this sort of error can be a useful clue in more complicated situations!
