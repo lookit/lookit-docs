@@ -467,7 +467,7 @@ It will have the same format and possible answers as the others. You can copy an
 8. Exit survey
 ~~~~~~~~~~~~~~
 
-Finally, to wrap up our study we need to include an "exp-lookit-exit-survey" frame. (This is required of all Lookit studies to keep the experience for parents fairly consistent.) This is where parents have an option to choose how you may share their video, if at all, and to give you some feedback if they want to. It's also where you'll provide some "debriefing" information, just like you might when chatting with the family after they came into the lab. There are more guidelines about what your debriefing should contain under :ref:`debriefing_info`. 
+Finally, to wrap up our study we need to include an "exp-lookit-exit-survey" frame. (This is required of all Lookit studies to keep the experience for parents fairly consistent.) This is where parents have an option to choose how you may share their video, if at all, and to give you some feedback if they want to. It's also where you'll provide some "debriefing" information, just like you might when chatting with the family after they came into the lab. There are more guidelines about what your debriefing should contain under :ref:`the sample study outline <debriefing-info>`. 
 
 You guessed it - copy and paste the frame below into ``frames`` in your JSON, and add "exit-survey" to your ``sequence``. Put the frames in your ``sequence`` in order and try out the entire study! 
 

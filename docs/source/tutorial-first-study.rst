@@ -59,6 +59,8 @@ Congratulations! You've created and edited your first study.
 Step 2: Preview your study (and learn a bit about JSON on the way)
 -------------------------------------------------------------------
 
+.. _Building study dependencies:
+
 You may have noticed that below your thumbnail and basic study info, there's a section about the "status" of your study. This section is where you will submit your study for approval by Lookit staff when it's ready, and start and stop data collection. 
 
 This section also shows whether your study "dependencies" are "built" yet. You should see a bar like this:

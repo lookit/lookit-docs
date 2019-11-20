@@ -25,6 +25,7 @@ Short description
 Describe what happens during your study here (1-3 sentences). This should give families a concrete idea of what they will be doing - e.g., reading a story together and answering questions, watching a short video, playing a game about numbers.
 
 .. _purpose:
+
 =============================
 Purpose
 ============================= 
