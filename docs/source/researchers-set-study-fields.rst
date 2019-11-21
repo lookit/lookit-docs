@@ -281,7 +281,7 @@ The study type is the application you're using to enable participants to take a 
 
 
 .. image:: _static/img/attachments.png
-    :alt: View all study attachments
+    :alt: View all study videos
 
 .. _`Building an Experiment`: researchers-create-experiment.html
 

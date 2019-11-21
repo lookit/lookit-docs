@@ -154,7 +154,7 @@ Downloading response data & videos
 
 The consent manager and "individual responses" views can be helpful to get an idea of how data collection is going, but to code your videos and analyze your data you will want to download files that you can work with using your software of choice. 
 
-To download all videos, you can go to the "attachments" tab and click "download all attachments." A zip file will be bundled up for you to download, and you will receive a link by email in a few minutes. Try it out, and take a look at some of the video collected!
+To download all videos, you can go to the "videos" tab and click "download all videos." A zip file will be bundled up for you to download, and you will receive a link by email in a few minutes. Try it out, and take a look at some of the video collected!
 
 .. image:: _static/img/tutorial/download_videos.png
     :alt: Video download
@@ -192,20 +192,57 @@ Exercises
 
 2. What fraction of children who responded at least once live in homes with at least 10 books?
 
-Contacting participants [WIP]
+Contacting participants
 -----------------------------
 
+You may need to contact participants for a variety of reasons: for instance, to let them know it's time to complete another session of a longitudinal study, to ask for clarification about a problem they reported, or to announce that the results of your study have been published!
 
+You can contact participants in a particular study using the "Message Participants" link at the top of your study, found here under "Take Action":
 
-Contact a participant about a consent video issue (from consent)_
+.. image:: _static/img/tutorial/message_participants_link.png
+    :alt: Message participants link
+    
+That will take you to a page link this where you can see and download previous emails (left side) or compose new emails (right side). This interface is in progress with work planned to make it easier to use, but it's functional! 
+
+.. admonition:: Where are the email addresses?
+
+   You may notice that although you can message participants, you're not being provided with their actual email addresses. We apologize for the inconvenience this causes in implementing some custom workflows, and can discuss providing email permissions with individual labs if necessary. However, obscuring email addresses is deliberate: it allows us to programmatically enforce participants' email selections (so that they don't receive email types they don't want), protects against accidental disclosure, and ensures you have a central record of all communication. Again, this is a matter of sharing a reputation!
+   
+The first thing you will do when you send an email is select the "Message Type". These line up with the email types participants can opt to receive: notifications that it's time for another session of a longitudinal study; notifications that a new study is available for them to participate in; updates about this study (like that results are available); and clarifying questions about their responses.
+
+Next, you specify the recipient(s). You can do this by searching for the appropriate **account** UUID. Finally, you write your message subject and body, and hit send! Let's try it out with a few example scenarios.
+
+Contact a participant about a consent video issue
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+First, let's imagine that there was an issue with your consent video and you needed to confirm that it was ok to use data from the session. 
 
-Contact a participant with a gift card code (from ind responses)
+In one browser tab, open up the consent manager view for the "Apples to Oranges" study, and find your consent video. Scroll down to the information about the session. You should see a "Participant information" section, separate from "Child information." Copy the UUID for the participant.
+
+.. image:: _static/img/tutorial/participant_id.png
+    :alt: Participant ID
+    
+In another browser tab, open up the "Message participants" view for the same study. Choose the message type "response questions" since this is a clarifying question about the response. Under "recipients," deselect all and then paste the participant ID into the box. That should bring up exactly one potential recipient (which is you!) - click to add it.
+
+Write a subject and body for your email explaining the problem and asking whether it's ok to use data from this session. `Check the wiki for details about what you might say! <https://github.com/lookit/research-resources/wiki/Day-to-day-study-operation>`_
+
+Go ahead and send your email, and make sure you receive it!
+
+Contact a participant with a gift card code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Second, let's imagine that you're compensating participants with gift cards. (You'll want to take a look at the Terms of Use and the wiki for details as you make plans for compensation, but essentially, for now researchers are responsible for handling any compensation by messaging participants.)
 
+Instead of the consent manager, switch over to "individual responses" and find your response again. In the response JSON window, scroll down until you find the participant UUID, and copy it:
 
+.. image:: _static/img/tutorial/id_in_json.png
+    :alt: Participant ID in response JSON
 
+Returning to your "message participants" tab, let's create another email. This time, you can actually select the "transactional email" option, which allows you to reach even people who have opted out of email; this is because you sending the compensation is the completion of a "transaction" they agreed to. You will see a warning which is ok:
 
+.. image:: _static/img/tutorial/transactional.png
+    :alt: Transactional email warning
+    
+Like before, paste in your ID, write your message, send it, and make sure you receive it. (Don't actually send yourself a gift card. Unless you really want to.)
 
+Congratulations! We've covered all the basic functionality you'll need to manage your studies. Finally, we'll wrap up by briefly noting some of the advanced features you might want to use later and revisiting Github issues now that you may have some feature requests or bug reports.

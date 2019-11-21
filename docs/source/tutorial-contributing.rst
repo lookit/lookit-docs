@@ -64,6 +64,8 @@ List of tutorial participants
 - Kim Scott (MIT)
 
 
+.. _Github issues overview:
+
 Checking for and creating issues on Github
 -------------------------------------------
 

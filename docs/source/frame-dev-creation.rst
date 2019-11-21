@@ -1,3 +1,5 @@
+.. _Custom frames:
+
 Creating custom frames
 ==========================
 

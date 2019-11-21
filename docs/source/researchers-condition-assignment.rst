@@ -739,6 +739,7 @@ to capture most experimental designs that researchers put on Lookit, but
 additional more specific randomizers will also be designed to provide
 simpler syntax for common use cases.
 
+.. _Conditional logic:
 
 Conditional logic
 -----------------
