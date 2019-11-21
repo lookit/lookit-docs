@@ -1,3 +1,5 @@
+.. _updating-frameplayer-code:
+
 #############################################
 Updating the frameplayer code for your study
 #############################################
@@ -14,9 +16,11 @@ In the future, there may be changes in the Lookit frameplayer code that you want
 2. Scroll down to the "Change Study Type and Dependencies" section. You should see a value in the ``last_known_player_sha`` field if you have built study dependencies before, like this:
 
 .. image:: _static/img/update_code/initial_state.png
-    :alt: Filled in sha value 
-    
+    :alt: Filled in sha value   
+  
 If you want to know more about what code is currently being used, you can go to ``[player_repo_url]/commit/[last_known_player_sha]``. In the example above, that would be `<https://github.com/lookit/ember-lookit-frameplayer/commit/c4ee4a8b5c7921f9b6a4f027de84d7122ebfe1b8>`_. 
+
+**Make a note of this value,** just in case the update makes something work differently in your study and you want to return to the current version.
 
 You can edit the ``player_repo_url`` to use a different repo entirely, like your own fork. The steps are the same regardless of which repo you're using, but pointing to your own code is more advanced. We'll focus here on just updating the version of the central Lookit code you're using.
 

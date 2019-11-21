@@ -1,3 +1,5 @@
+.. _stim_prep:
+
 Preparing your stimuli
 ======================
 
@@ -102,6 +104,8 @@ longer and using an mp4 or webm extension for output instead of jpg.
             sp.call(['ffmpeg', '-f', 'lavfi', '-i', 'color=c=gray:s=640x480:d=0.01', '-vf', 
                 "drawtext=fontfile=drawtext='fontfile=/Library/Fonts/Arial Black.ttf':text='" + text + "':fontsize=64:fontcolor=black:x=10:y=10",
                 output])
+
+.. _stim_directory_structure:
 
 Directory structure
 ~~~~~~~~~~~~~~~~~~~

@@ -18,6 +18,7 @@ See `here <https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers
 To use a randomizer frame, set the frame ``"kind"`` to ``"choice"`` and
 ``"sampler"`` to the appropriate type of randomizer. 
 
+.. _random_parameter_set:
 
 The random-parameter-set randomizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -738,6 +739,7 @@ to capture most experimental designs that researchers put on Lookit, but
 additional more specific randomizers will also be designed to provide
 simpler syntax for common use cases.
 
+.. _Conditional logic:
 
 Conditional logic
 -----------------

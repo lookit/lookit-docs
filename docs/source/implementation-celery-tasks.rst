@@ -25,7 +25,7 @@ When a build or preview is requested a celery task is put into the build
 queue.
 
 Inside the task, the study and requesting user are looked up in the
-database. If it’s a preview task it’s current state is copied into a new
+database. If it’s a preview task its current state is copied into a new
 variable to be saved for later, then the study is put into the state of
 ``previewing`` and saved. If it’s a deployment the study is put into the
 state of ``deployment`` and saved. Since these states don’t actually

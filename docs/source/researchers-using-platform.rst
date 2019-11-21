@@ -175,7 +175,7 @@ Responses only show up in this view once you have confirmed that the participant
 On the left, you have a list of participants that have responded to your study, with the response id, the study's completion status, and the date it was modified. When you click on a participant, the JSON of that participant's response is shown on the right.  You can
 download the individual participant's JSON response by clicking "Download Individual Response JSON".  Alternatively, you can select CSV in the dropdown, and click "Download Individual Response CSV".
 
-Beneath the CSV/JSON response data are any individual video attachments that are linked to that participant's response. Exception: if the participant selected the 'withdraw video' option in an exit-survey frame at the end of the study, all video except for the consent video is unavailable (and will be deleted from Lookit servers as well in 7 days). There is a potential rare edge case where you access video while the participant is still doing the study, and then they withdraw, so you should still verify that none of your participants have withdrawn video.
+Beneath the CSV/JSON response data are any individual videos that are linked to that participant's response. Exception: if the participant selected the 'withdraw video' option in an exit-survey frame at the end of the study, all video except for the consent video is unavailable (and will be deleted from Lookit servers as well in 7 days). There is a potential rare edge case where you access video while the participant is still doing the study, and then they withdraw, so you should still verify that none of your participants have withdrawn video.
 
 On this page, you can leave feedback to participants. A lot of the motivation and reward families get from participating in research in person is the social interaction and knowledge that a real human appreciates their time and thinks their kid is super interesting. Feedback is essentially meant to approximate that from an online lab! Typically you might include a quick thanks-again, confirmation that everything worked ok (e.g., everything worked great, we can clearly see him looking right and left), some friendly personalized comment about the child/parent, and a response to any questions parents left in the exit survey. Families can see their feedback by going to Studies -> Past studies, but it is not emailed to them, so don't use this for anything where you really need to reach them (e.g., this is not a good way to send a gift card code!). 
 
@@ -206,10 +206,10 @@ response will be the demographics that were current at the time the participant 
 ----------------------------------------
 Viewing all study videos
 ----------------------------------------
-To view all video responses to your study from sessions with confirmed consent,click 'View Responses' from the study detail page and then click 'Attachments.'.
-You can filter on video attachment name. The format of the video names is `videoStream_{study_uuid}_{order-frame_name}_{response_uuid}_{timestamp}_{randomDigits}.mp4`
+To view all video responses to your study from sessions with confirmed consent,click 'View Responses' from the study detail page and then click 'Videos.'.
+You can filter on video name. The format of the video names is `videoStream_{study_uuid}_{order-frame_name}_{response_uuid}_{timestamp}_{randomDigits}.mp4`
 
-Video attachments can be downloaded individually.  You also have the option of bulk downloading all consent videos for your study, or bulk downloading all responses.
+Videos can be downloaded individually.  You also have the option of bulk downloading all consent videos for your study, or bulk downloading all responses.
 The bulk download will take place asynchronously, so once the videos have been downloaded and put in a zip file, you will get an email telling you this is done.
 
 ===========================

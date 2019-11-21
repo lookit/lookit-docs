@@ -31,6 +31,8 @@ and included under an eventTimings key within the frame data JSON,
 minimally including a timestamped event when the user proceeds to the
 next frame. These events are listed under ‘Events’ in the documentation.
 
+.. _Interpreting session data:
+
 Structure of session data
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 

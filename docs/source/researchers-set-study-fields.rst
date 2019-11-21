@@ -1,3 +1,5 @@
+.. _study_fields:
+
 ##################################
 Setting study fields
 ##################################
@@ -21,6 +23,8 @@ Short description
 =============================
 
 Describe what happens during your study here (1-3 sentences). This should give families a concrete idea of what they will be doing - e.g., reading a story together and answering questions, watching a short video, playing a game about numbers.
+
+.. _purpose:
 
 =============================
 Purpose
@@ -277,7 +281,7 @@ The study type is the application you're using to enable participants to take a 
 
 
 .. image:: _static/img/attachments.png
-    :alt: View all study attachments
+    :alt: View all study videos
 
 .. _`Building an Experiment`: researchers-create-experiment.html
 

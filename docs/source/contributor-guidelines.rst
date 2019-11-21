@@ -1,17 +1,21 @@
+.. _Contributor Guidelines:
+
 ==================================
 Guidelines for contributors
 ==================================
 
 Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
 
-The content of this page applies to all three Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments & components to use), and  ``lookit-docs`` (specific frames, subrepo of ember-lookit-frameplayer).
+The content of this page applies to all three Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments & components to use), and  ``lookit-docs`` (the documentation you're reading now).
 
->> **Where's the code I need?** If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to `ember-lookit-frameplayer`.
+.. admonition:: Where's the code I need?
+
+   If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to `ember-lookit-frameplayer`.
 
 Prerequisites
 ~~~~~~~~~~~~~~~
 
-To contribute to the `lookit-api` codebase, it will be very helpful to have a (a) a strong grasp of Python and (b) some familiarity with the Django framework. Learning Python is outside the scope of these docs, but if you want someplace to start, we highly recommend `Think Python <http://greenteapress.com/thinkpython2/html/index.html>`_. If you're already familiar with Python but haven't used the web framework Django, we highly recommend taking the time to complete `the official tutorial <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_.
+To contribute to the `lookit-api` codebase, it will be very helpful to have a (a) a strong grasp of Python and (b) some familiarity with the Django framework. Learning Python is outside the scope of these docs, but if you want someplace to start, we highly recommend `Think Python <http://greenteapress.com/thinkpython2/html/index.html>`_. If you're already familiar with Python but haven't used the web framework Django, we highly recommend taking the time to complete `the official Django tutorial <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_.
 
 To contribute to the `ember-lookit-frameplayer` codebase - e.g., when creating your own experiment frames - it will be helpful to have (a) a strong grasp of Javascript and (b) some familiarity with Ember.js. However, we're really not using that much of the functionality of Ember, and if you're just making some new frames, we would recommend getting started by trying out modifications of an existing frame to get your feet wet, rather than trying to learn Ember from scratch.
 
@@ -20,7 +24,7 @@ To contribute to these docs, you'll just need to be able to edit `ReStructured T
 Getting started
 ~~~~~~~~~~~~~~~~~~~
 
-At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`_. You should plan to make feature-specific branches off of the ``develop`` branch of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.  Before submitting a PR, merge in the most recent changes from the ``develop`` branch.  
+At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`_. You should plan to make feature-specific branches off of the ``develop`` branch of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
 
 First create your own fork of lookit-api, ember-lookit-frameplayer, and/or lookit-docs. Follow the directions for installation of lookit-api or ember-lookit-frameplayer if needed. 
 

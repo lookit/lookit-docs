@@ -174,7 +174,7 @@ Previewing a study
 
 When you are previewing a study, the responses to the study will not be
 saved. You will get an error at the end of the study about this - that’s
-expected and not something to worry about. Video attachments will be
+expected and not something to worry about. Videos will be
 saved, however, with an id of “PREVIEW_DATA_DISREGARD”. You do not need
 to create demographic data, or a child, since this is just a preview.
 You just need a study to navigate to. The URL for previewing is
