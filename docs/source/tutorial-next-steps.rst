@@ -1,5 +1,5 @@
 ##################################
-Finishing steps
+7. Finishing steps
 ##################################
 
 You're in the home stretch! Thanks for sticking with it. We'll wrap up by revisiting Github issues and briefly mentioning some of the advanced features you might use in the future.
@@ -46,4 +46,4 @@ Finally, you've been trying everything out in this tutorial on a "staging" serve
 4. The last step: please give feedback on the tutorial!
 -------------------------------------------------------
 
-One last request: please fill out the `Google form  <https://forms.gle/Wv7FMw8t8kSfWLhy9>`_
+One last request: please fill out the `Google form  <https://forms.gle/Wv7FMw8t8kSfWLhy9>`_ to give feedback that will be used to help improve this tutorial. Thank you!

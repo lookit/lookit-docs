@@ -1,6 +1,6 @@
-########################################
-Building a real study from the ground up
-########################################
+############################################
+4. Building a real study from the ground up
+############################################
 
 Now that you've gotten your feet wet and are comfortable using Lookit's experimenter interface to modify your study JSON, it's time to take a closer look at how to build your own study. In this section, you'll build a functional infant study "from the ground up," adding frames one at a time. 
 

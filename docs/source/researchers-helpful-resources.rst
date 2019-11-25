@@ -1,5 +1,5 @@
 ##################################
-Other helpful resources
+Helpful resources
 ##################################
 
 - For higher-level info about the Lookit project and running studies on Lookit (e.g., recruitment, state of funding, etc.) please check out (and add to!) `the wiki <https://github.com/lookit/research-resources/wiki>`_.

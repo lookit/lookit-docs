@@ -1,5 +1,5 @@
 ##################################
-Setting up your first study
+3. Setting up your first study
 ##################################
 
 In this section, you will be creating your first study on Lookit. You will learn how to find and use experiment components, specify your protocol, and test out and troubleshoot your study. 

@@ -1,5 +1,5 @@
-Building your experiment
-========================
+Study protocol specification
+===================================
 
 .. _JSON Overview:
 
@@ -173,7 +173,7 @@ data are also described.
 
 .. _typical_study_schema:
 
-A Lookit study schema: general principles and instructions
+Example Lookit study outline
 ------------------------------------------------------------
 
 A typical Lookit study might contain the following frame types:

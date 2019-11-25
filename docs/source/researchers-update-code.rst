@@ -1,7 +1,7 @@
 .. _updating-frameplayer-code:
 
 #############################################
-Updating the frameplayer code for your study
+Updating the frameplayer code
 #############################################
 
 In the future, there may be changes in the Lookit frameplayer code that you want your study to use - for instance, a bug fix for an issue your participants are encountering or a new frame you want to use. (By default, your study keeps chugging along using exactly the same code, so that updates can't change how your study works without your knowledge.) Here's how you can update the code used:

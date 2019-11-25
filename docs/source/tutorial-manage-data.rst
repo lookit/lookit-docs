@@ -1,5 +1,5 @@
 #############################################
-Managing study data
+6. Managing study data
 #############################################
 
 Now that you have a good handle on how to set up the study protocol you want, it's time to look at how to manage your study: controlling who has access to what, starting and stopping data collection, reviewing and downloading your data, and contacting your participants. 

@@ -1,5 +1,5 @@
 ######################################
-Accessing Lookit and community
+1. Accessing Lookit and community
 ######################################
 
 To get started, you need to get on Lookit! 
