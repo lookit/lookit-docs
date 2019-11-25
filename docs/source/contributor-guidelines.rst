@@ -1,7 +1,7 @@
 .. _Contributor Guidelines:
 
 ==================================
-Guidelines for contributors
+Contributor Guidelines
 ==================================
 
 Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
@@ -18,8 +18,6 @@ Prerequisites
 To contribute to the `lookit-api` codebase, it will be very helpful to have a (a) a strong grasp of Python and (b) some familiarity with the Django framework. Learning Python is outside the scope of these docs, but if you want someplace to start, we highly recommend `Think Python <http://greenteapress.com/thinkpython2/html/index.html>`_. If you're already familiar with Python but haven't used the web framework Django, we highly recommend taking the time to complete `the official Django tutorial <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_.
 
 To contribute to the `ember-lookit-frameplayer` codebase - e.g., when creating your own experiment frames - it will be helpful to have (a) a strong grasp of Javascript and (b) some familiarity with Ember.js. However, we're really not using that much of the functionality of Ember, and if you're just making some new frames, we would recommend getting started by trying out modifications of an existing frame to get your feet wet, rather than trying to learn Ember from scratch.
-
-To contribute to these docs, you'll just need to be able to edit `ReStructured Text  <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ files! You don't need to learn anything in advance - just look up syntax when you're not sure how to make a link, include an image, etc.
 
 Getting started
 ~~~~~~~~~~~~~~~~~~~
@@ -113,28 +111,3 @@ you will see there is currently very little coverage. Just try to leave it bette
 In `ember-lookit-frameplayer`, you should generally add a test file under `tests/unit/components/` if you have created a new frame. As you can see, we do not have a strong convention for this yet except for randomizer frames.
 
 To learn more about how testing is supposed to work for `ember-lookit-frameplayer`, see https://guides.emberjs.com/v2.11.0/testing/.
-
-If you are editing the documentation, please don't write tests! Just actually try building it so you'll notice if something's not formatted the way you expected.
-
-Editing the Lookit documentation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Documentation for use of the Lookit platform (what you're reading now!), including *both* the Django site lookit-api and the Ember application ember-lookit-frameplayer used for the actual studies, lives in the `lookit-docs repo <https://github.com/lookit/lookit-docs/>`_  under ``docs``.
-
-The file ``index.rst`` contains the table of contents (look for ``toctree``). Documentation is written using `ReStructured Text (RST) markup <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. It is also possible to add Markdown (.md) files and have them included in the documentation, but for consistency we are trying to keep all documentation in .rst format. If you are more familiar with Markdown, you can convert between formats using `Pandoc <https://pandoc.org/>`_, e.g.::
-
-    pandoc -o outputfile.rst inputfile.md
-
-If you are making substantial changes, you will want to take a look at how those changes look locally by using Sphinx to build your own local copy of the documentation. To do this, first create another virtual environment and install the requirements for Sphinx there::
-
-    /lookit-docs $ virtualenv -p python3 denv
-    /lookit-docs $ source denv/bin/activate
-    (denv) /lookit-docs $ pip install -r docs/requirements.txt
-    
-You can then build the docs from within the ``docs`` directory::
-
-    (denv) /lookit-docs/docs $ make html
-
-Navigate to ``docs/build/html/index.html`` from your favorite web browser to inspect the docs.
-
-To edit the documentation, please submit a PR to the ``lookit-docs/develop`` branch; when it's merged, the docs served by ReadTheDocs at https://lookit.readthedocs.io will be automatically updated! (Note that it is easy to have ReadTheDocs serve multiple versions of the documentation, from different branches; we just haven't reached the point of that being more useful than confusing yet.)
