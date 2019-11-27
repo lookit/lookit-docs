@@ -233,8 +233,12 @@ corresponding to the order they are listed. For instance, if we wanted
 ``parameterSetWeights`` to [3, 1]. This allows uneven condition
 assignment where needed to optimize power, as well as allowing
 researchers to stop testing conditions that already have enough
-participants as data collection proceeds. You can even `determine the weights based on 
-the child's age <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_parameterSetWeights>`_, to maintain balanced conditions.)
+participants as data collection proceeds. 
+
+.. admonition:: Advanced options for choosing the parameterSet
+
+   You can `determine the weights based on 
+the child's age <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_parameterSetWeights>`_, to maintain balanced conditions.) You can also `keep kids in the same condition across all sessions they complete, or rotate them through conditions in order  <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_conditionForAdditionalSessions>`_.
 
 Suppose that in this case the second parameter set is selected:
 
@@ -746,9 +750,9 @@ Conditional logic
 
 In some cases, what happens next in your study will need to depend on what has happened so far, what happened during previous sessions of the study, and/or information about the participant. For instance, perhaps you want to move on from a training segment after the participant answers three questions in a row correctly, or you want to start with an eligibility survey and only route people to the rest of the study if they meet detailed criteria. Or maybe you just want to personalize instructions or stimuli with the child's name and gender! All Lookit frames allow you to provide either or both of the following properties to flexibly specify conditional behavior:
 
-1. `generateProperties <https://lookit.github.io/ember-lookit-frameplayer/classes/ExpFrameBase.html#property_generateProperties>`_: Provide a function that takes ``expData``, ``sequence``, ``child``, ``pastSessions``, and ``conditions`` objects, and returns an object representing any additional properties that should be used by this frame - e.g., the frame type, text blocks, whether to do recording, etc. (In principle a ``generateProperties`` function could conditionally assign ``selectNextFrame``, although we do not know of a use case where this is necessary.)
+1. `generateProperties <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_generateProperties>`_: Provide a function that takes ``expData``, ``sequence``, ``child``, ``pastSessions``, and ``conditions`` objects, and returns an object representing any additional properties that should be used by this frame - e.g., the frame type, text blocks, whether to do recording, etc. (In principle a ``generateProperties`` function could conditionally assign ``selectNextFrame``, although we do not know of a use case where this is necessary.)
 
-2. `selectNextFrame <https://lookit.github.io/ember-lookit-frameplayer/classes/ExpFrameBase.html#property_selectNextFrame>`_: Provide a function that takes ``frames``, ``frameIndex``, ``expData``, ``sequence``, ``child``, and ``pastSessions`` and returns that frame index to go to when using the 'next' action on this frame. For instance, this allows you to skip to the end of the study (or a frame of a particular type) if the child has gotten several questions correct.
+2. `selectNextFrame <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_selectNextFrame>`_: Provide a function that takes ``frames``, ``frameIndex``, ``expData``, ``sequence``, ``child``, and ``pastSessions`` and returns that frame index to go to when using the 'next' action on this frame. For instance, this allows you to skip to the end of the study (or a frame of a particular type) if the child has gotten several questions correct.
 
 Each of these properties is specified as a string, which must define a Javascript function of the specified arguments. ``generateProperties`` is called when the frame is initialized, and ``selectNextFrame`` is called upon proceeding to the next frame. 
 
@@ -894,6 +898,17 @@ Note that the data stored in ``expData``` will include frame data for the ``exp-
 - ``1-study-procedure-0-0`` (the first ``exp-lookit-text`` frame)
 - ``1-study-procedure-0-1`` (the second ``exp-lookit-text`` frame)
 
+
+Example: skipping a survey if it was completed previously
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Suppose your list of frames includes ``instructions``, ``eligibility-survey``, ``detailed-survey``, and ``test-trial``, in that order. You want to show all of these frames in order in general (although you’ll skip straight from eligibility-survey to test-trial if the person completing the study is not eligible to complete the detailed-survey). But if someone has already completed the detailed-survey, you want to skip straight from instructions to test-trial. You can do that by adding the following to the JSON specification for the instructions frame:
+
+.. code:: json
+
+    "selectNextFrame": "function(frames, frameIndex, frameData, expData, sequence, child, pastSessions) {if (pastSessions.some(sess => Object.keys(sess.get('expData', {})).some(frId => frId.endsWith('-detailed-survey')))) {return frameIndex + 3;} else {return frameIndex + 1;}}"
+    
+What this does is check to see if the ``pastSessions`` data contains any session with expData for a ``*-detailed-survey`` frame. If so, it sets the "next" frame to this frame + 3 - i.e., instead of incrementing by 1, it increments by 3, so it skips the two survey frames.
 
 
 Example: waiting for successful training
