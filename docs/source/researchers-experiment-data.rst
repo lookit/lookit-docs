@@ -6,85 +6,71 @@ What data can I access?
 
 You can access:
 - response data from responses for which you have confirmed consent in the Consent Manager
-- account, demographic, and child data from those responses: you will see these accounts under 'Manage Participants'; if some siblings but not others have participated in one of your studies and you have confirmed consent, you will only see those siblings.
+- account, demographic, and child data associated with those responses. You will see these accounts under 'Manage Participants'; if some siblings but not others have participated in one of your studies and you have confirmed consent, you will only see the siblings who have participated.
 
 Accessing experiment data
 -----------------------------------
 
-You can see and download collected responses either via the Lookit
-experimenter interface or using the API.
-
 A researcher with edit permissions for a particular study can download
-session data in JSON or CSV format via the Experimenter interface. A
-session record in a Postgres database is created each time a participant
+response data in JSON or CSV format via the Experimenter interface. (It is also possible
+to download response data programmatically using the API.)
+
+A response record in a Postgres database is created each time a participant
 starts the study, and includes a timestamp, account information,
 condition assignment, the sequence of frames the participant actually
 saw, and frame-specific information for each frame (included in an
 ‘expData’ structure which is a JSON object with keys corresponding to
-frame nicknames as defined in the study definition JSON). Each frame
-type may save different data, e.g. form responses; frames that record
-webcam video include the video filename(s). The data captured by a
+frame nicknames as defined in the study definition JSON). 
+
+Each frame type may save different data, e.g. form responses or videos played; frames that record webcam video include the video filename(s). The data captured by a
 particular frame are listed in the frame documentation at
 http://lookit.github.io/ember-lookit-frameplayer, under ‘Methods’ >
-‘serializeContent’. Additionally, event data is captured for each frame
+‘serializeContent’. 
+
+Additionally, event data is captured for each frame
 and included under an eventTimings key within the frame data JSON,
 minimally including a timestamped event when the user proceeds to the
-next frame. These events are listed under ‘Events’ in the documentation.
+next frame. These events are listed under ‘Events’ in the frame documentation.
 
 
 Viewing individual study responses
 -----------------------------------
 
-To view responses to your study, navigate to your study and click 'View Responses,' then 'Individual responses'. You must have permission to view this study's responses, which means you must be an Organization Admin, Organization Read, or belong to the Study Admin or Study Read groups.
+To inspect single responses to your study, navigate to your study and click 'View Responses,' then 'Individual responses'. You must have permission to view this study's responses, which means you must be an Organization Admin, Organization Read, or belong to the Study Admin or Study Read groups.
 
 Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. 
 
-On the left, you have a list of participants that have responded to your study, with the response id, the study's completion status, and the date it was modified. When you click on a participant, the JSON of that participant's response is shown on the right.  You can
-download the individual participant's JSON response by clicking "Download Individual Response JSON".  Alternatively, you can select CSV in the dropdown, and click "Download Individual Response CSV".
+On the left, you have a list of participants that have responded to your study, with the response id, the study's completion status, and the date it was modified. When you click on a response, the data from that response is shown on the right.  You can 
+download the data from that response in one of several formats: JSON (JavaScript Object Notation, a structured text format); a CSV summary (a "wide format" overview with basic information about the participant and response, such as condition assignment); or CSV frame data (a "long format" detailed list of data collected in each frame during this response, complementary to the CSV summary).
 
-Beneath the CSV/JSON response data are any individual videos that are linked to that participant's response. Exception: if the participant selected the 'withdraw video' option in an exit-survey frame at the end of the study, all video except for the consent video is unavailable (and will be deleted from Lookit servers as well in 7 days). There is a potential rare edge case where you access video while the participant is still doing the study, and then they withdraw, so you should still verify that none of your participants have withdrawn video.
+Beneath the CSV/JSON response data are any individual videos that are linked to that participant's response. Exception: if the participant selected the 'withdraw video' option in an exit-survey frame at the end of the study, all video except for the consent video is unavailable (and will be deleted from Lookit servers as well in 7 days). 
 
-On this page, you can leave feedback to participants. A lot of the motivation and reward families get from participating in research in person is the social interaction and knowledge that a real human appreciates their time and thinks their kid is super interesting. Feedback is essentially meant to approximate that from an online lab! Typically you might include a quick thanks-again, confirmation that everything worked ok (e.g., everything worked great, we can clearly see him looking right and left), some friendly personalized comment about the child/parent, and a response to any questions parents left in the exit survey. Families can see their feedback by going to Studies -> Past studies, but it is not emailed to them, so don't use this for anything where you really need to reach them (e.g., this is not a good way to send a gift card code!). 
+.. admonition:: Withdrawn video
+    There is a potential rare edge case where you access video while the participant is still doing the study, and then they withdraw, so you should still verify that none of your participants have withdrawn video.
+
+On the "Individual Responses" page, you can leave feedback to participants. A lot of the motivation and reward families get from participating in research in person is the social interaction and knowledge that a real human appreciates their time and thinks their kid is super interesting. Feedback is essentially meant to approximate that from an online lab! Typically you might include a quick thanks-again, confirmation that everything worked ok (e.g., everything worked great, we can clearly see him looking right and left), some friendly personalized comment about the child/parent, and a response to any questions parents left in the exit survey. Families can see their feedback by going to Studies -> Past studies, but it is not emailed to them, so don't use this for anything where you really need to reach them (e.g., this is not a good way to send a gift card code!). 
 
 .. image:: _static/img/responses.png
     :alt: View responses
 
+.. _Response download options:
 
 Viewing all study responses
 ------------------------------
 To view all of the responses to a study with confirmed consent, click 'View Responses' from the study detail page and then click 'All Responses.' You must have permission to view this study's responses, which means you must be an Organization Admin, Organization Read, or belong to the Study Admin or Study Read groups.
 
-By default, all study responses are displayed in JSON format.  To download as CSV, select CSV in the dropdown and download.  The study response data is supplemented with the study id, participant ids and nickname, and the associated child info.
-
 .. image:: _static/img/all_responses.png
     :alt: View all responses
 
+There are several formats available to download your data. The raw data is available as a  JSON download; this is a structured, human-readable text format where you will be able to see how data is nested (e.g., a form response within a form within a frame). However, it may require more processing to use in your data analysis workflow (for instance to load it into R). 
 
-Viewing demographics of study participants
--------------------------------------------
-To view the demographics of participants that have responded to your study and have confirmed consent, click 'View Responses' from the study detail page and then click 'Demographic Snapshots.' You must have permission to view this study's responses, which means you must be an Organization Admin, Organization Read, or belong to the Study Admin or Study Read groups.
+For convenience, several options are provided for downloading data in CSV (comma separated value) format. CSV data can be easily examined in your spreadsheet editor of choice (like Excel) and loaded into programs like R for analysis.
 
-This list is generated by looping through all the responses to your study, and displaying the demographics of the associated participant.  If a participant has responded multiple times, the demographics will appear multiple times.  Demographic data was versioned, so the demographics associated with each
-response will be the demographics that were current at the time the participant responded to the study.  You can download the demographics in JSON or CSV format.
+The response overview file provides high-level information about each response and the participating child, with one row per response (a "wide" format). Not everything is included here, because there can be a lot of data per response (e.g., events collected each time the participant clicks something). You can download a data dictionary along with the response overview; this file provides information about how to interpret each column of the data file. When you publish your data, it is always a good idea to include a data dictionary, so this gives you a head start!
 
-.. image:: _static/img/demographics.png
-    :alt: View all study demographics
+The response frame data file(s) provide all the data that was collected throughout the session. You can choose to download a single data file with ALL the frame data, or a ZIP archive with one file per response - whatever will be easier for you to use! This data is in a "long" format, where there are few columns and each row represents a single piece of information. So each response will be associated with many rows. You can download a data dictionary for the frame data, too! Because the exact types of data collected will vary across studies based on what frames you use, what questions are in your forms, and so on, you will need to fill in some of the data dictionary to explain what the various fields mean. But some of it is filled out for you, and there are placeholders for the explanations you'll need to add.
 
-
-Viewing all study videos
-----------------------------------------
-To view all video responses to your study from sessions with confirmed consent,click 'View Responses' from the study detail page and then click 'Videos.'.
-You can filter on video name. The format of the video names is `videoStream_{study_uuid}_{order-frame_name}_{response_uuid}_{timestamp}_{randomDigits}.mp4`
-
-Videos can be downloaded individually.  You also have the option of bulk downloading all consent videos for your study, or bulk downloading all responses.
-The bulk download will take place asynchronously, so once the videos have been downloaded and put in a zip file, you will get an email telling you this is done.
-
-.. image:: _static/img/attachments.png
-    :alt: View all study attachments
-
-.. _Interpreting session data:
-
-Structure of session data
+Structure of JSON session data
 -----------------------------------
 
 The data saved when a subject participates in a study varies based on
@@ -273,7 +259,7 @@ below:
    false if they don’t submit that exit survey, even if they completed
    all of the important experimental parts of the study.
 -  *exp_data*: A JSON object containing the data collected by each
-   **frame** in the study. More on this to follow.
+   **frame** in the study. More on this below...
 
 Interpreting ``exp_data``
 -----------------------------------
@@ -345,3 +331,28 @@ The other properties besides ‘eventTimings’ are dependent on the
 type records by looking at the parameters of the ``serializeContent``
 method under the ‘Methods’ tab in its `frame
 documentation <http://lookit.github.io/ember-lookit-frameplayer/modules/frames.html>`__.
+
+
+Viewing demographics of study participants
+-------------------------------------------
+To view the demographics of participants that have responded to your study and have confirmed consent, click 'View Responses' from the study detail page and then click 'Demographic Snapshots.' You must have permission to view this study's responses, which means you must be an Organization Admin, Organization Read, or belong to the Study Admin or Study Read groups.
+
+This list is generated by looping through all the responses to your study, and displaying the demographics of the associated participant.  If a participant has responded multiple times, the demographics will appear multiple times.  Demographic data was versioned, so the demographics associated with each
+response will be the demographics that were current at the time the participant responded to the study.  You can download the demographics in JSON or CSV format.
+
+.. image:: _static/img/demographics.png
+    :alt: View all study demographics
+
+
+Viewing all study videos
+----------------------------------------
+To view all video responses to your study from sessions with confirmed consent,click 'View Responses' from the study detail page and then click 'Videos.'.
+You can filter on video name. The format of the video names is `videoStream_{study_uuid}_{order-frame_name}_{response_uuid}_{timestamp}_{randomDigits}.mp4`
+
+Videos can be downloaded individually.  You also have the option of bulk downloading all consent videos for your study, or bulk downloading all responses.
+The bulk download will take place asynchronously, so once the videos have been downloaded and put in a zip file, you will get an email telling you this is done.
+
+.. image:: _static/img/attachments.png
+    :alt: View all study videos
+
+.. _Interpreting session data:

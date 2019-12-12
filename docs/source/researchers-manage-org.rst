@@ -44,7 +44,7 @@ researcher you wish to delete, and then click "Remove" again in the confirmation
 
 
 .. image:: _static/img/attachments.png
-    :alt: View all study attachments
+    :alt: View all study videos
 
 .. _`Building an Experiment`: researchers-create-experiment.html
 

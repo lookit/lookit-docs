@@ -163,14 +163,14 @@ Note that on this page you can also filter for specific parts of the filename, i
 
 Videos are named ``videoStream_<study ID>_<frameIndex>-<frame ID>_<response ID>_<timestamp>_<random digits>.mp4``, so you can use the response ID to match videos to other response data even if you only have the filename. The response data will also contain video IDs in the ``expData`` for any frames that recorded video.
 
-Under "All responses," you can download a JSON or CSV file with data about each session. 
+Under "All responses," you can download JSON or CSV files with data about all responses from this study. :ref:`You can learn more about these options here.<Response download options>`
 
-.. image:: _static/img/tutorial/download_all_data.png
+.. image:: _static/img/tutorial/all_responses.png
     :alt: All responses view
     
 An overview of how to interpret this data is :ref:`available in the documentation.<Interpreting session data>`
     
-Analyzing the data collected is, in general, outside the scope of this tutorial as it will vary substantially by lab/project and because improvements are coming to the data download process - although we hope that you will share your scripts and processes for analyzing Lookit data to help other researchers! The exercises below can be solved by manual inspection of the JSON or CSV data, although you are also welcome to set up a script in your language of choice to get a head start on real data processing.
+Analyzing the data collected is, in general, outside the scope of this tutorial as it will vary substantially by lab/project - although we hope that you will share your scripts and processes for analyzing Lookit data to help other researchers! The exercises below can be solved by manual inspection of the JSON or CSV data, although you are also welcome to set up a script in your language of choice to get a head start on real data processing.
 
 Exercises
 ~~~~~~~~~~
