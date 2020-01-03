@@ -1,7 +1,7 @@
 .. _study_fields:
 
 ##################################
-Setting study fields
+Setting study details
 ##################################
 
 When creating or editing a study, you can set the value of the following fields. Below is more information about each:

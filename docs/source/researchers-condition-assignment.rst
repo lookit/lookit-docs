@@ -237,8 +237,7 @@ participants as data collection proceeds.
 
 .. admonition:: Advanced options for choosing the parameterSet
 
-   You can `determine the weights based on 
-the child's age <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_parameterSetWeights>`_, to maintain balanced conditions.) You can also `keep kids in the same condition across all sessions they complete, or rotate them through conditions in order  <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_conditionForAdditionalSessions>`_.
+   You can `determine the weights based on the child's age <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_parameterSetWeights>`_, to maintain balanced conditions.) You can also `keep kids in the same condition across all sessions they complete, or rotate them through conditions in order  <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_conditionForAdditionalSessions>`_.
 
 Suppose that in this case the second parameter set is selected:
 

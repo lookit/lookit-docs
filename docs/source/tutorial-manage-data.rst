@@ -168,9 +168,7 @@ Under "All responses," you can download JSON or CSV files with data about all re
 .. image:: _static/img/tutorial/all_responses.png
     :alt: All responses view
     
-An overview of how to interpret this data is :ref:`available in the documentation.<Interpreting session data>`
-    
-Analyzing the data collected is, in general, outside the scope of this tutorial as it will vary substantially by lab/project - although we hope that you will share your scripts and processes for analyzing Lookit data to help other researchers! The exercises below can be solved by manual inspection of the JSON or CSV data, although you are also welcome to set up a script in your language of choice to get a head start on real data processing.
+Analyzing the data collected is, in general, outside the scope of this tutorial as it will vary substantially by lab/project - although we hope that you will share your scripts and processes for analyzing Lookit data to help other researchers! The exercises below can be solved by manual inspection of the CSV (or JSON) data, although you are also welcome to set up a script in your language of choice to get a head start on real data processing.
 
 Exercises
 ~~~~~~~~~~

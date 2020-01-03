@@ -1,4 +1,4 @@
-Study protocol specification
+Protocol specification
 ===================================
 
 .. _JSON Overview:

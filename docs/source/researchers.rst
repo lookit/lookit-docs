@@ -9,12 +9,12 @@ Researcher guide
    researchers-helpful-resources
    researchers-log-in
    researchers-manage-studies
-   researchers-manage-consent
    researchers-set-study-fields
    researchers-create-experiment
    researchers-condition-assignment
    researchers-update-code
    researchers-prep-stimuli
+   researchers-manage-consent
    researchers-experiment-data
    researchers-manage-org
    researchers-use-api
