@@ -242,10 +242,80 @@ Here is an example of a frame group that just contains two text frames:
     }
 
 
-Defining frame parameters
----------------------------
+.. _Frame parameters:
+
+Defining frame parameters to reuse or randomize values
+-------------------------------------------------------
 
 Rather than inserting actual values for frame properties such as stimulus image locations, you may want sometimes want to use a variable the way you would in a programming language - for instance, so that you can show the same cat picture throughout a group of frames, without having to replace it in ten separate places if you decide to use a different one.
 You can accomplish this (and more, including selecting randomly from or cycling through lists of values) by setting the ``"parameters"`` property on any frame (including frame groups and randomizers). For details, see the `exp-frame-base documentation <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_parameters>`_.
 
+Case study: randomizing the order of options in a survey
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Suppose you're including a survey where you ask participants to record whether their child performed a certain task, and you want to present the options in a random order to avoid systematically biasing the results towards either option. You start with a survey frame like this (see the frame docs for more information about this frame):
+
+.. code:: json
+
+    "example-survey": {
+        "kind": "exp-lookit-survey",
+        "formSchema": {
+            "schema": {
+                "type": "object",
+                "title": "And now, a thrilling survey!",
+                "properties": {
+                    "didit": {
+                        "enum": ["yes", "no"],
+                        "type": "string",
+                        "title": "Did your child do the thing?",
+                        "default": ""
+                    }
+                }
+            },
+            "options": {
+                "fields": {
+                    "didit": {
+                        "type": "radio",
+                        "validator": "required-field"
+                    }
+                }
+            }
+        }
+    },
+
+To randomize the options, we'll need to make a few small changes. First, add ``"sort": false`` to the options for your ``didit`` field, so that AlpacaJS doesn't automatically sort the options alphabetically. 
+
+Next, you want the ``enum`` list for ``didit`` to actually be in random order. To achieve that, you can add a property like ``DIDIT_OPTIONS`` as a frame property, and then specify that the value of ``enum`` should be a random permutation of that list, like this:
+
+.. code:: json
+
+    "example-survey": {
+        "kind": "exp-lookit-survey",
+        "formSchema": {
+            "schema": {
+                "type": "object",
+                "title": "And now, a thrilling survey!",
+                "properties": {
+                    "didit": {
+                        "enum": "DIDIT_OPTIONS#PERM",
+                        "type": "string",
+                        "title": "Did your child do the thing?",
+                        "default": ""
+                    }
+                }
+            },
+            "options": {
+                "fields": {
+                    "didit": {
+                        "sort": false,
+                        "type": "radio",
+                        "validator": "required-field"
+                    }
+                }
+            }
+        },
+        "parameters": {
+            "DIDIT_OPTIONS": ["yes", "no"]
+        }
+    },
+    

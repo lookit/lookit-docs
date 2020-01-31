@@ -1,5 +1,10 @@
-Condition assignment and conditional logic
+Randomization and conditional logic
 ===========================================
+
+Simple randomization
+--------------------
+
+A lot of simple randomization, like showing stimuli or options in a random order, can be achieved simply using frame parameters. See :ref:`Defining frame parameters to reuse or randomize values<Frame parameters>`.
 
 Condition assignment
 --------------------
@@ -7,7 +12,7 @@ Condition assignment
 Generally, you’ll want to show slightly different versions of the study
 to different participants: perhaps you have a few different conditions,
 and/or need to counterbalance the order of trials or left/right position
-of stimuli. To do this, you’ll use a special frame called a
+of stimuli. To do this, you can use a special frame called a
 **randomizer** to select an appropriate sequence of frames for a
 particular trial. A randomizer frame is automatically expanded to a list
 of frames, so that for instance you can specify your 12 looking-time
@@ -445,7 +450,7 @@ You have a variety of options for how to accomplish random condition assignment:
         ]
     }
     
-3. You can use the ``#RAND`` syntax and `frame parameters <http://localhost:3000/classes/Exp-frame-base.html#property_parameters>`_ to substitute in one of the two options for each condition:
+3. You can use the ``#RAND`` syntax and `frame parameters <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_parameters>`_ to substitute in one of the two options for each condition:
 
 ::
 
@@ -741,6 +746,7 @@ The ``random-parameter-set`` randomizer is expected to be general enough
 to capture most experimental designs that researchers put on Lookit, but
 additional more specific randomizers will also be designed to provide
 simpler syntax for common use cases.
+
 
 .. _Conditional logic:
 
