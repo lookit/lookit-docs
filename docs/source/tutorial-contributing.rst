@@ -64,6 +64,7 @@ This process is the easiest way to make a change to a particular file in the doc
 List of tutorial participants
 ------------------------------
 - Kim Scott (MIT)
+- Ashley Thomas (MIT)
 
 
 .. _Github issues overview:
