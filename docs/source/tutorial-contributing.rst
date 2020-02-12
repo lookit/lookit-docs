@@ -16,14 +16,14 @@ All of the code that makes Lookit run is stored on GitHub, which makes it easy t
 
 Don't worry about making a mistake and somehow messing up the documentation - you can't directly edit the "official" version of the files! There is always a review process before your changes are merged in. 
 
-1. Go to https://github.com/lookit/lookit-docs and click "Fork" in the top right corner. (You'll need to make an account on GitHub if you don't have one already.)
+1. In a separate tab, go to https://github.com/lookit/lookit-docs and click "Fork" in the top right corner. (You'll need to make an account on GitHub if you don't have one already.)
 
 .. image:: _static/img/tutorial/first_pr_fork.png
     :alt: Fork button on GitHub
     
-2. Go to the page in the docs you want to edit - for this first PR, that's this page! Click the "Edit on GitHub" button at the top right.
+2. From the page in the docs that you want to edit (*not* from GitHub), scroll up and click the "Edit on GitHub" button at the top right. For this first PR, you'll be editing the page you're reading right now (https://lookit.readthedocs.io/en/develop/tutorial-contributing.html)!
 
-3. Click the pencil icon on Github to start editing the file. 
+3. Clicking "Edit on GitHUb" will bring you to a page like the one shown below. Click the pencil icon on this page to start editing the file. 
 
 .. image:: _static/img/tutorial/github_edit_button.png
     :alt: Edit button on GitHub

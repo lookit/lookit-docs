@@ -148,7 +148,7 @@ purposes without altering any frame definitions.
 Developing your study: how to try it out as you go
 ---------------------------------------------------
 
-When you first create your study, you'll need to click 'Build preview dependencies' on the study edit page and wait 5-10 minutes for your own special study environment to be created. This will "freeze" the code used for your study so that continuing development and changes to the experiment frame code won't affect how your study works. (You can always update if you want to - see `Editing study type <researchers-using-platform.html#editing-study-type>`_). You do not need to build preview dependencies again unless you want to update the study type.
+When you first create your study, you'll need to click 'Build preview dependencies' on the study edit page and wait 5-10 minutes for your own special study environment to be created. This will "freeze" the code used for your study so that continuing development and changes to the experiment frame code won't affect how your study works. (You can always update if you want to - see `Updating the frameplayer code <researchers-update-code>`_). You do not need to build preview dependencies again unless you want to update the study type.
 
 Once you've built preview dependencies once, you can click 'See preview' after saving your study JSON and you will be taken to a preview version of your study so that you can see what it looks like to a participant! As you write the JSON document for your study, you can click 'See preview' again or just refresh the preview window to see how the changes look. 
 
