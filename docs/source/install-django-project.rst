@@ -23,6 +23,10 @@ downloading data as a researcher.
    Note: These instructions are for Mac OS. Installing on another OS?
    Please consider documenting the exact steps you take and submitting a
    PR to the lookit-api repo to update the documentation!
+   
+   WARNING: These instructions are slightly outdated as of Feb 2020. They will still work, 
+   but we now use pipenv and have invoke scripts that will handle a lot of the setup for you.
+   Documentation coming soon - ask if you need help!
 
 Prerequisites
 ~~~~~~~~~~~~~

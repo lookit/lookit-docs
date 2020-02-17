@@ -95,44 +95,40 @@ At the bottom of the edit study page, you can make edits to your study's structu
 .. image:: _static/img/study_edit.png
     :alt: Editing studies
 
--------------------------
-Editing study structure
--------------------------
+--------------------------------------
+Editing study protocol configuration
+--------------------------------------
 For more information about how to specify what happens during your study, see `Building an Experiment`_.
 
-To edit a study's structure, click 'Edit study' from the study detail page. You must be a study admin or org admin to view this page. From this 'study edit' page, you can edit the study's structure and the study type. The study structure specifies the frames (or pages) of your experiment, and also specifies the sequence.
+To edit a study's structure, click 'Edit study' from the study detail page. You must be a study admin or org admin to view this page. From this 'study edit' page, you can edit the study's protocol configuration and the experiment runner type. The study protocol configuration specifies the frames (or pages) of your experiment, and also specifies the order they go in.
 
 .. image:: _static/img/build_study.png
     :alt: Built study
 
-To edit the structure, click on the JSON block.  A JSON editor will appear.  Click on "Beautify" in the top right corner for better readability. Note that any invalid JSON will be shown via a little red X at the left of the relevant line! Once you are happy with your changes click 'Close'.  Then hit "Save" in the bottom right corner.
-If your study has already been approved, then clicking "Save" will automatically reject the study. You will have to resubmit it for an organization admin to reapprove.
+To edit the protocol configuration, click on the JSON block.  A JSON editor will appear.  Click on "Beautify" in the top right corner for better readability. Note that any invalid JSON will be shown via a little red X at the left of the relevant line! Once you are happy with your changes click 'Close'.  Then hit "Save Changes" in the bottom right corner.
+If your study has already been approved, then clicking "Save Changes" will automatically reject the study. You will have to resubmit it for an organization admin to reapprove.
 
 .. image:: _static/img/json_editor.png
     :alt: Edit JSON
 
-To preview your study, click "Try Experiment". (You will need to build preview dependencies first if you haven't yet, or if you've changed the study type or which code to use.)
+To preview your study, click "See Preview". (You will need to build a preview runner first if you haven't yet, or if you've changed the version you're using.)
 
--------------------------
-Editing study type
--------------------------
-To edit a study's type, click 'Edit study' from the study detail page.
+--------------------------------
+Editing experiment runner type
+--------------------------------
+To edit the type of experiment runner used by your study, click 'Edit study' from the study detail page and scroll down to the bottom of the page.
 
-The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in ember-lookit-frameplayer, and the exp-player component can cycle through these frames.
+The experiment runner is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in ember-lookit-frameplayer, and the exp-player component can cycle through these frames.
 
 **If you don't want any customization and want to use the existing player and frames, just select the defaults.** These are advanced options! 
 
 What does each field mean?
 
-    - The ``player_repo_url`` is the repo where the frames and the player are stored.  This is the default player_repo_url: https://github.com/lookit/ember-lookit-frameplayer.  Advanced users may want to define their own custom frames for use with Lookit studies beyond those provided in the core library. (For more information about how to do this, see https://lookit.readthedocs.io/en/develop/developing-frames.html.) To use your own frame definitions, set the addons_repo_url to your own fork of the ember-lookit-frameplayer repo (e.g., https://github.com/yourname/ember-lookit-frameplayer instead of https://github.com/lookit/ember-lookit-frameplayer). You can then choose any commit SHA from your own repo.
+    - The ``Experiment runner code URL`` is the GitHub repository where the frames and the player are stored.  This is the default player_repo_url: https://github.com/lookit/ember-lookit-frameplayer.  Advanced users may want to define their own custom frames for use with Lookit studies beyond those provided in the core library. (For more information about how to do this, see https://lookit.readthedocs.io/en/develop/developing-frames.html.) To use your own frame definitions, set ``Experiment runner code URL`` to your own fork of the ember-lookit-frameplayer repo (e.g., https://github.com/yourname/ember-lookit-frameplayer instead of https://github.com/lookit/ember-lookit-frameplayer).
 
-    - The ``last_known_player_sha`` is the commit of the player repo to use. If you don't add this, it will point to the latest commit in the default branch. To browse commits available for the experiment player ember-lookit-frameplayer and see what might have changed, you can look through https://github.com/lookit/ember-lookit-frameplayer/commits/. (Previously, ember-lookit-frameplayer contained just the frame player, with frames defined separately in an exp-addons repo. Do not use a frameplayer SHA from before these two repos were merged together, in March 2019)
+    - The ``Experiment runner version (commit SHA)`` is the specific version, or commit, of the experiment runner repository to use. Every time a change is made to the GitHub repository, it is assigned a unique identifier or "commit SHA." If you don't specify a version, then when you go to build your experiment runner, it will be use the most recent commit in the master branch and this field will get filled in. This way, your study will continue to use exactly the same experiment player unless you deliberately choose to update - just in case any changes affect how your study works. If you do specify a version, some information about that version will be displayed to confirm, and you can click "Check for updates" at any time to view what has changed.
 
-Leave the field ``last_known_player_sha`` blank to use the default - the latest versions of the experiment player and frames that Lookit provides. When you build dependencies, the commit SHAs (unique IDs) of the latest versions will be fetched and filled in, so that you will continue to use this version for your experiment unless you deliberately update.
-
-**Important:** Whenever you update the code versions you are using, you will need to build dependencies again to preview and to activate your study. This build process creates a special environment just for your study using exactly the code you selected, so that your study will continue to run as you designed it. By storing builds on Google Cloud Storage,
-pointing to specific commits, we can keep edits to frames from unintentionally breaking another study. You only need to build dependencies when you have changed the commit SHAs here - not when you update your study JSON or other data like the age range.
-
+**Important:** Whenever you update the code versions you are using, you will need to re-build your preview runner if you want to preview your study, and re-build your experiment runner if you want to run your study. This build process creates your very own runner application using exactly the code you selected, so that your study will continue to run as you designed it. You only need to re-build these when you have changed the code URL or version - not when you update your study protocol configuration or other data like the age range.
 
 .. _`Building an Experiment`: researchers-create-experiment.html
 

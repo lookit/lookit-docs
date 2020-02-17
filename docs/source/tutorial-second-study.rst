@@ -1,13 +1,19 @@
-############################################
-4. Building a real study from the ground up
-############################################
+#####################################################
+4. Building 'intermodal matching' from the ground up
+#####################################################
 
-Now that you've gotten your feet wet and are comfortable using Lookit's experimenter interface to modify your study JSON, it's time to take a closer look at how to build your own study. In this section, you'll build a functional infant study "from the ground up," adding frames one at a time. 
+Now that you've gotten your feet wet and are comfortable using Lookit's experimenter interface to modify your study protocol configuration, it's time to take a closer look at how to build your own study. 
+
+In this section, you'll build an example of a functional infant study "from the ground up," adding frames one at a time.
+
+There's a fair amount of copying, pasting, and looking at the result in this section. Please bear with us - once you complete the tutorial, you'll be ready to set up your own study!
 
 Introduction: intermodal matching study
 ---------------------------------------
 
-Imagine you're looking to replicate the finding that infants can detect which moving face "goes with" a speech stream, an ability known as intermodal matching. In your study, babies will watch several short videos of two women's faces - one face on the left and one on the right. Both women are talking, but babies only hear the audio from one of them in each clip. (There are four trials, and who's talking is counterbalanced - babies either hear left, right, right, left audio or right, left, left, right audio.) You plan to code the video collected on Lookit for preferential looking - whether the child is looking to the left of the screen, right of the screen, or away. Because you are eventually hoping to develop a measure that can be used to detect individual differences linked to social development, you are also including a short survey on parenting beliefs.
+Imagine you're looking to replicate the finding that infants can detect which moving face "goes with" a speech stream, an ability known as intermodal matching. In your study, babies will watch several short videos of two women's faces - one face on the left and one on the right. Both women are talking, but babies only hear the audio from one of them in each clip. (There are four trials, and who's talking is counterbalanced - babies either hear left, right, right, left audio or right, left, left, right audio.) 
+
+You plan to code the video collected on Lookit for preferential looking - whether the child is looking to the left of the screen, right of the screen, or away. Because you are eventually hoping to develop a measure that can be used to detect individual differences linked to social development, you are also including a short survey on parenting beliefs.
 
 .. admonition:: This is a real study that was run on Lookit!
 
@@ -67,18 +73,18 @@ Discoverable
 Researcher Contact Information
   Enter "<Your Name> (contact: <your email and/or phone number>)"
 
-Build Study - Add JSON
+Protocol configuration
   Leave this blank for now
 
-Study type
-  Choose the default and leave `last_known_player_sha` blank.
+Experiment runner type
+  Choose the default and leave ``Experiment runner version (commit SHA)`` blank.
 
 Click the green "Create study" button at the bottom of the form to save all your work! You've got all the study metadata set... now all that's left is to write your study protocol.
 
 Adding each frame
 -----------------
 
-Now we're going to build out the study protocol JSON, one piece at a time. Here's the basic outline of this study. It follows a basic pattern you can also see described here: :ref:`typical_study_schema`.
+Now we're going to build out the study protocol configuration, one piece at a time. Here's the basic outline of this study. It follows a basic pattern you can also see described here: :ref:`typical_study_schema`.
 
 1. A "setup" frame to guide the family through getting their webcam set up
 2. A video consent frame where the parent makes a verbal statement of informed consent
@@ -94,12 +100,12 @@ Now we're going to build out the study protocol JSON, one piece at a time. Here'
 
 We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like `here <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-video-config.html>`_. 
 
-Underneath the screenshot, you'll see an example of defining this frame in your study JSON:
+Underneath the screenshot, you'll see an example of defining this frame in your study protocol:
 
 .. image:: _static/img/tutorial/exp_video_config.png
     :alt: Exp-video-config frame docs
     
-Copy the definition of the "video-config" frame (``"video-config": { ... }``, as shown highlighted above), and open up your study's JSON editor. Paste this into the "frames" value, like this:
+Copy the definition of the "video-config" frame (``"video-config": { ... }``, as shown highlighted above), and open up your study's protocol editor. Paste this into the "frames" value, like this:
 
 .. image:: _static/img/tutorial/video_config_added_to_frames.png
     :alt: Adding the video-config example to frames
@@ -115,7 +121,7 @@ That defines a frame that's now available for us to use. In order to actually us
 
    There's nothing magical about the "video-config" key given to this frame - you can change it to whatever you want, as long as they key in ``frames`` matches what you call it in ``sequence``. 
    
-Close the editor, save your JSON, and preview your study. You should see the setup frame, looking just like the screenshot in the docs.
+Close the editor, save your protocol, and preview your study. You should see the setup frame, looking just like the screenshot in the docs.
 
 2. Consent
 ~~~~~~~~~~~
@@ -124,7 +130,7 @@ Now that your participants have their webcam set up, the very first thing you ne
 
 Unless you receive specific permission from Lookit, you'll be asked to use the standard video consent (and/or assent) frames to keep the experience for participants consistent.
 
-This study is for babies, so we don't need to collect child assent, just parental consent. Go to the frame docs and select 'exp-lookit-video-consent' on the sidebar. Just like you did for the setup frame, copy the sample frame definition (``"video-consent": {...}``) and add it to your study JSON frames and sequence, like this:
+This study is for babies, so we don't need to collect child assent, just parental consent. Go to the frame docs and select 'exp-lookit-video-consent' on the sidebar. Just like you did for the setup frame, copy the sample frame definition (``"video-consent": {...}``) and add it to your study protocol frames and sequence, like this:
 
 .. image:: _static/img/tutorial/adding_video_consent.png
     :alt: Adding the video-consent example to sequence
@@ -166,21 +172,21 @@ gdpr
 research_rights_statement
   "You are not waiving any legal claims, rights or remedies because of your participation in this research study.  If you feel you have been treated unfairly, or you have questions regarding your rights as a research subject, you may contact <your IRB information>."
 
-Save your JSON and take another look at the preview. Congratulations! You've got the start of your study set up, with a valid consent form that lets the family record a statement of informed consent.
+Save your protocol and take another look at the preview. Congratulations! You've got the start of your study set up, with a valid consent form that lets the family record a statement of informed consent.
 
 3. Intro
 ~~~~~~~~~
 
 Here we'll use a simple text frame just to give parents an overview about what's going to be happening in the study. 
 
-Go to the frame documentation, and select the "exp-lookit-text" frame. Just like before, add the example to your study JSON, putting the frame definition for "study-intro" in your "frames" object and adding "study-intro" to your "sequence" list.
+Go to the frame documentation, and select the "exp-lookit-text" frame. Just like before, add the example to your study protocol, putting the frame definition for "study-intro" in your "frames" object and adding "study-intro" to your "sequence" list.
 
 For convenience, this time, let's put "study-intro" FIRST in the sequence, so that when we preview our study it's easy for us to see the changes we make to customize the text on this frame:
 
 .. image:: _static/img/tutorial/study_intro_first.png
     :alt: Putting the study-intro frame first
 
-Save your JSON and go ahead and preview your study. You should see a simple text frame first. Let's change the ``blocks`` value to show an appropriate overview for this study: copy and paste the sectino below to replace the existing ``"blocks": [...]`` piece:
+Save your protocol and go ahead and preview your study. You should see a simple text frame first. Let's change the ``blocks`` value to show an appropriate overview for this study: copy and paste the sectino below to replace the existing ``"blocks": [...]`` piece:
 
 .. code:: json
 
@@ -338,7 +344,7 @@ Almost done with the preparations! We're just going to give particpants one more
         "nextButtonText": "Start the videos! \n (You'll have a moment to turn around.)"
     }
 
-The JSON above sets up several sections ("blocks") with bulleted lists of information. (For a real study you might also consider splitting this frame into several frames - a study overview, "during the videos" directions, pausing and stopping, and the audio test. More things to click through, but less text on the page.)
+The snippet above sets up several sections ("blocks") with bulleted lists of information. (For a real study you might also consider splitting this frame into several frames - a study overview, "during the videos" directions, pausing and stopping, and the audio test. More things to click through, but less text on the page.)
 
 As in the preview, there are some stimuli you need to add! Browse the audio files `here <http://www.mit.edu/~kimscott/intermodal/>`_ to find an mp3 and ogg version of a "ready to go!" audio clip that you can use to have parents test their audio. Insert the full paths where it says "MP3_SOURCE_HERE" and "OGG_SOURCE_HERE". Why multiple versions of the same files? This helps make sure that the media will work across various computer setups.
 
@@ -395,7 +401,7 @@ Again, you will need to browse the `available audio and video files <http://www.
 
    You want your audio instructions to be as concise as possible, but still friendly and complete. Figuring out all the different audio files you need is often a lesson in just how much communication you take for granted in the lab!
    
-Save your JSON and take a look at what happens. You should see three phases: a spinning ball with some audio instructions; a "calibration" section where an attention-grabber pops back and forth on the screen (so that your coders will be able to verify they can see the child looking back and forth), and then a test video where two women are talking but we can only hear one of them.
+Save your protocol and take a look at what happens. You should see three phases: a spinning ball with some audio instructions; a "calibration" section where an attention-grabber pops back and forth on the screen (so that your coders will be able to verify they can see the child looking back and forth), and then a test video where two women are talking but we can only hear one of them.
     
 7. Survey
 ~~~~~~~~~
@@ -454,7 +460,7 @@ After the test trials, you plan to include the Early Parenting Attitudes Questio
             }
         }
         
-Save your JSON and take a look at the preview. You should see a simple form with two questions and some intro text, and (since nothing's required) you should be able to proceed even if you don't answer the questions. 
+Save your protocol and take a look at the preview. You should see a simple form with two questions and some intro text, and (since nothing's required) you should be able to proceed even if you don't answer the questions. 
         
 You don't need to understand all the syntax above - but even if it looks pretty opaque, you can probably see the basic structure. There are two questions Q1 and Q2 defined in "properties," with some corresponding additional information under "options." Each one has some actual question text (the "title"), some options from 0 to 6, and will be shown as radio buttons. 
 
@@ -469,7 +475,7 @@ It will have the same format and possible answers as the others. You can copy an
 
 Finally, to wrap up our study we need to include an "exp-lookit-exit-survey" frame. (This is required of all Lookit studies to keep the experience for parents fairly consistent.) This is where parents have an option to choose how you may share their video, if at all, and to give you some feedback if they want to. It's also where you'll provide some "debriefing" information, just like you might when chatting with the family after they came into the lab. There are more guidelines about what your debriefing should contain under :ref:`the sample study outline <debriefing-info>`. 
 
-You guessed it - copy and paste the frame below into ``frames`` in your JSON, and add "exit-survey" to your ``sequence``. Put the frames in your ``sequence`` in order and try out the entire study! 
+You guessed it - copy and paste the frame below into ``frames`` in your protocol, and add "exit-survey" to your ``sequence``. Put the frames in your ``sequence`` in order and try out the entire study! 
 
 .. code:: json
 
@@ -488,7 +494,7 @@ Set up counterbalancing
 
 Your plan for this study is actually to have four test trials. Either the audio will come from the left speaker, right speaker, right speaker, left speaker; or it will come from right speaker, left speaker, left speaker, right speaker.
 
-To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study JSON is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`_. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
+To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`_. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
 
 We will be providing the randomizer with three main things: a list of frames (``frameList``), a set of properties all the frames should share, just for convenience (``commonFrameProperties``), and a list of sets of parameters to substitute in (``parameterSets``)- the randomizer will choose one of these at the start of the study and do the substitution. 
 

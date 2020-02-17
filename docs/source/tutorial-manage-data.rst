@@ -33,17 +33,17 @@ Great! Now you know how to give someone else access to your study so you can col
 Updating the code your study uses
 ---------------------------------
 
-Another thing you'll probably need to do eventually is set your study to use an updated version of the underlying frameplayer code. 
+Another thing you'll probably need to do eventually is set your study to use an updated version of the underlying Lookit frameplayer code. 
 
-Remember when we had to "build preview dependencies" so we could preview the study? ( :ref:`You can review that here.<Building study dependencies>`) That build process took the version of the frameplayer code we specified and bundled it up into a little container for our study to run in. That container includes all the information Lookit needs about what frames are available to use and how they work.
+Remember when we had to "build a preview runner" so we could preview the study? ( :ref:`You can review that here.<Building study dependencies>`) That build process took the version of the frameplayer code we specified and bundled it up into a little container for our study to run in. That container includes all the information Lookit needs about what frames are available to use and how they work.
 
-As you fine-tune your study, you will be making lots of edits to your study JSON, saying exactly what stimuli each frame should use, in what order, etc. But the study JSON is still interpreted in that same "container." If at some point you want to take advantage of bug fixes, video recording improvements, new frames that have been added to the standard Lookit code, etc., you'll need to update that underlying code and make a fresh container by building dependencies again. 
+As you fine-tune your study, you will be making lots of edits to your study protocol, saying exactly what stimuli each frame should use, in what order, etc. But the study protocol is still interpreted by that same application. If at some point you want to take advantage of bug fixes, video recording improvements, new frames that have been added to the standard Lookit code, etc., you'll need to tell Lookit to use the new version and build a fresh experiment and/or preview runner.
 
-(How do you think about this split in roles between the code and your JSON? Do you have a good analogy for this? Please make a PR to the docs!)
+(Do you have a good analogy for the split in roles between your study protocol and the experiment runner? A sentence and a dictionary/language, directions and a car...? Please make a PR to the docs!)
 
-Try it out now! Follow the directions in :ref:`Updating the frameplayer code for your study<updating-frameplayer-code>` to update your tutorial study to use the most recent version of the Lookit code. 
+Try it out now! Follow the directions in :ref:`Updating the frameplayer code for your study<updating-frameplayer-code>` to update your tutorial study to use the most recent version of the Lookit frameplayer. 
 
-By design, updating the code shouldn't break anything that currently works - you shouldn't need to change your JSON! However, it is important to always preview your study after any update to double check, and report any problems you run into.
+By design, updating the code shouldn't break anything that currently works - you shouldn't need to change your study protocol! However, it is important to always preview your study after any update to double check, and report any problems you run into.
 
 
 Understanding previewing vs. participating in a study
@@ -208,14 +208,14 @@ That will take you to a page link this where you can see and download previous e
    
 The first thing you will do when you send an email is select the "Message Type". These line up with the email types participants can opt to receive: notifications that it's time for another session of a longitudinal study; notifications that a new study is available for them to participate in; updates about this study (like that results are available); and clarifying questions about their responses.
 
-Next, you specify the recipient(s). You can do this by searching for the appropriate **account** UUID. Finally, you write your message subject and body, and hit send! Let's try it out with a few example scenarios.
+Next, you specify the recipient(s). You can do this by searching for the appropriate **account** ID. Finally, you write your message subject and body, and hit send! Let's try it out with a few example scenarios.
 
 Contact a participant about a consent video issue
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 First, let's imagine that there was an issue with your consent video and you needed to confirm that it was ok to use data from the session. 
 
-In one browser tab, open up the consent manager view for the "Apples to Oranges" study, and find your consent video. Scroll down to the information about the session. You should see a "Participant information" section, separate from "Child information." Copy the UUID for the participant.
+In one browser tab, open up the consent manager view for the "Apples to Oranges" study, and find your consent video. Scroll down to the information about the session. You should see a "Participant information" section, separate from "Child information." Copy the ID for the participant.
 
 .. image:: _static/img/tutorial/participant_id.png
     :alt: Participant ID

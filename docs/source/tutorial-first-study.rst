@@ -63,23 +63,23 @@ Step 2: Preview your study (and learn a bit about JSON on the way)
 
 You may have noticed that below your thumbnail and basic study info, there's a section about the "status" of your study. This section is where you will submit your study for approval by Lookit staff when it's ready, and start and stop data collection. 
 
-This section also shows whether your study "dependencies" are "built" yet. You should see a bar like this:
+This section also shows whether your "experiment runner" and "preview runner" are "built" yet. You should see a bar like this:
 
 .. image:: _static/img/tutorial/dependencies_not_built.png
     :alt: Dependency status area
     
-Click the "Build Preview Dependencies" button. You should see a notification at the top of the screen like this:
+Click the "Build preview runner" button. You should see a notification at the top of the screen like this:
 
 .. image:: _static/img/tutorial/scheduled_for_preview.png
     :alt: Scheduled for build notification
 
-What are these "dependencies"? When you create a study on Lookit, you specify what types of pages or "frames" to use, and provide parameters for each - for example you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit frame player interprets this information and turns it into an interactive study families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing that code, each study gets its own siloed little environment called a Docker image where it will run. 
+What are these "runners"? When you create a study on Lookit, you specify what types of pages or "frames" to use, and provide parameters for each - for example you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit frame player interprets this information and turns it into an interactive study families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing that code, each study gets its own siloed little environment called a Docker image where it will run. 
 
-When you click "Build dependencies" or "build preview dependencies," you are creating that Docker image (for your actual study or for previewing your study, respectively) and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it, unless you choose to update what code your study uses and build dependencies again - for instance to take advantage of a new feature or a bug fix. You also have the advanced option of telling Lookit to use your own code instead of the standard Lookit code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
+When you click "Build experiment runner" or "build preview runner," you are creating that Docker image (for your actual study or for previewing your study, respectively) and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it, unless you choose to update what code your study uses and build dependencies again - for instance to take advantage of a new feature or a bug fix. You also have the advanced option of telling Lookit to use your own code instead of the standard Lookit code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
 
-It will probably take about 10 minutes to build dependencies so you can preview your study (you can wait for the email or refresh the page to see if it's done yet). 
+It will probably take about 10 minutes to build the preview runner (you can wait for the email or refresh the page to see if it's done yet). 
 
-While you're waiting, go read :ref:`section on the JSON format<JSON Overview>`, which will be helpful for the next step. 
+While you're waiting, go read :ref:`section on the JSON format<JSON Overview>`, which you will need for the next step. 
 
 Exercises
 ~~~~~~~~~~~~
@@ -164,7 +164,7 @@ OK, congrats on learning all about JSON! Your study should be ready to preview b
 .. image:: _static/img/tutorial/preview_built.png
     :alt: Preview built status display
     
-Click on "Edit Study" at the top of the page, then scroll down and click the (newly not disabled) blue "See Preview" button:
+Click on "Edit Study" at the top of the page, click the (newly enabled) blue "See Preview" button:
 
 .. image:: _static/img/tutorial/preview_button.png
     :alt: Preview button
@@ -179,7 +179,7 @@ Now you can proceed through the study as a participant. It's a rough, abbreviate
 Step 3: Get comfortable making changes to how your study works
 ---------------------------------------------------------------
 
-The "meat" of your study is in the "Study JSON", which you can change from the Edit Study view. Scroll down and click on the text here:
+The "meat" of your study is in the "Study protocol configuration", which you can change from the Edit Study view. Scroll down and click on the text here:
 
 .. image:: _static/img/tutorial/click_to_edit_json.png
     :alt: JSON as shown on study edit view
@@ -194,7 +194,7 @@ Click the "Beautify" button to format it nicely:
 .. image:: _static/img/tutorial/pretty_json.png
     :alt: Formatted JSON
 
-This whole thing is a JSON document, like we learned about while you were waiting for your preview dependencies to build. Using the triangles on the left may help you to explore and understand its structure better. Try collapsing headers by clicking those triangles until you can see this overall structure:
+This whole "protocol" is a JSON document, like we learned about while you were waiting for your preview dependencies to build. Using the triangles on the left may help you to explore and understand its structure better. Try collapsing headers by clicking those triangles until you can see this overall structure:
 
 .. image:: _static/img/tutorial/collapsed.png
     :alt: Formatted JSON collapsed into high level keys
@@ -224,17 +224,17 @@ Now click "Close" at the top right to exit the editor:
 .. image:: _static/img/tutorial/click_to_close.png
     :alt: Where to click to close editor
 
-This will return you to the Edit Study page, but your changes aren't saved yet. Scroll down to the very end of your JSON and click "Save Changes":
+This will return you to the Edit Study page, but your changes aren't saved yet. Scroll down and click "Save Changes":
 
 .. image:: _static/img/tutorial/click_to_save_json.png
     :alt: Where to click to save JSON
 
-You should see a message at the top like the following. (If not, click on your JSON again and resolve any problems that are preventing it from saving.)
+You should see a message at the top like the following. (If not, click on your protocol again and resolve any problems that are preventing it from saving.)
 
 .. image:: _static/img/tutorial/changes_saved.png
     :alt: Changes saved message
     
-Now scroll down and you can preview your edited study by clicking on the blue "Preview" button again:
+Now you can preview your edited study by clicking on the blue "Preview" button again:
 
 .. image:: _static/img/tutorial/preview_button.png
     :alt: Preview button
@@ -251,11 +251,11 @@ Making a change to an individual frame
 
 While we have that instructions page "front and center," let's edit the text so it looks more like real instructions for the study! 
 
-From the Edit Study page, click on your study JSON to open up the editor again. Click "Beautify" to make it easier to read. Find the section that defines the "instructions" frame (starting on line 10).
+From the Edit Study page, click on your study protocol to open up the editor again. Click "Beautify" to make it easier to read. Find the section that defines the "instructions" frame (starting on line 10).
 
 .. admonition:: Tip
 
-   In addition to using the triangles at the right to expand/collapse sections of your JSON document, you can double-click on a bracket or curly brace to highlight everything up until the matching one.
+   In addition to using the triangles at the right to expand/collapse sections of your protocol, you can double-click on a bracket or curly brace to highlight everything up until the matching one.
    
 Here's what it looks like now. You don't need to understand everything going on here - just note that the text you saw in the preview is defined here! The "webcamBlocks" value at the bottom has the text you see under the webcam. The "blocks" value is a list of two sections. The first one is (or should be) a little overview of instructions for the study. The second just has participants check that their speakers are on and volume is ok.
 
@@ -343,14 +343,14 @@ Next, let's help guide families through this frame by adding numbers to the sect
 
 * Find the line ``"title": "Make sure we can see you",,`` and change that to ``"title": "3. Make sure we can see you",``
 
-Click "Close" in the top right corner of the editor, and then scroll down and click "Save Changes." (Make sure you see the message at the top that changes were saved successfully - fix any problems with the JSON if not!) Now click "Preview" again to see your new and improved instructions page!
+Click "Close" in the top right corner of the editor, and then scroll down and click "Save Changes." (Make sure you see the message at the top that changes were saved successfully - fix any problems with the protocol not being valid JSON if not!) Now click "See Preview" again to see your new and improved instructions page!
 
 Put the instructions back in order
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now that we've made our changes to the instructions frame, let's put it back where it belongs, after the video configuration and consent frames.
 
-Open the JSON editor and find the ``sequence`` way at the end. Right not it should still look like this:
+Open the protocol editor and find the ``sequence`` way at the end. Right not it should still look like this:
 
 .. code-block:: none
 
@@ -474,7 +474,7 @@ Adding another storybook page
 
 You may have noticed when you tried out the study that the ending was a little abrupt: a question for the child, and then boom! we're out in the exit survey. Let's add one last storybook frame to wrap things up - and reassure kids that Bunny ends up doing just fine at show-and-tell!
 
-Open the JSON editor again. Inside the ``frames`` object, find the ``storybook-causal`` frame definiton. It should look something like this (with the long ``frameList`` collapsed):
+Open the protocol JSON editor again. Inside the ``frames`` object, find the ``storybook-causal`` frame definiton. It should look something like this (with the long ``frameList`` collapsed):
 
 .. image:: _static/img/tutorial/storybook_causal_json.png
     :alt: Storybook JSON displayed
@@ -513,7 +513,7 @@ Close, save, and refresh your preview. Now after the question, you should see an
 Using the frame documentation to learn more about frame-specific options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Each frame you define on Lookit has to have a property called ``kind`` which says what kind of frame it is. If you look through your study JSON, you'll see that
+Each frame you define on Lookit has to have a property called ``kind`` which says what kind of frame it is. If you look through your study protocol, you'll see that
 
 * the ``exit-survey`` frame has kind ``exp-lookit-exit-survey``
 * the ``instructions`` frame has kind ``exp-lookit-instructions``
@@ -529,11 +529,11 @@ Let's take a look at the ``exp-lookit-story-page`` documentation to see what opt
 .. image:: _static/img/tutorial/frame_doc.png
     :alt: Annotated frame documentation page
     
-Each single-frame documentation page has these same sections you can use to learn more about how to customize it, what data it collects, and so on. Click on "Properties" to see all the properties we can add to the frame definition in our JSON. There are a lot of properties - you can uncheck "Inherited" at the top of the page to show only the ones specific to this frame, not all the properties that are available on all Lookit frames or on all frames making use of certain "mixins" that add common functionality.
+Each single-frame documentation page has these same sections you can use to learn more about how to customize it, what data it collects, and so on. Click on "Properties" to see all the properties we can add to the frame definition in our protocol. There are a lot of properties - you can uncheck "Inherited" at the top of the page to show only the ones specific to this frame, not all the properties that are available on all Lookit frames or on all frames making use of certain "mixins" that add common functionality.
 
 You'll see that the main things we can set are "audioSources," "autoProceed," "doRecording," "durationSeconds," "images," "parentTextBlock," and "showProgressBar." Each one includes an explanation of what it does and what format its value needs to be in.
 
-Let's try changing the value of "autoProceed" on all our storybook pages. To do that we can change it within the "commonFrameProperties" in our study JSON:
+Let's try changing the value of "autoProceed" on all our storybook pages. To do that we can change it within the "commonFrameProperties" in our study protocol:
 
 .. code-block:: none
 
@@ -610,4 +610,4 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
    
 Now when you try out the study, about half the time you'll hear "was it because of eating a sandwich, or feeling scared?" and the other half of the time you'll hear "was it because of feeling scared, or eating a sandwich?" Don't worry about the details yet - the important thing is just to understand that this is a sort of thing you can do relatively easily.
 
-Congratulations! You've just finished setting up your first study. You've made lots of small changes to the study JSON and looked at how they affect what happens, and by now you're probably comfortable making a change, saving it, and previewing the study again.
+Congratulations! You've just finished setting up your first study. You've made lots of small changes to the study protocol and looked at how they affect what happens, and by now you're probably comfortable making a change, saving it, and previewing the study again.

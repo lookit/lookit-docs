@@ -74,9 +74,9 @@ Move the "exit-survey" into the "select" randomizer you're using for the storybo
 5. Troubleshoot a frame that doesn't work as expected
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In either of your studies, try adding the following frame to the "frames" in your study JSON, and add `"video-assent"` right after the consent frame in your `"sequence"`. This frame is intended to collect child assent (in addition to parental consent in the consent frame) for older children. There should be three pages to look through, but there are some errors in the frame specification and it will not work as written. 
+In either of your studies, try adding the following frame to the "frames" in your study protocol, and add `"video-assent"` right after the consent frame in your `"sequence"`. This frame is intended to collect child assent (in addition to parental consent in the consent frame) for older children. There should be three pages to look through, but there are some errors in the frame specification and it will not work as written. 
 
-Preview the study to see what's wrong and edit the JSON for this frame until it works as intended. You will need to reference the documentation for the exp-lookit-video-assent frame.
+Preview the study to see what's wrong and edit the configuration for this frame until it works as intended. You will need to reference the documentation for the exp-lookit-video-assent frame.
 
 .. admonition:: Reminder
 

@@ -148,13 +148,13 @@ purposes without altering any frame definitions.
 Developing your study: how to try it out as you go
 ---------------------------------------------------
 
-When you first create your study, you'll need to click 'Build preview dependencies' on the study edit page and wait 5-10 minutes for your own special study environment to be created. This will "freeze" the code used for your study so that continuing development and changes to the experiment frame code won't affect how your study works. (You can always update if you want to - see `Updating the frameplayer code <researchers-update-code>`_). You do not need to build preview dependencies again unless you want to update the study type.
+When you first create your study, you'll need to click 'Build preview runner' on the study edit page and wait 5-10 minutes for your own personal study previewer to be created. This will "freeze" the code used for your study so that updates to the Lookit experiment runner won't affect how your study works. (You can always update if you want to - see `Updating the frameplayer code <researchers-update-code>`_). You do not need to build the preview runner again unless you want to update the code it uses.
 
-Once you've built preview dependencies once, you can click 'See preview' after saving your study JSON and you will be taken to a preview version of your study so that you can see what it looks like to a participant! As you write the JSON document for your study, you can click 'See preview' again or just refresh the preview window to see how the changes look. 
+Once you've built a preview runner, you can click 'See preview' after saving your study protocol and you will be taken to a preview version of your study so that you can see what it looks like to a participant! As you write the protocol configuration for your study, you can click 'See preview' again or just refresh the preview window to see how the changes look. 
 
 If something isn't working as expected, you can try opening up the Javascript console in your web browser (Chrome: three vertical dots -> More tools -> Developer tools; Firefox: hamburger menu -> Web Developer -> Web Console) to see if there is an error message that makes sense - e.g., a frame type that isn't defined, or an attempt to load an image that doesn't exist.
 
-As you work on a particular frame like a survey, you probably don't want to click through every bit of your study to get to it each time you make a change! You can put the frame of interest at the very start of your study by inserting it at the very start of the 'sequence' you've defined in your JSON. Then when you're satisfied with that frame, just put it back in order. 
+As you work on a particular frame like a survey, you probably don't want to click through every bit of your study to get to it each time you make a change! You can put the frame of interest at the very start of your study by inserting it at the very start of the 'sequence' you've defined in your protocol. Then when you're satisfied with that frame, just put it back in order. 
 
 
 Finding and using specific frames

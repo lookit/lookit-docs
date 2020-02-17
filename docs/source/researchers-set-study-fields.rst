@@ -268,12 +268,12 @@ Discoverable
 Do you want this study to be listed on the Lookit studies page when it's active? Check this box to list the study there. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also occasionally set a study to non-discoverable temporarily so you can try it out as a participant without actually recruiting!
 
 =============================
-Build study
+Study protocol configuration
 =============================
-This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. You can add these later under /exp/studies/<study_id>/edit/build/. For detailed information about specifying your study protocol, see `Building an Experiment`_.
+This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. This can be left blank at the time you initially create your study. For detailed information about specifying your study protocol, see `Building an Experiment`_.
 
 =============================
-Study type
+Experiment runner type
 =============================
 The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember and there is an exp-player component that can cycle through these frames. For details, see `Editing study type`_
 
@@ -291,4 +291,4 @@ The study type is the application you're using to enable participants to take a 
 
 .. _`Setting study parameters`: researchers-set-study-fields.html
 
-.. _`Editing study type`: researchers-using-platform.html#editing-study-type
+.. _`Editing study type`: researchers-manage-studies.html#editing-study-type
