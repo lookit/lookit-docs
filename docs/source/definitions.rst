@@ -51,7 +51,7 @@ Individuals posting Studies, collecting data, or administrating Organization Sit
 Responses
 ---------
 When a Participant takes part in a study, the answers to their questions, as well as other metadata like the time taking the study, are saved in a Response.  In addition,
-many Responses are associated with video attachments.
+many Responses are associated with videos.
 
 Study
 ------

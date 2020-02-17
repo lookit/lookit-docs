@@ -215,7 +215,7 @@ Contact a participant about a consent video issue
 
 First, let's imagine that there was an issue with your consent video and you needed to confirm that it was ok to use data from the session. 
 
-In one browser tab, open up the consent manager view for the "Apples to Oranges" study, and find your consent video. Scroll down to the information about the session. You should see a "Participant information" section, separate from "Child information." Copy the ID for the participant.
+In one browser tab, open up the consent manager view for the "Apples to Oranges" study, and find your consent video. Scroll down to the information about the session. You should see a "Participant information" section, separate from "Child information." Copy the (hashed) ID for the participant.
 
 .. image:: _static/img/tutorial/participant_id.png
     :alt: Participant ID
@@ -231,7 +231,7 @@ Contact a participant with a gift card code
 
 Second, let's imagine that you're compensating participants with gift cards. (You'll want to take a look at the Terms of Use and the wiki for details as you make plans for compensation, but essentially, for now researchers are responsible for handling any compensation by messaging participants.)
 
-Instead of the consent manager, switch over to "individual responses" and find your response again. In the response JSON window, scroll down until you find the participant UUID, and copy it:
+Instead of the consent manager, switch over to "individual responses" and find your response again. Copy the participant ID from the response JSON:
 
 .. image:: _static/img/tutorial/id_in_json.png
     :alt: Participant ID in response JSON

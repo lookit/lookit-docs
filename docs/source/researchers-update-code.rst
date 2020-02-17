@@ -48,7 +48,7 @@ You can click on any commit for more detail about what was changed. From there y
 .. image:: _static/img/update_code/commit_detail.png
     :alt: Detailed view of commit
     
-Paste the commit sha you want to use into the study edit view:
+Paste the commit sha you want to use into the study edit view, and you should see some information confirming it's the one you wanted:
 
 .. image:: _static/img/update_code/filled_sha.png
     :alt: Example sha value filled in

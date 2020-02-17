@@ -100,10 +100,7 @@ Editing study protocol configuration
 --------------------------------------
 For more information about how to specify what happens during your study, see `Building an Experiment`_.
 
-To edit a study's structure, click 'Edit study' from the study detail page. You must be a study admin or org admin to view this page. From this 'study edit' page, you can edit the study's protocol configuration and the experiment runner type. The study protocol configuration specifies the frames (or pages) of your experiment, and also specifies the order they go in.
-
-.. image:: _static/img/build_study.png
-    :alt: Built study
+To edit a study's protocol, click 'Edit study' from the study detail page. You must be a study admin or org admin to view this page. From this 'study edit' page, you can edit the study's protocol configuration and the experiment runner type. The study protocol configuration specifies the frames (or pages) of your experiment, and also specifies the order they go in.
 
 To edit the protocol configuration, click on the JSON block.  A JSON editor will appear.  Click on "Beautify" in the top right corner for better readability. Note that any invalid JSON will be shown via a little red X at the left of the relevant line! Once you are happy with your changes click 'Close'.  Then hit "Save Changes" in the bottom right corner.
 If your study has already been approved, then clicking "Save Changes" will automatically reject the study. You will have to resubmit it for an organization admin to reapprove.
