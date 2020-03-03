@@ -63,21 +63,21 @@ Step 2: Preview your study (and learn a bit about JSON on the way)
 
 You may have noticed that below your thumbnail and basic study info, there's a section about the "status" of your study. This section is where you will submit your study for approval by Lookit staff when it's ready, and start and stop data collection. 
 
-This section also shows whether your "experiment runner" and "preview runner" are "built" yet. You should see a bar like this:
+This section also shows whether your "experiment runner" is "built" yet. You should see a bar like this:
 
 .. image:: _static/img/tutorial/dependencies_not_built.png
     :alt: Dependency status area
     
-Click the "Build preview runner" button. You should see a notification at the top of the screen like this:
+Click the "Build experiment runner" button. You should see a notification at the top of the screen, something like this:
 
 .. image:: _static/img/tutorial/scheduled_for_preview.png
     :alt: Scheduled for build notification
 
-What are these "runners"? When you create a study on Lookit, you specify what types of pages or "frames" to use, and provide parameters for each - for example you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit frame player interprets this information and turns it into an interactive study families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing that code, each study gets its own siloed little environment called a Docker image where it will run. 
+What is this "experiment runner"? When you create a study on Lookit, you specify what types of pages or "frames" to use, and provide parameters for each - for example you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit frame player interprets this information and turns it into an interactive study families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing that code, each study gets its own siloed little environment called a Docker image where it will run. 
 
-When you click "Build experiment runner" or "build preview runner," you are creating that Docker image (for your actual study or for previewing your study, respectively) and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it, unless you choose to update what code your study uses and build dependencies again - for instance to take advantage of a new feature or a bug fix. You also have the advanced option of telling Lookit to use your own code instead of the standard Lookit code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
+When you click "Build experiment runner," you are creating that Docker image and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it, unless you choose to update what code your study uses and build dependencies again - for instance to take advantage of a new feature or a bug fix. You also have the advanced option of telling Lookit to use your own code instead of the standard Lookit code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
 
-It will probably take about 10 minutes to build the preview runner (you can wait for the email or refresh the page to see if it's done yet). 
+It will probably take about 10 minutes to build the experiment runner (you can wait for the email or refresh the page to see if it's done yet). 
 
 While you're waiting, go read :ref:`section on the JSON format<JSON Overview>`, which you will need for the next step. 
 
@@ -164,16 +164,16 @@ OK, congrats on learning all about JSON! Your study should be ready to preview b
 .. image:: _static/img/tutorial/preview_built.png
     :alt: Preview built status display
     
-Click on "Edit Study" at the top of the page, click the (newly enabled) blue "See Preview" button:
+Click on "Preview study" near the top of the page:
 
 .. image:: _static/img/tutorial/preview_button.png
     :alt: Preview button
     
-Now you can proceed through the study as a participant. It's a rough, abbreviated  implementation of one condition from `Schulz, Bonawitz, and Griffiths (2007) <http://dx.doi.org/10.1037/0012-1649.43.5.1124>`_ - you'll read through a storybook about Bunny, who sometimes gets a tummyache, and eventually answer a question about what makes her tummy hurt. At the end, you'll see a pop-up box showing all the data (besides video) that would have been collected during your session, although because you're previewing, the video isn't actually stored. 
+This will take you to a "study detail" page just like the one participants see when they click on a study at lookit.mit.edu/studies. You will need to register at least one child and respond to the demographic survey (you don't need to respond to all questions, or use real information). Then you will be able to click "Preview now" to proceed through the study as a participant. It's a rough, abbreviated  implementation of one condition from `Schulz, Bonawitz, and Griffiths (2007) <http://dx.doi.org/10.1037/0012-1649.43.5.1124>`_ - you'll read through a storybook about Bunny, who sometimes gets a tummyache, and eventually answer a question about what makes her tummy hurt.
 
 .. admonition:: Note
 
-   The video from previews DOES go to the Lookit server at the moment, although it isn't hooked up to the experimenter interface yet. We don't do anything with it, but it's in principle possible for a staff member here to end up seeing it while debugging something- so please wear clothes while testing, don't sit in front of your really cool poster of your social security number, etc.
+   Video is collected during previews! Like other data, it's only accessible to people who have appropriate permissions. That does include a few Lookit staff in addition to researchers working on your study. We don't do anything with the video and are very unlikely to even see it, but it *is* in principle possible - so please wear clothes while testing, don't sit in front of your really cool poster of your social security number, etc. Or cover your webcam. 
 
 
 Step 3: Get comfortable making changes to how your study works
@@ -239,12 +239,17 @@ Now you can preview your edited study by clicking on the blue "Preview" button a
 .. image:: _static/img/tutorial/preview_button.png
     :alt: Preview button
 
-This time, you should be right at the instructions, instead of starting with the video configuration frame! When you click "Preview" you should go right away to a page like this:
+This time, you should be right at the instructions, instead of starting with the video configuration frame! If you back and click "Preview study" and then "Preview now" again, 
+you should go right away to a page like this:
 
 .. image:: _static/img/tutorial/instructions_page.png
     :alt: Instructions frame
 
 That's because we moved the "instructions" frame to the start of our sequence. If you want to make changes to a particular frame, sticking it at the beginning of your sequence can make it easier to rapidly view your changes as you make them.
+
+.. admonition:: Speed up the process a bit
+
+   You may want to bookmark the URL you're at when you see that instructions page. That's the URL to preview this study with the child you selected. You can refresh this page to see your updated preview right away, without having to click through the study detail page and select a child. 
 
 Making a change to an individual frame
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -343,7 +348,7 @@ Next, let's help guide families through this frame by adding numbers to the sect
 
 * Find the line ``"title": "Make sure we can see you",,`` and change that to ``"title": "3. Make sure we can see you",``
 
-Click "Close" in the top right corner of the editor, and then scroll down and click "Save Changes." (Make sure you see the message at the top that changes were saved successfully - fix any problems with the protocol not being valid JSON if not!) Now click "See Preview" again to see your new and improved instructions page!
+Click "Close" in the top right corner of the editor, and then scroll down and click "Save Changes." (Make sure you see the message at the top that changes were saved successfully - fix any problems with the protocol not being valid JSON if not!) Now click "Preview study" again to see your new and improved instructions page!
 
 Put the instructions back in order
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

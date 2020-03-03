@@ -148,9 +148,9 @@ purposes without altering any frame definitions.
 Developing your study: how to try it out as you go
 ---------------------------------------------------
 
-When you first create your study, you'll need to click 'Build preview runner' on the study edit page and wait 5-10 minutes for your own personal study previewer to be created. This will "freeze" the code used for your study so that updates to the Lookit experiment runner won't affect how your study works. (You can always update if you want to - see `Updating the frameplayer code <researchers-update-code>`_). You do not need to build the preview runner again unless you want to update the code it uses.
+When you first create your study, you'll need to click 'Build experiment runner' on your study page and wait 5-10 minutes for your own personal experiment runner to be created. This will "freeze" the code used for your study so that updates to the Lookit experiment runner won't affect how your study works. (You can always update if you want to - see `Updating the frameplayer code <researchers-update-code>`_). You do not need to build the experiment runner again unless you want to update the code it uses.
 
-Once you've built a preview runner, you can click 'See preview' after saving your study protocol and you will be taken to a preview version of your study so that you can see what it looks like to a participant! As you write the protocol configuration for your study, you can click 'See preview' again or just refresh the preview window to see how the changes look. 
+Once you've built an experiment runner, you can click 'See preview' after saving your study protocol and you will be able to preview your study, exactly as if you were participating with your child. As you write the protocol configuration for your study, you can click 'See preview' again or just refresh the preview window to see how the changes look. 
 
 If something isn't working as expected, you can try opening up the Javascript console in your web browser (Chrome: three vertical dots -> More tools -> Developer tools; Firefox: hamburger menu -> Web Developer -> Web Console) to see if there is an error message that makes sense - e.g., a frame type that isn't defined, or an attempt to load an image that doesn't exist.
 

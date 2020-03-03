@@ -108,7 +108,7 @@ If your study has already been approved, then clicking "Save Changes" will autom
 .. image:: _static/img/json_editor.png
     :alt: Edit JSON
 
-To preview your study, click "See Preview". (You will need to build a preview runner first if you haven't yet, or if you've changed the version you're using.)
+To preview your study, click "See Preview". (You will need to build an experiment runner first if you haven't yet, or if you've changed the version you're using.)
 
 --------------------------------
 Editing experiment runner type
@@ -125,7 +125,7 @@ What does each field mean?
 
     - The ``Experiment runner version (commit SHA)`` is the specific version, or commit, of the experiment runner repository to use. Every time a change is made to the GitHub repository, it is assigned a unique identifier or "commit SHA." If you don't specify a version, then when you go to build your experiment runner, it will be use the most recent commit in the master branch and this field will get filled in. This way, your study will continue to use exactly the same experiment player unless you deliberately choose to update - just in case any changes affect how your study works. If you do specify a version, some information about that version will be displayed to confirm, and you can click "Check for updates" at any time to view what has changed.
 
-**Important:** Whenever you update the code versions you are using, you will need to re-build your preview runner if you want to preview your study, and re-build your experiment runner if you want to run your study. This build process creates your very own runner application using exactly the code you selected, so that your study will continue to run as you designed it. You only need to re-build these when you have changed the code URL or version - not when you update your study protocol configuration or other data like the age range.
+**Important:** Whenever you update the code versions you are using, you will need to re-build your re-build your experiment runner before you can preview or run your study. This build process creates your very own runner application using exactly the code you selected, so that your study will continue to run as you designed it. You only need to re-build these when you have changed the code URL or version - not when you update your study protocol configuration or other data like the age range.
 
 .. _`Building an Experiment`: researchers-create-experiment.html
 

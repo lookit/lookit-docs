@@ -169,42 +169,27 @@ something.
 
 3. Log in as your local superuser at http://localhost:8000/admin/
 
-Previewing a study
-------------------
-
-When you are previewing a study, the responses to the study will not be
-saved. You will get an error at the end of the study about this - that’s
-expected and not something to worry about. Videos will be
-saved, however, with an id of “PREVIEW_DATA_DISREGARD”. You do not need
-to create demographic data, or a child, since this is just a preview.
-You just need a study to navigate to. The URL for previewing is
-``/exp/studies/study_uuid/preview/``.
-
-To fetch the identifier of the study, you can use the API. To fetch
-studies, navigate to http://localhost:8000/api/v1/studies. Copy the id
-of the study you created earlier.
-
-Now, you can navigate to
-https://localhost:4200/exp/studies/study_id/preview, replacing study_id
-with the id you obtained from the API. (For simplicity, bookmark this
-link while you’re working!)
-
-Participating in a study
-------------------------
+Previewing or participating in a study
+---------------------------------------
 
 To participate in a study locally, you need demographic data and a child
-attached to the logged in user, as well as a study.
-
-Responses are saved to your local server. The URL for participating is
-``studies/study_uuid/child_uuid``. To fetch studies, navigate to
+attached to the logged in user, as well as a study. To fetch studies, navigate to
 http://localhost:8000/api/v1/studies/. Copy the id of the study you
 created earlier. To fetch children, navigate to
 http://localhost:8000/api/v1/children/. Copy the id of your child.
 
-Finally, to participate in a study, navigate to
+Both previewing and participating will save data to your local server; there's no difference in the experience. Preview responses simply have an "is_preview" field set to True, and are displayed differently on the consent manager and individual responses views.
+
+To preview a study, you need to either have read permissions for the study or the study needs to have "shared preview" set to true. To participate, you do not need any particular permissions. 
+
+To participate in a study, navigate to
 https://localhost:4200/studies/study_id/child_id, replacing study_id and
 child_id with the ids you obtained from the API. (For simplicity,
 bookmark this link while you’re working!)
+
+To preview, you can instead navigate to https://localhost:4200/exp/studies/study_id/child_id/preview/, replacing study_id and
+child_id with the ids you obtained from the API.
+
 
 Where does my video go?
 -----------------------
@@ -212,8 +197,7 @@ Where does my video go?
 If you have set up the Pipe recorder environment variables as described
 in `the installation instructions <ember-app-installation.html>`__,
 video recorded during your local testing will go to Pipe and then to an
-S3 bucket for Lookit development video. Contact us for directions about
-accessing this bucket. [TODO: documentation on setting up access.]
+S3 bucket for Lookit development video. Please get in touch if you need access to this video. Depending on the project you are working on, we may provide credentials for accessing the dev S3 bucket, or may ask that you set up your own free Pipe account and have it forward data to you own S3 bucket, which will allow you to test more of the process. (In this case you will use ngrok to send a Pipe webhook to your own local instance.)
 
 Using https
 -----------
@@ -223,8 +207,6 @@ self-signed certificate. For instance, in Chrome, set Camera and
 Microphone permissions at
 chrome://settings/content/siteDetails?site=https://localhost:4200.
 
-If not using https locally, replace the https://localhost:4200 addresses
-with http://localhost:4200.
 
 Further Reading / Useful Links
 --------------------------------
