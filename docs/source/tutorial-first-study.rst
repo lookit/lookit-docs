@@ -271,7 +271,7 @@ Here's what it looks like now. You don't need to understand everything going on 
                         "text": "This is an 'exp-lookit-instructions' frame."
                     },
                     {
-                        "text": "See https://lookit.github.io/ember-lookit-frameplayer/classes/ExpLookitInstructions.html"
+                        "text": "See https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-lookit-instructions.html"
                     },
                     {
                         "text": "You can display any text, audio, images, and video you want, and can optionally require participants to play audio/video segments to move on. You can also choose whether to display the webcam."
