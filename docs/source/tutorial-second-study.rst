@@ -37,6 +37,12 @@ In a separate tab, open up the documentation about these fields for fuller expla
 Name
   Enter "Look and Listen" here - or another name for the study if you have a cute or catchy idea! 
   
+Discoverable
+  Check the box so that when you submit your study to post on the staging server, it will show up to participants on the Studies page
+  
+Share preview
+  Check the box so other researchers can preview your study without being added as collaborators
+  
 Image
   You can download a screenshot of the stimuli to use `here <http://www.mit.edu/~kimscott/intermodal/img/intermodal_thumbnail.png>`_.
 

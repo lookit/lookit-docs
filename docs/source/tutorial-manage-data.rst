@@ -35,9 +35,9 @@ Updating the code your study uses
 
 Another thing you'll probably need to do eventually is set your study to use an updated version of the underlying Lookit frameplayer code. 
 
-Remember when we had to "build a preview runner" so we could preview the study? ( :ref:`You can review that here.<Building study dependencies>`) That build process took the version of the frameplayer code we specified and bundled it up into a little container for our study to run in. That container includes all the information Lookit needs about what frames are available to use and how they work.
+Remember when we had to "build an experiment runner" so we could preview the study? ( :ref:`You can review that here.<Building study dependencies>`) That build process took the version of the frameplayer code we specified and bundled it up into a little container for our study to run in. That container includes all the information Lookit needs about what frames are available to use and how they work.
 
-As you fine-tune your study, you will be making lots of edits to your study protocol, saying exactly what stimuli each frame should use, in what order, etc. But the study protocol is still interpreted by that same application. If at some point you want to take advantage of bug fixes, video recording improvements, new frames that have been added to the standard Lookit code, etc., you'll need to tell Lookit to use the new version and build a fresh experiment and/or preview runner.
+As you fine-tune your study, you will be making lots of edits to your study protocol, saying exactly what stimuli each frame should use, in what order, etc. But the study protocol is still interpreted by that same application. If at some point you want to take advantage of bug fixes, video recording improvements, new frames that have been added to the standard Lookit code, etc., you'll need to tell Lookit to use the new version and build a fresh experiment runner.
 
 (Do you have a good analogy for the split in roles between your study protocol and the experiment runner? A sentence and a dictionary/language, directions and a car...? Please make a PR to the docs!)
 
@@ -49,23 +49,22 @@ By design, updating the code shouldn't break anything that currently works - you
 Understanding previewing vs. participating in a study
 --------------------------------------------------------------------
 
-So far, we have tried out our studies via the "preview" button on the study edit page. There are several differences between previewing and actually participating in a study:
+So far, we have tried out our studies via the "preview study" button on the study edit page. There are only a few differences between previewing and actually participating in a study:
 
-- When you participated in a study, the data collected (video and conditions/events/responses) is stored and will be available under "view responses" on the experimenter interface. Data from previewing is not stored!
+- When you preview a study, there is an "is_preview" field of the data collected that's set to true - otherwise it's false. Data collected from previewing is marked when you view consent videos or individual responses, and this field is available in the all-response downloads.
 
-- When you preview a study, the data collected is displayed in a pop-up window at the end of the study. When you participate, this data is not displayed.
+- Only Lookit researchers with appropriate permissions can preview the study. (Either the researcher needs to have read permissions for the study, or the study needs to be set to have a shared preview - then any researcher can access it.) Anyone with a child registered on Lookit can participate in a study.
 
-- When you participate in a study, the frame player has access to information about the particular child who's participating - their name, birthday, previous session history for this study, etc. This information may be used to customize the experience - for instance, skipping a child assent frame for young children, or rotating through tasks in a longitudinal study.
-
-- Only Lookit researchers with appropriate permissions can preview the study. Anyone with a child registered on Lookit can participate in a study.
-
-- Preview and participation use different Docker containers, so you'll need to click "build dependencies" even if you have already built preview dependencies.
-
+Other than that, the experience is exactly the same, by design - so that you know exactly how your study will work. You see the same messages about whether your child is eligible, customization based on the child or past responses works the same way, and you use the same experiment runner.
 
 Going live!: the study approval process and starting data collection
 --------------------------------------------------------------------
 
-So how can you participate in your study, and let others do the same? The first step is to "submit" your study for approval by Lookit staff. Go to your first tutorial study and find the "change state" dropdown:
+If you just want other researchers to be able to preview your study to give feedback, you can set "shared preview" to true and then share the preview link on Slack. 
+
+But what about when you actually want to start data collection? Let's try out that process now. 
+
+The first step is to "submit" your study for approval by Lookit staff. Go to your first tutorial study and find the "change state" dropdown:
 
 .. image:: _static/img/tutorial/study_submit.png
     :alt: Change state dropdown menu
@@ -75,10 +74,8 @@ Go ahead and "submit" your study. This puts it into a queue for review by Lookit
 .. admonition:: Why the manual approval process?
 
    From a participant's standpoint, Lookit is a unified platform, even though there are studies from a variety of research labs. This is great for participant recruitment! But it also means we're all sharing a reputation. Someone else's study that upsets or (without adequate precautions) deceives children, that baffles parents, or that just doesn't work will affect how interested families are in your study, too. Based on our early experience with researchers using Lookit, we strongly expect that a quick review will catch substantive issues often enough to be worth putting everyone through. If you are making changes to an existing study, review is either not required (if only changing certain fields like the age range/eligibility criteria) or is very quick.
-   
-You should also go ahead and click "Build Dependencies" so your study is ready to start once it's approved.
 
-Within a few days you will get an email saying your study was approved. (At some point you will have the power to approve your own studies on the staging server!) At that point, you'll be able to come back and "start" your study, like this:
+Within a few days you will get an email saying your study was approved. At that point, you'll be able to come back and "start" your study, like this:
 
 .. image:: _static/img/tutorial/study_start.png
     :alt: Change state dropdown menu with start

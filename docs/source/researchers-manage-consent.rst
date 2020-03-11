@@ -23,11 +23,13 @@ From your study detail page, click 'View Responses' and you will be taken to the
     
 At the left, you will see a list of responses. By default the responses with 'Pending' consent status are displayed; you can use the dropdown menu to show 'Accepted' or 'Rejected' consent videos instead. 
 
+Data from previewing your study is displayed here too, but any preview responses are in gray and say "[PREVIEW]".
+
 -----------------------
 Making consent rulings
 -----------------------
 
-When you click on a response, any consent videos from that response are shown to the right. (It is possible, although rare, for there to be multiple consent videos associated with a single response; this will become more common when some researchers are collecting both parental consent and child assent, which would be judged together.) A minimal summary of the data is shown below so that you can see whether the child is in the age range for the study and how far the family got. Unless this response already has already been accepted, you will NOT see 'Full Session Data' shown, because this could include more sensitive information.
+When you click on a response, any consent videos from that response are shown to the right. (It is possible, although rare, for there to be multiple consent videos associated with a single response; this will become more common when some researchers are collecting both parental consent and child assent, which would be judged together.) A minimal summary of the data is shown below so that you can see whether the child is in the age range for the study and how far the family got.
 
 Watch the video, and decide whether it shows informed consent. You can choose to 'Accept' or 'Reject' a response, and can enter a comment if desired to keep track of any additional information. You can enter a comment without changing the consent ruling (e.g., to say "Emailed this family to confirm consent"). In general, you should 'accept' consent only when the consent video shows an adult reading the consent statement audibly (or signing in ASL), but see the `Terms of Use <https://lookit.mit.edu/termsofuse/>`_ for details (for instance, you may be able to contact a family to confirm consent by email in some cases). 
 
@@ -50,3 +52,11 @@ Withdrawn responses
 If a parent chooses to withdraw video data at the end of the study, that will be noted in the list item for the response (before the comment it will say 'Withdrawn' and the response will be crossed out). All video data beyond consent will be inaccessible to researchers, and it will be deleted automatically from Lookit servers after seven days. 
 
 However, you are still able to make a consent ruling about the consent video; this will still impact access to the remaining non-video response data as well as associated child, demographic, and account data. 
+
+--------------------------------
+Where are my preview responses?
+--------------------------------
+
+When you preview a study, data is saved to the server the same way as when you participate. However, this data is only available for you to see if you complete at least a consent frame. 
+
+When you're working on a study, you may often be trying out pieces of the study without going through the consent process every time. Once you want to take a look at the data collected, just make sure you include a consent frame. 

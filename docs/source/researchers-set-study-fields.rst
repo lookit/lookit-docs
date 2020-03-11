@@ -14,6 +14,16 @@ Name
 Participant-facing title of your study; must be <255 characters. Shoot for a short, catchy title; depending on how you advertise your study, you may want participants to be able to recognize and select it from the studies page. If you plan on running similar follow-up studies and want them to be easily distinguishable, avoid titles that encompass your entire research program like "Infant Language Study."
 
 =============================
+Discoverable
+=============================
+Do you want this study to be listed on the Lookit studies page when it's active? Check this box to list the study there. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also occasionally set a study to non-discoverable temporarily so you can try it out as a participant without actually recruiting!
+
+=============================
+Share preview
+=============================
+Do you want other researchers to be able to preview your study? Check this box to make it possible for any logged-in Lookit researcher to try out your study. If you check the box, you will be able to share your preview link - e.g. on the Slack channel - to ask for feedback on your study from other researchers. This is generally a good idea as we could all use another pair of eyes to check on directions, stimuli, debriefing text, etc. Getting peer feedback ahead of time will generally substantially speed up the Lookit review process too. You can leave this unchecked if you're very concerned about being scooped. (My personal feeling is that no one has the time or energy to scoop you. See also: every line of our code is publicly available and has been for years...)
+
+=============================
 Image
 =============================
 Thumbnail image that will be displayed to participants on Lookit's studies page.  File must be an image-type, and please keep the file size reasonable (<1 MB). Sometimes your stimuli are a good basis for creating this image, or it can be something that conceptually represents your study or shows what it looks like to participate.
@@ -261,11 +271,7 @@ Approximately how long does it take to do your study, start to finish? (Try it i
 Researcher contact information
 ===============================
 This should give the name of the PI for your study, and an email address where the PI or study staff can be reached with questions. Format: PIs Name (contact: youremail@lab.edu). This is displayed to participants on the study detail page before they choose to participate, as well as substituted into your consent form and exit survey, so in general the name needs to be the person who's listed as PI on your IRB protocol (although it may not need to be their personal email address). 
-  
-=============================
-Discoverable
-=============================
-Do you want this study to be listed on the Lookit studies page when it's active? Check this box to list the study there. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also occasionally set a study to non-discoverable temporarily so you can try it out as a participant without actually recruiting!
+
 
 =============================
 Study protocol configuration

@@ -65,15 +65,21 @@ Paste the commit sha you want to use into the study edit view, and you should se
  
 ----------
  
-5. Because the code you're using is different now, you will need to build a preview runner before you can see the study preview again, and you will need to build an experiment runner before you can start your study again. Even if you are just updating to the latest version of the master branch, you should preview your study and make sure everything still works just how you want it to! Click "Build preview runner" at the top of the "Edit study" page.
+5. Because the code you're using is different now, you will need to build a (new) experiment runner before you can start your study again. If you click the "Preview study" button on your main study page or edit study page, you will be taken to a preview of the "study detail" page participants see before deciding whether to start the study. But you won't have the option to actually preview the study yet:
+
+.. image:: _static/img/update_code/preview_detail_page.png
+    :alt: Preview detail page without option to participate yet
+
+Even if you are just updating to the latest version of the master branch, you should preview your study and make sure everything still works just how you want it to! Click "Build experiment runner" on your main study page:
 
 .. image:: _static/img/update_code/build_preview.png
     :alt: Build preview runner button
     
-Once you get an email notification that the preview runner is built, you will be able to click "See Preview" above.
+Once you get an email notification that the experiment runner has been built, you will be able to try out your study. The preview detail page will now have a button to preview the study:
 
-.. image:: _static/img/update_code/see_preview.png
-    :alt: See preview button
+.. image:: _static/img/update_code/preview_enabled.png
+    :alt: Preview detail page with option to participate
+
 
 ----------
 

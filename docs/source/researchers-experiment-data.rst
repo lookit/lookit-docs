@@ -93,7 +93,11 @@ To view all of the responses to a study with confirmed consent, click 'View Resp
 .. image:: _static/img/all_responses.png
     :alt: View all responses
     
-Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. 
+Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager.
+
+.. admonition:: Preview data is included in all responses!
+   
+   Previewing a study is designed to work *exactly* the same way as participating, including saving data that you can see with other responses. This is intended to support researchers in preparing data analysis workflows and ensuring that data are formatted as expected before starting data collection. But you'll need to either (a) filter out responses where is_preview is True, or (b) use the "Delete all preview data" button to remove preview responses prior to data download.
 
 Choosing what participant information to include
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -134,7 +138,7 @@ Viewing individual study responses
 
 To inspect single responses to your study, navigate to your study and click 'View Responses,' then 'Individual responses'. You must have permission to view this study's responses, which means you must have either organization or study Admin or Read permissions.
 
-Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. 
+Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. Both preview and real responses will show up here, but preview responses are marked with a "P" and say "PREVIEW" in the background of the row. 
 
 On the left, you have a list responses to your study, with the child ID, response ID, the study's completion status, and the date they started the study. When you click on a response, the data from that response is shown on the right. You can 
 download the data from that response in one of several formats: JSON (JavaScript Object Notation, a structured text format); a CSV summary (a "wide format" overview with basic information about the participant and response, such as condition assignment); or CSV frame data (a "long format" detailed list of data collected in each frame during this response, complementary to the CSV summary).
@@ -165,6 +169,7 @@ event.)
        "response": {
            "id": 1190,
            "uuid": "d96b3ba5-6806-4c09-86e2-77456163eb5a",
+           "is_preview": false,
            "sequence": [
                "0-video-config",
                "1-video-consent",
