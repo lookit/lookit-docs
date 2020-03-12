@@ -65,7 +65,7 @@ List of tutorial participants
 ------------------------------
 - Kim Scott (MIT)
 - Ashley Thomas (MIT)
-
+- James Dunlea (Columbia University)
 
 .. _Github issues overview:
 
