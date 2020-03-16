@@ -66,6 +66,7 @@ List of tutorial participants
 - Kim Scott (MIT)
 - Ashley Thomas (MIT)
 - James Dunlea (Columbia University)
+- Théo Morfoisse (NYU)
 
 .. _Github issues overview:
 
