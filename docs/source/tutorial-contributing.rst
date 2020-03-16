@@ -66,6 +66,7 @@ List of tutorial participants
 - Kim Scott (MIT)
 - Ashley Thomas (MIT)
 - James Dunlea (Columbia University)
+- Eren Fukuda (University of Wisconsin-Madison)
 
 .. _Github issues overview:
 
