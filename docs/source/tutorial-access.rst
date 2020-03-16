@@ -39,7 +39,7 @@ If you need help as you're completing this tutorial - or later when you're creat
   Even if you're not totally stumped, it's worth checking in on Slack to get ideas and resources! For example, you might ask if anyone has an R script for analyzing their data that you could use as a starting point, or run a draft debriefing by other researchers to get advice on wording.
 
 
-- **Tutorial office hours** with Lookit staff may (once/if there are more people completing the tutorial) be held via MIT WebEx at `this link <https://www.homedepot.com/p/TrafficMASTER-High-Point-Chestnut-6-in-x-36-in-Luxury-Vinyl-Plank-Flooring-24-sq-ft-case-83313/205893522>`_. You will be able to find the schedule below and in `this Google calendar <https://calendar.google.com/calendar?cid=bGtuc3Y4b3RidTUzMzNxdTBtaGRxMGI3bmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ>`_. Drop in any time during office hours to ask a question as you work through the tutorial.
+- **Tutorial office hours** with Lookit staff may (once/if there are more people completing the tutorial) be held via MIT WebEx at `this link <https://mit.webex.com/meet/kimscott>`_. You will be able to find the schedule below and in `this Google calendar <https://calendar.google.com/calendar?cid=bGtuc3Y4b3RidTUzMzNxdTBtaGRxMGI3bmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ>`_. Drop in any time during office hours to ask a question as you work through the tutorial.
 
 .. raw:: html
 
