@@ -67,6 +67,7 @@ List of tutorial participants
 - Ashley Thomas (MIT)
 - James Dunlea (Columbia University)
 - Katharine Scott (University of Wisconsin-Madison)
+- Meltem Yucel (University of Virginia)
 
 .. _Github issues overview:
 
