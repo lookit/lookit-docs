@@ -67,6 +67,7 @@ List of tutorial participants
 - Ashley Thomas (MIT)
 - James Dunlea (Columbia University)
 - Katharine Scott (University of Wisconsin-Madison)
+- Annie Harris (Harvard University Extension School)
 
 .. _Github issues overview:
 
