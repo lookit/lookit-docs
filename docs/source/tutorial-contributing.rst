@@ -68,6 +68,7 @@ List of tutorial participants
 - James Dunlea (Columbia University)
 - Katharine Scott (University of Wisconsin-Madison)
 - Meltem Yucel (University of Virginia)
+- Francis Yuen (University of British Columbia)
 
 .. _Github issues overview:
 
