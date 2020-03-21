@@ -69,6 +69,7 @@ List of tutorial participants
 - Katharine Scott (University of Wisconsin-Madison)
 - Meltem Yucel (University of Virginia)
 - Francis Yuen (University of British Columbia)
+- Rachel Dudley (Central European University)
 
 .. _Github issues overview:
 
