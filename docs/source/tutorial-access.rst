@@ -8,7 +8,7 @@ Step 1: Join the Lookit Slack workspace
 ----------------------------------------
 Click `here <https://join.slack.com/t/lookit-mit/shared_invite/enQtNzU4MDAzNjYwMTAwLTZhNDM0NzU2MGMxZWNhZjcxZDU1ZWUyYzIzZjlkM2UyNTRiZjkyZmEwZjMxOGVmMDM3ZmNlNzMwM2Q5NTYwODU>`_ to join the Lookit Slack workspace. If you haven't used Slack before, you'll need to create an account; otherwise it will be added to your other workspaces. 
 
-Slack is a messaging platform that serves as the primary tool for communicatation about development and use of the Lookit platform. The Lookit Slack workspace is essentially a collection of "chat rooms" for various topics. You can use Slack via a web interface, a desktop app, and/or on your phone. 
+Slack is a messaging platform that serves as the primary tool for communication about development and use of the Lookit platform. The Lookit Slack workspace is essentially a collection of "chat rooms" for various topics. You can use Slack via a web interface, a desktop app, and/or on your phone. 
 
 Step 2: Get access to the staging server
 ----------------------------------------
