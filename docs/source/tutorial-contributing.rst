@@ -70,6 +70,7 @@ List of tutorial participants
 - Meltem Yucel (University of Virginia)
 - Francis Yuen (University of British Columbia)
 - Rachel Dudley (Central European University)
+- Kelly Kendro (UC San Diego)
 
 .. _Github issues overview:
 
