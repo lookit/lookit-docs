@@ -22,7 +22,7 @@ You plan to code the video collected on Lookit for preferential looking - whethe
 Creating the study and filling out study fields
 -----------------------------------------------
 
-This time, instead of copying an existing study, we're going to create our own from scratch so that we see every field. Go to `<https://staging-lookit.mit.edu/exp/studies/>`_ and click the green "Create Study" button at top right:
+This time, instead of copying an existing study, we're going to create our own from scratch so that we see every field. Go to `<https://lookit-staging.mit.edu/exp/studies/>`_ and click the green "Create Study" button at top right:
 
 .. image:: _static/img/tutorial/create_study_button.png
     :alt: Create Study button
