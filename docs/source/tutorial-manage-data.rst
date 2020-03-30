@@ -82,14 +82,14 @@ Within a few days you will get an email saying your study was approved. At that 
 
 Starting and pausing data collection can be done instantly at any time after approval. 
 
-What does "starting" your study do? If your study is set as "discoverable" (one of the checkboxes under "edit study"), starting will add your study to the set of studies displayed at `<https://staging-lookit.cos.io/studies/>`_, and anyone (including you) will be able to participate in it from there. If your study is set as non-discoverable, anyone will be able to participate via a direct link (shown on your study page in the experimenter interface). This is useful for studies intended for a very specific population, for instance if you're doing an online follow-up to an in-person study: you can email the direct link to families, without worrying about screening out other families on Lookit.
+What does "starting" your study do? If your study is set as "discoverable" (one of the checkboxes under "edit study"), starting will add your study to the set of studies displayed at `<https://staging-lookit.mit.edu/studies/>`_, and anyone (including you) will be able to participate in it from there. If your study is set as non-discoverable, anyone will be able to participate via a direct link (shown on your study page in the experimenter interface). This is useful for studies intended for a very specific population, for instance if you're doing an online follow-up to an in-person study: you can email the direct link to families, without worrying about screening out other families on Lookit.
  
 When you get the email, come back and try starting your study to see how it gets displayed to participants. For now, let's move on and work with an already-approved study!
 
 Create some data to play with
 --------------------------------
 
-First, let's actually participate in another study! Go to `<https://staging-lookit.cos.io/studies/>`_ and select the study "Apples to oranges." This is a short study just to demo the data collection process. You may need to create a child profile and/or fill out a demographic survey before participating. Proceed all the way through this study!
+First, let's actually participate in another study! Go to `<https://staging-lookit.mit.edu/studies/>`_ and select the study "Apples to oranges." This is a short study just to demo the data collection process. You may need to create a child profile and/or fill out a demographic survey before participating. Proceed all the way through this study!
 
 Now switch back to the Experimenter interface. Note: you can toggle between Lookit (the participant-facing section) and Experimenter (the researcher-facing section) at any time via the top navbar if you are logged in as an experimenter:
 

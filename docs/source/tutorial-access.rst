@@ -16,7 +16,7 @@ The Lookit "staging server" is a separate instance of the platform from the "pro
 
 1. Go to the `staging OSF server <https://staging.osf.io>`_. Click 'Sign Up' at the top right and create an account. This is your "staging-OSF account." It's separate from your regular OSF account, if you have one. You'll use the staging OSF account to log in to the Lookit staging server.
 
-2. Go to `<https://staging-lookit.cos.io/exp/>`_. Click the "Open Science Framework" link. Log in with your staging-OSF account from step 1. 
+2. Go to `<https://staging-lookit.mit.edu/exp/>`_. Click the "Open Science Framework" link. Log in with your staging-OSF account from step 1. 
 
 .. image:: _static/img/osf-login.png
     :alt: Enter your osf credentials
@@ -28,7 +28,7 @@ The Lookit "staging server" is a separate instance of the platform from the "pro
 .. image:: _static/img/dashboard.png
     :alt: Login to experimenter image
 
-4. Once your request is approved, you can return to `<https://staging-lookit.cos.io/exp/>`_ to log in. You should now see a "Manage Studies" page. Bookmark this address!
+4. Once your request is approved, you can return to `<https://staging-lookit.mit.edu/exp/>`_ to log in. You should now see a "Manage Studies" page. Bookmark this address!
 
 Where to go for help
 ---------------------
@@ -50,6 +50,6 @@ Exercises
 
 1. Say hello in the "general" channel of the Lookit Slack workspace.
 
-2. Get a feel for the participant experience! Go to the main participant-facing portion of the staging server, https://staging-lookit.cos.io. Go to 'Studies,' select the study called 'Example study,' and participate in it! You'll be prompted to complete the demographic survey and register at least one child before you can start. We recommend making up responses and not using your real personal information on the staging server, as many researchers will have access to it and it is NOT treated as actual data (with all the care that entails). E.g., please don't enter your kids' actual birthdays or health info.
+2. Get a feel for the participant experience! Go to the main participant-facing portion of the staging server, https://staging-lookit.mit.edu. Go to 'Studies,' select the study called 'Example study,' and participate in it! You'll be prompted to complete the demographic survey and register at least one child before you can start. We recommend making up responses and not using your real personal information on the staging server, as many researchers will have access to it and it is NOT treated as actual data (with all the care that entails). E.g., please don't enter your kids' actual birthdays or health info.
 
 3. [Extra credit] If you have young kids, take part in a currently-running study on the production server - the experience is different with a squirming kid in your lap! Create an account on the production server by going to https://lookit.mit.edu and clicking 'Sign up.' So that you can later make a researcher account, use a *different* email account to register than you use for your regular OSF account, if you have one. For instance, use a personal instead of work email. Please enter actual, not made-up, data on the production server - you are participating in real research here.
