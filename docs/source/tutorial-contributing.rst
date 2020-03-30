@@ -71,6 +71,7 @@ List of tutorial participants
 - Francis Yuen (University of British Columbia)
 - Rachel Dudley (Central European University)
 - Lisa Renaud (Northwestern University)
+- Hannah Cho (University of Toronto)
 
 .. _Github issues overview:
 
