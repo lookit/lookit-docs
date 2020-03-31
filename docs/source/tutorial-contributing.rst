@@ -72,6 +72,7 @@ List of tutorial participants
 - Rachel Dudley (Central European University)
 - Lisa Renaud (Northwestern University)
 - Hannah Cho (University of Toronto)
+- Elizabeth Lapidow (UCSD)
 
 .. _Github issues overview:
 
