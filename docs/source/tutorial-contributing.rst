@@ -70,6 +70,8 @@ List of tutorial participants
 - Meltem Yucel (University of Virginia)
 - Francis Yuen (University of British Columbia)
 - Rachel Dudley (Central European University)
+- Lisa Renaud (Northwestern University)
+- Hannah Cho (University of Toronto)
 - Trisha Katz (University of California-San Diego)
 - Caren Walker (University of California-San Diego)
 

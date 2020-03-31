@@ -7,7 +7,7 @@ In this section, you will be creating your first study on Lookit. You will learn
 Step 1: Clone the 'Lookit tutorial part 1' study
 -------------------------------------------------
 
-To get started, log in to the Lookit staging server as an experimenter. (Go to `<https://staging-lookit.cos.io/exp/>`_ to log in - bookmark this link if you haven't already.)
+To get started, log in to the Lookit staging server as an experimenter. (Go to `<https://lookit-staging.mit.edu/exp/>`_ to log in - bookmark this link if you haven't already.)
 
 You should see a few studies you automatically have access to, including one called "Lookit tutorial part 1". Click on that to open up the study detail page:
 
