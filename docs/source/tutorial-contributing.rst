@@ -74,6 +74,7 @@ List of tutorial participants
 - Hannah Cho (University of Toronto)
 - Trisha Katz (University of California-San Diego)
 - Caren Walker (University of California-San Diego)
+- Elizabeth Lapidow (UCSD)
 
 .. _Github issues overview:
 
