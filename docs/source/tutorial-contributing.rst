@@ -75,6 +75,7 @@ List of tutorial participants
 - Trisha Katz (University of California-San Diego)
 - Caren Walker (University of California-San Diego)
 - Elizabeth Lapidow (UCSD)
+- Hyesung Grace Hwang (University of Chicago)
 
 .. _Github issues overview:
 
