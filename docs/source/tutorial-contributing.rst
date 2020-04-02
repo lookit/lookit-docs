@@ -76,6 +76,7 @@ List of tutorial participants
 - Caren Walker (University of California-San Diego)
 - Elizabeth Lapidow (UCSD)
 - Hyesung Grace Hwang (University of Chicago)
+- Marc Colomer (University of Chicago)
 
 .. _Github issues overview:
 
