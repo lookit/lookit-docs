@@ -48,7 +48,7 @@ If you need help as you're completing this tutorial - or later when you're creat
 Exercises
 ----------
 
-1. Say hello in the "general" channel of the Lookit Slack workspace.
+1. Say hello in the "tutorial" channel of the Lookit Slack workspace.
 
 2. Get a feel for the participant experience! Go to the main participant-facing portion of the staging server, https://staging-lookit.cos.io. Go to 'Studies,' select the study called 'Example study,' and participate in it! You'll be prompted to complete the demographic survey and register at least one child before you can start. We recommend making up responses and not using your real personal information on the staging server, as many researchers will have access to it and it is NOT treated as actual data (with all the care that entails). E.g., please don't enter your kids' actual birthdays or health info.
 
