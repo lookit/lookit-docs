@@ -73,9 +73,6 @@ Maximum Age Cutoff
 Duration
   "5 minutes" (you can also test this )
 
-Discoverable
-  Check the box so that when you submit your study to post on the staging server, it will show up to participants on the Studies page
-
 Researcher Contact Information
   Enter "<Your Name> (contact: <your email and/or phone number>)"
 
@@ -127,7 +124,7 @@ That defines a frame that's now available for us to use. In order to actually us
 
    There's nothing magical about the "video-config" key given to this frame - you can change it to whatever you want, as long as they key in ``frames`` matches what you call it in ``sequence``. 
    
-Close the editor, save your protocol, and preview your study. You should see the setup frame, looking just like the screenshot in the docs.
+Close the editor, save your protocol, and preview your study. Make sure to click "build experimenter builder" if you have not already done so; you will be emailed when it is built and then you can preview your study. You should see the setup frame, looking just like the screenshot in the docs.
 
 2. Consent
 ~~~~~~~~~~~
