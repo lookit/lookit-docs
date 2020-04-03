@@ -582,7 +582,7 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
             {
                 "images": [
                     {
-                        "id": "leftA",
+                        "id": "storybookIllustration",
                         "src": "bunnya01.png", <-- but change this to "QUESTION_IMAGE"
                         "top": "0",
                         "left": "10",
@@ -591,7 +591,7 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
                 ],
                 "audioSources": [
                     {
-                        "audioId": "firstAudio",
+                        "audioId": "voiceover",
                         "sources": "bunnya01" <-- and change this to "QUESTION_AUDIO"
                     }
                 ]
