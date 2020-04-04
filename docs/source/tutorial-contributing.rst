@@ -77,6 +77,7 @@ List of tutorial participants
 - Elizabeth Lapidow (UCSD)
 - Hyesung Grace Hwang (University of Chicago)
 - Marc Colomer (University of Chicago)
+- Junyi Chu (MIT)
 
 .. _Github issues overview:
 
