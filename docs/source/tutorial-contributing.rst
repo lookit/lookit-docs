@@ -21,7 +21,7 @@ Don't worry about making a mistake and somehow messing up the documentation - yo
 .. image:: _static/img/tutorial/first_pr_fork.png
     :alt: Fork button on GitHub
     
-2. From the page in the docs that you want to edit (*not* from GitHub), scroll up and click the "Edit on GitHub" button at the top right. For this first PR, you'll be editing the page you're reading right now (https://lookit.readthedocs.io/en/develop/tutorial-contributing.html)!
+2. From this current page (or in the future, in the docs that you want to edit (*not* from GitHub)), scroll up and click the "Edit on GitHub" button at the top right. For this first PR, you'll be editing the page you're reading right now (https://lookit.readthedocs.io/en/develop/tutorial-contributing.html)!
 
 3. Clicking "Edit on GitHUb" will bring you to a page like the one shown below. Click the pencil icon on this page to start editing the file. 
 
@@ -67,6 +67,16 @@ List of tutorial participants
 - Ashley Thomas (MIT)
 - James Dunlea (Columbia University)
 - Katharine Scott (University of Wisconsin-Madison)
+- Meltem Yucel (University of Virginia)
+- Francis Yuen (University of British Columbia)
+- Rachel Dudley (Central European University)
+- Lisa Renaud (Northwestern University)
+- Hannah Cho (University of Toronto)
+- Trisha Katz (University of California-San Diego)
+- Caren Walker (University of California-San Diego)
+- Elizabeth Lapidow (UCSD)
+- Hyesung Grace Hwang (University of Chicago)
+- Marc Colomer (University of Chicago)
 
 .. _Github issues overview:
 

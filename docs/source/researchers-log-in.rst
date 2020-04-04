@@ -2,14 +2,14 @@
 Logging in
 ##################################
 
-Researchers should log into Experimenter via oauth through the Open Science Framework. Visit `<https://lookit.mit.edu/exp/>`_ to log in to the production server, or `<https://staging-lookit.cos.io/exp/>`_ to log in to the staging server, and click on 'Open Science Framework'. (Note: if running Lookit locally, you will instead need to authenticate as described in `Setup for custom frame development`_.)
+Researchers should log into Experimenter via oauth through the Open Science Framework. Visit `<https://lookit.mit.edu/exp/>`_ to log in to the production server, or `<https://lookit-staging.mit.edu/exp/>`_ to log in to the staging server, and click on 'Open Science Framework'. (Note: if running Lookit locally, you will instead need to authenticate as described in `Setup for custom frame development`_.)
 
 .. image:: _static/img/login_to_exp.png
     :alt: Login to experimenter image
 
 We use regular OSF accounts (you already have one if you have used OSF) for the production server, and staging OSF accounts (you probably don't have one yet) for the staging server. A staging OSF account is just an account on OSF's own staging server, where they try out changes ahead of deploying to production. 
 
-If you don't have the appropriate type of OSF account yet, you can register to create one (use the 'Create Account' link on the screen shown below). Once you have an account, return to the Lookit experimenter login screen at `<https://lookit.mit.edu/exp/>`_ or `<https://staging-lookit.cos.io/exp/>`_, click 'Open Science Framework' again, and enter your credentials.
+If you don't have the appropriate type of OSF account yet, you can register to create one (use the 'Create Account' link on the screen shown below). Once you have an account, return to the Lookit experimenter login screen at `<https://lookit.mit.edu/exp/>`_ or `<https://lookit-staging.mit.edu/exp/>`_, click 'Open Science Framework' again, and enter your credentials.
 
 .. image:: _static/img/osf-login.png
     :alt: Enter your osf credentials
