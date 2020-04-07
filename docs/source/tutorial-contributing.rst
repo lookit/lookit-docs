@@ -78,6 +78,7 @@ List of tutorial participants
 - Hyesung Grace Hwang (University of Chicago)
 - Marc Colomer (University of Chicago)
 - Junyi Chu (MIT)
+- Maddie Pelz (MIT)
 
 .. _Github issues overview:
 
