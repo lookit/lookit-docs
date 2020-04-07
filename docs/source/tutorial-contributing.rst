@@ -79,6 +79,7 @@ List of tutorial participants
 - Marc Colomer (University of Chicago)
 - Junyi Chu (MIT)
 - Maddie Pelz (MIT)
+- Emily Neer (UCLA)
 
 .. _Github issues overview:
 
