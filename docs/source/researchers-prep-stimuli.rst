@@ -81,6 +81,9 @@ and wav files in a directory to mp3 and ogg files:
 Putting your stimuli files online
 -----------------------------------
 
+.. admonition:: HTTPS vs HTTP
+  Wherever you put your stimuli, you need to serve them using HTTPS, meaning your URLs should start with https:// - **not** http://. If you use HTTP (not secure) your stimuli may not display at all in modern browsers, and they introduce security risks. You can learn more `here <https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content>`_.
+
 You are responsible for hosting your study stimuli online somewhere. You have a variety of options, including:
 
 * Most universities offer some form of free static web hosting associated with your university account. This might be a nice option because (a) it's free and (b) it's actually kind of your IT department's job to help you with it. Here are some examples:
