@@ -3,14 +3,12 @@
 Preparing your stimuli
 ======================
 
-Audio and video files
-~~~~~~~~~~~~~~~~~~~~~
 
-Most experiments will involve using audio and/or video files! You are
-responsible for creating these and hosting them somewhere (contact MIT if you need help
-finding a place to put them).
 
-You may find that there are more 'stimuli' to create than you'd have in the lab, because 
+Creating audio and video files
+------------------------------
+
+Most experiments will involve using audio and/or video files! You may find that there are more 'stimuli' to create than you'd have in the lab, because 
 in the lab you have the luxury of being present to explain what's going on. When you design
 an online study, you may need to record many of the things you'd say in the lab, or create 
 pictures or demos to show how things work. This includes not just storybook audio, but 
@@ -78,37 +76,42 @@ and wav files in a directory to mp3 and ogg files:
                   os.path.join(audioPath, 'mp3', shortname + '.mp3')])
            sp.call(['ffmpeg', '-i', os.path.join(audioPath, audio), \
                   os.path.join(audioPath, 'ogg', shortname + '.ogg')])
+                
+                
+Putting your stimuli files online
+-----------------------------------
 
-Making dummy stimuli
-~~~~~~~~~~~~~~~~~~~~~~
+You are responsible for hosting your study stimuli online somewhere. You have a variety of options, including:
 
-Sometimes you may not have your stimuli actually ready yet, but you want to make sure your
-experiment will work as intended once they're ready. Here's an example of using ffmpeg to
-make some "dummy" images of text to represent distinct exemplars of various categories. 
-You could also create videos by setting the duration in seconds (here d=0.01) to something 
-longer and using an mp4 or webm extension for output instead of jpg.
+* Most universities offer some form of free static web hosting associated with your university account. This might be a nice option because (a) it's free and (b) it's actually kind of your IT department's job to help you with it. Here are some examples:
 
-.. code:: python
+  * `MIT <http://kb.mit.edu/confluence/pages/viewpage.action?pageId=3907182>`_
+  * `Pittsburgh <https://www.technology.pitt.edu/help-desk/how-to-documents/creating-your-own-website>`_
+  * `Michigan <http://www.umich.edu/~umweb/how-to/homepage.html>`_
+  * `Cornell <https://it.cornell.edu/static-hosting>`_
+  The process for accessing your university storage, and for setting up a lab-wide account, will vary by institution. You can ask your IT department for instructions - what you want to ask about is "static web hosting" for your stimuli or "online file storage." 
+  
+  You do **not** need to "set up a web server" (they will assume you want to do something more complicated and run backend code).
+  
+* GitHub repo: This is also free! And it offers the advantage that you can keep track of any changes to your stimuli over time in a very robust, transparent way. This may be especially handy when you go to publish your work - all your stimuli are already publicly available, with changes logged. 
+  You may be most familiar with Github as a place to store and collaborate on code, but it can be used for any files. There are detailed directions available in the `Lookit stimuli template repo <https://github.com/lookit/lookit-stimuli-template>`_ for putting your own stimuli on GitHub - no experience required!  
 
-    import os
-    import subprocess as sp
-    import sys
+* `Google Cloud Storage <https://cloud.google.com/storage>`_: This is free or very cheap and again fairly straightforward to use. We haven't used it personally, so if you do, please consider adding to these instructions!
 
-    baseDir = '/Users/kms/Desktop/labelsconcepts/img/'
+* `Amazon S3 storage <https://aws.amazon.com/s3/>`_: This is very cheap (likely a few cents per month) and fairly straightforward to use. You will need to create an Amazon Web Services account and create a "bucket" where your stimuli will live. You will also need to make that bucket's files public, which is not the default. You can follow steps 3 and 4 of `this walkthrough <https://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html>`_ to do so. Then you can use the web interface to create folders and upload your files. They will be accessible at URLs like ``https://BUCKETNAME.s3.amazonaws.com/STUDYNAME/img/cats.jpg``.
 
-    for catDir in ['nov1', 'nov2', 'nov3', 'cats', 'dogs', 'iguanas', 'manatees', 'squirrels']:
-        os.mkdir(os.path.join(baseDir, catDir));
-        for iIm in range(1, 12):
-            text = catDir + '.' + str(iIm)
-            output = os.path.join(baseDir, catDir, str(iIm) + '.jpg')
-            sp.call(['ffmpeg', '-f', 'lavfi', '-i', 'color=c=gray:s=640x480:d=0.01', '-vf', 
-                "drawtext=fontfile=drawtext='fontfile=/Library/Fonts/Arial Black.ttf':text='" + text + "':fontsize=64:fontcolor=black:x=10:y=10",
-                output])
+
+.. admonition:: What about Google Drive or Dropbox?
+
+  You may already be accustomed to sharing files using services like Google Drive or Dropbox, and be wondering why you can't just make your files public there. Technically, you can. However, you will run into a number of annoying practical issues: for instance, your file links will be incomprehensible random strings, which will make it difficult to interpret, debug, or change your Lookit study protocol, especially for anyone who wants to understand what you did in the future. You will not be able to use relative file paths in Lookit as described below, since your files' organization in folders isn't reflected in the URLs. Also, if you or your collaborators change a file, the URL may change in ways you didn't predict, breaking something in your study. 
+  
+  In short, we really don't recommend it, even though these tools are great for file sharing in other circumstances.   
+
 
 .. _stim_directory_structure:
 
 Directory structure
-~~~~~~~~~~~~~~~~~~~
+---------------------
 
 For convenience, many Lookit experiment frames use an `expand-assets mixin <https://lookit.github.io/ember-lookit-frameplayer/classes/Expand-assets.html>`_ that allows you to define a base
 directory (``baseDir``) as part of the frame definition, so that instead
@@ -155,3 +158,38 @@ specified an audio source as ``"honk"``, then audio files
 would be expected to be located at
 ``http://stimuli.org/mystudy/mp3/honk.mp3`` and
 ``http://stimuli.org/mystudy/ogg/honk.ogg``.
+
+
+Tips and tricks (advanced)
+---------------------------
+
+Setting up a CDN (optional)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are very concerned with optimizing speed of delivery of your stimuli for users worldwide, best practice is to use a Content Delivery Network (CDN). You can read a description of what this is and when it might be helpful `here <https://gtmetrix.com/why-use-a-cdn.html>`_. This is unlikely to be necessary for most Lookit researchers, but if you do choose to set one up, it's cheap and reasonably straightforward. One option we have used successfully is Amazon CloudFront.
+
+Making dummy stimuli
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes you may not have your stimuli actually ready yet, but you want to make sure your
+experiment will work as intended once they're ready. Here's an example of using ffmpeg to
+make some "dummy" images of text to represent distinct exemplars of various categories. 
+You could also create videos by setting the duration in seconds (here d=0.01) to something 
+longer and using an mp4 or webm extension for output instead of jpg.
+
+.. code:: python
+
+    import os
+    import subprocess as sp
+    import sys
+
+    baseDir = '/Users/kms/Desktop/labelsconcepts/img/'
+
+    for catDir in ['nov1', 'nov2', 'nov3', 'cats', 'dogs', 'iguanas', 'manatees', 'squirrels']:
+        os.mkdir(os.path.join(baseDir, catDir));
+        for iIm in range(1, 12):
+            text = catDir + '.' + str(iIm)
+            output = os.path.join(baseDir, catDir, str(iIm) + '.jpg')
+            sp.call(['ffmpeg', '-f', 'lavfi', '-i', 'color=c=gray:s=640x480:d=0.01', '-vf', 
+                "drawtext=fontfile=drawtext='fontfile=/Library/Fonts/Arial Black.ttf':text='" + text + "':fontsize=64:fontcolor=black:x=10:y=10",
+                output])
