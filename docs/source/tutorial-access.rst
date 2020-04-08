@@ -23,12 +23,12 @@ The Lookit "staging server" is a separate instance of the platform from the "pro
     :width: 300
     :align: center
     
-3. If you have not previously logged in to Lookit (or Lookit staging), you should now see a message that 'Your request to join Experimenter has been submitted. You will receive a notification by email when this is completed.' **Send a private message (PM) to Kim on Slack** once you have requested access so we can approve you promptly! New researchers require approval to access Lookit, which is easy but not automatic. 
+3. You should now see a message that 'Your request to join Experimenter has been submitted,' like below. **Send a private message (PM) to Kim on Slack** now that you have requested access, so we can approve you promptly! (We are not notified about requests, and approval is quick but not automatic.) 
 
 .. image:: _static/img/dashboard.png
     :alt: Login to experimenter image
 
-4. Once your request is approved, you can return to `<https://lookit-staging.mit.edu/exp/>`_ to log in. You should now see a "Manage Studies" page. Bookmark this address!
+4. Once your request is approved, you can return to `<https://lookit-staging.mit.edu/exp/>`_. You should now see a "Manage Studies" page. Bookmark this address!
 
 Where to go for help
 ---------------------
