@@ -41,7 +41,11 @@ Now that you have a basic understanding of how to use Lookit, you're ready to st
 
 In addition to the technical preparations you're making to be able to implement your study, you'll want to make sure you're ready to go from a legal and IRB standpoint! `There's more information on the wiki  <https://github.com/lookit/research-resources/wiki/IRB-and-legal-information>`_ about the administrative side of setup. Basically, though, you'll need to get an institutional agreement signed; complete a short quiz about the Terms of Use because otherwise no one reads them; and include data collection on Lookit in your IRB protocol.
 
-Finally, you've been trying everything out in this tutorial on a "staging" server, which is like a sandbox environment where there's no real data collection. Before you actually start a study with kids, you'll need to move over to the "production" server, lookit.mit.edu. Fortunately, it's exactly the same, you'll just need to use your regular OSF account to authenticate and request access.
+.. admonition:: Lookit staging vs. production servers 
+
+  So far, you've been trying everything out in this tutorial on a "staging" server, which is like a sandbox environment where there's no real data collection. You can also develop your own studies on this server. However, there is **absolutely no actual data collection allowed** on the staging server for security reasons. 
+   
+  Before you actually start a study with kids, you'll need to move over to the "production" server, lookit.mit.edu. This is not something you should do yet, just something to be aware of. It will be possible to access the production server once Lookit officially launches and you submit your access agreement. Fortunately, production works exactly the same way; you'll just need to use your regular OSF account to authenticate and request access. 
 
 4. The last step: please give feedback on the tutorial!
 -------------------------------------------------------
