@@ -23,7 +23,7 @@ The Lookit "staging server" is a separate instance of the platform from the "pro
     :width: 300
     :align: center
     
-3. You should now see a message that 'Your request to join Experimenter has been submitted,' like below. **Send a private message (PM) to Kim on Slack** now that you have requested access, so we can approve you promptly! (We are not notified about requests, and approval is quick but not automatic.) 
+3. You should now see a message that 'Your request to join Experimenter has been submitted,' like below. **Send a private message (PM) to Kim Scott on Slack** now that you have requested access, so we can approve you promptly! (We are not notified about requests, and approval is quick but not automatic.) 
 
 .. image:: _static/img/dashboard.png
     :alt: Login to experimenter image
