@@ -81,6 +81,7 @@ List of tutorial participants
 - Maddie Pelz (MIT)
 - Emily Neer (UCLA)
 - Amalia Ionescu (UCLA)
+- Katlyn Newman (UCSD)
 
 .. _Github issues overview:
 
