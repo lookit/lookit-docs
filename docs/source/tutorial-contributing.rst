@@ -82,6 +82,7 @@ List of tutorial participants
 - Emily Neer (UCLA)
 - Amalia Ionescu (UCLA)
 - Katlyn Newman (UCSD)
+- Virginia Rosenberger (MIT)
 
 .. _Github issues overview:
 
