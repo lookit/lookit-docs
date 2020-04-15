@@ -83,6 +83,7 @@ List of tutorial participants
 - Amalia Ionescu (UCLA)
 - Katlyn Newman (UCSD)
 - Virginia Rosenberger (MIT)
+- Clement Choi (University of British Columbia)
 
 .. _Github issues overview:
 
