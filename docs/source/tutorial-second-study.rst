@@ -92,7 +92,7 @@ Now we're going to build out the study protocol configuration, one piece at a ti
 1. A "setup" frame to guide the family through getting their webcam set up
 2. A video consent frame where the parent makes a verbal statement of informed consent
 3. An intro frame giving the parent an overview of what will happen during the study
-4. A video preview explanation & video preview frame, giving parents the option to review stimuli ahead of time
+4. A stimuli preview frame, giving parents the option to review stimuli ahead of time
 5. Some instructions about what to do during the study
 6. Test trials where babies will see videos that show two women talking (one on either side of the screen) but only the audio from one speaker
 7. A short survey about parenting beliefs
@@ -220,48 +220,40 @@ Save and preview again to see your changes.
 
 Especially if you need parents blind to stimuli and so you ask them to turn around or close their eyes, it's generally best practice to offer them an opportunity to preview any images, audio, or video that their child will be shown during the study. This lets them check that they don't think anything is objectionable or inappropriate for their child - e.g., interactions they find to be violent, or images of something that might interact with a child's phobia. From a practical standpoint, it also greatly decreases the temptation to "peek" at the stimuli during the study out of curiosity or concern.
 
-We'll actually add two frames here - a "video preview explanation" that offers parents the opportunity to preview stimuli or skip the preview, and then the actual preview. (These will likely be combined into a single-frame option in the future.)
-
-The two frame types we'll use are "exp-video-preview" and "exp-lookit-preview-explanation". You can look up the properties they accept in the frame documentation, but since you're already getting the hang of using the frame documentation to start from an example, this time you can just copy and paste the following definitions into ``frames``:
+We'll use the frame type "exp-lookit-stimuli-preview" here to offer parents the opportunity to preview stimuli, and record while they preview if so. You can look up the properties they accept in the frame documentation, but since you're already getting the hang of using the frame documentation to start from an example, this time you can just copy and paste the following definition into ``frames``:
 
 .. code:: json
 
    "video-preview": {
-        "kind": "exp-video-preview",
-        "text": "Here is an example of a video your child will see in this study. You can watch it ahead of time if you're curious--please just don't show your child yet!",
-        "prompt": "My child can NOT see the screen. Start the preview!",
-        "record": false,
-        "videos": [
+        "kind": "exp-video-stimuli-preview",
+        "stimuli": [
             {
                 "caption": "For each trial, there will be two women on the screen speaking nonsense syllables. Only the audio for one of the videos will be played at a time. Here's an example.",
-                "sources": "INSERT_EXAMPLE_VIDEONAME_HERE"
+                "video": "INSERT_EXAMPLE_VIDEONAME_HERE"
             }
         ],
         "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
         "videoTypes": [
             "webm",
             "mp4"
-        ]
-   },
-   "video-preview-exp": {
-        "kind": "exp-lookit-preview-explanation",
-        "image": {
-            "alt": "Father holding child looking over his shoulder",
-            "src": "INSERT_SRC_URL_HERE"
-        },
+        ],
         "blocks": [
+            {
+                "text": "During the videos, we'll ask that you hold your child over your shoulder like this, so that you're facing away from the screen.",
+                "image": {
+                    "alt": "Father holding child looking over his shoulder",
+                    "src": "INSERT_SRC_URL_HERE"
+                }
+            },
             {
                 "text": "The reason we ask this is that your child is learning from you all the time. Even if he or she can't see where you're looking, you may unconsciously shift towards one side or the other and influence your child's attention. We want to make sure we're measuring your child's preferences, not yours!"
             },
             {
-                "text": "If you'd like to see the videos your child will be shown, you can take a look ahead of time now. It's important that you preview the videos without your child, so that the videos will still be new to them."
+                "text": "If you'd like to see an example of a video your child will be shown, you can take a look ahead of time now. It's important that you watch the video without your child, so that the videos will still be new to them."
             }
         ],
-        "introBlock": {
-            "text": "During the videos, we'll ask that you hold your child over your shoulder like this, so that you're facing away from the screen."
-        },
         "skipButtonText": "Skip preview",
-        "previewButtonText": "I'd like to preview the videos",
+        "previewButtonText": "Preview a video (my child can't see the screen)",
         "showPreviousButton": true
     },
 
@@ -271,7 +263,7 @@ There are a few stimuli above that you'll need to insert. You can see all the st
 
 * For the image of the father holding his child over his shoulder, take a look in the img directory, and insert the full path ("https://www.mit.edu/~kimscott/...") to the file you want to use.
 
-Then make sure to also add "video-preview-exp" and "video-preview" (in that order!) to your ``sequence``. You can put these at the start of the sequence to make them easy to see right away. Save and take a look at the preview!
+Then make sure to also add "video-preview" to your ``sequence``. You can put this at the start of the sequence to make it easy to see right away. Save and take a look at the preview!
 
 5. Instructions
 ~~~~~~~~~~~~~~~

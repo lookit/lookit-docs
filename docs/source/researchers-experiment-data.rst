@@ -199,8 +199,6 @@ event.)
                "0-video-config": {
                    "eventTimings": [
                        {
-                           "pipeId": "",
-                           "videoId": "videoStream_0f620873-2847-4eeb-9854-df7898934c17_0-video-config_d96b3ba5-6806-4c09-86e2-77456163eb5a_1530921299537_405",
                            "eventType": "exp-video-config:recorderReady",
                            "timestamp": "2018-07-06T23:54:59.548Z",
                            "streamTime": null
@@ -222,8 +220,6 @@ event.)
                    ],
                    "eventTimings": [
                        {
-                           "pipeId": "",
-                           "videoId": "videoStream_0f620873-2847-4eeb-9854-df7898934c17_1-video-consent_d96b3ba5-6806-4c09-86e2-77456163eb5a_1530921346557_292",
                            "eventType": "exp-video-consent:recorderReady",
                            "timestamp": "2018-07-06T23:55:46.558Z",
                            "streamTime": 0
@@ -254,8 +250,6 @@ event.)
                    ],
                    "eventTimings": [
                        {
-                           "pipeId": "",
-                           "videoId": "videoStream_0f620873-2847-4eeb-9854-df7898934c17_4-pref-phys-videos_d96b3ba5-6806-4c09-86e2-77456163eb5a_1530921371545_923",
                            "eventType": "exp-video-physics:recorderReady",
                            "timestamp": "2018-07-06T23:56:11.549Z",
                            "streamTime": 0
