@@ -83,6 +83,7 @@ List of tutorial participants
 - Amalia Ionescu (UCLA)
 - Katlyn Newman (UCSD)
 - Virginia Rosenberger (MIT)
+- Katarina Begus (Rutgers-Newark) 
 
 .. _Github issues overview:
 
