@@ -225,7 +225,7 @@ We'll use the frame type "exp-lookit-stimuli-preview" here to offer parents the 
 .. code:: json
 
    "video-preview": {
-        "kind": "exp-video-stimuli-preview",
+        "kind": "exp-lookit-stimuli-preview",
         "stimuli": [
             {
                 "caption": "For each trial, there will be two women on the screen speaking nonsense syllables. Only the audio for one of the videos will be played at a time. Here's an example.",
