@@ -259,7 +259,7 @@ We'll use the frame type "exp-lookit-stimuli-preview" here to offer parents the 
 
 There are a few stimuli above that you'll need to insert. You can see all the stimuli you might need for this study at `<https://www.mit.edu/~kimscott/intermodal/>`_. 
 
-* For the example video, where it says ``"INSERT_EXAMPLE_VIDEONAME_HERE"``, take a look in the mp4 directory to find an example video (any example with sound is fine). You only need to give the filename without extension, like "abba1", because we're already telling the exp-video-preview frame to use a "base directory" for this study and expect certain video types. You can learn more here: :ref:`stim_directory_structure`.
+* For the example video, where it says ``"INSERT_EXAMPLE_VIDEONAME_HERE"``, take a look in the mp4 directory to find an example video (any example with sound is fine). You only need to give the filename without extension, like "abba1", because we're already telling the exp-lookit-stimuli-preview frame to use a "base directory" for this study and expect certain video types. You can learn more here: :ref:`stim_directory_structure`.
 
 * For the image of the father holding his child over his shoulder, take a look in the img directory, and insert the full path ("https://www.mit.edu/~kimscott/...") to the file you want to use.
 
