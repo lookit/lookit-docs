@@ -92,6 +92,7 @@ List of tutorial participants
 - Katherine Casey (American University)
 - Eren Fukuda (University of Wisconsin-Madison)
 - Bailey Immel (UW-Madison)
+- Annie Harris (Harvard University Extension School)
 
 .. _Github issues overview:
 
