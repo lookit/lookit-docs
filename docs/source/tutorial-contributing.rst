@@ -70,6 +70,7 @@ List of tutorial participants
 - Meltem Yucel (University of Virginia)
 - Francis Yuen (University of British Columbia)
 - Rachel Dudley (Central European University)
+<<<<<<< HEAD
 - Lisa Renaud (Northwestern University)
 - Hannah Cho (University of Toronto)
 - Trisha Katz (University of California-San Diego)
@@ -88,8 +89,7 @@ List of tutorial participants
 - William Adams (University of Bath)
 - Théo Morfoisse (NYU)
 - Noa (UCSB)
-
->>>>>>> 37ae3d3cff7df792490ce8f6b23672e76905c4ed
+- Kelly Kendro (UC San Diego)
 
 .. _Github issues overview:
 
