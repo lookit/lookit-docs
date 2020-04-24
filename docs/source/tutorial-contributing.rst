@@ -84,6 +84,7 @@ List of tutorial participants
 - Katlyn Newman (UCSD)
 - Virginia Rosenberger (MIT)
 - Katarina Begus (Rutgers-Newark) 
+- Clement Choi (University of British Columbia)
 
 .. _Github issues overview:
 
