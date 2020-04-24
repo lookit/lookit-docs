@@ -85,6 +85,7 @@ List of tutorial participants
 - Virginia Rosenberger (MIT)
 - Katarina Begus (Rutgers-Newark) 
 - Clement Choi (University of British Columbia)
+- William Adams (University of Bath)
 
 .. _Github issues overview:
 
