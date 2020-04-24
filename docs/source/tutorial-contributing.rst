@@ -90,6 +90,7 @@ List of tutorial participants
 - Noa (UCSB)
 - Kelly Kendro (UC San Diego)
 - Katherine Casey (American University)
+- Eren Fukuda (University of Wisconsin-Madison)
 
 .. _Github issues overview:
 
