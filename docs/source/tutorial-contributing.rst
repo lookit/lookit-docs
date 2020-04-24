@@ -91,6 +91,7 @@ List of tutorial participants
 - Kelly Kendro (UC San Diego)
 - Katherine Casey (American University)
 - Eren Fukuda (University of Wisconsin-Madison)
+- Bailey Immel (UW-Madison)
 
 .. _Github issues overview:
 
