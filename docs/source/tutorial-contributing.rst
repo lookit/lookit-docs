@@ -87,6 +87,9 @@ List of tutorial participants
 - Clement Choi (University of British Columbia)
 - William Adams (University of Bath)
 - Théo Morfoisse (NYU)
+- Noa (UCSB)
+
+>>>>>>> 37ae3d3cff7df792490ce8f6b23672e76905c4ed
 
 .. _Github issues overview:
 
