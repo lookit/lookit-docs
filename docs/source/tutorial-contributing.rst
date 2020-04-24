@@ -86,6 +86,7 @@ List of tutorial participants
 - Katarina Begus (Rutgers-Newark) 
 - Clement Choi (University of British Columbia)
 - William Adams (University of Bath)
+- Théo Morfoisse (NYU)
 
 .. _Github issues overview:
 
