@@ -94,6 +94,7 @@ List of tutorial participants
 - Bailey Immel (UW-Madison)
 - Annie Harris (Harvard University Extension School)
 - Shari Liu (Harvard)
+- Brandon Woo (Harvard)
 
 .. _Github issues overview:
 
