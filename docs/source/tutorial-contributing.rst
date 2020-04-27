@@ -93,6 +93,7 @@ List of tutorial participants
 - Eren Fukuda (University of Wisconsin-Madison)
 - Bailey Immel (UW-Madison)
 - Annie Harris (Harvard University Extension School)
+- Shari Liu (Harvard)
 
 .. _Github issues overview:
 
