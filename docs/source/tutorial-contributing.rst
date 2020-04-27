@@ -95,6 +95,7 @@ List of tutorial participants
 - Annie Harris (Harvard University Extension School)
 - Shari Liu (Harvard)
 - Brandon Woo (Harvard)
+- Caitlin Fausey (University of Oregon)
 
 .. _Github issues overview:
 
