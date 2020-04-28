@@ -39,7 +39,7 @@ Remember when we had to "build an experiment runner" so we could preview the stu
 
 As you fine-tune your study, you will be making lots of edits to your study protocol, saying exactly what stimuli each frame should use, in what order, etc. But the study protocol is still interpreted by that same application. If at some point you want to take advantage of bug fixes, video recording improvements, new frames that have been added to the standard Lookit code, etc., you'll need to tell Lookit to use the new version and build a fresh experiment runner.
 
-(Do you have a good analogy for the split in roles between your study protocol and the experiment runner? A sentence and a dictionary/language, directions and a car...? Please make a PR to the docs!)
+One way to think about your current experiment runner is as a Lego set; it has certain types of building blocks that allow you to customize your project with the pieces you have available. But Lego is always making new blocks with interesting shapes and new affordances. If you want access to building blocks beyond what you had in your original set, you can get access to the new and improved set of blocks by rebuilding your experiment runner.
 
 Try it out now! Follow the directions in :ref:`Updating the frameplayer code for your study<updating-frameplayer-code>` to update your tutorial study to use the most recent version of the Lookit frameplayer. 
 
