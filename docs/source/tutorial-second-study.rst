@@ -454,6 +454,7 @@ After the test trials, you plan to include the Early Parenting Attitudes Questio
                 }
             }
         }
+      }
         
 Save your protocol and take a look at the preview. You should see a simple form with two questions and some intro text, and (since nothing's required) you should be able to proceed even if you don't answer the questions. 
         
