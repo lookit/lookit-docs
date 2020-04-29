@@ -97,7 +97,7 @@ List of tutorial participants
 - Brandon Woo (Harvard)
 - Caitlin Fausey (University of Oregon)
 - Kate Bee (Univresity of Oregon)
-
+- Jasmine Engen (University of Oregon)
 .. _Github issues overview:
 
 Checking for and creating issues on Github
