@@ -96,8 +96,9 @@ List of tutorial participants
 - Shari Liu (Harvard)
 - Brandon Woo (Harvard)
 - Caitlin Fausey (University of Oregon)
-- Kate Bee (Univresity of Oregon)
+- Kate Bee (University of Oregon)
 - Jasmine Engen (University of Oregon)
+- Ellie McLoughlin (University of Oregon)
 .. _Github issues overview:
 
 Checking for and creating issues on Github
