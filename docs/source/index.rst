@@ -18,6 +18,10 @@ Lookit can be used to collect looking measures from preverbal children as well a
 
 Families may take part in studies from multiple labs over time. Having one central platform allows families to access many interesting studies for all the children in their family in one place, and researchers benefit from economies of scale in software development and recruitment. 
 
+.. admonition:: Can I use it yet?
+
+   We are unfortunately not yet able to accommodate requests to actually collect data on Lookit! We are working as fast as we can to make the platform available to everyone. Currently, a limited number of collaborative studies from beta testers are taking place, and a growing community of researchers is preparing studies on our staging server to start as soon as possible. You can learn more about the launch timeline on `the wiki <https://github.com/lookit/research-resources/wiki>`_ or by looking through `Lookit platform projects <https://github.com/orgs/lookit/projects>`_.
+
 .. toctree::
    :maxdepth: 4
    :hidden:

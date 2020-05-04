@@ -99,6 +99,7 @@ List of tutorial participants
 - Kate Bee (University of Oregon)
 - Jasmine Engen (University of Oregon)
 - Ellie McLoughlin (University of Oregon)
+
 .. _Github issues overview:
 
 Checking for and creating issues on Github
