@@ -100,6 +100,7 @@ List of tutorial participants
 - Jasmine Engen (University of Oregon)
 - Ellie McLoughlin (University of Oregon)
 - Haley Weaver (University of Wisconsin-Madison)
+- Annika Voss (UC Davis)
 
 .. _Github issues overview:
 
