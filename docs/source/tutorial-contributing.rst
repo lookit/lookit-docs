@@ -99,6 +99,7 @@ List of tutorial participants
 - Kate Bee (University of Oregon)
 - Jasmine Engen (University of Oregon)
 - Ellie McLoughlin (University of Oregon)
+- Haley Weaver (University of Wisconsin-Madison)
 
 .. _Github issues overview:
 
