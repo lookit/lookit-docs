@@ -101,6 +101,7 @@ List of tutorial participants
 - Ellie McLoughlin (University of Oregon)
 - Haley Weaver (University of Wisconsin-Madison)
 - Annika Voss (UC Davis)
+- Aaron Beckner (University of California, Davis)
 
 .. _Github issues overview:
 
