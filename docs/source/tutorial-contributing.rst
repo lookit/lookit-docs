@@ -102,6 +102,7 @@ List of tutorial participants
 - Haley Weaver (University of Wisconsin-Madison)
 - Annika Voss (UC Davis)
 - Aaron Beckner (University of California, Davis)
+- Amanda Rose Yuile (UIUC)
 
 .. _Github issues overview:
 
