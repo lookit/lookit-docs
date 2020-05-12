@@ -103,6 +103,7 @@ List of tutorial participants
 - Annika Voss (UC Davis)
 - Aaron Beckner (University of California, Davis)
 - Amanda Rose Yuile (UIUC)
+- Lisa Oakes (UC Davis)
 
 .. _Github issues overview:
 
