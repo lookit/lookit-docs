@@ -189,7 +189,7 @@ For convenience, this time, let's put "study-intro" FIRST in the sequence, so th
 .. image:: _static/img/tutorial/study_intro_first.png
     :alt: Putting the study-intro frame first
 
-Save your protocol and go ahead and preview your study. You should see a simple text frame first. Let's change the ``blocks`` value to show an appropriate overview for this study: copy and paste the sectino below to replace the existing ``"blocks": [...]`` piece:
+Save your protocol and go ahead and preview your study. You should see a simple text frame first. Let's change the ``blocks`` value to show an appropriate overview for this study: copy and paste the section below to replace the existing ``"blocks": [...]`` piece:
 
 .. code:: json
 
