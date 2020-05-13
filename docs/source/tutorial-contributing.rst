@@ -104,6 +104,7 @@ List of tutorial participants
 - Aaron Beckner (University of California, Davis)
 - Amanda Rose Yuile (UIUC)
 - Lisa Oakes (UC Davis)
+- Gerwin Legaspi (University of British Columbia)
 
 .. _Github issues overview:
 
