@@ -105,6 +105,7 @@ List of tutorial participants
 - Amanda Rose Yuile (UIUC)
 - Lisa Oakes (UC Davis)
 - Gerwin Legaspi (University of British Columbia)
+- Amanda Cramer (University of Texas at Austin)
 
 .. _Github issues overview:
 
