@@ -525,25 +525,40 @@ Each frame you define on Lookit has to have a property called ``kind`` which say
 * the ``video-config`` frame has kind ``exp-video-config``
 * the ``video-consent`` frame has kind ``exp-lookit-video-consent``
 * the ``storybook-causal`` frame has kind ``group`` (this is a special kind of frame, documented `here <https://lookit.readthedocs.io/en/develop/researchers-create-experiment.html#frame-groups>`_.)
-* the frames **within** the ``storybook-causal`` frame have kind ``exp-lookit-story-page`` (this is added to each frame in the ``frameList`` as part of the ``commonFrameProperties``)
+* the frames **within** the ``storybook-causal`` frame have kind ``exp-lookit-images-audio`` (this is added to each frame in the ``frameList`` as part of the ``commonFrameProperties``)
 
 In addition to this tutorial and the information in this documentation about how to set up a study on Lookit, there is detailed information available about each of the "frames" you can use in your Lookit study. At `<https://lookit.github.io/ember-lookit-frameplayer/>`_ you can browse the options and learn about options for customizing each type of frame.
 
-Let's take a look at the ``exp-lookit-story-page`` documentation to see what options we have. Find it on the left sidebar and click on it. Here's what you'll see:
+Let's take a look at the ``exp-lookit-images-audio`` documentation to see what options we have. Find it on the left sidebar and click on it. Here's what you'll see:
 
-.. image:: _static/img/tutorial/frame_doc.png
-    :alt: Annotated frame documentation page
+.. image:: _static/img/tutorial/frame_doc_1.png
+    :alt: Annotated frame documentation page - top
     
-Each single-frame documentation page has these same sections you can use to learn more about how to customize it, what data it collects, and so on. Click on "Properties" to see all the properties we can add to the frame definition in our protocol. There are a lot of properties - you can uncheck "Inherited" at the top of the page to show only the ones specific to this frame, not all the properties that are available on all Lookit frames or on all frames making use of certain "mixins" that add common functionality.
+Each frame documentation page has the same sections you can use to learn more about how to customize it, what data it collects, and so on. At the top, you can see a screenshot of the frame (or a collection of example screenshots) and watch a video of it.
 
-You'll see that the main things we can set are "audioSources," "autoProceed," "doRecording," "durationSeconds," "images," "parentTextBlock," and "showProgressBar." Each one includes an explanation of what it does and what format its value needs to be in.
+.. image:: _static/img/tutorial/frame_doc_2.png
+    :alt: Annotated frame documentation page - examples
+    
+If you scroll down a bit, you'll see an example of how to use the frame in your study protocol:
+
+.. image:: _static/img/tutorial/frame_doc_2.png
+    :alt: Annotated frame documentation page - examples
+    
+And if you scroll down all the way (this frame has an unusual number of examples!), you'll see a section with information about this frame's properties and events:
+
+.. image:: _static/img/tutorial/frame_doc_3.png
+    :alt: Annotated frame documentation page - methods, properties, events
+
+Click on "Properties" to see all the properties we can add to the frame definition in our protocol. There are a lot of properties - you can uncheck "Inherited" at the top of the page to show only the ones specific to this frame, not all the properties that are available on all Lookit frames or on all frames making use of certain "mixins" that add common functionality.
+
+You'll see that some of the things we can set are "audio," "autoProceed," "doRecording," "durationSeconds," "images," "parentTextBlock," and "showProgressBar." Each one includes an explanation of what it does and what format its value needs to be in.
 
 Let's try changing the value of "autoProceed" on all our storybook pages. To do that we can change it within the "commonFrameProperties" in our study protocol:
 
 .. code-block:: none
 
    "commonFrameProperties": {
-        "kind": "exp-lookit-story-page",
+        "kind": "exp-lookit-images-audio",
         "baseDir": "https://www.mit.edu/~kimscott/bunnystimuli/",
         "audioTypes": [
             "mp3",
@@ -555,7 +570,6 @@ Let's try changing the value of "autoProceed" on all our storybook pages. To do 
             "css": {
                 "font-size": "1.5em"
             },
-            "emph": true,
             "text": "Please help keep your child's attention, but don't talk with him or her about WHY Bunny might be getting a tummyache yet! Feel free to replay the audio if your child was distracted.",
             "title": "For parents"
         }
@@ -589,12 +603,7 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
                         "width": "80"
                     }
                 ],
-                "audioSources": [
-                    {
-                        "audioId": "voiceover",
-                        "sources": "bunnya01" <-- and change this to "QUESTION_AUDIO"
-                    }
-                ]
+                "audio": "bunnya01" <-- and change this to "QUESTION_AUDIO"
             },
             ...
         ],
