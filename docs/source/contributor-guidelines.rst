@@ -22,7 +22,9 @@ To contribute to the `ember-lookit-frameplayer` codebase - e.g., when creating y
 Getting started
 ~~~~~~~~~~~~~~~~~~~
 
-At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`_. You should plan to make feature-specific branches off of the ``develop`` branch of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
+At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`_.
+
+You should plan to make feature-specific branches off of the ``develop`` branch (for lookit-api, lookit-docs) or ``master`` branch (for ember-lookit-frameplayer) of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
 
 First create your own fork of lookit-api, ember-lookit-frameplayer, and/or lookit-docs. Follow the directions for installation of lookit-api or ember-lookit-frameplayer if needed. 
 
@@ -78,36 +80,54 @@ If you are aware of changes in the branch you forked from, rebase your branch fr
     
 and then resolving all merge conflicts.
 
-On `lookit-api`, you should then update dependencies like this::
+On ``lookit-api``, you should then update dependencies like this::
 
     pip install -r requirements/defaults.txt
     python manage.py migrate
     python manage.py test
     
-On `ember-lookit-frameplayer`, you should update dependencies using the package manager yarn.
+On ``ember-lookit-frameplayer``, you should update dependencies using the package manager yarn.
 
-Next, push all your local changes to your own fork. You should push your code (making sure to replace `feature/my-validation-feature` with whatever your branch is actually called)::
+Next, push all your local changes to your own fork. You should push your code (making sure to replace ``feature/my-validation-feature`` with whatever your branch is actually called)::
 
     git push --set-upstream origin feature/my-validation-feature
 
 Prior to finalizing your commit, make sure to clean up your code to comply with PEP8. Since both black and isort are included in our development dependencies, you should just be able to run ``isort -rc . --skip venv`` to fix your imports, and similarly ``black . --exclude=venv`` to "blacken" your changes. With both commands, replace ``venv`` with the actual name of your virtual env directory so that you don't blacken/isort your dependencies.
 
-When your branch is ready (you've tested your changes out, and your code has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), then click `new pull request`.   Change the base to `develop` and the compare to `feature/my-validation-feature`. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by Lookit staff; changes may be requested before changes are merged into the develop branch. To allow Lookit staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
+When your branch is ready (you've tested your changes out, and your code has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), then click ``new pull request``.   Change the base to ``develop`` and the compare to ``feature/my-validation-feature``. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by Lookit staff; changes may be requested before changes are merged into the develop branch. To allow Lookit staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
 
 IMPORTANT: WHEN YOUR PR IS ACCEPTED, stop using your branch right away (or delete it altogether).  New features (or enhanced versions of your existing feature) should be created on brand new branches (after pulling in all the fresh changes from ``develop``).
 
 Writing your tests
 ~~~~~~~~~~~~~~~~~~~~
 
-In `lookit-api`, you should generally add to or edit the `tests.py` file in the appropriate app (e.g., `exp/tests.py`). You can run tests like this::
+In ``lookit-api``, you should generally add to or edit the ``tests.py`` file in the appropriate app (e.g., ``exp/tests.py``). You can run tests like this::
 
     python manage.py test
 
 For more information see https://docs.djangoproject.com/en/2.1/topics/testing/.
 
-In `ember-lookit-frameplayer` you should generally edit the tests under `tests/`, but as 
+In ``ember-lookit-frameplayer`` you should generally edit the tests under ``tests/``, but as 
 you will see there is currently very little coverage. Just try to leave it better than you found it.
 
-In `ember-lookit-frameplayer`, you should generally add a test file under `tests/unit/components/` if you have created a new frame. As you can see, we do not have a strong convention for this yet except for randomizer frames.
+In ``ember-lookit-frameplayer``, you should generally add a test file under ``tests/unit/components/`` if you have created a new frame. As you can see, we do not have a strong convention for this yet except for randomizer frames.
 
-To learn more about how testing is supposed to work for `ember-lookit-frameplayer`, see https://guides.emberjs.com/v2.11.0/testing/.
+To learn more about how testing is supposed to work for ``ember-lookit-frameplayer``, see https://guides.emberjs.com/v2.11.0/testing/.
+
+
+Creating a release (ember-lookit-frameplayer)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The ember-lookit-frameplayer repo is semantically versioned. 
+
+The release process is relatively manual for now because the expected workflow isn't finalized (it's currently almost entirely a one-person project). 
+
+Work should be completed and tested on a feature branch. When that feature is ready to merge into master, complete the following steps to create a new release and publish documentation for this version along with the others:
+
+1. Change version number in package.json. Change ``version`` in ``themes/lookit/theme.json`` and add this version to ``other_versions``.
+
+2. To create release-specific docs, set ``is_release`` in ``theme.json`` to ``true`` and run ``yarn run release-docs``. Then rename the ``NEW`` directory that shows up in ``docs/releases/`` to exactly match the version.
+
+3. To update general docs, if this is the latest version, set ``is_release`` in ``theme.json`` back to ``false`` and run ``yarn run docs``.
+
+4. Make a PR to master and merge the feature branch. Then create a new release on GitHub, again exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
