@@ -107,6 +107,7 @@ List of tutorial participants
 - Gerwin Legaspi (University of British Columbia)
 - Amanda Cramer (University of Texas at Austin)
 - Rebecca Houston-Read (Harvard University)
+- Nicki Zieber (University of Kansas)
 
 .. _Github issues overview:
 
