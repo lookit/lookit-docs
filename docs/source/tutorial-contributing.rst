@@ -108,6 +108,7 @@ List of tutorial participants
 - Amanda Cramer (University of Texas at Austin)
 - Rebecca Houston-Read (Harvard University)
 - Brooke Diviak (New York University)
+- Charles Murray (Stanford University)
 
 .. _Github issues overview:
 
