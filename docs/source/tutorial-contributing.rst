@@ -106,6 +106,9 @@ List of tutorial participants
 - Lisa Oakes (UC Davis)
 - Gerwin Legaspi (University of British Columbia)
 - Amanda Cramer (University of Texas at Austin)
+- Rebecca Houston-Read (Harvard University)
+- Brooke Diviak (New York University)
+- Charles Murray (Stanford University)
 
 .. _Github issues overview:
 
