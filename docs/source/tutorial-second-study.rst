@@ -101,7 +101,7 @@ Now we're going to build out the study protocol configuration, one piece at a ti
 1. Setup
 ~~~~~~~~~
 
-We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like `here <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-video-config.html>`_. 
+We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like `here <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-video-config.html>`_. 
 
 Underneath the screenshot, you'll see an example of defining this frame in your study protocol:
 
@@ -350,7 +350,7 @@ Once you've added this frame to your ``frames`` and to your ``sequence``, check 
 
 Finally, the meat of the study! Right now, we're just going to set up a single test trial to see how it works. Once we have a complete mockup of the study, we'll add the counterbalancing and the rest of the trials. 
 
-For this study, we're going to use the fairly flexible "exp-lookit-video" frame, which proceeds through optional "announcement," "intro", "calibration," and "test" phases. Please skim the `frame documentation <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-lookit-video.html>`_ now for an overview of how it works. 
+For this study, we're going to use the fairly flexible "exp-lookit-composite-video-trial" frame, which proceeds through optional "announcement," "intro", "calibration," and "test" phases. Please skim the `frame documentation <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video.html>`_ now for an overview of how it works. 
 
 Copy and paste the following frame to your ``frames``  (removing the comments that look like ``<-- TEXT HERE ``) and then add "example-test-trial" to your ``sequence``. Because this frame is shown full-screen, you should put it after at least one other frame to test it out (e.g., after your instructions frame) rather than making it the first frame. This is because your web browser won't let something go full-screen unless you take an action to trigger that (like pressing the "next" button).
 
@@ -358,7 +358,7 @@ Copy and paste the following frame to your ``frames``  (removing the comments th
 
    "example-test-trial": 
       {
-            "kind": "exp-lookit-video",
+            "kind": "exp-lookit-composite-video-trial",
             "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
             "testCount": 1, <-- PLAY THROUGH THE TEST VIDEO ONE TIME
             "audioTypes": [
@@ -490,7 +490,7 @@ Set up counterbalancing
 
 Your plan for this study is actually to have four test trials. Either the audio will come from the left speaker, right speaker, right speaker, left speaker; or it will come from right speaker, left speaker, left speaker, right speaker.
 
-To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`_. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
+To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/lookit-frameplayer-docs/modules/randomizers.html>`_. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
 
 We will be providing the randomizer with three main things: a list of frames (``frameList``), a set of properties all the frames should share, just for convenience (``commonFrameProperties``), and a list of sets of parameters to substitute in (``parameterSets``)- the randomizer will choose one of these at the start of the study and do the substitution. 
 
@@ -506,12 +506,12 @@ Let's start with just a skeleton of our test trials frame:
         "commonFrameProperties": {}
     }
 
-For each of the four test trials, we're going to want to use an exp-lookit-video frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
+For each of the four test trials, we're going to want to use an exp-lookit-composite-video-trial frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
 
 .. code:: json
 
    "commonFrameProperties": {
-        "kind": "exp-lookit-video",
+        "kind": "exp-lookit-composite-video-trial",
         "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
         "testCount": 1,
         "audioTypes": [
