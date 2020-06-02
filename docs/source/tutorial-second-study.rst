@@ -350,7 +350,7 @@ Once you've added this frame to your ``frames`` and to your ``sequence``, check 
 
 Finally, the meat of the study! Right now, we're just going to set up a single test trial to see how it works. Once we have a complete mockup of the study, we'll add the counterbalancing and the rest of the trials. 
 
-For this study, we're going to use the fairly flexible "exp-lookit-video" frame, which proceeds through optional "announcement," "intro", "calibration," and "test" phases. Please skim the `frame documentation <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video.html>`_ now for an overview of how it works. 
+For this study, we're going to use the fairly flexible "exp-lookit-composite-video-trial" frame, which proceeds through optional "announcement," "intro", "calibration," and "test" phases. Please skim the `frame documentation <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video.html>`_ now for an overview of how it works. 
 
 Copy and paste the following frame to your ``frames``  (removing the comments that look like ``<-- TEXT HERE ``) and then add "example-test-trial" to your ``sequence``. Because this frame is shown full-screen, you should put it after at least one other frame to test it out (e.g., after your instructions frame) rather than making it the first frame. This is because your web browser won't let something go full-screen unless you take an action to trigger that (like pressing the "next" button).
 
@@ -358,7 +358,7 @@ Copy and paste the following frame to your ``frames``  (removing the comments th
 
    "example-test-trial": 
       {
-            "kind": "exp-lookit-video",
+            "kind": "exp-lookit-composite-video-trial",
             "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
             "testCount": 1, <-- PLAY THROUGH THE TEST VIDEO ONE TIME
             "audioTypes": [
@@ -506,12 +506,12 @@ Let's start with just a skeleton of our test trials frame:
         "commonFrameProperties": {}
     }
 
-For each of the four test trials, we're going to want to use an exp-lookit-video frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
+For each of the four test trials, we're going to want to use an exp-lookit-composite-video-trial frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
 
 .. code:: json
 
    "commonFrameProperties": {
-        "kind": "exp-lookit-video",
+        "kind": "exp-lookit-composite-video-trial",
         "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
         "testCount": 1,
         "audioTypes": [
