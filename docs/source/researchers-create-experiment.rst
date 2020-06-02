@@ -186,8 +186,7 @@ A typical Lookit study might contain the following frame types:
 6.  `exp-video-config-quality <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-video-config-quality.html>`_ Once you're almost ready to start your actual 'test' procedures, you may want to guide the parent through webcam setup optimization, especially if you need the parent and child in a particular position. We provide some default instructions intended for preferential looking but would recommend making your own images/instructions if you can - ours aren't great.
 7.  `exp-lookit-instructions <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-instructions.html>`_ Instead or in addition, you may want a frame like this to give some final instructions to the parent before your 'test' procedures start! You can show text, videos, audio, show the user's webcam, etc. Make sure you have indicated here or earlier that the family is free to leave at any point and how they can do that. (Ctrl-X, F1, or closing the tab/window but then staying on the page will all bring up a "really exit?" dialog - you don't need to note all methods.) 
 8.  [Study-specific frames, e.g. 
-    exp-lookit-story-page, exp-lookit-preferential-looking,
-    exp-lookit-dialogue-page; generally, a sequence of these frames
+    exp-lookit-video, exp-lookit-images-audio; generally, a sequence of these frames
     would be put together with a randomizer]
     
 .. _debriefing-info:

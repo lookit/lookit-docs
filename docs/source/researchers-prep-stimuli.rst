@@ -122,7 +122,7 @@ of providing full paths to your stimuli (including multiple file
 formats) you can give relative paths and specify the audio and/or video
 formats to expect (``audioTypes`` and ``videoTypes``). 
 
-For instance, the `exp-lookit-story-page frame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-story-page.html>`_ allows this - you can see at the very top of the docs that it uses ExpandAssets, and under 'Properties' you can see the ``baseDir``, `audioTypes``, and ``videoTypes`` arguments.
+For instance, the `exp-lookit-images-audio frame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-images-audio.html>`_ allows this - you can see at the very top of the docs that it uses ExpandAssets, and under 'Properties' you can see the ``baseDir``, `audioTypes``, and ``videoTypes`` arguments.
 
 **Images**: Anything without ``://`` in the string will be assumed to be a
 relative image source.
