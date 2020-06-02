@@ -12,7 +12,7 @@ This object includes methods for showing/hiding the webcam view,
 starting/pausing/resuming/stopping video recording,
 installing/destroying the recorder, and checking the current video
 timestamp (see
-https://lookit.github.io/ember-lookit-frameplayer/classes/video-recorder.html).
+https://lookit.github.io/lookit-frameplayer-docs/classes/video-recorder.html).
 The programmer designing a new frame can therefore flexibly indicate
 when recording should begin and end, as well as recording video
 timestamps for any events recorded during this frame (e.g., so that
@@ -55,8 +55,8 @@ initial portion of the trial where video data is not required.
 
 You can also plan for users of your frame to turn on continuous recording using multi-frame 
 or 'session' recordings; see the 
-`startSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_startSessionRecording>`_  
-and `endSessionRecording <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_endSessionRecording>`_ 
+`startSessionRecording <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_startSessionRecording>`_  
+and `endSessionRecording <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_endSessionRecording>`_ 
 parameters of the base frame. 
 
 

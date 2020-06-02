@@ -44,7 +44,7 @@ In your first study ("My Awesome Tutorial Study"), children hear a story contain
 
 Add a baseline condition, where instead of the whole story, children will only hear about the last day. Right now you have a sequence of test trials with the following images (and audio): `bunny01, bunny02, bunny11, bunny12, bunny13, bunny14, bunny15, bunny16, QUESTION_IMAGE/QUESTION_AUDIO, bunnyend01`.
 
-First, take a look at the randomizers listed `here <https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`_ and think about how you might set this up.
+First, take a look at the randomizers listed `here <https://lookit.github.io/lookit-frameplayer-docs/modules/randomizers.html>`_ and think about how you might set this up.
 
 .. raw:: html
   
@@ -55,7 +55,7 @@ First, take a look at the randomizers listed `here <https://lookit.github.io/emb
     
     <details style="margin-left:50px;">
         <summary>Hint 2</summary>
-        <p>Set "whichFrames" in your inner "select" randomizer to something like "STORY_PAGE_LIST". Then add "STORY_PAGE_LIST" as a key in each of the "parameterSets" in your outer "random-parameter-set" randomizer. To do ALL the frames in order, you can use the value -1 for whichFrames (see the `section on this parameter  <https://lookit.github.io/ember-lookit-frameplayer/classes/Select.html#property_whichFrames>`_). To do just the first two frames in "frameOptions", you would use [0, 1].</p>
+        <p>Set "whichFrames" in your inner "select" randomizer to something like "STORY_PAGE_LIST". Then add "STORY_PAGE_LIST" as a key in each of the "parameterSets" in your outer "random-parameter-set" randomizer. To do ALL the frames in order, you can use the value -1 for whichFrames (see the `section on this parameter  <https://lookit.github.io/lookit-frameplayer-docs/classes/Select.html#property_whichFrames>`_). To do just the first two frames in "frameOptions", you would use [0, 1].</p>
     </details>
     
     <details style="margin-left:50px;">

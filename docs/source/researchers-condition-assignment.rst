@@ -18,7 +18,7 @@ particular trial. A randomizer frame is automatically expanded to a list
 of frames, so that for instance you can specify your 12 looking-time
 trials all at once. 
 
-See `here <https://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`_ for complete documentation of available randomizers. In addition to the general-purpose ``random-parameter-set`` randomizer we focus on here, there are randomizers for typical needs such as showing a set of frames in a random order.
+See `here <https://lookit.github.io/lookit-frameplayer-docs/modules/randomizers.html>`_ for complete documentation of available randomizers. In addition to the general-purpose ``random-parameter-set`` randomizer we focus on here, there are randomizers for typical needs such as showing a set of frames in a random order.
 
 To use a randomizer frame, set the frame ``"kind"`` to ``"choice"`` and
 ``"sampler"`` to the appropriate type of randomizer. 
@@ -29,7 +29,7 @@ The random-parameter-set randomizer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The most general randomizer type is called
-`random-parameter-set <https://lookit.github.io/ember-lookit-frameplayer/classes/randomParameterSet.html>`_.
+`random-parameter-set <https://lookit.github.io/lookit-frameplayer-docs/classes/randomParameterSet.html>`_.
 
 To select this randomizer, you need to define a frame that has the
 appropriate ``"kind"`` and ``"sampler"``:
@@ -242,7 +242,7 @@ participants as data collection proceeds.
 
 .. admonition:: Advanced options for choosing the parameterSet
 
-   You can `determine the weights based on the child's age <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_parameterSetWeights>`_, to maintain balanced conditions.) You can also `keep kids in the same condition across all sessions they complete, or rotate them through conditions in order  <https://lookit.github.io/ember-lookit-frameplayer/classes/Random-parameter-set.html#property_conditionForAdditionalSessions>`_.
+   You can `determine the weights based on the child's age <https://lookit.github.io/lookit-frameplayer-docs/classes/Random-parameter-set.html#property_parameterSetWeights>`_, to maintain balanced conditions.) You can also `keep kids in the same condition across all sessions they complete, or rotate them through conditions in order  <https://lookit.github.io/lookit-frameplayer-docs/classes/Random-parameter-set.html#property_conditionForAdditionalSessions>`_.
 
 Suppose that in this case the second parameter set is selected:
 
@@ -450,7 +450,7 @@ You have a variety of options for how to accomplish random condition assignment:
         ]
     }
     
-3. You can use the ``#RAND`` syntax and `frame parameters <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_parameters>`_ to substitute in one of the two options for each condition:
+3. You can use the ``#RAND`` syntax and `frame parameters <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_parameters>`_ to substitute in one of the two options for each condition:
 
 ::
 
@@ -755,9 +755,9 @@ Conditional logic
 
 In some cases, what happens next in your study will need to depend on what has happened so far, what happened during previous sessions of the study, and/or information about the participant. For instance, perhaps you want to move on from a training segment after the participant answers three questions in a row correctly, or you want to start with an eligibility survey and only route people to the rest of the study if they meet detailed criteria. Or maybe you just want to personalize instructions or stimuli with the child's name and gender! All Lookit frames allow you to provide either or both of the following properties to flexibly specify conditional behavior:
 
-1. `generateProperties <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_generateProperties>`_: Provide a function that takes ``expData``, ``sequence``, ``child``, ``pastSessions``, and ``conditions`` objects, and returns an object representing any additional properties that should be used by this frame - e.g., the frame type, text blocks, whether to do recording, etc. (In principle a ``generateProperties`` function could conditionally assign ``selectNextFrame``, although we do not know of a use case where this is necessary.)
+1. `generateProperties <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_generateProperties>`_: Provide a function that takes ``expData``, ``sequence``, ``child``, ``pastSessions``, and ``conditions`` objects, and returns an object representing any additional properties that should be used by this frame - e.g., the frame type, text blocks, whether to do recording, etc. (In principle a ``generateProperties`` function could conditionally assign ``selectNextFrame``, although we do not know of a use case where this is necessary.)
 
-2. `selectNextFrame <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-base.html#property_selectNextFrame>`_: Provide a function that takes ``frames``, ``frameIndex``, ``expData``, ``sequence``, ``child``, and ``pastSessions`` and returns that frame index to go to when using the 'next' action on this frame. For instance, this allows you to skip to the end of the study (or a frame of a particular type) if the child has gotten several questions correct.
+2. `selectNextFrame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_selectNextFrame>`_: Provide a function that takes ``frames``, ``frameIndex``, ``expData``, ``sequence``, ``child``, and ``pastSessions`` and returns that frame index to go to when using the 'next' action on this frame. For instance, this allows you to skip to the end of the study (or a frame of a particular type) if the child has gotten several questions correct.
 
 Each of these properties is specified as a string, which must define a Javascript function of the specified arguments. ``generateProperties`` is called when the frame is initialized, and ``selectNextFrame`` is called upon proceeding to the next frame. 
 
@@ -887,7 +887,7 @@ This example has three top-level frames: an eligibility survey, a study procedur
         
 Here's how it works:
 
-1. The study procedure is set up as `an exp-frame-select frame <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-frame-select.html>`_, and we decide on-the-spot which of the two ``frameOptions`` to use based on the data in the survey by providing a ``generateProperties`` function that returns a value for ``whichFrames``. The function ``generateProperties`` is called when we get to the ``study-procedure`` frame, and the key-value pairs it returns get added to the other parameters for this frame (like ``kind`` and ``frameOptions``). In this case, it checks to see whether the survey says the family has at least one cat *and* the child loves cats; in that case, the child is eligible to participate. 
+1. The study procedure is set up as `an exp-frame-select frame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-select.html>`_, and we decide on-the-spot which of the two ``frameOptions`` to use based on the data in the survey by providing a ``generateProperties`` function that returns a value for ``whichFrames``. The function ``generateProperties`` is called when we get to the ``study-procedure`` frame, and the key-value pairs it returns get added to the other parameters for this frame (like ``kind`` and ``frameOptions``). In this case, it checks to see whether the survey says the family has at least one cat *and* the child loves cats; in that case, the child is eligible to participate. 
 
    Additionally, the object ``generateProperties`` returns is stored under the key ``generatedProperties`` in expData for this frame, so that we can use the output later. That's why we also include either ``'ELIGIBLE': true`` or ``'ELIGIBLE': false`` - that way we can reuse this determination later on in another ``generateProperties`` function.
    

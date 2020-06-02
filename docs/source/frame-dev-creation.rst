@@ -365,7 +365,7 @@ from your frame simply by calling ``this.doFoo()``.
 Below is a brief introduction to each of the common mixins; for more
 detail, see sample usages throughout the ember-lookit-frameplayer codebase and the
 mixin-specific docs
-`here <https://lookit.github.io/ember-lookit-frameplayer/modules/mixins.html>`__
+`here <https://lookit.github.io/lookit-frameplayer-docs/modules/mixins.html>`__
 
 FullScreen
 ^^^^^^^^^^
@@ -397,7 +397,7 @@ Documenting your frame
 
 We use `YUIdoc <http://yui.github.io/yuidoc/>`__ for generating
 “automatic” documentation of ember-lookit-frameplayer frames, available
-`here <https://lookit.github.io/ember-lookit-frameplayer/modules/frames.html>`__. If
+`here <https://lookit.github.io/lookit-frameplayer-docs/modules/frames.html>`__. If
 you want to contribute your frames to the main Lookit codebase, please
 include YUIdoc-formatted comments following the example of existing
 frames, e.g. ``exp-lookit-exit-survey``. Make sure to include:

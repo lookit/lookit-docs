@@ -116,13 +116,13 @@ You are responsible for hosting your study stimuli online somewhere. You have a 
 Directory structure
 ---------------------
 
-For convenience, many Lookit experiment frames use an `expand-assets mixin <https://lookit.github.io/ember-lookit-frameplayer/classes/Expand-assets.html>`_ that allows you to define a base
+For convenience, many Lookit experiment frames use an `expand-assets mixin <https://lookit.github.io/lookit-frameplayer-docs/classes/Expand-assets.html>`_ that allows you to define a base
 directory (``baseDir``) as part of the frame definition, so that instead
 of providing full paths to your stimuli (including multiple file
 formats) you can give relative paths and specify the audio and/or video
 formats to expect (``audioTypes`` and ``videoTypes``). 
 
-For instance, the `exp-lookit-story-page frame <https://lookit.github.io/ember-lookit-frameplayer/classes/Exp-lookit-story-page.html>`_ allows this - you can see at the very top of the docs that it uses ExpandAssets, and under 'Properties' you can see the ``baseDir``, `audioTypes``, and ``videoTypes`` arguments.
+For instance, the `exp-lookit-story-page frame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-story-page.html>`_ allows this - you can see at the very top of the docs that it uses ExpandAssets, and under 'Properties' you can see the ``baseDir``, `audioTypes``, and ``videoTypes`` arguments.
 
 **Images**: Anything without ``://`` in the string will be assumed to be a
 relative image source.

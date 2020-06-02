@@ -124,9 +124,9 @@ The release process is relatively manual for now because the expected workflow i
 
 Work should be completed and tested on a feature branch. When that feature is ready to merge into master, complete the following steps to create a new release and publish documentation for this version along with the others:
 
-1. Change version number in package.json. Change ``version`` in ``themes/lookit/theme.json`` and add this version to ``other_versions``.
+1. Change version number in package.json. Change ``version`` in ``docs/themes/lookit/theme.json`` and add this version to ``other_versions``.
 
-2. To create release-specific docs, set ``is_release`` in ``theme.json`` to ``true`` and run ``yarn run release-docs``. Then rename the ``NEW`` directory that shows up in ``docs/releases/`` to exactly match the version.
+2. To create release-specific docs, set ``is_release`` in ``theme.json`` to ``true`` and run ``yarn run release-docs``. Then rename the ``NEW`` directory that shows up in ``docs/docs/releases/`` to exactly match the version.
 
 3. To update general docs, if this is the latest version, set ``is_release`` in ``theme.json`` back to ``false`` and run ``yarn run docs``.
 
