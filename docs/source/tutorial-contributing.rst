@@ -111,6 +111,7 @@ List of tutorial participants
 - Brooke Diviak (New York University)
 - Charles Murray (Stanford University)
 - Jing Shen (University of Wisconsin-Madison)
+- Stephanie Chang (Stanford University)
 
 .. _Github issues overview:
 
