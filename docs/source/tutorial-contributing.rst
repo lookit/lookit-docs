@@ -110,6 +110,7 @@ List of tutorial participants
 - Nicki Zieber (University of Kansas)
 - Brooke Diviak (New York University)
 - Charles Murray (Stanford University)
+- Jing Shen (University of Wisconsin-Madison)
 - Stephanie Chang (Stanford University)
 
 .. _Github issues overview:
