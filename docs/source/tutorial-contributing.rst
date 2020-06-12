@@ -111,7 +111,7 @@ List of tutorial participants
 - Brooke Diviak (New York University)
 - Charles Murray (Stanford University)
 - Stephanie Chang (Stanford University)
-
+- Daniela Bencid (Colby College)
 .. _Github issues overview:
 
 Checking for and creating issues on Github
