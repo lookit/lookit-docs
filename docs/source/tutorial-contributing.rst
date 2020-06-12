@@ -112,7 +112,7 @@ List of tutorial participants
 - Charles Murray (Stanford University)
 - Jing Shen (University of Wisconsin-Madison)
 - Stephanie Chang (Stanford University)
-
+- Daniela Bencid (Colby College)
 .. _Github issues overview:
 
 Checking for and creating issues on Github
