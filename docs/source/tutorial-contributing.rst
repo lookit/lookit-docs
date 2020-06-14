@@ -113,6 +113,7 @@ List of tutorial participants
 - Jing Shen (University of Wisconsin-Madison)
 - Stephanie Chang (Stanford University)
 - Daniela Bencid (Colby College)
+- Samia Razvi (UT Dallas)
 .. _Github issues overview:
 
 Checking for and creating issues on Github
