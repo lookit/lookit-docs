@@ -114,6 +114,7 @@ List of tutorial participants
 - Stephanie Chang (Stanford University)
 - Daniela Bencid (Colby College)
 - Adena Schachner (University of California, San Diego)
+- Samia Razvi (UT Dallas)
 
 .. _Github issues overview:
 
