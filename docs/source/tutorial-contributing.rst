@@ -114,6 +114,7 @@ List of tutorial participants
 - Stephanie Chang (Stanford University)
 - Daniela Bencid (Colby College)
 - Adena Schachner (University of California, San Diego)
+
 .. _Github issues overview:
 
 Checking for and creating issues on Github
