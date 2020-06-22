@@ -115,6 +115,7 @@ List of tutorial participants
 - Daniela Bencid (Colby College)
 - Adena Schachner (University of California, San Diego)
 - Samia Razvi (UT Dallas)
+- Kristine Hocker (MIT)
 
 .. _Github issues overview:
 
