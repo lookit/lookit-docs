@@ -116,6 +116,7 @@ List of tutorial participants
 - Adena Schachner (University of California, San Diego)
 - Samia Razvi (UT Dallas)
 - Nicoke Cuneo (Haskins Laboratories)
+- Kristine Hocker (MIT)
 
 .. _Github issues overview:
 
