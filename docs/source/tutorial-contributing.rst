@@ -117,6 +117,7 @@ List of tutorial participants
 - Samia Razvi (UT Dallas)
 - Nicoke Cuneo (Haskins Laboratories)
 - Kristine Hocker (MIT)
+- Estelle Hervé (AMU)
 
 .. _Github issues overview:
 
