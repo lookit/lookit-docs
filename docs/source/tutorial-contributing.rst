@@ -118,6 +118,7 @@ List of tutorial participants
 - Nicoke Cuneo (Haskins Laboratories)
 - Kristine Hocker (MIT)
 - Estelle Hervé (AMU)
+- Isabel Nichoson (Wellesley College)
 
 .. _Github issues overview:
 
