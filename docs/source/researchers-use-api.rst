@@ -577,12 +577,12 @@ DELETE /api/v1/feedback/<feedback_id>/
 METHOD NOT ALLOWED.  Not permitted via the API.
 
 -------------
-Organizations
+Labs
 -------------
 
-Viewing the list of organizations
+Viewing the list of labs
 ---------------------------------
-GET /api/v1/organizations/
+GET /api/v1/labs/
 
 Permissions: Must be authenticated.
 
@@ -592,33 +592,55 @@ Permissions: Must be authenticated.
 
     {
         "links": {
-            "first": "http://localhost:8000/api/v1/organizations/?page=1",
-            "last": "http://localhost:8000/api/v1/organizations/?page=1",
+            "first": "https://lookit-staging.mit.edu/api/v1/labs/?page=1",
+            "last": "https://lookit-staging.mit.edu/api/v1/labs/?page=1",
             "next": null,
             "prev": null,
             "meta": {
                 "page": 1,
                 "pages": 1,
-                "count": 1
+                "count": 2
             }
         },
         "data": [
             {
-                "type": "organizations",
-                "id": "665c4457-a02e-4842-bd72-7043de3d66d0",
+                "type": "labs",
+                "id": "a2a7383c-cb58-4d78-ac00-23283a762dec",
                 "attributes": {
-                    "name": "MIT"
+                    "name": "Demo lab",
+                    "institution": "Lookit",
+                    "principal_investigator_name": "Sample Name",
+                    "lab_website": "https://lookit.mit.edu/",
+                    "description": "This is a sample lab researchers are added to upon joining Lookit. It contains several demo\r\n                studies you will be able to see.",
+                    "approved_to_test": true,
+                    "pk": 2
                 },
                 "links": {
-                    "self": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
+                    "self": "https://lookit-staging.mit.edu/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
+                }
+            },
+            {
+                "type": "labs",
+                "id": "1c54bccd-5f3d-4dd1-967a-0f7c0565d76d",
+                "attributes": {
+                    "name": "Early Childhood Cognition Lab",
+                    "institution": "MIT",
+                    "principal_investigator_name": "Laura Schulz",
+                    "lab_website": "http://eccl.mit.edu/",
+                    "description": "We study how children construct a commonsense understanding of the physical and social world. \n                Current lab members are especially interested in how children generate new ideas and choose which problems \n                are worth working on.\n                Research in the lab often addresses 1) how children figure out cause-and-effect relations so that they can \n                predict, explain, and themselves cause things to happen; 2) influences on curiosity and exploration; and 3) \n                how these abilities interact with social cognition to help children understand themselves and other people. \n                ",
+                    "approved_to_test": true,
+                    "pk": 3
+                },
+                "links": {
+                    "self": "https://lookit-staging.mit.edu/api/v1/labs/1c54bccd-5f3d-4dd1-967a-0f7c0565d76d/"
                 }
             }
         ]
     }
 
-Retrieving a single organization
+Retrieving a single lab
 ---------------------------------
-GET /api/v1/organizations/<organization_id>/
+GET /api/v1/labs/<lab_id>/
 
 Permissions: Must be authenticated.
 
@@ -628,35 +650,41 @@ Permissions: Must be authenticated.
 
     {
         "data": {
-            "type": "organizations",
-            "id": "665c4457-a02e-4842-bd72-7043de3d66d0",
+            "type": "labs",
+            "id": "a2a7383c-cb58-4d78-ac00-23283a762dec",
             "attributes": {
-                "name": "MIT"
+                "name": "Demo lab",
+                "institution": "Lookit",
+                "principal_investigator_name": "Sample Name",
+                "lab_website": "https://lookit.mit.edu/",
+                "description": "This is a sample lab researchers are added to upon joining Lookit. It contains several demo\r\n                studies you will be able to see.",
+                "approved_to_test": true,
+                "pk": 2
             },
             "links": {
-                "self": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
+                "self": "https://lookit-staging.mit.edu/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
             }
         }
     }
 
 
-Creating an Organization
+Creating a lab
 ---------------------------------
-POST /api/v1/organizations/
+POST /api/v1/labs/
 
 METHOD NOT ALLOWED.  Not permitted via the API.
 
 
-Updating an Organization
+Updating a lab
 ---------------------------------
-PUT /api/v1/organizations/<organization_id>/
+PUT /api/v1/lab/<lab_id>/
 
 METHOD NOT ALLOWED.  Not permitted via the API.
 
 
-Deleting an Organization
+Deleting a Lab
 ---------------------------------
-DELETE /api/v1/organizations/<organization_id>/
+DELETE /api/v1/labs/<lab_id>/
 
 METHOD NOT ALLOWED.  Not permitted via the API.
 
@@ -896,11 +924,6 @@ Sort Order: By default, studies are sorted reverse date_modified, meaning the mo
                     "public": true
                 },
                 "relationships": {
-                    "organization": {
-                        "links": {
-                            "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
-                        }
-                    },
                     "creator": {
                         "links": {
                             "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/"
@@ -952,11 +975,6 @@ Permissions: Must be authenticated.  You can fetch an active study or a study yo
                 "public": true
             },
             "relationships": {
-                "organization": {
-                    "links": {
-                        "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
-                    }
-                },
                 "creator": {
                     "links": {
                         "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/"
@@ -1047,11 +1065,6 @@ Endpoint can return both participants and researchers, if you have permission to
                             "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/demographics/"
                         }
                     },
-                    "organization": {
-                        "links": {
-                            "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
-                        }
-                    },
                     "children": {
                         "links": {
                             "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/children/"
@@ -1091,11 +1104,6 @@ Permissions: Must be authenticated.  You can view participants that have respond
                 "demographics": {
                     "links": {
                         "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/demographics/"
-                    }
-                },
-                "organization": {
-                    "links": {
-                        "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
                     }
                 },
                 "children": {

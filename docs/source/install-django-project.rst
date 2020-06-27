@@ -70,10 +70,10 @@ Authentication
 OAuth authentication to OSF accounts, used for access to Experimenter,
 currently does not work when running locally. You can create a local
 participant account and log in using that to view participant-facing
-functionality, or log in as your superuser at localhost:8000/admin and
+functionality, or log in as your superuser at localhost:8000/__CTRL__ and
 then navigate to Experimenter. As your superuser, you can also use the
 Admin app to edit other local users - e.g., to make users researchers vs
-participants, in particular organizations, etc.
+participants.
 
 Handling video
 ~~~~~~~~~~~~~~

@@ -75,7 +75,7 @@ environment (staging or production). If it’s a deployment they go into a
 (staging or production).
 
 When the task is finished copying the files to Google Cloud Storage an
-email is sent to the study admins and organization admins.
+email is sent to the study admins and Lookit admins.
 
 If the task was a preview task the state of the study is set back to
 it’s previous state. If it was a deployment the study is set to active.

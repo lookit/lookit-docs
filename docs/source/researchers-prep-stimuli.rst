@@ -82,7 +82,9 @@ Putting your stimuli files online
 -----------------------------------
 
 .. admonition:: HTTPS vs HTTP
-  Wherever you put your stimuli, you need to serve them using HTTPS, meaning your URLs should start with https:// - **not** http://. If you use HTTP (not secure) your stimuli may not display at all in modern browsers, and they introduce security risks. You can learn more `here <https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content>`_.
+
+    Wherever you put your stimuli, you need to serve them using HTTPS, meaning your URLs should start with https:// - **not** http://. If you use HTTP (not secure) your stimuli may not display at all in modern browsers, and they introduce security risks. You can learn more `here <https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content>`_.
+
 
 You are responsible for hosting your study stimuli online somewhere. You have a variety of options, including:
 
@@ -92,6 +94,7 @@ You are responsible for hosting your study stimuli online somewhere. You have a 
   * `Pittsburgh <https://www.technology.pitt.edu/help-desk/how-to-documents/creating-your-own-website>`_
   * `Michigan <http://www.umich.edu/~umweb/how-to/homepage.html>`_
   * `Cornell <https://it.cornell.edu/static-hosting>`_
+  
   The process for accessing your university storage, and for setting up a lab-wide account, will vary by institution. You can ask your IT department for instructions - what you want to ask about is "static web hosting" for your stimuli or "online file storage." 
   
   You do **not** need to "set up a web server" (they will assume you want to do something more complicated and run backend code).

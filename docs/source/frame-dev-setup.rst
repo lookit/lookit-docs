@@ -21,7 +21,7 @@ Even though we will probably just be changing the frame definitions in
 ember-lookit-frameplayer, we will need to install *both* the the Django app
 (``lookit-api``) and the Ember app (``ember-lookit-frameplayer``), tell
 them how to talk to each other, and run both of those servers locally.
-In Experimenter, we need to add an organization to our superuser, and
+In Experimenter, we need to add some basic information to our superuser, and
 then add a child and demographic data. We then create a study locally.
 The exp-player needs to be linked for local development, and a token
 added to the headers of the API requests the
@@ -47,14 +47,10 @@ Django App steps
    that case, your superuser information is here
    http://localhost:8000/admin/accounts/user/2/change/.
 
-4. Update your superuser information through the admin app. We primarily
-   need to add an organization to the user, but have to fill out the
-   bold fields additionally in order to save the user information.
+4. Update your superuser information through the admin app. Fill out the
+   bold fields:
 
    -  Family Name: *Your last name*
-   -  Organization: *Select MIT in dropdown. If no organizations are in
-      the dropdown, create one through the admin app, and come back and
-      add it here.*
    -  Identicon: *If no identicon, just type random text here*
    -  Timezone: *America/New_York, as an example*
    -  Locale: *en_US, as an example*
@@ -84,8 +80,8 @@ Django App steps
    http://localhost:8000/account/children/, and clicking “Add Child”.
    Fill out all the information with test data and click “Add child”.
 
-Now we have a superuser with an organization, that has attached
-demographic data, and a child. We’ve created a study, as well as a token
+Now we have a superuser with attached
+demographic data and a child. We’ve created a study, as well as a token
 for accessing the API. Leave the django server running and switch to a
 new tab in your console.
 

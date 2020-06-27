@@ -20,7 +20,7 @@ Families may take part in studies from multiple labs over time. Having one centr
 
 .. admonition:: Can I use it yet?
 
-   We are planning to allow researchers to collect data on Lookit starting June 29th, 2020!  We are working as fast as we can to make the platform available to everyone. Currently, a limited number of collaborative studies from beta testers are taking place, and a growing community of researchers is preparing studies on our staging server to start as soon as possible. You can learn more about the launch timeline on `the wiki <https://github.com/lookit/research-resources/wiki>`_ or by looking through `Lookit platform projects <https://github.com/orgs/lookit/projects>`_.
+   Yes! Please see `the wiki <https://github.com/lookit/research-resources/wiki>`_ for information about how to get started.
 
 .. toctree::
    :maxdepth: 4

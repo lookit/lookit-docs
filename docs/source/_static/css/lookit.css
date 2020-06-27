@@ -2,3 +2,13 @@ img {
   border: thin solid gray !important;
   box-shadow: 3px 3px 3px #ccc;
 }
+
+#study-roles th, #study-roles td {
+  font-size: smaller !important;
+  padding: 0px !important;
+}
+
+#study-roles th:not(:first-child), #study-roles td:not(:first-child) {
+  max-width:5em;
+  text-align:center;
+}

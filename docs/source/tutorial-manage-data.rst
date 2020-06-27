@@ -9,24 +9,24 @@ Managing access to your study: add a collaborator
 
 Rarely will you be working completely alone! Usually you will want multiple people to have access to any particular study: you may have a few people working together to get the protocol just right, as well as several RAs checking consent and sending feedback to participants. 
 
-Especially once you're working on the production server (lookit.mit.edu rather than staging-lookit), we very strongly recommend this model rather than sharing credentials for a lab-wide OSF account. This way, each individual can get permissions on just the studies they actually need access to - not everything your lab has ever done. When temporary staff like undergrad RAs move on, you can just remove them from the study, instead of distributing a new password to everyone remaining in the lab. Plus, there is logging built into Lookit that keeps track of things like who did what when - including who approved consent recordings - that may be useful to you.
+Especially if you're working on the production server (lookit.mit.edu rather than lookit-staging.mit.edu), we very strongly recommend this model rather than sharing credentials for a lab-wide OSF account. This way, each individual can get permissions on just the studies they actually need access to - not everything your lab has ever done. When temporary staff like undergrad RAs move on, you can just remove them from the study, instead of distributing a new password to everyone remaining in the lab. Plus, there is logging built into Lookit that keeps track of things like who did what when - including who approved consent recordings - that may be useful to you.
 
 Try it out! Add another person to your tutorial study. On the study page in the Experimenter interface, scroll down to "Manage Researchers":
 
 .. image:: _static/img/tutorial/manage_researchers.png
     :alt: Manage researchers section
     
-In the search box, type in the first few letters of someone you want to add, and press Enter. (If you don't know anyone else using Lookit, you can add Lookit staff Kim Scott or Rico Rodriguez to your study!) Click the green "+" button to add them to your study:
+In the search box, type in the first few letters of someone you want to add, and press Enter. (If you don't know anyone else using Lookit, feel free to add Lookit staff Kim Scott or Rico Rodriguez to your study!) Click the green "+" button to add them to your study:
 
 .. image:: _static/img/tutorial/add_researcher.png
     :alt: Adding a researcher
     
-They will show up on the right with "Read" permissions initially:
+They will show up on the right with "Preview" permissions initially:
 
 .. image:: _static/img/tutorial/new_researcher_with_read_access.png
     :alt: Researcher shows up on right with read access
 
-This means they can see your study in the Experimenter interface, view associated participant and session data, and approve/reject consent videos. You can click on "Read" for a drop-down menu to give them different permissions if you want. "Admin" permissions let someone also start/stop data collection, change the study protocol or other details, and manage other researchers' access to the study. Or you can click the red "-" button to remove them again.
+This means they can see your study in the Experimenter interface, but not see any participant data or make any changes. You can click on "preview" for a drop-down menu to give them different permissions if you want. (:ref:`See this section<study_permissions>` for much more detailed information about the different roles available. ) Or you can click the red "-" button to remove them again.
 
 Great! Now you know how to give someone else access to your study so you can collaborate.
 
@@ -62,34 +62,23 @@ Going live!: the study approval process and starting data collection
 
 If you just want other researchers to be able to preview your study to give feedback, you can set "shared preview" to true and then share the preview link on Slack. 
 
-But what about when you actually want to start data collection? Let's try out that process now. 
+But what about when you actually want to start data collection? 
 
-The first step is to "submit" your study for approval by Lookit staff. Go to your first tutorial study and find the "change state" dropdown:
-
-.. image:: _static/img/tutorial/study_submit.png
-    :alt: Change state dropdown menu
-
-Go ahead and "submit" your study. This puts it into a queue for review by Lookit staff. 
+At that point, you will "submit" your study for approval by Lookit staff. We won't practice this piece, but so you know what to expect, you can look through the 
+:ref:`information about submitting your study <study status>`.
 
 .. admonition:: Why the manual approval process?
 
    From a participant's standpoint, Lookit is a unified platform, even though there are studies from a variety of research labs. This is great for participant recruitment! But it also means we're all sharing a reputation. Someone else's study that upsets or (without adequate precautions) deceives children, that baffles parents, or that just doesn't work will affect how interested families are in your study, too. Based on our early experience with researchers using Lookit, we strongly expect that a quick review will catch substantive issues often enough to be worth putting everyone through. If you are making changes to an existing study, review is either not required (if only changing certain fields like the age range/eligibility criteria) or is very quick.
 
-Within a few days you will get an email saying your study was approved. At that point, you'll be able to come back and "start" your study, like this:
-
-.. image:: _static/img/tutorial/study_start.png
-    :alt: Change state dropdown menu with start
-
-Starting and pausing data collection can be done instantly at any time after approval. 
-
-What does "starting" your study do? If your study is set as "discoverable" (one of the checkboxes under "edit study"), starting will add your study to the set of studies displayed at `<https://lookit-staging.mit.edu/studies/>`_, and anyone (including you) will be able to participate in it from there. If your study is set as non-discoverable, anyone will be able to participate via a direct link (shown on your study page in the experimenter interface). This is useful for studies intended for a very specific population, for instance if you're doing an online follow-up to an in-person study: you can email the direct link to families, without worrying about screening out other families on Lookit.
- 
-When you get the email, come back and try starting your study to see how it gets displayed to participants. For now, let's move on and work with an already-approved study!
-
 Create some data to play with
 --------------------------------
 
-First, let's actually participate in another study! Go to `<https://lookit-staging.mit.edu/studies/>`_ and select the study "Apples to oranges." This is a short study just to demo the data collection process. You may need to create a child profile and/or fill out a demographic survey before participating. Proceed all the way through this study!
+Because we don't want to clog up the production server with fake responses from researchers trying out Lookit, we'll do this section on the staging server, which is a separate sandbox environment that looks a lot like Lookit but doesn't have any real participant data. This is also where we try out new features before deploying them to production. 
+
+Go ahead and create an experimenter account on the staging server following the :ref:`login directions <staging server>`. If you did the first part of the tutorial, you'll already have a participant account on the staging server - use a different email address for your staging OSF account.
+
+First, let's actually participate in another study! Go to the **staging** server studies page, `<https://lookit-staging.mit.edu/studies/>`_, and select the study "Apples to oranges." This is a short study just to demo the data collection process. You can participate using your experimenter account; you may need to make a child profile and/or fill out a demographic survey before participating. Proceed all the way through this study!
 
 Now switch back to the Experimenter interface. Note: you can toggle between Lookit (the participant-facing section) and Experimenter (the researcher-facing section) at any time via the top navbar if you are logged in as an experimenter:
 
@@ -99,7 +88,12 @@ Now switch back to the Experimenter interface. Note: you can toggle between Look
 .. image:: _static/img/tutorial/exp_view.png
     :alt: Researcher-facing studies view
     
-At the top of the "Apples to oranges" page, click on "View responses":
+Get access to the "Apples to Oranges" study
+-------------------------------------------------
+
+You are able to **see** the "Apples to Oranges" study listed on the Experimenter site on lookit-staging.mit.edu because you automatically get read-only permissions for studies within the Demo lab. However, you can't automatically see any participant data! (This is on purpose - it's not possible to grant lab-wide permissions to actual data, you have to actively add people to individual studies.)
+
+Post in the Slack #tutorial channel and we'll add you as a researcher so you can see everything! Then, at the top of the "Apples to oranges" page, click on "View responses":
 
 .. image:: _static/img/tutorial/view_responses.png
     :alt: View responses link

@@ -26,7 +26,7 @@ Generally, all ‘frame’ development will happen in ember-lookit-frameplayer.
 To start developing your own frames, you will want to first follow the
 “Setup for local frame development” steps. To use the frame definitions
 you have created when posting a study on Lookit, you can specify your
-own ember-lookit-frameplayer repo to use (see “Using the experimenter interface”).
+own ember-lookit-frameplayer repo to use.
 
 .. toctree::
    :maxdepth: 2

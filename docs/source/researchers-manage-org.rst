@@ -1,55 +1,82 @@
-##################################
-Managing your Organization
-##################################
+
+.. _labs:
+
+########################################################
+Labs on Lookit 
+########################################################
+
+Each study on Lookit is associated with a lab. Some basic information about each lab is
+stored on Lookit, like the lab's name, a contact email, and whether the lab has been
+approved to use Lookit to collect data. In the future, this information will be used to 
+create a display page where participants can learn more about your lab, but for now, it is 
+only visible to researchers.
+
+Researcher accounts on Lookit can be affiliated with any number of labs. Only a researcher who 
+is part of a lab can be granted permissions to studies that lab is running. Researchers 
+can also be granted some permissions for the lab as a whole: for instance, to edit the lab
+description, manage membership, or see all studies the lab is running.
+
+--------------------------------------------------------
+The Sandbox and Demo labs
+--------------------------------------------------------
+
+There are two "special" labs that everyone on Lookit is added to automatically. When you log into Lookit for the first time, if you click on "Manage Labs," you should see something like this:
+
+.. image:: _static/img/labs/initial_lab_list.png
+    :alt: Initial list of labs showing Sandbox lab and Demo lab
+
+You are added as a "Guest" in the **Sandbox lab.** This means you can create new studies associated with the Sandbox lab, and you can be given permissions to other studies associated with the Sandbox lab. However, you can't change the lab or see all the studies it is running. If you're working through the tutorial or trying out Lookit to see how it works, you can work on studies in the Sandbox lab and not have to create your own lab.
+
+You are added with "View" permissions in the **Demo lab.** This means you can see and preview all of the studies in the Demo lab, but not create any new studies in this lab. We keep some example studies in the Demo lab so that everyone can see them. You can clone any of the Demo lab studies into the Sandbox lab or your own lab so you can edit a copy.
+
+--------------------------------------------------------
+Creating a new lab
+--------------------------------------------------------
+
+From the "Manage Labs" page, click the green "Create Lab" button. This will take you to a form where you can enter the information about your lab. When you click "Submit," the lab will be created, with you as an admin, and Lookit staff will be notified of the new lab. You will be able to see your new lab in your list of labs.
+
+--------------------------------------------------------
+Approval to test
+--------------------------------------------------------
+
+Once Lookit staff receive a signed institutional agreement for your lab to use Lookit, and 
+at least one of your lab members has completed the Terms of Use quiz, your lab will be 
+changed to "approved to test." Lab admins will be notified by email when the lab is approved to test. You can also see whether a lab is currently approved to test by clicking on it in the list of labs to view more details:
+
+.. image:: _static/img/labs/lab_detail.png
+    :alt: Lab detail page for Demo lab
+    
+Before a lab is approved to test, you can add and manage lab members and create studies associated with the lab; you just won't be able to submit or start those studies yet. 
+
+Individual studies will still require review - the lab being approved to test is not blanket approval for all studies you might run.
+
+--------------------------------------------------------
+Joining an existing lab
+--------------------------------------------------------
+
+If your lab is already on Lookit, you can find it and join it. Go to "Manage Labs" and click the "All" tab. Then you can search by name, PI name, or institution to find the lab. Click "request to join" next to the lab you would like to join. (You can also click on the lab to get more details first!)
+
+.. image:: _static/img/labs/lab_list.png
+    :alt: List of lab search results with request-to-join buttons
+    
+The lab admins will receive an email notifying them of your request, and you will be emailed when they add you.
 
 
-Currently all researchers using Lookit are part of a single 'MIT' organization. The organization construct will eventually allow labs to manage access for their own students and RAs. For now, though, these instructions just apply to Lookit admins. 
+.. _lab_permissions:
 
------------------------------------------
-Adding researchers to your organization
------------------------------------------
+--------------------------------------------------------
+Adding lab members and managing permissions
+--------------------------------------------------------
 
-Navigate to `Manage Organization` https://lookit.mit.edu/exp/researchers/.  Only users with organization admin and organization read permissions can view other researchers in the org. 
-The researchers displayed are researchers that currently belong to your organization, or researchers still needing approval.  Researchers awaiting approval have "No organization groups" listed as the permission.
-Navigate to a researcher awaiting approval (only organization admins are permitted to do this).
+As a lab admin, you will receive emails when new researchers request to join your lab. You can also set researchers' permission levels. There are three roles you can assign researchers to:
 
-.. image:: _static/img/researcher_list.png
-    :alt: Researcher list image
+Guest
+    Can create new studies associated with this lab, and can be given permissions to specific studies associated with this lab
 
+Lab member
+    Guest-level permissions, plus: can `READ_STUDY_DETAILS`, `READ_STUDY_PREVIEW_DATA`, and `CODE_STUDY_PREVIEW_CONSENT` for every study associated with this lab. For details of these permissions, see :ref:`the section on study permissions<study_permissions>`; essentially this lets a lab member view all the studies associated with a lab, but not edit those studies, change their status, or view any human subjects data unless they have study-specific permissions.
 
-Under permissions at the bottom of the researcher detail page, select `Researcher`, `Organization Read`, or `Organization Admin` from the dropdown, and click the check mark.  This will give
-that researcher the associated permissions and add them to your organization. They will receive an email notification.
+Admin
+    Lab member permissions, plus: can edit lab metadata (name, contact email, etc.), can manage lab researchers (add/remove people, change perms among these three groups); and `WRITE_STUDY_DETAILS`, `CHANGE_STUDY_STATUS`, and `MANAGE_STUDY_RESEARCHERS` for every study associated with this lab. Again, this does not grant access to any human subjects data without study-specific permissions, but it does allow a lab admin to manage who has what access to which studies, edit study protocols and descriptions, and start and stop data collection.
 
-.. image:: _static/img/researcher_detail.png
-    :alt: Researcher detail image
-
-------------------------------------------------
-Editing a researcher's organization permissions
-------------------------------------------------
-Navigate to a particular researcher's detail page https://lookit.mit.edu/exp/researchers/<researcher_id>.  Only organization admins can view this page. Under permissions at the bottom of the researcher detail page, select `Researcher`, `Organization Read`, or `Organization Admin` from the dropdown, and click the check mark.  This will modify
-the researcher's permissions.
-
-.. image:: _static/img/researcher_detail2.png
-    :alt: Researcher detail image
-
-------------------------------------------------
-Deleting a researcher's organization permissions
-------------------------------------------------
-Navigate to `Manage Organization` https://lookit.mit.edu/exp/researchers/. Only users with organization admin and organization read permissions can view other researchers in the org.  Click "Remove" beside the
-researcher you wish to delete, and then click "Remove" again in the confirmation modal.  The researcher will be marked as inactive and will no longer be permitted to login to Experimenter.
-
-.. image:: _static/img/deleting_a_researcher.png
-    :alt: Deleting a researcher
-
-
-
-.. image:: _static/img/attachments.png
-    :alt: View all study videos
-
-.. _`Building an Experiment`: researchers-create-experiment.html
-
-.. _`Experiment data`: researchers-experiment-data.html
-
-.. _`Setup for custom frame development`: frame-dev-setup.html
-
-.. _`Setting study fields`: researchers-set-study-fields.html
+Whether to make most lab members "guests" vs. "full members" is just a matter of whether you want a more communal workspace where everyone can see all the studies, or a more private workspace where people have to be invited to collaborate on particular studies. You might choose to make everyone in your lab a "lab member," but occasionally add an outside collaborator who's just helping with a single study as a guest.
