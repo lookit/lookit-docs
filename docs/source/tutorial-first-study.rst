@@ -423,12 +423,10 @@ You should see something like this:
 
 Now that you've gotten your web console open, you'll see a bunch of information in it. This is generally of most interest if something is going wrong and you're not sure what. You can see events that are being logged as you proceed through the study as well as any errors. Some of these errors are ok to ignore - e.g. here are a few current ones due to known but harmless bugs:
 
-* On staging there is a known bug that the fontawesome library doesn't load properly (but it does on "production" - the real Lookit site) - so you may see some errors that a resource failed to load properly, like this:
+* On the staging server there is a known bug that the fontawesome library doesn't load properly (but it does on "production" - the real Lookit site) - so you may see some errors that a resource failed to load properly, like this:
 
 .. image:: _static/img/tutorial/fa_error.png
     :alt: Fontawesome error example
-    
-* You may also see an error when **previewing** about a "notFound" error about ``child:TEST_CHILD_DISREGARD`` - that's just because of the way we're handling preview vs. real participation, and doesn't actually cause trouble.
 
 Leave your preview tab open, and return to the browser tab where you have the "Edit Study " page open. Let's deliberately introduce a problem in our study JSON and see what we can learn from the preview. Try adding something to the "sequence" without defining it in "frames," like this:
 

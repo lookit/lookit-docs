@@ -124,7 +124,7 @@ That defines a frame that's now available for us to use. In order to actually us
 
    There's nothing magical about the "video-config" key given to this frame - you can change it to whatever you want, as long as they key in ``frames`` matches what you call it in ``sequence``. 
    
-Close the editor, save your protocol, and preview your study. Make sure to click "build experimenter builder" if you have not already done so; you will be emailed when it is built and then you can preview your study. You should see the setup frame, looking just like the screenshot in the docs.
+Close the editor, save your protocol, and preview your study. Make sure to click "build experimenter runner" if you have not already done so; you will be emailed when it is built and then you can preview your study. You should see the setup frame, looking just like the screenshot in the docs.
 
 2. Consent
 ~~~~~~~~~~~
@@ -264,6 +264,14 @@ There are a few stimuli above that you'll need to insert. You can see all the st
 * For the image of the father holding his child over his shoulder, take a look in the img directory, and insert the full path ("https://www.mit.edu/~kimscott/...") to the file you want to use.
 
 Then make sure to also add "video-preview" to your ``sequence``. You can put this at the start of the sequence to make it easy to see right away. Save and take a look at the preview!
+
+
+.. admonition:: Warning about putting frames at the start to preview them quickly
+
+   Putting a frame at the start of the ``sequence`` is a good way to quickly keep previewing it, but it won't work if the frame is displayed full-screen. That's because web browsers won't let websites make themselves fullscreen without a "user interaction event," like clicking on a button. Whenever you switch into full-screen mode, the frame beforehand needs to have a "next" button or similar. 
+   
+   To rapidly preview a full-screen frame, just put it second in your ``sequence``, after e.g. a text frame that doesn't require you do do anything but click Next.
+
 
 5. Instructions
 ~~~~~~~~~~~~~~~
