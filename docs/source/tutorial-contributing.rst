@@ -119,6 +119,7 @@ List of tutorial participants
 - Kristine Hocker (MIT)
 - Estelle Hervé (AMU)
 - Isabel Nichoson (Wellesley College)
+- Ginni Strehle (UT Dallas)
 
 .. _Github issues overview:
 
