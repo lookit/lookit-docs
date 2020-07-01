@@ -121,6 +121,7 @@ List of tutorial participants
 - Isabel Nichoson (Wellesley College)
 - Ginni Strehle (UT Dallas)
 - Gala Stojnić (NYU)
+
 .. _Github issues overview:
 
 Checking for and creating issues on Github
