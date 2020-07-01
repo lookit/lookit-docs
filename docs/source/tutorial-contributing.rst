@@ -120,6 +120,7 @@ List of tutorial participants
 - Estelle Hervé (AMU)
 - Isabel Nichoson (Wellesley College)
 - Ginni Strehle (UT Dallas)
+- Gala Stojnić (NYU)
 
 .. _Github issues overview:
 
