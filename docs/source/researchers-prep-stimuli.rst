@@ -48,11 +48,11 @@ especially if you have a lot to convert, is to use ffmpeg.
 Here’s an example command to convert a video file INPUTPATH to mp4 with
 reasonable quality/filesize and using H.264 & AAC codecs:
 
-``ffmpeg -i INPUTPATH -c:v libx264 -preset slow -b:v 1000k -maxrate 1000k -bufsize 2000k -c:a libfdk_aac -b:a 128k``
+``ffmpeg -i INPUTPATH -c:v libx264 -preset slow -b:v 1500k -maxrate 1000k -bufsize 2000k -c:a libfdk_aac -b:a 128k OUTPUTPATH``
 
 And to make a webm file:
 
-``ffmpeg -i INPUTPATH -c:v libvpx -b:v 1000k -maxrate 1000k -bufsize 2000k -c:a libvorbis -b:a 128k -speed 2``
+``ffmpeg -i INPUTPATH -c:v libvpx -b:v 1000k -maxrate 1500k -bufsize 2000k -c:a libvorbis -b:a 128k -speed 2 OUTPUTPATH``
 
 Converting all your audio and video files can be easily automated in
 Python. Here’s an example script that uses ffmpeg to convert all the m4a
