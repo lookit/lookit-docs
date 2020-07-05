@@ -121,6 +121,7 @@ List of tutorial participants
 - Isabel Nichoson (Wellesley College)
 - Ginni Strehle (UT Dallas)
 - Gala Stojnić (NYU)
+- Mark Sheskin (Minerva Schools at KGI)
 
 .. _Github issues overview:
 
