@@ -123,6 +123,7 @@ List of tutorial participants
 - Gala Stojnić (NYU)
 - Mark Sheskin (Minerva Schools at KGI)
 - Eylem Altuntas (MARCS at WSU)
+- Catherine T Best (MARCS Institute, Western Sydney University, Australia)
 
 .. _Github issues overview:
 
