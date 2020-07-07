@@ -211,7 +211,7 @@ Save your protocol and go ahead and preview your study. You should see a simple 
         {
             "text": "After the videos, you will answer a few final questions. Then you're all done!"
         }
-    ],
+    ]
 
 Save and preview again to see your changes. 
 
@@ -255,7 +255,7 @@ We'll use the frame type "exp-lookit-stimuli-preview" here to offer parents the 
         "skipButtonText": "Skip preview",
         "previewButtonText": "Preview a video (my child can't see the screen)",
         "showPreviousButton": true
-    },
+    }
 
 There are a few stimuli above that you'll need to insert. You can see all the stimuli you might need for this study at `<https://www.mit.edu/~kimscott/intermodal/>`_. 
 
