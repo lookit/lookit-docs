@@ -122,6 +122,7 @@ List of tutorial participants
 - Ginni Strehle (UT Dallas)
 - Gala Stojnić (NYU)
 - Mark Sheskin (Minerva Schools at KGI)
+- Eylem Altuntas (MARCS at WSU)
 
 .. _Github issues overview:
 
