@@ -122,6 +122,7 @@ List of tutorial participants
 - Ginni Strehle (UT Dallas)
 - Gala Stojnić (NYU)
 - Mark Sheskin (Minerva Schools at KGI)
+- Catherine T Best (MARCS Institute, Western Sydney University, Australia)
 
 .. _Github issues overview:
 
