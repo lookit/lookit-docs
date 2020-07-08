@@ -127,6 +127,7 @@ List of tutorial participants
 - Mark Sheskin (Minerva Schools at KGI)
 - Eylem Altuntas (MARCS at WSU)
 - Catherine T Best (MARCS Institute, Western Sydney University, Australia)
+- Xi Jia Zhou (Stanford)
 
 .. _Github issues overview:
 
