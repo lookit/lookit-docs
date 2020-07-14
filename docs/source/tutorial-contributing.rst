@@ -131,6 +131,7 @@ List of tutorial participants
 - Brendan Hancock (Queen's University)
 - Carlin Bannister (University of British Columbia)
 - Allena McComas (University of California, San Diego)
+- Talia Papa (University of British Columbia)
 
 .. _Github issues overview:
 
