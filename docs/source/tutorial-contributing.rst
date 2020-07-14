@@ -128,6 +128,7 @@ List of tutorial participants
 - Eylem Altuntas (MARCS at WSU)
 - Catherine T Best (MARCS Institute, Western Sydney University, Australia)
 - Xi Jia Zhou (Stanford)
+- Brendan Hancock (Queen's University)
 
 .. _Github issues overview:
 
