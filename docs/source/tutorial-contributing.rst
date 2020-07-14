@@ -130,6 +130,7 @@ List of tutorial participants
 - Xi Jia Zhou (Stanford)
 - Brendan Hancock (Queen's University)
 - Carlin Bannister (University of British Columbia)
+- Talia Papa (University of British Columbia)
 
 .. _Github issues overview:
 
