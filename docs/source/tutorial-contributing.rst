@@ -129,6 +129,7 @@ List of tutorial participants
 - Catherine T Best (MARCS Institute, Western Sydney University, Australia)
 - Xi Jia Zhou (Stanford)
 - Brendan Hancock (Queen's University)
+- Carlin Bannister (University of British Columbia)
 
 .. _Github issues overview:
 
