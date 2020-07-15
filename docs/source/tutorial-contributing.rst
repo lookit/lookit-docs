@@ -132,6 +132,7 @@ List of tutorial participants
 - Carlin Bannister (University of British Columbia)
 - Allena McComas (University of California, San Diego)
 - Talia Papa (University of British Columbia)
+- Emily Marks (Uniersity of British Columbia)
 
 .. _Github issues overview:
 
