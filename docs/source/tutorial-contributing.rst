@@ -133,6 +133,7 @@ List of tutorial participants
 - Allena McComas (University of California, San Diego)
 - Talia Papa (University of British Columbia)
 - Emily Marks (Uniersity of British Columbia)
+- Jazlyn Armendariz (California State University, Northridge)
 
 .. _Github issues overview:
 
