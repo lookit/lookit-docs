@@ -134,6 +134,7 @@ List of tutorial participants
 - Talia Papa (University of British Columbia)
 - Emily Marks (Uniersity of British Columbia)
 - Toby Mintz (University of Southern California)
+- Jazlyn Armendariz (California State University, Northridge)
 
 .. _Github issues overview:
 
