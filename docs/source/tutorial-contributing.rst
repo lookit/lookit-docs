@@ -135,6 +135,7 @@ List of tutorial participants
 - Emily Marks (Uniersity of British Columbia)
 - Toby Mintz (University of Southern California)
 - Jazlyn Armendariz (California State University, Northridge)
+- Melissa Santos (Stanford University) 
 
 .. _Github issues overview:
 
