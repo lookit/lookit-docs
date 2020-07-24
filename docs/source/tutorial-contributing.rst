@@ -137,6 +137,7 @@ List of tutorial participants
 - Jazlyn Armendariz (California State University, Northridge)
 - Melissa Santos (Stanford University)
 - Karen Smith (University of Wisconsin-Madison)
+- Lillian Xu (University of Wisconsin-Madison)
 
 .. _Github issues overview:
 
