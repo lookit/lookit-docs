@@ -139,6 +139,7 @@ List of tutorial participants
 - Karen Smith (University of Wisconsin-Madison)
 - Lillian Xu (University of Wisconsin-Madison)
 - Ariel Starr (University of Washington)
+- Taylor Petersen (University of Washington)
 
 .. _Github issues overview:
 
