@@ -133,6 +133,11 @@ List of tutorial participants
 - Allena McComas (University of California, San Diego)
 - Talia Papa (University of British Columbia)
 - Emily Marks (Uniersity of British Columbia)
+- Toby Mintz (University of Southern California)
+- Jazlyn Armendariz (California State University, Northridge)
+- Melissa Santos (Stanford University)
+- Karen Smith (University of Wisconsin-Madison)
+- Lillian Xu (University of Wisconsin-Madison)
 
 .. _Github issues overview:
 
