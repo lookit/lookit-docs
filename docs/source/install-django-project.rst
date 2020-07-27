@@ -4,11 +4,8 @@ Installation: lookit-api (Django project)
 ``lookit-api`` is the codebase for Experimenter and Lookit, excluding the actual
 studies themselves. Any functionality you see as a researcher or a
 participant (e.g., signing up, adding a child, editing or deploying a
-study, downloading data) is part of the ``lookit-api`` repo. The
-Experimenter platform is the part of this project for designing and
-administering research studies, meant for researchers. The Lookit
-platform is participant-facing, where users can signup and take part in
-studies. This project is built using Django and PostgreSQL. (The studies
+study, downloading data) is part of the ``lookit-api`` repo. 
+This project is built using Django and PostgreSQL. (The studies
 themselves use Ember.js; see Ember portion of codebase,
 `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`__.),
 It was initially developed by the `Center for Open
@@ -24,45 +21,40 @@ downloading data as a researcher.
    Please consider documenting the exact steps you take and submitting a
    PR to the lookit-api repo to update the documentation!
    
-   WARNING: These instructions are slightly outdated as of Feb 2020. They will still work, 
-   but we now use pipenv and have invoke scripts that will handle a lot of the setup for you.
-   Documentation coming soon - ask if you need help!
+   WARNING: These instructions are updated as of July 2020 and will likely require further
+   clarification. Please get in touch on Slack if you're having trouble!
 
-Prerequisites
-~~~~~~~~~~~~~
-
--  Make sure you have python 3.6: ``$ python --version`` will check the
-   version of your current default python installation. If you don’t
-   have this, install from https://www.python.org/.
--  Make sure you have ``pip``. ``$ pip --version``
--  Create a virtual environment using python 3.6
-
-   -  One way to do this:
-   -  ``$  pip install virtualenv``
-   -  ``$ virtualenv -p python3 envname``, *where ``envname`` is the
-      name of your virtual environment.*
-   -  ``$ source envname/bin/activate`` *Activates your virtual
-      environment*
-
--  Install postgres
-
-   -  make sure you have brew ``$ brew``
-   -  ``$ brew install postgresql``
-   -  ``$ brew services start postgres`` *Starts up postgres*
-   -  ``$ createdb lookit`` *Creates lookit database*
-
-Installation
+Basic installation
 ~~~~~~~~~~~~
 
--  ``$ git clone https://github.com/lookit/lookit-api.git``
--  ``$ cd lookit-api``
--  ``$ sh up.sh`` *Installs dependencies and run migrations*
--  ``$ python manage.py createsuperuser`` *Creates superuser locally
-   (has all user permissions)*
--  ``$ touch project/settings/local.py`` Create a local settings file.
--  Add DEBUG = True to ``local.py`` and save. This is for local
-   development only.
--  ``$ python manage.py runserver`` *Starts up server*
+- Clone the lookit-api repo: ``$ git clone https://github.com/lookit/lookit-api.git``
+- Navigate to the root project directory: ``$ cd lookit-api``
+- Create a virtual environment using pipenv and Python 3.8: ``$ pipenv --python 3.8``
+  You can install pipenv if needed using ``pip install pipenv``. You can download Python 3.8
+  from https://www.python.org/downloads/ if needed.
+- Use the invoke script to go through setup: ``$ invoke setup`` This will install dependencies,
+  create a local settings file, create local SSL certificates, and set up a postgresql database.
+  
+You can then run the server using ``$invoke server`` and should be able to log in using your
+superuser credentials at https://localhost:8000/__CTRL__.
+
+If you are not working extensively with lookit-api - i.e., if you just want to make some 
+new frames - you do not need to run celery, rabbitmq, or docker.
+
+Running Celery and Rabbitmq
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These tools handle deferred tasks like sending emails and generating large file downloads.
+
+- Run ``$ rabbitmq-server`` to start up the rabbitmq server.
+- Run ``$ invoke celery-service`` to start celery, which will talk to rabbitmq. 
+
+Running Docker
+~~~~~~~~~~~~~~~
+
+We use docker to build experiment runner images. If you are testing experiment builds, you will 
+need to have Docker running - you can simply run ``$open /Applications/Docker.app`` or open it 
+from Applications. 
 
 Authentication
 ~~~~~~~~~~~~~~
@@ -82,7 +74,14 @@ This project includes an incoming webhook handler for an event generated
 by the Pipe video recording service when video is transferred to our S3
 storage. This requires a webhook key for authentication. It can be
 generated via our Pipe account and, for local testing, stored in
-project/settings/local.py as ``PIPE_WEBHOOK_KEY``. However, Pipe will
+project/settings/local.py as ``PIPE_WEBHOOK_KEY``. 
+
+Pipe needs to be told where to send the webhook: 
+You can use Ngrok to generate a public URL that 
+/exp/renamevideo 
+#TODO here
+
+However, Pipe will
 continue to use the handler on the production/staging site unless you
 edit the settings to send it somewhere else (e.g., using ngrok to send
 to localhost for testing).

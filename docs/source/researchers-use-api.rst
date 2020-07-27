@@ -108,7 +108,7 @@ Authentication
 ---------------
 We are using a token-based HTTP Authentication scheme.
 
-- Go to Experimenter's admin app to create a token `/admin/authtoken/token/add/` (Only users marked as "Staff" can access the admin app; for now please ask Kim Scott to provide you with a token.)
+- Go to Experimenter's Admin app to create a token `/__CTRL__/authtoken/token/add/` (Only users marked as "Staff" can access the admin app; for now please ask Kim Scott to provide you with a token.)
 
 .. image:: _static/img/add_token.png
     :alt: Add token image

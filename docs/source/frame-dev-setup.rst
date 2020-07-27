@@ -1,33 +1,23 @@
-Setup for custom frame development
+Setup for local development
 ===================================
 
-Suppose that for your study, you need a frame that’s not part of the
-standard ember-lookit-frameplayer library. Maybe you want to use a particular game
-you’ve already implemented in Javascript, or you want to slightly change
-how one of the existing frames works, or you want to hard-code a
-particular complicated counterbalancing scheme. That’s okay! You can add
-a new frame to your own version of the ember-lookit-frameplayer repository, and tell
-Experimenter to use your Github fork ofember-lookit-frameplayer when building your
-study. But for efficiency, you will probably want to run Lookit on your
-own computer as you implement your new frame, so that you can test out
-changes immediately rather than repeatedly pushing your changes to
-Github and re-building your study on Experimenter. These instructions
-will walk you through setting up to run Lookit locally.
+These instructions will walk you through setting up to run Lookit locally.
 
 Overview
 --------
 
-Even though we will probably just be changing the frame definitions in
+Even though we may just be changing the frame definitions in
 ember-lookit-frameplayer, we will need to install *both* the the Django app
 (``lookit-api``) and the Ember app (``ember-lookit-frameplayer``), tell
 them how to talk to each other, and run both of those servers locally.
-In Experimenter, we need to add some basic information to our superuser, and
-then add a child and demographic data. We then create a study locally.
-The exp-player needs to be linked for local development, and a token
-added to the headers of the API requests the
-``ember-lookit-frameplayer`` is sending. We can then navigate directly
-to the study from the ember app to bypass the build process locally.
-This will enable you to make changes to frames locally and rapidly see
+
+- On Lookit, we will add some basic information to our superuser, and
+then add a child and demographic data. 
+- We then create a study locally.
+- In ember-lookit-frameplayer, we'll add a token which gets added to the headers of the API requests so that Lookit knows about the logged-in user making the request. 
+- We can then navigate directly to the study from the Ember app to bypass the build process locally.
+
+This will enable you to make changes to frames locally and immediately see
 the results of those changes, participating in a study just as if you
 were a participant on the Lookit website.
 
@@ -35,17 +25,16 @@ Django App steps
 ----------------
 
 1. Follow the instructions to install the `django
-   app <django-project-installation.html>`__ locally. Run the server.
+   app <install-django-project.html>`__ locally. Run the server.
 
-2. Navigate to http://localhost:8000/admin/ to login to Experimenter’s
-   admin app. You should be redirected to login. Use the superuser
+2. Navigate to http://localhost:8000/__CTRL__/ to log in to Lookit. Use the superuser
    credentials created in the django installation steps.
 
-3. Once you are in the Admin App, navigate to users, and then select
+3. Once you are in the Admin app, navigate to users, and then select
    your superuser. If you just created your django app, there should be
    two users to pick from, your superuser, and an anonymous user. In
    that case, your superuser information is here
-   http://localhost:8000/admin/accounts/user/2/change/.
+   http://localhost:8000/__CTRL__/accounts/user/2/change/.
 
 4. Update your superuser information through the admin app. Fill out the
    bold fields:
@@ -59,7 +48,7 @@ Django App steps
    Click “Save”.
 
 5. Create a token to allow the Ember app to access the API by navigating
-   to http://localhost:8000/admin/authtoken/token/. Click “Add Token”,
+   to http://localhost:8000/__CTRL__/authtoken/token/. Click “Add Token”,
    find your superuser in the dropdown, and then click “Save”. You will
    need this token later.
 
@@ -155,6 +144,7 @@ something.
       $ cd lookit-api
       $ source VENVNAME/bin/activate
       $ python manage.py runserver
+      
 
 2. Start the Ember app:
 
@@ -163,7 +153,7 @@ something.
       $ cd ember-lookit-frameplayer
       $ ember serve
 
-3. Log in as your local superuser at http://localhost:8000/admin/
+3. Log in as your local superuser at http://localhost:8000/__CTRL__/
 
 Previewing or participating in a study
 ---------------------------------------
@@ -194,14 +184,6 @@ If you have set up the Pipe recorder environment variables as described
 in `the installation instructions <ember-app-installation.html>`__,
 video recorded during your local testing will go to Pipe and then to an
 S3 bucket for Lookit development video. Please get in touch if you need access to this video. Depending on the project you are working on, we may provide credentials for accessing the dev S3 bucket, or may ask that you set up your own free Pipe account and have it forward data to you own S3 bucket, which will allow you to test more of the process. (In this case you will use ngrok to send a Pipe webhook to your own local instance.)
-
-Using https
------------
-
-You may need to adjust browser settings to allow using https with the
-self-signed certificate. For instance, in Chrome, set Camera and
-Microphone permissions at
-chrome://settings/content/siteDetails?site=https://localhost:4200.
 
 
 Further Reading / Useful Links
