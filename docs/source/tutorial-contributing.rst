@@ -138,6 +138,7 @@ List of tutorial participants
 - Melissa Santos (Stanford University)
 - Karen Smith (University of Wisconsin-Madison)
 - Lillian Xu (University of Wisconsin-Madison)
+- Ariel Starr (University of Washington)
 
 .. _Github issues overview:
 
