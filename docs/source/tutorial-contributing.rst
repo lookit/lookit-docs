@@ -140,7 +140,8 @@ List of tutorial participants
 - Lillian Xu (University of Wisconsin-Madison)
 - Ariel Starr (University of Washington)
 - Taylor Petersen (University of Washington)
-- Isabella Duan (Stanford University) 
+- Isabella Duan (Stanford University)
+- Aarthi Popat (Stanford University)
 
 .. _Github issues overview:
 
