@@ -13,25 +13,19 @@ Slack is a messaging platform that serves as the primary tool for communication 
 Step 2: Create your Lookit account
 ----------------------------------------
 
-1. Go to the `OSF <https://osf.io>`_. If you don't already have an account, click 'Sign Up' at the top right and create one. You'll use this account to log in to Lookit.
+1. Go to `the researcher registration form <https://lookit.mit.edu/registration/>`_. Fill out the form and click "create account."
 
-2. Enable 2-factor authentication on your OSF account. See `these instructions <https://help.osf.io/hc/en-us/articles/360019738054-Enable-or-Disable-Two-Factor-Authentication>`_.
+2. You'll be taken to a page like this to set up two-factor authentication (2FA), which you'll need in order to access the researcher section of Lookit. If you haven't already, download the Google Authenticator app on your phone. Then follow the directions on this page to activate 2FA for your account.
 
-3. Go to `<https://lookit.mit.edu/exp/>`_. Click the "Open Science Framework" link. Log in with your OSF account. 
+   .. image:: _static/img/login/login_2fa_setup.png
+    :alt: Two-factor authentication setup screen
 
-.. image:: _static/img/osf_login.png
-    :alt: Enter your osf credentials
-    :width: 200
-    :align: center
-    
-If you see a message that the account is not active, reach out in the #tech-support channel on Slack and we can fix it - you probably accidentally tried to an account on production before it was open, and it was inactivated.
+3. You're logged in! You should be redirected to a page of studies like this: 
 
-If you see a message that there is already a participant account with that email address, you have two options: You can either make a new OSF account with a different email address and use that as a researcher, or you can change the email address for your Lookit participant account.
-    
-4. You should be redirected to a list of studies:
-
-  .. image:: _static/img/login_to_exp_success.png
+  .. image:: _static/img/login/login_success_redirect.png
       :alt: Redirect after login to experimenter
+      
+(Having any trouble? Check the :ref:`login/registration documentation <login>` for more information.)
 
 
 Where to go for help

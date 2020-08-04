@@ -6,7 +6,7 @@
 Welcome to Lookit's documentation!
 ==========================================
 
-Use the table of contents at the left to navigate. Here you will find information about how to use Lookit to conduct developmental research, as well as how to contribute to the codebase. If you are looking for non-technical information like how to recruit partipants or when the platform will be available for general use, see `the wiki <https://github.com/lookit/research-resources/wiki>`_.
+Here you will find information about how to use Lookit to conduct developmental research, as well as how to contribute to the codebase. If you are looking for non-technical information like how to recruit partipants or set up your IRB protocol, see `the wiki <https://github.com/lookit/research-resources/wiki>`_.
 
 What is Lookit?
 ----------------

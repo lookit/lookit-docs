@@ -1,60 +1,92 @@
 ##################################
-Logging in
+Registration and login
 ##################################
 
-Logging in as a researcher
+.. _login:
+
+Logging in
 --------------------------------------
 
-1. Go to the `OSF <https://osf.io>`_. If you don't already have an account, click 'Sign Up' at the top right and create one. You'll use this account to log in to Lookit.
+1. Click "Login" from the `Lookit home page <https://lookit.mit.edu/>`_. Both researchers and participants log in from this form. 
 
-2. Enable 2-factor authentication on your OSF account. See `these instructions <https://help.osf.io/hc/en-us/articles/360019738054-Enable-or-Disable-Two-Factor-Authentication>`_.
+   .. image:: _static/img/login/login_homepage_link.png
+    :alt: Link on homepage to log in 
 
-3. To log in to Lookit as a researcher, go to  `<https://lookit.mit.edu/exp/>`_. There is also a "Researcher login" link at the bottom of the Lookit home page that will take you here. (Don't use the regular "Login" link at the top! Your researcher password won't work.)
+2. Enter your email address and password. After logging in, you can participate in studies, view past sessions, and manage your account or registered children.
 
-4. Click on 'Open Science Framework' to log in using your OSF account:
+   .. image:: _static/img/login/login.png
+    :alt: Login screen
 
-  .. image:: _static/img/login_to_exp.png
-      :alt: Login to experimenter image
-    
-5. You will be prompted to enter your OSF credentials: 
+3. If you are logging in to a researcher account, you will additionally be prompted for a one-time password from Google Authenticator so that you can access the researcher section.
 
-  .. image:: _static/img/osf_login.png
-      :alt: Enter your osf credentials
-      :width: 200
-      :align: center
-      
-If you see a message that the account is not active, reach out in the #tech-support channel on Slack and we can fix it - you probably accidentally tried to an account on production before it was open, and it was inactivated.
-    
-If you see a message that there is already a participant account with that email address, you have two options: You can either make a new OSF account with a different email address and use that as a researcher, or you can change the email address for your Lookit participant account.
-      
-6. You should be redirected to a list of studies:
+   .. image:: _static/img/login/login_2fa.png
+    :alt: 2FA login prompt
 
-  .. image:: _static/img/login_to_exp_success.png
-      :alt: Redirect after login to experimenter
-      
-7. If this is your first time logging in, you will likely want to create a new lab or request to join a lab (see :ref:`Labs on Lookit<labs>`) so you can share your studies within a lab, but you can go ahead and get started by creating studies in the "Sandbox lab."
+If you created your account via OSF (or before August 2020)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Logging in as a participant
------------------------------
-
-The "Login" link at the top right of the Lookit site is for (non-researcher) participants. 
-
-You do not need to make a separate participant account in order to participate with your own kids: you can log in as a researcher, then go back to Lookit and you will still be logged in. However, if you prefer to have a separate participant account, you can do so by logging out and clicking the "Sign up" button. You'll need to use a different email address than your OSF account uses. 
+   The first time you log in to Lookit after OSF login is unavailable, you will need to 
+   click "Forgot password?" to request a password reset link.
    
-   .. image:: _static/img/participant_login_links.png
-    :alt: Links for participants to log in and sign up
-    
+    .. image:: _static/img/login/login_password_reset_link.png
+        :alt: Password reset link on login view
+   
+   Follow the link you receive by email to set a new Lookit password for your account:
+   
+    .. image:: _static/img/login/login_password_reset.png
+        :alt: Password reset form
+   
+   When you log in again, you will be redirected to two-factor authentication setup so you can use the researcher section of Lookit!
+   
+    .. image:: _static/img/login/login_previous_account_redirect.png
+        :alt: Prompt to set up 2FA for previous account
+   
+   
+Creating a researcher account
+--------------------------------------
+
+1. Go to `the researcher registration form <https://lookit.mit.edu/registration/>`_. (You can also get here from the `Lookit home page <https://lookit.mit.edu/>`_ by clicking "Sign up" and then following the link to register as a researcher instead of a participant.)
+
+   .. image:: _static/img/login/login_researcher_registration.png
+    :alt: Researcher registration screen
+
+2. Fill out the form and click "create account."
+
+3. You'll be taken to a page like this to set up two-factor authentication (2FA), which you'll need in order to access the researcher section of Lookit. If you haven't already, download the Google Authenticator app on your phone. Then follow the directions on this page to activate 2FA for your account.
+
+   .. image:: _static/img/login/login_2fa_setup.png
+    :alt: Two-factor authentication setup screen
+
+4. You're logged in! You should be redirected to a page of studies like below. You will likely want to create a new lab or request to join a lab (see :ref:`Labs on Lookit<labs>`) so you can share your studies within a lab, but you can go ahead and get started by creating studies in the "Sandbox lab."
+
+   .. image:: _static/img/login/login_success_redirect.png
+    :alt: Lookit studies page visible after researcher login
+
+Creating a participant account
+--------------------------------------
+
+You do not need to make a separate participant account in order to participate with your own kids: you can log in as a researcher, then go back to Lookit and you will still be logged in. However, if you prefer to have a separate participant account, you can do so by logging out and clicking the "Sign up" button. You'll need to use a different email address from the one your researcher account uses. 
+
+1. Click "Sign up" from the `Lookit home page <https://lookit.mit.edu/>`_.
+
+   .. image:: _static/img/login/login_homepage_registration_link.png
+    :alt: Sign up link on Lookit homepage
+
+2. Fill out the form and click "create account."
+
+   .. image:: _static/img/login/login_participant_registration.png
+    :alt: Participant registration form
 
 .. _staging server:
 
 The Lookit staging server
----------------------------------------------
+------------------------------------------------
 
 The Lookit "staging server" is a separate instance of the platform from the "production server" where actual studies take place. This is a sandbox environment where we try out new features, without having to worry about messing with actual data or inconveniencing users if we break something. 
 
-The staging server is located at `<https://lookit-staging.mit.edu/>`_ and you'll log in at `<https://lookit-staging.mit.edu/exp/>`_. 
+The staging server is located at `<https://lookit-staging.mit.edu/>`_. 
 
-Logging in works just the same way as at lookit.mit.edu, except that you have to use a "staging OSF" account, rather than your regular OSF account. You probably don't have a staging OSF account yet; you'll need to make one.
+You can register as a researcher at `<https://lookit-staging.mit.edu/registration/>`_ or as a participant by clicking "Sign up". Logging in works just the same way as at lookit.mit.edu, but accounts are separate. (Your staging login won't work on regular or "production" Lookit, and vice versa.)
 
 There is **absolutely no actual data collection allowed** on the staging server for security reasons. 
 
@@ -64,12 +96,59 @@ You might use the staging server if:
 * You're helping to try out a new feature before it's added to production
 * You're making especially heavy use of Lookit while developing your own studies, working on an adapter so you can hook up another type of experiment runner, etc. - to avoid unusual load on the production server we might ask you to do your development using staging. 
 
+
+Managing 2FA credentials
+-------------------------
+
+If needed, you can disable two-factor authentication on your account (for example, to switch to using a new phone). Click "My account" from the experimenter interface:
+
+   .. image:: _static/img/login/login_researcher_manage_account.png
+    :alt: Link to manage account from experimenter
+    
+From the account page, you can change your email address or password and enable or disable 2FA. 
+
+   .. image:: _static/img/login/login_2fa_management.png
+    :alt: 2FA management on login page
+
    
 Logging in when running Lookit locally for development
 -------------------------------------------------------
 
-   If running Lookit locally, you will instead need to authenticate through the admin interface as described in `Setup for custom frame development`_.
+If running Lookit locally, you can log in or create accounts as described above, substituting ``https://localhost:8000`` for ``https://lookit.mit.edu``. (You no longer need to authenticate through the admin interface with any experimenter accounts.)
+
+
+Troubleshooting
+---------------------------------------
+
+I'm trying to log in but it says my account is "inactive"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Most likely you accidentally tried to create a researcher account on Lookit before we launched, and it was inactivated. Please reach out in the #tech-support channel on Slack and we can fix it.
+
+I can't register as a researcher because I already have a participant account
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You have two options: you can make a researcher account with a different email address, or you can log in to your participant account and change the email address associated with it.
+
+I lost my phone or can't get my OTP from Google Authenticator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For security reasons, there isn't a way to disable or reset your two-factor authentication unless you are already logged in using a one-time password. Please contact Lookit staff via Slack or lookit-tech@mit.edu for assistance.
+
+I'm being prompted for a one-time password (OTP) but I don't have that set up
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   .. image:: _static/img/login/login_2fa_error.png
+    :alt: 2FA error on researcher page
+
+If you are seeing a message like this when trying to access the researcher side of Lookit, click "My Account" at the top right. From there you should be able to enable 2FA or complete setup.
+
+   .. image:: _static/img/login/login_2fa_disabled.png
+    :alt: Account management page when 2FA is disabled
 
 
 
-.. _`Setup for custom frame development`: frame-dev-setup.html
+
+    
+
+   

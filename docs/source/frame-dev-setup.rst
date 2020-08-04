@@ -27,46 +27,46 @@ Django App steps
 1. Follow the instructions to install the `django
    app <install-django-project.html>`__ locally. Run the server.
 
-2. Navigate to http://localhost:8000/__CTRL__/ to log in to Lookit. Use the superuser
-   credentials created in the django installation steps.
+2. Navigate to https://localhost:8000/login/ to log in to Lookit. Use the superuser
+   credentials created in the django installation steps, and set up 2-factor 
+   authentication so you'll be able to access the researcher and admin interfaces
 
-3. Once you are in the Admin app, navigate to users, and then select
-   your superuser. If you just created your django app, there should be
+3. Navigate to https://localhost:8000/__CTRL__ to access the Admin app. Navigate to users, 
+   and then select your superuser. If you just created your django app, there should be
    two users to pick from, your superuser, and an anonymous user. In
    that case, your superuser information is here
-   http://localhost:8000/__CTRL__/accounts/user/2/change/.
+   https://localhost:8000/__CTRL__/accounts/user/2/change/.
 
 4. Update your superuser information through the admin app. Fill out the
    bold fields:
 
    -  Family Name: *Your last name*
    -  Identicon: *If no identicon, just type random text here*
-   -  Timezone: *America/New_York, as an example*
    -  Locale: *en_US, as an example*
    -  Place a check in the checkbox by “Is Researcher”
 
    Click “Save”.
 
 5. Create a token to allow the Ember app to access the API by navigating
-   to http://localhost:8000/__CTRL__/authtoken/token/. Click “Add Token”,
+   to https://localhost:8000/__CTRL__/authtoken/token/. Click “Add Token”,
    find your superuser in the dropdown, and then click “Save”. You will
    need this token later.
 
 6. Create a study by navigating to
-   http://localhost:8000/exp/studies/create/. Fill out all the fields.
+   https://localhost:8000/exp/studies/create/. Fill out all the fields.
    The most important field is the ``structure``, where you define the
    frames and the sequence of the frames. Be sure the frame and the
    details for the frame you are testing are listed in the structure.
 
 7. Add demographic information to your superuser (just for testing
    purposes), so your superuser can participate in studies. Navigate to
-   http://localhost:8000/account/demographics/. Scroll down to the
+   https://localhost:8000/account/demographics/. Scroll down to the
    bottom and hit “Save”. You’re not required to answer any questions,
    but hitting save will save a blank demographic data version for your
    superuser.
 
 8. Create a child by navigating to
-   http://localhost:8000/account/children/, and clicking “Add Child”.
+   https://localhost:8000/account/children/, and clicking “Add Child”.
    Fill out all the information with test data and click “Add child”.
 
 Now we have a superuser with attached
@@ -103,9 +103,9 @@ Ember App steps
       PIPE_ACCOUNT_HASH='<account hash here>'
       PIPE_ENVIRONMENT=<environment here>
       LOOKIT_API_KEY='Token <token here>'
-      LOOKIT_API_HOST='http://localhost:8000'
+      LOOKIT_API_HOST='https://localhost:8000'
 
-4. If you want to use the HTML5 video recorder, you’ll need to set up to
+4. In order to the HTML5 video recorder, you’ll need to set up to
    use https locally. Open ``ember-lookit-frameplayer/.ember-cli`` and
    make sure it includes ``ssl: true``:
 
@@ -142,8 +142,8 @@ something.
    ::
 
       $ cd lookit-api
-      $ source VENVNAME/bin/activate
-      $ python manage.py runserver
+      $ pipenv shell
+      $ invoke server
       
 
 2. Start the Ember app:
@@ -153,16 +153,16 @@ something.
       $ cd ember-lookit-frameplayer
       $ ember serve
 
-3. Log in as your local superuser at http://localhost:8000/__CTRL__/
+3. Log in as your local superuser at http://localhost:8000/login/
 
 Previewing or participating in a study
 ---------------------------------------
 
 To participate in a study locally, you need demographic data and a child
 attached to the logged in user, as well as a study. To fetch studies, navigate to
-http://localhost:8000/api/v1/studies/. Copy the id of the study you
+https://localhost:8000/api/v1/studies/. Copy the id of the study you
 created earlier. To fetch children, navigate to
-http://localhost:8000/api/v1/children/. Copy the id of your child.
+https://localhost:8000/api/v1/children/. Copy the id of your child.
 
 Both previewing and participating will save data to your local server; there's no difference in the experience. Preview responses simply have an "is_preview" field set to True, and are displayed differently on the consent manager and individual responses views.
 
@@ -189,8 +189,8 @@ S3 bucket for Lookit development video. Please get in touch if you need access t
 Further Reading / Useful Links
 --------------------------------
 
-- http://emberjs.com/
-- http://ember-cli.com/
+- https://emberjs.com/
+- https://ember-cli.com/
 - Development Browser Extensions
   - https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
   - https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/
