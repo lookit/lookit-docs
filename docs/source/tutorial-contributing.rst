@@ -142,6 +142,7 @@ List of tutorial participants
 - Taylor Petersen (University of Washington)
 - Isabella Duan (Stanford University)
 - Aarthi Popat (Stanford University)
+- Jamie Jirout (University of Virginia)
 
 .. _Github issues overview:
 
