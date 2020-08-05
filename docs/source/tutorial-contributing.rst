@@ -143,6 +143,7 @@ List of tutorial participants
 - Isabella Duan (Stanford University)
 - Aarthi Popat (Stanford University)
 - Jamie Jirout (University of Virginia)
+- Cynthia Lukyanenko (George Mason University)
 
 .. _Github issues overview:
 
