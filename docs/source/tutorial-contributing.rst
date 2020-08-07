@@ -144,6 +144,7 @@ List of tutorial participants
 - Aarthi Popat (Stanford University)
 - Jamie Jirout (University of Virginia)
 - Cynthia Lukyanenko (George Mason University)
+- Franchesca Quintero (University of California, Davis)
 
 .. _Github issues overview:
 
