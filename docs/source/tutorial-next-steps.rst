@@ -24,7 +24,7 @@ Let's practice that now. First, think of either a problem you encountered or som
 
 Although we hope this tutorial has provided a solid introduction to designing and managing your Lookit study, it doesn't cover everything it's possible to do! The goal is that upon completion, you are ready to learn about more advanced options using the rest of the documentation. Here are some examples of topics you may be interested in exploring as you continue:
 
-- Using the "Manage Recruitment" section of the experimenter interface to evaluate your recruitment efforts
+- :ref:`Writing a Javascript function to generate your study protocol<generators>` 
 
 - :ref:`Creating your own custom frames to use on Lookit<Custom frames>`
 
