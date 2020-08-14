@@ -146,6 +146,7 @@ List of tutorial participants
 - Cynthia Lukyanenko (George Mason University)
 - Franchesca Quintero (University of California, Davis)
 - Madison Buntrock (University of Maryland, College Park) 
+- Katie Schuler (University of Pennsylvania)
 
 .. _Github issues overview:
 
