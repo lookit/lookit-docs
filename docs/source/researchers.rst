@@ -13,6 +13,7 @@ Researcher guide
    researchers-set-study-fields
    researchers-create-experiment
    researchers-condition-assignment
+   researchers-protocol-generators
    researchers-update-code
    researchers-prep-stimuli
    researchers-manage-consent

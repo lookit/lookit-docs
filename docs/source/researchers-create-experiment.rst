@@ -6,7 +6,7 @@ Protocol specification
 Preliminaries: JSON format
 ---------------------------
 
-Researchers specify the protocol for a Lookit study by providing a JSON
+Researchers can specify the protocol for a Lookit study by providing a JSON
 (JavaScript Object Notation) object on the Experimenter interface, which
 is interpreted according to a JSON Schema (http://json-schema.org/)
 designed for Lookit studies. A `JSON
@@ -70,7 +70,8 @@ page, and scroll down to the 'Build study - add JSON' field:
     :alt: Build study field on study edit page
 
 Click on this field to bring up the experiment editor view.  Here is where you 
-define the structure of your experiment using a JSON document.
+define the structure of your experiment using a JSON document. (Advanced users can choose
+to instead provide a :ref:`'protocol generator function'<generators>`, written in Javascript, which returns a JSON document.)
 
 Studies on Lookit are broken into a set of fundamental units called
 **frames**, which can also be thought of as “pages” of the study. A
@@ -238,8 +239,8 @@ Here is an example of a frame group that just contains two text frames:
             "kind":  "exp-lookit-text"
         }
     }
-
-
+    
+    
 .. _Frame parameters:
 
 Defining frame parameters to reuse or randomize values

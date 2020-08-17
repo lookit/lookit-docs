@@ -1,18 +1,33 @@
 Randomization and conditional logic
 ===========================================
 
-Simple randomization
---------------------
-
-A lot of simple randomization, like showing stimuli or options in a random order, can be achieved simply using frame parameters. See :ref:`Defining frame parameters to reuse or randomize values<Frame parameters>`.
-
-Condition assignment
---------------------
+Condition assignment and counterbalancing
+------------------------------------------
 
 Generally, you’ll want to show slightly different versions of the study
 to different participants: perhaps you have a few different conditions,
 and/or need to counterbalance the order of trials or left/right position
-of stimuli. To do this, you can use a special frame called a
+of stimuli. You have several options for how to handle this, depending on your preferences
+and the complexity of your design:
+
+1. Simple randomization using frame parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A lot of simple randomization, like showing stimuli or questions in a random order, can be achieved simply using frame parameters to select values from a list you define. See :ref:`Defining frame parameters to reuse or randomize values<Frame parameters>`.
+
+
+2. Generating your study protocol using Javascript
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You also have the option to provide a Javascript function that generates your study protocol programmatically. For complex counterbalancing designs, this may be simpler to reason about and debug than using randomizer frames (below) because you can define variables and write the step-by-step instructions for how to create the study protocol, without having to learn any special Lookit syntax. See :ref:`'Protocol generators'<generators>` for more information. 
+
+A protocol generator function can do anything that a randomizer frame can do. But to set up :ref:`conditional logic<Conditional logic>` (doing different things depending on what the family does *this session*), you will still need to use ``generateProperties`` or ``selectNextFrame`` parameters within the protocol you generate. 
+
+
+3. Randomizer frames
+~~~~~~~~~~~~~~~~~~~~~~
+
+To do this, you can use a special frame called a
 **randomizer** to select an appropriate sequence of frames for a
 particular trial. A randomizer frame is automatically expanded to a list
 of frames, so that for instance you can specify your 12 looking-time
@@ -23,10 +38,12 @@ See `here <https://lookit.github.io/lookit-frameplayer-docs/modules/randomizers.
 To use a randomizer frame, set the frame ``"kind"`` to ``"choice"`` and
 ``"sampler"`` to the appropriate type of randomizer. 
 
+
+
 .. _random_parameter_set:
 
 The random-parameter-set randomizer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The most general randomizer type is called
 `random-parameter-set <https://lookit.github.io/lookit-frameplayer-docs/classes/randomParameterSet.html>`_.
@@ -289,7 +306,7 @@ another object), it is replaced by the corresponding value from the
    ]
 
 Case study: 2 x 2 x 2 design
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Suppose you want to set up a study with a 2 x 2 x 2 design: that is, three types of things
 vary, each with two options. For this toy example, all we want to do is tell a short 
@@ -487,7 +504,7 @@ Real randomization will generally be somewhat more complex - rather than setting
 
 
 Nested randomizers
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In more complex experimental designs, the frames created by a randomizer
 may themselves be frame groups or randomizers! This nesting allows more modular
