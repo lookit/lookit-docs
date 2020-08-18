@@ -147,6 +147,7 @@ List of tutorial participants
 - Franchesca Quintero (University of California, Davis)
 - Madison Buntrock (University of Maryland, College Park) 
 - Katie Schuler (University of Pennsylvania)
+- Emily Fourie (University of California, Davis)
 
 .. _Github issues overview:
 
