@@ -83,7 +83,7 @@ Ember App steps
 ---------------
 
 1. Follow the instructions to install the `ember
-   app <ember-app-installation.html>`__ locally.
+   app <install-ember-app.html>`__ locally.
 
 2. If you
    make changes to the frames, you should see notifications that files
