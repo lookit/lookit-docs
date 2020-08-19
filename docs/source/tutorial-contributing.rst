@@ -148,6 +148,7 @@ List of tutorial participants
 - Madison Buntrock (University of Maryland, College Park) 
 - Katie Schuler (University of Pennsylvania)
 - Emily Fourie (University of California, Davis)
+- Sarra Al-Zayer (Cornell University)
 - Mary Eng (Cornell University)
 
 .. _Github issues overview:
