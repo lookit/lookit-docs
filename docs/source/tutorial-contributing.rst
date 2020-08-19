@@ -149,6 +149,7 @@ List of tutorial participants
 - Katie Schuler (University of Pennsylvania)
 - Emily Fourie (University of California, Davis)
 - Sarra Al-Zayer (Cornell University)
+- Mary Eng (Cornell University)
 
 .. _Github issues overview:
 
