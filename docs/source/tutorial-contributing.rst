@@ -150,6 +150,7 @@ List of tutorial participants
 - Emily Fourie (University of California, Davis)
 - Sarra Al-Zayer (Cornell University)
 - Mary Eng (Cornell University)
+- Elizabeth Swanson (Stanford University)
 
 .. _Github issues overview:
 
