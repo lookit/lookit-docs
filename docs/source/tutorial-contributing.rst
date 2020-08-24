@@ -151,6 +151,7 @@ List of tutorial participants
 - Sarra Al-Zayer (Cornell University)
 - Mary Eng (Cornell University)
 - Elizabeth Swanson (Stanford University)
+- Peppy Winchel (University of Virginia)
 
 .. _Github issues overview:
 
