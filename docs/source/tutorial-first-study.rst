@@ -7,7 +7,7 @@ In this section, you will be creating your first study on Lookit. You will learn
 Step 1: Clone the 'Lookit tutorial part 1' study
 -------------------------------------------------
 
-To get started, log in to the Lookit staging server as an experimenter. (Go to `<https://lookit.mit.edu/login/>`_ to log in.)
+To get started, log in to Lookit as an experimenter. (Go to `<https://lookit.mit.edu/login/>`_ to log in.)
 
 You should see a few studies you automatically have access to, including one called "Lookit tutorial part 1". Click on that to open up the study detail page:
 
@@ -159,7 +159,7 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
         <p>There are several things to fix here - if you changed something and got a different error message, you're probably on the right track! Work down the list of requirements for JSON from the overview, and note that the "true" value is all lowercase.</p>
     </details>
 
-OK, congrats on learning all about JSON! Your study should be ready to preview by now. You should have an email in your inbox from "lookit+staging" about this, and if you refresh the page you're on, you should see something like this:
+OK, congrats on learning all about JSON! Your study should be ready to preview by now. You should have an email in your inbox from Lookit about this, and if you refresh the page you're on, you should see something like this:
 
 .. image:: _static/img/tutorial/preview_built.png
     :alt: Preview built status display
