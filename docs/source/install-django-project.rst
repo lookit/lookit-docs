@@ -27,6 +27,8 @@ downloading data as a researcher.
 Basic installation
 ~~~~~~~~~~~~
 
+Note: the ``$`` represents the command prompt below - e.g. the start of a new line in Terminal. Don't actually type it in!
+
 - Clone the lookit-api repo: ``$ git clone https://github.com/lookit/lookit-api.git``
 - Navigate to the root project directory: ``$ cd lookit-api``
 - Use ``$ pipenv --version`` to see if you already have pipenv installed. If it is, you 
@@ -35,9 +37,8 @@ Basic installation
 - Create a virtual environment using pipenv and Python 3.8: ``$ pipenv --python 3.8``
   If you don't have Python 3.8 available, you can download it from 
   https://www.python.org/downloads/.
-- Use ``$ invoke --version`` to see if you already have invoke installed. If it is, you 
-  will see the version; if not, you will see "invoke: command not found". 
-  If needed, install using ``pip install invoke``.
+- Enter the virtual environment using ``$ pipenv shell``.
+- Install invoke using ``$ pip install invoke``.
 - Use the invoke script to go through setup: ``$ invoke setup`` This will install dependencies,
   create a local settings file, create local SSL certificates, and set up a postgresql database.
   You will be prompted a few times to enter your password, which is because a command is 
@@ -54,7 +55,8 @@ Basic installation
 Now you can go to https://localhost:8000 to see your local Lookit server! You should be able to log in using 
 the superuser credentials you created during setup.
   
-Going forward, you can run the server using ``$invoke server``.
+Going forward, you can run the server by navigating to the lookit-api directory, 
+entering the virtualenv (``$ pipenv shell``), and typing ``$ invoke server``.
 
 If you are not working extensively with lookit-api - i.e., if you just want to make some 
 new frames - you do not need to run celery, rabbitmq, or docker.
