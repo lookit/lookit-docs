@@ -29,14 +29,32 @@ Basic installation
 
 - Clone the lookit-api repo: ``$ git clone https://github.com/lookit/lookit-api.git``
 - Navigate to the root project directory: ``$ cd lookit-api``
+- Use ``$ pipenv --version`` to see if you already have pipenv installed. If it is, you 
+  will see the version; if not, you will see "pipenv: command not found". If needed, 
+  install using ``pip install pipenv``.
 - Create a virtual environment using pipenv and Python 3.8: ``$ pipenv --python 3.8``
-  You can install pipenv if needed using ``pip install pipenv``. You can download Python 3.8
-  from https://www.python.org/downloads/ if needed.
+  If you don't have Python 3.8 available, you can download it from 
+  https://www.python.org/downloads/.
+- Use ``$ invoke --version`` to see if you already have invoke installed. If it is, you 
+  will see the version; if not, you will see "invoke: command not found". 
+  If needed, install using ``pip install invoke``.
 - Use the invoke script to go through setup: ``$ invoke setup`` This will install dependencies,
   create a local settings file, create local SSL certificates, and set up a postgresql database.
+  You will be prompted a few times to enter your password, which is because a command is 
+  being run using ``sudo`` - this should be the password you use
+  to log in to your account on your computer. When it finishes, you should see something like:
   
-You can then run the server using ``$invoke server`` and should be able to log in using your
-superuser credentials at https://localhost:8000/__CTRL__.
+  ::
+
+     Serving at https://127.0.0.1:8000
+     Watching for file changes with StatReloader
+     
+- Create a superuser by running ``python manage.py createsuperuser``
+    
+Now you can go to https://localhost:8000 to see your local Lookit server! You should be able to log in using 
+the superuser credentials you created during setup.
+  
+Going forward, you can run the server using ``$invoke server``.
 
 If you are not working extensively with lookit-api - i.e., if you just want to make some 
 new frames - you do not need to run celery, rabbitmq, or docker.
@@ -89,8 +107,7 @@ to localhost for testing).
 Common Issues
 ~~~~~~~~~~~~~
 
-During the installation phase, when running ``sh up.sh``, you may see
-the following:
+During installation, you may see the following:
 
 ::
 
@@ -138,4 +155,4 @@ To fix, try running something like:
    $ brew install graphviz
    $ pip install --install-option="--include-path=/usr/local/include" --install-option="--library-path=/usr/local/lib" pygraphviz
 
-Then run ``sh up.sh again.``
+Then re-run setup.
