@@ -152,6 +152,7 @@ List of tutorial participants
 - Mary Eng (Cornell University)
 - Elizabeth Swanson (Stanford University)
 - Peppy Winchel (University of Virginia)
+- Kaitlin Lawler (University of Texas at Dallas)
 
 .. _Github issues overview:
 
