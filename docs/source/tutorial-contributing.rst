@@ -154,6 +154,7 @@ List of tutorial participants
 - Peppy Winchel (University of Virginia)
 - Kaitlin Lawler (University of Texas at Dallas)
 - Shoronda Matthews (University of Virginia)
+
 .. _Github issues overview:
 
 Checking for and creating issues on Github
