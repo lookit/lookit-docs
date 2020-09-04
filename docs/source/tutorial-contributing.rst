@@ -154,6 +154,7 @@ List of tutorial participants
 - Peppy Winchel (University of Virginia)
 - Kaitlin Lawler (University of Texas at Dallas)
 - Shoronda Matthews (University of Virginia)
+- Yi Lin (New York University)
 - Ariel Mathis  (University of Pennsylvania)
 
 .. _Github issues overview:
