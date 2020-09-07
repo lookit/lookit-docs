@@ -82,6 +82,7 @@ List of tutorial participants
 - Marc Colomer (University of Chicago)
 - Junyi Chu (MIT)
 - Maddie Pelz (MIT)
+- Heather Kosakowski (MIT)
 - Emily Neer (UCLA)
 - Amalia Ionescu (UCLA)
 - Katlyn Newman (UCSD)
