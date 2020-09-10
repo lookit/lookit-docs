@@ -158,6 +158,7 @@ List of tutorial participants
 - Yi Lin (New York University)
 - Ariel Mathis  (University of Pennsylvania)
 - Sav Nijeboer (University of British Columbia)
+- Iris Zhong (Smith College)
 
 .. _Github issues overview:
 
