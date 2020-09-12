@@ -159,6 +159,7 @@ List of tutorial participants
 - Ariel Mathis  (University of Pennsylvania)
 - Sav Nijeboer (University of British Columbia)
 - Iris Zhong (Smith College)
+- Ania Alberski (University of Pennsylvania)
 
 .. _Github issues overview:
 
