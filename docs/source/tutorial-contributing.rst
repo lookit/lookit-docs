@@ -160,6 +160,7 @@ List of tutorial participants
 - Sav Nijeboer (University of British Columbia
 - Michelle Miller (University of Virginia)
 - Iris Zhong (Smith College)
+- Sarvenaz Oloomi (University of British Columbia)
 - Ania Alberski (University of Pennsylvania)
 
 .. _Github issues overview:
