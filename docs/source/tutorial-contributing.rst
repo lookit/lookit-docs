@@ -157,8 +157,9 @@ List of tutorial participants
 - Shoronda Matthews (University of Virginia)
 - Yi Lin (New York University)
 - Ariel Mathis  (University of Pennsylvania)
-- Sav Nijeboer (University of British Columbia)
+- Sav Nijeboer (University of British Columbia
 - Michelle Miller (University of Virginia)
+- Iris Zhong (Smith College)
 
 .. _Github issues overview:
 
