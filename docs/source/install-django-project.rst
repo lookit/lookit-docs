@@ -79,13 +79,12 @@ from Applications.
 Authentication
 ~~~~~~~~~~~~~~
 
-OAuth authentication to OSF accounts, used for access to Experimenter,
-currently does not work when running locally. You can create a local
-participant account and log in using that to view participant-facing
-functionality, or log in as your superuser at localhost:8000/__CTRL__ and
-then navigate to Experimenter. As your superuser, you can also use the
-Admin app to edit other local users - e.g., to make users researchers vs
-participants.
+You can create participant and researcher accounts through the regular signup flow on 
+your local instance. To access Experimenter you will need to add two-factor authentication
+to your account following the prompts. In order to access the admin interface 
+(https://localhost:8000/__CTRL__),
+which provides a convenient way to access and edit records, you will need to log in using
+the superuser you created earlier using manage.py. 
 
 Handling video
 ~~~~~~~~~~~~~~
