@@ -159,7 +159,7 @@ List of tutorial participants
 - Ariel Mathis  (University of Pennsylvania)
 - Sav Nijeboer (University of British Columbia)
 - Iris Zhong (Smith College)
-
+- Vanessa Mak (University of British Columbia)
 .. _Github issues overview:
 
 Checking for and creating issues on Github
