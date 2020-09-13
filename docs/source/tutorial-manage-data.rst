@@ -9,7 +9,7 @@ Managing access to your study: add a collaborator
 
 Rarely will you be working completely alone! Usually you will want multiple people to have access to any particular study: you may have a few people working together to get the protocol just right, as well as several RAs checking consent and sending feedback to participants. 
 
-We very strongly recommend this model rather than sharing credentials for a lab-wide OSF account. This way, each individual can get permissions on just the studies they actually need access to - not everything your lab has ever done. When temporary staff like undergrad RAs move on, you can just remove them from the study, instead of distributing a new password to everyone remaining in the lab. Plus, there is logging built into Lookit that keeps track of things like who did what when - including who approved consent recordings - that may be useful to you.
+We very strongly recommend this model rather than sharing credentials for a lab-wide  account. This way, each individual can get permissions on just the studies they actually need access to - not everything your lab has ever done. When temporary staff like undergrad RAs move on, you can just remove them from the study, instead of distributing a new password to everyone remaining in the lab. Plus, there is logging built into Lookit that keeps track of things like who did what when - including who approved consent recordings - that may be useful to you.
 
 Try it out! Add another person to your tutorial study. On the study page in the Experimenter interface, scroll down to "Manage Researchers":
 
@@ -76,7 +76,7 @@ Create some data to play with
 
 Because we don't want to clog up the production server with fake responses from researchers trying out Lookit, we'll do this section on the staging server, which is a separate sandbox environment that looks a lot like Lookit but doesn't have any real participant data. This is also where we try out new features before deploying them to production. 
 
-Go ahead and create an experimenter account on the staging server following the :ref:`login directions <staging server>`. If you did the first part of the tutorial, you'll already have a participant account on the staging server - use a different email address for your staging OSF account.
+Go ahead and create an experimenter account on the staging server following the :ref:`login directions <staging server>`. If you did the first part of the tutorial, you'll already have a participant account on the staging server - use a different email address for your staging experimenter account.
 
 First, let's actually participate in another study! Go to the **staging** server studies page, `<https://lookit-staging.mit.edu/studies/>`_, and select the study "Apples to oranges." This is a short study just to demo the data collection process. You can participate using your experimenter account; you may need to make a child profile and/or fill out a demographic survey before participating. Proceed all the way through this study!
 
