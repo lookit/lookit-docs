@@ -163,6 +163,7 @@ List of tutorial participants
 - Vanessa Mak (University of British Columbia)
 - Sarvenaz Oloomi (University of British Columbia)
 - Ania Alberski (University of Pennsylvania)
+- Jenna Croteau (Smith College)
 
 .. _Github issues overview:
 
