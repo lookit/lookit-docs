@@ -43,7 +43,14 @@ In addition to the technical preparations you're making to be able to implement 
 
 You can go ahead and:ref:`create a lab<labs>` at any point, and it'll be approved once you've done the steps above.
 
-4. The last step: please give feedback on the tutorial!
+4. Link to Lookit from your website
+-------------------------------------------------------
+
+Once you have your study up and running on Lookit, we'd really appreciate it if you could put a link to Lookit on your lab or personal researcher website. This helps the entire community by boosting Lookit's SEO, and is an easy way to encourage parents to participate in your (and other!) Lookit studies. For example, you might include some text like this, along with the Lookit logo, on a parent-facing part of your website:
+
+"Did you know that you can participate in our research from the comfort of your own home? `Click here to check out Lookit, an online platform for developmental research. <https://lookit.mit.edu>`_ Families can participate in our studies on their home computers, any time they want!"
+
+5. The last step: please give feedback on the tutorial!
 -------------------------------------------------------
 
 One last request: please fill out the `Google form  <https://forms.gle/Wv7FMw8t8kSfWLhy9>`_ to give feedback that will be used to help improve this tutorial. Thank you!
