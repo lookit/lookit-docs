@@ -6,8 +6,9 @@ These instructions will walk you through setting up to run Lookit locally.
 Overview
 --------
 
-Even though we may just be changing the frame definitions in
-ember-lookit-frameplayer, we will need to install *both* the the Django app
+Option 1: 
+~~~~~~~~~~~~~~
+For a full local development setup, we will need to install *both* the the Django app
 (``lookit-api``) and the Ember app (``ember-lookit-frameplayer``), tell
 them how to talk to each other, and run both of those servers locally.
 
@@ -17,12 +18,20 @@ then add a child and demographic data.
 - In ember-lookit-frameplayer, we'll add a token which gets added to the headers of the API requests so that Lookit knows about the logged-in user making the request. 
 - We can then navigate directly to the study from the Ember app to bypass the build process locally.
 
-This will enable you to make changes to frames locally and immediately see
+Option 2:
+~~~~~~~~~~~~~~~~
+If you are only making changes to the experiment runner (ember-lookit-frameplayer), you have the option of running only the Ember app locally, and having it talk to the Lookit staging server instead of a local Lookit server. 
+
+Either way, you will be able to make changes to frames locally and immediately see
 the results of those changes, participating in a study just as if you
-were a participant on the Lookit website.
+were a participant on the Lookit website. You will edit the study definitions, and see
+the collected data, on your local instance or on the staging server, depending on the option you choose. 
+
 
 Django App steps
 ----------------
+
+Note: this is optional if you are only making changes to ember-lookit-frameplayer. 
 
 1. Follow the instructions to install the `django
    app <install-django-project.html>`__ locally. Run the server.
@@ -96,7 +105,10 @@ Ember App steps
 
 3. Add your token and lookit-api local host address 
    to the ember-lookit-frameplayer/.env file. This will allow your Ember app to talk
-   to your local API. Your .env file will now look like this:
+   to your local API or to the Lookit staging server, depending on the option you chose
+   above. If you are using a local installation of lookit-api, insert the token you saved
+   earlier. If you are using the Lookit staging server, please contact the admins for 
+   an API token for your account. Your .env file will now look like this:
 
    ::
 
@@ -104,6 +116,9 @@ Ember App steps
       PIPE_ENVIRONMENT=<environment here>
       LOOKIT_API_KEY='Token <token here>'
       LOOKIT_API_HOST='https://localhost:8000'
+      
+    If you are using the Lookit staging server, this will be identical except that the
+    last line should be ``LOOKIT_API_HOST='https://lookit-staging.mit.edu'``.
 
 4. In order to the HTML5 video recorder, you’ll need to set up to
    use https locally. Open ``ember-lookit-frameplayer/.ember-cli`` and

@@ -20,9 +20,6 @@ downloading data as a researcher.
    Note: These instructions are for Mac OS. Installing on another OS?
    Please consider documenting the exact steps you take and submitting a
    PR to the lookit-api repo to update the documentation!
-   
-   WARNING: These instructions are updated as of July 2020 and will likely require further
-   clarification. Please get in touch on Slack if you're having trouble!
 
 Basic installation
 ~~~~~~~~~~~~
@@ -40,7 +37,7 @@ Note: the ``$`` represents the command prompt below - e.g. the start of a new li
 - Enter the virtual environment using ``$ pipenv shell``.
 - Install invoke using ``$ pip install invoke``.
 - Use the invoke script to go through setup: ``$ invoke setup`` This will install dependencies,
-  create a local settings file, create local SSL certificates, and set up a postgresql database.
+  create a local .env file, create local SSL certificates, and set up a postgresql database.
   You will be prompted a few times to enter your password, which is because a command is 
   being run using ``sudo`` - this should be the password you use
   to log in to your account on your computer. When it finishes, you should see something like:
