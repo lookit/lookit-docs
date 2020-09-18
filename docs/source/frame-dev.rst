@@ -12,7 +12,7 @@ you’ve already implemented in Javascript, or you want to slightly change
 how one of the existing frames works, or you want to hard-code a
 particular complicated counterbalancing scheme. That’s okay! You can add
 a new frame to your own version of the ember-lookit-frameplayer repository, and tell
-Experimenter to use your Github fork of ember-lookit-frameplayer when building your
+Experimenter to use your Github fork of ember-lookit-frameplayer (rather than the standard Lookit-maintained one) when building your
 study. 
 
 The Lookit codebase is composed of two main modules:
@@ -28,9 +28,9 @@ The Lookit codebase is composed of two main modules:
    describe the combination of JavaScript file
    and Handlebars HTML template that compose a particular component of an experiment.
 
-Generally, all frame development will happen in ember-lookit-frameplayer. But for efficiency, you will probably want to run both lookit-api and ember-lookit-frameplayer on your own computer as you implement your new frame, so that you can test out
-changes immediately rather than repeatedly pushing your changes to
-Github and re-building your study on Experimenter.
+Generally, all frame development will happen in ember-lookit-frameplayer. If you want to 
+develop a new frame, or make improvements to existing frames, you will likely want to run ember-lookit-frameplayer locally so that you can see and test out your changes instantly. This way, you don't have to repeatedly push your changes to GitHub and re-build your study 
+to see how it works. 
 
 To start developing your own frames, first follow the "Setup for local development" steps.
 
