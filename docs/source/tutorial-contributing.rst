@@ -164,6 +164,7 @@ List of tutorial participants
 - Sarvenaz Oloomi (University of British Columbia)
 - Ania Alberski (University of Pennsylvania)
 - Jenna Croteau (Smith College)
+- Madison Chew (University of California, San Diego)
 
 .. _Github issues overview:
 
