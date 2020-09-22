@@ -32,7 +32,7 @@ This will bring you to a screen with a bunch of fields to fill out:
 .. image:: _static/img/tutorial/create_study.png
     :alt: Study creation view
 
-In a separate tab, open up the documentation about these fields for fuller explanations of what each one should contain: :ref:`study_fields`. Below is the study-specific information you'll need to fill out each field.
+In a separate tab, open up the documentation about these fields for fuller explanations of what each one should contain: :ref:`study fields`. Below is the study-specific information you'll need to fill out each field.
 
 Name
   Enter "Look and Listen" here - or another name for the study if you have a cute or catchy idea! 

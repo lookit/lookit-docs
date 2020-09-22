@@ -14,6 +14,9 @@ an online study, you may need to record many of the things you'd say in the lab,
 pictures or demos to show how things work. This includes not just storybook audio, but 
 little clips like "We're almost done!" or "Okay, go ahead and turn around now." 
 
+Basic audio editing
+~~~~~~~~~~~~~~~~~~~~
+
 For basic editing of audio files, if you don’t already have a system in
 place, we highly recommend `Audacity <http://www.audacityteam.org/>`__.
 You can create many “tracks” or select portions of a longer recording
@@ -165,6 +168,14 @@ would be expected to be located at
 ``http://stimuli.org/mystudy/mp3/honk.mp3`` and
 ``http://stimuli.org/mystudy/ogg/honk.ogg``.
 
+Helpful resources
+-------------------
+
+* [Slides] `Stimuli preparation and hosting for Lookit (Nicole Cuneo) <https://github.com/lookit/research-resources/raw/master/Training/Stimuli%20preparation%20and%20hosting%20for%20Lookit.pptx>`_
+
+* [Slides] `FFMPEG starter powerpoint (Nicole Cuneo) <https://github.com/lookit/research-resources/raw/master/Training/FFMPEG%20Starter%20Powerpoint.pptx>`_
+
+* [Code] `Some example FFMPEG commands (Kim Scott) <https://github.com/kimberscott/ffmpeg-stimuli-generation>`_
 
 Tips and tricks (advanced)
 ---------------------------

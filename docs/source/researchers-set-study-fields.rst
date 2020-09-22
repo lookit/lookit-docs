@@ -1,4 +1,4 @@
-.. _study_fields:
+.. _study fields:
 
 ##################################
 Setting study details

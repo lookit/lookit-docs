@@ -22,7 +22,7 @@ downloading data as a researcher.
    PR to the lookit-api repo to update the documentation!
 
 Basic installation
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 Note: the ``$`` represents the command prompt below - e.g. the start of a new line in Terminal. Don't actually type it in!
 

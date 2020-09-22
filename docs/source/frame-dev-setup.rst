@@ -12,8 +12,7 @@ For a full local development setup, we will need to install *both* the the Djang
 (``lookit-api``) and the Ember app (``ember-lookit-frameplayer``), tell
 them how to talk to each other, and run both of those servers locally.
 
-- On Lookit, we will add some basic information to our superuser, and
-then add a child and demographic data. 
+- On Lookit, we will add some basic information to our superuser, and then add a child and demographic data. 
 - We then create a study locally.
 - In ember-lookit-frameplayer, we'll add a token which gets added to the headers of the API requests so that Lookit knows about the logged-in user making the request. 
 - We can then navigate directly to the study from the Ember app to bypass the build process locally.

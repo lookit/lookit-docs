@@ -30,6 +30,8 @@ Families may take part in studies from multiple labs over time. Having one centr
    
    tutorial
    
+   other-learning-materials
+   
    contribute-edit-docs
    
    contribute-github-issue

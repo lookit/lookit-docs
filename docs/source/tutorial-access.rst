@@ -22,26 +22,20 @@ Step 2: Create your Lookit account
 
 3. You're logged in! You should be redirected to a page of studies like this: 
 
-  .. image:: _static/img/login/login_success_redirect.png
-      :alt: Redirect after login to experimenter
-      
-(Having any trouble? Check the :ref:`login/registration documentation <login>` for more information.)
+   .. image:: _static/img/login/login_success_redirect.png
+    :alt: Redirect after login to experimenter
+    
+   (Having any trouble? Check the :ref:`login/registration documentation <login>` for more information.)
 
 
 Where to go for help
 ---------------------
-If you need help as you're completing this tutorial - or later when you're creating and running studies on Lookit - here's where to go:
 
-- The 'researchers' or 'tech support' **Slack channels** in the Lookit workspace. First search to see if someone has asked the same question before! If not, post in one of these channels to get support from Lookit staff and/or other researchers who may have dealt with the same issue. (If you need help specifically from Lookit staff, feel free to add `@Kim` to your post to tag Kim, but under almost all circumstances the question should still go in one of the public channels rather than a private chat, so that other people can see the answers.)
+* If you need help as you're completing this tutorial - or later when you're creating and running studies on Lookit - the best place to go is the Lookit Slack workspace. Check the 'researchers' or 'tech support' channels to see if someone has asked the same question before! If not, post in one of these channels to get support from Lookit staff and/or other researchers who may have dealt with the same issue. (If you need help specifically from Lookit staff, feel free to add `@Kim` to your post to tag Kim, but under almost all circumstances the question should still go in one of the public channels rather than a private chat, so that other people can see the answers.)
 
   Even if you're not totally stumped, it's worth checking in on Slack to get ideas and resources! For example, you might ask if anyone has an R script for analyzing their data that you could use as a starting point, or run a draft debriefing by other researchers to get advice on wording.
-
-
-- **Tutorial office hours** with Lookit staff may (once/if there are more people completing the tutorial) be held via Zoom at a link provided in the Slack workspace (or contact lookit@mit.edu for an invite). You will be able to find the schedule below and in `this Google calendar <https://calendar.google.com/calendar?cid=bGtuc3Y4b3RidTUzMzNxdTBtaGRxMGI3bmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ>`_. Drop in any time during office hours to ask a question as you work through the tutorial.
-
-.. raw:: html
-
-    <iframe src="https://calendar.google.com/calendar/embed?src=lknsv8otbu5333qu0mhdq0b7ng%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+    
+* There is a growing collection of training materials contributed by researchers that you can check out under the :ref:`"Other learning materials" section<Training>`!
 
 Exercises
 ----------

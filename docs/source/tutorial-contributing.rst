@@ -18,43 +18,43 @@ Don't worry about making a mistake and somehow messing up the documentation - yo
 
 1. In a separate tab, go to https://github.com/lookit/lookit-docs and click "Fork" in the top right corner. (You'll need to make an account on GitHub if you don't have one already.)
 
-.. image:: _static/img/tutorial/first_pr_fork.png
-    :alt: Fork button on GitHub
+   .. image:: _static/img/tutorial/first_pr_fork.png
+      :alt: Fork button on GitHub
     
 2. From the page you are reading right now (or in the future, in the docs that you want to edit -- *not* from GitHub!), scroll up and click the "Edit on GitHub" button at the top right. For this first PR, you'll be editing the page you're reading right now (https://lookit.readthedocs.io/en/develop/tutorial-contributing.html)!
 
-.. image:: _static/img/tutorial/edit_on_github_button.png
-    :alt: Edit on GitHub button at the top of this page
+   .. image:: _static/img/tutorial/edit_on_github_button.png
+      :alt: Edit on GitHub button at the top of this page
 
 3. Clicking "Edit on GitHub" will bring you to a page like the one shown below. Click the pencil icon on this page to start editing the file. 
 
-.. image:: _static/img/tutorial/github_edit_button.png
-    :alt: Edit button on GitHub
+   .. image:: _static/img/tutorial/github_edit_button.png
+      :alt: Edit button on GitHub
 
-You'll see a message that submitting a change will write it to a new branch in your fork. 
+   You'll see a message that submitting a change will write it to a new branch in your fork. 
  
-.. image:: _static/img/tutorial/new_branch_message.png
-    :alt: New branch message on GitHub
+   .. image:: _static/img/tutorial/new_branch_message.png
+      :alt: New branch message on GitHub
     
 4. Make your changes! For this PR, just add your name and institution to the list of tutorial participants. Click the "Preview changes" tab to make sure everything looks the way you want it to. You can go back and forth between the "Edit file" and "Preview changes" tabs as you make more involved changes.
 
-.. image:: _static/img/tutorial/preview_tab.png
-    :alt: Preview changes and edit file tabs on GitHub
+   .. image:: _static/img/tutorial/preview_tab.png
+      :alt: Preview changes and edit file tabs on GitHub
 
 5. Scroll down to "Propose file change." Enter a short description of your change, and then click the green "Propose file change" button:
 
-.. image:: _static/img/tutorial/propose_file_change.png
-    :alt: Propose file change section on GitHub
+   .. image:: _static/img/tutorial/propose_file_change.png
+      :alt: Propose file change section on GitHub
     
 6. Click the green "Create pull request" button on the page that appears next:
 
-.. image:: _static/img/tutorial/create_pr.png
-    :alt: Create pull request on GitHub
+   .. image:: _static/img/tutorial/create_pr.png
+      :alt: Create pull request on GitHub
 
 7. Hooray! You've created your first PR. You should now be at a page where it's been given a number:
 
-.. image:: _static/img/tutorial/pr_view.png
-    :alt: PR view on GitHub
+   .. image:: _static/img/tutorial/pr_view.png
+      :alt: PR view on GitHub
 
 The PR will now be in a list for Lookit staff to review. You can return to this page to check on it; if you have allowed Github to send notifications via email (the default), you will also get an email about any activity. You can also see your PR in the list by going to https://github.com/lookit/lookit-docs and clicking on "Pull requests": 
 
@@ -217,7 +217,7 @@ Exercises
 
 1. Suppose you would like to be able to download a file with scrambled or random data of the same form as your actual data, so that you could get your analysis scripts working without contaminating your real dataset. Which GitHub repo should you create an issue in?
 
-.. raw:: html
+   .. raw:: html
 
     <details style="margin-left:50px;">
         <summary>Click for answer</summary>
@@ -226,7 +226,7 @@ Exercises
 
 2. Suppose you would like to be able to provide a study in the appropriate language for a given participant. Is there a Github issue in the lookit-api repo that addresses this?
 
-.. raw:: html
+   .. raw:: html
 
     <details style="margin-left:50px;">
         <summary>Click for answer</summary>

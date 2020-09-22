@@ -34,7 +34,7 @@ Click "edit study" in the top right (circled above) and you'll see the following
 .. image:: _static/img/tutorial/study_edit_view.png
     :alt: Study edit view
 
-Each of these fields is described HERE. For now, we'll just change the name of the study and the thumbnail image that's displayed to participants. Rename your study to "[Your name]'s awesome tutorial study" and upload a different thumbnail image:
+Each of these fields is described :ref:`here<study fields>`. For now, we'll just change the name of the study and the thumbnail image that's displayed to participants. Rename your study to "[Your name]'s awesome tutorial study" and upload a different thumbnail image:
 
 .. image:: _static/img/tutorial/study_edit_name.png
     :alt: Study edit view - changing name and image
@@ -87,72 +87,72 @@ Exercises
 Here are several things that are almost, but not quite, valid JSON objects. Copy and paste each of them into `jsonlint <http://jsonlint.com/>`_, then fix the problem until you see a 
 "valid JSON" message when you click "Validate."
 
-1. 
+1.  
 
-.. code:: json
+   .. code:: json
 
-   {
-       "species": "cat",
-       "lives_left": 7
-       "enemies": ["dog", "laser", "spider"]
-   }
+       {
+           "species": "cat",
+           "lives_left": 7
+           "enemies": ["dog", "laser", "spider"]
+       }
  
-.. raw:: html
+   .. raw:: html
  
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
         <p>There's a comma missing!</p>
     </details>
    
-2.
+2.  
 
-.. code:: json
+   .. code:: json
 
-   {
-       "species": "human",
-       "age_class": "toddler",
-       "favorites": {
-            "words": ["uh-oh," "doggie," "ball," "hi"],
-            "foods": ["cumin seeds, but not in a food, only plain", "bananas, but only in the grocery store, not after"]
+       {
+           "species": "human",
+           "age_class": "toddler",
+           "favorites": {
+                "words": ["uh-oh," "doggie," "ball," "hi"],
+                "foods": ["cumin seeds, but not in a food, only plain", "bananas, but only in the grocery store, not after"]
+           }
        }
-   }
 
-.. raw:: html
+   .. raw:: html
     
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
         <p>There are commas INSIDE the favorite words.</p>
     </details>
    
-3. 
+3.  
 
-.. code:: json
+   .. code:: json
 
-   {
-       "species": "human",
-       "role": "parent",
-       "mood": "loving",
-       "mood": "exhausted"
-   }
+           {
+               "species": "human",
+               "role": "parent",
+               "mood": "loving",
+               "mood": "exhausted"
+           }
 
-.. raw:: html
+   .. raw:: html
   
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
         <p>That may be accurate, but JSON would like the keys to be unique. Try making mood into a list, or change the second one to energy_level or something.</p>
     </details>
 
-4. 
+4.   
 
-.. code:: json
+   .. code:: json
 
-   {
-       "species": "human",
-       "age_class"; 'child',
-       "is_adorable": True
-   }
+       {
+           "species": "human",
+           "age_class"; 'child',
+           "is_adorable": True
+       }
  
-.. raw:: html
+   .. raw:: html
  
     <details style="margin-left:50px;">
         <summary>Click for hint</summary>
