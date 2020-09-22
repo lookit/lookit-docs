@@ -165,6 +165,7 @@ List of tutorial participants
 - Ania Alberski (University of Pennsylvania)
 - Jenna Croteau (Smith College)
 - Madison Chew (University of California, San Diego)
+- Claudia Lam (University of British Columbia)
 
 .. _Github issues overview:
 
