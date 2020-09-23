@@ -166,6 +166,7 @@ List of tutorial participants
 - Jenna Croteau (Smith College)
 - Madison Chew (University of California, San Diego)
 - Claudia Lam (University of British Columbia)
+- Stephanie De Anda (University of Oregon)
 
 .. _Github issues overview:
 
