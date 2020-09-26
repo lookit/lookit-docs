@@ -1,14 +1,9 @@
-.. lookit-api documentation master file, created by
-   sphinx-quickstart on Wed Sep  6 09:57:34 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to Lookit's documentation!
 ==========================================
 
 Here you will find detailed information about how to use Lookit to conduct developmental research online, as well as how to contribute to the codebase.
 
-If you're new to Lookit, the best way to get up to speed quickly is to work through the :ref:`tutorial<tutorial>`.
+If you're new to Lookit, check out the :ref:`Getting started <start_here>` guide. The best way to get up to speed on setting up your study is to work through the ref:`tutorial<tutorial>`.
 
 What is Lookit?
 ----------------
@@ -19,10 +14,6 @@ There's no videoconferencing or scheduling: parents and children simply do activ
 Lookit can be used to collect looking measures from preverbal children as well as verbal responses, pointing, etc. from older children. Researchers can design, test, and manage their studies on the platform, including contacting participants; common tasks such as checking for informed verbal consent before accessing any data from a session are built into the Lookit research workflow. 
 
 Families may take part in studies from multiple labs over time. Having one central platform allows families to access many interesting studies for all the children in their family in one place, and researchers benefit from economies of scale in software development and recruitment. 
-
-.. admonition:: Can I use it yet?
-
-   Yes! Please see :ref:`Getting started <start_here>` for information about how to get started.
 
 
 
