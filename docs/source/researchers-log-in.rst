@@ -22,8 +22,8 @@ Logging in
    .. image:: _static/img/login/login_2fa.png
     :alt: 2FA login prompt
 
-If you created your account via OSF (or before August 2020)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you created your account via OSF (i.e. before August 2020)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    The first time you log in to Lookit after OSF login is unavailable, you will need to 
    click "Forgot password?" to request a password reset link.

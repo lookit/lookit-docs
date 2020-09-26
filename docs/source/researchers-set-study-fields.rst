@@ -13,10 +13,14 @@ Name
 
 Participant-facing title of your study; must be <255 characters. Shoot for a short, catchy title; depending on how you advertise your study, you may want participants to be able to recognize and select it from the studies page. If you plan on running similar follow-up studies and want them to be easily distinguishable, avoid titles that encompass your entire research program like "Infant Language Study."
 
+.. _discoverability:
+
 =============================
 Discoverable
 =============================
-Do you want this study to be listed on the Lookit studies page when it's active? Check this box to list the study there. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also occasionally set a study to non-discoverable temporarily so you can try it out as a participant without actually recruiting!
+Do you want this study to be listed on the Lookit studies page when it's active, and 
+eligible participants in the Lookit database to receive email invitations to participate? Check this box to make the study discoverable. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also want to start a study as non-discoverable so you can pilot before
+inviting everyone who's eligible to participate!
 
 =============================
 Share preview
@@ -59,6 +63,8 @@ Freeform participant-facing eligibility string, of the form 'For...' (e.g., 'For
 This is **not** directly used to automatically check eligibility, so you can include criteria that may not yet be possible to check for automatically - e.g., this study is for girls whose favorite color is orange. 
 
 Age limits specified here should be carefully considered with respect to the `minimum and maximum age cutoffs`_ which **are** used for automatic verification of eligibility. 
+
+.. _study_eligibility_criteria:
 
 =============================
 Criteria expression

@@ -1,6 +1,17 @@
+.. _tutorial:
+
 ######################################
 1. Accessing Lookit and community
 ######################################
+
+Welcome
+----------
+
+Welcome to the Lookit tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own studies on Lookit. By the end of the tutorial, you will be able to create a participant-friendly study on Lookit that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
+
+This tutorial should take between 5 and 10 hours to complete, and does not assume any familiarity with programming. There is a mix of step-by-step directions and exercises to complete. It's the best way to get started using Lookit, and a good first task to give to an RA who will be designing studies. Note that it does **not** cover issues like participant recruitment and IRB approval, just the technical side of things.
+
+Throughout the tutorial, you may want to have the tutorial open in one browser window while you complete the tasks in another window.
 
 To get started, you need to get on Lookit! 
 
@@ -13,7 +24,7 @@ Slack is a messaging platform that serves as the primary tool for communication 
 Step 2: Create your Lookit account
 ----------------------------------------
 
-1. Go to `the researcher registration form <https://lookit.mit.edu/registration/>`_. Fill out the form and click "create account."
+1. Go to `the researcher registration form <https://lookit.mit.edu/registration/>`__. Fill out the form and click "create account."
 
 2. You'll be taken to a page like this to set up two-factor authentication (2FA), which you'll need in order to access the researcher section of Lookit. If you haven't already, download the Google Authenticator app on your phone. Then follow the directions on this page to activate 2FA for your account.
 

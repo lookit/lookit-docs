@@ -122,6 +122,9 @@ Admin
 ---------------------------------
 Adding researchers to your study
 ---------------------------------
+
+You can only give permissions to people in the Lab associated with this study. (If you're creating a study in the Sandbox Lab, you will be able to share with anyone on Lookit.) 
+
 Halfway down the study detail page, you can see the researchers that have been added to your study.
 On the left, you can see researchers in this study's lab and search for a specific researcher. 
 

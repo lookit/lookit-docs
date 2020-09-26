@@ -39,7 +39,8 @@ Although we hope this tutorial has provided a solid introduction to designing an
 
 Now that you have a basic understanding of how to use Lookit, you're ready to start setting up the study you want to run! One frequent question is how long this will take. Once you have your study completely planned out--the design, instructions, and stimuli all ready--it's likely to be very quick, perhaps a few days to implement. But the (unanimous) experience of researchers who have beta-tested Lookit is that it takes much longer than expected for purely non-technical reasons: the process of fleshing out stimuli and instructions often brings up substantive issues about experimental design that might not have been caught as early when piloting in the lab.
 
-In addition to the technical preparations you're making to be able to implement your study, you'll want to make sure you're ready to go from a legal and IRB standpoint! `There's more information on the wiki  <https://github.com/lookit/research-resources/wiki/IRB-and-legal-information>`_ about the administrative side of setup. Basically, though, you'll need to get an institutional agreement signed; complete a short quiz about the Terms of Use because otherwise no one reads them; and include data collection on Lookit in your IRB protocol.
+In addition to the technical preparations you're making to be able to implement your study, you'll want to make sure you're ready to go from a legal and IRB standpoint! 
+See :ref:`IRB and legal info <legal>` for details. Basically, though, you'll need to get an institutional agreement signed; complete a short quiz about the Terms of Use because otherwise no one reads them; and include data collection on Lookit in your IRB protocol.
 
 You can go ahead and:ref:`create a lab<labs>` at any point, and it'll be approved once you've done the steps above.
 

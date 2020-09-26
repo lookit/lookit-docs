@@ -1,37 +1,36 @@
+.. _study_protocol:
+
 Protocol specification
 ===================================
 
+Researchers specify how their Lookit study works by writing a "protocol configuration" for their study. This configuration is written in JSON, which stands for JavaScript Object Notation - this is just a special text format, not code. 
+
+In the configuration, you essentially tell Lookit what sequence of "frames" to use in your study, and set all the options for those frames like what pictures or videos to show and for how long. You can see the available frames in the `ember-lookit-frameplayer docs <https://lookit.github.io/lookit-frameplayer-docs/>`_.
+
 .. _JSON Overview:
 
-Preliminaries: JSON format
+About the JSON format
 ---------------------------
 
-Researchers can specify the protocol for a Lookit study by providing a JSON
-(JavaScript Object Notation) object on the Experimenter interface, which
-is interpreted according to a JSON Schema (http://json-schema.org/)
-designed for Lookit studies. A `JSON
-schema <http://json-schema.org/examples.html>`__ describes a class of
-JSON objects, indicating what type of data to expect and require.
-
-If you are unfamiliar with the JSON format, you may want to spend a
-couple minutes reading the introduction here: http://www.json.org/.
-
-No programming is required to design a study: JSON is a simple,
-human-readable text format for describing data (see
-http://www.json.org/). A JSON object is an unordered set of key – value
-pairs, with the following rules
+No programming is required to design a study: `JSON <http://www.json.org/>`_ is a simple,
+human-readable text format for describing data. A JSON object is an unordered set of key – value pairs, with the following rules:
 
 - The object itself is enclosed in curly braces.
 - Keys are unique strings enclosed in double quotes.
 - A key and value are separated by a colon.
 - Key-value pairs are separated by commas.
 
-A JSON value can be any of the following: a string (enclosed in double
-quotes), a number, a JSON object (as described above), an array (an
-ordered list of JSON values, separated by commas and enclosed by square
-brackets), true, false, or null. There are no requirements for specific
-formatting of a JSON document (any whitespace not part of a string is
-ignored). Here is an example JSON object to illustrate these principles:
+A JSON value can be any of the following: 
+
+- a string (enclosed in double quotes)
+- a number
+- a JSON object (as described above)
+- an array (an ordered list of JSON values, separated by commas and enclosed by square brackets)
+- true
+- false
+- null
+
+There are no requirements for specific formatting of a JSON document (whitespace that isn't part of a string is ignored). Here is an example JSON object to illustrate these principles:
 
 .. code:: json
 
@@ -60,11 +59,14 @@ A helpful resource to check your JSON Schema for simple errors like
 missing or extra commas, unmatched braces, etc. is
 `jsonlint <http://jsonlint.com/>`_.
 
+The JSON you write for your protocol configuration gets interpreted by Lookit's experiment runner, which expects to find specific types of information in the configuration file. (Formally, it expects the data to conform to a custom `JSON
+schema <http://json-schema.org/examples.html>`_.)
+
 Experiment structure
 --------------------
 
 To define what actually happens in your study, click 'Edit study' from your study detail
-page, and scroll down to the 'Build study - add JSON' field:
+page, and scroll down to the 'Protocol configuration' field:
 
 .. image:: _static/img/edit_json.png
     :alt: Build study field on study edit page

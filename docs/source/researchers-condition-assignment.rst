@@ -1,3 +1,5 @@
+.. _condition_assignment:
+
 Randomization and conditional logic
 ===========================================
 
@@ -27,7 +29,7 @@ A protocol generator function can do anything that a randomizer frame can do. Bu
 3. Randomizer frames
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To do this, you can use a special frame called a
+You can also use a special frame called a
 **randomizer** to select an appropriate sequence of frames for a
 particular trial. A randomizer frame is automatically expanded to a list
 of frames, so that for instance you can specify your 12 looking-time
@@ -788,7 +790,7 @@ Formal documentation for these properties is linked above. However, in practice,
         
 These functions just log each of the arguments they're given the Javascript console; there you can take a look and play around with how you'd access and manipulate the properties you need. The ``generateProperties`` function above just return an empty object, not assigning any properties. The ``selectNextFrame`` function just returns ``frameIndex + 1``, i.e. says the next frame should be the one after this one, not changing the frame's regular behavior.
 
-Although you'll need to enter these properties as single-line strings in the Lookit study editor, they are obviously not very readable that way! You can go from a single-line string back to something readable using a Javascript 'beautifier' like `this <https://beautifier.io/>`_ - you may want to do that to better understand the examples below. When you are writing your own functions, you can write them on multiple lines in your text editor and then either strip out the line breaks using your text editor or one of many online tools like `this <https://lingojam.com/TexttoOneLine>`_.
+Although you'll need to enter these properties as single-line strings in the Lookit study editor, they are obviously not very readable that way! You can go from a single-line string back to something readable using a Javascript 'beautifier' like `this <https://beautifier.io/>`__ - you may want to do that to better understand the examples below. When you are writing your own functions, you can write them on multiple lines in your text editor and then either strip out the line breaks using your text editor or one of many online tools like `this <https://lingojam.com/TexttoOneLine>`__.
 
 
 Example: eligibility survey

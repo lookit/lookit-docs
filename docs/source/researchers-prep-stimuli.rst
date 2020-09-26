@@ -86,7 +86,7 @@ Putting your stimuli files online
 
 .. admonition:: HTTPS vs HTTP
 
-    Wherever you put your stimuli, you need to serve them using HTTPS, meaning your URLs should start with https:// - **not** http://. If you use HTTP (not secure) your stimuli may not display at all in modern browsers, and they introduce security risks. You can learn more `here <https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content>`_.
+    Wherever you put your stimuli, you need to serve them using HTTPS, meaning your URLs should start with https:// - **not** http://. If you use HTTP (not secure) your stimuli may not display at all in modern browsers, and they introduce security risks. You can learn more `here <https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content>`__.
 
 
 You are responsible for hosting your study stimuli online somewhere. You have a variety of options, including:
@@ -171,11 +171,11 @@ would be expected to be located at
 Helpful resources
 -------------------
 
-* [Slides] `Stimuli preparation and hosting for Lookit (Nicole Cuneo) <https://github.com/lookit/research-resources/raw/master/Training/Stimuli%20preparation%20and%20hosting%20for%20Lookit.pptx>`_
+* [Slides] `Stimuli preparation and hosting for Lookit (Nicole Cuneo) <https://github.com/lookit/research-resources/raw/master/Training/Stimuli%20preparation%20and%20hosting%20for%20Lookit.pptx>`__
 
-* [Slides] `FFMPEG starter powerpoint (Nicole Cuneo) <https://github.com/lookit/research-resources/raw/master/Training/FFMPEG%20Starter%20Powerpoint.pptx>`_
+* [Slides] `FFMPEG starter powerpoint (Nicole Cuneo) <https://github.com/lookit/research-resources/raw/master/Training/FFMPEG%20Starter%20Powerpoint.pptx>`__
 
-* [Code] `Some example FFMPEG commands (Kim Scott) <https://github.com/kimberscott/ffmpeg-stimuli-generation>`_
+* [Code] `Some example FFMPEG commands (Kim Scott) <https://github.com/kimberscott/ffmpeg-stimuli-generation>`__
 
 Tips and tricks (advanced)
 ---------------------------
@@ -183,7 +183,7 @@ Tips and tricks (advanced)
 Setting up a CDN (optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are very concerned with optimizing speed of delivery of your stimuli for users worldwide, best practice is to use a Content Delivery Network (CDN). You can read a description of what this is and when it might be helpful `here <https://gtmetrix.com/why-use-a-cdn.html>`_. This is unlikely to be necessary for most Lookit researchers, but if you do choose to set one up, it's cheap and reasonably straightforward. One option we have used successfully is Amazon CloudFront.
+If you are very concerned with optimizing speed of delivery of your stimuli for users worldwide, best practice is to use a Content Delivery Network (CDN). You can read a description of what this is and when it might be helpful `here <https://gtmetrix.com/why-use-a-cdn.html>`__. This is unlikely to be necessary for most Lookit researchers, but if you do choose to set one up, it's cheap and reasonably straightforward. One option we have used successfully is Amazon CloudFront.
 
 Making dummy stimuli
 ~~~~~~~~~~~~~~~~~~~~~~

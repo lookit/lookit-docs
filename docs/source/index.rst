@@ -6,7 +6,9 @@
 Welcome to Lookit's documentation!
 ==========================================
 
-Here you will find information about how to use Lookit to conduct developmental research, as well as how to contribute to the codebase. If you are looking for non-technical information like how to recruit partipants or set up your IRB protocol, see `the wiki <https://github.com/lookit/research-resources/wiki>`_.
+Here you will find detailed information about how to use Lookit to conduct developmental research online, as well as how to contribute to the codebase.
+
+If you're new to Lookit, the best way to get up to speed quickly is to work through the :ref:`tutorial<tutorial>`.
 
 What is Lookit?
 ----------------
@@ -20,17 +22,91 @@ Families may take part in studies from multiple labs over time. Having one centr
 
 .. admonition:: Can I use it yet?
 
-   Yes! Please see `the wiki <https://github.com/lookit/research-resources/wiki>`_ for information about how to get started.
+   Yes! Please see :ref:`Getting started <start_here>` for information about how to get started.
+
+
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
    :hidden:
+   :glob:
+   :caption: Overview
 
-   researchers
-   
-   tutorial
-   
+   Getting started guide <researchers-start-here>
+   Features <features>
+   About <vision-for-lookit>
+   Progress updates <progress-updates>
+   FAQ <faq>
    other-learning-materials
+    
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :glob:
+   :caption: Using Lookit
+
+   researchers-log-in
+   researchers-manage-org
+   researchers-manage-studies
+   researchers-study-permissions
+    
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :glob:
+   :caption: Creating your study
+    
+   researchers-set-study-fields
+   researchers-create-experiment
+   researchers-condition-assignment
+   researchers-protocol-generators
+   researchers-update-code
+   researchers-prep-stimuli
+    
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :glob:
+   :caption: Collecting data
+    
+   researchers-manage-consent
+   researchers-experiment-data
+   researchers-use-api
+   researchers-day-to-day-study-operation.md
+   community-participant-recruitment.md
+   
+
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :glob:
+   :caption: Tutorial
+
+   tutorial-access
+   tutorial-contributing
+   tutorial-first-study
+   tutorial-second-study
+   tutorial-protocol-exercises
+   tutorial-manage-data
+   tutorial-next-steps
+   
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :glob:
+   :caption: Community and procedures
+    
+   community-involvement
+   community-irb-and-legal-information
+   community-study-approval-process
+   community-study-review-checklists-peer
+   community-study-review-checklists-self
+       
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :glob:     
+   :caption: Contributing
    
    contribute-edit-docs
    
@@ -40,4 +116,11 @@ Families may take part in studies from multiple labs over time. Having one centr
    
    development
    
-   definitions
+   
+
+
+
+
+
+
+
