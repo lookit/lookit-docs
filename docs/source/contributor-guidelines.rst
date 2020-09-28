@@ -22,7 +22,7 @@ To contribute to the `ember-lookit-frameplayer` codebase - e.g., when creating y
 Getting started
 ~~~~~~~~~~~~~~~~~~~
 
-At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`_.
+At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`__.
 
 You should plan to make feature-specific branches off of the ``develop`` branch (for lookit-api, lookit-docs) or ``master`` branch (for ember-lookit-frameplayer) of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
 
@@ -32,7 +32,7 @@ First create your own fork of lookit-api, ember-lookit-frameplayer, and/or looki
 Ignoring some files
 ~~~~~~~~~~~~~~~~~~~~
 
-You may want to configure a global .gitignore on your machine and include your virtualenv(s) along with any files specific to your system.  A sample global .gitignore is available `here <https://gist.github.com/octocat/9257657>`_ -- you can tell git to globally ignore files specified in a .gitignore file via::
+You may want to configure a global .gitignore on your machine and include your virtualenv(s) along with any files specific to your system.  A sample global .gitignore is available `here <https://gist.github.com/octocat/9257657>`__ -- you can tell git to globally ignore files specified in a .gitignore file via::
 
     git config --global core.excludesfile ~/path/to/your/.gitignore_global
 

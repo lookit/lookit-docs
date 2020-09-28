@@ -1,3 +1,5 @@
+.. _Local dev setup:
+
 Setup for local development
 ===================================
 

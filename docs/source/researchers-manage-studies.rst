@@ -80,7 +80,7 @@ Studies can only be submitted for approval once the associated lab is approved t
 .. image:: _static/img/study_submit_not_until_approved_lab.png
     :alt: Study rejected status displayed without option to edit
 
-The study approval process is intended to give Lookit staff an opportunity to check that studies comply with the Terms of Use and to provide support if necessary. For more information about the study approval process, please `see the wiki <https://github.com/lookit/research-resources/wiki/Study-approval-process>`_. 
+The :ref:`study approval process <study_approval>` is intended to give Lookit staff an opportunity to check that studies comply with the Terms of Use and to provide support if necessary.
 
 When you submit a study for approval, you will be asked to provide some information to help with the review process - indicating any changes since last approval if you are re-submitting a previously approved study, and indicating anything that requires special review if you are submitting for the first time.
 

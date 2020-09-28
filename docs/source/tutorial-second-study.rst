@@ -44,7 +44,7 @@ Share preview
   Check the box so other researchers can preview your study without being added as collaborators
   
 Image
-  You can download a screenshot of the stimuli to use `here <http://www.mit.edu/~kimscott/intermodal/img/intermodal_thumbnail.png>`_.
+  You can download a screenshot of the stimuli to use `here <https://www.mit.edu/~kimscott/intermodal/img/intermodal_thumbnail.png>`__.
 
 Short Description
   Here's an example description of what happens during this study - you can copy or edit it. "Your child will watch several short videos of two people saying nonsense syllables. The sound will match just one of the people. We want to see which face your baby chooses to look at!"
@@ -101,7 +101,7 @@ Now we're going to build out the study protocol configuration, one piece at a ti
 1. Setup
 ~~~~~~~~~
 
-We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like `here <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-video-config.html>`_. 
+We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like `here <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-video-config.html>`__. 
 
 Underneath the screenshot, you'll see an example of defining this frame in your study protocol:
 
@@ -349,7 +349,7 @@ Almost done with the preparations! We're just going to give particpants one more
 
 The snippet above sets up several sections ("blocks") with bulleted lists of information. (For a real study you might also consider splitting this frame into several frames - a study overview, "during the videos" directions, pausing and stopping, and the audio test. More things to click through, but less text on the page.)
 
-As in the preview, there are some stimuli you need to add! Browse the audio files `here <http://www.mit.edu/~kimscott/intermodal/>`_ to find an mp3 and ogg version of a "ready to go!" audio clip that you can use to have parents test their audio. Insert the full paths where it says "MP3_SOURCE_HERE" and "OGG_SOURCE_HERE". Why multiple versions of the same files? This helps make sure that the media will work across various computer setups.
+As in the preview, there are some stimuli you need to add! Browse the audio files `here <http://www.mit.edu/~kimscott/intermodal/>`__ to find an mp3 and ogg version of a "ready to go!" audio clip that you can use to have parents test their audio. Insert the full paths where it says "MP3_SOURCE_HERE" and "OGG_SOURCE_HERE". Why multiple versions of the same files? This helps make sure that the media will work across various computer setups.
 
 Once you've added this frame to your ``frames`` and to your ``sequence``, check out how it looks. Note that because you've set ``mustPlay`` to ``true`` in the block about testing your audio, you can't proceed to the next frame until you've played it! This is to make sure that participants don't start the video section without their sound on. If they do, (a) the study won't work because the baby needs to be able to hear the sound, and (b) they're going to be very confused because they won't hear the audio instructions that tell them what's going on, when it's time to turn back around, etc.
     
@@ -498,7 +498,7 @@ Set up counterbalancing
 
 Your plan for this study is actually to have four test trials. Either the audio will come from the left speaker, right speaker, right speaker, left speaker; or it will come from right speaker, left speaker, left speaker, right speaker.
 
-To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/lookit-frameplayer-docs/modules/randomizers.html>`_. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
+To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/lookit-frameplayer-docs/modules/randomizers.html>`__. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
 
 We will be providing the randomizer with three main things: a list of frames (``frameList``), a set of properties all the frames should share, just for convenience (``commonFrameProperties``), and a list of sets of parameters to substitute in (``parameterSets``)- the randomizer will choose one of these at the start of the study and do the substitution. 
 

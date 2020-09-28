@@ -213,14 +213,14 @@ In one browser tab, open up the consent manager view for the "Apples to Oranges"
     
 In another browser tab, open up the "Message participants" view for the same study. Choose the message type "response questions" since this is a clarifying question about the response. Under "recipients," deselect all and then paste the participant ID into the box. That should bring up exactly one potential recipient (which is you!) - click to add it.
 
-Write a subject and body for your email explaining the problem and asking whether it's ok to use data from this session. `Check the wiki for details about what you might say! <https://github.com/lookit/research-resources/wiki/Day-to-day-study-operation>`_
+Write a subject and body for your email explaining the problem and asking whether it's ok to use data from this session. (See :ref:`day-to-day study operation <confirm_consent>` for details about what you might say!)
 
 Go ahead and send your email, and make sure you receive it!
 
 Contact a participant with a gift card code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Second, let's imagine that you're compensating participants with gift cards. (You'll want to take a look at the Terms of Use and the wiki for details as you make plans for compensation, but essentially, for now researchers are responsible for handling any compensation by messaging participants.)
+Second, let's imagine that you're compensating participants with gift cards. (You'll want to take a look at the Terms of Use and :ref:`compensation info here <compensation>` as you make more detailed plans, but essentially, for now researchers are responsible for handling any compensation by messaging participants.)
 
 Instead of the consent manager, switch over to "individual responses" and find your response again. Copy the participant ID from the response JSON:
 
