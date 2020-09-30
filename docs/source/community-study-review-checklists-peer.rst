@@ -86,26 +86,35 @@ Duration
 -  Measure how long the study takes you to preview and let the study
    authors know. Is the duration listed accurate?
 
-Previewing the study/Consent
-----------------------------
-
+Initial setup
+--------------------
 -  Are webcam setup & consent steps included? Does the information in
    the consent form make sense and avoid repetition?
 -  Are these at the start of the study, or if they are later is there a
    good reason (and are they still before any data collection, including
    video recording)?
+   
+Instructions
+-----------------
 -  Do things “flow”? Are there abrupt transitions?
 -  Are the instructions clear and straightforward (to the point you
    could read them while also supervising/holding a few children)? Want
    to ensure they’re putting as few demands on the parent as possible.
--  Are the instructions friendly? (i.e. don’t want to sound
-   demanding/condescending)
+-  Are they friendly? (i.e. don’t want to sound demanding/condescending)
+
+
+Test trials
+----------------
+-  Is there an indication to the parent of progress through the study during test trials 
+   if possible, especially if the parent needs to be quiet or keep their eyes closed?
 -  Is audio clear enough to understand & reasonably well-balanced for
-   volume throughout? (e.g., not super-loud music with very quiet
-   speech)
+   volume throughout (e.g., not super-loud music with very quiet speech,
+   can use software like Audacity to normalize your audio)
 -  Do you have any concerns about how data collection will work
-   (e.g. whether children will be familiar with the ‘familiar objects’,
-   etc.) or suggestions?
+   (e.g. whether children will be familiar with the ‘familiar objects’, how stimuli will
+   look to a colorblind child, etc.) or suggestions?
+   
+   
 
 Debriefing (after exit survey)
 ------------------------------

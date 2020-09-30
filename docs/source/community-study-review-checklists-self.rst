@@ -159,18 +159,31 @@ Version of experiment runner
 -  Are you using a recent version of the experiment runner? (If not
    why?)
 
-Previewing the study
+Initial setup
 --------------------
-
 -  Are webcam setup & consent steps included? Does the information in
    the consent form make sense and avoid repetition?
 -  Are these at the start of the study, or if they are later is there a
    good reason (and are they still before any data collection, including
    video recording)?
+   
+Instructions
+-----------------
 -  Do things “flow”? Are there abrupt transitions?
 -  Are the instructions clear and straightforward (to the point you
    could read them while also supervising/holding a few children)?
 -  Are they friendly? (i.e. don’t want to sound demanding/condescending)
+
+
+Test trials
+----------------
+-  Is there an indication to the parent of progress through the study during test trials 
+   if possible, especially if the parent needs to be quiet or keep their eyes closed?
+-  Have you run all your stimuli through a simulator like 
+   https://www.color-blindness.com/coblis-color-blindness-simulator/ to check whether kids
+   with common forms of colorblindness will be able to see them? (Note that few parents of 
+   preschoolers and younger will know yet if their kids are colorblind. Even some adults
+   find out by surprise!)
 -  Is audio clear enough to understand & reasonably well-balanced for
    volume throughout (e.g., not super-loud music with very quiet speech,
    can use software like Audacity to normalize your audio)
