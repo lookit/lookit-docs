@@ -1,5 +1,5 @@
 ##########################################
-5. Study protocol specification: exercises
+5. Study protocol exercises
 ##########################################
 
 Now that you've walked through the process of creating your own studies, it's time to try out what you've learned! At the end of this section, you will:

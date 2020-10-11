@@ -3,30 +3,43 @@
 IRB and legal info
 ====================================
 
-Step 1: user agreement
+Overview
+---------
+
+Before you can run a study on Lookit, there are three things you'll need to do:
+
+1) Sign and return the access agreement (details below). This covers your entire lab. You only have to do this once.
+
+2) Get IRB approval at your own institution (details below).
+
+3) :ref:`Get peer feedback on the study, and then have it approved by Lookit. <study_approval>`
+
+Access agreement
 ----------------------
 
 What it is
 ~~~~~~~~~~
 
-In order to use Lookit for data collection, researchers must first sign
+In order to use Lookit for data collection, the principal investigator (PI) of a research group must first sign
 an `institutional 
 agreement <https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20Institutional%20Agreement.pdf>`__
 with MIT that lays out each institution’s rights and responsibilities.
 This may require review by a legal or contracts office or an office of
 sponsored programs depending on the institution.
 
+The access agreement with a PI at a given institution covers **all** studies conducted on Lookit where the approved IRB protocol at that institution names that person as the PI. (If that institution cedes to another institution for approval, that's still okay.)
+
 The agreement itself is short and closely based on Databrary’s agreement
 (with permission); the meat is in the `Terms of
-use <https://lookit.mit.edu/termsofuse/>`__ you are agreeing to.
-**Researchers should actually read the terms carefully:** it is real content
+Use <https://lookit.mit.edu/termsofuse/>`__ you are agreeing to.
+**Researchers should actually read the terms carefully:** these are real content
 written by a real person and contains non-obvious information about
 ethical/privacy issues you may not have encountered in the lab. Note
 that we do impose standards that may in some cases be more stringent
 than your own IRB’s.
 
 To make sure we’re all on the same page, we require that at least one
-researcher associated with each lab using Lookit complete `this quiz
+researcher associated with each research group using Lookit complete `this quiz
 about the Terms of Use <https://forms.gle/Eom9bTERGcc2EcY86>`__.
 
 How to get it signed
@@ -61,15 +74,33 @@ studies approved by MIT’s IRB, do not require the signature of an MIT
 authorized signer. However, the MIT PI still needs to sign and return
 the agreement.
 
+Multiple PIs at one institution
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The access agreement signed by one PI only covers research where they're named as the PI on the corresponding IRB protocol. Other PIs at the same institution do need their own access agreement on file.
+
+If you know of another lab at your institution using Lookit, please reach out to them or to Lookit for a copy to check (a) who the institutional signer should be and (b) whether any changes were required (you can use the same modified version). 
+
+Correspondence between access agreements and Lookit Labs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In general, each access agreement should correspond to exactly one Lab on Lookit, which makes it far more straightforward to ensure that everyone's actually covered legally.
+
+Each Lab must be associated with at least one agreement. (E.g., suppose Jill is a PI at Science University and has signed an access agreement, and Joe is another PI at Science University who does not. We cannot approve Joe's Lab on Lookit to test - even if he tells us that his work will always actually be covered under Jill's IRB protocol.)
+
+However, if multiple PIs at your institution are closely affiliated (e.g. a lab jointly headed by two professors, or students all serve as PIs on IRB protocols in your department) please go ahead and create a lab listing multiple PIs and just let us know. We'd need an access agreement for each PI, and would expect all studies conducted by this lab to be covered by an IRB protocol listing at least one of those PIs.
+
 If your institution requires changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We have generally been able to accommodate requests for minor changes to
-the agreement as required by universities’ legal departments, including
-accepting UK ethics committee approval in addition to “US-equivalent”
-IRBs. If it looks like some clause would be a deal-breaker for your
+the agreement as required by universities’ legal departments (e.g. when they are *legally 
+unable* to agree to MA governing law, or to allow UK ethics committee approval in addition to "US-equivalent" IRBs). If it looks like some clause would be a deal-breaker for your
 institution, please get in touch with Kim Scott (kimscott) and general
-counsel lawyer Jason Baletsa (jbaletsa) at mit.edu for advice.
+counsel lawyer Jason Baletsa (jbaletsa) at mit.edu for advice. 
+
+Please note that approval of changes happens on the MIT General Counsel office's 
+timeline, which is not under Lookit's control. 
 
 Sending it to Lookit
 ~~~~~~~~~~~~~~~~~~~~
@@ -80,8 +111,10 @@ authorized signer, please:
 - Make sure you or someone in your group has completed `this quick quiz about the Terms of Use <https://forms.gle/Eom9bTERGcc2EcY86>`__ 
 - Send the PDF of the signed agreement to lookit@mit.edu, noting that you have also completed the quiz
 
-Step 2: Ethics approval
------------------------
+.. _irb:
+
+Ethics approval for Lookit studies
+------------------------------------
 
 A researcher using Lookit applies to their own institution’s IRB for
 approval. Except for our involvement in a small set of initial studies,
@@ -89,19 +122,34 @@ MIT is not considered to be engaged in human subjects research by
 running Lookit.
 
 You can find resources for writing your IRB protocol 
-`here <https://github.com/lookit/research-resources/tree/master/Legal>`__.
-In addition to giving an overview of how data collection on Lookit works
-and what protections are included for participant data, you will likely
-need to apply for a waiver of the usual requirement to collect written
-consent from participants so that you can rely on videorecorded
-statements. (The statements parents make on Lookit are better evidence
-of true informed consent than commonly-approved checkboxes for online
-studies, and so far this has not been an issue.)
+`here <https://github.com/lookit/research-resources/tree/master/Legal>`__. You will likely need to give a brief overview of how data collection on Lookit works and what protections are included for participant data.
 
 Lookit *may* request a copy of the approved protocol at the time a study
 is submitted to run on Lookit. (In general we don’t - we aren’t looking
 to get into that much paperwork. This is mostly if we have any concerns
 or you’re getting permission to do something unusual.)
+
+How consent and assent work
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The consent process on Lookit is fairly standardized by design, to reduce the mental load on families. Parents consent by recording a verbal statement of consent after reviewing a document.
+
+Information about what the consent page looks like to parents, and how to customize it, is available `here <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video-consent.html>`__ in the frame documentation. You can see the available templates for the consent document `here <https://github.com/lookit/research-resources/tree/master/Legal>`__. Essentially you will supply pieces of text that will be substituted into the template. 
+
+If you are testing older children and need to collect assent in addition, you will use the
+`assent page <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video-assent.html>`__, which is less standardized at this point. 
+
+When applying for IRB approval, you may need to present the exact text of the consent document that will be presented, which you can do by substituting values into the templates linked above. You can even start setting up your study (copy one of the tutorial/example studies and customize the consent text) and preview it to get screenshots or the PDF download. 
+
+If you anticipate running follow-up studies (which will have at least different titles and durations), see if you can show your IRB the template and note that certain pieces may vary, giving them examples. They may be ok with you saying, for instance, that it's going to look exactly like this except that (a) your first study is called "Do Babies Love Cats?" but other studies may be called "Do Babies Love Dogs?", "Do Babies Love Rabbits?", etc. and (b) your first study is 15 minutes long so that's what the consent form says, but ohter studies may be 5 - 25 minutes long, and their durations will be accurately listed in the consent form. Keeping the procedures and purpose information relatively general to accommodate a broad protocol is ok if you need to!
+
+Please keep the text you insert as easy to read as you possibly can. Do not include boilerplate text that's in your five-page in-person consent just because it's there and you're not sure if your IRB will let you remove it - ask them! Do not include information that is covered elsewhere in the template just because you usually word it slightly differently; that's confusing. 
+
+Researchers must use these standard consent pages, barring extraordinary legal barriers at their institutions (we have not encountered anyone not able to approve a protocol). You may NOT use your existing consent form instead or in addition just because you don't want to submit an amendment to your protocol (sorry). 
+
+You will likely need to apply for a waiver of the usual requirement to collect written
+consent from participants so that you can rely on videorecorded statements. (The statements parents make on Lookit are better evidence of true informed consent than commonly-approved checkboxes for online studies, and so far this has not been an issue.)
+You can see an example `here <https://github.com/lookit/research-resources/tree/master/Legal>`__.
 
 Responsibilities of researchers
 --------------------------------
@@ -141,8 +189,8 @@ Responsibilities of researchers
    -  Ensure that anyone with access to participant data for this study
       is listed on the appropriate IRB protocol. Promptly remove
       permissions for anyone who is removed from the IRB.
-   -  Assign :ref:`minimal appropriate roles<study_permissions>` for each person who needs access
-      to your study.
+   -  Assign :ref:`minimal appropriate roles<study_permissions>` for each person who needs 
+      access to your study.
 
 Privacy policy
 -----------------

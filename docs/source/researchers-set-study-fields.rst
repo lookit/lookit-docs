@@ -19,8 +19,11 @@ Participant-facing title of your study; must be <255 characters. Shoot for a sho
 Discoverable
 =============================
 Do you want this study to be listed on the Lookit studies page when it's active, and 
-eligible participants in the Lookit database to receive email invitations to participate? Check this box to make the study discoverable. If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. You may also want to start a study as non-discoverable so you can pilot before
-inviting everyone who's eligible to participate!
+eligible participants in the Lookit database to receive email invitations to participate? If so, check this box to make the study discoverable. 
+
+If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. 
+
+We recommend **starting** studies as non-discoverable, so that you can pilot with participants you recruit personally before inviting everyone who's eligible to participate!
 
 =============================
 Share preview
@@ -30,7 +33,12 @@ Do you want other researchers to be able to preview your study? Check this box t
 =============================
 Image
 =============================
-Thumbnail image that will be displayed to participants on Lookit's studies page.  File must be an image-type, and please keep the file size reasonable (<1 MB). Sometimes your stimuli are a good basis for creating this image, or it can be something that conceptually represents your study or shows what it looks like to participate.
+
+Thumbnail image that will be displayed to participants on Lookit's studies page.  File must be an image-type, and please keep the file size reasonable (<1 MB). If you submit too large an image file you may see an error "413 Request Entity Too Large."
+
+Sometimes your stimuli are a good basis for creating this image, or it can be something that conceptually represents your study or shows what it looks like to participate.
+
+As noted in the self-review checklist, if you decide to include an image of a child/family participating, please don't use pictures of white people if you have flexibility not to. (It's as good a choice as any for a single study, but the problem is that especially US researchers will "default" to white people as examples, and if everyone does that we end up with a sea of pictures of white kids on the studies page. It's a small thing, but it stinks to only see pictures of families that look like yours in cases where the researchers are studying something related to race!)
 
 =============================
 Short description
@@ -60,10 +68,23 @@ Participant eligibility description
 ====================================
 Freeform participant-facing eligibility string, of the form 'For...' (e.g., 'For babies under 1 year old'). Make this readable so participants understand if their child can take part in the study.
 
-This is **not** directly used to automatically check eligibility, so you can include criteria that may not yet be possible to check for automatically - e.g., this study is for girls whose favorite color is orange. 
+This is **not** directly used to automatically check eligibility, so you can include criteria that you can't check for automatically - e.g., this study is only for kids whose favorite color is orange. 
 
 Age limits specified here should be carefully considered with respect to the `minimum and maximum age cutoffs`_ which **are** used for automatic verification of eligibility. 
 
+
+.. admonition:: How does eligibility work?
+
+   There are two separate ways you specify eligibility criteria for your study: the "automatically checkable" parts (criteria expression and min/max ages, discussed below), and the "parent-facing description" part (above). 
+   
+   The "automatically checkable" parts are used for several things:
+   
+   - Showing parents a warning if they try to participate with a child who's not eligible
+   - Determining which registered families to email - announcement emails are sent out to families about discoverable studies their children are eligible for
+   - [Coming soon] Letting parents filter the list of active studies by which ones their kids are eligible for
+   
+   For now, though, because the criteria expressions aren't guaranteed to be easy to read/interpret - and because you might have additional criteria that aren't in the database anywhere - these are separate from the description displayed to parents, which you have to provide manually.  
+   
 .. _study_eligibility_criteria:
 
 =============================

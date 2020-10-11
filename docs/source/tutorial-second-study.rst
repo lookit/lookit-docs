@@ -1,10 +1,10 @@
 #####################################################
-4. Building 'intermodal matching' from the ground up
+4. A study from the ground up
 #####################################################
 
 Now that you've gotten your feet wet and are comfortable using Lookit's experimenter interface to modify your study protocol configuration, it's time to take a closer look at how to build your own study. 
 
-In this section, you'll build an example of a functional infant study "from the ground up," adding frames one at a time.
+In this section, you'll build an example infant study "from the ground up," adding frames one at a time.
 
 There's a fair amount of copying, pasting, and looking at the result in this section. Please bear with us - once you complete the tutorial, you'll be ready to set up your own study!
 
@@ -38,7 +38,7 @@ Name
   Enter "Look and Listen" here - or another name for the study if you have a cute or catchy idea! 
   
 Discoverable
-  Check the box so that when you submit your study to post on the staging server, it will show up to participants on the Studies page
+  Check the box so that the study would show up to participants on the Studies page, and families with eligible children would get emails inviting them to participate
   
 Share preview
   Check the box so other researchers can preview your study without being added as collaborators

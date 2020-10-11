@@ -3,7 +3,7 @@ Welcome to Lookit's documentation!
 
 Here you will find detailed information about how to use Lookit to conduct developmental research online, as well as how to contribute to the codebase.
 
-If you're new to Lookit, check out the :ref:`Getting started <start_here>` guide. The best way to get up to speed on setting up your study is to work through the ref:`tutorial<tutorial>`.
+If you're new to Lookit, check out the :ref:`Getting started <start_here>` guide. The best way to get up to speed on setting up your study is to work through the :ref:`tutorial<tutorial>`.
 
 What is Lookit?
 ----------------
@@ -50,9 +50,11 @@ Families may take part in studies from multiple labs over time. Having one centr
    researchers-set-study-fields
    researchers-create-experiment
    researchers-condition-assignment
+   researchers-conditional-logic
    researchers-protocol-generators
    researchers-update-code
    researchers-prep-stimuli
+   researchers-style-guide
     
 .. toctree::
    :maxdepth: 2

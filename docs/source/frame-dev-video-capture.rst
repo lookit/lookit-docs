@@ -40,7 +40,7 @@ Limitations
 
 One technical challenge imposed by webcam video streaming is that a
 connection to the server must be established before webcam recording can
-be quickly turned on, and this process may take up to several
+be quickly turned on, and this process may take up to a few
 seconds. If you are setting up your frame to create a separate video clip, you will need to 
 design your frame to wait for recording to begin before proceeding to a portion
 of the trial where video data is required. This fits well with typical

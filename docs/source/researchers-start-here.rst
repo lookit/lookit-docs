@@ -71,7 +71,7 @@ test. This happens once
 E. Study setup steps
 --------------------
 
-1. **Complete the :ref:`Lookit tutorial <tutorial>`**
+1. **Complete the** :ref:`Lookit tutorial <tutorial>`
    to get familiar with how the platform works and how to implement a
    study on it.
 

@@ -1,6 +1,6 @@
 .. _stim_prep:
 
-Preparing your stimuli
+Preparing stimuli
 ======================
 
 
@@ -13,6 +13,28 @@ in the lab you have the luxury of being present to explain what's going on. When
 an online study, you may need to record many of the things you'd say in the lab, or create 
 pictures or demos to show how things work. This includes not just storybook audio, but 
 little clips like "We're almost done!" or "Okay, go ahead and turn around now." 
+
+Creating video instructions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Several labs have been having success filming video instructions for families, which can be easier to process for many families (and friendlier) than text instructions. This doesn't need to look "professionally produced" to be great; the important pieces are pretty low-tech!
+
+Here are some tips from the community:
+
+- Smile and try to channel the same excitement and energy you'd have welcoming a family to the lab. There is no scientific need to speak in a dry, measured tone here. (Or... in most cases, really.) And remember, you think your research question is interesting enough to think about for months and months!
+
+- Keep a simple, homogeneous background (e.g. a blank wall or curtain). 
+
+- Outline or script what you're going to say before filming the video. (You can even use a free web-browser-based teleprompted to show you your notes!)
+
+- Add video- or image-in-video examples to make the video more engaging and make it easy to follow when you explain what's going to happen. (This can make a HUGE difference and in most cases avoid the need to give parents the option to preview the stimuli separately). 
+
+- It's normal not to be able to do 2 minutes straight of talking without making mistakes! Don't worry about trying to get a continuous "good shot," just edit the video to cut pauses or errors. 
+
+- Make sure to edit the audio track the same way you would for audio stimuli to reduce background noise.
+
+- Provide closed captioning for accessibility (even many hearing parents will find it easier to process this way), and/or provide "alt text" for the video as shown in the `exp-lookit-instruction-video frame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-instruction-video.html>`__. 
+
 
 Basic audio editing
 ~~~~~~~~~~~~~~~~~~~~

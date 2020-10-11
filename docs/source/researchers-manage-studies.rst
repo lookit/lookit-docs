@@ -57,7 +57,34 @@ Study status: submitting your study and managing data collection
 .. image:: _static/img/study_status_cannot_change.png
     :alt: Study rejected status displayed without option to edit
 
-On the study detail page, you can see the current status of a study. The possible study states are:
+On the study detail page, you can see the current status of a study. For users with permissions to change the study state there is also a dropdown with the available actions (start/pause data collection, submit for approval, etc.) as shown below. The available states where you can move the study depend on what state is next in the sequence, as well as your current level of permissions.  For example, if a study's current state is "Created", that study can only be "Submitted" for review, or "Archived", which removes the study from display. Only Lookit admins can approve or reject a study.
+
+.. image:: _static/img/study_status_can_change.png
+    :alt: Study rejected status displayed without option to edit
+
+New studies must be submitted and approved by Lookit before they can be started. The :ref:`study approval process <study_approval>` is intended to give Lookit staff an opportunity to check that studies comply with the Terms of Use and to provide support if necessary.
+
+When you submit a study for approval, you will be asked to provide some information to help with the review process - indicating any changes since last approval if you are re-submitting a previously approved study, and indicating anything that requires special review if you are submitting for the first time.
+
+.. image:: _static/img/study_submission_comment.png
+    :alt: Form prompting for comments when submitting study
+
+Researchers will receive email notifications when their study is approved or when changes are requested.
+
+Once your study is approved, it is not automatically live and collecting data. Researchers with appropriate permissions can independently start/pause data collection at will; however, if any changes are made to the study it will be automatically rejected and will require re-approval. 
+
+Studies can only be submitted for approval once the associated Lab is approved to test on Lookit. If your Lab is not yet approved, for instance if you are using the Sandbox lab to try Lookit out, you will see a message like this:
+
+.. image:: _static/img/study_submit_not_until_approved_lab.png
+    :alt: Study rejected status displayed without option to edit
+    
+The Lab is approved to test once it has a signed access agreement and someone from the group has completed the terms of use quiz. This is update manually but generally within a day of completing those steps; please contact us if you think your lab is incorrectly not approved to test yet.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Study state reference list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The possible study states are:
 
 :created: Study has been initially created, but has not been submitted for approval
 :submitted: Study is submitted and awaiting approval by a Lookit admin
@@ -67,27 +94,6 @@ On the study detail page, you can see the current status of a study. The possibl
 :paused: Study is not actively collecting data or visible on Lookit; participants cannot access it.
 :deactivated: Study is done collecting data
 :archived: Study has been archived and removed from search
-
-For users with permissions to change the study state there is also a dropdown with the available actions (start/pause data collection, submit for approval, etc.) as shown below. The available states where you can move the study depend on what state is next in the sequence, as well as your current level of permissions.  For example, if a study's current state is "Created", that study can only be "Submitted" for review, or "Archived", which removes the study from display. Only Lookit admins can approve or reject a study.
-
-.. image:: _static/img/study_status_can_change.png
-    :alt: Study rejected status displayed without option to edit
-
-New studies must be submitted and approved by Lookit before they can be started. Once approved, researchers with study admin permissions can independently start/pause data collection at will; however, if any changes are made to the study it will be automatically rejected and will require re-approval. 
-
-Studies can only be submitted for approval once the associated lab is approved to test on Lookit. If your lab is not yet approved, for instance if you are using the Sandbox lab to try Lookit out, you will see a message like this:
-
-.. image:: _static/img/study_submit_not_until_approved_lab.png
-    :alt: Study rejected status displayed without option to edit
-
-The :ref:`study approval process <study_approval>` is intended to give Lookit staff an opportunity to check that studies comply with the Terms of Use and to provide support if necessary.
-
-When you submit a study for approval, you will be asked to provide some information to help with the review process - indicating any changes since last approval if you are re-submitting a previously approved study, and indicating anything that requires special review if you are submitting for the first time.
-
-.. image:: _static/img/study_submission_comment.png
-    :alt: Form prompting for comments when submitting study
-
-Researchers will receive email notifications when their study is approved or when changes are requested.
 
 ----------------------------------------------------------------------
 Starting and stopping data collection
