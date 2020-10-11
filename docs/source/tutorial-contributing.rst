@@ -167,6 +167,7 @@ List of tutorial participants
 - Madison Chew (University of California, San Diego)
 - Claudia Lam (University of British Columbia)
 - Stephanie De Anda (University of Oregon)
+- Mariam Habib (Rutgers University)
 
 .. _Github issues overview:
 
