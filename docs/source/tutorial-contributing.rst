@@ -168,6 +168,7 @@ List of tutorial participants
 - Claudia Lam (University of British Columbia)
 - Stephanie De Anda (University of Oregon)
 - Mariam Habib (Rutgers University)
+- Rosalva Mejia (University of California, Los Angeles)
 
 .. _Github issues overview:
 
