@@ -20,6 +20,8 @@ General language usage
 
 2. Use singular "they" rather than "he/she" or "(s)he" or "the child." (E.g., say "Hold your child so they can see the screen" rather than "Hold your child so he/she can see the screen.") It's common enough now that it's more readable, plus it encompasses families who use pronouns other than he/she. 
 
+3. A girl is a female child. If you're talking about a female grown-up--e.g., a video is going to show your RA demonstrating a toy--that's a woman. (You can consider words like "person," "somebody", or "friend" if that sounds awkward!)
+
 ==========================
 Study purpose
 ==========================
