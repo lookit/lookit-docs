@@ -208,6 +208,7 @@ Debriefing (after exit survey)
 -  Did you link to someplace to learn more about this general topic if
    possible? (e.g. ted talk, popular science article, website with more
    games, journal paper, other educational video, etc.)
+-  You can use /n/n to add line breaks for readability and can insert links as <a href="https://..." target="_blank" rel="noopener">Cool Website</a>
 
 General things to think about
 -----------------------------
