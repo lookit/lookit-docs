@@ -170,6 +170,7 @@ List of tutorial participants
 - Mariam Habib (Rutgers University)
 - Rosalva Mejia (University of California, Los Angeles)
 - Jinyoung Jo (University of California, Los Angeles)
+- Anika Brahmbhatt (Boston University)
 
 .. _Github issues overview:
 
