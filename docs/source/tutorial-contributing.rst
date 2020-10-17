@@ -171,6 +171,7 @@ List of tutorial participants
 - Rosalva Mejia (University of California, Los Angeles)
 - Jinyoung Jo (University of California, Los Angeles)
 - Anika Brahmbhatt (Boston University)
+- Hironori Katsuda (University of California, Los Angeles)
 
 .. _Github issues overview:
 
