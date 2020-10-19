@@ -16,7 +16,7 @@ Responses submitted on Lookit start out with a consent status of 'Pending.' Then
 Managing consent rulings
 ==============================
 
-From your study detail page, click 'View Responses' and you will be taken to the 'Consent manager' view. 
+From your study detail page, click 'Review Consent' and you will be taken to the 'Consent manager' view. 
 
 .. image:: _static/img/consent_manager.png
     :alt: Consent manager image
