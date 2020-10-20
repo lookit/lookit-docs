@@ -174,6 +174,7 @@ List of tutorial participants
 - Hironori Katsuda (University of California, Los Angeles)
 - Canaan Breiss (University of California, Los Angeles)
 - Sarah Kang (University of California, San Diego)
+- Megan Hoffman (University of California, San Diego)
 
 .. _Github issues overview:
 
