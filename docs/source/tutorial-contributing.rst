@@ -176,6 +176,7 @@ List of tutorial participants
 - Sarah Kang (University of California, San Diego)
 - Megan Hoffman (University of California, San Diego)
 - Sivan Barashy (University of California, San Diego)
+- Stacee Santos (Boston College)
 
 .. _Github issues overview:
 
