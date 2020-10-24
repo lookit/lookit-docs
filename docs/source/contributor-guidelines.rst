@@ -122,12 +122,13 @@ The ember-lookit-frameplayer repo is semantically versioned.
 
 The release process is relatively manual for now because the expected workflow isn't finalized (it's currently almost entirely a one-person project). 
 
-Work should be completed and tested on a feature branch. When that feature is ready to merge into master, complete the following steps to create a new release and publish documentation for this version along with the others:
+Work should be completed and tested on a feature branch, then merged into develop.
 
-1. Change version number in package.json. Change ``version`` in ``docs/themes/lookit/theme.json`` and add this version to ``other_versions``.
+When a set of features is ready to release, create a release branch off of develop. 
+Complete the following steps to create a new release and publish documentation for this version along with the others:
 
-2. To create release-specific docs, set ``is_release`` in ``theme.json`` to ``true`` and run ``yarn run release-docs``. Then rename the ``NEW`` directory that shows up in ``docs/docs/releases/`` to exactly match the version.
+1. Change version number in package.json. 
 
-3. To update general docs, if this is the latest version, set ``is_release`` in ``theme.json`` back to ``false`` and run ``yarn run docs``.
+2. Turn on readthedocs builds for the release branch.
 
-4. Make a PR to master and merge the feature branch. Then create a new release on GitHub, again exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
+3. Make PRs to master and develop, and merge the feature branch. Then create a new release on GitHub, again exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
