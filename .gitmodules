@@ -1,3 +1,6 @@
 [submodule "docs/_themes"]
 	path = docs/_themes
 	url = https://github.com/kimberscott/sphinx-rtd-theme-frameplayer
+[submodule "_themes"]
+	path = _themes
+	url = https://github.com/kimberscott/sphinx-rtd-theme-frameplayer
