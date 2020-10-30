@@ -103,6 +103,7 @@ List of tutorial participants
 - Kate Bee (University of Oregon)
 - Jasmine Engen (University of Oregon)
 - Ellie McLoughlin (University of Oregon)
+- Allyson Kuznia (University of Oregon)
 - Haley Weaver (University of Wisconsin-Madison)
 - Annika Voss (UC Davis)
 - Aaron Beckner (University of California, Davis)
