@@ -178,6 +178,7 @@ List of tutorial participants
 - Megan Hoffman (University of California, San Diego)
 - Sivan Barashy (University of California, San Diego)
 - Stacee Santos (Boston College)
+- Chippy Banarjee (Yale University)
 
 .. _Github issues overview:
 
