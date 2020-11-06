@@ -179,6 +179,7 @@ List of tutorial participants
 - Sivan Barashy (University of California, San Diego)
 - Stacee Santos (Boston College)
 - Chippy Banarjee (Yale University)
+- Alyssa Nguyen (University of Oregon)
 
 .. _Github issues overview:
 
