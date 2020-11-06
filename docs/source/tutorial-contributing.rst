@@ -103,6 +103,7 @@ List of tutorial participants
 - Kate Bee (University of Oregon)
 - Jasmine Engen (University of Oregon)
 - Ellie McLoughlin (University of Oregon)
+- Allyson Kuznia (University of Oregon)
 - Haley Weaver (University of Wisconsin-Madison)
 - Annika Voss (UC Davis)
 - Aaron Beckner (University of California, Davis)
@@ -173,6 +174,12 @@ List of tutorial participants
 - Anika Brahmbhatt (Boston University)
 - Hironori Katsuda (University of California, Los Angeles)
 - Canaan Breiss (University of California, Los Angeles)
+- Sarah Kang (University of California, San Diego)
+- Megan Hoffman (University of California, San Diego)
+- Sivan Barashy (University of California, San Diego)
+- Stacee Santos (Boston College)
+- Chippy Banarjee (Yale University)
+- Alyssa Nguyen (University of Oregon)
 
 .. _Github issues overview:
 
