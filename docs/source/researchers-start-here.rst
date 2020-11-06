@@ -49,7 +49,7 @@ and another is focused on supporting new researchers as they learn how
 to use Lookit.
 
 Please review the :ref:`descriptions of the current working groups <working_groups>`. 
-At least one person from your lab (the more the merrier!) should fill out the `survey<https://yaleas.qualtrics.com/jfe/form/SV_cAp5I97tgIY8zEF>`__ to express preferences for working on particular topics; we'll then be in touch to help you join a group! 
+At least one person from your lab (the more the merrier!) should fill out the `survey <https://yaleas.qualtrics.com/jfe/form/SV_cAp5I97tgIY8zEF>`__ to express preferences for working on particular topics; we'll then be in touch to help you join a group! 
 
 D. Create a lab on Lookit
 -------------------------
