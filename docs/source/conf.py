@@ -32,7 +32,7 @@
 # ones.
 extensions = ['sphinx.ext.intersphinx']
 
-intersphinx_mapping = {'elf': ('https://lookit.readthedocs.io/projects/frameplayer/en/feature-try-out-sphinx/', None)}
+intersphinx_mapping = {'elf': ('https://lookit.readthedocs.io/projects/frameplayer/en/latest/', None)}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
