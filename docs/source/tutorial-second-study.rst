@@ -140,7 +140,7 @@ This study is for babies, so we don't need to collect child assent, just parenta
 
 Note that you will need to add commas between the previous and new items in both "frames" and "sequence", as circled above.
 
-Save and preview again. Now when you click "Next" from the video config page, you'll see a consent page. The sample text is pretty silly, though! Change each of the following fields to more appropriate text for this study, substituting in your own information for the things shown in ``<brackets like this>``. For more information on what each of these fields is, you can click on the property names in the frame documentation as shown below:
+Save and preview again. Now when you click "Next" from the video config page, you'll see a consent page. The sample text is pretty silly, though! Change each of the following fields to more appropriate text for this study, substituting in your own information for the things shown in ``<brackets like this>``. For more information on what each of these fields is, click on "Parameters" in the frame documentation:
 
 .. image:: _static/img/tutorial/frame_docs_properties.png
     :alt: Properties as displayed in frame docs
