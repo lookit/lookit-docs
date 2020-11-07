@@ -101,19 +101,19 @@ Now we're going to build out the study protocol configuration, one piece at a ti
 1. Setup
 ~~~~~~~~~
 
-We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like :ref:`here <elf:exp-video-config>`. 
+We'll start with a standard setup frame called "exp-video-config". 
 
-Underneath the screenshot, you'll see an example of defining this frame in your study protocol:
+Take a look at the documentation for this frame :ref:`here <elf:exp-video-config>`. You'll see a screenshot of what it looks like, and under "Examples" you'll see examples of how to define this frame in your study protocol:
 
 .. image:: _static/img/tutorial/exp_video_config.png
     :alt: Exp-video-config frame docs
     
-Copy the definition of the "video-config" frame (``"video-config": { ... }``, as shown highlighted above), and open up your study's protocol editor. Paste this into the "frames" value, like this:
+Copy one of the definitions of the "video-config" frame (``"video-config": { ... }``, as shown highlighted above), and open up your study's protocol editor. Paste this into the "frames" value, like this:
 
 .. image:: _static/img/tutorial/video_config_added_to_frames.png
     :alt: Adding the video-config example to frames
     
-You will need to delete the line breaks in the "troubleshootingIntro" value for this to be proper JSON. Edit the text as well, so it references your own lab and an appropriate contact method!
+Edit the text if you'd like, so it references your own lab and an appropriate contact method!
 
 That defines a frame that's now available for us to use. In order to actually use it, add it to your "sequence" as well:
 
