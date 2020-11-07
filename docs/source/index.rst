@@ -49,9 +49,6 @@ Families may take part in studies from multiple labs over time. Having one centr
     
    researchers-set-study-fields
    researchers-create-experiment
-   researchers-condition-assignment
-   researchers-conditional-logic
-   researchers-protocol-generators
    researchers-update-code
    researchers-prep-stimuli
    researchers-style-guide

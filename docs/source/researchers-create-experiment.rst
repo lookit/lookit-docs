@@ -5,62 +5,8 @@ Protocol specification
 
 Researchers specify how their Lookit study works by writing a "protocol configuration" for their study. This configuration is written in JSON, which stands for JavaScript Object Notation - this is just a special text format, not code. 
 
-In the configuration, you essentially tell Lookit what sequence of "frames" to use in your study, and set all the options for those frames like what pictures or videos to show and for how long. You can see the available frames in the `ember-lookit-frameplayer docs <https://lookit.github.io/lookit-frameplayer-docs/>`_.
+In the configuration, you essentially tell Lookit what sequence of "frames" to use in your study, and set all the options for those frames like what pictures or videos to show and for how long. You can see the available frames in the :ref:`experiment runner docs <elf:index>`.
 
-.. _JSON Overview:
-
-About the JSON format
----------------------------
-
-No programming is required to design a study: `JSON <http://www.json.org/>`_ is a simple,
-human-readable text format for describing data. A JSON object is an unordered set of key – value pairs, with the following rules:
-
-- The object itself is enclosed in curly braces.
-- Keys are unique strings enclosed in double quotes.
-- A key and value are separated by a colon.
-- Key-value pairs are separated by commas.
-
-A JSON value can be any of the following: 
-
-- a string (enclosed in double quotes)
-- a number
-- a JSON object (as described above)
-- an array (an ordered list of JSON values, separated by commas and enclosed by square brackets)
-- true
-- false
-- null
-
-There are no requirements for specific formatting of a JSON document (whitespace that isn't part of a string is ignored). Here is an example JSON object to illustrate these principles:
-
-.. code:: json
-
-   {
-       "name": "Jane",
-       "age": 43,
-       "favoritefoods": [
-           "eggplant",
-           "apple",
-           "lima beans"
-       ],
-       "allergies": {
-           "peanut": "mild",
-           "shellfish": "severe"
-       }
-   }
-
-The keys are the strings ``name``, ``age``, ``favoritefoods``, and
-``allergies``. Favorite foods are stored as an array, or ordered list;
-allergies are stored as a JSON object mapping food names to severity of
-reaction. The same object could also be written as follows, in a
-different order and with none of the formatting:
-\`\ ``{"age": 43, "allergies": {"peanut": "mild", "shellfish": "severe"}, "name": "Jane", "favoritefoods": ["eggplant", "apple", lima beans"]}``
-
-A helpful resource to check your JSON Schema for simple errors like
-missing or extra commas, unmatched braces, etc. is
-`jsonlint <http://jsonlint.com/>`_.
-
-The JSON you write for your protocol configuration gets interpreted by Lookit's experiment runner, which expects to find specific types of information in the configuration file. (Formally, it expects the data to conform to a custom `JSON
-schema <http://json-schema.org/examples.html>`_.)
 
 Experiment structure
 --------------------
@@ -73,85 +19,51 @@ page, and scroll down to the 'Protocol configuration' field:
 
 Click on this field to bring up the experiment editor view.  Here is where you 
 define the structure of your experiment using a JSON document. (Advanced users can choose
-to instead provide a :ref:`'protocol generator function'<generators>`, written in Javascript, which returns a JSON document.)
+to instead provide a :ref:`'protocol generator function'<generators>`, written in Javascript, which *returns* a JSON document to use as the study protocol.)
 
 Studies on Lookit are broken into a set of fundamental units called
 **frames**, which can also be thought of as “pages” of the study. A
 single experimental trial (e.g. looking time measurement) would
 generally be one frame, as are the video consent procedure and exit survey. 
-Your JSON must have two keys: ``frames`` and
-``sequence``. The ``frames`` value defines the frames used in this
-study: it must be a JSON object mapping frame nicknames (any unique
-strings chosen by the researcher) to frame objects (defined next). The
-``sequence`` value must be an ordered list of the frames to use in this
-study; values in this list must be frame nicknames from the “frames”
-value. 
+Your study protocol will define a set of ``frames`` and also a ``sequence`` saying the 
+order in which to use those frames.
 
-Here is the JSON for a very minimal Lookit study:
+For detailed information about how to specify your study protocol, see the 
+:ref:`experiment runner documentation <elf:protocol configuration>`.
 
-.. code:: json
+.. _add a protocol generator:
 
-   {
-       "frames": {
-           "my-consent-frame": {
-               "kind": "exp-video-consent",
-               "prompt": "I agree to participate",
-               "blocks": [
-                   {
-                       "title": "About the study",
-                       "text": "This isn’t a real study."
-                   }
-               ]
-           },
-           "my-exit-survey": {
-               "kind": "exp-lookit-exit-survey",
-               "debriefing": {
-                    "title": "Thank you!",
-                    "text": "You participated."
-               }
-           }
-       },
-       "sequence": [
-           "my-consent-frame",
-           "my-exit-survey"
-       ]
-   }
+How to add a protocol generator function
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This JSON specifies a Lookit study with two frames, consent and an exit
-survey. Note that the frame nicknames ``my-consent-frame`` and
-``my-exit-survey`` that are defined in ``frames`` are also used in the
-``sequence``. Frames may be specified but not used in ``sequence``.
-Here’s the object associated with the ``my-exit-survey`` frame:
+Although your study protocol JSON can be configured to handle a wide range of common condition assignment, counterbalancing, and conditional logic schemes, in some cases it may still be more natural to programmatically generate the protocol. For examples and details about how to write a study protocol generator function, see the 
+:ref:`experiment runner documentation <elf:generators>`.
 
-.. code:: json
+On your study edit form, check the "Use protocol generator (advanced)" box to use a protocol generator function in place of your study protocol:
 
-   {
-               "kind": "exp-lookit-exit-survey",
-               "debriefing": {
-                    "title": "Thank you!",
-                    "text": "You participated."
-               }
-    }
+.. image:: _static/img/generator/use_generator.png
+  :alt: Use protocol generator box
 
-Within each frame object, a ``kind`` must be specified. This determines
-the frame type that will be used. Additional data may be included in the
-frame object to customize the behavior of the frame, for instance to
-specify instruction text or the stimuli to use for a test trial. The
-keys that may (or must) be included in a frame object are determined by
-the frame type; each frame definition includes a JSON Schema describing
-the expected data to be passed. Multiple frames of the same kind may be
-included in a study – for instance, test trials using different stimuli.
+This displays a field where you can edit a protocol generator function. The default generator returns an empty protocol. When you click on this field, you're taken to an editor like the one for the study protocol.
 
-The separation of frame definitions and sequence allows researchers to
-easily and flexibly edit and test study protocols – for instance, the
-order of frames may be altered or a particular frame removed for testing
-purposes without altering any frame definitions.
+.. image:: _static/img/generator/generator_field.png
+  :alt: Use protocol generator box
+
+The code you write should define a single function - put any helper functions you need inside.
+
+If your function isn't valid Javascript or doesn't evaluate to a function, you'll see a message that it's invalid, like this:
+
+.. image:: _static/img/generator/generator_invalid.png
+  :alt: Use protocol generator box
+
+Your protocol generator will still be saved when you save the study, but the "use protocol generator" box will automatically be unchecked so that your study goes back to relying on the study protocol JSON. If there is an error when the protocol generator actually runs at the start of a session, the experiment runner also falls back to using the study protocol JSON.
 
 
-Developing your study: how to try it out as you go
+
+How to try out your study as you write it
 ---------------------------------------------------
 
-When you first create your study, you'll need to click 'Build experiment runner' on your study page and wait 5-10 minutes for your own personal experiment runner to be created. This will "freeze" the code used for your study so that updates to the Lookit experiment runner won't affect how your study works. (You can always update if you want to - see `Updating the frameplayer code <researchers-update-code>`_). You do not need to build the experiment runner again unless you want to update the code it uses.
+When you first create your study, you'll need to click 'Build experiment runner' on your study page and wait 5-10 minutes for your own personal experiment runner to be created. This will "freeze" the version of the experiment runner code used for your study, so that updates to the Lookit experiment runner won't affect how your study works. (You can always update if you want to - see `Updating the frameplayer code <researchers-update-code>`_). You do not need to build the experiment runner again unless you want to update the code it uses.
 
 Once you've built an experiment runner, you can click 'See preview' after saving your study protocol and you will be able to preview your study, exactly as if you were participating with your child. As you write the protocol configuration for your study, you can click 'See preview' again or just refresh the preview window to see how the changes look. 
 
@@ -161,162 +73,63 @@ As you work on a particular frame like a survey, you probably don't want to clic
 
 
 Finding and using specific frames
----------------------------------
+------------------------------------
 
 For the most current documentation of individual frames available to
-use, please see `the frame documentation <https://lookit.github.io/lookit-frameplayer-docs/>`_.
+use, please see :ref:`the experiment runner documentation <elf:index>`.
 
 For each frame, you will find an **example** of using it in a JSON
 schema; documentation of the **properties** which can be defined in the
-schema; and, under Methods / serializeContent, a description of the
-**data** this frame records. Any frame-specific **events** that are
-recorded and may be included in the eventTimings object sent with the
-data are also described.
+schema; a description of the **data** this frame records; and any frame-specific **events** that are recorded and may be included in the eventTimings object sent with the
+data.
 
-
-.. _typical_study_schema:
-
-Example Lookit study outline
-------------------------------------------------------------
-
-A typical Lookit study might contain the following frame types:
-
-1.  `exp-video-config <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-video-config.html>`_ - This is a standard frame type that almost everyone should just stick at the very start of their study. It requires no customization; we'll maintain troubleshooting directions everyone can share.
-2.  `exp-lookit-video-consent <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video-consent.html>`_ - A video consent frame. Your study needs to use this frame and it should come right after video configuration, before getting into the rest of the study. You need to specify some text fields to use this, regarding study-specific procedures, compensation, etc. These will be inserted into the consent document. If you need to show your IRB exactly what your consent document will look like, enter your text snippets, preview your study, and copy the document (or use the download button to get a PDF). 
-3.  `exp-lookit-text <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-text.html>`_ Now we're into optional frames that will vary by study. Most existing studies have started off with a text 'overview' of the study using a frame like this. The shorter this can be, the better - it's the equivalent of "okay, we're ready to get started, we're going to do X, Y, Z!" in the lab. Writing this text, and any instructions, tends to be more time-consuming than researchers expect: in contrast to an in-lab study, you can't easily tune what you say to the individual parent and answer just the questions they bring up. And you don't want to overwhelm them with a wall of text while they try to hold a squirmy baby! **We strongly recommend treating this as a serious writing/design exercise**, and going through a few rounds of 'play-testing' with colleagues/family to make sure everything is as clear and concise as possible. 
-4.  `exp-lookit-stimuli-preview <https://lookit.github.io/lookit-frameplayer-docs/classes/ExpLookitStimuliPreview.html>`_ If you are showing children images/videos and you are going to ask the parents **not** to look at those stimuli, we strongly advise that you provide parents an opportunity to preview all of the stimuli that might be shown so they can decide if they're okay with that. This is both a reasonable courtesy (who knows what unusual phobia a child has, or what image you think is totally innocuous but turns out to offend a particular family for an unanticipated reason) and practical for data quality (parents will be less inclined to peek if they know roughly what's going on). 
-5.  `exp-lookit-survey <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-survey.html>`_ Perhaps you want to collect some information (here or later on) from the parent that isn't included in the child or demographic data you'll have automatic access to - how much of which languages they speak in the home, motor milestones, whether their child likes Kermit or Oscar better, etc. You can use a survey frame to do that!
-6.  `exp-video-config-quality <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-video-config-quality.html>`_ Once you're almost ready to start your actual 'test' procedures, you may want to guide the parent through webcam setup optimization, especially if you need the parent and child in a particular position. We provide some default instructions intended for preferential looking but would recommend making your own images/instructions if you can - ours aren't great.
-7.  `exp-lookit-instructions <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-instructions.html>`_ Instead or in addition, you may want a frame like this to give some final instructions to the parent before your 'test' procedures start! You can show text, videos, audio, show the user's webcam, etc. Make sure you have indicated here or earlier that the family is free to leave at any point and how they can do that. (Ctrl-X, F1, or closing the tab/window but then staying on the page will all bring up a "really exit?" dialog - you don't need to note all methods.) 
-8.  [Study-specific frames, e.g. 
-    exp-lookit-video, exp-lookit-images-audio; generally, a sequence of these frames
-    would be put together with a randomizer]
-    
-.. _debriefing-info:
-
-9. `exp-lookit-exit-survey <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-exit-survey.html>`_ This is a required frame and should be the last thing in your study. This is where participants will select a privacy level for their video and indicate whether data can be shared on Databrary. (If you don't have IRB/institutional approval to share on Databrary yet, it's still fine to ask this; worst case you don't share data you had permission to share. Best case it'll smooth the process of asking your IRB retroactively if you want to!) Your participants will also have the option to withdraw video beyond the consent video entirely - this is rare (<1 percent of responses). These video settings are provided at the end, rather than the start, of the study so that parents already know roughly what happened and can better judge how comfortable they are with the video being shared. (E.g., "did my child pick his nose the whole time?")
-
-    The 'debriefing' field of this frame is **very important**! This is a chance to explain the purpose of your study and how the family helped; at this point it's more obvious to the participant that skimming the info is fine if they're not super-interested, so you can elaborate in ways you might have avoided ahead of time in the interest of keeping instructions short. You may want to mention the various conditions kids were assigned to if you didn't before, and try to head off any concerns parents might have about how their child 'did' on the study, especially if there are 'correct' answers that will have been obvious to a parent. It's great if you can link people to a layperson-accessible article on a related topic - e.g., media coverage of one of your previous studies in this research program, a talk on Youtube, a parenting resource. 
-    
-    If you are compensating participants, restate what the compensation is (and any conditions), and let them know when to expect their payment! E.g.: "To thank you for your participation, we'll be emailing you a $4 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child."
-
+.. _recording-video:
 
 Recording webcam video
 -----------------------
 
 Some frames include functionality to record video from the participant's webcam during some or all of the frame. This will be described in the frame's documentation, including any parameters you can set to turn on/off or otherwise change the behavior of the recording. Recording may start/stop automatically in the background, or the participant may click to start and stop recording or even immediately view their recording. For test trials, the webcam is generally not displayed to the participant while recording, as it would be more interesting than almost all stimuli we could create. 
 
-You also have the option to start or stop a multi-frame or 'session-level' recording on **any** frame, by using the `startSessionRecording <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_startSessionRecording>`_  and `endSessionRecording <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_endSessionRecording>`_ parameters. The recording will start at the beginning of the frame with startSessionRecording set to true, and end at the end of the frame with endSessionRecording set to true. In between, recording will continue, and all events captured will include the approximate time relative to the start of that video in a `sessionStreamTime`.
+You also have the option to create multi-frame recordings by starting and stopping recording using the  :ref:`elf:exp-lookit-start-recording` and :ref:`elf:exp-lookit-stop-recording` frames. In between, recording will continue, and all events captured will include the approximate time relative to the start of that video in a `sessionStreamTime`.
 
-Frame groups
------------------
 
-Sometimes it may be convenient to group several frames together. To do this, set the frame ``"kind"`` to ``"group"``. You will also need to provide a ``"frameList"`` which is a list of frames that go in this group. You can optionally provide a ``"commonFrameProperties"`` object which provides default parameter-value pairs to add to each frame in the list (any parameters additionally defined in the ``frameList`` will take precedence). As with other frames, ``"parameters"`` can be defined on the frame group to allow substitution of values. 
+.. _typical_study_schema:
 
-Here is an example of a frame group that just contains two text frames:
+.. _debriefing-info:
 
-.. code:: json
+Example Lookit study outline
+------------------------------------------------------------
 
-    "testFrameGroup": {
-        "kind": "group",
-        "frameList": [
-            {
-                "id": "first-test-trial",
-                "blocks": [
-                    {
-                        text: "Hello and welcome to the study"
-                    }
-                ]
-            },
-            {
-                "id": "second-test-trial",
-                "blocks": [
-                    {
-                        text: "Some more info"
-                    }
-                ]
-            }
-        ],
-        "commonFrameProperties": {
-            "kind":  "exp-lookit-text"
-        }
-    }
+A typical Lookit study might contain the following frame types:
+
+1.  :ref:`elf:exp-video-config` - This is a standard frame type that almost everyone should just stick at the very start of their study. It requires no customization; we'll maintain troubleshooting directions everyone can share.
+
+2.  :ref:`elf:exp-lookit-video-consent` - A video consent frame. Your study needs to use this frame and it should come before 
+starting the study or doing any other video recording. You need to specify some text fields to use this, regarding study-specific procedures, compensation, etc. These will be inserted into the consent document. If you need to show your IRB exactly what your consent document will look like, enter your text snippets, preview your study, and copy the document (or use the download button to get a PDF). 
+
+3.  :ref:`elf:exp-lookit-text` or 
+:ref:`elf:exp-lookit-instruction-video`. Now we're into optional frames that will vary by study. Most existing studies have started off with either video instructions or a text 'overview' of the study. The shorter this can be, the better - it's the equivalent of "okay, we're ready to get started, we're going to do X, Y, Z!" in the lab. Writing this text, and any instructions, tends to be more time-consuming than researchers expect: in contrast to an in-lab study, you can't easily tune what you say to the individual parent and answer just the questions they bring up. And you don't want to overwhelm them with a wall of text while they try to hold a squirmy baby! **We strongly recommend treating this as a serious writing/design exercise**, and going through a few rounds of 'play-testing' with colleagues/family to make sure everything is as clear and concise as possible. 
+
+4.  :ref:`elf:exp-lookit-stimuli-preview` If you are showing children images/videos and you are going to ask the parents **not** to look at those stimuli, we strongly advise that you provide parents an opportunity to preview all of the stimuli that might be shown so they can decide if they're okay with that. This is both a reasonable courtesy (who knows what unusual phobia a child has, or what image you think is totally innocuous but turns out to offend a particular family for an unanticipated reason) and practical for data quality (parents will be less inclined to peek if they know roughly what's going on).
+
+5.  :ref:`elf:exp-lookit-survey` Perhaps you want to collect some information (here or later on) from the parent that isn't included in the child or demographic data you'll have automatic access to - how much of which languages they speak in the home, motor milestones, whether their child likes Kermit or Oscar better, etc. You can use a survey frame to do that!
+
+6.  :ref:`elf:exp-lookit-instructions` You may want a frame like this to give some final instructions to the parent before your 'test' procedures start! You can show text, videos, audio, show the user's webcam, etc. Make sure you have indicated here or earlier that the family is free to leave at any point and how they can do that. (Ctrl-X, F1, or closing the tab/window but then staying on the page will all bring up a "really exit?" dialog - you don't need to note all methods.) 
+
+7.  :ref:`elf:exp-video-config-quality` Once you're almost ready to start your actual 'test' procedures, you may want to guide the parent through webcam setup optimization, especially if you need the parent and child in a particular position. We provide some default instructions intended for preferential looking but would recommend making your own images/instructions if you can! You can also 
+use the `exp-lookit-webcam-display` frame for a lighter-weight display of the family's
+webcam so they can check positioning.
+
+8.  [Study-specific frames, e.g. 
+    exp-lookit-video, exp-lookit-images-audio; generally, a sequence of these frames
+    would be put together with a randomizer. Make sure that if you have the parent turn
+    around during the study, you let them know when to turn back around at the end!
+    Also consider adding a friendly wrap-up "trial" at the end to give parents a chance
+    to see the stimuli with a voiceover walkthrough, actually talk with their child about
+    the story, etc.]
+
+9. :ref:`elf:exp-lookit-exit-survey` This is a required frame and should be the last thing in your study. This is where participants will select a privacy level for their video and indicate whether data can be shared on Databrary. (If you don't have IRB/institutional approval to share on Databrary yet, it's still fine to ask this; worst case you don't share data you had permission to share. Best case it'll smooth the process of asking your IRB retroactively if you want to!) Your participants will also have the option to withdraw video beyond the consent video entirely - this is rare (<1 percent of responses). These video settings are provided at the end, rather than the start, of the study so that parents already know roughly what happened and can better judge how comfortable they are with the video being shared. (E.g., "did my child pick his nose the whole time?")
+
+    The 'debriefing' field of this frame is **very important**! This is a chance to explain the purpose of your study and how the family helped; at this point it's more obvious to the participant that skimming the info is fine if they're not super-interested, so you can elaborate in ways you might have avoided ahead of time in the interest of keeping instructions short. You may want to mention the various conditions kids were assigned to if you didn't before, and try to head off any concerns parents might have about how their child 'did' on the study, especially if there are 'correct' answers that will have been obvious to a parent. It's great if you can link people to a layperson-accessible article on a related topic - e.g., media coverage of one of your previous studies in this research program, a talk on Youtube, a parenting resource. 
     
-    
-.. _Frame parameters:
-
-Defining frame parameters to reuse or randomize values
--------------------------------------------------------
-
-Rather than inserting actual values for frame properties such as stimulus image locations, you may want sometimes want to use a variable the way you would in a programming language - for instance, so that you can show the same cat picture throughout a group of frames, without having to replace it in ten separate places if you decide to use a different one.
-You can accomplish this (and more, including selecting randomly from or cycling through lists of values) by setting the ``"parameters"`` property on any frame (including frame groups and randomizers). For details, see the `exp-frame-base documentation <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_parameters>`_.
-
-Case study: randomizing the order of options in a survey
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Suppose you're including a survey where you ask participants to record whether their child performed a certain task, and you want to present the options in a random order to avoid systematically biasing the results towards either option. You start with a survey frame like this (see the frame docs for more information about this frame):
-
-.. code:: json
-
-    "example-survey": {
-        "kind": "exp-lookit-survey",
-        "formSchema": {
-            "schema": {
-                "type": "object",
-                "title": "And now, a thrilling survey!",
-                "properties": {
-                    "didit": {
-                        "enum": ["yes", "no"],
-                        "type": "string",
-                        "title": "Did your child do the thing?",
-                        "default": ""
-                    }
-                }
-            },
-            "options": {
-                "fields": {
-                    "didit": {
-                        "type": "radio",
-                        "validator": "required-field"
-                    }
-                }
-            }
-        }
-    },
-
-To randomize the options, we'll need to make a few small changes. First, add ``"sort": false`` to the options for your ``didit`` field, so that AlpacaJS doesn't automatically sort the options alphabetically. 
-
-Next, you want the ``enum`` list for ``didit`` to actually be in random order. To achieve that, you can add a property like ``DIDIT_OPTIONS`` as a frame property, and then specify that the value of ``enum`` should be a random permutation of that list, like this:
-
-.. code:: json
-
-    "example-survey": {
-        "kind": "exp-lookit-survey",
-        "formSchema": {
-            "schema": {
-                "type": "object",
-                "title": "And now, a thrilling survey!",
-                "properties": {
-                    "didit": {
-                        "enum": "DIDIT_OPTIONS#PERM",
-                        "type": "string",
-                        "title": "Did your child do the thing?",
-                        "default": ""
-                    }
-                }
-            },
-            "options": {
-                "fields": {
-                    "didit": {
-                        "sort": false,
-                        "type": "radio",
-                        "validator": "required-field"
-                    }
-                }
-            }
-        },
-        "parameters": {
-            "DIDIT_OPTIONS": ["yes", "no"]
-        }
-    },
-    
+    If you are compensating participants, restate what the compensation is (and any conditions), and let them know when to expect their payment! E.g.: "To thank you for your participation, we'll be emailing you a $4 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child."

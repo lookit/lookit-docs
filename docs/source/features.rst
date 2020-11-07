@@ -35,7 +35,7 @@ benefit from:
    -  Extensive and actively maintained documentation for the
       `platform <https://lookit.readthedocs.io/en/develop/>`__ and
       `experiment
-      runner <https://lookit.github.io/lookit-frameplayer-docs/>`__,
+      runner <https://lookit.readthedocs.io/projects/frameplayer/>`__,
       including a step-by-step tutorial to get started.
 
    -  :ref:`Community review and feedback <study_approval>`
@@ -125,7 +125,7 @@ benefit from:
    experiment building systems you may be familiar with!):
 
    -  Growing library of `built-in
-      components <https://lookit.github.io/lookit-frameplayer-docs/>`__
+      components <https://lookit.readthedocs.io/projects/frameplayer/>`__
       for common developmental measures and pages - e.g., looking time
       and preferential looking trials, change detection trials,
       parent-controlled observation videos, surveys, video consent and

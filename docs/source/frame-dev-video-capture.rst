@@ -11,8 +11,8 @@ Lookit frames that collect video data make use of an Ember mixin
 This object includes methods for showing/hiding the webcam view,
 starting/pausing/resuming/stopping video recording,
 installing/destroying the recorder, and checking the current video
-timestamp (see
-https://lookit.github.io/lookit-frameplayer-docs/classes/video-recorder.html).
+timestamp.
+
 The programmer designing a new frame can therefore flexibly indicate
 when recording should begin and end, as well as recording video
 timestamps for any events recorded during this frame (e.g., so that
@@ -22,7 +22,7 @@ during a particular frame as included in the session data recorded, to
 facilitate matching sessions to videos; video filenames also include the
 study ID, session ID, frame ID, and a timestamp.
 
-To begin, you will want to add the ``VideoRecord`` mixin to your
+To begin, you will want to add the ``VideoRecord`` :ref:`mixin <elf:video-record>` to your
 experiment frame. This provides, but does not in itself activate, the
 capability for your frame to record videos.
 
@@ -54,11 +54,8 @@ pause until the connection is established or, similarly, proceed with an
 initial portion of the trial where video data is not required.
 
 You can also plan for users of your frame to turn on continuous recording using multi-frame 
-or 'session' recordings; see the 
-`startSessionRecording <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_startSessionRecording>`_  
-and `endSessionRecording <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-frame-base.html#property_endSessionRecording>`_ 
-parameters of the base frame. 
-
+or 'session' recordings, either using the :ref:`elf:exp-lookit-start-recording` and :ref:`elf:exp-lookit-stop-recording`
+frames or by directly setting the ``startSessionRecording`` and ``endSessionRecording`` parameters.
 
 How it works
 ~~~~~~~~~~~~
