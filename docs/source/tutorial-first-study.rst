@@ -89,7 +89,7 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
 
 1.  
 
-   .. code:: json
+   .. code:: javascript
 
        {
            "species": "cat",
@@ -106,7 +106,7 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
    
 2.  
 
-   .. code:: json
+   .. code:: javascript
 
        {
            "species": "human",
@@ -126,7 +126,7 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
    
 3.  
 
-   .. code:: json
+   .. code:: javascript
 
            {
                "species": "human",
@@ -144,7 +144,7 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
 
 4.   
 
-   .. code:: json
+   .. code:: javascript
 
        {
            "species": "human",
@@ -276,7 +276,7 @@ Here's what it looks like now. You don't need to understand everything going on 
                         "text": "This is an 'exp-lookit-instructions' frame."
                     },
                     {
-                        "text": "See https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-instructions.html"
+                        "text": "See https://lookit.readthedocs.io/projects/frameplayer/components/exp-lookit-instructions/doc.html"
                     },
                     {
                         "text": "You can display any text, audio, images, and video you want, and can optionally require participants to play audio/video segments to move on. You can also choose whether to display the webcam."
@@ -380,6 +380,8 @@ Move ``"instructions"`` back so it looks like:
    ]
    
 Close, save changes, and preview it again. After proceeding through video configuration and video consent, you should see your new and improved instructions. 
+
+.. _browser-console:  
 
 Using the Javascript console in your browser to learn more about any problems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -525,7 +527,7 @@ Each frame you define on Lookit has to have a property called ``kind`` which say
 * the ``storybook-causal`` frame has kind ``group`` (this is a special kind of frame, documented `here <https://lookit.readthedocs.io/en/develop/researchers-create-experiment.html#frame-groups>`_.)
 * the frames **within** the ``storybook-causal`` frame have kind ``exp-lookit-images-audio`` (this is added to each frame in the ``frameList`` as part of the ``commonFrameProperties``)
 
-In addition to this tutorial and the information in this documentation about how to set up a study on Lookit, there is detailed information available about each of the "frames" you can use in your Lookit study. At `<https://lookit.github.io/lookit-frameplayer-docs/>`_ you can browse the options and learn about options for customizing each type of frame.
+In addition to this tutorial and the information in this documentation about how to set up a study on Lookit, there is detailed information available about each of the "frames" you can use in your Lookit study. In the :ref:`experiment runner docs <elf:index>` you can browse the options and learn about options for customizing each type of frame.
 
 Let's take a look at the ``exp-lookit-images-audio`` documentation to see what options we have. Find it on the left sidebar and click on it. Here's what you'll see:
 

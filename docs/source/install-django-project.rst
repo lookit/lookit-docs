@@ -8,8 +8,7 @@ study, downloading data) is part of the ``lookit-api`` repo.
 This project is built using Django and PostgreSQL. (The studies
 themselves use Ember.js; see Ember portion of codebase,
 `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`__.),
-It was initially developed by the `Center for Open
-Science <https://cos.io/>`__.
+It was initially developed by the `Center for Open Science <https://cos.io/>`__.
 
 If you install only the ``lookit-api`` project locally, you will be able
 to edit any functionality that does not require actual study

@@ -362,10 +362,8 @@ properties or functions that will conflict with the mixin’s properties
 or functions. If the mixin has a function ``doFoo``, you can use that
 from your frame simply by calling ``this.doFoo()``.
 
-Below is a brief introduction to each of the common mixins; for more
-detail, see sample usages throughout the ember-lookit-frameplayer codebase and the
-mixin-specific docs
-`here <https://lookit.github.io/lookit-frameplayer-docs/modules/mixins.html>`__
+Below is a brief introduction to each of the common mixins, which are also each 
+documented in the :ref:`frameplayer docs <elf:index>`.
 
 FullScreen
 ^^^^^^^^^^
@@ -378,13 +376,11 @@ require that you interact with the page to trigger fullscreen mode.
 MediaReload
 ^^^^^^^^^^^
 
-If your component uses video or audio, you will probably want to use
-this mixin. It is very helpful if you ever expect to show two
-consecutive frames of the same type (eg two physics videos, or two
-things that play an audio clip). It automatically addresses a quirk of
+This attempts to work around a quirk of
 how ember renders the page; see `stackoverflow
 post <http://stackoverflow.com/a/18454389/1422268>`__ for more
-information.
+information. We recommend implementing new frames to work with Ember's intended patterns
+instead.
 
 VideoRecord
 ^^^^^^^^^^^
@@ -395,31 +391,22 @@ Functionality related to video capture, in conjunction with the
 Documenting your frame
 ~~~~~~~~~~~~~~~~~~~~~~
 
-We use `YUIdoc <http://yui.github.io/yuidoc/>`__ for generating
-“automatic” documentation of ember-lookit-frameplayer frames, available
-`here <https://lookit.github.io/lookit-frameplayer-docs/modules/frames.html>`__. If
-you want to contribute your frames to the main Lookit codebase, please
-include YUIdoc-formatted comments following the example of existing
-frames, e.g. ``exp-lookit-exit-survey``. Make sure to include:
+We use Sphinx to generate documentation of ember-lookit-frameplayer frames from documentation
+files directly in the repository. You can see the hosted documentation :ref:`here <elf:index>`.
+
+To include documentation for your new frame, add a doc.rst file in its directory along with
+component.js and template.hbs. You can pattern this after existing frames' documentation. 
+It should include:
 
 -  A general description of your frame
+-  A screenshot of the frame, or a diagram outlining various phases/options
 -  An example of using it (the relevant JSON for a study)
--  All inputs
--  All outputs (data saved)
+-  All parameters and their types
+-  All data saved
 -  Any events recorded
 
-To check how your documentation will appear, run ``yarn run docs`` from the ``ember-lookit-frameplayer`` 
-directory, then use ``yuidoc --server`` to see the docs served locally. 
-
-Include a screenshot in your frame documentation if possible! If your frame kind is 
-``exp-smithlab-monkey-game``, name the screenshot 
-``exp-player/screenshots/Exp-smithlab-monkey-game.png`` (i.e., capitalize just the first letter). 
-For a simple frame, an actual screenshot is fine. If there are several 
-"phases" to your frame or different ways it can work, you may want to make a diagram 
-instead. When you run ``yarn run docs``, this screenshot gets copied over to the YUIdoc theme
-for the project and to the ``docs/assets`` directory. The former is used locally, the latter
-when serving from github pages. Both the copy in ``exp-player/screenshots`` and the one in
-``docs/assets`` should be committed using git; the one in the theme directory doesn't have to be.
+To check how your documentation will appear, run ``make html`` from the ``ember-lookit-frameplayer`` 
+directory. 
 
 Ember debugging
 ~~~~~~~~~~~~~~~

@@ -42,14 +42,12 @@ condition assignment, the sequence of frames the participant actually
 saw, and frame-specific information for each frame. 
 
 Each frame type may save different data, e.g. form responses or videos played; frames that record webcam video include the video filename(s). The data captured by a
-particular frame are listed in the frame documentation at
-http://lookit.github.io/ember-lookit-frameplayer, under ‘Methods’ >
-‘serializeContent’. 
+particular frame are listed in the frame documentation under "Data collected."
 
 Additionally, event data is captured for each frame
 and included under an eventTimings key within the frame data JSON,
 minimally including a timestamped event when the user proceeds to the
-next frame. These events are listed under ‘Events’ in the frame documentation.
+next frame. These events are listed under "Events" in the frame documentation.
 
 Hashed and global IDs
 ------------------------
@@ -319,22 +317,21 @@ below:
    only for now, i.e. not from nested randomizers). Values are objects
    containing mappings from condition names to their values for this
    session. The data stored by a particular randomizer can be found
-   under ``methods: conditions`` in the `randomizer
-   documentation <http://lookit.github.io/ember-lookit-frameplayer/modules/randomizers.html>`__
+   under ``data collected`` in the :ref:`experiment runner docs <elf:randomization>`
 -  *global_event_timings*: A list of events recorded during the study,
    not tied to a particular frame. Currently used for recording early
    exit from the study; an example value is:
 
-.. code:: js
-
-   [
-               {
-                   "exitType": "manualInterrupt",
-                   "eventType": "exitEarly",
-                   "timestamp": "2018-07-06T23:56:55.282Z",
-                   "lastPageSeen": 10
-               }
-   ]
+   .. code:: javascript
+   
+      [
+            {
+                "exitType": "manualInterrupt",
+                "eventType": "exitEarly",
+                "timestamp": "2018-07-06T23:56:55.282Z",
+                "lastPageSeen": 10
+            }
+      ]
 
 -  *completed*: A true/false flag indicating whether or not the
    participant submitted the last frame of the study. Note that this may
@@ -409,17 +406,14 @@ names from ‘sequence’. Each of the associated values has an
 events during an experiment, and by default contains the ‘nextFrame’
 event which records when the user progressed to the next **frame** in
 the ‘sequence’. You can see which events a particular frame records by
-looking at the ‘Events’ tab in its `frame
-documentation <http://lookit.github.io/ember-lookit-frameplayer/modules/frames.html>`__.
+looking at the "Events" section in its :ref:`frame documentation <elf:index>`.
 Events recorded by a frame that does video recording will include
 additional information, for instance to indicate when relative to the
 video stream this event happened.
 
 The other properties besides ‘eventTimings’ are dependent on the
 **frame** type. You can see which other properties a particular frame
-type records by looking at the parameters of the ``serializeContent``
-method under the ‘Methods’ tab in its `frame
-documentation <http://lookit.github.io/ember-lookit-frameplayer/modules/frames.html>`__.
+type records by looking at the "Data collected" section of its documentation.
 
 Viewing demographics of study participants
 -------------------------------------------

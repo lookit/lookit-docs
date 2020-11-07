@@ -101,7 +101,7 @@ Now we're going to build out the study protocol configuration, one piece at a ti
 1. Setup
 ~~~~~~~~~
 
-We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like `here <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-video-config.html>`__. 
+We'll start with a standard setup frame called "exp-video-config". You can see a sample of what it looks like :ref:`here <elf:exp-video-config>`. 
 
 Underneath the screenshot, you'll see an example of defining this frame in your study protocol:
 
@@ -191,7 +191,7 @@ For convenience, this time, let's put "study-intro" FIRST in the sequence, so th
 
 Save your protocol and go ahead and preview your study. You should see a simple text frame first. Let's change the ``blocks`` value to show an appropriate overview for this study: copy and paste the section below to replace the existing ``"blocks": [...]`` piece:
 
-.. code:: json
+.. code:: javascript
 
    "blocks": [
         {
@@ -222,7 +222,7 @@ Especially if you need parents blind to stimuli and so you ask them to turn arou
 
 We'll use the frame type "exp-lookit-stimuli-preview" here to offer parents the opportunity to preview stimuli, and record while they preview if so. You can look up the properties they accept in the frame documentation, but since you're already getting the hang of using the frame documentation to start from an example, this time you can just copy and paste the following definition into ``frames``:
 
-.. code:: json
+.. code:: javascript
 
    "video-preview": {
         "kind": "exp-lookit-stimuli-preview",
@@ -278,7 +278,7 @@ Then make sure to also add "video-preview" to your ``sequence``. You can put thi
 
 Almost done with the preparations! We're just going to give particpants one more frame with directions so these are fresh in their minds. This time we'll use an exp-lookit-instructions frame, which allows showing a fairly flexible combination of text, audio, video, and the user's own webcam. Here's a starting point for the frame to add:
 
-.. code:: json
+.. code:: javascript
 
    "final-instructions": {
         "kind": "exp-lookit-instructions",
@@ -358,11 +358,11 @@ Once you've added this frame to your ``frames`` and to your ``sequence``, check 
 
 Finally, the meat of the study! Right now, we're just going to set up a single test trial to see how it works. Once we have a complete mockup of the study, we'll add the counterbalancing and the rest of the trials. 
 
-For this study, we're going to use the fairly flexible "exp-lookit-composite-video-trial" frame, which proceeds through optional "announcement," "intro", "calibration," and "test" phases. Please skim the `frame documentation <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video.html>`_ now for an overview of how it works. 
+For this study, we're going to use the fairly flexible "exp-lookit-video" frame, which proceeds through optional "announcement," "intro", "calibration," and "test" phases. Please skim the :ref:`frame documentation <elf:exp-lookit-video>` now for an overview of how it works. 
 
 Copy and paste the following frame to your ``frames``  (removing the comments that look like ``<-- TEXT HERE ``) and then add "example-test-trial" to your ``sequence``. Because this frame is shown full-screen, you should put it after at least one other frame to test it out (e.g., after your instructions frame) rather than making it the first frame. This is because your web browser won't let something go full-screen unless you take an action to trigger that (like pressing the "next" button).
 
-.. code:: json
+.. code:: javascript
 
    "example-test-trial": 
       {
@@ -411,7 +411,7 @@ Save your protocol and take a look at what happens. You should see three phases:
 
 After the test trials, you plan to include the Early Parenting Attitudes Questionairre (See Hembacher & Frank, https://psyarxiv.com/hxk3d/). It's a bit long, so for the purposes of this tutorial we're just going to include a few questions from it. Copy and paste the following frame into ``frames``, and add "epaq-survey" to your ``sequence`` - you know the drill. This uses the "exp-lookit-survey" frame type. 
 
-.. code:: json
+.. code:: javascript
 
    "epaq-survey": {
         "kind": "exp-lookit-survey",
@@ -481,7 +481,7 @@ Finally, to wrap up our study we need to include an "exp-lookit-exit-survey" fra
 
 You guessed it - copy and paste the frame below into ``frames`` in your protocol, and add "exit-survey" to your ``sequence``. Put the frames in your ``sequence`` in order and try out the entire study! 
 
-.. code:: json
+.. code:: javascript
 
    "exit-survey": {
             "kind": "exp-lookit-exit-survey",
@@ -498,13 +498,13 @@ Set up counterbalancing
 
 Your plan for this study is actually to have four test trials. Either the audio will come from the left speaker, right speaker, right speaker, left speaker; or it will come from right speaker, left speaker, left speaker, right speaker.
 
-To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomizer frames available on Lookit, which you can browse `here <https://lookit.github.io/lookit-frameplayer-docs/modules/randomizers.html>`__. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious. (There are also more walkthroughs in :ref:`random_parameter_set`.)
+To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomization options available on Lookit, which you can browse :ref:`here <elf:randomization>`. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious.
 
 We will be providing the randomizer with three main things: a list of frames (``frameList``), a set of properties all the frames should share, just for convenience (``commonFrameProperties``), and a list of sets of parameters to substitute in (``parameterSets``)- the randomizer will choose one of these at the start of the study and do the substitution. 
 
 Let's start with just a skeleton of our test trials frame:
 
-.. code:: json
+.. code:: javascript
 
    "test-trials": {
         "kind": "choice",
@@ -516,7 +516,7 @@ Let's start with just a skeleton of our test trials frame:
 
 For each of the four test trials, we're going to want to use an exp-lookit-composite-video-trial frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
 
-.. code:: json
+.. code:: javascript
 
    "commonFrameProperties": {
         "kind": "exp-lookit-composite-video-trial",
@@ -552,7 +552,7 @@ Note that we set ``"calibrationLength": 0`` above. That's because we only want t
 
 Now let's expand that ``frameList``. The only things that vary each frame are going to be the actual test stimuli (``sources`` and ``altSources``) and the announcement audio. Here's what our frame list would look like for the left, right, right, left condition. Notice that we add one more frame at the very end where we skip the test trial entirely, and don't do recording - we just use that to do an announcement phase where we tell the parent they're all done and can turn back around!
 
-.. code:: json
+.. code:: javascript
 
    "frameList": [
         {
@@ -586,7 +586,7 @@ Now let's expand that ``frameList``. The only things that vary each frame are go
     
 That's great, but it hard-codes in the stimuli for this counterbalancing condition. Actually, sometimes we want to use "abba[N]" as the primary videos (and "baab[N]" as the backup in case the parent pauses during the test), and other times we want to use "baab[N]" as the primary videos. That's just what this randomizer is for! We'll stick in placeholders for the sources/altSources like this:
 
-.. code:: json
+.. code:: javascript
 
    "frameList": [
         {
@@ -621,7 +621,7 @@ That's great, but it hard-codes in the stimuli for this counterbalancing conditi
     
 Then we also need to define the ``parameterSets``, which will let us define values for ``VIDEO1``, ``VIDEO2``, etc. The ``parameterSets`` value is a list of sets; each set should define all the values we need for one condition:
 
-.. code:: json
+.. code:: javascript
 
    "parameterSets": [
         {

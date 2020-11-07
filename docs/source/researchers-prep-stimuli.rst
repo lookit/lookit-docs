@@ -33,7 +33,7 @@ Here are some tips from the community:
 
 - Make sure to edit the audio track the same way you would for audio stimuli to reduce background noise.
 
-- Provide closed captioning for accessibility (even many hearing parents will find it easier to process this way), and/or provide "alt text" for the video as shown in the `exp-lookit-instruction-video frame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-instruction-video.html>`__. 
+- Provide closed captioning for accessibility (even many hearing parents will find it easier to process this way), and/or provide "alt text" for the video as shown in the :ref:`elf:exp-lookit-instruction-video` frame. 
 
 
 Basic audio editing
@@ -101,7 +101,8 @@ and wav files in a directory to mp3 and ogg files:
                   os.path.join(audioPath, 'mp3', shortname + '.mp3')])
            sp.call(['ffmpeg', '-i', os.path.join(audioPath, audio), \
                   os.path.join(audioPath, 'ogg', shortname + '.ogg')])
-                
+               
+.. _putting-stimuli-online:               
                 
 Putting your stimuli files online
 -----------------------------------
@@ -144,51 +145,11 @@ You are responsible for hosting your study stimuli online somewhere. You have a 
 Directory structure
 ---------------------
 
-For convenience, many Lookit experiment frames use an `expand-assets mixin <https://lookit.github.io/lookit-frameplayer-docs/classes/Expand-assets.html>`_ that allows you to define a base
+For convenience, many Lookit experiment frames use an `expand-assets mixin <https://lookit.readthedocs.io/projects/frameplayer/en/latest/mixins/expand-assets-doc.html>`_ that allows you to define a base
 directory (``baseDir``) as part of the frame definition, so that instead
 of providing full paths to your stimuli (including multiple file
 formats) you can give relative paths and specify the audio and/or video
-formats to expect (``audioTypes`` and ``videoTypes``). 
-
-For instance, the `exp-lookit-images-audio frame <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-images-audio.html>`_ allows this - you can see at the very top of the docs that it uses ExpandAssets, and under 'Properties' you can see the ``baseDir``, `audioTypes``, and ``videoTypes`` arguments.
-
-**Images**: Anything without ``://`` in the string will be assumed to be a
-relative image source.
-
-**Audio/video sources**: If you want to provide full paths to stimuli, you will be providing a list of sources, like this:
-
-.. code:: json
-
-   [
-       {
-           "src": "http://stimuli.org/myAudioFile.mp3",
-           "type": "audio/mp3"
-       },
-       {
-           "src": "http://stimuli.org/myAudioFile.ogg",
-           "type": "audio/ogg"
-       }
-   ]
-
-Instead of listing multiple sources, which are generally the same file
-in different formats, you can alternately list a single string like ``"myAudioFile"``. 
-
-If you use this option, your stimuli will be expected to be organized
-into directories based on type.
-
--  **baseDir/img/**: all images (any file format; include the file
-   format when specifying the image path)
--  **baseDir/ext/**: all audio/video media files with extension ``ext``
-
-**Example**: Suppose you set ``"baseDir": "http://stimuli.org/mystudy/"``
-and then specified an image source as ``"train.jpg"``. That image location
-would be expanded to ``http://stimuli.org/mystudy/img/train.jpg``. If
-you specified that the audio types you were using were ``mp3`` and
-``ogg`` (the default) by setting ``"audioTypes": ["mp3", "ogg"]``, and
-specified an audio source as ``"honk"``, then audio files
-would be expected to be located at
-``http://stimuli.org/mystudy/mp3/honk.mp3`` and
-``http://stimuli.org/mystudy/ogg/honk.ogg``.
+formats to expect (``audioTypes`` and ``videoTypes``). Please see the linked documentation for details on how to specify your base directory and how to structure your files in it!
 
 Helpful resources
 -------------------

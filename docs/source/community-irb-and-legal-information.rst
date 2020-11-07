@@ -134,10 +134,10 @@ How consent and assent work
 
 The consent process on Lookit is fairly standardized by design, to reduce the mental load on families. Parents consent by recording a verbal statement of consent after reviewing a document.
 
-Information about what the consent page looks like to parents, and how to customize it, is available `here <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video-consent.html>`__ in the frame documentation. You can see the available templates for the consent document `here <https://github.com/lookit/research-resources/tree/master/Legal>`__. Essentially you will supply pieces of text that will be substituted into the template. 
+Information about what the consent page looks like to parents, and how to customize it, is available :ref:`here <elf:exp-lookit-video-consent>` in the frame documentation. You can see the available templates for the consent document `here <https://github.com/lookit/research-resources/tree/master/Legal>`__. Essentially you will supply pieces of text that will be substituted into the template. 
 
 If you are testing older children and need to collect assent in addition, you will use the
-`assent page <https://lookit.github.io/lookit-frameplayer-docs/classes/Exp-lookit-video-assent.html>`__, which is less standardized at this point. 
+:ref:`assent page <elf:exp-lookit-video-assent>`, which is less standardized at this point. 
 
 When applying for IRB approval, you may need to present the exact text of the consent document that will be presented, which you can do by substituting values into the templates linked above. You can even start setting up your study (copy one of the tutorial/example studies and customize the consent text) and preview it to get screenshots or the PDF download. 
 
