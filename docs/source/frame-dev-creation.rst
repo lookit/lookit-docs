@@ -29,16 +29,17 @@ Let’s walk though a basic example of ‘exp-cat-test’:
    installing exp-frame
       create app/components/exp-cat-test/component.js
       create app/components/exp-cat-test/template.hbs
+      create app/components/exp-cat-test/doc.rst
       create app/styles/components/exp-cat-test.scss
 
 Notice this created three new files: 
-- ``app/components/exp-cat-test/component.js``: the JS file for your
-‘frame’ 
-- ``app/components/exp-cat-test/template.hbs``: the
-Handlebars template for your ‘frame’ 
+
+- ``app/components/exp-cat-test/component.js``: the JS file for your frame
+- ``app/components/exp-cat-test/template.hbs``: the Handlebars template for your frame
+- ``app/components/exp-cat-test/doc.rst``: a documentation page for your frame
 - ``app/styles/components/exp-cat-test.scss``: a boilerplate file that exposes
-the new frame to the Ember app- you will almost never need to modify
-this file.
+  the new frame to the Ember app- you will almost never need to modify
+  this file.
 
 Let’s take a deeper look at the ``component.js`` file:
 
@@ -96,6 +97,7 @@ The first section:
    })
 
 does several things: 
+
 - imports the ``ExpFrameBaseComponent``: this is
 the superclass that all ‘frames’ must extend 
 - imports the ``layout``: this tells Ember what template to use 
@@ -150,6 +152,7 @@ that should be required to be defined by the user of the frame.
 
 
 The 'meta' field is composed of: 
+
 - name (optional): A human readable name for this
 ‘frame’ 
 - description (optional): A human readable description for this
