@@ -124,11 +124,12 @@ The release process is relatively manual for now because the expected workflow i
 
 Work should be completed and tested on a feature branch, then merged into develop.
 
-When a set of features is ready to release, create a release branch off of develop. 
-Complete the following steps to create a new release and publish documentation for this version along with the others:
+1. When a set of features is ready to release, create a release branch off of develop. 
 
-1. Change version number in package.json. 
+2. Change version number in package.json in the release branch
 
-2. Turn on readthedocs builds for the release branch.
+3. Turn on readthedocs builds for the release branch.
 
-3. Make PRs to master and develop, and merge the feature branch. Then create a new release on GitHub, again exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
+4. Make PRs to master and develop, and merge the release branch. (Do squash merge for master to keep the commit history more manageable.)
+
+5. Create a new release on GitHub, again exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
