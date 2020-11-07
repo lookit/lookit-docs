@@ -358,7 +358,7 @@ Once you've added this frame to your ``frames`` and to your ``sequence``, check 
 
 Finally, the meat of the study! Right now, we're just going to set up a single test trial to see how it works. Once we have a complete mockup of the study, we'll add the counterbalancing and the rest of the trials. 
 
-For this study, we're going to use the fairly flexible "exp-lookit-video" frame, which proceeds through optional "announcement," "intro", "calibration," and "test" phases. Please skim the :ref:`frame documentation <elf:exp-lookit-video>` now for an overview of how it works. 
+For this study, we're going to use the fairly flexible "exp-lookit-video" frame, which lets us play a video. Please skim the :ref:`frame documentation <elf:exp-lookit-video>` now for an overview of how it works. 
 
 Copy and paste the following frame to your ``frames``  (removing the comments that look like ``<-- TEXT HERE ``) and then add "example-test-trial" to your ``sequence``. Because this frame is shown full-screen, you should put it after at least one other frame to test it out (e.g., after your instructions frame) rather than making it the first frame. This is because your web browser won't let something go full-screen unless you take an action to trigger that (like pressing the "next" button).
 
@@ -366,45 +366,42 @@ Copy and paste the following frame to your ``frames``  (removing the comments th
 
    "example-test-trial": 
       {
-            "kind": "exp-lookit-composite-video-trial",
+            "kind": "exp-lookit-video",
+            
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "abba1" <-- TEST VIDEO OF TWO WOMEN TALKING
+            },
+            "backgroundColor": "white",
+            "autoProceed": true,
+
+            "requireVideoCount": 1,  <-- PLAY THROUGH THE TEST VIDEO ONE TIME
+            "doRecording": true,
+
+            "pauseKey": " ",
+            "pauseKeyDescription": "space",
+            "restartAfterPause": true,
+            "pauseAudio": "<INSERT HERE>", <-- INSERT THE NAME (NO EXTENSION) OF AUDIO TO PLAY UPON PAUSING THE STUDY HERE
+            "pauseVideo": "<INSERT HERE>", <-- INSERT THE NAME OF THE VIDEO TO SHOW WHILE THE STUDY IS PAUSED HERE
+            "pauseText": "(You'll have a moment to turn around again.)",
+            "unpauseAudio": "<INSERT HERE>", <-- INSERT THE NAME OF AUDIO TO PLAY WHEN THE STUDY IS UN-PAUSED
+            
             "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
-            "testCount": 1, <-- PLAY THROUGH THE TEST VIDEO ONE TIME
             "audioTypes": [
                 "ogg",
                 "mp3"
             ],
-            "pauseAudio": "<INSERT HERE>", <-- INSERT THE NAME (NO EXTENSION) OF AUDIO TO PLAY UPON PAUSING THE STUDY HERE
             "videoTypes": [
                 "webm",
                 "mp4"
-            ],
-            "attnSources": "<INSERT HERE>", <-- INSERT THE NAME OF THE VIDEO TO SHOW DURING THE ANNOUNCEMENT PHASE HERE
-            "introSources": [], <-- LEAVE THIS AS AN EMPTY LIST - WE DON'T NEED AN INTRO
-            "musicSources": [], <-- LEAVE THIS AS AN EMPTY LIST - WE DON'T NEED MUSIC
-            "unpauseAudio": "<INSERT HERE>", <-- INSERT THE NAME OF AUDIO TO PLAY WHEN THE STUDY IS UN-PAUSED
-            "announceLength": 3, <-- THIS IS HOW MANY SECONDS TO MAKE THE ANNOUNCEMENT PHASE
-            "calibrationLength": 2000, <-- THIS IS HOW LONG TO MAKE EACH CALIBRATION BLOCK
-            "calibrationPositions": [ <-- THIS IS THE LIST OF PLACES THE CALIBRATION VIDEO WILL BE SHOWN, IN ORDER
-                "left",
-                "right",
-                "left",
-                "right",
-                "center"
-            ],
-            "calibrationAudioSources": "<INSERT HERE>", <-- INSERT THE AUDIO TO PLAY DURING CALIBRATION
-            "calibrationVideoSources": "<INSERT HERE>", <-- INSERT THE CALIBRATION VIDEO TO USE
-            "sources": "abba1", <-- TEST VIDEO OF TWO WOMEN TALKING
-            "altSources": "baab1", <-- WHAT VIDEO TO USE IF THE STUDY GETS PAUSED DURING TEST AND THIS TRIAL IS RE-STARTED
-            "audioSources": "video_1_HO_intro", <-- WHAT AUDIO TO PLAY AS AN ANNOUNCEMENT
+            ]
      }
     
 Again, you will need to browse the `available audio and video files <http://www.mit.edu/~kimscott/intermodal/>`_ to select appropriate stimuli to insert where indicated above.
 
-.. admonition:: Planning your audio instructions
-
-   You want your audio instructions to be as concise as possible, but still friendly and complete. Figuring out all the different audio files you need is often a lesson in just how much communication you take for granted in the lab!
-   
-Save your protocol and take a look at what happens. You should see three phases: a spinning ball with some audio instructions; a "calibration" section where an attention-grabber pops back and forth on the screen (so that your coders will be able to verify they can see the child looking back and forth), and then a test video where two women are talking but we can only hear one of them.
+Save your protocol and take a look at what happens. You should see two women talking,
+and be able to tell that the audio matches just one of them! 
     
 7. Survey
 ~~~~~~~~~
@@ -493,10 +490,106 @@ You guessed it - copy and paste the frame below into ``frames`` in your protocol
         
 Finally, pretend that your baby has fussed out partway through, and try pressing ctrl-X or F1 during the study. You should see a dialogue appear and if you choose to leave the study, you'll be taken to the last frame - which is now, appropriately, your exit survey. Hooray!
 
+Add some initial audio instructions
+--------------------------------------------
+
+You may have noticed that the test trial starts right away, without giving the parent 
+much of a chance to get ready! Let's add some friendly audio instructions for that 
+transition. We'll use another ``exp-lookit-video`` frame. It'll be similar to the test
+trial, except we'll show the attentiongrabber video (looping) while we play a separate
+audio file:
+
+
+.. code:: javascript
+
+   "announce-trial-1": 
+      {
+            "kind": "exp-lookit-video",
+            
+            "video": {
+                "loop": true, <-- HAVE THIS VIDEO LOOP
+                "top": 40, <-- INSTEAD OF "position": "fill" we specify this one should be smaller and centered!
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "video_1_HO_intro" <-- THE AUDIO FILE TO PLAY
+            },
+            "backgroundColor": "white",
+            "autoProceed": true,
+
+            "requireVideoCount": 0,
+            "requireAudioCount": 1, <-- PLAY THROUGH THE AUDIO ONCE, DON'T WORRY ABOUT VIDEO
+            "doRecording": false, <-- WE DON'T REALLY NEED A RECORDING OF THIS
+
+            "pauseKey": " ",
+            "pauseKeyDescription": "space",
+            "restartAfterPause": true,
+            "pauseAudio": "<INSERT HERE>", <-- INSERT THE NAME (NO EXTENSION) OF AUDIO TO PLAY UPON PAUSING THE STUDY HERE
+            "pauseVideo": "<INSERT HERE>", <-- INSERT THE NAME OF THE VIDEO TO SHOW WHILE THE STUDY IS PAUSED HERE
+            "pauseText": "(You'll have a moment to turn around again.)",
+            "unpauseAudio": "<INSERT HERE>", <-- INSERT THE NAME OF AUDIO TO PLAY WHEN THE STUDY IS UN-PAUSED
+            
+            "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
+            "audioTypes": [
+                "ogg",
+                "mp3"
+            ],
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ]
+     }
+
+Add this to your list of frames and insert it in the sequence just before the first test trial. 
+
+.. admonition:: Planning your audio instructions
+
+   You want your audio instructions to be as concise as possible, but still friendly and complete. Figuring out all the different audio files you need is often a lesson in just how much communication you take for granted in the lab!
+            "audioSources": "video_1_HO_intro", <-- WHAT AUDIO TO PLAY AS AN ANNOUNCEMENT
+            
+Add a calibration trial
+------------------------
+
+We also want to add a quick calibration section where an attention-grabber pops back and forth on the screen (so that your coders will be able to verify they can see the child looking back and forth). Let's add that after the "announce-trial-1" frame and before the 
+test trial. 
+
+Lookit provides a custom calibration frame :ref:`exp-lookit-calibration` that you can use
+for this purpose: 
+
+.. code:: javascript
+
+    "calibration-with-video": {
+        "kind": "exp-lookit-calibration",
+        
+        "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
+        "audioTypes": [
+            "ogg",
+            "mp3"
+        ],
+        "videoTypes": [
+            "webm",
+            "mp4"
+        ],
+        
+        "calibrationLength": 2000, <-- MAKE EACH CALIBRATION SEGMENT 2 S LONG
+        "calibrationPositions": [
+            "center",
+            "left",
+            "right"
+        ],
+        "calibrationAudio": "<INSERT HERE>", <-- CHOOSE AUDIO TO PLAY EACH TIME THE CALIBRATION VIDEO MOVES
+        "calibrationVideo": "attentiongrabber"
+    }
+    
+Add this to your list of frames and insert it in the sequence just before the first test trial. You can play around with ``calibrationPositions`` to see how you can show the spinning ball in a different sequence of locations.
+
 Set up counterbalancing
 -----------------------
 
-Your plan for this study is actually to have four test trials. Either the audio will come from the left speaker, right speaker, right speaker, left speaker; or it will come from right speaker, left speaker, left speaker, right speaker.
+Your plan for this study is actually to have four test trials. Either the audio will come from the left speaker, right speaker, right speaker, left speaker; or it will come from right speaker, left speaker, left speaker, right speaker. Before each test trial there will be a short "announcement" letting the parent know which trial number it is, also set up with an exp-lookit-video frame. 
 
 To do this sort of counterbalancing, the simplest approach is to use a special class of frame called a "randomizer." At the time your study protocol is interpreted in order to display the study to your participant, the randomizer frame will make some (random) selections. There are a variety of randomization options available on Lookit, which you can browse :ref:`here <elf:randomization>`. For our study, we will use the fairly general-purpose "random-parameter-set" randomizer, which you can read more about in those frame docs if you're curious.
 
@@ -514,110 +607,278 @@ Let's start with just a skeleton of our test trials frame:
         "commonFrameProperties": {}
     }
 
-For each of the four test trials, we're going to want to use an exp-lookit-composite-video-trial frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
+For each of the four test trials, we're going to want to use an exp-lookit-video frame with some of the same basic properties, so let's put those in ``commonFrameProperties``:
 
 .. code:: javascript
 
    "commonFrameProperties": {
-        "kind": "exp-lookit-composite-video-trial",
+        "kind": "exp-lookit-video",
+        
         "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
-        "testCount": 1,
         "audioTypes": [
             "ogg",
             "mp3"
         ],
-        "pauseAudio": "pause_HO",
         "videoTypes": [
             "webm",
             "mp4"
         ],
-        "attnSources": "attentiongrabber",
-        "introSources": [],
-        "musicSources": [],
-        "unpauseAudio": "return_after_pause_HO",
-        "announceLength": 3,
-        "calibrationLength": 0,
-        "calibrationPositions": [
-            "left",
-            "right",
-            "left",
-            "right",
-            "center"
-        ],
-        "calibrationAudioSources": "chimes",
-        "calibrationVideoSources": "attentiongrabber"
+        
+        "backgroundColor": "white",
+        "autoProceed": true,
+        
+        "pauseKey": " ",
+        "pauseKeyDescription": "space",
+        "restartAfterPause": true,
+        "pauseAudio": "pause_HO",
+        "pauseVideo": "attentiongrabber",
+        "pauseText": "(You'll have a moment to turn around again.)",
+        "unpauseAudio": "return_after_pause_HO"
     }
-    
-Note that we set ``"calibrationLength": 0`` above. That's because we only want to do calibration on the first trial, so we'll use 0 as the default and just override it on the first trial.
 
-Now let's expand that ``frameList``. The only things that vary each frame are going to be the actual test stimuli (``sources`` and ``altSources``) and the announcement audio. Here's what our frame list would look like for the left, right, right, left condition. Notice that we add one more frame at the very end where we skip the test trial entirely, and don't do recording - we just use that to do an announcement phase where we tell the parent they're all done and can turn back around!
 
-.. code:: javascript
+Now let's expand that ``frameList``. 
 
-   "frameList": [
-        {
-            "sources": "abba1",
-            "altSources": "baab1",
-            "audioSources": "video_1_HO_intro",
-            "calibrationLength": 2000
-        },
-        {
-            "sources": "abba2",
-            "altSources": "baab2",
-            "audioSources": "video_02_HO"
-        },
-        {
-            "sources": "abba3",
-            "altSources": "baab3",
-            "audioSources": "video_03_HO"
-        },
-        {
-            "sources": "abba4",
-            "altSources": "baab4",
-            "audioSources": "video_04_HO"
-        },
-        {
-            "sources": [],
-            "altSources": [],
-            "doRecording": false,
-            "audioSources": "all_done_HO"
-        }
-    ]
-    
-That's great, but it hard-codes in the stimuli for this counterbalancing condition. Actually, sometimes we want to use "abba[N]" as the primary videos (and "baab[N]" as the backup in case the parent pauses during the test), and other times we want to use "baab[N]" as the primary videos. That's just what this randomizer is for! We'll stick in placeholders for the sources/altSources like this:
+We'll do the first announcement and calibration trial separately. Then we'll have:
+
+- trial 1, 
+- announcement 2 (just the attention-getter while someone says "Video 2")
+- trial 2
+- announcement 3
+- trial 3
+- announcement 4
+- trial 4
+- a final announcement where we tell parents they can turn back around. 
+
+The things that will vary each frame are:
+
+- the actual test videos
+- the audio for the announcements
+- whether to do recording
+- whether to require the video or audio to play through
 
 .. code:: javascript
 
    "frameList": [
         {
-            "sources": "VIDEO1",
-            "altSources": "ALTVIDEO1",
-            "audioSources": "video_1_HO_intro",
-            "calibrationLength": 2000
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "abba1"
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
         },
         {
-            "sources": "VIDEO2",
-            "altSources": "ALTVIDEO2",
-            "audioSources": "video_02_HO"
-        },
-        {
-            "sources": "VIDEO3",
-            "altSources": "ALTVIDEO3",
-            "audioSources": "video_03_HO"
-        },
-        {
-            "sources": "VIDEO4",
-            "altSources": "ALTVIDEO4",
-            "audioSources": "video_04_HO"
-        },
-        {
-            "sources": [],
-            "altSources": [],
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "video_02_HO"
+            },
             "doRecording": false,
-            "audioSources": "all_done_HO",
-            "calibrationLength": 0
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
+        },
+        {
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "abba2"
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
+        },
+        {
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "video_03_HO"
+            },
+            "doRecording": false,
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
+        },
+        {
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "abba3"
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
+        },
+        {
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "video_04_HO"
+            },
+            "doRecording": false,
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
+        },
+        {
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "abba4"
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
+        },
+        {
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "all_done_HO"
+            },
+            "doRecording": false,
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
         }
     ]
+
+You can go ahead and try this out with the empty parameterSets and see the whole study!
+  
+That's great, but it hard-codes in the stimuli for this counterbalancing condition. Actually, sometimes we want to use "abba[N]", and other times we want to use "baab[N]". That's just what this randomizer is for! We'll stick in placeholders for the video sources like this:
+
+.. code:: javascript
+
+   "frameList": [
+        {
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "VIDEO1" <-- THIS IS THE PLACEHOLDER FOR THE VIDEO FILE WE'LL USE
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
+        },
+        {
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "video_02_HO"
+            },
+            "doRecording": false,
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
+        },
+        {
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "VIDEO2"
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
+        },
+        {
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "video_03_HO"
+            },
+            "doRecording": false,
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
+        },
+        {
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "VIDEO3"
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
+        },
+        {
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "video_04_HO"
+            },
+            "doRecording": false,
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
+        },
+        {
+            "video": {
+                "loop": false,
+                "position": "fill",
+                "source": "VIDEO4"
+            },
+            "doRecording": true,
+            "requireVideoCount": 1,
+            "requireAudioCount": 0
+        },
+        {
+            "video": {
+                "loop": true,
+                "top": 40,
+                "left": 45,
+                "width": 10,
+                "source": "attentiongrabber"
+            },
+            "audio": {
+                "loop": false,
+                "source": "all_done_HO"
+            },
+            "doRecording": false,
+            "requireAudioCount": 1,
+            "requireVideoCount": 0
+        }
+    ]
+
     
 Then we also need to define the ``parameterSets``, which will let us define values for ``VIDEO1``, ``VIDEO2``, etc. The ``parameterSets`` value is a list of sets; each set should define all the values we need for one condition:
 
@@ -628,21 +889,13 @@ Then we also need to define the ``parameterSets``, which will let us define valu
             "VIDEO1": "abba1",
             "VIDEO2": "abba2",
             "VIDEO3": "abba3",
-            "VIDEO4": "abba4",
-            "ALTVIDEO1": "baab1",
-            "ALTVIDEO2": "baab2",
-            "ALTVIDEO3": "baab3",
-            "ALTVIDEO4": "baab4"
+            "VIDEO4": "abba4"
         },
         {
             "VIDEO1": "baab1",
             "VIDEO2": "baab2",
             "VIDEO3": "baab3",
-            "VIDEO4": "baab4",
-            "ALTVIDEO1": "abba1",
-            "ALTVIDEO2": "abba2",
-            "ALTVIDEO3": "abba3",
-            "ALTVIDEO4": "abba4"
+            "VIDEO4": "baab4"
         }
     ]
     
