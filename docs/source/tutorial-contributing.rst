@@ -180,6 +180,7 @@ List of tutorial participants
 - Stacee Santos (Boston College)
 - Chippy Banarjee (Yale University)
 - Alyssa Nguyen (University of Oregon)
+- Erika Parisien (University of Oregon)
 
 .. _Github issues overview:
 
