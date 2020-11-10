@@ -181,6 +181,7 @@ List of tutorial participants
 - Chippy Banarjee (Yale University)
 - Alyssa Nguyen (University of Oregon)
 - Erika Parisien (University of Oregon)
+- Zoya Egiazaryan (University of California, Los Angeles)
 
 .. _Github issues overview:
 
