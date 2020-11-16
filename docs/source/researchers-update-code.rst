@@ -4,7 +4,23 @@
 Updating the experiment runner
 #############################################
 
-In the future, there may be changes in the Lookit experiment runner that you want your study to use - for instance, a bug fix for an issue your participants are encountering or a new frame you want to use. (By default, your study keeps chugging along using exactly the same code, so that updates can't change how your study works without your knowledge.) Here's how you can update the code used:
+In the future, there may be changes in the Lookit experiment runner that you want your study to use - for instance, a bug fix for an issue your participants are encountering or a new frame you want to use. (By default, your study keeps chugging along using exactly the same code, so that updates can't change how your study works without your knowledge.) 
+
+Checking what's changed
+-------------------------
+
+The most straightforward way to view changes to the Lookit code is to review the list of 
+`releases <https://github.com/lookit/ember-lookit-frameplayer/releases>`__. If you're 
+planning to update to the latest version, you should read through the release notes for 
+each version between the one you're using and the new one. 
+
+The releases are numbered v<MAJOR>.<MINOR>.<PATCH> -- e.g. v1.5.2. We adhere to semantic 
+versioning, so the MAJOR version changes when there are backwards-incompatible changes - e.g., you need to change the name of a frame you're using for it to keep working. The MINOR version changes when features are added but are backwards-compatible. The PATCH version changes when there are backwards-compatible bug fixes.
+
+Update steps
+-----------------
+
+Here's how to update the code used:
 
 1. Click "Edit study" on the study you want to update.
 
@@ -22,12 +38,17 @@ In the future, there may be changes in the Lookit experiment runner that you wan
 
 3. We'll focus here on just updating the version of the central Lookit code you're using. You can also edit the ``Experiment runner code URL`` to use a different repository entirely, like your own fork. The steps are the same regardless of which repo you're using, but pointing to your own code is more advanced. 
 
-   **Option 1**: You can delete the value in ``Experiment runner version (commit SHA)`` and leave it blank to use the default value, which is the most recent version of the Lookit frameplayer code.
+   **Option 1: latest versoin**: You can delete the value in ``Experiment runner version (commit SHA)`` and leave it blank to use the default value, which is the most recent version of the Lookit frameplayer code.
 
    .. image:: _static/img/update_code/blank_sha.png
        :alt: Blank sha value to use default
 
-   **Option 2**: You can click "Check for updates" and then paste in the ID of the code version you want to use ("commit sha"). You can browse more commits by going to `<https://github.com/lookit/ember-lookit-frameplayer/commits/master>`_. If you do this, click the clipboard button (circled) to copy the commit sha.
+   **Option 2: specific version**: You can click "Check for updates" and then paste in the ID of the code version you want to use ("commit sha"). You can also copy a version from the `release list <https://github.com/lookit/ember-lookit-frameplayer/releases>`__. If you do this, click the button circled below to go to a page that shows the commit sha:
+   
+   .. image:: _static/img/update_code/commit_from_release.png
+       :alt: Release notes and button to show commit sha
+   
+   You can browse all commits by going to `<https://github.com/lookit/ember-lookit-frameplayer/commits/master>`__. If you do this, click the clipboard button (circled) to copy the commit sha.
 
    .. image:: _static/img/update_code/commit_list.png
        :alt: List of commits to master
