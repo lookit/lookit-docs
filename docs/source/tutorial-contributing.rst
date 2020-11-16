@@ -182,6 +182,7 @@ List of tutorial participants
 - Alyssa Nguyen (University of Oregon)
 - Erika Parisien (University of Oregon)
 - Zoya Egiazaryan (University of California, Los Angeles)
+- Sara Marshall (McMaster University)
 
 .. _Github issues overview:
 
