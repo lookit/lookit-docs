@@ -183,6 +183,7 @@ List of tutorial participants
 - Erika Parisien (University of Oregon)
 - Zoya Egiazaryan (University of California, Los Angeles)
 - Sara Marshall (McMaster University)
+- Sho Tsuji (The University of Tokyo)
 
 .. _Github issues overview:
 
