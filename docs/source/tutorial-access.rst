@@ -53,6 +53,8 @@ Exercises
 
 1. Say hello in the "tutorial" channel of the Lookit Slack workspace.
 
-2. Get a feel for the participant experience by trying out a study on the staging server. The staging server is like a clone of Lookit that we use for trying out new features (but not collecting real data). Go to the main participant-facing portion of the staging server, https://lookit-staging.mit.edu. Go to 'Studies,' select the study called 'Example study,' and participate in it! You'll be prompted to make an account, complete the demographic survey, and register at least one child before you can start. We recommend making up responses and not using your real personal information on the staging server, as many researchers will have access to it and it is NOT treated as actual data (with all the care that entails). E.g., please don't enter your kids' actual birthdays or health info.
+2. Get a feel for the participant experience by trying out one of the "template" studies! At https://lookit.mit.edu/exp/studies/, find a study labeled TEMPLATE from the lab "Demo lab." Click on it and then click "Preview study" to see how it would work if you were a 
+participant! You may need to add a child profile and complete your demographic survey, 
+which you can do from https://lookit.mit.edu/account/manage/.
 
 3. [Extra credit] If you have young kids, take part in a currently-running study on the production server (https://lookit.mit.edu) - the experience is different with a squirming kid in your lap! Please enter only actual, not made-up, data on the production server - you are participating in real research here. (If you're curious but don't have a child in the age range, feel free to contact the lab and ask if it's ok to check it out--generally they can deal with that easily, but a heads up is helpful.)

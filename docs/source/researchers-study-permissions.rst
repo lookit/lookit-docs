@@ -9,60 +9,11 @@ The permissions granted to researchers are quite granular, so that you have fine
 If you have permissions to manage study researchers, you will be able to add/remove researchers to your study and change their roles on the Study Detail page. 
 
 -----------------------------------------
-Study permissions
------------------------------------------
-
-Here are the specific permissions that govern what a researcher can see or do to study data. You will grant or restrict these permissions to other lab members by giving them roles on your study.
-
-READ_STUDY_DETAILS
-    Can preview the study; can see the study overview page where study researchers, logs, and status are shown; can see the study edit form where the protocol is (but not necessarily submit it!)
-    
-WRITE_STUDY_DETAILS
-    Can make changes to the study using the edit study form - e.g., changing the protocol or age range. Note that if the study is already approved, making changes would automatically reject it; in this case, someone with WRITE_STUDY_DETAILS but not CHANGE_STUDY_STATUS would not be able to make changes.
-    
-CHANGE_STUDY_STATUS
-    Can change the status of the study - starting or stopping data collection, submitting/retracting it for Lookit review, etc.
-    
-MANAGE_STUDY_RESEARCHERS
-    Can add and remove other researchers in this lab to the various study groups, editing their permissions.
-    
-READ_STUDY_RESPONSE_DATA
-    Can see and download actual participant data from this study.
-    
-READ_STUDY_PREVIEW_DATA
-    Can see and download data from researchers who previewed this study.
-    This is a separate permission because previewing the study and then seeing what data is 
-    generated is critical for study design & analysis pipeline planning (e.g. “ok, so I
-    did this, do the videos I expected to make show up? how will our script tell what color the 
-    dax is on trial 4?“). It may also be a means of collecting feedback on the study 
-    design from other researchers (they preview a study, you see their responses).
-    
-CODE_STUDY_CONSENT
-    Can submit rulings about whether consent videos demonstrate valid informed consent, which determines which data is then available for download
-    
-CODE_STUDY_PREVIEW_CONSENT
-    Can submit rulings about whether consent videos from preview data demonstrate valid informed consent. (They don’t really, but you might mock up the entire workflow from start to finish with preview data while planning your analyses and testing out your study.)
-    
-CONTACT_STUDY_PARTICIPANTS
-    Can send email to participants via the Lookit platform. (This still does not grant direct access to participant email addresses.)
-    
-EDIT_STUDY_FEEDBACK
-    Can create and edit feedback associated with participant responses, which is displayed to participants on the study history page.
-    
-CHANGE_STUDY_LAB
-    Can change which lab this study is associated with. (Researchers not affiliated with the new lab are removed from the study upon changing.)
-    
-DELETE_ALL_PREVIEW_DATA
-    Can use a button on the all responses page to delete existing preview data (generally useful in the process of developing a new study and testing it out repeatedly).
-
-
-
------------------------------------------
 Study roles
 -----------------------------------------
 
 Researchers can be assigned any of the following roles relative to a study. Here are the 
-permissions that each denotes:
+permissions that each denotes (defined in more detail under "Study permission definitions" below). 
 
 +----------------------------+---------+--------+-----------+---------------+------------+----------+-------+
 |                            | Preview | Design |  Analysis | | Submission  | Researcher | Manager  | Admin |
@@ -150,3 +101,51 @@ To remove a researcher from a study, click the red minus button beside the resea
     :alt: Deleting researcher permissions
     
 Remember that lab members and lab admins will still have some permissions to the study (see :ref:`Lab permissions<lab_permissions>`), although they are not able to access participant data without being explicitly added.
+
+-----------------------------------------
+Study permission definitions
+-----------------------------------------
+
+Here are the specific permissions that govern what a researcher can see or do to study data. You will grant or restrict these permissions to other lab members by giving them roles on your study.
+
+READ_STUDY_DETAILS
+    Can preview the study; can see the study overview page where study researchers, logs, and status are shown; can see the study edit form where the protocol is (but not necessarily submit it!)
+    
+WRITE_STUDY_DETAILS
+    Can make changes to the study using the edit study form - e.g., changing the protocol or age range. Note that if the study is already approved, making changes would automatically reject it; in this case, someone with WRITE_STUDY_DETAILS but not CHANGE_STUDY_STATUS would not be able to make changes.
+    
+CHANGE_STUDY_STATUS
+    Can change the status of the study - starting or stopping data collection, submitting/retracting it for Lookit review, etc.
+    
+MANAGE_STUDY_RESEARCHERS
+    Can add and remove other researchers in this lab to the various study groups, editing their permissions.
+    
+READ_STUDY_RESPONSE_DATA
+    Can see and download actual participant data from this study.
+    
+READ_STUDY_PREVIEW_DATA
+    Can see and download data from researchers who previewed this study.
+    This is a separate permission because previewing the study and then seeing what data is 
+    generated is critical for study design & analysis pipeline planning (e.g. “ok, so I
+    did this, do the videos I expected to make show up? how will our script tell what color the 
+    dax is on trial 4?“). It may also be a means of collecting feedback on the study 
+    design from other researchers (they preview a study, you see their responses).
+    
+CODE_STUDY_CONSENT
+    Can submit rulings about whether consent videos demonstrate valid informed consent, which determines which data is then available for download
+    
+CODE_STUDY_PREVIEW_CONSENT
+    Can submit rulings about whether consent videos from preview data demonstrate valid informed consent. (They don’t really, but you might mock up the entire workflow from start to finish with preview data while planning your analyses and testing out your study.)
+    
+CONTACT_STUDY_PARTICIPANTS
+    Can send email to participants via the Lookit platform. (This still does not grant direct access to participant email addresses.)
+    
+EDIT_STUDY_FEEDBACK
+    Can create and edit feedback associated with participant responses, which is displayed to participants on the study history page.
+    
+CHANGE_STUDY_LAB
+    Can change which lab this study is associated with. (Researchers not affiliated with the new lab are removed from the study upon changing.)
+    
+DELETE_ALL_PREVIEW_DATA
+    Can use a button on the all responses page to delete existing preview data (generally useful in the process of developing a new study and testing it out repeatedly).
+

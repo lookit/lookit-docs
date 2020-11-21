@@ -54,17 +54,16 @@ challenges to build resources for the community.
 The existence of the Working Groups has many advantages, including:
 
 - Formally recognizing the work that many people volunteer to do in the
-background, that might otherwise be invisible 
-- Making sure we have a
-wide range of voices involved in generating ideas and making decisions
-about our shared platform, beyond just the small number of people on the
-Core Team 
+  background, that might otherwise be invisible 
+- Making sure we have a wide range of voices involved in generating ideas and making decisions
+  about our shared platform, beyond just the small number of people on the 
+  Core Team 
 - Providing a way for people to opt into the discussions they
-most want to be a part of so that (e.g.,) if you want to be involved
-with decisions about recruitment strategies you can be part of a group
-that does so, rather than decisions being made at unpredictable times
-and only by those who (e.g.,) happen to be paying attention to a general
-email listserv at that time.
+  most want to be a part of so that (e.g.,) if you want to be involved
+  with decisions about recruitment strategies you can be part of a group
+  that does so, rather than decisions being made at unpredictable times
+  and only by those who (e.g.,) happen to be paying attention to a general
+  email listserv at that time.
 
 Anyone involved with a current study on Lookit, or who is developing
 one, is very welcome to join a Working Group! We also have an

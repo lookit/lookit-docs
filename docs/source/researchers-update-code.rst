@@ -38,7 +38,7 @@ Here's how to update the code used:
 
 3. We'll focus here on just updating the version of the central Lookit code you're using. You can also edit the ``Experiment runner code URL`` to use a different repository entirely, like your own fork. The steps are the same regardless of which repo you're using, but pointing to your own code is more advanced. 
 
-   **Option 1: latest versoin**: You can delete the value in ``Experiment runner version (commit SHA)`` and leave it blank to use the default value, which is the most recent version of the Lookit frameplayer code.
+   **Option 1: latest version**: You can delete the value in ``Experiment runner version (commit SHA)`` and leave it blank to use the default value, which is the most recent version of the Lookit frameplayer code.
 
    .. image:: _static/img/update_code/blank_sha.png
        :alt: Blank sha value to use default

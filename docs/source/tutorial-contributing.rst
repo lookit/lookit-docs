@@ -2,11 +2,11 @@
 2. Contributing to the codebase
 ##################################
 
-Lookit is an open-source project, meaning that the code is freely available and anyone can contribute. This includes the actual Lookit platform, the components used in studies, and the documentation. Community contributions and input are critical to the project!
+Lookit is an open-source project, meaning that the code is freely available and anyone can contribute. This includes the actual Lookit platform, the components used in studies, AND the documentation you're reading now. Community contributions and input are critical to the project!
 
 In this section, you'll make your first "Pull request" (PR) to propose a change to the documentation [#]_. Your change will just be to add yourself to a list of tutorial participants. This way, you'll be comfortable making substantive changes whenever you're ready!
 
-Later on in the tutorial, if you come across something confusing or you have an idea to improve the instructions or exercises, you can follow these same instructions to make the fix yourself - or request that Lookit staff address it.
+Later on in the tutorial, if you come across something confusing or you have an idea to improve the instructions or exercises, you can follow these same instructions to fix it. Although we recognize that most Lookit users will not be ready to contribute to the code that makes Lookit run, editing the documentation is something everyone can do! We need your help to keep it up-to-date and constantly improving!
 
 .. _First PR:
 
@@ -16,12 +16,12 @@ All of the code that makes Lookit run is stored on GitHub, which makes it easy t
 
 Don't worry about making a mistake and somehow messing up the documentation - you can't directly edit the "official" version of the files! There is always a review process before your changes are merged in. 
 
-1. In a separate tab, go to https://github.com/lookit/lookit-docs and click "Fork" in the top right corner. (You'll need to make an account on GitHub if you don't have one already.)
+1. In a separate tab, go to https://github.com/lookit/lookit-docs and click "Fork" in the top right corner. You'll need to make an account on GitHub if you don't have one already. You only need to do this once - for future changes you can skip this step.
 
    .. image:: _static/img/tutorial/first_pr_fork.png
       :alt: Fork button on GitHub
     
-2. From the page you are reading right now (or in the future, in the docs that you want to edit -- *not* from GitHub!), scroll up and click the "Edit on GitHub" button at the top right. For this first PR, you'll be editing the page you're reading right now (https://lookit.readthedocs.io/en/develop/tutorial-contributing.html)!
+2. From the page you are reading right now (or in the future, from whatever docs page you want to edit -- *not* from GitHub!), scroll up and click the "Edit on GitHub" button at the top right. For this first PR, you'll be editing the page you're reading right now (https://lookit.readthedocs.io/en/develop/tutorial-contributing.html)!
 
    .. image:: _static/img/tutorial/edit_on_github_button.png
       :alt: Edit on GitHub button at the top of this page
@@ -31,7 +31,7 @@ Don't worry about making a mistake and somehow messing up the documentation - yo
    .. image:: _static/img/tutorial/github_edit_button.png
       :alt: Edit button on GitHub
 
-   You'll see a message that submitting a change will write it to a new branch in your fork. 
+   You may see a message that submitting a change will write it to a new branch in your fork. That's ok!
  
    .. image:: _static/img/tutorial/new_branch_message.png
       :alt: New branch message on GitHub
@@ -213,7 +213,7 @@ If so, comment on it or add a thumbs-up reaction so Lookit staff know there's mo
 .. image:: _static/img/tutorial/new_issue.png
     :alt: Create new issue on GitHub
     
-You may need to select an issue type. Choose the type that's closest to what you want to describe - probably "bug report" or "feature request":
+You will need to select an issue type. Choose the type that's closest to what you want to describe - probably "bug report" or "feature request":
     
 .. image:: _static/img/tutorial/issue_types.png
     :alt: Select issue type on GitHub

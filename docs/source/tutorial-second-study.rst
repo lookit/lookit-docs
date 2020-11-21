@@ -8,6 +8,10 @@ In this section, you'll build an example infant study "from the ground up," addi
 
 There's a fair amount of copying, pasting, and looking at the result in this section. Please bear with us - once you complete the tutorial, you'll be ready to set up your own study!
 
+.. admonition:: Piece-by-piece vs. starting from a template
+
+   When you go to create your actual studies, you will likely prefer to start by cloning one of the "templates" visible to you, rather than by building the study up piece-by-piece. But here we'll go through piece-by-piece so you have a solid understanding of how to add components as needed.
+
 Introduction: intermodal matching study
 ---------------------------------------
 
@@ -122,7 +126,7 @@ That defines a frame that's now available for us to use. In order to actually us
     
 .. admonition:: The key for your frame can be whatever you want
 
-   There's nothing magical about the "video-config" key given to this frame - you can change it to whatever you want, as long as they key in ``frames`` matches what you call it in ``sequence``. 
+   There's nothing magical about the "video-config" key given to this frame - you can change it to whatever you want, as long as the key in ``frames`` matches what you call it in ``sequence``. Just don't put an underscore in it (see the :ref:`experiment runner documentation <elf:protocol configuration>`).
    
 Close the editor, save your protocol, and preview your study. Make sure to click "build experimenter runner" if you have not already done so; you will be emailed when it is built and then you can preview your study. You should see the setup frame, looking just like the screenshot in the docs.
 
@@ -196,7 +200,7 @@ Save your protocol and go ahead and preview your study. You should see a simple 
    "blocks": [
         {
             "emph": true,
-            "text": "Important: your child does not need to be with you until the videos begin. First, let's go over what will happen!",
+            "text": "Your child does not need to be with you until the videos begin. First, let's go over what will happen!",
             "title": "Overview of the 'Look and Listen' study"
         },
         {

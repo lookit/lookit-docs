@@ -99,7 +99,7 @@ The first section:
 does several things: 
 
 - imports the ``ExpFrameBaseComponent``: this is
-the superclass that all ‘frames’ must extend 
+  the superclass that all ‘frames’ must extend 
 - imports the ``layout``: this tells Ember what template to use 
 - extends ``ExpFrameBaseComponent`` and specifies ``layout: layout``
 
@@ -154,15 +154,15 @@ that should be required to be defined by the user of the frame.
 The 'meta' field is composed of: 
 
 - name (optional): A human readable name for this
-‘frame’ 
+  ‘frame’ 
 - description (optional): A human readable description for this
-‘frame’. 
+  ‘frame’. 
 - data: JSON Schema defining what data this ‘frame’ outputs. Properties
-defined in this section represent properties of the component that will
-get serialized and sent to the server as part of the payload for this
-experiment. You can get these values by binding a value to an input box,
-for example, or you can define a custom computed property by that name
-to have more control over how a value is sent to the server.
+  defined in this section represent properties of the component that will
+  get serialized and sent to the server as part of the payload for this
+  experiment. You can get these values by binding a value to an input box,
+  for example, or you can define a custom computed property by that name
+  to have more control over how a value is sent to the server.
 
 If you want to save the value of a configuration variables, you can
 reference it in both parameters *and* data. For example, this can be

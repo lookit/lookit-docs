@@ -77,14 +77,14 @@ priority, especially as we’re largely funded by the US government.
 Ideas/comments on how it’d ideally be set up are very welcome
 `here <https://github.com/lookit/lookit-api/issues/181>`__.
 
-Where is the data stored?
--------------------------
+Where are the data stored?
+--------------------------
 
 A1) In the USA.
 
-A2) Video data is stored primarily on Amazon S3. Lookit (including
-databases with participant and session data) is hosted on Google Cloud
-Platform.
+A2) Videos are stored primarily on Amazon S3. Lookit (including
+    databases with participant and session data) is hosted on Google Cloud
+    Platform.
 
 How is participant data secured?
 --------------------------------

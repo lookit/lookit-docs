@@ -18,13 +18,13 @@ an invite.
 Slack is our primary means of communication about new features, best
 practices, etc. It’s also where you should go with any questions or
 technical support requests. There are a lot of participating researchers
-(over 350 at last count!) who may be able to help!
+(over 400 at last count!) who may be able to help!
 
 B. Legal/logistical steps
 -------------------------
 
 You can go ahead and create an account on Lookit to start preparing your
-studies right away, but to actually run studies on Lookit, your lab will
+studies right away, but to actually collect data from families on Lookit, your lab will
 need to review the Terms of Use and sign a one-time institutional
 agreement with MIT. Any studies you run will need to be approved by your
 own IRB, just like studies you run in person. For more detail, see :ref:`IRB and legal information <legal>`. Note that you only need **one agreement** per PI (not separate
@@ -37,6 +37,7 @@ agreements for each student).
 
 3. Edit your IRB protocol to include online testing, or submit a new
    protocol for your proposed online study.
+   
 
 C. Familiarize yourself with the Lookit Working Groups
 ------------------------------------------------------
@@ -54,44 +55,32 @@ At least one person from your lab (the more the merrier!) should fill out the `s
 D. Create a lab on Lookit
 -------------------------
 
-At any point you can go to https://lookit.mit.edu/exp/labs to create
-your own “lab” on Lookit. You start out as part of a “Sandbox” lab where
-you can start developing studies, but to actually submit a study to run
-on Lookit it’ll need to be associated with a real lab that’s approved to
-test.
-
-After creating your lab, you can go ahead and put studies in it and use
-it to manage access to your group’s studies. However, you won’t be able
+You can go to https://lookit.mit.edu/exp/labs to create
+your own “lab” on Lookit. After creating your lab, you can go ahead and put studies in it and use it to manage access to your group’s studies. However, you won’t be able
 to submit these studies to run on Lookit until the lab is approved to
 test. This happens once
 
 (a) you have a signed institutional agreement for the lab PI, and
-(b) someone in the group has taken the terms of use quiz
+(b) someone in the group has taken the terms of use quiz   
 
 E. Study setup steps
 --------------------
 
-1. **Complete the** :ref:`Lookit tutorial <tutorial>`
-   to get familiar with how the platform works and how to implement a
-   study on it.
+1. Complete the :ref:`Lookit tutorial <tutorial>` to get familiar with how the platform 
+   works and how to implement a study on it.
 
-2. Figure out the details of how your study will work - how you want to
-   lay things out on the screen, counterbalancing, practice trials, etc.
-   (This step has, in our experience, taken longer than people expect
-   with a study they feel is “almost ready to go.”)
-
-3. Draft the parent-facing instructions, record any audio and video
-   needed (e.g., verbal instructions, voiceover/questions, demos),
-   collect stimuli images/video/audio. See :ref:`advice here <stim_prep>`.
+2. Figure out the details of how your study will work - counterbalancing, 
+   practice trials, etc. Draft the parent-facing instructions, record any audio and video
+   needed (e.g., verbal instructions, voiceover/questions, demos), and
+   collect your stimuli. See :ref:`advice here <stim_prep>`.
 
 4. Set up your study on Lookit and get it working just how you want it
    to! You’ll need to `set each of these
    fields <https://lookit.readthedocs.io/en/develop/researchers-set-study-fields.html>`__
    and write and test your study protocol.
 
-5. Gather feedback on your study from other Lookit researchers and/or
-   friends with kids: e.g., are the instructions clear? does the
-   debriefing info make sense? Edit and iterate.
+5. Gather :ref:`peer feedback <peer review>` on your study to improve it; edit and 
+   iterate.
 
 6. Submit your study for :ref:`internal review <study_approval>`.
    This process, like peer review at a journal, can take a bit of time
@@ -112,3 +101,5 @@ E. Study setup steps
    for developmental research. <https://lookit.mit.edu>`__ Families can
    participate in our studies on their home computers, any time they
    want!”
+
+

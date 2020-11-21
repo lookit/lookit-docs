@@ -16,7 +16,6 @@ Lookit can be used to collect looking measures from preverbal children as well a
 Families may take part in studies from multiple labs over time. Having one central platform allows families to access many interesting studies for all the children in their family in one place, and researchers benefit from economies of scale in software development and recruitment. 
 
 
-
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -99,12 +98,14 @@ Families may take part in studies from multiple labs over time. Having one centr
    :caption: Contributing
    
    contribute-edit-docs
-   
    contribute-github-issue
-   
+   contribute-architecture-overview
    frame-dev
+   contributor-guidelines
+   install-django-project
+   install-ember-app
+   implementation-django-notes
    
-   development
    
    
 

@@ -42,6 +42,8 @@ Step 1: study preparation and self-review
 
 First, get your study working smoothly, the way you want it to, and make any revisions from within-lab feedback. Please work through the :ref:`self-review checklist <self_review_checklist>` before requesting peer review!
 
+.. _peer review:
+
 Step 2: peer review
 =====================
 
