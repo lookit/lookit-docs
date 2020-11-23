@@ -184,6 +184,7 @@ List of tutorial participants
 - Zoya Egiazaryan (University of California, Los Angeles)
 - Sara Marshall (McMaster University)
 - Sho Tsuji (The University of Tokyo)
+- Catherine Bianco (Columbia University)
 
 .. _Github issues overview:
 
