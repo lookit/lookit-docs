@@ -60,15 +60,13 @@ but then you'll be able to do almost anything you can imagine with audio and vid
 File formats
 ~~~~~~~~~~~~
 
-To have your media play properly across various web browsers, you will
-generally need to provide multiple file formats. For a comprehensive
-overview of this topic, see
-`MDN <https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats>`__.
+To have your media play properly in a web browser, you need to choose file format(s) that
+are supported by that browser. Note that AVI and MOV files generally cannot be played in a web browser without installing special plugins.
 
-MIT’s standard practice is to provide mp3 and ogg formats for audio, and
-webm and mp4 (H.264 video codec + AAC audio codec) for video, to cover
-modern browsers. The easiest way to create the appropriate files,
-especially if you have a lot to convert, is to use ffmpeg.
+We used to recommend creating both mp4 (H.264 video codec + AAC audio codec) and webm versions of video, and mp3 and ogg versions of audio. Now mp4 and mp3 files are supported by almost all modern browsers (and we're only officially trying to support Firefox and Chrome), so you should be fine making just mp4 for video and mp3 for audio. You can look up browser support for specific formats at `CanIUse <https://caniuse.com/?search=mp4>`__; see `MDN <https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats>`__ for a comprehensive overview of this topic. 
+
+If you don't already have your files in an appropriate format, the easiest way to convert 
+them (especially if you have a lot to convert) is to use the command line tool ffmpeg. 
 
 Here’s an example command to convert a video file INPUTPATH to mp4 with
 reasonable quality/filesize and using H.264 & AAC codecs:
