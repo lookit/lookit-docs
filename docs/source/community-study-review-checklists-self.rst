@@ -169,10 +169,17 @@ Initial setup
    
 Instructions
 -----------------
+-  If children need to be visible or arranged a particular way, do you give the parent a chance 
+   to look at the webcam setup right before the study starts?
+-  If parents are facing away or have their eyes closed, is it clear when they need to do 
+   that and when they can stop? Are there any points where it might seem like there's a 
+   problem with the study if they can't see what's going on?
+-  Are the directions friendly? (i.e. don’t want to sound demanding/condescending)
 -  Do things “flow”? Are there abrupt transitions?
 -  Are the instructions clear and straightforward (to the point you
-   could read them while also supervising/holding a few children)?
--  Are they friendly? (i.e. don’t want to sound demanding/condescending)
+   could read them while also supervising/holding a few children)? Is there ever an 
+   overwhelming amount of info on the screen at once? Want
+   to ensure they’re putting as few demands on the parent as possible.
 
 
 Test trials
