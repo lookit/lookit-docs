@@ -185,6 +185,7 @@ List of tutorial participants
 - Sara Marshall (McMaster University)
 - Sho Tsuji (The University of Tokyo)
 - Catherine Bianco (Columbia University)
+- Simran Mahajan (New York University)
 
 .. _Github issues overview:
 
