@@ -185,7 +185,8 @@ List of tutorial participants
 - Sara Marshall (McMaster University)
 - Sho Tsuji (The University of Tokyo)
 - Catherine Bianco (Columbia University)
-- Valeria Hernández (New York University) 
+- Valeria Hernández (New York University)
+- Amanda Maniscalco (New York University)
 
 .. _Github issues overview:
 
