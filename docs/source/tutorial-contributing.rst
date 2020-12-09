@@ -187,6 +187,7 @@ List of tutorial participants
 - Catherine Bianco (Columbia University)
 - Valeria Hernández (New York University)
 - Amanda Maniscalco (New York University)
+- Alice Wang (Haskins Laboratories)
 
 .. _Github issues overview:
 
