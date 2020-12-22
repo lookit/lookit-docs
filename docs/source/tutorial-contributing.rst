@@ -188,6 +188,7 @@ List of tutorial participants
 - Valeria Hernández (New York University)
 - Amanda Maniscalco (New York University)
 - Alice Wang (Haskins Laboratories)
+- Andrea Stein (University of Wisconsin-Madison)
 
 .. _Github issues overview:
 
