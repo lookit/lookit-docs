@@ -189,6 +189,7 @@ List of tutorial participants
 - Amanda Maniscalco (New York University)
 - Alice Wang (Haskins Laboratories)
 - Andrea Stein (University of Wisconsin-Madison)
+- Haykaz Mangardich (University of British Columbia)
 
 .. _Github issues overview:
 
