@@ -190,6 +190,7 @@ List of tutorial participants
 - Alice Wang (Haskins Laboratories)
 - Andrea Stein (University of Wisconsin-Madison)
 - Haykaz Mangardich (University of British Columbia)
+- Justine Wang (University of California, San Diego)
 
 .. _Github issues overview:
 
