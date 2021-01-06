@@ -26,16 +26,17 @@ General language usage
 Eligibility criteria
 ==========================
 
-In general, keep eligibility criteria as broad as possible for a positive family experience. The "hard" eligibility criteria you list on Lookit will include your age range and any characteristics that are critical to the study design or that are necessary for the study to make any sense to the child/family. For instance, if you have a question specifically about bilingual vs. trilingual kids, go ahead and require n_languages >= 2. But if you just routinely exclude premature babies or kids with trisomies from analysis, you can do that after the fact if needed since the study experience won't be 
+In general, keep eligibility criteria as broad as possible for a positive family experience. The "hard" eligibility criteria you list on Lookit will include your age range and any characteristics that are critical to the study design or that are necessary for the study to make any sense to the child/family. For instance, if you have a question specifically about bilingual vs. trilingual kids, go ahead and require n_languages >= 2. But if you just routinely exclude premature babies or kids with trisomies from analysis, you can do that after the fact if needed since the study experience won't be affected.
 
 Your eligibility criteria description should "translate" the minimum / maximum ages and any eligibility criteria expression into regular language, starting with "For..." - for example, "for 3-year-olds" or "for 8- through 12-month-olds who are exposed to least two languages at home." You can also include hard criteria that are not possible to check for programmatically, for instance if your IRB requires that participants live in a certain country.
 
 Specific guidance:
 
-1. If you need kids to have typical hearing to participate, and that's not otherwise obvious from the design, list that as "with typical hearing" or "without hearing loss" rather than "normal hearing." Only do this if hearing is critical to the design and/or to family experience. For instance, you would probably require typical hearing for a study about audiovisual matching, but if you just use recorded audio questions, you could let parents interpret text for the child if needed.
+1. If recorded audio in a particular language is a critical part of your study, note that the study is for speakers of that language. (You don't need to separately exclude deaf children!)
 
-2. Don't require babies to be born at full term in your hard criteria unless the age range extends under 6 months,  your study is specifically about effects of prematurity, or the study requires unusual time and effort from the family. Otherwise MANY studies exclude preemies and it's frustrating for parents. Plus this pushes all of us towards putting some upper bounds on how much of a difference prematurity actually makes. Some enterprising student should ask everyone for data excluded due to prematurity eventually...
+2. If you need kids to have typical hearing to participate, and that's not otherwise obvious from the design or a language requirement, list that as "with typical hearing" or "without hearing loss" rather than "normal hearing." Only do this if hearing is critical to the design and/or to family experience.
 
+3. Don't require babies to be born at full term in your hard criteria unless the age range extends under 6 months,  your study is specifically about effects of prematurity, or the study requires unusual time and effort from the family. Otherwise MANY studies exclude preemies and it's frustrating for parents. Plus this pushes all of us towards putting some upper bounds on how much of a difference prematurity actually makes. Some enterprising student should ask everyone for data excluded due to prematurity eventually...
 
 ==========================
 Study purpose
