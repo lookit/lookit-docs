@@ -100,7 +100,7 @@ Providing this expression allows you to specify more detailed eligibility criter
 
 Note that while a warning is displayed, ineligible participants are not actually prevented from participating; this is deliberate, to remove any motivation for a curious parent to fudge the details to see what the study is like.
 
-You may want to use the criteria expression to specify additional eligibility criteria beyond an age range - for instance, if your study is for a special population like kids with ASD or bilingual kids. You do **not** need to specify your age range here in general; participant eligibility checks will require the child meet the `minimum and maximum age cutoffs`_ AND these critera.
+You may want to use the criteria expression to specify additional eligibility criteria beyond an age range - for instance, if your study is for a special population like kids with ASD or bilingual kids. In general, do **not** specify your age range here; participant eligibility checks will require the child meet the `minimum and maximum age cutoffs`_ AND these critera.
 
 Every child in the Lookit database has a number of fields associated with it, ranging from gestational age to languages spoken in the home, which can be used in determining eligibility. In the study edit and create views, you can formulate your criteria expression as a boolean expression with embedded relational expressions, using a domain specific query language. 
 
@@ -292,6 +292,8 @@ Minimum and maximum age cutoffs
 Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days. Participants under the age range see a warning indicating that their data may not be used, and suggesting that they wait until they're in the age range. Participants over the age range just see a warning indicating that their data may not be used. Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age. 
 
 Note that these ages do **not** in all cases correspond exactly to the child's age in 'calendar months' or 'calendar years' (e.g., 'one month' if that month is February). In general, you want to avoid a situation where the parent thinks their child should be eligible based on the participant eligibility string (e.g., "my child is one month old, she was born February 3rd and it's March 4th!") but sees a warning when trying to participate. You can do this by narrowing the eligibility criteria in the freeform string and/or by expanding them in the cutoffs here. If one has to align better with your actual inclusion criteria, in general you want that to be the minimum/maximum age cutoffs.
+
+Please see `this spreadsheet <https://docs.google.com/spreadsheets/d/1rbGrbyYZpVsCOUXVPGyk2Yobn-zanllbCtuyw2i3vbk/edit?usp=sharing>`__ for a table translating "calendar ages" (how a parent would describe their child's age) to days.
   
 ----------------------------------------
 Example: study for 5- and 6-year-olds
