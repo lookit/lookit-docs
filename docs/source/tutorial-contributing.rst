@@ -191,6 +191,7 @@ List of tutorial participants
 - Andrea Stein (University of Wisconsin-Madison)
 - Haykaz Mangardich (University of British Columbia)
 - Justine Wang (University of California, San Diego)
+- Kayla Good (Stanford University)
 
 .. _Github issues overview:
 
