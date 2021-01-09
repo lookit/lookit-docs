@@ -1,36 +1,67 @@
-
-
 Day-to-day study operation
 ==============================
 
+Starting and stopping data collection and advertising
+------------------------------------------------------
 
-Starting and stopping data collection
-----------------------------------------
+At any time, you can change either whether your study is active and whether it is discoverable.
+
+Active vs. paused
+~~~~~~~~~~~~~~~~~~
 
 You can start and stop data collection independently and whenever you
-want. On your study detail page, go to “change state” -> “Start” or
-“Pause.”
+want. On your study detail page, go to “change state” -> “Start” or “Pause.”
+
+When your study is active, participants can access it at the direct link shown on your study page. If the study is also discoverable, it will be listed on the Lookit "studies" page and advertised by email to eligible families.
+
+When your study is paused, participants can't access it even if they have the direct link. If participants follow a direct link to your study and it is paused, they will see a message `like this <https://lookit.mit.edu/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
+
+Discoverable vs. non-discoverable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can also independently switch your study between discoverable
-(listed at lookit.mit.edu/studies) and non-discoverable (not listed at
-lookit.mit.edu/studies, but accessible at the direct link). For
-instance, you may want to start off by making it non-discoverable to do
-some piloting with families in the lab.
 
-If participants follow a direct link to your study and it is paused,
-they will see a message `like
-this <https://lookit.mit.edu/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
+When your study is **discoverable** and active, it is:
+
+- Listed at lookit.mit.edu/studies
+- Advertised to eligible families via announcement emails that include a direct link to the study, sent each day at 4am
+- Accessible at the direct link
+
+When your study is **non-discoverable** and active, it is:
+
+- Not listed at lookit.mit.edu/studies
+- Not advertised by announcement emails
+- Still accessible at the direct link!
+
+You would make your study non-discoverable if you wanted to recruit your own specific participants - e.g., only people who previously participated in a study in your lab, or families in a database for research about a rare disorder.
+
+We also recommend making studies non-discoverable to do some initial piloting - once your study is approved, you can make it active but non-discoverable, and recruit a few participants yourself to try it out. (This is also a good way to get a feel for your recruitment options and how effective they are!)
+
+Announcement emails
+~~~~~~~~~~~~~~~~~~~~
+
+Announcement emails are sent out to families with eligible children to let them know about new studies on Lookit:
+
+- Emails are only sent about studies that are **discoverable** and **active**.
+- Emails are only sent to families whose email preference specifies that they want to hear about new studies.
+- Up to 50 families with at least one eligible child are notified about each study each day. Eligibility is determined each day, so depending on your eligibility criteria you will have a day to a few weeks of sending out 50 emails/day, then a trickle of kids aging in or registering.
+- Families are only notified about a study one time per child. (Emails are bundled together if they have multiple eligible children - "There's a new study for John and Jane!", but they might get a second email if another child ages in.)
+- Emails are currently sent at 4am Eastern Time.
+
+The limit of 50 is currently hard-coded. If you want to limit how many announcement emails are sent further, you can send out just one day of announcements at a time by making your study discoverable overnight, then making it non-discoverable again. Families who got a direct link in an announcement email will be able to participate in your study, but no more announcements will be sent unless you make the study discoverable again.
 
 Making changes to your study
 ----------------------------------------
 
-If you make other changes to your study - updating the fields in the
-study details, the age range, the code used, etc. - your study will be
+If you make changes to your study - updating the fields in the
+study details, the experiment runner version, etc. - your study will be
 automatically “rejected” and will require review by Lookit staff again
-before you can make it active. This is quick but does require manual
-action on our part. (Permissions are designed for somewhat larger-scale
-use rather than a small number of trusted collaborators.) Feel free to
-contact us ahead of time to coordinate if you need immediate turnaround.
+before you can make it active. This is quick but does still require manual
+action on our part. In general these are reviewed the same business day as submitted, often within
+an hour, but this is subject to whether Kim is working / in a meeting / etc. Feel free to
+contact us ahead of time to coordinate a time if you need immediate turnaround.
+
+There are a few exceptions to changes triggering review, including changes to the age range and formatting of the study protocol configuration, which are listed when you save changes to a study.
 
 Monitoring data as it comes in
 ----------------------------------------
@@ -40,6 +71,12 @@ at least twice a week to make sure you become aware of any issues
 participants are having in a timely manner. (E.g., you want to know if
 people are confused by your directions, if there’s any weird bug with a
 new version of Firefox, etc.!)
+
+Missing consent videos
+-------------------------
+
+If you come across a record that's missing a consent video, please (a) try refreshing the page to make sure it doesn't show up and then (b) notify Lookit staff, including the response UUID. If you're using a version of the experiment runner prior to 2.2.2 / 1.4.1 (see `releases <https://github.com/lookit/ember-lookit-frameplayer/releases>`) then this is probably an instance of `this bug <https://github.com/lookit/lookit-api/issues/598>`__. We can
+fix particular instances for you but recommend updating following the instructions in `this Slack post <https://lookit-mit.slack.com/archives/CDV2ULHC5/p1608305924056900>`__.
 
 .. _compensation:
 
@@ -70,7 +107,7 @@ participate and be compensated, and to require that the child be, say,
 in the age range for the study in order to participate. Basically, stuff
 the parent can know before they get started is fair game. (But be
 careful and err on the side of payment if there is any discrepancy
-between your listed age range - e.g. “for three-year-olds” - and the
+between your listed age range - e.g. “for three-year-olds” - and the
 min/max used for automatic warnings; see `the
 docs <https://lookit.readthedocs.io/en/develop/researchers-using-platform.html#creating-a-study>`__.)
 If a parent participates with a child well outside the age range, you

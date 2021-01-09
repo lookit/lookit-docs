@@ -4,7 +4,7 @@
 Style guide
 ##################################
 
-We try to conform to some common stylistic and writing guidelines to provide a familiar and friendly experience across Lookit studies.
+We try to conform to some common stylistic, writing, and study design guidelines to provide a familiar and friendly experience across Lookit studies.
 
 ========================
 General language usage
@@ -21,6 +21,14 @@ General language usage
 2. Use singular "they" rather than "he/she" or "(s)he" or "the child." (E.g., say "Hold your child so they can see the screen" rather than "Hold your child so he/she can see the screen.") It's common enough now that it's more readable, plus it encompasses families who use pronouns other than he/she. 
 
 3. A girl is a female child. If you're talking about a female grown-up--e.g., a video is going to show your RA demonstrating a toy--that's a woman. (You can consider words like "person," "somebody", or "friend" if that sounds awkward!)
+
+4. When asking questions about the child's family or caregivers, be explicit about who you mean. It may feel more "inclusive" simply to say "family," but for families dealing with multiple definitions it's confusing to try to figure out what you really care about - especially since research is weird and who knows how something that feels irrelevant might not be!
+
+===================
+Music selections
+===================
+
+When choosing music or nursery rhymes for stimuli or background music, please confirm that it's something that you would be comfortable sharing in a preschool classroom! In particular, a lot of US "children's songs" turn out to have disturbingly racist histories. Even if the current lyrics are inoffensive, please don't use music that is known for past use in minstrel shows, for instance, or where there are alternate historical lyrics that are offensive. Examples of songs **not** to use include "Oh Susanna," "Camptown Races," and "I've Been Working on the Railroad."
 
 ==========================
 Eligibility criteria
