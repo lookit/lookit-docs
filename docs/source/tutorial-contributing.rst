@@ -192,6 +192,7 @@ List of tutorial participants
 - Haykaz Mangardich (University of British Columbia)
 - Justine Wang (University of California, San Diego)
 - Kayla Good (Stanford University)
+- Dimitri Prica (University of Barcelona)
 
 .. _Github issues overview:
 
