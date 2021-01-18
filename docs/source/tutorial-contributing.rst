@@ -193,6 +193,7 @@ List of tutorial participants
 - Justine Wang (University of California, San Diego)
 - Kayla Good (Stanford University)
 - Dimitri Prica (University of Barcelona)
+- Victor Manea (University of California, San Diego)
 
 .. _Github issues overview:
 
