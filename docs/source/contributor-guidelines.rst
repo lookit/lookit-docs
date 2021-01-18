@@ -120,16 +120,33 @@ Creating a release (ember-lookit-frameplayer)
 
 The ember-lookit-frameplayer repo is semantically versioned. 
 
-The release process is relatively manual for now because the expected workflow isn't finalized (it's currently almost entirely a one-person project). 
+The release process is relatively manual for now because the expected workflow isn't finalized (it's currently almost entirely a one-person project).
 
 Work should be completed and tested on a feature branch, then merged into develop.
 
-1. When a set of features is ready to release, create a release branch off of develop. 
+To create a new major or minor release:
+---------------------------------------
 
-2. Change version number in package.json in the release branch
+1. When a set of features is ready to release, create a release branch off of develop named ``release/vX.Y.Z`` 
+
+2. Change version number in package.json in the release branch.
 
 3. Turn on readthedocs builds for the release branch.
 
-4. Make PRs to master and develop, and merge the release branch. (Do squash merge for master to keep the commit history more manageable.)
+4. Make PRs from the release branch to master and develop, and merge commit.
 
-5. Create a new release on GitHub, again exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
+5. Create a new release on GitHub, exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
+
+To create a new bugfix release for the latest version:
+------------------------------------------------------
+
+Follow the steps above except don't turn on readthedocs builds. 
+
+To create a new bugfix release for an older version:
+----------------------------------------------------
+
+1. Create a new release branch off of the target release branch (e.g., ``release/v3.1.5``). Increment the version in the new branch name (e.g., ``release/v3.1.6``). 
+
+2. Apply appropriate patch and increment version on new bugfix branch.
+
+3. Create a new release on GitHub, exactly matching new version name. Include release notes explaining what has been fixed.

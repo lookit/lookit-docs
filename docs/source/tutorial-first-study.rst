@@ -457,12 +457,15 @@ Return to the study edit page and open up the JSON editor again. Remove that "ne
 
    "video-consent": {
         "kind": "exp-lookit-video-consent",
+        "template": "consent_005",
         "PIName": "Lookit Tutorial Participant",
         "PIContact": "Jane Smith at (123) 456-7890",
         "datause": "We are interested in how your child uses statistical evidence to figure out the cause of an event. A research assistant will watch your video and mark down your child's answer to the question at the end of the story, and as well as other information such as interactions between you and your child during the story.",
+        "include_databrary": true,
+        "risk_statement": "There are no expected risks to participation."
         "payment": "After you finish the study, we will email you a $5 BabyStore gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
         "purpose": "This study is about how children use statistical information to adjust their beliefs about cause and effect.",
-        "procedures": "In this study you child will view a digital 'storybook' about Bunny, who sometimes gets a tummyache. Each day Bunny eats different foods and does different activities, and we hear whether she gets a tummyache. Sometimes, Bunny feels scared because of show-and-tell. We are interested in how the pattern of evidence influences your child's beliefs about what causes Bunny's tummyache. We will ask you (the parent) to avoid discussing why Bunny has a tummyache until the end of the study. There are no anticipated risks associated with participating.",
+        "procedures": "In this study you child will view a digital 'storybook' about Bunny, who sometimes gets a tummyache. Each day Bunny eats different foods and does different activities, and we hear whether she gets a tummyache. Sometimes, Bunny feels scared because of show-and-tell. We are interested in how the pattern of evidence influences your child's beliefs about what causes Bunny's tummyache. We will ask you (the parent) to avoid discussing why Bunny has a tummyache until the end of the study.",
         "institution": "Science University"
     },
     

@@ -108,6 +108,10 @@ html_css_files = [
     'css/lookit.css',
 ]
 
+html_js_files = [
+    'js/links_in_new_tab.js'
+]
+
 
 # -- Options for HTMLHelp output ------------------------------------------
 

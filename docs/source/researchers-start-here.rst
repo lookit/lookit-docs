@@ -5,6 +5,8 @@ Getting started
 
 If you're a researcher interested in using Lookit to run your own developmental studies, here's how you get started!
 
+For a 20-minute overview of how Lookit works, you can also read Jenna Croteau's excellent `Introduction to Lookit  <https://github.com/lookit/research-resources/raw/master/Training/IntroductionToLookit.pdf>`__ document.
+
 .. admonition:: Do I have to do these in order?
 
    No! These steps can all be completed in parallel. Except for joining the Slack workspace, please do that first in case you have questions.

@@ -165,7 +165,13 @@ PIContact
   "<Your Name> at <your email> or <your phone number>"
             
 procedures
-  "For this study, your child will watch short videos (about 20 seconds long). For each video, there will be two faces on the screen that may be speaking nonsense syllables – something like “La mu ba.” The audio of the nonsense syllables matching only one of the two faces will be played. We are curious which face your baby prefers to look at – the one matching the audio or the one that doesn’t match the audio. We ask that you close your eyes or hold your baby over your shoulder during this experiment so that your behavior doesn’t influence where your baby looks. Before each video, you will hear a chime while an image moves on the screen to get your baby’s attention. You may then hear about 20 seconds of the nonsense syllables while the faces appear on the screen. The entire experiment should take less than 5 minutes. You may be asked to fill out a short survey at the end of the experiment. We do not anticipate any risks associated with this study."
+  "For this study, your child will watch short videos (about 20 seconds long). For each video, there will be two faces on the screen that may be speaking nonsense syllables – something like “La mu ba.” The audio of the nonsense syllables matching only one of the two faces will be played. We are curious which face your baby prefers to look at – the one matching the audio or the one that doesn’t match the audio. We ask that you close your eyes or hold your baby over your shoulder during this experiment so that your behavior doesn’t influence where your baby looks. Before each video, you will hear a chime while an image moves on the screen to get your baby’s attention. You may then hear about 20 seconds of the nonsense syllables while the faces appear on the screen. The entire experiment should take less than 5 minutes. You may be asked to fill out a short survey at the end of the experiment."
+  
+risk_statement
+  "We do not expect any risks to participating in this study."
+  
+include_databrary
+  true
 
 template
   "consent_002"
@@ -383,12 +389,10 @@ Copy and paste the following frame to your ``frames``  (removing the comments th
             "requireVideoCount": 1,  <-- PLAY THROUGH THE TEST VIDEO ONE TIME
             "doRecording": true,
 
-            "pauseKey": " ",
-            "pauseKeyDescription": "space",
-            "restartAfterPause": true,
+
+            "frameOffsetAfterPause": 0,
             "pauseAudio": "<INSERT HERE>", <-- INSERT THE NAME (NO EXTENSION) OF AUDIO TO PLAY UPON PAUSING THE STUDY HERE
             "pauseVideo": "<INSERT HERE>", <-- INSERT THE NAME OF THE VIDEO TO SHOW WHILE THE STUDY IS PAUSED HERE
-            "pauseText": "(You'll have a moment to turn around again.)",
             "unpauseAudio": "<INSERT HERE>", <-- INSERT THE NAME OF AUDIO TO PLAY WHEN THE STUDY IS UN-PAUSED
             
             "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
@@ -528,12 +532,9 @@ audio file:
             "requireAudioCount": 1, <-- PLAY THROUGH THE AUDIO ONCE, DON'T WORRY ABOUT VIDEO
             "doRecording": false, <-- WE DON'T REALLY NEED A RECORDING OF THIS
 
-            "pauseKey": " ",
-            "pauseKeyDescription": "space",
-            "restartAfterPause": true,
+            "frameOffsetAfterPause": 0,
             "pauseAudio": "<INSERT HERE>", <-- INSERT THE NAME (NO EXTENSION) OF AUDIO TO PLAY UPON PAUSING THE STUDY HERE
             "pauseVideo": "<INSERT HERE>", <-- INSERT THE NAME OF THE VIDEO TO SHOW WHILE THE STUDY IS PAUSED HERE
-            "pauseText": "(You'll have a moment to turn around again.)",
             "unpauseAudio": "<INSERT HERE>", <-- INSERT THE NAME OF AUDIO TO PLAY WHEN THE STUDY IS UN-PAUSED
             
             "baseDir": "https://www.mit.edu/~kimscott/intermodal/",
@@ -631,12 +632,8 @@ For each of the four test trials, we're going to want to use an exp-lookit-video
         "backgroundColor": "white",
         "autoProceed": true,
         
-        "pauseKey": " ",
-        "pauseKeyDescription": "space",
-        "restartAfterPause": true,
         "pauseAudio": "pause_HO",
         "pauseVideo": "attentiongrabber",
-        "pauseText": "(You'll have a moment to turn around again.)",
         "unpauseAudio": "return_after_pause_HO"
     }
 

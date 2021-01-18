@@ -126,9 +126,49 @@ For convenience, several options are provided for downloading data in CSV (comma
 
 The **response overview** file provides high-level information about each response and the participating child, with one row per response (a "wide" format). Not everything is included here, because there can be a lot of data per response (e.g., events collected each time the participant clicks something). You can download a data dictionary along with the response overview; this file provides information about how to interpret each column of the data file. When you publish your data, it is always a good idea to include a data dictionary, so this gives you a head start!
 
-The **response frame data** file(s) provide all the data that was collected throughout the session. You can choose to download a single data file with ALL the frame data, or a ZIP archive with one file per response - whatever will be easier for you to use! This data is in a "long" format, where there are few columns and each row represents a single piece of information. So each response will be associated with many rows. You can download a data dictionary for the frame data, too! Because the exact types of data collected will vary across studies based on what frames you use, what questions are in your forms, and so on, you will need to fill in some of the data dictionary to explain what the various fields mean. Some of the data dictionary is filled out for you, and there are placeholders for the study-specific explanations you'll need to add.
+The **response frame data** file(s) provide all the data that was collected throughout the session. This is provided as a ZIP archive with one file per response. This data is in a "long" format, where there are few columns and each row represents a single piece of information. So each response will be associated with many rows. You can download a data dictionary for the frame data, too! Because the exact types of data collected will vary across studies based on what frames you use, what questions are in your forms, and so on, you will need to fill in some of the data dictionary to explain what the various fields mean. Some of the data dictionary is filled out for you, and there are placeholders for the study-specific explanations you'll need to add.
 
 The **child data** files provide information about each child associated with at least one study response. There is one row per child, and all of the data from that child's sign-up is available: birthdate, gender, gestational age at birth, languages, conditions, etc. A data dictionary is available. This file is the only one not affected by the selections you make about which potentially-identifying information to include: it will always have names, birthdates, etc. The idea is that if you need that information, you can keep it separate from the response data which you might share more broadly.
+
+Frame IDs
+~~~~~~~~~~~~~~
+
+Each frame in a response is identified by an ID, which you will see in both the video filenames and the data downloads. This is generally based on what you called the frame in your protocol's "sequence." When the study starts, your protocol is parsed to create an ordered list of frames, for instance expanding out any groups and randomizers. The frame IDs you will see in the data (response__sequence.0, response__sequence.1, etc. in the response overview CSV; "sequence" in the JSON; ``frame_id`` in the frame data CSV) start with the index of the frame, starting from 0. For instance, if you started off with frames 
+
+.. code::
+
+    video-config
+    video-consent
+    test-trial
+    exit-survey
+    
+then you would see frame IDs
+
+.. code::
+
+    0-video-config
+    1-video-consent
+    2-test-trial
+    3-exit-survey
+    
+These numbers are preserved if someone skips around in the study (due to e.g. selectNextFrame sending to a different frame than the next one, or skipping to the exit survey). E.g. if the participant skipped to the exit survey right after consent, you might see a sequence
+
+.. code::
+
+    0-video-config
+    1-video-consent
+    3-exit-survey
+    
+If the participant repeats a frame (e.g. by navigating using a "previous" button, selectNextFrame sending them back, or repeating a frame after pausing) then the sequence will show the actual order they saw frames in, with ``-repeat-N`` added after repeated frames as needed. For example, if the participant paused the test trial twice and started from the beginning each time, you would see:
+
+.. code::
+
+    0-video-config
+    1-video-consent
+    2-test-trial
+    2-test-trial-repeat-1
+    2-test-trial-repeat-2
+    3-exit-survey
 
 
 Viewing individual study responses

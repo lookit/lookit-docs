@@ -12,6 +12,8 @@ Learning materials
 
 Here are some slides and videos you may want to check out while getting started or when training other lab members!
 
+[PDF] `Introduction to Lookit: a 20-minute overview (Jenna Croteau) <https://github.com/lookit/research-resources/raw/master/Training/IntroductionToLookit.pdf>`__
+
 [Video] `CBMM Tutorial: Using Lookit to run developmental studies online (Maddie Pelz) <https://cbmm.mit.edu/video/using-lookit-run-developmental-studies-online>`_
 
 [Slides] `Lookit parent perspective (Nicole Cuneo) <https://github.com/lookit/research-resources/raw/master/Training/Lookit%20Parent%20Perspective.pptx>`_

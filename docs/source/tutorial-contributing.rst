@@ -186,6 +186,15 @@ List of tutorial participants
 - Sho Tsuji (The University of Tokyo)
 - Catherine Bianco (Columbia University)
 - Simran Mahajan (New York University)
+- Valeria Hernández (New York University)
+- Amanda Maniscalco (New York University)
+- Alice Wang (Haskins Laboratories)
+- Andrea Stein (University of Wisconsin-Madison)
+- Haykaz Mangardich (University of British Columbia)
+- Justine Wang (University of California, San Diego)
+- Kayla Good (Stanford University)
+- Dimitri Prica (University of Barcelona)
+- Victor Manea (University of California, San Diego)
 
 .. _Github issues overview:
 

@@ -4,7 +4,7 @@
 Style guide
 ##################################
 
-We try to conform to some common stylistic and writing guidelines to provide a familiar and friendly experience across Lookit studies.
+We try to conform to some common stylistic, writing, and study design guidelines to provide a familiar and friendly experience across Lookit studies.
 
 ========================
 General language usage
@@ -21,6 +21,30 @@ General language usage
 2. Use singular "they" rather than "he/she" or "(s)he" or "the child." (E.g., say "Hold your child so they can see the screen" rather than "Hold your child so he/she can see the screen.") It's common enough now that it's more readable, plus it encompasses families who use pronouns other than he/she. 
 
 3. A girl is a female child. If you're talking about a female grown-up--e.g., a video is going to show your RA demonstrating a toy--that's a woman. (You can consider words like "person," "somebody", or "friend" if that sounds awkward!)
+
+4. When asking questions about the child's family or caregivers, be explicit about who you mean. It may feel more "inclusive" simply to say "family," but for families dealing with multiple definitions it's confusing to try to figure out what you really care about - especially since research is weird and who knows how something that feels irrelevant might not be!
+
+===================
+Music selections
+===================
+
+When choosing music or nursery rhymes for stimuli or background music, please confirm that it's something that you would be comfortable sharing in a preschool classroom! In particular, a lot of US "children's songs" turn out to have disturbingly racist histories. Even if the current lyrics are inoffensive, please don't use music that is known for past use in minstrel shows, for instance, or where there are alternate historical lyrics that are offensive. Examples of songs **not** to use include "Oh Susanna," "Camptown Races," and "I've Been Working on the Railroad."
+
+==========================
+Eligibility criteria
+==========================
+
+In general, keep eligibility criteria as broad as possible for a positive family experience. The "hard" eligibility criteria you list on Lookit will include your age range and any characteristics that are critical to the study design or that are necessary for the study to make any sense to the child/family. For instance, if you have a question specifically about bilingual vs. trilingual kids, go ahead and require n_languages >= 2. But if you just routinely exclude premature babies or kids with trisomies from analysis, you can do that after the fact if needed since the study experience won't be affected.
+
+Your eligibility criteria description should "translate" the minimum / maximum ages and any eligibility criteria expression into regular language, starting with "For..." - for example, "for 3-year-olds" or "for 8- through 12-month-olds who are exposed to least two languages at home." You can also include hard criteria that are not possible to check for programmatically, for instance if your IRB requires that participants live in a certain country.
+
+Specific guidance:
+
+1. If recorded audio in a particular language is a critical part of your study, note that the study is for speakers of that language. (You don't need to separately exclude deaf children!)
+
+2. If you need kids to have typical hearing to participate, and that's not otherwise obvious from the design or a language requirement, list that as "with typical hearing" or "without hearing loss" rather than "normal hearing." Only do this if hearing is critical to the design and/or to family experience.
+
+3. Don't require babies to be born at full term in your hard criteria unless the age range extends under 6 months,  your study is specifically about effects of prematurity, or the study requires unusual time and effort from the family. Otherwise MANY studies exclude preemies and it's frustrating for parents. Plus this pushes all of us towards putting some upper bounds on how much of a difference prematurity actually makes. Some enterprising student should ask everyone for data excluded due to prematurity eventually...
 
 ==========================
 Study purpose

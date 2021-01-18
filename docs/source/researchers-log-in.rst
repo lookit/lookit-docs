@@ -105,7 +105,7 @@ If needed, you can disable two-factor authentication on your account (for exampl
    .. image:: _static/img/login/login_researcher_manage_account.png
     :alt: Link to manage account from experimenter
     
-From the account page, you can change your email address or password and enable or disable 2FA. 
+From the account page, you can change your email address or password and enable or disable 2FA. Note that you cannot use the Experimenter section of Lookit without 2FA enabled.
 
    .. image:: _static/img/login/login_2fa_management.png
     :alt: 2FA management on login page
@@ -128,12 +128,10 @@ Most likely you accidentally tried to create a researcher account on Lookit befo
 I can't register as a researcher because I already have a participant account
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You have two options: you can make a researcher account with a different email address, or you can log in to your participant account and change the email address associated with it.
+You have two options:
 
-I lost my phone or can't get my OTP from Google Authenticator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-For security reasons, there isn't a way to disable or reset your two-factor authentication unless you are already logged in using a one-time password. Please contact Lookit staff via Slack or lookit-tech@mit.edu for assistance.
+- make a researcher account with a different email address
+- log in to your participant account and change the email address associated with it
 
 I'm being prompted for a one-time password (OTP) but I don't have that set up
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,6 +143,39 @@ If you are seeing a message like this when trying to access the researcher side 
 
    .. image:: _static/img/login/login_2fa_disabled.png
     :alt: Account management page when 2FA is disabled
+
+
+I'm not receiving any OTP codes on my phone when I try to log in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The OTP codes are not sent to you via push notification or text message - they are just available in your Google Authenticator app. Please see if you have Google Authenticator installed on your phone and if you see a "Lookit-production" entry there (or "Lookit-staging" for the staging server). The OTP code shown there changes every 30 seconds.
+
+We recommend using Google Authenticator to get your OTP codes, but you may have set up via Duo - check your phone for a Lookit entry under either app.
+
+My OTP codes don't work
+~~~~~~~~~~~~~~~~~~~~~~~
+
+First check that:
+
+- The email address shown in your authenticator app matches the email address you're trying to log in as. If you created multiple accounts on Lookit, you may have replaced the OTP entry for one with the other. If that's the case, contact Lookit staff (#tech-support channel on Slack) for assistance.
+- You are entering the code within the 30-second window. If using Duo, some users have found the timing is more finicky and they need to enter the code in the first 10 seconds or so.
+- The OTP entry says "Lookit-production" if you're using lookit.mit.edu, and "Lookit-staging" if you're using lookit-staging.mit.edu.
+- The timing of your Authenticator app is accurate and your phone's time is accurate. If you're using Google Authenticator, you can go to the three dots in the top right corner -> Settings -> Time correction for codes -> Sync now to ensure the timing is correct.
+
+I switched to a new phone and can't get my OTP code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you still have access to your old phone:
+
+1. Log in to your account and enter the OTP code using your old phone.
+2. Click "My account" or go to `https://lookit.mit.edu/account/manage/`__ and scroll down to "Manage Two-Factor Authentication."
+3. Enter your OTP from the old phone to disable 2FA temporarily.
+4. From "Manage Two-Factor Authentication," turn 2FA back on using your new phone.
+
+If you do not have access to your old phone (e.g., it was destroyed and that's why you're switching): Please contact Lookit staff (#tech-support channel on Slack) for assistance. For security reasons, there isn't a way to disable or reset your two-factor authentication unless you are already logged in using a one-time password. Depending on whether you already have access to participant data, we will reset it for you or ask for verification of your identity first.
+
+
+
 
 
 
