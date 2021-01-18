@@ -189,6 +189,7 @@ List of tutorial participants
 - Valeria Hernández (New York University)
 - Amanda Maniscalco (New York University)
 - Alice Wang (Haskins Laboratories)
+- Jamie Kang (University of Virginia)
 - Andrea Stein (University of Wisconsin-Madison)
 - Haykaz Mangardich (University of British Columbia)
 - Justine Wang (University of California, San Diego)
