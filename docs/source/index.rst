@@ -60,9 +60,9 @@ Families may take part in studies from multiple labs over time. Having one centr
     
    researchers-manage-consent
    researchers-experiment-data
-   researchers-use-api
    researchers-day-to-day-study-operation.md
    community-participant-recruitment.md
+   researchers-use-api
    
 
 .. toctree::
