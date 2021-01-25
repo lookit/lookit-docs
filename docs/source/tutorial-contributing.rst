@@ -196,6 +196,7 @@ List of tutorial participants
 - Kayla Good (Stanford University)
 - Dimitri Prica (University of Barcelona)
 - Victor Manea (University of California, San Diego)
+- Candice Rubie (University of Waterloo)
 
 .. _Github issues overview:
 
