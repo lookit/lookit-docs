@@ -197,6 +197,7 @@ List of tutorial participants
 - Dimitri Prica (University of Barcelona)
 - Victor Manea (University of California, San Diego)
 - Candice Rubie (University of Waterloo)
+- Abbey Ward (University of Oregon)
 
 .. _Github issues overview:
 
