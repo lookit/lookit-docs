@@ -198,6 +198,7 @@ List of tutorial participants
 - Victor Manea (University of California, San Diego)
 - Candice Rubie (University of Waterloo)
 - Abbey Ward (University of Oregon)
+- Connor Cook (Wingate University)
 
 .. _Github issues overview:
 
