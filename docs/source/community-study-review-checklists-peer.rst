@@ -15,9 +15,9 @@ Title
   Note: it's fine for a title to be cute but not super informative, as long as it 
   has something to do with the content or purpose of the study and could be used to 
   distinguish it from other similar studies. One of its most
-   important functions is to be memorable enough that parents can say
-   “hey I did the XYZ study and [you should too! / I have a question
-   about when my gift card will arrive / etc.]
+  important functions is to be memorable enough that parents can say
+  “hey I did the XYZ study and [you should too! / I have a question
+  about when my gift card will arrive / etc.]
   
   Feel free to suggest any clever ideas you have!
   
