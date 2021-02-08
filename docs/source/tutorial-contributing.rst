@@ -185,13 +185,20 @@ List of tutorial participants
 - Sara Marshall (McMaster University)
 - Sho Tsuji (The University of Tokyo)
 - Catherine Bianco (Columbia University)
+- Simran Mahajan (New York University)
 - Valeria Hernández (New York University)
 - Amanda Maniscalco (New York University)
 - Alice Wang (Haskins Laboratories)
+- Jamie Kang (University of Virginia)
 - Andrea Stein (University of Wisconsin-Madison)
 - Haykaz Mangardich (University of British Columbia)
 - Justine Wang (University of California, San Diego)
 - Kayla Good (Stanford University)
+- Dimitri Prica (University of Barcelona)
+- Victor Manea (University of California, San Diego)
+- Candice Rubie (University of Waterloo)
+- Abbey Ward (University of Oregon)
+- Connor Cook (Wingate University)
 
 .. _Github issues overview:
 
