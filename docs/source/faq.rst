@@ -55,18 +55,22 @@ you want:
 -  The sitewide registration and demographic forms are currently in
    English only, although setup for translation of these common elements is underway
    via ManyBabies-AtHome! If you're interested in testing in a particular language, 
-   please reach out to their translation group to see if you can contribute.
--  You’ll need to translate the standard Lookit consent form to the
-   language you want to use, get the translation approved by your IRB,
-   and make the translation available to other researchers who might
-   want to use it.
+   please reach out to their translation group to see if you can contribute. This will
+   help other people who want to test in your language, too!
+   
+-  You'll likely need to write a translation file for your language for the components 
+   in the studies - e.g., consent, setup. Once that's available, you can specify a 
+   language for your study and any hard-coded text will be translated. (See :ref:`elf-translations`.)
+   
 -  We haven’t currently set up to flag which language a study is in and
    let participants filter (or get the right version of a study) by
    language. So non-English studies in general will usually to be set up
    as “non-discoverable” - not listed on lookit.mit.edu/studies, just
    accessible by direct link - to avoid confusion.
+   
 -  You will need to handle any tech support for your participants
    directly, or translate for us.
+   
 -  You will still need to get peer feedback from someone outside your
    research group on your study setup - this is especially important as
    we may not be able to tell much about the tone and clarity of your

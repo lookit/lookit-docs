@@ -28,7 +28,9 @@ General language usage
 Music selections
 ===================
 
-When choosing music or nursery rhymes for stimuli or background music, please confirm that it's something that you would be comfortable sharing in a preschool classroom! In particular, a lot of US "children's songs" turn out to have disturbingly racist histories. Even if the current lyrics are inoffensive, please don't use music that is known for past use in minstrel shows, for instance, or where there are alternate historical lyrics that are offensive. Examples of songs **not** to use include "Oh Susanna," "Camptown Races," and "I've Been Working on the Railroad."
+When choosing music or nursery rhymes for stimuli or background music, please confirm that it's something that you would be comfortable sharing in a preschool classroom! In particular, a lot of US "children's songs" turn out to have disturbingly racist histories. Even if the current lyrics are inoffensive, please don't use music that is known for past use in minstrel shows, for instance, or where there are alternate historical lyrics that are offensive. Examples of songs **not** to use include "Oh Susanna," "Camptown Races," and "I've Been Working on the Railroad." `Here's a good introduction <https://gen.medium.com/dinah-put-down-your-horn-154b8d8db12a>`__ to this topic if you're interested in learning more!
+
+.. _style_guide_eligibility:
 
 ==========================
 Eligibility criteria

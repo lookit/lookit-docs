@@ -286,6 +286,8 @@ Language codes
     |yue |Yue                   |
     +----+----------------------+
 
+.. _min_max_ages:
+
 ================================
 Minimum and maximum age cutoffs
 ================================
