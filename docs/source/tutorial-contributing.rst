@@ -199,6 +199,7 @@ List of tutorial participants
 - Candice Rubie (University of Waterloo)
 - Abbey Ward (University of Oregon)
 - Connor Cook (Wingate University)
+- Erica Verde (University of California, Davis)
 
 .. _Github issues overview:
 
