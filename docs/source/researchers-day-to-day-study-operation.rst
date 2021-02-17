@@ -83,10 +83,13 @@ fix particular instances for you but recommend updating following the instructio
 Compensating participants
 ----------------------------------------
 
-If you are compensating participants, you will also be (for now)
-emailing them through the Lookit email interface to give them gift
+If you are compensating participants, in most cases you will be 
+messaging them through the Lookit email interface to give them gift
 cards, using the user IDs you can see in the consent manager and/or the
-response data.
+response data. If your institution requires direct compensation or requires 
+the collection of email addresses for other compliance reasons, you can add
+an additional survey page to your study to ask for the participant's email,
+as long as it is clear that that information will only be used to send payment. 
 
 Participant compensation should never depend on the child’s behavior -
 *even if the child fusses out and/or the data is unusable*. In general,
