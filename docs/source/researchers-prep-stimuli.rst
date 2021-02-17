@@ -123,7 +123,7 @@ You are responsible for hosting your study stimuli online somewhere. You have a 
   
   You do **not** need to "set up a web server" (they will assume you want to do something more complicated and run backend code).
   
-* GitHub repo: This is also free! And it offers the advantage that you can keep track of any changes to your stimuli over time in a very robust, transparent way. This may be especially handy when you go to publish your work - all your stimuli are already publicly available, with changes logged. 
+* GitHub repo: This is also free! And it offers the advantage that you can keep track of any changes to your stimuli over time in a very robust, transparent way. This may be especially handy when you go to publish your work - all your stimuli are already publicly available, with changes logged. If you choose to use GitHub to host images/video/audio, it needs to be set up as a public repo - if the files are in a private repo, Lookit won't have the access credentials needed to display them during the study.
   You may be most familiar with Github as a place to store and collaborate on code, but it can be used for any files. There are detailed directions available in the `Lookit stimuli template repo <https://github.com/lookit/lookit-stimuli-template>`_ for putting your own stimuli on GitHub - no experience required!  
 
 * `Google Cloud Storage <https://cloud.google.com/storage>`_: This is free or very cheap and again fairly straightforward to use. We haven't used it personally, so if you do, please consider adding to these instructions!
