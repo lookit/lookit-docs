@@ -200,6 +200,7 @@ List of tutorial participants
 - Abbey Ward (University of Oregon)
 - Connor Cook (Wingate University)
 - Erica Verde (University of California, Davis)
+- Joseph Lang (Wingate University)
 
 .. _Github issues overview:
 
