@@ -201,6 +201,7 @@ List of tutorial participants
 - Connor Cook (Wingate University)
 - Erica Verde (University of California, Davis)
 - Joseph Lang (Wingate University)
+- Heather Morse (Wingate University)
 
 .. _Github issues overview:
 
