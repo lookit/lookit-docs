@@ -202,6 +202,7 @@ List of tutorial participants
 - Erica Verde (University of California, Davis)
 - Joseph Lang (Wingate University)
 - Heather Morse (Wingate University)
+- Carrie Watson (University of Southern California)
 
 .. _Github issues overview:
 
