@@ -203,6 +203,7 @@ List of tutorial participants
 - Joseph Lang (Wingate University)
 - Heather Morse (Wingate University)
 - Carrie Watson (University of Southern California)
+- Yiran Chen (University of Pennsylvania)
 
 .. _Github issues overview:
 
