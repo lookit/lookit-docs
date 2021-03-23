@@ -204,6 +204,7 @@ List of tutorial participants
 - Heather Morse (Wingate University)
 - Carrie Watson (University of Southern California)
 - Yiran Chen (University of Pennsylvania)
+- Erica Wojcik (Skidmore College)
 
 .. _Github issues overview:
 
