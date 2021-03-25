@@ -205,6 +205,7 @@ List of tutorial participants
 - Carrie Watson (University of Southern California)
 - Yiran Chen (University of Pennsylvania)
 - Erica Wojcik (Skidmore College)
+- Stacy Wang (University of British Columbia) 
 
 .. _Github issues overview:
 
