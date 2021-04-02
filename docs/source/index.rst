@@ -28,6 +28,7 @@ Families may take part in studies from multiple labs over time. Having one centr
    Progress updates <progress-updates>
    FAQ <faq>
    other-learning-materials
+   Publications <publications>
     
 .. toctree::
    :maxdepth: 2

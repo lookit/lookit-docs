@@ -84,11 +84,10 @@ Ideas/comments on how it’d ideally be set up are very welcome
 Where are the data stored?
 --------------------------
 
-A1) In the USA.
+A1: In the USA.
 
-A2) Videos are stored primarily on Amazon S3. Lookit (including
-    databases with participant and session data) is hosted on Google Cloud
-    Platform.
+A2: Videos are stored primarily on Amazon S3. Lookit (including databases with 
+participant and session data) is hosted on Google Cloud Platform.
 
 How is participant data secured?
 --------------------------------
