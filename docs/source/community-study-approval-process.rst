@@ -84,3 +84,19 @@ Revisions may be requested before the study can be approved to run.
 To minimize the number of rounds of review needed, researchers are
 strongly encouraged to polish their studies as much as possible
 before submitting - please don’t use us as a proofreading service!
+
+Reapproval after changes
+======================================
+
+Most changes to studies require re-approval. If your study is active, paused, or approved,
+and you make changes to it, it will be automatically rejected and you'll need to resubmit.
+If your study has already been approved, you'll see a warning to this effect when you 
+click "save" letting you know which fields will require re-approval to change.
+
+For minor changes ("we fixed a typo", "we clarified instructions", "we're stopping data
+collection for some conditions", etc.) approval is quick - you do not go back into the 
+same queue as for initial submissions. We approve studies the same day (often within 10 
+minutes during working hours, but no promises).
+
+If you want, you can let us know you'd like the study restarted in addition to 
+reapproved. By default we just approve it and you can restart it when you're ready.
