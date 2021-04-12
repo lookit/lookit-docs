@@ -85,6 +85,22 @@ To minimize the number of rounds of review needed, researchers are
 strongly encouraged to polish their studies as much as possible
 before submitting - please don’t use us as a proofreading service!
 
+.. admonition:: Outcomes of Lookit review
+   
+   In general, although we technically reserve the right not to host work at our 
+   discretion, the outcomes of the Lookit admin review process are "accept" and 
+   "revise and resubmit." We'll work with you to get your study ready to go.
+   
+   In rare cases, a study may be fine to run on Lookit, but in the judgment of Lookit
+   admin staff, not a good idea to advertise publicly via Lookit. (E.g., a study that is 
+   ethically designed, but stands an unusual chance of putting parents off coming back for 
+   other studies.) In this case a "partial 
+   approval" - to collect data, but not make discoverable - may be the final outcome. We 
+   consult with working group members before making such a decision to ensure it reflects
+   community norms, and will devise a more formal process and expanded guidelines if this 
+   occurs more often. 
+   
+   
 Reapproval after changes
 ======================================
 
