@@ -210,6 +210,7 @@ List of tutorial participants
 - Erica Wojcik (Skidmore College)
 - Stacy Wang (University of British Columbia) 
 - Victor Antoine (École Normale Supérieure, Paris)
+- Tiffany Widjaja (University of California, San Diego)
 
 .. _Github issues overview:
 
