@@ -89,3 +89,11 @@ div.wy-side-nav-search {
 .wy-nav-content-wrap {
     margin-left: 20em;
 }
+
+ul.tutorial-participants {
+    column-count: 2;
+}
+
+ul.tutorial-participants li {
+    padding: 0;
+}

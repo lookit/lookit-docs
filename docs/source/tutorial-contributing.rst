@@ -66,6 +66,9 @@ This process is the easiest way to make a change to a particular file in the doc
 
 List of tutorial participants
 ------------------------------
+
+.. rst-class:: tutorial-participants
+
 - Kim Scott (MIT)
 - Ashley Thomas (MIT)
 - James Dunlea (Columbia University)
