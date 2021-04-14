@@ -206,6 +206,7 @@ List of tutorial participants
 - Yiran Chen (University of Pennsylvania)
 - Erica Wojcik (Skidmore College)
 - Stacy Wang (University of British Columbia) 
+- Victor Antoine (École Normale Supérieure, Paris)
 
 .. _Github issues overview:
 
