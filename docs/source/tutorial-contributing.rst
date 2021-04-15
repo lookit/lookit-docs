@@ -211,6 +211,7 @@ List of tutorial participants
 - Stacy Wang (University of British Columbia) 
 - Victor Antoine (École Normale Supérieure, Paris)
 - Tiffany Widjaja (University of California, San Diego)
+- Christopher J. Green (MIT)
 
 .. _Github issues overview:
 
