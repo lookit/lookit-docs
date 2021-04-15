@@ -212,6 +212,7 @@ List of tutorial participants
 - Victor Antoine (École Normale Supérieure, Paris)
 - Tiffany Widjaja (University of California, San Diego)
 - Christopher J. Green (MIT)
+- Jacob Guerrero (University of California, San Diego)
 
 .. _Github issues overview:
 
