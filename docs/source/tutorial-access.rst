@@ -19,9 +19,15 @@ Step 1: Join the Lookit Slack workspace
 ----------------------------------------
 Fill out `this form  <https://docs.google.com/forms/d/e/1FAIpQLScI2h7G6aUSJb-I3fGHw2nB8HcuaomuNLiwta2CXhGGF2ZL-Q/viewform>`_ to join the Lookit Slack workspace. If you haven't used Slack before, you'll need to create an account; otherwise it will be added to your other workspaces. 
 
-Slack is a messaging platform that serves as the primary tool for communication about development and use of the Lookit platform. The Lookit Slack workspace is essentially a collection of "chat rooms" for various topics. You can use Slack via a web interface, a desktop app, and/or on your phone. 
+Slack is a messaging platform that serves as the primary tool for communication about development and use of the Lookit platform. The Lookit Slack workspace is essentially a collection of "chat rooms" for various topics. You can use Slack via a web interface, a desktop app, and/or on your phone.
 
-Step 2: Create your Lookit account
+Step 2 (optional): Sign up for the lookit-research mailing list
+----------------------------------------------------------------
+
+We periodically (about once a month) send out updates about Lookit. If you'd prefer to get 
+these updates via email instead of only on Slack, please `sign up for this list <https://mailman.mit.edu/mailman/listinfo/lookit-research>`__.
+
+Step 3: Create your Lookit account
 ----------------------------------------
 
 1. Go to `the researcher registration form <https://lookit.mit.edu/registration/>`__. Fill out the form and click "create account."

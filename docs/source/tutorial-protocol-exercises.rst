@@ -8,7 +8,7 @@ Now that you've walked through the process of creating your own studies, it's ti
 * be comfortable finding information about advanced features to answer the questions "How do I do X" or "Is it possible to do X"
 * have a feel for the challenges to expect in writing your instructions and preparing your stimuli
 
-Remember, feel free to reach out in the Slack workspace or attend office hours if you have any trouble with these exercises.
+Remember, feel free to reach out in the Slack workspace if you have any trouble with these exercises.
 
 1. Add another test trial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

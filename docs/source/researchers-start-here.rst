@@ -22,6 +22,8 @@ practices, etc. It’s also where you should go with any questions or
 technical support requests. There are a lot of participating researchers
 (over 400 at last count!) who may be able to help!
 
+If you also want to receive updates about Lookit via email, please join the `lookit-research <https://mailman.mit.edu/mailman/listinfo/lookit-research>`__ list as well.
+
 B. Legal/logistical steps
 -------------------------
 
