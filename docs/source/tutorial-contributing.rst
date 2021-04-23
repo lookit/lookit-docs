@@ -213,6 +213,7 @@ List of tutorial participants
 - Tiffany Widjaja (University of California, San Diego)
 - Christopher J. Green (MIT)
 - Jacob Guerrero (University of California, San Diego)
+- Gal Raz (MIT)
 
 .. _Github issues overview:
 
