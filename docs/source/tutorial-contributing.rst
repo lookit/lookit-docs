@@ -214,6 +214,7 @@ List of tutorial participants
 - Christopher J. Green (MIT)
 - Jacob Guerrero (University of California, San Diego)
 - Gal Raz (MIT)
+- Angela Oku (University of California, San Diego)
 
 .. _Github issues overview:
 
