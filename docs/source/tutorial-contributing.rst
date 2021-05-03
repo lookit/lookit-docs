@@ -215,6 +215,7 @@ List of tutorial participants
 - Jacob Guerrero (University of California, San Diego)
 - Gal Raz (MIT)
 - Angela Oku (University of California, San Diego)
+- Hannah Ruebeck (MIT)
 
 .. _Github issues overview:
 
