@@ -26,7 +26,6 @@ Requirements
 
 This is the software you will need to have installed to run lookit-api locally.
 
-
 #. If you haven't already, `install Brew <https://brew.sh>`__ and install Graphviz:
    
    .. code-block:: shell
@@ -39,7 +38,7 @@ This is the software you will need to have installed to run lookit-api locally.
       brew install rabbitmq && brew services start rabbitmq
 
 #. You will need to have `Docker installed <https://docs.docker.com/docker-for-mac/install/>`__ and running.
-#. Create Postgres db using the following command:
+#. Create a Postgres database using the following command:
    
    .. code-block:: shell
 
@@ -51,6 +50,12 @@ This is the software you will need to have installed to run lookit-api locally.
    .. code-block:: shell
 
       asdf plugin-add python
+
+#. Clone the lookit-api repo:
+
+   .. code-block:: shell
+
+      git clone https://github.com/lookit/lookit-api.git
 
 #. At the root of the project, install python.  The `asdf Python plugin docs <https://github.com/danhper/asdf-python>`__ can help install older versions of python:
 
@@ -71,14 +76,27 @@ This is the software you will need to have installed to run lookit-api locally.
    .. code-block:: shell
 
       poetry run invoke setup
+      
+   This will create a local .env file with environment variables for local development,
+   run the Django application's database migrations ("catching up" on changes to the 
+   database structure), set up rabbitmq with queues for various task types, and create 
+   local SSL certificates. If you're curious about what exactly is happening during this 
+   step, or run into any problems, you can reference the file 
+   `tasks.py <https://github.com/lookit/lookit-api/blob/develop/tasks.py>`__.
   
 #. Create a superuser by running:
 
    .. code-block:: shell
 
       poetry run ./manage.py createsuperuser
-  
-Now you should be ready for anything.  Going forward, you can run the server by:
+      
+Now you should be ready for anything. Going forward, you can run the server using the 
+directions below.
+
+Running the server
+~~~~~~~~~~~~~~~~~~~
+
+To run the Lookit server locally, run 
 
 .. code-block:: shell
 
@@ -94,7 +112,8 @@ To view the HTTPS version of the local development add the ``https`` argument to
    poetry run invoke server --https
 
 If you are not working extensively with lookit-api - i.e., if you just want to make some 
-new frames - you do not need to run celery, rabbitmq, or docker.
+new frames - you do not need to run celery, rabbitmq, or docker. For more information about 
+these services and how they interact, please see the `Contributing guidelines <https://github.com/lookit/lookit-api/blob/develop/CONTRIBUTING.md>`__.
 
 Running Celery 
 ~~~~~~~~~~~~~~
@@ -104,8 +123,14 @@ You should already have a rabbitmq server installed and running.  You can check 
 .. code-block:: shell
 
    brew services list
+   
+If rabbitmq is not running, you can start it using:
 
-Use the invoke command to start the celery worker:
+.. code-block:: shell
+
+   brew services start rabbitmq
+
+Then use the invoke command to start the celery worker:
 
 .. code-block:: shell
 
@@ -125,20 +150,23 @@ Handling video
 ~~~~~~~~~~~~~~
 
 This project includes an incoming webhook handler for an event generated
-by the Pipe video recording service when video is transferred to our S3
+by the Pipe video recording service used by ember-lookit-frameplayer when video is transferred to our S3
 storage. This requires a webhook key for authentication. It can be
 generated via our Pipe account and, for local testing, stored in
-project/settings/local.py as ``PIPE_WEBHOOK_KEY``. 
+.env under ``PIPE_WEBHOOK_KEY``.
 
-Pipe needs to be told where to send the webhook: 
-You can use Ngrok to generate a public URL that 
-/exp/renamevideo 
-#TODO here
+Pipe needs to be told where to send the webhook. First, you need to expose your local
+/exp/renamevideo hook. You can use Ngrok to generate a public URL for your local instance
+during testing:
 
-However, Pipe will
-continue to use the handler on the production/staging site unless you
-edit the settings to send it somewhere else (e.g., using ngrok to send
-to localhost for testing).
+.. code-block:: shell
+
+   ngrok http https://localhost:8000
+   
+Then, based on the the assigned URL, you will need to manually edit the webhook on the 
+dev environment of Pipe to send the ``video_copied_s3`` event to (for example) 
+``https://8b48ad70.ngrok.io/exp/renamevideo/``.
+
 
 Common Issues
 ~~~~~~~~~~~~~
