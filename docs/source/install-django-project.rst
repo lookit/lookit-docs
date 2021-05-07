@@ -19,7 +19,8 @@ downloading data as a researcher.
 .. note::
    These instructions are for Mac OS. Installing on another OS?
    Please consider documenting the exact steps you take and submitting a
-   PR to the lookit-api repo to update the documentation!
+   PR to the lookit-api repo to update the documentation! For notes on Linux installation,
+   there may be helpful information in a `previous version of invoke tasks.py <https://github.com/lookit/lookit-api/blob/d1b8c9b43cb7d7bda7cdbe5958236d99af42341d/tasks.py>`__.
 
 Requirements
 ~~~~~~~~~~~~
