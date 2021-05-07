@@ -16,61 +16,100 @@ participation. For instance, you could contribute an improvement to how
 studies are displayed to participants or create a new CSV format for
 downloading data as a researcher.
 
-   Note: These instructions are for Mac OS. Installing on another OS?
+.. note::
+   These instructions are for Mac OS. Installing on another OS?
    Please consider documenting the exact steps you take and submitting a
    PR to the lookit-api repo to update the documentation!
 
-Basic installation
-~~~~~~~~~~~~~~~~~~~~
+Requirements
+~~~~~~~~~~~~
 
-Note: the ``$`` represents the command prompt below - e.g. the start of a new line in Terminal. Don't actually type it in!
+This is the software you will need to have installed to run lookit-api locally.
 
-- Clone the lookit-api repo: ``$ git clone https://github.com/lookit/lookit-api.git``
-- Navigate to the root project directory: ``$ cd lookit-api``
-- Use ``$ pipenv --version`` to see if you already have pipenv installed. If it is, you 
-  will see the version; if not, you will see "pipenv: command not found". If needed, 
-  install using ``pip install pipenv``.
-- Create a virtual environment using pipenv and Python 3.8: ``$ pipenv --python 3.8``
-  If you don't have Python 3.8 available, you can download it from 
-  https://www.python.org/downloads/.
-- Enter the virtual environment using ``$ pipenv shell``.
-- Install invoke using ``$ pip install invoke``.
-- Use the invoke script to go through setup: ``$ invoke setup`` This will install dependencies,
-  create a local .env file, create local SSL certificates, and set up a postgresql database.
-  You will be prompted a few times to enter your password, which is because a command is 
-  being run using ``sudo`` - this should be the password you use
-  to log in to your account on your computer. When it finishes, you should see something like:
+
+#. If you haven't already, `install Brew <https://brew.sh>`__ and install Graphviz:
+   
+   .. code-block:: shell
+
+      brew install graphviz
+#. Install and start rabbitmq via brew:
+
+   .. code-block:: shell
+
+      brew install rabbitmq && brew services start rabbitmq
+
+#. You will need to have `Docker installed <https://docs.docker.com/docker-for-mac/install/>`__ and running.
+#. Create Postgres db using the following command:
+   
+   .. code-block:: shell
+
+      docker run --name lookit-postgres -d -e POSTGRES_HOST_AUTH_METHOD="trust" -e POSTGRES_DB="lookit" -p 5432:5432 postgres:9.6
+
+#. To help with installing a specific version of python, we'll need to `install asdf <https://asdf-vm.com/#/core-manage-asdf?id=install>`__. 
+#. Add Python plugin using the following command.  Here's `documentation <https://github.com/danhper/asdf-python>`__ to help with errors:
+
+   .. code-block:: shell
+
+      asdf plugin-add python
+
+#. At the root of the project, install python.  The `asdf Python plugin docs <https://github.com/danhper/asdf-python>`__ can help install older versions of python:
+
+   .. code-block:: shell
+
+      asdf install
+
+#. Install `Poetry <https://python-poetry.org/docs/#installation>`__.
+
+#. Install Python libraries:
+
+   .. code-block:: shell
+
+      poetry install
+
+#. Use invoke to run setup:
+
+   .. code-block:: shell
+
+      poetry run invoke setup
   
-  ::
+#. Create a superuser by running:
 
-     Serving at https://127.0.0.1:8000
-     Watching for file changes with StatReloader
-     
-- Create a superuser by running ``python manage.py createsuperuser``
-    
-Now you can go to https://localhost:8000 to see your local Lookit server! You should be able to log in using 
+   .. code-block:: shell
+
+      poetry run ./manage.py createsuperuser
+  
+Now you should be ready for anything.  Going forward, you can run the server by:
+
+.. code-block:: shell
+
+   poetry run invoke server
+
+Now you can go to http://localhost:8000 to see your local Lookit server! You should be able to log in using 
 the superuser credentials you created during setup.
-  
-Going forward, you can run the server by navigating to the lookit-api directory, 
-entering the virtualenv (``$ pipenv shell``), and typing ``$ invoke server``.
+
+To view the HTTPS version of the local development add the ``https`` argument to the above command:
+
+.. code-block:: shell
+
+   poetry run invoke server --https
 
 If you are not working extensively with lookit-api - i.e., if you just want to make some 
 new frames - you do not need to run celery, rabbitmq, or docker.
 
-Running Celery and Rabbitmq
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running Celery 
+~~~~~~~~~~~~~~
 
-These tools handle deferred tasks like sending emails and generating large file downloads.
+You should already have a rabbitmq server installed and running.  You can check this by:
 
-- Run ``$ rabbitmq-server`` to start up the rabbitmq server.
-- Run ``$ invoke celery-service`` to start celery, which will talk to rabbitmq. 
+.. code-block:: shell
 
-Running Docker
-~~~~~~~~~~~~~~~
+   brew services list
 
-We use docker to build experiment runner images. If you are testing experiment builds, you will 
-need to have Docker running - you can simply run ``$open /Applications/Docker.app`` or open it 
-from Applications. 
+Use the invoke command to start the celery worker:
+
+.. code-block:: shell
+
+   poetry run invoke celery-service
 
 Authentication
 ~~~~~~~~~~~~~~
