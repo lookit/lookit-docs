@@ -97,7 +97,7 @@ directions below.
 Running the server
 ~~~~~~~~~~~~~~~~~~~
 
-To run the Lookit server locally, run 
+To run the Lookit server locally, run:
 
 .. code-block:: shell
 
