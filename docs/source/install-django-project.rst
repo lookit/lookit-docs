@@ -58,19 +58,31 @@ This is the software you will need to have installed to run lookit-api locally.
 
       git clone https://github.com/lookit/lookit-api.git
 
-#. At the root of the project, install python.  The `asdf Python plugin docs <https://github.com/danhper/asdf-python>`__ can help install older versions of python:
+#. At the root of the project, install the version of python required by this project; 
+   ASDF will automatically detect that from a .tool-versions file.  
+   The `asdf Python plugin docs <https://github.com/danhper/asdf-python>`__ can help 
+   install older versions of python:
 
    .. code-block:: shell
 
       asdf install
+      
+   If using macOS 11, you will need to use the 
+   `patch provided by asdf <https://github.com/danhper/asdf-python#install-with---patch>`__ to install.
 
-#. Install `Poetry <https://python-poetry.org/docs/#installation>`__.
+#. Install `Poetry <https://python-poetry.org/docs/#installation>`__. If you run into an 
+   SSL error (see `this issue <https://github.com/python-poetry/poetry/issues/449>`__), 
+   you likely need to install certificates for this version of Python.
 
 #. Install Python libraries:
 
    .. code-block:: shell
 
       poetry install
+      
+   If Poetry has trouble finding the version of Python installed by ASDF, double check
+   that asdf.sh has been added to .bash_profile and the shell restarted as described in 
+   the asdf installation directions. 
 
 #. Use invoke to run setup:
 
