@@ -31,13 +31,13 @@ You can go ahead and create an account on Lookit to start preparing your
 studies right away, but to actually collect data from families on Lookit, your lab will
 need to review the Terms of Use and sign a one-time institutional
 agreement with MIT. Any studies you run will need to be approved by your
-own IRB, just like studies you run in person. For more detail, see :ref:`IRB and legal information <legal>`. Note that you only need **one agreement** per PI (not separate
-agreements for each student).
+own IRB, just like studies you run in person. For more detail, see :ref:`IRB and legal information <legal>`.
 
 1. Review the Terms of Use and complete a short quiz.
 
 2. Get an institutional agreement signed by an authorized signer for
-   your institution.
+   your institution. (Check with us first to see if there's already an agreement at your 
+   institution as a starting point!)
 
 3. Edit your IRB protocol to include online testing, or submit a new
    protocol for your proposed online study.

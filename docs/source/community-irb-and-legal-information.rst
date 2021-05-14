@@ -45,48 +45,25 @@ about the Terms of Use <https://forms.gle/Eom9bTERGcc2EcY86>`__.
 How to get it signed
 ~~~~~~~~~~~~~~~~~~~~
 
-If you are planning a Lookit study, getting the user agreement signed
+If you are planning a Lookit study, getting the access agreement signed
 should be your first step because it takes a highly variable amount of
-time (record so far is under two weeks, but budgeting six months is
-sensible). It does not require any customization on your part - you just
-need to send it off to someone at your institution who’s authorized to
-sign on behalf of the institution or who can figure out who is.
+time (record so far is under two weeks, but it can take a few months). The access agreement doesn't require any customization on your part - you just need to send it off to someone at your institution who’s authorized to sign on behalf of the institution.
 
-Unfortunately the appropriate office varies by institution. If you’ve
-previously set up to use Databrary, try contacting the office that
-signed off on that. As examples, the following offices have approved the access
-agreement:
+First, check whether your institution already has an access agreement set up. You can  check the list `here <https://lookit.mit.edu/scientists/>`__ or email lookit@mit.edu. If so, you'll be able to just add yourself (newer form of agreement) or get in touch with the person who signed off previously (older form of agreement). Checking in about an existing agreement also allows you to 
 
--  Contracts - NYU, Wisconsin, Stanford
--  VP Finance - Haskins
--  Partnerships - Toronto
--  University/Industry Liason - UBC
--  Department head - Goldsmiths London
--  Provost - Yeshiva
--  Sponsored programs - American University
+If there isn't an existing agreement, you'll need to figure out which office to send it to for approval. Unfortunately the appropriate office varies by institution. If you’ve previously set up to use Databrary, try contacting the office that signed off on that. As examples, the following offices have approved the access agreement: Contracts, VP Finance, Partnerships, University/Industry Liason, Department head, Provost, Sponsored programs. 
 
-In general, you do NOT need to have an IRB protocol to use Lookit in
-progress or approved first. In some cases, though, the office that signs
-the agreement may ask that you obtain ethical approval first.
+In general, you do NOT need to have an IRB protocol to use Lookit before the access  agreement can be signed. In some cases, though, the office that signs the agreement may ask that you obtain ethical approval first.
 
-The one exception to this process is that researchers at MIT, completing
-studies approved by MIT’s IRB, do not require the signature of an MIT
-authorized signer. However, the MIT PI still needs to sign and return
-the agreement.
+The one exception to this process is that researchers at MIT, completing studies approved by MIT’s IRB, do not require the signature of an MIT authorized signer. However, the MIT PI still needs to sign and return the agreement.
 
-Multiple PIs at one institution
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The access agreement signed by one PI only covers research where they're named as the PI on the corresponding IRB protocol. Other PIs at the same institution do need their own access agreement on file.
-
-If you know of another lab at your institution using Lookit, please reach out to them or to Lookit for a copy to check (a) who the institutional signer should be and (b) whether any changes were required (you can use the same modified version). 
 
 Correspondence between access agreements and Lookit Labs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In general, each access agreement should correspond to exactly one Lab on Lookit, which makes it far more straightforward to ensure that everyone's actually covered legally.
+In general, each Authorized Investigator on an access agreement should correspond to exactly one Lab on Lookit, which makes it far more straightforward to ensure that everyone's actually covered.
 
-Each Lab must be associated with at least one agreement. (E.g., suppose Jill is a PI at Science University and has signed an access agreement, and Joe is another PI at Science University who does not. We cannot approve Joe's Lab on Lookit to test - even if he tells us that his work will always actually be covered under Jill's IRB protocol.)
+Each Lab must be associated with at least one agreement. (E.g., suppose Jill is a PI at Science University and has signed an access agreement, and Joe is another PI at Science University who has not. We cannot approve Joe's Lab on Lookit to test - even if he tells us that his work will always actually be covered under Jill's IRB protocol.)
 
 However, if multiple PIs at your institution are closely affiliated (e.g. a lab jointly headed by two professors, or students all serve as PIs on IRB protocols in your department) please go ahead and create a lab listing multiple PIs and just let us know. We'd need an access agreement for each PI, and would expect all studies conducted by this lab to be covered by an IRB protocol listing at least one of those PIs.
 
