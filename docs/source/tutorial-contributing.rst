@@ -216,6 +216,7 @@ List of tutorial participants
 - Gal Raz (MIT)
 - Angela Oku (University of California, San Diego)
 - Hannah Ruebeck (MIT)
+- Nina Griggs (University of British Columbia)
 
 .. _Github issues overview:
 
