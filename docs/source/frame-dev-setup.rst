@@ -64,9 +64,11 @@ Note: this is optional if you are only making changes to ember-lookit-frameplaye
 
 6. Create a study by navigating to
    https://localhost:8000/exp/studies/create/. Fill out all the fields.
-   The most important field is the ``structure``, where you define the
+   The most important field is the ``Criteria expression``, where you define the
    frames and the sequence of the frames. Be sure the frame and the
-   details for the frame you are testing are listed in the structure.
+   details for the frame you are testing are listed in the structure. See the
+   `Criteria expression documentation <https://lookit.readthedocs.io/en/develop/researchers-set-study-fields.html#criteria-expression>`_ 
+   for further explanation and examples. 
 
 7. Add demographic information to your superuser (just for testing
    purposes), so your superuser can participate in studies. Navigate to
