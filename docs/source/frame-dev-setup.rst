@@ -89,12 +89,6 @@ demographic data, and a child. We’ve created a study, as well as a token
 for accessing the API. Leave the django server running and switch to a
 new tab in your console.
 
-.. note::
-   The OAuth authentication used for access to Experimenter
-   does not work when running locally. You can access Experimenter by
-   first logging in as your superuser, or by giving another local user
-   researcher permissions using the Admin app.
-
 Ember App steps
 ---------------
 
