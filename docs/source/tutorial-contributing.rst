@@ -217,6 +217,7 @@ List of tutorial participants
 - Angela Oku (University of California, San Diego)
 - Hannah Ruebeck (MIT)
 - Nina Griggs (University of British Columbia)
+- Virginia Morley (New York University)
 
 .. _Github issues overview:
 
