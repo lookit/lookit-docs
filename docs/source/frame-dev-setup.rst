@@ -52,6 +52,7 @@ Note: this is optional if you are only making changes to ember-lookit-frameplaye
 
    -  Family Name: *Your last name*
    -  Identicon: *If no identicon, just type random text here*
+   -  Timezone: *Your timezone. America/New_York as an example*
    -  Locale: *en_US, as an example*
    -  Place a check in the checkbox by “Is Researcher”
 
