@@ -15,7 +15,8 @@ the Ember app. This way, for instance, an experiment frame will be able
 to look up previous sessions a user has completed and use those for
 longitudinal designs.
 
-   Note: These instructions are for Mac OS. Installing on another OS?
+.. note::
+   These instructions are for Mac OS. Installing on another OS?
    Please consider documenting the exact steps you take and submitting a
    PR to the lookit-api repo to update the documentation!
 
@@ -36,10 +37,10 @@ npm).
 
 .. code:: bash
 
-    git clone https://github.com/lookit/ember-lookit-frameplayer.git
-    cd ember-lookit-frameplayer
-    yarn install --pure-lockfile
-    bower install
+   git clone https://github.com/lookit/ember-lookit-frameplayer.git
+   cd ember-lookit-frameplayer
+   yarn install --pure-lockfile
+   bower install
 
 Create or open a file named ‘.env’ in the root of the
 ember-lookit-frameplayer directory, and add the following entries to use
@@ -50,17 +51,42 @@ request if you need to use the actual Lookit environments. (If you are
 doing a very large amount of local testing, we may ask that you set up
 your own Pipe account.) Your .env file should look like this:
 
-   ::
+.. code::
 
-      PIPE_ACCOUNT_HASH='<account hash here>'
-      PIPE_ENVIRONMENT=<environment here>
+   PIPE_ACCOUNT_HASH='<account hash here>'
+   PIPE_ENVIRONMENT=<environment here>
 
+In order to the HTML5 video recorder, you’ll need to set up to
+use https locally. Open ``ember-lookit-frameplayer/.ember-cli`` and
+make sure it includes ``ssl: true``:
+
+.. code:: js
+
+   "disableAnalytics": false,
+   "ssl": true
+
+Create ``server.key`` and ``server.crt`` files in the root
+``ember-lookit-frameplayer`` directory as follows:
+
+.. code-block:: bash
+
+   openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
+   openssl rsa -passin pass:x -in server.pass.key -out server.key
+   rm server.pass.key
+   openssl req -new -key server.key -out server.csr
+   openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
+
+Leave the challenge password blank and enter ``localhost`` as the
+Common Name.
 
 Running / Development
 ---------------------
 
--  ``ember serve``
--  Visit your app at http://localhost:4200.
+.. code:: bash
+
+   yarn start
+
+Visit your app at http://localhost:4200.
 
 If you change any dependencies, make sure to update and commit the yarn.lock file in 
 addition to package.json.
