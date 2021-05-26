@@ -70,14 +70,12 @@ Create ``server.key`` and ``server.crt`` files in the root
 
 .. code-block:: bash
 
-   openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
-   openssl rsa -passin pass:x -in server.pass.key -out server.key
-   rm server.pass.key
-   openssl req -new -key server.key -out server.csr
-   openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
-
-Leave the challenge password blank and enter ``localhost`` as the
-Common Name.
+   mkdir ssl
+   openssl genrsa -des3 -passout pass:x -out ssl/server.pass.key 2048
+   openssl rsa -passin pass:x -in ssl/server.pass.key -out ssl/server.key
+   rm ssl/server.pass.key
+   openssl req -new -key ssl/server.key -out ssl/server.csr -subj /CN=localhost
+   openssl x509 -req -sha256 -days 365 -in ssl/server.csr -signkey ssl/server.key -out ssl/server.crt
 
 Running / Development
 ---------------------
