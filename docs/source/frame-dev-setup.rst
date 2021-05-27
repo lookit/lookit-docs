@@ -96,7 +96,7 @@ Ember App steps
    have changed in the console where your ember server is running, like
    this:
 
-   ::
+   .. code:: bash
 
       file changed components/exp-video-config/template.hbs
 
@@ -107,40 +107,22 @@ Ember App steps
    earlier. If you are using the Lookit staging server, please contact the admins for 
    an API token for your account. Your .env file will now look like this:
 
-   ::
-
+   .. code:: bash
+   
       PIPE_ACCOUNT_HASH='<account hash here>'
       PIPE_ENVIRONMENT=<environment here>
       LOOKIT_API_KEY='Token <token here>'
       LOOKIT_API_HOST='https://localhost:8000'
-      
-    If you are using the Lookit staging server, this will be identical except that the
-    last line should be ``LOOKIT_API_HOST='https://lookit-staging.mit.edu'``.
 
-4. In order to the HTML5 video recorder, you’ll need to set up to
-   use https locally. Open ``ember-lookit-frameplayer/.ember-cli`` and
-   make sure it includes ``ssl: true``:
+   If you are using the Lookit staging server, this will be identical except that the
+   last line should be ``LOOKIT_API_HOST='https://lookit-staging.mit.edu'``.
 
-   .. code:: js
+4. Run the ember server: 
+   
+   .. code::
+   
+      yarn start
 
-      "disableAnalytics": false,
-      "ssl": true
-
-   Create ``server.key`` and ``server.crt`` files in the root
-   ``ember-lookit-frameplayer`` directory as follows:
-
-   ::
-
-      openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
-      openssl rsa -passin pass:x -in server.pass.key -out server.key
-      rm server.pass.key
-      openssl req -new -key server.key -out server.csr
-      openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
-
-   Leave the challenge password blank and enter ``localhost`` as the
-   Common Name.
-
-5. Run the ember server: ``ember serve``
 
 Starting up once initial setup is completed
 -------------------------------------------
@@ -151,19 +133,18 @@ something.
 
 1. Start the Django app:
 
-   ::
+   .. code-block:: bash
 
       $ cd lookit-api
       $ pipenv shell
       $ invoke server
       
-
 2. Start the Ember app:
 
-   ::
+   .. code-block:: bash
 
       $ cd ember-lookit-frameplayer
-      $ ember serve
+      $ yarn start
 
 3. Log in as your local superuser at http://localhost:8000/login/
 
