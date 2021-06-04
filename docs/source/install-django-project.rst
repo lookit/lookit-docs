@@ -32,13 +32,15 @@ This is the software you will need to have installed to run lookit-api locally.
    .. code-block:: shell
 
       brew install graphviz
-#. Install and start rabbitmq via brew:
+#. You will need to have `Docker installed <https://docs.docker.com/docker-for-mac/install/>`__ and running.
+#. Install and start rabbitmq via docker:
 
    .. code-block:: shell
 
-      brew install rabbitmq && brew services start rabbitmq
+      docker run -d --name lookit-rabbit --env-file .env -p 5672:5672 rabbitmq:3.8.16-management-alpine
+      docker cp ./rabbitmq.sh lookit-rabbit:/rabbitmq.sh
+      docker exec -it lookit-rabbit /bin/sh -c "sh /rabbitmq.sh"
 
-#. You will need to have `Docker installed <https://docs.docker.com/docker-for-mac/install/>`__ and running.
 #. Create a Postgres database using the following command:
    
    .. code-block:: shell
@@ -135,13 +137,13 @@ You should already have a rabbitmq server installed and running.  You can check 
 
 .. code-block:: shell
 
-   brew services list
+   docker ps -f name=lookit-rabbit
    
 If rabbitmq is not running, you can start it using:
 
 .. code-block:: shell
 
-   brew services start rabbitmq
+   docker start lookit-rabbit
 
 Then use the invoke command to start the celery worker:
 
