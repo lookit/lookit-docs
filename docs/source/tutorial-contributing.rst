@@ -219,6 +219,7 @@ List of tutorial participants
 - Nina Griggs (University of British Columbia)
 - Virginia Morley (New York University)
 - Amy Krimm (University of Pennsylvania)
+- Kayla Vo (University of British Columbia)
 
 .. _Github issues overview:
 
