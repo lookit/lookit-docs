@@ -221,6 +221,7 @@ List of tutorial participants
 - Amy Krimm (University of Pennsylvania)
 - Kayla Vo (University of British Columbia)
 - Cynthia Gu (University of Pennsylvania)
+- Tula Childs (University of San Francisco)
 
 .. _Github issues overview:
 
