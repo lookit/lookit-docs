@@ -220,6 +220,7 @@ List of tutorial participants
 - Virginia Morley (New York University)
 - Amy Krimm (University of Pennsylvania)
 - Kayla Vo (University of British Columbia)
+- Tula Childs (University of San Francisco)
 
 .. _Github issues overview:
 
