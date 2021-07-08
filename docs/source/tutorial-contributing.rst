@@ -222,6 +222,7 @@ List of tutorial participants
 - Kayla Vo (University of British Columbia)
 - Cynthia Gu (University of Pennsylvania)
 - Tula Childs (University of San Francisco)
+- Marianna Zhang (Stanford University)
 
 .. _Github issues overview:
 
