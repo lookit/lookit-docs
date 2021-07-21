@@ -223,6 +223,7 @@ List of tutorial participants
 - Cynthia Gu (University of Pennsylvania)
 - Tula Childs (University of San Francisco)
 - Marianna Zhang (Stanford University)
+- Maddy Paxson (University of Michigan)
 
 .. _Github issues overview:
 
