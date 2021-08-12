@@ -224,6 +224,7 @@ List of tutorial participants
 - Tula Childs (University of San Francisco)
 - Marianna Zhang (Stanford University)
 - Maddy Paxson (University of Michigan)
+- Gabriella Fetman (Yeshiva University)
 
 .. _Github issues overview:
 
