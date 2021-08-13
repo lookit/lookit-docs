@@ -49,7 +49,7 @@ If you are planning a Lookit study, getting the access agreement signed
 should be your first step because it takes a highly variable amount of
 time (record so far is under two weeks, but it can take a few months). The access agreement doesn't require any customization on your part - you just need to send it off to someone at your institution who’s authorized to sign on behalf of the institution.
 
-First, check whether your institution already has an access agreement set up. You can  check the list `here <https://lookit.mit.edu/scientists/>`__ or email lookit@mit.edu. If so, you'll be able to just add yourself (newer form of agreement) or get in touch with the person who signed off previously (older form of agreement). Checking in about an existing agreement also allows you to 
+First, check whether your institution already has an access agreement set up. You can  check the list `here <https://lookit.mit.edu/scientists/>`__ or email lookit@mit.edu. If so, you'll be able to just add yourself (newer form of agreement) or get in touch with the person who signed off previously (older form of agreement).
 
 If there isn't an existing agreement, you'll need to figure out which office to send it to for approval. Unfortunately the appropriate office varies by institution. If you’ve previously set up to use Databrary, try contacting the office that signed off on that. As examples, the following offices have approved the access agreement: Contracts, VP Finance, Partnerships, University/Industry Liason, Department head, Provost, Sponsored programs. 
 
