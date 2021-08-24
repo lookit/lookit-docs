@@ -293,4 +293,4 @@ Exercises
     </details>
 
 
-.. [#] This section, and the excellent idea to make "your first PR" an early and required step, is based on the `OpenAPS documentation <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/loops-in-progress.html>`_. Go help with their docs too. What? You didn't realize this tutorial was secretly just a way to get developmental psychologists working on open-source artificial pancreas systems?
+.. [#] This section, and the excellent idea to make "your first PR" an early and required step, is based on the `OpenAPS documentation <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/loops-in-progress.html>`_. Go help with their docs too. What? You didn't realize this tutorial was secretly just a way to get developmental psychologists working on open-source artificial pancreas systems?;)
