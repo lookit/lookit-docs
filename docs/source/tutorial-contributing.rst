@@ -227,6 +227,7 @@ List of tutorial participants
 - Gabriella Fetman (Yeshiva University)
 - Anaum Rizvi (University of Texas at Dallas)
 - Lasya Manne (University of Texas at Dallas)
+- Isabel Musselman (Harvard)
 
 .. _Github issues overview:
 
