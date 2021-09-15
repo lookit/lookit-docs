@@ -12,7 +12,10 @@ Advanced instructions
 
 If you want to make bigger changes, such as reorganizing content or adding new pages, it'll be easiest to work with a local copy of the documentation.
 
-Documentation for use of the Lookit platform (what you're reading now!) lives in the `lookit-docs repo <https://github.com/lookit/lookit-docs/>`_. You can fork this repository to create your own copy of it on Github, and then clone that fork so you have a local copy of the docs to edit in a familiar text editor.
+Documentation for use of the Lookit platform (what you're reading now!) lives in the `lookit-docs repo <https://github.com/lookit/lookit-docs/>`_. You can fork this repository to create your own copy of it on Github, and then clone that fork so you have a local copy of the docs to edit in a familiar text editor. After cloning the repo, navigate to the root and run::
+
+    git submodule init
+    git submodule update
 
 The file ``index.rst`` contains the table of contents (look for ``toctree``). Documentation is written using `ReStructured Text (RST) markup <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. For consistency we are trying to keep all documentation in .rst format. If you are more familiar with Markdown, you can convert between formats using `Pandoc <https://pandoc.org/>`_, e.g.::
 

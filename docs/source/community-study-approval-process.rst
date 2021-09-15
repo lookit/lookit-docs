@@ -111,8 +111,7 @@ click "save" letting you know which fields will require re-approval to change.
 
 For minor changes ("we fixed a typo", "we clarified instructions", "we're stopping data
 collection for some conditions", etc.) approval is quick - you do not go back into the 
-same queue as for initial submissions. We approve studies the same day (often within 10 
-minutes during working hours, but no promises).
+same queue as for initial submissions. We approve studies the same day (often within 1 business day, but no promises).
 
 If you want, you can let us know you'd like the study restarted in addition to 
 reapproved. By default we just approve it and you can restart it when you're ready.

@@ -225,6 +225,9 @@ List of tutorial participants
 - Marianna Zhang (Stanford University)
 - Maddy Paxson (University of Michigan)
 - Gabriella Fetman (Yeshiva University)
+- Anaum Rizvi (University of Texas at Dallas)
+- Lasya Manne (University of Texas at Dallas)
+- Isabel Musselman (Harvard)
 
 .. _Github issues overview:
 
