@@ -228,6 +228,7 @@ List of tutorial participants
 - Anaum Rizvi (University of Texas at Dallas)
 - Lasya Manne (University of Texas at Dallas)
 - Isabel Musselman (Harvard)
+- Mika Asaba (Stanford University)
 
 .. _Github issues overview:
 
