@@ -229,6 +229,7 @@ List of tutorial participants
 - Lasya Manne (University of Texas at Dallas)
 - Isabel Musselman (Harvard)
 - Mika Asaba (Stanford University)
+- Mackenzie Fidelak (Stanford University)
 - Irina Lepadatu (University of Oxford)
 
 .. _Github issues overview:
