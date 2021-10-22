@@ -230,6 +230,8 @@ List of tutorial participants
 - Isabel Musselman (Harvard)
 - Mika Asaba (Stanford University)
 - Lucie Wolters (University of Edinburgh)
+- Mackenzie Fidelak (Stanford University)
+- Irina Lepadatu (University of Oxford)
 
 .. _Github issues overview:
 
