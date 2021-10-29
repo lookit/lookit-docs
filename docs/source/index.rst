@@ -58,6 +58,16 @@ Families may take part in studies from multiple labs over time. Having one centr
    :maxdepth: 2
    :hidden:
    :glob:
+   :caption: Reviewing your study
+
+   community-study-approval-process
+   community-study-review-checklists-self
+   community-study-review-checklists-peer
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :glob:
    :caption: Collecting data
 
    researchers-manage-consent
@@ -89,9 +99,6 @@ Families may take part in studies from multiple labs over time. Having one centr
 
    community-involvement
    community-irb-and-legal-information
-   community-study-approval-process
-   community-study-review-checklists-peer
-   community-study-review-checklists-self
 
 .. toctree::
    :maxdepth: 2

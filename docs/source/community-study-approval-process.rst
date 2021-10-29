@@ -7,7 +7,7 @@ Remember, before your study can go live on Lookit, there are three things you'll
 
 1) :ref:`Sign and return the access agreement.<legal>` This covers your entire lab. You only have to do this once.
 
-2) :ref:`Get IRB approval at your own institution.<irb>`
+2) :ref:`Get IRB approval for your study at your own institution.<irb>`
 
 3) Get peer feedback on the study, and then submit it to Lookit for approval. This is the part we'll discuss here!
 
@@ -28,13 +28,27 @@ of review before studies are posted: at least one other researcher
 outside your lab will provide peer feedback, and Lookit staff will
 review as well. While this may feel like an “extra step” compared with
 in-lab research, it’s an opportunity to improve both the participant
-experience and the science - saving you time later. So far, researchers who were frustrated by the extra steps have been convinced once they see how much their studies improve in the process. 
+experience and the science - saving you time later. So far, researchers who were frustrated by the extra steps have been convinced once they see how much their studies improve in the process.
+
+What about external studies and 'live' sessions?
+===============================================
+
+From the beginning of Lookit through most of 2021, all studies listed on Lookit were also run within Lookit, using the Lookit experiment runner. In contrast, the new “External Study'' type recruits participants via Lookit but the experiment itself takes place elsewhere. This opens up the possibility for researchers to run “asynchronous” studies with any desired platform (e.g., Qualtrics) or “synchronous” studies (e.g., scheduled Zoom sessions).
+
+Study review for *asynchronous* studies that take place outside of Lookit are subject to the same review process as Lookit-internal studies. Again, this is because we all share a reputation, and positive or negative experiences that affect a family in one study affect all of us. When you ask for peer review, you must have the 'Lookit part' of your study created and set up exactly as your participants would experience it; researchers who act as reviewers for it should start at Lookit and sign up for a session exactly as participants will.
+
+
+Study review for *synchronous* (video) studies are also subject to peer and internal Lookit review. Right now, most of our documentation assumes that studies are asynchronous, but you should expect to demonstrate your entire procedure (from scheduling all the way to debriefing) to at least one other researcher during this process. 
+
+Although creating an external study is a listed option for everyone, we will be pilot testing it and rolling it out in stages--if you are interested in being part of the pilot, or if you have questions about how any of the Lookit procedures would work for your external study, please message Melissa Kline Struhl (on Slack or mekline@mit.edu).
+
+
 
 If you don’t have IRB approval or an access agreement yet
 =========================================================
 
 You can still go ahead with steps 1 and 2 below so you’re ready to go as
-soon as possible! The "Lab" your study is associated with on Lookit will have to be approved to test before you'll be able to submit in Step 3, which means you'll need the 
+soon as possible! The "Lab" your study is associated with on Lookit will have to be approved to test before you'll be able to submit in Step 3, which means you'll need the
 access agreement set at that point.
 
 Step 1: study preparation and self-review
@@ -67,8 +81,8 @@ Step 3: Lookit submission and approval
 ======================================
 
 When your study is ready and you’ve responded to the peer feedback,
-you can :ref:`submit your study <study status>` for Lookit approval so it can go live. 
-This is the point where you'll need to have your access agreement set up. 
+you can :ref:`submit your study <study status>` for Lookit approval so it can go live.
+This is the point where you'll need to have your access agreement set up.
 
 When you submit the study, you will be prompted to note any non-standard elements that require specific approval per the Terms of Use (e.g., integration of
 additional about participants from another source) as well as what
@@ -86,32 +100,32 @@ strongly encouraged to polish their studies as much as possible
 before submitting - please don’t use us as a proofreading service!
 
 .. admonition:: Outcomes of Lookit review
-   
-   In general, although we technically reserve the right not to host work at our 
-   discretion, the outcomes of the Lookit admin review process are "accept" and 
+
+   In general, although we technically reserve the right not to host work at our
+   discretion, the outcomes of the Lookit admin review process are "accept" and
    "revise and resubmit." We'll work with you to get your study ready to go.
-   
+
    In rare cases, a study may be fine to run on Lookit, but in the judgment of Lookit
-   admin staff, not a good idea to advertise publicly via Lookit. (E.g., a study that is 
-   ethically designed, but stands an unusual chance of putting parents off coming back for 
-   other studies.) In this case a "partial 
-   approval" - to collect data, but not make discoverable - may be the final outcome. We 
+   admin staff, not a good idea to advertise publicly via Lookit. (E.g., a study that is
+   ethically designed, but stands an unusual chance of putting parents off coming back for
+   other studies.) In this case a "partial
+   approval" - to collect data, but not make discoverable - may be the final outcome. We
    consult with working group members before making such a decision to ensure it reflects
-   community norms, and will devise a more formal process and expanded guidelines if this 
-   occurs more often. 
-   
-   
+   community norms, and will devise a more formal process and expanded guidelines if this
+   occurs more often.
+
+
 Reapproval after changes
 ======================================
 
 Most changes to studies require re-approval. If your study is active, paused, or approved,
 and you make changes to it, it will be automatically rejected and you'll need to resubmit.
-If your study has already been approved, you'll see a warning to this effect when you 
+If your study has already been approved, you'll see a warning to this effect when you
 click "save" letting you know which fields will require re-approval to change.
 
 For minor changes ("we fixed a typo", "we clarified instructions", "we're stopping data
-collection for some conditions", etc.) approval is quick - you do not go back into the 
+collection for some conditions", etc.) approval is quick - you do not go back into the
 same queue as for initial submissions. We approve studies the same day (often within 1 business day, but no promises).
 
-If you want, you can let us know you'd like the study restarted in addition to 
+If you want, you can let us know you'd like the study restarted in addition to
 reapproved. By default we just approve it and you can restart it when you're ready.
