@@ -232,8 +232,8 @@ List of tutorial participants
 - Lucie Wolters (University of Edinburgh)
 - Mackenzie Fidelak (Stanford University)
 - Irina Lepadatu (University of Oxford)
+- Julian Bok (University of Wisconsin-Madison)
 
-.. _Github issues overview:
 
 Checking for and creating issues on Github
 -------------------------------------------
