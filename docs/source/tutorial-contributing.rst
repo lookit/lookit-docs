@@ -84,6 +84,7 @@ List of tutorial participants
 - Hyesung Grace Hwang (University of Chicago)
 - Marc Colomer (University of Chicago)
 - Junyi Chu (MIT)
+- Kanika Garg (GGSIPU)
 - Maddie Pelz (MIT)
 - Heather Kosakowski (MIT)
 - Emily Neer (UCLA)
