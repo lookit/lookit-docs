@@ -234,6 +234,7 @@ List of tutorial participants
 - Mackenzie Fidelak (Stanford University)
 - Irina Lepadatu (University of Oxford)
 - Julian Bok (University of Wisconsin-Madison)
+- Krischanda Bemister (Ryerson University)
 
 
 Checking for and creating issues on Github
