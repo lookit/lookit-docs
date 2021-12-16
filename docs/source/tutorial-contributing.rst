@@ -235,6 +235,7 @@ List of tutorial participants
 - Irina Lepadatu (University of Oxford)
 - Julian Bok (University of Wisconsin-Madison)
 - Juliana Gerard (Ulster University)
+- Krischanda Bemister (Ryerson University)
 
 
 Checking for and creating issues on Github
