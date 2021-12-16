@@ -27,11 +27,19 @@ Requirements
 
 This is the software you will need to have installed to run lookit-api locally.
 
-#. If you haven't already, `install Brew <https://brew.sh>`__ and install Graphviz:
-   
+#. Clone repo and change directory:
+
    .. code-block:: shell
 
-      brew install graphviz
+      git clone https://github.com/lookit/lookit-api.git
+      cd lookit-api
+
+#. Copy the default environment variable file to expected file name:
+
+   .. code-block:: shell
+
+      cp env_dist .env
+
 #. You will need to have `Docker installed <https://docs.docker.com/docker-for-mac/install/>`__ and running.
 #. Install and start rabbitmq via docker:
 
@@ -53,12 +61,6 @@ This is the software you will need to have installed to run lookit-api locally.
    .. code-block:: shell
 
       asdf plugin-add python
-
-#. Clone the lookit-api repo:
-
-   .. code-block:: shell
-
-      git clone https://github.com/lookit/lookit-api.git
 
 #. At the root of the project, install the version of python required by this project; 
    ASDF will automatically detect that from a .tool-versions file.  
