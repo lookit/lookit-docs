@@ -907,7 +907,7 @@ Putting it all together, you should now have a test-trials randomizer frame with
 About creating and hosting your stimuli
 ----------------------------------------
 
-In this example, you used stimuli already posted for you at `<www.mit.edu/~kimscott/intermodal/>`. When you create your own studies, note that you'll in general need to create and host your own stimuli. Because researchers' needs here will vary substantially, stimulus creation and hosting is outside the scope of this tutorial. However, resources are available under :ref:`stim_prep`.
+In this example, you used stimuli already posted for you at `<http://www.mit.edu/~kimscott/intermodal/>`_. When you create your own studies, note that you'll in general need to create and host your own stimuli. Because researchers' needs here will vary substantially, stimulus creation and hosting is outside the scope of this tutorial. However, resources are available under :ref:`stim_prep`.
 
 About communicating with parents
 ---------------------------------

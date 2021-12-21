@@ -56,9 +56,9 @@ The Lookit ecosystem can be described as a sort of "restaurant" architecture, if
 The "Frameplayer" and video data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Ember-lookit-frameplayer](https://github.com/lookit/ember-lookit-frameplayer) is an Ember application that can be "built" into a web archive (WAR) with bundled/minimized Javascript and CSS. It's the default experiment type, and currently the only one available.
+`Ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`_ is an Ember application that can be "built" into a web archive (WAR) with bundled/minimized Javascript and CSS. It's the default experiment type, and currently the only one available.
 
-To capture video data, we use [Pipe](https://addpipe.com/). The JS client is basically a plugin that is parameterized during the WAR build process; when properly configured it will stream video data to Pipe's servers. This data is then uploaded to Amazon S3, which, upon completion, triggers a webhook that fires a POST payload to a special [handler in our API](https://github.com/lookit/lookit-api/blob/master/exp/views/video.py#L17) that finds the video in S3 and renames it to something more searchable.
+To capture video data, we use `Pipe <https://addpipe.com/>`_. The JS client is basically a plugin that is parameterized during the WAR build process; when properly configured it will stream video data to Pipe's servers. This data is then uploaded to Amazon S3, which, upon completion, triggers a webhook that fires a POST payload to a special ` handler in our API <https://github.com/lookit/lookit-api/blob/master/exp/views/video.py#L17>`_ that finds the video in S3 and renames it to something more searchable.
 
 
 
@@ -68,7 +68,7 @@ Cluster layout
 
 Lookit is organized as a collection of Kubernetes services, backed by deployments and statefulsets:
 
-:: code::
+.. code::
 
     ❯ kubectl get services
     NAME                               TYPE           CLUSTER-IP   EXTERNAL-IP              PORT(S)                                          AGE
@@ -91,10 +91,10 @@ Lookit is organized as a collection of Kubernetes services, backed by deployment
     staging-builder           1/1     89d
     staging-lookit-rabbitmq   1/1     89d
 
-- The backing monorepo for the ``-web`` (web application), ``-builder`` (experiment builder),  ``-worker`` (celery tasks), and ``-beat`` (celery crons) resources is [lookit-api](https://github.com/lookit/lookit-api), which is a django application.
+- The backing monorepo for the ``-web`` (web application), ``-builder`` (experiment builder),  ``-worker`` (celery tasks), and ``-beat`` (celery crons) resources is `lookit-api <https://github.com/lookit/lookit-api>`_, which is a django application.
 - The ``-gcloud-sqlproxy`` resources define as a single point of egress out to a Google Cloud SQL instance, designated by the configuration file for a given environment (`production example <https://github.com/lookit/lookit-orchestrator/blob/master/kubernetes/lookit/environments/production/lookit-config.env>`__)
 - The ``-lookit-rabbitmq`` resources define a `rabbitmq <https://www.rabbitmq.com/>`__ message queue that serves as a conduit between the web application and the task runner and builder.
-- `-google-storage` is basically just an external service that we set up to allow nginx ingress to reroute requests for static assets to GCS.
+- ``-google-storage`` is basically just an external service that we set up to allow nginx ingress to reroute requests for static assets to GCS.
 
 
 Setup for a separate instance of Lookit
@@ -106,9 +106,10 @@ A good place to start if you are interested in running your own separate instanc
 
 Google Cloud Platform (GCP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We rely almost exclusively on GCP components to orchestrate the app. A Cloud Builder Github integration trigger is tripped on deployments to either the "develop" or "master" branches of `lookit-api`, executing the "CI" piece of the pipeline ([testing and containerization](https://github.com/lookit/lookit-api/blob/master/cloudbuild.yaml)). You can see in the `deploy-to-cluster` step that the "CD" ([deployment](https://github.com/lookit/lookit-api/blob/master/cloudbuild.yaml#L68)) piece is executed near the very end. It leverages the contents using the contents of _this_  repo, which are similarly containerized (using the GitHub integration for build triggers) and loaded into GCR for use as a [custom builder](https://cloud.google.com/cloud-build/docs/configuring-builds/use-community-and-custom-builders).
+We rely almost exclusively on GCP components to orchestrate the app. A Cloud Builder Github integration trigger is tripped on deployments to either the "develop" or "master" branches of ``lookit-api``, executing the "CI" piece of the pipeline (`testing and containerization <https://github.com/lookit/lookit-api/blob/master/cloudbuild.yaml>`_). You can see in the ``deploy-to-cluster`` step that the "CD" (`deployment <https://github.com/lookit/lookit-api/blob/master/cloudbuild.yaml#L68>`_) piece is executed near the very end. It leverages the contents of *this* repo, which are similarly containerized (using the GitHub integration for build triggers) and loaded into GCR for use as a `custom builder <https://cloud.google.com/cloud-build/docs/configuring-builds/use-community-and-custom-builders>`_.
 
 The CI pipeline is not completely generalized/parameterized, so to run your own Lookit CI pipeline, you'll want to set up your own brand new environment apart from the one that is used by the MIT instance of Lookit. To accomplish this, you'll need to set up your own Google Cloud Platform project. You'll need a few things turned on:
+
 - Kubernetes Engine
 - Cloud Builder
 - Container Registry
