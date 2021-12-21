@@ -1,5 +1,5 @@
 Custom randomizer frames
-========================
+================================================
 
 Experimenter supports a special kind of frame called ‘choice’ that
 defers determining what sequence of frames a participant will see until

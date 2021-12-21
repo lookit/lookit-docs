@@ -31,7 +31,7 @@ in-lab research, it’s an opportunity to improve both the participant
 experience and the science - saving you time later. So far, researchers who were frustrated by the extra steps have been convinced once they see how much their studies improve in the process.
 
 What about external studies and 'live' sessions?
-===============================================
+================================================
 
 From the beginning of Lookit through most of 2021, all studies listed on Lookit were also run within Lookit, using the Lookit experiment runner. In contrast, the new “External Study'' type recruits participants via Lookit but the experiment itself takes place elsewhere. This opens up the possibility for researchers to run “asynchronous” studies with any desired platform (e.g., Qualtrics) or “synchronous” studies (e.g., scheduled Zoom sessions).
 
