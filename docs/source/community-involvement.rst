@@ -1,5 +1,5 @@
 Community involvement
-========================
+================================================
 
 Currently Lookit is run by three people working at home during a
 pandemic. We had a description here of all the things we do, but really,

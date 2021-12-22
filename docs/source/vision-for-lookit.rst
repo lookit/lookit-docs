@@ -15,11 +15,15 @@ Our vision is of **a collaborative online lab**:
 -  Support/incentives for best practices (e.g. preregistration,
    publishing materials and data, clearly demarcating pilot data)
 -  Can be funded (at steady state) primarily by participating labs’
-   usage, although open to alternate models # Mission statement
-   Lower barriers to conducting and participating in rigorous,
-   reproducible developmental research that advances the understanding
-   of development and its implications for education, parenting, policy,
-   and medicine. 
+   usage, although open to alternate models
+
+Mission statement
+-------------------------
+
+Lower barriers to conducting and participating in rigorous,
+reproducible developmental research that advances the understanding
+of development and its implications for education, parenting, policy,
+and medicine. 
    
 We are committed to
 

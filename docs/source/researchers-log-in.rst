@@ -168,7 +168,7 @@ I switched to a new phone and can't get my OTP code
 If you still have access to your old phone:
 
 1. Log in to your account and enter the OTP code using your old phone.
-2. Click "My account" or go to `https://lookit.mit.edu/account/manage/`__ and scroll down to "Manage Two-Factor Authentication."
+2. Click "My account" or go to `<https://lookit.mit.edu/account/manage/>`_ and scroll down to "Manage Two-Factor Authentication."
 3. Enter your OTP from the old phone to disable 2FA temporarily.
 4. From "Manage Two-Factor Authentication," turn 2FA back on using your new phone.
 

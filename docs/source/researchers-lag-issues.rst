@@ -19,9 +19,9 @@ How much noise or lag you can tolerate is up to your sample size and study. The 
 
 Thanks to recent work by Lookit researchers, we have some more specific information about how Lookit studies using audio & video stimuli (i.e. vs. text, image, etc.) are affected by lag. **In particular, studies using video stimuli will tend to have a 150-450ms lag, i.e. appearing to the participant later than the Lookit frame data will indicate.**
 
-========================
+================================================
 Descriptions of lag with video stimuli
-========================
+================================================
 
 This section reports findings by Aaron Becker, Christian Harms, Lisa Oakes,
 Yi Lin, and Michaela DeBolt.
@@ -34,9 +34,9 @@ The team tested several browsers, internet speeds, and experiments and  observed
 
 All testing on this issue thus far has included video stimuli. And as of 9/7/2021 9:15 am the have not tested running on a windows machine.
 
-========================
+======================================================
 Descriptions of lag/offset with audio & visual stimuli
-========================
+======================================================
 
 In a related but separate issue, a few users have observed differences with experiment frame types that combine visual stimuli from one file with audio stimuli from a separate file. This makes it look to the participant like the audio they hear doesn't line up with the video they are seeing.
 
@@ -44,9 +44,9 @@ Unlike the first issue discussed above, this lag does *not* tend to happen on al
 
 This github issue documents the observed problem in more detail. One consequence of this issue is that audio cues may sometimes not be a fully reliable way to detect when another stimulus starts.
 
-========================
+================================================
 Affected browsers and experiment frames
-========================
+================================================
 
 The two officially supported browsers for Lookit are Chrome and Firefox. In the testing above, Chrome was generally found to have smaller lags than Firefox.
 

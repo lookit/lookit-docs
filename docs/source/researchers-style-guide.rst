@@ -6,9 +6,9 @@ Style guide
 
 We try to conform to some common stylistic, writing, and study design guidelines to provide a familiar and friendly experience across Lookit studies.
 
-========================
+================================================
 General language usage
-========================
+================================================
 
 1. Use casual language and terms where possible
 

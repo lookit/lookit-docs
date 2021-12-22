@@ -185,5 +185,6 @@ Further Reading / Useful Links
 - https://emberjs.com/
 - https://ember-cli.com/
 - Development Browser Extensions
-  - https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
-  - https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/
+
+  - `for Chrome <https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi>`_
+  - `for Firefox <https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/>`_
