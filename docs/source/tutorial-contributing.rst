@@ -236,6 +236,7 @@ List of tutorial participants
 - Julian Bok (University of Wisconsin-Madison)
 - Juliana Gerard (Ulster University)
 - Krischanda Bemister (Ryerson University)
+- Sarah der Nederlanden (University of Amsterdam)
 
 
 Checking for and creating issues on Github
