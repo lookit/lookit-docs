@@ -237,6 +237,7 @@ List of tutorial participants
 - Juliana Gerard (Ulster University)
 - Krischanda Bemister (Ryerson University)
 - Sarah der Nederlanden (University of Amsterdam)
+- Pinar Aldan (Yale University)
 
 
 Checking for and creating issues on Github
