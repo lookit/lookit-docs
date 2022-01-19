@@ -239,6 +239,7 @@ List of tutorial participants
 - Sarah der Nederlanden (University of Amsterdam)
 - Pinar Aldan (Yale University)
 - Sally Zhao (MIT)
+- Michelle Hurst (University of Chicago)
 
 
 Checking for and creating issues on Github
