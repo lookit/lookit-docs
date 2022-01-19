@@ -238,6 +238,7 @@ List of tutorial participants
 - Krischanda Bemister (Ryerson University)
 - Sarah der Nederlanden (University of Amsterdam)
 - Pinar Aldan (Yale University)
+- Michelle Hurst (University of Chicago)
 
 
 Checking for and creating issues on Github
