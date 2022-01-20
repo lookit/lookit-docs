@@ -240,6 +240,7 @@ List of tutorial participants
 - Pinar Aldan (Yale University)
 - Sally Zhao (MIT)
 - Michelle Hurst (University of Chicago)
+- Emily Pardo (University of Chicago)
 
 
 Checking for and creating issues on Github
