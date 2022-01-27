@@ -241,7 +241,7 @@ List of tutorial participants
 - Sally Zhao (MIT)
 - Michelle Hurst (University of Chicago)
 - Emily Pardo (University of Chicago)
-
+- Kayle Park (Duke University)
 
 Checking for and creating issues on Github
 -------------------------------------------
