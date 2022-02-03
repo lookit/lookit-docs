@@ -241,6 +241,7 @@ List of tutorial participants
 - Sally Zhao (MIT)
 - Michelle Hurst (University of Chicago)
 - Emily Pardo (University of Chicago)
+- Gabriel Bonamy (University of California, San Diego)
 
 
 Checking for and creating issues on Github
