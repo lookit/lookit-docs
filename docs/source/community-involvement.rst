@@ -77,6 +77,11 @@ lab work each week).
 
 Here are the current working groups:
 
+Best Practices for Video Chat Studies
+--------------------------------------------------------------------------------
+
+The goal of this Working Group is to develop best practices (and, rarely, rules) about running video chat studies (also called "synchronous" studies, these are typically "Zoom" studies). Over the past couple of years, there have been many groups independently identifying great ways to do video chat studies, and we hope to discuss and iterate on what a diverse group of researchers have done. As we develop resources for best practices, members of Lookit (and others) may choose to follow them because they are ideas that have been refined over time by a large and diverse group of people, and also just because consistency can be inherently valuable (e.g., even if a practice is not inherently better than some alternative, being consistent with our participants can make things easier and more predictable for them). See a draft of some ideas `here <https://docs.google.com/document/d/1t5MY6tfA_o9MVGSBa0j_2hXfDRpRq5mSLnoayUjBLUA/edit?usp=sharing>`_.
+
 Recruitment (social media, etc.)
 --------------------------------------------------------------------------------
 
