@@ -242,6 +242,8 @@ List of tutorial participants
 - Michelle Hurst (University of Chicago)
 - Emily Pardo (University of Chicago)
 - Kayle Park (Duke University)
+- Elizabeth Choi (Wellesley College)
+
 
 Checking for and creating issues on Github
 -------------------------------------------
