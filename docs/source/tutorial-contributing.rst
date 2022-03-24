@@ -244,6 +244,7 @@ List of tutorial participants
 - Gabriel Bonamy (University of California, San Diego)
 - Kayle Park (Duke University)
 - Elizabeth Choi (Wellesley College)
+- Asmita Mittal (MIT)
 
 
 Checking for and creating issues on Github
