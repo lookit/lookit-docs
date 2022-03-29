@@ -22,90 +22,107 @@ downloading data as a researcher.
    PR to the lookit-api repo to update the documentation! For notes on Linux installation,
    there may be helpful information in a `previous version of invoke tasks.py <https://github.com/lookit/lookit-api/blob/d1b8c9b43cb7d7bda7cdbe5958236d99af42341d/tasks.py>`__.
 
-Requirements
-~~~~~~~~~~~~
+Django
+~~~~~~
 
-This is the software you will need to have installed to run lookit-api locally.
+These instructions will get walk you through the installation and running of the Django's local envionment.  
 
-#. Clone repo and change directory:
+#. Install `Homebrew <https://brew.sh/>`__.  Run update and upgrade:
 
    .. code-block:: shell
 
-      git clone https://github.com/lookit/lookit-api.git
+      brew update && brew upgrade
+
+#. Install `Docker <https://docs.docker.com/docker-for-mac/install/>`__ and make sure it's running.
+
+#. Install Git and Poetry:
+
+   .. code-block:: shell
+
+      brew install git poetry
+
+#. Change directory to where you want the project to live.  Next, clone repo and change directory.
+
+   .. code-block:: shell
+
+      git clone git@github.com:lookit/lookit-api.git
       cd lookit-api
 
-#. Copy the default environment variable file to expected file name:
+#. Set Poetry's Python and install Python packages:
 
    .. code-block:: shell
 
-      cp env_dist .env
-
-#. You will need to have `Docker installed <https://docs.docker.com/docker-for-mac/install/>`__ and running.
-#. Install and start rabbitmq via docker:
-
-   .. code-block:: shell
-
-      docker run -d --name lookit-rabbit --env-file .env -p 5672:5672 rabbitmq:3.8.16-management-alpine
-      docker cp ./rabbitmq.sh lookit-rabbit:/rabbitmq.sh
-      docker exec -it lookit-rabbit /bin/sh -c "sh /rabbitmq.sh"
-
-#. Create a Postgres database using the following command:
-   
-   .. code-block:: shell
-
-      docker run --name lookit-postgres -d -e POSTGRES_HOST_AUTH_METHOD="trust" -e POSTGRES_DB="lookit" -p 5432:5432 postgres:9.6
-
-#. To help with installing a specific version of python, we'll need to `install asdf <https://asdf-vm.com/#/core-manage-asdf?id=install>`__. 
-#. Add Python plugin using the following command.  Here's `documentation <https://github.com/danhper/asdf-python>`__ to help with errors:
-
-   .. code-block:: shell
-
-      asdf plugin-add python
-
-#. At the root of the project, install the version of python required by this project; 
-   ASDF will automatically detect that from a .tool-versions file.  
-   The `asdf Python plugin docs <https://github.com/danhper/asdf-python>`__ can help 
-   install older versions of python:
-
-   .. code-block:: shell
-
-      asdf install
-      
-   If using macOS 11, you will need to use the 
-   `patch provided by asdf <https://github.com/danhper/asdf-python#install-with---patch>`__ to install.
-
-#. Install `Poetry <https://python-poetry.org/docs/#installation>`__. If you run into an 
-   SSL error (see `this issue <https://github.com/python-poetry/poetry/issues/449>`__), 
-   you likely need to install certificates for this version of Python.
-
-#. Install Python libraries:
-
-   .. code-block:: shell
-
+      poetry env use python3.9
+      poetry run pip -U pip wheel setuptools
       poetry install
-      
-   If Poetry has trouble finding the version of Python installed by ASDF, double check
-   that asdf.sh has been added to .bash_profile and the shell restarted as described in 
-   the asdf installation directions. 
 
-#. Use invoke to run setup:
+#. Create database and run setup script:
 
    .. code-block:: shell
 
-      poetry run invoke setup
-      
+      poetry run invoke create-db setup
+
    This will create a local .env file with environment variables for local development,
    run the Django application's database migrations ("catching up" on changes to the 
-   database structure), set up rabbitmq with queues for various task types, and create 
-   local SSL certificates. If you're curious about what exactly is happening during this 
-   step, or run into any problems, you can reference the file 
-   `tasks.py <https://github.com/lookit/lookit-api/blob/develop/tasks.py>`__.
-  
-#. Create a superuser by running:
+   database structure) and create local SSL certificates. If you're curious about what 
+   exactly is happening during this step, or run into any problems, you can reference the 
+   file `tasks.py <https://github.com/lookit/lookit-api/blob/develop/tasks.py>`__.
+
+#. Run local environment server:
 
    .. code-block:: shell
 
-      poetry run ./manage.py createsuperuser
+      poetry run ./manage.py runserver
+
+#. Navigate to local environment at http://localhost:8000.
+
+Rabbitmq
+~~~~~~~~
+
+These instructions will have you create and start a RabbitMQ image in Docker.
+
+Install and start rabbitmq via docker:
+
+.. code-block:: shell
+
+   docker run -d --name lookit-rabbit --env-file .env -p 5672:5672 rabbitmq:3.8.16-management-alpine
+   docker cp ./rabbitmq.sh lookit-rabbit:/rabbitmq.sh
+   docker exec -it lookit-rabbit /bin/sh -c "sh /rabbitmq.sh"
+
+Postgres
+~~~~~~~~
+
+This is covered above, but as sometimes databases can be ephemeral during development I felt that it deserved its own section.
+
+Create a Postgres database using the following command:
+   
+.. code-block:: shell
+
+   poetry run create-db
+
+To reset the database:
+
+.. code-block:: shell
+
+   poetry run reset-db
+
+To reset the database and load an existing sql data file:
+
+.. code-block:: shell
+
+   poetry run reset-db -s /location/of/sql/file
+
+
+Create Superuser
+~~~~~~~~~~~~~~~~
+
+You can create a user through UI or if you'd rather have Superuser access you can create a user with the manage script.
+  
+Create a superuser by running:
+
+.. code-block:: shell
+
+   poetry run ./manage.py createsuperuser
       
 Now you should be ready for anything. Going forward, you can run the server using the 
 directions below.
@@ -113,7 +130,15 @@ directions below.
 Running the server
 ~~~~~~~~~~~~~~~~~~~
 
+Again, this is covered above, but there is a case you'd need to run the development server with SSL.  This section will cover both variants. 
+
 To run the Lookit server locally, run:
+
+.. code-block:: shell
+
+   poetry run ./manage.py runserver
+
+Or to use the invoke script:
 
 .. code-block:: shell
 
@@ -132,7 +157,7 @@ If you are not working extensively with lookit-api - i.e., if you just want to m
 new frames - you do not need to run celery, rabbitmq, or docker. For more information about 
 these services and how they interact, please see the `Contributing guidelines <https://github.com/lookit/lookit-api/blob/develop/CONTRIBUTING.md>`__.
 
-Running Celery 
+Celery 
 ~~~~~~~~~~~~~~
 
 You should already have a rabbitmq server installed and running.  You can check this by:
@@ -202,38 +227,3 @@ To fix, run something like the following from your home directory:
 
 If your version of postgres is different than 9.6.3, replace with the
 correct version above. Running this command should be a one-time thing.
-
-.. raw:: html
-
-   <hr>
-
-You might also have issues with the installation of ``pygraphviz``, with
-errors like
-
-::
-
-   running install
-   Trying pkg-config
-   Package libcgraph was not found in the pkg-config search path.
-   Perhaps you should add the directory containing `libcgraph.pc'
-   to the PKG_CONFIG_PATH environment variable
-   No package 'libcgraph' found
-
-or
-
-::
-
-   pygraphviz/graphviz_wrap.c:2954:10: fatal error: 'graphviz/cgraph.h' file not found
-   #include "graphviz/cgraph.h"
-          ^
-   1 error generated.
-   error: command 'clang' failed with exit status 1
-
-To fix, try running something like:
-
-::
-
-   $ brew install graphviz
-   $ pip install --install-option="--include-path=/usr/local/include" --install-option="--library-path=/usr/local/lib" pygraphviz
-
-Then re-run setup.
