@@ -245,6 +245,7 @@ List of tutorial participants
 - Kayle Park (Duke University)
 - Elizabeth Choi (Wellesley College)
 - Asmita Mittal (MIT)
+- Mathilda Kitzmann (Stanford)
 
 
 Checking for and creating issues on Github
