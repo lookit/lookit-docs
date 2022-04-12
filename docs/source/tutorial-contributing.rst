@@ -246,6 +246,7 @@ List of tutorial participants
 - Elizabeth Choi (Wellesley College)
 - Asmita Mittal (MIT)
 - Mathilda Kitzmann (Stanford)
+- Jamie Park (University of California, San Diego)
 
 
 Checking for and creating issues on Github
