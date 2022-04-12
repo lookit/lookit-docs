@@ -286,7 +286,7 @@ Then make sure to also add "video-preview" to your ``sequence``. You can put thi
 5. Instructions
 ~~~~~~~~~~~~~~~
 
-Almost done with the preparations! We're just going to give particpants one more frame with directions so these are fresh in their minds. This time we'll use an exp-lookit-instructions frame, which allows showing a fairly flexible combination of text, audio, video, and the user's own webcam. Here's a starting point for the frame to add:
+Almost done with the preparations! We're just going to give participants one more frame with directions so these are fresh in their minds. This time we'll use an exp-lookit-instructions frame, which allows showing a fairly flexible combination of text, audio, video, and the user's own webcam. Here's a starting point for the frame to add:
 
 .. code:: javascript
 
