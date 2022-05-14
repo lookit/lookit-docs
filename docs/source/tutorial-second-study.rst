@@ -902,7 +902,7 @@ Then we also need to define the ``parameterSets``, which will let us define valu
     
 By default, half of kids will be assigned to the first set, and half to the second. That's what we want here, so we don't need to do anything more. But if you wanted to assign more kids to one condition (for instance, because you had enough data from one condition) or assign kids to conditions based on their ages, you could also provide a ``parameterSetWeights`` property for this randomizer. 
 
-Putting it all together, you should now have a test-trials randomizer frame with ``frameList``, ``parameterSets``, and ``commonFrameProperties`` defined. Give it a try - a few times! Sometimes you should see one condition, and sometimes the other. (If you really want to see how a particular parameterSet works, that's another reason to provide the ``parameterSetWeights`` - e.g., you could set that to ``[1, 0]`` to only use the first set.)
+Putting it all together, you should now have a test-trials randomizer frame with ``frameList``, ``parameterSets``, and ``commonFrameProperties`` defined. Remember, it is important to insert "test-trials" in the sequence to see it in action. Now give it a try - a few times! Sometimes you should see one condition, and sometimes the other. (If you really want to see how a particular parameterSet works, that's another reason to provide the ``parameterSetWeights`` - e.g., you could set that to ``[1, 0]`` to only use the first set.)
 
 About creating and hosting your stimuli
 ----------------------------------------
