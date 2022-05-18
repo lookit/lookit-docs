@@ -591,11 +591,11 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
         "frameList": [ 
             ... <--  almost everything in here can stay the same
             {
-                "audio": "QUESTION_AUDIO", <-- but change this to "QUESTION_AUDIO"
+                "audio": "bunnya01", <-- but change this to "QUESTION_AUDIO"
                 "images": [
                     {
                         "id": "storybookIllustration",
-                        "src": "QUESTION_IMAGE", <-- and change this to "QUESTION_IMAGE"
+                        "src": "bunnya01.png", <-- and change this to "QUESTION_IMAGE"
                         "top": 0,
                         "left": 10,
                         "width": 80
