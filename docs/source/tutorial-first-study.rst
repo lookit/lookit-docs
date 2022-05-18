@@ -591,32 +591,33 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
         "frameList": [ 
             ... <--  almost everything in here can stay the same
             {
+                "audio": "QUESTION_AUDIO", <-- but change this to "QUESTION_AUDIO"
                 "images": [
                     {
                         "id": "storybookIllustration",
-                        "src": "bunnya01.png", <-- but change this to "QUESTION_IMAGE"
-                        "top": "0",
-                        "left": "10",
-                        "width": "80"
+                        "src": "QUESTION_IMAGE", <-- and change this to "QUESTION_IMAGE"
+                        "top": 0,
+                        "left": 10,
+                        "width": 80
                     }
                 ],
-                "audio": "bunnya01" <-- and change this to "QUESTION_AUDIO"
+                "doRecording": true
             },
-            ...
-        ],
-        "commonFrameProperties": { <-- everything in here can stay the same
-            ...
-        },
-        "parameterSets": [ <-- add this section!
-           {
-               "QUESTION_IMAGE": "bunnya01.png",
-               "QUESTION_AUDIO": "bunnya01"
-           },
-           {
-               "QUESTION_IMAGE": "bunnyb01.png",
-               "QUESTION_AUDIO": "bunnyb01"
-           }
-       ]
+             ...
+             ],
+             "commonFrameProperties": { <-- everything in here can stay the same
+             ...
+ },
+            "parameterSets": [ <-- add this section!
+            {
+                "QUESTION_AUDIO": "bunnya01",
+                "QUESTION_IMAGE": "bunnya01.png"
+            },
+            {
+                "QUESTION_AUDIO": "bunnyb01",
+                "QUESTION_IMAGE": "bunnyb01.png"
+            }
+        ]
    }
    
 Now when you try out the study, about half the time you'll hear "was it because of eating a sandwich, or feeling scared?" and the other half of the time you'll hear "was it because of feeling scared, or eating a sandwich?" Don't worry about the details yet - the important thing is just to understand that this is a sort of thing you can do relatively easily.
