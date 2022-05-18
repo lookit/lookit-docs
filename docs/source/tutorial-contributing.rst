@@ -248,6 +248,7 @@ List of tutorial participants
 - Mathilda Kitzmann (Stanford)
 - Jamie Park (University of California, San Diego)
 - Kiley McKee (Northwestern University)
+- Noelani Pence (University of Oregon)
 
 
 Checking for and creating issues on Github
