@@ -247,6 +247,7 @@ List of tutorial participants
 - Asmita Mittal (MIT)
 - Mathilda Kitzmann (Stanford)
 - Jamie Park (University of California, San Diego)
+- Kiley McKee (Northwestern University)
 - Noelani Pence (University of Oregon)
 
 
