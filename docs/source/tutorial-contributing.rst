@@ -249,6 +249,7 @@ List of tutorial participants
 - Jamie Park (University of California, San Diego)
 - Kiley McKee (Northwestern University)
 - Noelani Pence (University of Oregon)
+- Anna Soderling (Duke University)
 
 
 Checking for and creating issues on Github
