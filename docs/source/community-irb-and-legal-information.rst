@@ -73,7 +73,7 @@ If your institution requires changes
 We have generally been able to accommodate requests for minor changes to
 the agreement as required by universities’ legal departments (e.g. when they are *legally 
 unable* to agree to MA governing law, or to allow UK ethics committee approval in addition to "US-equivalent" IRBs). If it looks like some clause would be a deal-breaker for your
-institution, please get in touch with Kim Scott (kimscott) and general
+institution, please get in touch with Melissa Kline Struhl (mekline) and general
 counsel lawyer Jason Baletsa (jbaletsa) at mit.edu for advice. 
 
 Please note that approval of changes happens on the MIT General Counsel office's 
