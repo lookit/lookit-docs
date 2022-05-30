@@ -9,7 +9,7 @@ Common resources and processes
 -------------------------------
 
 - A time-tested approach to **consenting families online** that has been
-  approved by review boards at 10+ institutions.
+  approved by review boards at 50+ institutions.
 
   .. image:: _static/img/wiki/consent_screenshot.png
      :alt: participant consent view screenshot
@@ -148,10 +148,6 @@ Lookit won’t be the right approach for all online developmental
 research! Here are some cases where other tools will likely be a better
 fit:
 
--  Interactive, synchronous studies where an experimenter talks with the
-   family over audio or video chat, or where participants interact with
-   each other. Lookit does not yet have these capabilities.
-
 -  Medical research conducted by HIPAA-covered entities. Lookit is not
    yet HIPAA compliant. (Note that HIPAA applies based on the status of
    the researcher - not just on the type of information collected.
@@ -161,11 +157,6 @@ fit:
 -  Short one-off survey studies where you want to minimize time required
    to participate, and even asking families to create a login would be
    excessive
-
--  Studies you have already implemented for adults and want to run with
-   older children and teens as well. (You *could* run a study like this
-   on Lookit, but if you already have a robust setup for collecting data
-   from adults, it will probably be easier to stick with that!)
 
 -  Studies that pose appreciable risks or harm to participants or the
    world (e.g., you'd like to try teaching children about "the
