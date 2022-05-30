@@ -250,6 +250,7 @@ List of tutorial participants
 - Kiley McKee (Northwestern University)
 - Noelani Pence (University of Oregon)
 - Anna Soderling (Duke University)
+- Kaelin Kinney (University of Louisville)
 
 
 Checking for and creating issues on Github
