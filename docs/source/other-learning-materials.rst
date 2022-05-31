@@ -42,14 +42,14 @@ Other helpful resources
    list <http://mailman.mit.edu/mailman/listinfo/lookit-research>`__ for
    occasional (2-4x/year) progress updates.
 -  Feel free to fill out the
-   `survey <https://goo.gl/forms/cGpQNPHXSsZmc75W2>`__ collecting info
+   `survey (DEAD LINK!) <https://goo.gl/forms/cGpQNPHXSsZmc75W2>`__ collecting info
    about what people would do with Lookit
 -  Our March 2020 `APS Observer
    article <https://www.psychologicalscience.org/observer/kids-in-their-comfort-zones>`__
    which describes the current status of Lookit and how you can get your
    study ready!
 -  `3-year
-   plan <https://docs.google.com/spreadsheets/d/1b2u4NE75IdbNBVRnh6wQgrZmXVPTNlKv-IazUOWUp5Q/edit?usp=sharing>`__
+   plan (DEAD LINK!) <https://docs.google.com/spreadsheets/d/1b2u4NE75IdbNBVRnh6wQgrZmXVPTNlKv-IazUOWUp5Q/edit?usp=sharing>`__
 -  Lookit papers
    (`1 <http://www.mitpressjournals.org/doi/full/10.1162/OPMI_a_00002>`__,
    `2 <http://www.mitpressjournals.org/doi/full/10.1162/OPMI_a_00001>`__)
