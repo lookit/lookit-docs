@@ -48,7 +48,7 @@ Step 3: Create your Lookit account
 Where to go for help
 ---------------------
 
-* If you need help as you're completing this tutorial - or later when you're creating and running studies on Lookit - the best place to go is the Lookit Slack workspace. Check the 'researchers' or 'tech support' channels to see if someone has asked the same question before! If not, post in one of these channels to get support from Lookit staff and/or other researchers who may have dealt with the same issue. (If you need help specifically from Lookit staff, feel free to add `@Kim` to your post to tag Kim, but under almost all circumstances the question should still go in one of the public channels rather than a private chat, so that other people can see the answers.)
+* If you need help as you're completing this tutorial - or later when you're creating and running studies on Lookit - the best place to go is the Lookit Slack workspace. Check the 'researchers' or 'tech support' channels to see if someone has asked the same question before! If not, post in one of these channels to get support from Lookit staff and/or other researchers who may have dealt with the same issue. (If you need help specifically from Lookit staff, feel free to add `@Melissa` to your post to tag Melissa, but under almost all circumstances the question should still go in one of the public channels rather than a private chat, so that other people can see the answers.)
 
   Even if you're not totally stumped, it's worth checking in on Slack to get ideas and resources! For example, you might ask if anyone has an R script for analyzing their data that you could use as a starting point, or run a draft debriefing by other researchers to get advice on wording.
     

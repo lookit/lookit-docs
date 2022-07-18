@@ -55,7 +55,7 @@ Other helpful resources
    `2 <http://www.mitpressjournals.org/doi/full/10.1162/OPMI_a_00001>`__)
 -  `Lookit overview
    video <https://www.youtube.com/watch?v=CcoHO5-NDwM>`__
--  `Video data from test studies <https://osf.io/mbcu2/>`__ (email Kim
+-  `Video data from test studies <https://osf.io/mbcu2/>`__ (email Melissa Kline Struhl
    for access)
 -  `Photos and video that can be used for
    publicity <https://drive.google.com/drive/folders/0B3TF9B9t1AZnYnBSdXk3aXpJQ1E>`__

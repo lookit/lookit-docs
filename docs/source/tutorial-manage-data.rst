@@ -16,7 +16,7 @@ Try it out! Add another person to your tutorial study. On the study page in the 
 .. image:: _static/img/tutorial/manage_researchers.png
     :alt: Manage researchers section
     
-In the search box, type in the first few letters of someone you want to add, and press Enter. (If you don't know anyone else using Lookit, feel free to add Lookit staff Kim Scott or Rico Rodriguez to your study!) Click the green "+" button to add them to your study:
+In the search box, type in the first few letters of someone you want to add, and press Enter. (If you don't know anyone else using Lookit, feel free to add Lookit staff Melissa Kline Struhl or Rico Rodriguez to your study!) Click the green "+" button to add them to your study:
 
 .. image:: _static/img/tutorial/add_researcher.png
     :alt: Adding a researcher
