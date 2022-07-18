@@ -252,6 +252,8 @@ List of tutorial participants
 - Anna Soderling (Duke University)
 - Kaelin Kinney (University of Louisville)
 - Karina Kling (University of Chicago)
+- Sereniti Williams (Northwestern University) 
+- Ian Chandler-Campbell (University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
