@@ -41,24 +41,25 @@ Other helpful resources
 -  Join the `Lookit-research email
    list <http://mailman.mit.edu/mailman/listinfo/lookit-research>`__ for
    occasional (2-4x/year) progress updates.
--  Feel free to fill out the
-   `survey (DEAD LINK!) <https://goo.gl/forms/cGpQNPHXSsZmc75W2>`__ collecting info
-   about what people would do with Lookit
+   
 -  Our March 2020 `APS Observer
    article <https://www.psychologicalscience.org/observer/kids-in-their-comfort-zones>`__
    which describes the current status of Lookit and how you can get your
    study ready!
--  `3-year
-   plan (DEAD LINK!) <https://docs.google.com/spreadsheets/d/1b2u4NE75IdbNBVRnh6wQgrZmXVPTNlKv-IazUOWUp5Q/edit?usp=sharing>`__
+
 -  Lookit papers
    (`1 <http://www.mitpressjournals.org/doi/full/10.1162/OPMI_a_00002>`__,
    `2 <http://www.mitpressjournals.org/doi/full/10.1162/OPMI_a_00001>`__)
+   
 -  `Lookit overview
    video <https://www.youtube.com/watch?v=CcoHO5-NDwM>`__
+   
 -  `Video data from test studies <https://osf.io/mbcu2/>`__ (email Kim
    for access)
+   
 -  `Photos and video that can be used for
    publicity <https://drive.google.com/drive/folders/0B3TF9B9t1AZnYnBSdXk3aXpJQ1E>`__
+   
 -  `Recruitment materials (flyers, brochures,
    etc.) <https://github.com/lookit/research-resources/tree/master/Recruitment>`__
 
