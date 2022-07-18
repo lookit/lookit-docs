@@ -22,161 +22,120 @@ downloading data as a researcher.
    PR to the lookit-api repo to update the documentation! For notes on Linux installation,
    there may be helpful information in a `previous version of invoke tasks.py <https://github.com/lookit/lookit-api/blob/d1b8c9b43cb7d7bda7cdbe5958236d99af42341d/tasks.py>`__.
 
-Django
-~~~~~~
 
-These instructions will get walk you through the installation and running of the Django's local envionment.  
+Prerequisites
+~~~~~~~~~~~~~
 
-#. Install `Homebrew <https://brew.sh/>`__.  Run update and upgrade:
+Before you can begin setting your local environment, we'll need to install a couple of things.
 
-   .. code-block:: shell
+#. Install `mkcert <https://github.com/FiloSottile/mkcert>`__.
 
-      brew update && brew upgrade
+#. Install `Docker Desktop <https://www.docker.com/products/docker-desktop/>`__.
 
-#. Install `Docker <https://docs.docker.com/docker-for-mac/install/>`__ and make sure it's running.
+Local Environment
+~~~~~~~~~~~~~~~~~
 
-#. Install Git and Poetry:
+Now the Prerequisites have been installed and Docker is running we can setup the local environment.
 
-   .. code-block:: shell
-
-      brew install git poetry
-
-#. Change directory to where you want the project to live.  Next, clone repo and change directory.
+#. Clone lookit-api and change directory:
 
    .. code-block:: shell
 
       git clone git@github.com:lookit/lookit-api.git
       cd lookit-api
 
-#. Set Poetry's Python and install Python packages:
+#. Create environment file:
+
+   .. code-block:: shell
+      
+      cp env_dist .env
+
+#. Make local CA and certificates for HTTPS:
 
    .. code-block:: shell
 
-      poetry env use python3.9
-      poetry run pip -U pip wheel setuptools
-      poetry install
+      make local-certs
 
-#. Create database and run setup script:
+#. Run DB migrations and add entry into Site table:
 
    .. code-block:: shell
 
-      poetry run invoke create-db setup
+      make migrate
+      make site
 
-   This will create a local .env file with environment variables for local development,
-   run the Django application's database migrations ("catching up" on changes to the 
-   database structure) and create local SSL certificates. If you're curious about what 
-   exactly is happening during this step, or run into any problems, you can reference the 
-   file `tasks.py <https://github.com/lookit/lookit-api/blob/develop/tasks.py>`__.
-
-#. Run local environment server:
+#. Celery worker will need some permissions setup to run correctly.  To setup these permissions, we'll need to first start the Docker services:
 
    .. code-block:: shell
 
-      poetry run ./manage.py runserver
+      make serve
 
-#. Navigate to local environment at http://localhost:8000.
+   Once the services are up and worker has exited due to a permission constraint, we'll set the permissions in the container and restart the worker:
+
+   .. code-block:: shell
+
+      make broker-perms
+
+   From time to time, the container will need to be recreated,  when this happens you may need to run "broker-perms" again. 
+
+At this point, the services should all be up and running.  Direct your browser to https://localhost:8000 to see the local environment. In the future, to start the services you will only need to run "make serve"
+
+
+Django
+~~~~~~
+
+Here are few Django related tasks that might come up every now and then. 
+
+To migrate the existing database:
+
+.. code-block:: shell
+
+   make migrate
+
+If you need to create an entry in the Site table:
+
+.. code-block:: shell
+
+   make site
+
+To create a superuser:
+
+.. code-block:: shell
+
+   make superuser
+
+To run tests:
+
+.. code-block:: shell
+
+   make tests
+
 
 Rabbitmq
 ~~~~~~~~
 
-These instructions will have you create and start a RabbitMQ image in Docker.
-
-Install and start rabbitmq via docker:
+The broker should come up with the rest of the Docker services.  If you get a Celery worker error due to permissions, you can run the following command to resolve the issue and restart the worker service:
 
 .. code-block:: shell
 
-   docker run -d --name lookit-rabbit --env-file .env -p 5672:5672 rabbitmq:3.8.16-management-alpine
-   docker cp ./rabbitmq.sh lookit-rabbit:/rabbitmq.sh
-   docker exec -it lookit-rabbit /bin/sh -c "sh /rabbitmq.sh"
+   make broker-perms
 
 Postgres
 ~~~~~~~~
 
-This is covered above, but as sometimes databases can be ephemeral during development I felt that it deserved its own section.
+Here are a couple of command that might be useful for managing the local database.
 
-Create a Postgres database using the following command:
-   
-.. code-block:: shell
-
-   poetry run create-db
-
-To reset the database:
+To access the database shell:
 
 .. code-block:: shell
 
-   poetry run reset-db
+   make dbshell
 
-To reset the database and load an existing sql data file:
-
-.. code-block:: shell
-
-   poetry run reset-db -s /location/of/sql/file
-
-
-Create Superuser
-~~~~~~~~~~~~~~~~
-
-You can create a user through UI or if you'd rather have Superuser access you can create a user with the manage script.
-  
-Create a superuser by running:
+To import a SQL file into a fresh database (one where migrations haven't been ran):
 
 .. code-block:: shell
 
-   poetry run ./manage.py createsuperuser
-      
-Now you should be ready for anything. Going forward, you can run the server using the 
-directions below.
+   cat /location/of/sql/file | make dbpipe
 
-Running the server
-~~~~~~~~~~~~~~~~~~~
-
-Again, this is covered above, but there is a case you'd need to run the development server with SSL.  This section will cover both variants. 
-
-To run the Lookit server locally, run:
-
-.. code-block:: shell
-
-   poetry run ./manage.py runserver
-
-Or to use the invoke script:
-
-.. code-block:: shell
-
-   poetry run invoke server
-
-Now you can go to http://localhost:8000 to see your local Lookit server! You should be able to log in using 
-the superuser credentials you created during setup.
-
-To view the HTTPS version of the local development add the ``https`` argument to the above command:
-
-.. code-block:: shell
-
-   poetry run invoke server --https
-
-If you are not working extensively with lookit-api - i.e., if you just want to make some 
-new frames - you do not need to run celery, rabbitmq, or docker. For more information about 
-these services and how they interact, please see the `Contributing guidelines <https://github.com/lookit/lookit-api/blob/develop/CONTRIBUTING.md>`__.
-
-Celery 
-~~~~~~~~~~~~~~
-
-You should already have a rabbitmq server installed and running.  You can check this by:
-
-.. code-block:: shell
-
-   docker ps -f name=lookit-rabbit
-   
-If rabbitmq is not running, you can start it using:
-
-.. code-block:: shell
-
-   docker start lookit-rabbit
-
-Then use the invoke command to start the celery worker:
-
-.. code-block:: shell
-
-   poetry run invoke celery-service
 
 Authentication
 ~~~~~~~~~~~~~~
@@ -208,22 +167,3 @@ during testing:
 Then, based on the the assigned URL, you will need to manually edit the webhook on the 
 dev environment of Pipe to send the ``video_copied_s3`` event to (for example) 
 ``https://8b48ad70.ngrok.io/exp/renamevideo/``.
-
-
-Common Issues
-~~~~~~~~~~~~~
-
-During installation, you may see the following:
-
-::
-
-   psql: FATAL:  role "postgres" does not exist
-
-To fix, run something like the following from your home directory:
-
-::
-
-   $../../../usr/local/Cellar/postgresql/9.6.3/bin/createuser -s postgres
-
-If your version of postgres is different than 9.6.3, replace with the
-correct version above. Running this command should be a one-time thing.
