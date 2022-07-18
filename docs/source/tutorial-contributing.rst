@@ -251,6 +251,7 @@ List of tutorial participants
 - Noelani Pence (University of Oregon)
 - Anna Soderling (Duke University)
 - Kaelin Kinney (University of Louisville)
+- Gianna Zades (Harvard University)
 - Karina Kling (University of Chicago)
 - Sereniti Williams (Northwestern University) 
 - Ian Chandler-Campbell (University of Texas at Dallas)
