@@ -31,7 +31,7 @@ MIT
 Who should I list as a contact in case our contracts/sponsored programs/legal/etc. office has questions?
 --------------------------------------------------------------------------------------------------------
 
-Kim Scott, lookit@mit.edu
+Melissa Kline Struhl, lookit@mit.edu
 
 Is there an IRB protocol at MIT that covers Lookit staff’s use of the data on the platform?
 -------------------------------------------------------------------------------------------
