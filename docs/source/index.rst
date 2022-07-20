@@ -9,9 +9,15 @@ What is Lookit?
 ----------------
 Lookit is an online platform for developmental research. Families can sign up or log in, provide some basic information about their children, and then take part in studies from a variety of labs when it's convenient for them.
 
-There's no videoconferencing or scheduling: parents and children simply do activities in the web browser, and information about the session (e.g., survey responses, timing, condition assignment) along with webcam video of the session is sent to the Lookit server.
+There are current three main categories of study types on Lookit:
 
-Lookit can be used to collect looking measures from preverbal children as well as verbal responses, pointing, etc. from older children. Researchers can design, test, and manage their studies on the platform, including contacting participants; common tasks such as checking for informed verbal consent before accessing any data from a session are built into the Lookit research workflow.
+1. Internal studies, using the Lookit experiment builder. The Lookit experiment builder can be used to collect looking measures from preverbal children as well as verbal responses, pointing, etc. from older children. These studies have no videoconferencing or scheduling: parents and children simply do activities in the web browser, and information about the session (e.g., survey responses, timing, condition assignment) along with webcam video of the session is sent to the Lookit server where it can be accessed by authorized researchers.
+
+2. External, asynchronous (unscheduled, unmoderated) studies. Reseachers provide a link to a study hosted elsewhere (e.g. Qualtrics), and families see these studies advertised together with the Lookit-internal studies. Demographic information about children who participate in a specific study is made available to the corresponding researchers, and many experiment platforms make it possible to store an anonymous session ID, in order to match Lookit data to the external study data.
+
+3. External, sychronous (scheduled, moderated) studies. Researchers provide a link to a scheduling system, and arrange a time to meet a family for a session over video chat. Families can see which studies are scheduled vs. unscheduled, and researchers can access & link Lookit data in the same ways as for other external studies.
+
+All study types use the Lookit platform to design, test, and manage studies, including study submission/posting, contacting participants and accessing participant data. For Lookit-internal studies, common tasks such as checking for informed verbal consent before accessing any data from a session are also built into the workflow.
 
 Families may take part in studies from multiple labs over time. Having one central platform allows families to access many interesting studies for all the children in their family in one place, and researchers benefit from economies of scale in software development and recruitment.
 
