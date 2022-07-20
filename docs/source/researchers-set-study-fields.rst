@@ -367,9 +367,6 @@ Choose from a set of options to help us understand how researchers schedule part
 
 
 
-.. image:: _static/img/attachments.png
-    :alt: View all study videos
-
 .. _`Building an Experiment`: researchers-create-experiment.html
 
 .. _`Experiment data`: researchers-experiment-data.html
