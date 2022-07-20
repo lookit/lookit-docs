@@ -9,6 +9,8 @@ Welcome
 
 Welcome to the Lookit tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own studies on Lookit. By the end of the tutorial, you will be able to create a participant-friendly study on Lookit that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
 
+This tutorial was written for researchers who will be building internal Lookit studies, but most steps are also applicable for researchers who will be sharing a link to an external study instead.
+
 This tutorial should take between 5 and 10 hours to complete, and does not assume any familiarity with programming. There is a mix of step-by-step directions and exercises to complete. It's the best way to get started using Lookit, and a good first task to give to an RA who will be designing studies. Note that it does **not** cover issues like participant recruitment and IRB approval, just the technical side of things.
 
 Throughout the tutorial, you may want to have the tutorial open in one browser window while you complete the tasks in another window.
