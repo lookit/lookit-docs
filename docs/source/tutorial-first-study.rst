@@ -4,6 +4,7 @@
 
 In this section, you will be creating your first study on Lookit. You will learn how to find and use experiment components, specify your protocol, and test out and troubleshoot your study. 
 
+This section is designed for researchers planning to build an internal Lookit study. If your first study involves a link to an experiment hosted somewhere else, skip to part 6 of this tutorial.
 
 Step 1: Clone the 'Lookit tutorial part 1' study
 -------------------------------------------------
