@@ -255,6 +255,7 @@ List of tutorial participants
 - Karina Kling (University of Chicago)
 - Sereniti Williams (Northwestern University) 
 - Ian Chandler-Campbell (University of Texas at Dallas)
+- Jena Miko (University of Oregon)
 
 Checking for and creating issues on Github
 -------------------------------------------
