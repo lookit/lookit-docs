@@ -35,13 +35,9 @@ What about external studies and 'live' sessions?
 
 From the beginning of Lookit through most of 2021, all studies listed on Lookit were also run within Lookit, using the Lookit experiment runner. In contrast, the new “External Study'' type recruits participants via Lookit but the experiment itself takes place elsewhere. This opens up the possibility for researchers to run “asynchronous” studies with any desired platform (e.g., Qualtrics) or “synchronous” studies (e.g., scheduled Zoom sessions).
 
-Study review for *asynchronous* studies that take place outside of Lookit are subject to the same review process as Lookit-internal studies. Again, this is because we all share a reputation, and positive or negative experiences that affect a family in one study affect all of us. When you ask for peer review, you must have the 'Lookit part' of your study created and set up exactly as your participants would experience it; researchers who act as reviewers for it should start at Lookit and sign up for a session exactly as participants will.
+Study review for *asynchronous* studies that take place outside of Lookit are subject to the same review process as Lookit-internal studies. Again, this is because we all share a reputation, and positive or negative experiences that affect a family in one study affect all of us. When you ask for peer review, you must have the 'Lookit part' of your study created and set up exactly as your participants would experience it; researchers who act as reviewers for it should start at Lookit and run through the entire study experience exactly as a participant would.
 
-
-Study review for *synchronous* (video) studies are also subject to peer and internal Lookit review. Right now, most of our documentation assumes that studies are asynchronous, but you should expect to demonstrate your entire procedure (from scheduling all the way to debriefing) to at least one other researcher during this process. 
-
-Although creating an external study is a listed option for everyone, we will be pilot testing it and rolling it out in stages--if you are interested in being part of the pilot, or if you have questions about how any of the Lookit procedures would work for your external study, please message Melissa Kline Struhl (on Slack or mekline@mit.edu).
-
+Study review for *synchronous* (video) studies are also subject to peer and internal Lookit review. Right now, much of our peer review documentation assumes that studies are asynchronous, but you should expect to demonstrate your entire procedure (from scheduling all the way to debriefing) to at least one other researcher during this process. Researchers who act as reviewers should start from a Lookit study link, sign up for a session and communicate with the experimenter exactly as a participant would, and attend & record a video chat session including all warmup, consent, and debrief that a participant would experience.
 
 
 If you don’t have IRB approval or an access agreement yet
