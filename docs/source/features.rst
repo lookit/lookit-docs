@@ -148,11 +148,11 @@ Lookit won’t be the right approach for all online developmental
 research! Here are some cases where other tools will likely be a better
 fit:
 
--  Medical research conducted by HIPAA-covered entities. Lookit is not
+-  Medical research conducted by HIPAA-covered entities or individuals. Lookit is not
    yet HIPAA compliant. (Note that HIPAA applies based on the status of
-   the researcher - not just on the type of information collected.
+   the researcher/healthcare provider - not just on the type of information collected.
    Academic researchers can generally collect health information without
-   being covered by HIPAA.)
+   being covered by HIPAA, and more than one hospital-based research labs have successfully negotiated data agreements allowing them to use Lookit for some types of studies.)
 
 -  Short one-off survey studies where you want to minimize time required
    to participate, and even asking families to create a login would be
