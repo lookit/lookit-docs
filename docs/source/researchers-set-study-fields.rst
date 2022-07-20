@@ -4,7 +4,7 @@
 Setting study details
 ##################################
 
-When creating or editing a study, you can set the value of the following fields. Below is more information about each:
+When creating or editing a study, you can set the value of the following fields. Below is more information about each field. This form is used for both internal Lookit studies and both synchronous and asychronous external studies. 
 
 
 =============================
@@ -33,6 +33,16 @@ Share preview
 Do you want other researchers to be able to preview your study? Check this box to make it possible for any logged-in Lookit researcher to try out your study. If you check the box, you will be able to share your preview link - e.g. on the Slack channel - to ask for feedback on your study from other researchers. This is generally a good idea as we could all use another pair of eyes to check on directions, stimuli, debriefing text, etc. Getting peer feedback ahead of time will generally substantially speed up the Lookit review process too. You can leave this unchecked if you're very concerned about being scooped. (My personal feeling is that no one has the time or energy to scoop you. See also: every line of our code is publicly available and has been for years...)
 
 =============================
+External
+=============================
+Will you be providing a link to a study (or study scheduling page) rather than using the Lookit experiment builder? Leave this box unchecked if you are building a protocol specification to be conducted inside the Lookit architecture. (This is the 'original' type of Lookit study).  Check this box to indicate that you will be providing a link to a study happening somewhere else. Checking this box will also hide fields of this form that are only applicable for internal studies. 
+
+=============================
+Scheduled
+=============================
+The Lookit experiment builder doesn't have the capacity for video chat studies, so this box is greyed out unless the External box is checked.  If you are running an external study, leave this box unchecked if participants will click a link and participate in a study right away, without any back-and-forth or live interaction with a researcher.  Check this box if participants will wind up scheduling and attending a video chat with a researcher.
+
+=============================
 Image
 =============================
 
@@ -46,7 +56,7 @@ As noted in the self-review checklist, if you decide to include an image of a ch
 Short description
 =============================
 
-Describe what happens during your study here (1-3 sentences). This should give families a concrete idea of what they will be doing - e.g., reading a story together and answering questions, watching a short video, playing a game about numbers.
+Describe what happens during your study here (1-3 sentences). This text is shown on the main studies page (under your thumbnail image and title). This should give families a concrete idea of what they will be doing - e.g., reading a story together and answering questions, watching a short video, playing a game about numbers.
 
 .. _purpose:
 
@@ -63,7 +73,7 @@ Provide a description of any compensation for participation, including when and 
 =============================
 Exit URL
 =============================
-Must enter a URL. After the participant has completed the study, they will be automatically redirected to the exit URL. Typically this is just `https://lookit.mit.edu/`
+After the participant has completed an internal study, they will be automatically redirected to the exit URL. Most studies will leave the default value, sending families to their study history page once a study finishes. Not to be confused with the study URL for external studies (see below!)
 
 ====================================
 Participant eligibility description
@@ -331,15 +341,29 @@ This should give the name of the PI for your study, and an email address where t
 
 
 =============================
-Study protocol configuration
+Study protocol configuration (Internal studies)
 =============================
 This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. This can be left blank at the time you initially create your study. For detailed information about specifying your study protocol, see `Building an Experiment`_.
 
 =============================
-Experiment runner type
+Experiment runner type (Internal studies)
 =============================
 The study type is the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember and there is an exp-player component that can cycle through these frames. For details, see `Editing study type`_
 
+=============================
+Study URL (External studies)
+=============================
+The link that families should go to when they click the "Participate now" button on a study detail page. For unscheduled/unmoderated studies, this will be the study itself (e.g. a Qualtrics survey). For moderated studies, it should be a link to a scheduling system (e.g. Calendly). 
+
+=============================
+Study Platform (External studies)
+=============================
+Choose from a set of study platforms to help us understand & build tools for common study types.
+
+=============================
+Scheduling Platform (External studies)
+=============================
+Choose from a set of options to help us understand how researchers schedule participants for moderated/scheduled studies, and to build tools for common study types.
 
 
 
