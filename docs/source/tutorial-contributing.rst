@@ -8,7 +8,7 @@ In this section, you'll make your first "Pull request" (PR) to propose a change 
 
 Later on in the tutorial, if you come across something confusing or you have an idea to improve the instructions or exercises, you can follow these same instructions to fix it. Although we recognize that most Lookit users will not be ready to contribute to the code that makes Lookit run, editing the documentation is something everyone can do! We need your help to keep it up-to-date and constantly improving!
 
-.. _First PR:
+.. _First PR: 
 
 Making your first pull request (PR)
 ------------------------------------
