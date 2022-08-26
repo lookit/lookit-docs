@@ -256,6 +256,7 @@ List of tutorial participants
 - Sereniti Williams (Northwestern University) 
 - Ian Chandler-Campbell (University of Texas at Dallas)
 - Jena Miko (University of Oregon)
+- Zoë Robertson (University of Virginia)
 
 Checking for and creating issues on Github
 -------------------------------------------
