@@ -256,6 +256,7 @@ List of tutorial participants
 - Sereniti Williams (Northwestern University) 
 - Ian Chandler-Campbell (University of Texas at Dallas)
 - Jena Miko (University of Oregon)
+- Allie Liebmann (Yale)
 
 Checking for and creating issues on Github
 -------------------------------------------
