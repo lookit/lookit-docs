@@ -257,6 +257,7 @@ List of tutorial participants
 - Ian Chandler-Campbell (University of Texas at Dallas)
 - Jena Miko (University of Oregon)
 - Zoë Robertson (University of Virginia)
+- Allie Liebmann (Yale)
 
 Checking for and creating issues on Github
 -------------------------------------------
