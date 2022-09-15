@@ -257,6 +257,7 @@ List of tutorial participants
 - Sereniti Williams (Northwestern University) 
 - Ian Chandler-Campbell (University of Texas at Dallas)
 - Jena Miko (University of Oregon)
+- Tiffany Doan (University of Toronto, Scarborough)
 - Hanqi Chen (University of Toronto)
 - Zoë Robertson (University of Virginia)
 - Allie Liebmann (Yale)
