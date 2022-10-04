@@ -262,6 +262,7 @@ List of tutorial participants
 - Hanqi Chen (University of Toronto)
 - Zoë Robertson (University of Virginia)
 - Allie Liebmann (Yale)
+- Haley Kragness (Bucknell University)
 
 Checking for and creating issues on Github
 -------------------------------------------
