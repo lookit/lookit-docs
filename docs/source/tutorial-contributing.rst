@@ -263,6 +263,7 @@ List of tutorial participants
 - Zoë Robertson (University of Virginia)
 - Allie Liebmann (Yale)
 - Haley Kragness (Bucknell University)
+- Sofia Cordeiro (University of British Columbia)
 
 Checking for and creating issues on Github
 -------------------------------------------
