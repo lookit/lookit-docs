@@ -265,6 +265,7 @@ List of tutorial participants
 - Haley Kragness (Bucknell University)
 - Sofia Cordeiro (University of British Columbia)
 - Rosie Aboody (Harvard & MIT)
+- Emily Chan (University of Chicago)
 
 Checking for and creating issues on Github
 -------------------------------------------
