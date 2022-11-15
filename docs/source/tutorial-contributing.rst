@@ -266,6 +266,7 @@ List of tutorial participants
 - Sofia Cordeiro (University of British Columbia)
 - Rosie Aboody (Harvard & MIT)
 - Emily Chan (University of Chicago)
+- Noah Norman (Yale)
 
 Checking for and creating issues on Github
 -------------------------------------------
