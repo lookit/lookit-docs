@@ -267,6 +267,7 @@ List of tutorial participants
 - Rosie Aboody (Harvard & MIT)
 - Emily Chan (University of Chicago)
 - Noah Norman (Yale)
+- Gillian Broome (New York University)
 
 Checking for and creating issues on Github
 -------------------------------------------
