@@ -50,19 +50,6 @@ Before a lab is approved to test, you can add and manage lab members and create 
 
 Individual studies will still require review - the lab being approved to test is not blanket approval for all studies you might run.
 
---------------------------------------------------------
-Lab's custom URL
---------------------------------------------------------
-
-To find the current custom URL for your lab, select your lab in the labs page.  You will find the URL under "Custom URL".
-
-To change the current URL click "edit lab" in the top right while on your lab's page.  Update the "Custom URL" to suit your lab's preferences.  
-
---------------------------------------------------------
-Order lab's studies
---------------------------------------------------------
-
-At your lab's custom URL there will be a list of your lab's experiments.  To update the order of the studies, change the "Lab Page Priority" value under each study's edit page.  
 
 --------------------------------------------------------
 Joining an existing lab
@@ -97,4 +84,16 @@ Whether to make most lab members "guests" vs. "full members" is just a matter of
 
 By design, there is no way to give anyone access to participant data for all studies in your lab. You have to give them permission to individual studies. 
 
+--------------------------------------------------------
+Lab's custom URL
+--------------------------------------------------------
 
+To find the current custom URL for your lab, select your lab in the labs page.  You will find the URL under "Custom URL".
+
+To change the current URL click "edit lab" in the top right while on your lab's page.  Update the "Custom URL" to suit your lab's preferences.  
+
+--------------------------------------------------------
+Order lab's studies
+--------------------------------------------------------
+
+At your lab's custom URL there will be a list of your lab's experiments.  To update the order of the studies, change the "Lab Page Priority" value under each study's edit page.  
