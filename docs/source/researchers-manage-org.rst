@@ -93,7 +93,9 @@ Each lab has its own page on Lookit. Families can visit your lab page to find al
 To change your lab's URL, click "Edit lab" in the top right of your lab's information page. Update the "Custom URL" to suit your lab's preferences.  
 
 --------------------------------------------------------
-Order lab's studies
+Ordering studies on your lab page
 --------------------------------------------------------
 
-At your lab's custom URL there will be a list of your lab's experiments.  To update the order of the studies, change the "Lab Page Priority" value under each study's edit page.  
+By default, your lab page will show all of your lab's active experiments in a random order. You may wish to change the order of the studies on your lab page, for instance to encourage more participation in a particular study, or to reflect the session order when a study consists of multiple parts. 
+
+To update the presentation order of your studies, go into the edit page for a study and change the "Lab Page Priority" value. Setting the study's priority value to 1 (the default) will mean it is shown *first* on your page, while setting the priority to 99 will mean it is shown *last*. You can use any integers between these values for more fine-grained control over ordering. If any of your lab's studies share the same priority value, then presentation order will be random within that set. 
