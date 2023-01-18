@@ -56,13 +56,13 @@ Lab's custom URL
 
 To find the current custom URL for your lab, select your lab in the labs page.  You will find the URL under "Custom URL".
 
-To change the current URL click "edit lab" in the top right while on your lab's page.  Update the "Custom URL" to suite your lab's preferences.  
+To change the current URL click "edit lab" in the top right while on your lab's page.  Update the "Custom URL" to suit your lab's preferences.  
 
 --------------------------------------------------------
 Order lab's studies
 --------------------------------------------------------
 
-At your lab's custom URL there will be a list of your lab's experiements.  To update the order of the studies, change the "Lab Page Priority" value under each studies edit page.  
+At your lab's custom URL there will be a list of your lab's experiments.  To update the order of the studies, change the "Lab Page Priority" value under each study's edit page.  
 
 --------------------------------------------------------
 Joining an existing lab
