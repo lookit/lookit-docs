@@ -88,7 +88,7 @@ By design, there is no way to give anyone access to participant data for all stu
 Lab's custom URL
 --------------------------------------------------------
 
-Each lab has its own page on Lookit. Families can visit your lab page to find all of the active studies run by your lab. To find the current custom URL for your lab, go to "Manage Labs" and select your lab. You will find the link to the lab's page under "Custom URL".
+Each lab has its own page on Lookit. This provides a convenient URL for you to distribute and allows families to easily find all of your lab's active studies. To find the current custom URL for your lab, go to "Manage Labs" and select your lab. You will find the link to the lab's page under "Custom URL".
 
 To change your lab's URL, click "Edit lab" in the top right of your lab's information page. Update the "Custom URL" to suit your lab's preferences.  
 
