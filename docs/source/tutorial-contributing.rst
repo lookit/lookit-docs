@@ -251,6 +251,7 @@ List of tutorial participants
 - Jamie Park (University of California, San Diego)
 - Kiley McKee (Northwestern University)
 - Noelani Pence (University of Oregon)
+- Evan Arasu (University of Oregon)
 - Anna Soderling (Duke University)
 - Kaelin Kinney (University of Louisville)
 - Gianna Zades (Harvard University)
