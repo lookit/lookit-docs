@@ -50,6 +50,7 @@ Before a lab is approved to test, you can add and manage lab members and create 
 
 Individual studies will still require review - the lab being approved to test is not blanket approval for all studies you might run.
 
+
 --------------------------------------------------------
 Joining an existing lab
 --------------------------------------------------------
@@ -82,3 +83,19 @@ Admin
 Whether to make most lab members "guests" vs. "full members" is just a matter of whether you want a more communal workspace where everyone can see all the studies, or a more private workspace where people have to be invited to collaborate on particular studies. You might choose to make everyone in your lab a "lab member," but occasionally add an outside collaborator who's just helping with a single study as a guest.
 
 By design, there is no way to give anyone access to participant data for all studies in your lab. You have to give them permission to individual studies. 
+
+--------------------------------------------------------
+Lab's custom URL
+--------------------------------------------------------
+
+Each lab has its own page on Lookit. This provides a convenient URL for you to distribute and allows families to easily find all of your lab's active studies. To find the current custom URL for your lab, go to "Manage Labs" and select your lab. You will find the link to the lab's page under "Custom URL".
+
+To change your lab's URL, click "Edit lab" in the top right of your lab's information page. Update the "Custom URL" to suit your lab's preferences.  
+
+--------------------------------------------------------
+Ordering studies on your lab page
+--------------------------------------------------------
+
+By default, your lab page will show all of your lab's active experiments in a random order. You may wish to change the order of the studies on your lab page, for instance to encourage more participation in a particular study, or to reflect the session order when a study consists of multiple parts. 
+
+To update the presentation order of your studies, go into the edit page for a study and change the "Lab Page Priority" value. Setting the study's priority value to 1 (the default) will mean it is shown *first* on your page, while setting the priority to 99 will mean it is shown *last*. You can use any integers between these values for more fine-grained control over ordering. If any of your lab's studies share the same priority value, then presentation order will be random within that set. 
