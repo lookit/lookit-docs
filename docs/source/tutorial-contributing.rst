@@ -268,7 +268,9 @@ List of tutorial participants
 - Emily Chan (University of Chicago)
 - Noah Norman (Yale)
 - Gillian Broome (New York University)
+- Olivia Richards (University of Louisville)
 - Anela Marat (University of Texas at Dallas)
+
 Checking for and creating issues on Github
 -------------------------------------------
 
