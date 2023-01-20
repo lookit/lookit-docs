@@ -270,6 +270,7 @@ List of tutorial participants
 - Gillian Broome (New York University)
 - Olivia Richards (University of Louisville)
 - Anela Marat (University of Texas at Dallas)
+- Preethi Sethuraman (University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
