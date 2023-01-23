@@ -27,6 +27,16 @@ This value affects the order in which studies are listed on your custom lab page
 
 Setting your study's priority value to 99 (the default) will mean it is shown *first* on your page, while setting the priority to 1 will mean it is shown *last*. You can use any integers between these values for more fine-grained control over ordering. If any of your lab's studies share the same priority value, then presentation order will be random within that set. 
 
+=============================
+External
+=============================
+Will you be providing a link to a study (or study scheduling page) rather than using the Lookit experiment builder? Leave this box unchecked if you are building a protocol specification to be conducted inside the Lookit architecture. (This is the 'original' type of Lookit study).  Check this box to indicate that you will be providing a link to a study happening somewhere else. Checking this box will also hide fields of this form that are only applicable for internal studies. 
+
+=============================
+Scheduled
+=============================
+The Lookit experiment builder doesn't have the capacity for video chat studies, so this box is greyed out unless the External box is checked.  If you are running an external study, leave this box unchecked if participants will click a link and participate in a study right away, without any back-and-forth or live interaction with a researcher.  Check this box if participants will wind up scheduling and attending a video chat with a researcher.
+
 .. _discoverability:
 
 =============================
@@ -45,16 +55,6 @@ We recommend **starting** studies as non-discoverable, so that you can pilot wit
 Share preview
 =============================
 Do you want other researchers to be able to preview your study? Check this box to make it possible for any logged-in Lookit researcher to try out your study. If you check the box, you will be able to share your preview link - e.g. on the Slack channel - to ask for feedback on your study from other researchers. This is generally a good idea as we could all use another pair of eyes to check on directions, stimuli, debriefing text, etc. Getting peer feedback ahead of time will generally substantially speed up the Lookit review process too. You can leave this unchecked if you're very concerned about being scooped. (My personal feeling is that no one has the time or energy to scoop you. See also: every line of our code is publicly available and has been for years...)
-
-=============================
-External
-=============================
-Will you be providing a link to a study (or study scheduling page) rather than using the Lookit experiment builder? Leave this box unchecked if you are building a protocol specification to be conducted inside the Lookit architecture. (This is the 'original' type of Lookit study).  Check this box to indicate that you will be providing a link to a study happening somewhere else. Checking this box will also hide fields of this form that are only applicable for internal studies. 
-
-=============================
-Scheduled
-=============================
-The Lookit experiment builder doesn't have the capacity for video chat studies, so this box is greyed out unless the External box is checked.  If you are running an external study, leave this box unchecked if participants will click a link and participate in a study right away, without any back-and-forth or live interaction with a researcher.  Check this box if participants will wind up scheduling and attending a video chat with a researcher.
 
 =============================
 Image
