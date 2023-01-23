@@ -117,6 +117,16 @@ Age limits specified here should be carefully considered with respect to the `mi
    
    For now, though, because the criteria expressions aren't guaranteed to be easy to read/interpret - and because you might have additional criteria that aren't in the database anywhere - these are separate from the description displayed to parents, which you have to provide manually.  
    
+=============================
+Duration
+=============================
+Approximately how long does it take to do your study, start to finish? (Try it if you're not sure; include time to read the instructions.) You can give an estimate or range.
+
+===============================
+Researcher contact information
+===============================
+This should give the name of the PI for your study, and an email address where the PI or study staff can be reached with questions. Format: PIs Name (contact: youremail@lab.edu). This is displayed to participants on the study detail page before they choose to participate, as well as substituted into your consent form and exit survey, so in general the name needs to be the person who's listed as PI on your IRB protocol (although it may not need to be their personal email address). 
+
 .. _study_eligibility_criteria:
 
 =============================
@@ -348,17 +358,6 @@ Example: study for 6-month-olds (i.e., between 5.5 and 6.5 months)
 Another common standard in the literature is to report a finding in "N-month-olds," meaning babies between (N-1).5 and N.5 months of age. Actual implementations of this in terms of recruitment from databases vary, and historically we suspect in most cases researchers got what they got and then reported the range of kids they actually tested, rather than having an actual age range set in stone. 
 
 Here you might focus on how old babies are when they "turn" six months and then frame the age range in terms of that: e.g., go from 181 - 14 to 184 + 14 days, or 167 to 198 days, and describe this as being "within two weeks before or after their six-month 'birthday'."
-  
-=============================
-Duration
-=============================
-Approximately how long does it take to do your study, start to finish? (Try it if you're not sure; include time to read the instructions.) You can give an estimate or range.
-
-===============================
-Researcher contact information
-===============================
-This should give the name of the PI for your study, and an email address where the PI or study staff can be reached with questions. Format: PIs Name (contact: youremail@lab.edu). This is displayed to participants on the study detail page before they choose to participate, as well as substituted into your consent form and exit survey, so in general the name needs to be the person who's listed as PI on your IRB protocol (although it may not need to be their personal email address). 
-
 
 =============================
 Study protocol configuration (Internal studies)
