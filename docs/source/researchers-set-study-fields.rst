@@ -57,10 +57,10 @@ Share preview
 Do you want other researchers to be able to preview your study? Check this box to make it possible for any logged-in Lookit researcher to try out your study. If you check the box, you will be able to share your preview link - e.g. on the Slack channel - to ask for feedback on your study from other researchers. This is generally a good idea as we could all use another pair of eyes to check on directions, stimuli, debriefing text, etc. Getting peer feedback ahead of time will generally substantially speed up the Lookit review process too. You can leave this unchecked if you're very concerned about being scooped. (My personal feeling is that no one has the time or energy to scoop you. See also: every line of our code is publicly available and has been for years...)
 
 =============================
-Image
+Study image
 =============================
 
-Thumbnail image that will be displayed to participants on Lookit's studies page.  File must be an image-type, and please keep the file size reasonable (<1 MB). If you submit too large an image file you may see an error "413 Request Entity Too Large."
+Thumbnail image that will be displayed to participants on Lookit's studies page.  File must be an image-type and the dimensions must be square. Please keep the file size reasonable (<1 MB). If you submit too large an image file you may see an error "413 Request Entity Too Large."
 
 Sometimes your stimuli are a good basis for creating this image, or it can be something that conceptually represents your study or shows what it looks like to participate.
 
