@@ -13,6 +13,20 @@ Study name
 
 Participant-facing title of your study; must be <255 characters. Shoot for a short, catchy title; depending on how you advertise your study, you may want participants to be able to recognize and select it from the studies page. If you plan on running similar follow-up studies and want them to be easily distinguishable, avoid titles that encompass your entire research program like "Infant Language Study."
 
+=============================
+Lab
+=============================
+
+Which lab should this study be affiliated with?
+
+=============================
+Lab page priority
+=============================
+
+This value affects the order in which studies are listed on your custom lab page. By default, your lab page will show all of your lab's active experiments in a random order. You may wish to change the order of the studies on your lab page, for instance to encourage more participation in a particular study, or to reflect the session order when a study consists of multiple parts. 
+
+Setting your study's priority value to 99 (the default) will mean it is shown *first* on your page, while setting the priority to 1 will mean it is shown *last*. You can use any integers between these values for more fine-grained control over ordering. If any of your lab's studies share the same priority value, then presentation order will be random within that set. 
+
 .. _discoverability:
 
 =============================
