@@ -67,6 +67,12 @@ Sometimes your stimuli are a good basis for creating this image, or it can be so
 As noted in the self-review checklist, if you decide to include an image of a child/family participating, please don't use pictures of white people if you have flexibility not to. (It's as good a choice as any for a single study, but the problem is that especially US researchers will "default" to white people as examples, and if everyone does that we end up with a sea of pictures of white kids on the studies page. It's a small thing, but it stinks to only see pictures of families that look like yours in cases where the researchers are studying something related to race!)
 
 =============================
+Preview summary
+=============================
+
+This is the text participants will see when browsing studies. Please keep your description under 100 words.
+
+=============================
 Short description
 =============================
 
