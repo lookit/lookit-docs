@@ -76,7 +76,7 @@ This is the text participants will see when browsing studies. Please keep your d
 Short description
 =============================
 
-Describe what happens during your study here (1-3 sentences). This text is shown on the main studies page (under your thumbnail image and title). This should give families a concrete idea of what they will be doing - e.g., reading a story together and answering questions, watching a short video, playing a game about numbers.
+Describe what happens during your study here (1-3 sentences). This text is shown on the main studies page (under your thumbnail image and title). This should give families a concrete idea of what they will be doing - e.g., reading a story together and answering questions, watching a short video, playing a game about numbers. If you are running a scheduled study, make sure to include a description of how they will sign up and access the study session.
 
 .. _purpose:
 
