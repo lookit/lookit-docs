@@ -8,7 +8,7 @@ When creating or editing a study, you can set the value of the following fields.
 
 
 =============================
-Name
+Study name
 =============================
 
 Participant-facing title of your study; must be <255 characters. Shoot for a short, catchy title; depending on how you advertise your study, you may want participants to be able to recognize and select it from the studies page. If you plan on running similar follow-up studies and want them to be easily distinguishable, avoid titles that encompass your entire research program like "Infant Language Study."
