@@ -384,15 +384,14 @@ Study URL (External studies)
 The link that families should go to when they click the "Participate now" button on a study detail page. For unscheduled/unmoderated studies, this will be the study itself (e.g. a Qualtrics survey). For moderated studies, it should be a link to a scheduling system (e.g. Calendly). 
 
 =============================
-Study Platform (External studies)
-=============================
-Choose from a set of study platforms to help us understand & build tools for common study types.
-
-=============================
 Scheduling Platform (External studies)
 =============================
 Choose from a set of options to help us understand how researchers schedule participants for moderated/scheduled studies, and to build tools for common study types.
 
+=============================
+Study Platform (External studies)
+=============================
+Choose from a set of study platforms to help us understand & build tools for common study types.
 
 
 .. _`Building an Experiment`: researchers-create-experiment.html
