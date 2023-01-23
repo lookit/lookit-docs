@@ -127,8 +127,6 @@ Researcher contact information
 ===============================
 This should give the name of the PI for your study, and an email address where the PI or study staff can be reached with questions. Format: PIs Name (contact: youremail@lab.edu). This is displayed to participants on the study detail page before they choose to participate, as well as substituted into your consent form and exit survey, so in general the name needs to be the person who's listed as PI on your IRB protocol (although it may not need to be their personal email address). 
 
-.. _study_eligibility_criteria:
-
 .. _min_max_ages:
 
 ================================
@@ -167,6 +165,8 @@ Must (not) have participated
 =============================
 
 These fields allow you to specify that participants are only eligibile for this study if they **have** participated in a certain study or set of studies, and/or **have not** participated in a certain study or set of studies. This can be useful for making sure that samples do not overlap across a set of studies, or recruiting specific participants for longitudinal follow-up studies.
+
+.. _study_eligibility_criteria:
 
 =============================
 Criteria expression
