@@ -129,6 +129,39 @@ This should give the name of the PI for your study, and an email address where t
 
 .. _study_eligibility_criteria:
 
+.. _min_max_ages:
+
+================================
+Minimum and maximum age cutoffs
+================================
+Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days. Participants under the age range see a warning indicating that their data may not be used, and suggesting that they wait until they're in the age range. Participants over the age range just see a warning indicating that their data may not be used. Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age. 
+
+Note that these ages do **not** in all cases correspond exactly to the child's age in 'calendar months' or 'calendar years' (e.g., 'one month' if that month is February). In general, you want to avoid a situation where the parent thinks their child should be eligible based on the participant eligibility string (e.g., "my child is one month old, she was born February 3rd and it's March 4th!") but sees a warning when trying to participate. You can do this by narrowing the eligibility criteria in the freeform string and/or by expanding them in the cutoffs here. If one has to align better with your actual inclusion criteria, in general you want that to be the minimum/maximum age cutoffs.
+
+Please see `this spreadsheet <https://docs.google.com/spreadsheets/d/1rbGrbyYZpVsCOUXVPGyk2Yobn-zanllbCtuyw2i3vbk/edit?usp=sharing>`__ for a table translating "calendar ages" (how a parent would describe their child's age) to days.
+  
+----------------------------------------
+Example: study for 5- and 6-year-olds
+----------------------------------------
+
+These kids will have lived through 1 or 2 leap years (at both ends of the age range), so the range you likely want is 5 * 365 + 1 days up to 6 * 365 + 2 days. Set the age range as 5 years, 1 day to 6 years, 2 days.
+
+--------------------------------------------------------------------------------
+Example: study for 6-month-olds (i.e., between 6 and 7 months)
+--------------------------------------------------------------------------------
+
+A child turns 6 months old, by the calendar, between 181 (e.g. born in September in a non leap year) and 184 (e.g. born in March) days of age. She turns 7 months old, by the calendar, between 212 days (e.g., born in August in a non leap year) and 216 days (e.g., born in July preceding a leap year). If you really want to include anyone who's "six months old" you could set the age range to 181 to 216 days by selecting 6 months 1 day 7 months 6 days. This way no one who thinks, quite reasonably, that their baby is 6 months old will see a warning that they're not eligible. 
+
+If you have theoretical reasons for wanting a particular exact age range in days, you could set that instead, and then communicate it to parents: e.g. "for babies around 6 months old (26 to 30 weeks)".
+
+--------------------------------------------------------------------
+Example: study for 6-month-olds (i.e., between 5.5 and 6.5 months)
+--------------------------------------------------------------------
+
+Another common standard in the literature is to report a finding in "N-month-olds," meaning babies between (N-1).5 and N.5 months of age. Actual implementations of this in terms of recruitment from databases vary, and historically we suspect in most cases researchers got what they got and then reported the range of kids they actually tested, rather than having an actual age range set in stone. 
+
+Here you might focus on how old babies are when they "turn" six months and then frame the age range in terms of that: e.g., go from 181 - 14 to 184 + 14 days, or 167 to 198 days, and describe this as being "within two weeks before or after their six-month 'birthday'."
+
 =============================
 Criteria expression
 =============================
@@ -326,38 +359,6 @@ Language codes
     |yue |Yue                   |
     +----+----------------------+
 
-.. _min_max_ages:
-
-================================
-Minimum and maximum age cutoffs
-================================
-Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days. Participants under the age range see a warning indicating that their data may not be used, and suggesting that they wait until they're in the age range. Participants over the age range just see a warning indicating that their data may not be used. Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age. 
-
-Note that these ages do **not** in all cases correspond exactly to the child's age in 'calendar months' or 'calendar years' (e.g., 'one month' if that month is February). In general, you want to avoid a situation where the parent thinks their child should be eligible based on the participant eligibility string (e.g., "my child is one month old, she was born February 3rd and it's March 4th!") but sees a warning when trying to participate. You can do this by narrowing the eligibility criteria in the freeform string and/or by expanding them in the cutoffs here. If one has to align better with your actual inclusion criteria, in general you want that to be the minimum/maximum age cutoffs.
-
-Please see `this spreadsheet <https://docs.google.com/spreadsheets/d/1rbGrbyYZpVsCOUXVPGyk2Yobn-zanllbCtuyw2i3vbk/edit?usp=sharing>`__ for a table translating "calendar ages" (how a parent would describe their child's age) to days.
-  
-----------------------------------------
-Example: study for 5- and 6-year-olds
-----------------------------------------
-
-These kids will have lived through 1 or 2 leap years (at both ends of the age range), so the range you likely want is 5 * 365 + 1 days up to 6 * 365 + 2 days. Set the age range as 5 years, 1 day to 6 years, 2 days.
-
---------------------------------------------------------------------------------
-Example: study for 6-month-olds (i.e., between 6 and 7 months)
---------------------------------------------------------------------------------
-
-A child turns 6 months old, by the calendar, between 181 (e.g. born in September in a non leap year) and 184 (e.g. born in March) days of age. She turns 7 months old, by the calendar, between 212 days (e.g., born in August in a non leap year) and 216 days (e.g., born in July preceding a leap year). If you really want to include anyone who's "six months old" you could set the age range to 181 to 216 days by selecting 6 months 1 day 7 months 6 days. This way no one who thinks, quite reasonably, that their baby is 6 months old will see a warning that they're not eligible. 
-
-If you have theoretical reasons for wanting a particular exact age range in days, you could set that instead, and then communicate it to parents: e.g. "for babies around 6 months old (26 to 30 weeks)".
-
---------------------------------------------------------------------
-Example: study for 6-month-olds (i.e., between 5.5 and 6.5 months)
---------------------------------------------------------------------
-
-Another common standard in the literature is to report a finding in "N-month-olds," meaning babies between (N-1).5 and N.5 months of age. Actual implementations of this in terms of recruitment from databases vary, and historically we suspect in most cases researchers got what they got and then reported the range of kids they actually tested, rather than having an actual age range set in stone. 
-
-Here you might focus on how old babies are when they "turn" six months and then frame the age range in terms of that: e.g., go from 181 - 14 to 184 + 14 days, or 167 to 198 days, and describe this as being "within two weeks before or after their six-month 'birthday'."
 
 =============================
 Study protocol configuration (Internal studies)
