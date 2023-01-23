@@ -45,7 +45,7 @@ Discoverable
 Do you want this study to be listed on the Lookit studies page when it's active, and 
 eligible participants in the Lookit database to receive email invitations to participate? If so, check this box to make the study discoverable. Email invitations will go out to families with eligible children at a rate of up to 50 emails per day as long as the study is active and discoverable.
 
-If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab on online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. 
+If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab or online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. 
 
 You can switch the study back and forth from discoverable to non-discoverable any time after it's approved, without triggering re-review.
 
