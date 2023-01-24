@@ -17,7 +17,7 @@ Let's practice that now. First, think of either a problem you encountered or som
 - The  `Lookit platform <https://github.com/lookit/lookit-api/issues>`_, including login/account system and the experimenter inferface (study management, data viewing/download, consent coding, participant messaging, etc.)
 - The `frameplayer <https://github.com/lookit/ember-lookit-frameplayer/issues>`_, including what frames are available to you to use in designing your studies and how they function
 
-:ref:`Review the section on Github issues<Github issues overview>` and click the appropriate link above to view the current issue list. Either create a new issue if your idea/problem isn't already described, or comment on an existing issue!
+:ref:`Review the section on Github issues<Github issues>` and click the appropriate link above to view the current issue list. Either create a new issue if your idea/problem isn't already described, or comment on an existing issue!
 
 2. Some advanced options to be aware of
 ---------------------------------------

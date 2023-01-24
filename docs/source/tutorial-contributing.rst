@@ -271,6 +271,8 @@ List of tutorial participants
 - Olivia Richards (University of Louisville)
 - Anela Marat (University of Texas at Dallas)
 
+.. _Github issues:
+
 Checking for and creating issues on Github
 -------------------------------------------
 
