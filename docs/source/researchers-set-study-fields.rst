@@ -366,14 +366,14 @@ Language codes
     +----+----------------------+
 
 
-=============================
+=========================================================
 Study protocol configuration (Internal studies)
-=============================
+=========================================================
 This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. This can be left blank at the time you initially create your study. For detailed information about specifying your study protocol, see `Building an Experiment`_.
 
-=============================
+=========================================================
 Experiment runner code URL and version (Internal studies)
-=============================
+=========================================================
 The "Experiment runner code URL" is a link to the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember and there is an exp-player component that can cycle through these frames. For details, see `Editing study type`_. You should leave this link as is, unless you have forked the Ember Frame Player Github repository (for instance, to create custom frame types) and want to use your fork instead.
 
 The "Experiment runner version" is a Github commit SHA that refers to a specific version of the Ember Frame Player version that you want to use. Typically you will want to leave this blank, which means that your study will use the latest version of the experiment runner. This field is available in case you need to roll back to a previous version, for instance if an update to the Ember Frame Player caused a problem for your experiment.
@@ -383,14 +383,14 @@ Study URL (External studies)
 =============================
 The link that families should go to when they click the "Participate now" button on a study detail page. For unscheduled/unmoderated studies, this will be the study itself (e.g. a Qualtrics survey). For moderated studies, it should be a link to a scheduling system (e.g. Calendly). 
 
-=============================
+===========================================
 Scheduling Platform (External studies)
-=============================
+===========================================
 Choose from a set of options to help us understand how researchers schedule participants for moderated/scheduled studies, and to build tools for common study types.
 
-=============================
+===========================================
 Study Platform (External studies)
-=============================
+===========================================
 Choose from a set of study platforms to help us understand & build tools for common study types.
 
 

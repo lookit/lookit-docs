@@ -74,7 +74,7 @@ At that point, you will "submit" your study for approval by Lookit staff. We won
    From a participant's standpoint, Lookit is a unified platform, even though there are studies from a variety of research labs. This is great for participant recruitment! But it also means we're all sharing a reputation. Someone else's study that upsets or (without adequate precautions) deceives children, that baffles parents, or that just doesn't work will affect how interested families are in your study, too. Based on our early experience with researchers using Lookit, we strongly expect that a quick review will catch substantive issues often enough to be worth putting everyone through. If you are making changes to an existing study, review is either not required (if only changing certain fields like the age range/eligibility criteria) or is very quick.
 
 Create some data to play with (Internal studies)
---------------------------------
+--------------------------------------------------------
 
 Because we don't want to clog up the production server with fake responses from researchers trying out Lookit, we'll do this section on the staging server, which is a separate sandbox environment that looks a lot like Lookit but doesn't have any real participant data. This is also where we try out new features before deploying them to production. 
 
