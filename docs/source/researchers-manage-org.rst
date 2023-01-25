@@ -84,6 +84,8 @@ Whether to make most lab members "guests" vs. "full members" is just a matter of
 
 By design, there is no way to give anyone access to participant data for all studies in your lab. You have to give them permission to individual studies. 
 
+.. _lab_custom_url:
+
 --------------------------------------------------------
 Lab's custom URL
 --------------------------------------------------------
