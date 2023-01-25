@@ -90,7 +90,9 @@ Lab's custom URL
 
 Each lab has its own page on Lookit. This provides a convenient URL for you to distribute and allows families to easily find all of your lab's active studies. To find the current custom URL for your lab, go to "Manage Labs" and select your lab. You will find the link to the lab's page under "Custom URL".
 
-To change your lab's URL, click "Edit lab" in the top right of your lab's information page. Update the "Custom URL" to suit your lab's preferences.  
+To change your lab's URL, click "Edit lab" in the top right of your lab's information page. Update the "Custom URL" to suit your lab's preferences.
+
+When creating and editing your lab details, you have the option to add a banner and/or badge image. The banner image will be shown at the top of your lab's custom page when the page is viewed on a wide (desktop/laptop) browser window. The banner image should have a width-to-height ratio of at least 2. The badge image will be shown when the page is viewed on a narrow browser window, such as on a mobile device, and it will be used as a badge/avatar for your lab. The badge image dimensions must be square. Please keep both file sizes to less than 1 MB.
 
 --------------------------------------------------------
 Ordering studies on your lab page
