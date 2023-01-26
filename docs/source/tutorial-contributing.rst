@@ -271,6 +271,7 @@ List of tutorial participants
 - Olivia Richards (University of Louisville)
 - Anela Marat (University of Texas at Dallas)
 - Alessandra Pintado-Urbanc (University of Pennsylvania)
+- Ashley Turell (University of Wisconsin) 
 
 Checking for and creating issues on Github
 -------------------------------------------
