@@ -274,6 +274,8 @@ List of tutorial participants
 - Ashley Turell (University of Wisconsin) 
 - Milana Korobko (University of Pennsylvania)
 
+.. _Github issues:
+
 Checking for and creating issues on Github
 -------------------------------------------
 

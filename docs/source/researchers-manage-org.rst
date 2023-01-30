@@ -84,13 +84,28 @@ Whether to make most lab members "guests" vs. "full members" is just a matter of
 
 By design, there is no way to give anyone access to participant data for all studies in your lab. You have to give them permission to individual studies. 
 
+.. _lab_custom_url:
+
 --------------------------------------------------------
 Lab's custom URL
 --------------------------------------------------------
 
 Each lab has its own page on Lookit. This provides a convenient URL for you to distribute and allows families to easily find all of your lab's active studies. To find the current custom URL for your lab, go to "Manage Labs" and select your lab. You will find the link to the lab's page under "Custom URL".
 
-To change your lab's URL, click "Edit lab" in the top right of your lab's information page. Update the "Custom URL" to suit your lab's preferences.  
+To change your lab's URL, click "Edit lab" in the top right of your lab's information page. Update the "Custom URL" to suit your lab's preferences.
+
+When creating and editing your lab details, you have the option to add a banner and/or badge image. If you upload a banner image, it will be shown at the top of your lab's custom page in place of the lab name (so you'll probably want to add your lab name to the image). The banner image should have a width-to-height ratio of at least 2. 
+
+.. image:: _static/img/labs/demo_lab_banner_example.png
+    :alt: Demo Lab page with wide banner image
+
+If you do not upload a banner image, then the badge image will be shown next to the lab name. The badge image dimensions must be square. Please keep each file size to less than 1 MB.
+
+.. image:: _static/img/labs/demo_lab_badge_example.png
+    :alt: Demo Lab page with square badge image
+
+.. note::
+    As part of future updates to the site to make it more mobile-friendly, the banner and badge images will both be used. In the future, the banner image will be shown at the top of your lab's custom page when the page is viewed on a wide (desktop/laptop) browser window, and the badge image will be shown when the page is viewed on a narrow browser window, such as on a mobile device.
 
 --------------------------------------------------------
 Ordering studies on your lab page
