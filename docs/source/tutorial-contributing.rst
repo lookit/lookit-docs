@@ -272,6 +272,7 @@ List of tutorial participants
 - Anela Marat (University of Texas at Dallas)
 - Alessandra Pintado-Urbanc (University of Pennsylvania)
 - Ashley Turell (University of Wisconsin) 
+- Milana Korobko (University of Pennsylvania)
 
 Checking for and creating issues on Github
 -------------------------------------------
