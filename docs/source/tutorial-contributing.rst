@@ -273,6 +273,7 @@ List of tutorial participants
 - Alessandra Pintado-Urbanc (University of Pennsylvania)
 - Ashley Turell (University of Wisconsin) 
 - Milana Korobko (University of Pennsylvania)
+- Nina Wang (University of Pennsylvania)
 
 .. _Github issues:
 
