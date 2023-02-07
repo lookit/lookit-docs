@@ -273,6 +273,7 @@ List of tutorial participants
 - Alessandra Pintado-Urbanc (University of Pennsylvania)
 - Ashley Turell (University of Wisconsin) 
 - Milana Korobko (University of Pennsylvania)
+- Vishwa Patel (Rutgers University)
 
 .. _Github issues:
 
