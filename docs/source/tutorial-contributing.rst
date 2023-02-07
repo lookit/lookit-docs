@@ -274,6 +274,7 @@ List of tutorial participants
 - Alessandra Pintado-Urbanc (University of Pennsylvania)
 - Ashley Turell (University of Wisconsin) 
 - Milana Korobko (University of Pennsylvania)
+- Vishwa Patel (Rutgers University)
 - Nina Wang (University of Pennsylvania)
 
 Checking for and creating issues on Github
