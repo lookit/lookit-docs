@@ -270,12 +270,11 @@ List of tutorial participants
 - Gillian Broome (New York University)
 - Olivia Richards (University of Louisville)
 - Anela Marat (University of Texas at Dallas)
+- Preethi Sethuraman (University of Texas at Dallas)
 - Alessandra Pintado-Urbanc (University of Pennsylvania)
 - Ashley Turell (University of Wisconsin) 
 - Milana Korobko (University of Pennsylvania)
 - Nina Wang (University of Pennsylvania)
-
-.. _Github issues:
 
 Checking for and creating issues on Github
 -------------------------------------------
