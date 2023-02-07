@@ -271,6 +271,10 @@ List of tutorial participants
 - Olivia Richards (University of Louisville)
 - Anela Marat (University of Texas at Dallas)
 - Preethi Sethuraman (University of Texas at Dallas)
+- Alessandra Pintado-Urbanc (University of Pennsylvania)
+- Ashley Turell (University of Wisconsin) 
+- Milana Korobko (University of Pennsylvania)
+- Nina Wang (University of Pennsylvania)
 
 Checking for and creating issues on Github
 -------------------------------------------

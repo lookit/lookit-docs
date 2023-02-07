@@ -60,7 +60,7 @@ you want:
    
 -  You'll likely need to write a translation file for your language for the components 
    in the studies - e.g., consent, setup. Once that's available, you can specify a 
-   language for your study and any hard-coded text will be translated. (See :ref:`elf-translations`.)
+   language for your study and any hard-coded text will be translated. (See the experiment runner's :ref:`language parameter<elf:translation>`.)
    
 -  We haven’t currently set up to flag which language a study is in and
    let participants filter (or get the right version of a study) by

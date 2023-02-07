@@ -2,7 +2,7 @@
 Publications
 ==================================
 
-.. _Training:
+.. _Publications:
 
 ---------------------------------------
 Publications using Lookit data
