@@ -277,6 +277,7 @@ List of tutorial participants
 - Vishwa Patel (Rutgers University)
 - Nina Wang (University of Pennsylvania)
 - Isha Kere (University of Texas at Dallas)
+- Victoria Fracalossi (American University)
 
 Checking for and creating issues on Github
 -------------------------------------------
