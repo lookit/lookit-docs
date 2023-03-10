@@ -278,6 +278,7 @@ List of tutorial participants
 - Nina Wang (University of Pennsylvania)
 - Isha Kere (University of Texas at Dallas)
 - Victoria Fracalossi (American University)
+- Niomi Friedlander (University of Minnesota)
 
 Checking for and creating issues on Github
 -------------------------------------------
