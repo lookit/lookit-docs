@@ -279,6 +279,7 @@ List of tutorial participants
 - Isha Kere (University of Texas at Dallas)
 - Victoria Fracalossi (American University)
 - Niomi Friedlander (University of Minnesota)
+- Sienna Radifera (MIT)
 
 Checking for and creating issues on Github
 -------------------------------------------
