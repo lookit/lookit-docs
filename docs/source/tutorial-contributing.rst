@@ -276,6 +276,7 @@ List of tutorial participants
 - Milana Korobko (University of Pennsylvania)
 - Vishwa Patel (Rutgers University)
 - Nina Wang (University of Pennsylvania)
+- Deena Weisberg (Villanova University)
 - Isha Kere (University of Texas at Dallas)
 - Victoria Fracalossi (American University)
 - Niomi Friedlander (University of Minnesota)
