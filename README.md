@@ -17,7 +17,9 @@ First, create a local copy of this repository[^note].
 / $ cd lookit-docs
 ```
 
-You will need Python 3.8 installed. If necessary, install it now:
+You will need Python 3.8 installed (Note: versions of Python 3.9+ have a dependency issue that prevents building these HTML files; you can install 3.8 alongside any other Python versions you might have.) 
+
+If necessary, install Python 3.8 now:
 
 ```
 brew install python@3.8
