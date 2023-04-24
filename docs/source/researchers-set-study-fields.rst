@@ -30,7 +30,7 @@ Setting your study's priority value to 99 (the default) will mean it is shown *f
 =============================
 External
 =============================
-Will you be providing a link to a study (or study scheduling page) rather than using the Lookit experiment builder? Leave this box unchecked if you are building a protocol specification to be conducted inside the Lookit architecture. (This is the 'original' type of Lookit study).  Check this box to indicate that you will be providing a link to a study happening somewhere else. Checking this box will also hide fields of this form that are only applicable for internal studies. 
+Will you be providing a link to a study (or study scheduling page) rather than using the Lookit experiment builder? If so, then check this box to show the form fields that are relevant to these types of studies, such as the study/scheduling link (see :ref:`study-url`). Checking this box will also hide fields of this form that are only applicable for internal studies. Leave this box unchecked if you are building a protocol specification to be conducted inside the Lookit architecture (i.e. an 'internal' study; see `Building an Experiment`_ for more information).  
 
 =============================
 Scheduled
@@ -378,10 +378,18 @@ The "Experiment runner code URL" is a link to the application you're using to en
 
 The "Experiment runner version" is a Github commit SHA that refers to a specific version of the Ember Frame Player version that you want to use. Typically you will want to leave this blank, which means that your study will use the latest version of the experiment runner. This field is available in case you need to roll back to a previous version, for instance if an update to the Ember Frame Player caused a problem for your experiment.
 
+.. _study-url:
+
 =============================
 Study URL (External studies)
 =============================
-The link that families should go to when they click the "Participate now" button on a study detail page. For unscheduled/unmoderated studies, this will be the study itself (e.g. a Qualtrics survey). For moderated studies, it should be a link to a scheduling system (e.g. Calendly). 
+The link that families should be redirected to when they click the "Participate now" button on a study detail page. For unscheduled/unmoderated studies, this will be the study itself (e.g. a Qualtrics survey). For moderated studies, it should be a link to a scheduling system (e.g. Calendly). 
+
+When the family clicks the "Participate now" button for external studies, the link will automatically include two pieces of information as URL query parameters: the hashed child ID ('child') and the response ID ('response'). This will allow you to automatically capture and record this information on the study/scheduling page, so that you can link the study responses and child's Lookit account without having to ask the family to enter addintional information. For example, if your Study URL is "\https://example.com", then the family will be directed to a link that has this format:
+
+  \https://example.com/?child=SG7JLN&response=d5c8f502-6588-46c8-84fa-a9657a44fe47
+
+It is up to the researcher to capture and record the URL query parameter values on the external website. Many online experiment/survey tools have documentation on how to do this (e.g. `Qualtrics <https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/passing-information-through-query-strings/#PassingInformationIntoASurvey>`_). You can include your own URL query parameters in your Study URL and they will be retained along with the Lookit parameters.
 
 ===========================================
 Scheduling Platform (External studies)
