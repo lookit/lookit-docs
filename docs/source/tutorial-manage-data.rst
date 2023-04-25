@@ -183,6 +183,8 @@ Exercises
 
 2. What fraction of children who responded at least once live in homes with at least 10 books?
 
+.. _contacting_participants:
+
 Contacting participants
 -----------------------------
 

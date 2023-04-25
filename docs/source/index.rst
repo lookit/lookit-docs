@@ -67,6 +67,7 @@ Families may take part in studies from multiple labs over time. Having one centr
    :caption: Reviewing your study
 
    community-study-approval-process
+   community-study-review-basic-requirements
    community-study-review-checklists-self
    community-study-review-checklists-peer
 
