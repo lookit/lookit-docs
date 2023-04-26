@@ -1,9 +1,9 @@
-.. _self_review_checklist:
+.. _basic_review_checklist:
 
 Basic review requirements
-=====================
+==========================
 
-In April 2023, we are beginning a reviewing experiment for external studies, in 
+In May 2023, we are beginning a reviewing experiment for external studies, in 
 conjunction with the merger of the Children Helping Science and Lookit platforms. 
 
 During this period, external studies will be expedited for posting, but must 
