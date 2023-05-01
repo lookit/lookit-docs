@@ -282,6 +282,7 @@ List of tutorial participants
 - Niomi Friedlander (University of Minnesota)
 - Sienna Radifera (MIT)
 - Katelyn Hughes (University of Oregon)
+- Jackson Mohr (University of Oregon)
 
 Checking for and creating issues on Github
 -------------------------------------------
