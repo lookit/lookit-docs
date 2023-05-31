@@ -283,6 +283,7 @@ List of tutorial participants
 - Sienna Radifera (MIT)
 - Katelyn Hughes (University of Oregon)
 - Jackson Mohr (University of Oregon)
+- Lia Washington (MIT)
 
 Checking for and creating issues on Github
 -------------------------------------------
