@@ -212,6 +212,7 @@ List of tutorial participants
 - Yiran Chen (University of Pennsylvania)
 - Erica Wojcik (Skidmore College)
 - Stacy Wang (University of British Columbia) 
+- Grace Clark (New York University)
 - Victor Antoine (École Normale Supérieure, Paris)
 - Tiffany Widjaja (University of California, San Diego)
 - Christopher J. Green (MIT)
