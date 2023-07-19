@@ -285,7 +285,7 @@ List of tutorial participants
 - Katelyn Hughes (University of Oregon)
 - Jackson Mohr (University of Oregon)
 - Lia Washington (MIT)
-
+- Aniya Sealey (University of Louisville)
 Checking for and creating issues on Github
 -------------------------------------------
 
