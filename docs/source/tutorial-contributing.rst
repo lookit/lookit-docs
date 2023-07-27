@@ -286,6 +286,9 @@ List of tutorial participants
 - Jackson Mohr (University of Oregon)
 - Lia Washington (MIT)
 - Aniya Sealey (University of Louisville)
+- Natalie Masetti (Yale)
+- Lizbeth Lozano (Yale University)
+
 Checking for and creating issues on Github
 -------------------------------------------
 
