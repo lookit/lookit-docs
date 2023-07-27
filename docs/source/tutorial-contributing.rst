@@ -285,6 +285,7 @@ List of tutorial participants
 - Katelyn Hughes (University of Oregon)
 - Jackson Mohr (University of Oregon)
 - Lia Washington (MIT)
+- Aniya Sealey (University of Louisville)
 - Natalie Masetti (Yale)
 - Lizbeth Lozano (Yale University)
 
