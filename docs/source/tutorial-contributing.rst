@@ -288,6 +288,7 @@ List of tutorial participants
 - Aniya Sealey (University of Louisville)
 - Natalie Masetti (Yale)
 - Lizbeth Lozano (Yale University)
+- Misha Becker (UNC Chapel Hill)
 
 Checking for and creating issues on Github
 -------------------------------------------
