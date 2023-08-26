@@ -289,7 +289,7 @@ List of tutorial participants
 - Natalie Masetti (Yale)
 - Lizbeth Lozano (Yale University)
 - Misha Becker (UNC Chapel Hill)
-
+- Milosz Krzewinski (Loyola University Chicago)
 Checking for and creating issues on Github
 -------------------------------------------
 
