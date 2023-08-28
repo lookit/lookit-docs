@@ -131,7 +131,7 @@ List of tutorial participants
 - Isabel Nichoson (Wellesley College)
 - Ginni Strehle (UT Dallas)
 - Gala Stojnić (NYU)
-- Mark Sheskin (Minerva Schools at KGI)
+- Mark Sheskin (Minerva University)
 - Eylem Altuntas (MARCS at WSU)
 - Catherine T Best (MARCS Institute, Western Sydney University, Australia)
 - Xi Jia Zhou (Stanford)
@@ -290,6 +290,8 @@ List of tutorial participants
 - Lizbeth Lozano (Yale University)
 - Misha Becker (UNC Chapel Hill)
 - Milosz Krzewinski (Loyola University Chicago)
+- Isha R (University of Texas at Dallas)
+
 Checking for and creating issues on Github
 -------------------------------------------
 
