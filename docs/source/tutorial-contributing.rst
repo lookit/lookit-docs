@@ -289,6 +289,7 @@ List of tutorial participants
 - Natalie Masetti (Yale)
 - Lizbeth Lozano (Yale University)
 - Misha Becker (UNC Chapel Hill)
+- Isha R (University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
