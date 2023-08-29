@@ -9,6 +9,10 @@ version: 2
 formats:
    - pdf
 
+# Specify which OS to use when building docs
+build:
+   os: ubuntu-22.04
+   
 # Optionally set the version of Python and requirements required to build your docs
 python:
    version: 3.8
