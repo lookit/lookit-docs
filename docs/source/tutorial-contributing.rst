@@ -291,6 +291,7 @@ List of tutorial participants
 - Misha Becker (UNC Chapel Hill)
 - Milosz Krzewinski (Loyola University Chicago)
 - Isha R (University of Texas at Dallas)
+- Norman Zeng (University of Toronto) 
 
 Checking for and creating issues on Github
 -------------------------------------------
