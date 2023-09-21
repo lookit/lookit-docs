@@ -291,6 +291,7 @@ List of tutorial participants
 - Misha Becker (UNC Chapel Hill)
 - Milosz Krzewinski (Loyola University Chicago)
 - Isha R (University of Texas at Dallas)
+- Yiyi Wang (University of Chicago)
 
 Checking for and creating issues on Github
 -------------------------------------------
