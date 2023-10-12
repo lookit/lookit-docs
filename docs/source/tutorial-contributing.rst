@@ -291,6 +291,7 @@ List of tutorial participants
 - Misha Becker (UNC Chapel Hill)
 - Milosz Krzewinski (Loyola University Chicago)
 - Isha R (University of Texas at Dallas)
+- Norman Zeng (University of Toronto) 
 - Molly Rathbun (University of Virginia)
 - Marib Malik (University of Texas at Dallas)
 
