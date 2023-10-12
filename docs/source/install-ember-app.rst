@@ -42,6 +42,12 @@ npm).
    yarn install --pure-lockfile
    bower install
 
+Note: The ember-lookit-frameplayer uses Node v12, so if you encounter issues while running "yarn install --pure-lockfile", make sure to use nvm to switch node/npm versions. 
+
+.. code:: bash
+
+   nvm install 12 && nvm use 12
+
 Create or open a file named ‘.env’ in the root of the
 ember-lookit-frameplayer directory, and add the following entries to use
 the Pipe WebRTC-based recorder: ``PIPE_ACCOUNT_HASH`` (reference to

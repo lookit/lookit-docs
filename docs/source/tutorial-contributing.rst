@@ -292,6 +292,7 @@ List of tutorial participants
 - Milosz Krzewinski (Loyola University Chicago)
 - Isha R (University of Texas at Dallas)
 - Molly Rathbun (University of Virginia)
+- Marib Malik (University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
