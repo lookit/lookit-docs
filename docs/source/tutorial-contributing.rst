@@ -68,6 +68,7 @@ List of tutorial participants
 ------------------------------
 
 .. rst-class:: tutorial-participants
+- Katie Nguyen (Univeristy of Maryland)
 - Olivia Lowman (American University)
 - Alexander Maksiaev (University of Virginia)
 - Kim Scott (MIT)
