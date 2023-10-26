@@ -296,6 +296,7 @@ List of tutorial participants
 - Norman Zeng (University of Toronto) 
 - Molly Rathbun (University of Virginia)
 - Marib Malik (University of Texas at Dallas)
+- Teddy Schoenfeld (MIT)
 - Megan Eberts (MIT)
 - Rita Zambrano (Massachusetts Institute of Technology)
 
