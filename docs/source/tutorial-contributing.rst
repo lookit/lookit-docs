@@ -68,6 +68,7 @@ List of tutorial participants
 ------------------------------
 
 .. rst-class:: tutorial-participants
+- Katie Nguyen (Univeristy of Maryland)
 - Olivia Lowman (American University)
 - Alexander Maksiaev (University of Virginia)
 - Kim Scott (MIT)
@@ -296,6 +297,7 @@ List of tutorial participants
 - Molly Rathbun (University of Virginia)
 - Marib Malik (University of Texas at Dallas)
 - Megan Eberts (MIT)
+- Rita Zambrano (Massachusetts Institute of Technology)
 
 Checking for and creating issues on Github
 -------------------------------------------
