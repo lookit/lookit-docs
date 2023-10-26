@@ -296,10 +296,11 @@ List of tutorial participants
 - Norman Zeng (University of Toronto) 
 - Molly Rathbun (University of Virginia)
 - Marib Malik (University of Texas at Dallas)
+- Kristine Zheng (MIT)
 - Jack Horgen (MIT)
 - Teddy Schoenfeld (MIT)
 - Megan Eberts (MIT)
-- Rita Zambrano (Massachusetts Institute of Technology)
+- Rita Zambrano (MIT)
 
 Checking for and creating issues on Github
 -------------------------------------------
