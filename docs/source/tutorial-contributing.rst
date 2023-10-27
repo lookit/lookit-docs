@@ -302,6 +302,7 @@ List of tutorial participants
 - Teddy Schoenfeld (MIT)
 - Megan Eberts (MIT)
 - Rita Zambrano (MIT)
+- Thomas Ester (TU)
 
 Checking for and creating issues on Github
 -------------------------------------------
