@@ -304,6 +304,7 @@ List of tutorial participants
 - Megan Eberts (MIT)
 - Rita Zambrano (MIT)
 - Nikki Elliott (MIT)
+- Ariel Fuchs (MIT)
 
 Checking for and creating issues on Github
 -------------------------------------------
