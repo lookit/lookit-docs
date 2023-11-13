@@ -305,6 +305,7 @@ List of tutorial participants
 - Rita Zambrano (MIT)
 - Nikki Elliott (MIT)
 - Ariel Fuchs (MIT)
+- Adani Abutto (Stanford)
 
 Checking for and creating issues on Github
 -------------------------------------------
