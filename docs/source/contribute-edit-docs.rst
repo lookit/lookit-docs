@@ -23,7 +23,20 @@ The file ``index.rst`` contains the table of contents (look for ``toctree``). Do
 
 If you are making substantial changes, you will want to take a look at how those changes look locally by using Sphinx to build your own local copy of the documentation. To do this, first create another virtual environment and install the requirements for Sphinx there::
 
-    /lookit-docs $ virtualenv -p python3 denv
+You will need Python 3.8 installed (Note: versions of Python 3.9+ have a dependency issue that prevents building these HTML files; you can install 3.8 alongside any other Python versions you might have.)
+
+If necessary, install Python 3.8 now:
+
+.. code-block:: python3
+
+    brew install python@3.8
+    
+
+Create a virtual environment using Python 3.8, and then install the project dependencies:
+
+.. code-block:: 
+
+    /lookit-docs $ virtualenv denv --python=/opt/homebrew/bin/python3.8
     /lookit-docs $ source denv/bin/activate
     (denv) /lookit-docs $ pip install -r docs/requirements.txt
     
