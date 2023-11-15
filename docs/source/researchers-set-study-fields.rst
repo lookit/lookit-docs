@@ -113,7 +113,7 @@ Age limits specified here should be carefully considered with respect to the `mi
    
    - Showing parents a warning if they try to participate with a child who's not eligible
    - Determining which registered families to email - announcement emails are sent out to families about discoverable studies their children are eligible for
-   - [Coming soon] Letting parents filter the list of active studies by which ones their kids are eligible for
+   - Letting parents filter the list of active studies by which ones their kids are eligible for
    
    For now, though, because the criteria expressions aren't guaranteed to be easy to read/interpret - and because you might have additional criteria that aren't in the database anywhere - these are separate from the description displayed to parents, which you have to provide manually.  
    
