@@ -107,7 +107,7 @@ Age limits specified here should be carefully considered with respect to the `mi
 
 .. admonition:: How does eligibility work?
 
-   There are two separate ways you specify eligibility criteria for your study: the "automatically checkable" parts (criteria expression and min/max ages, discussed below), and the "parent-facing description" part (above). 
+   There are two separate ways you specify eligibility criteria for your study: the "automatically checkable" parts (min/max ages, prior study participation, and criteria expression; discussed below), and the "parent-facing description" part (above).
    
    The "automatically checkable" parts are used for several things:
    
@@ -160,11 +160,34 @@ Another common standard in the literature is to report a finding in "N-month-old
 
 Here you might focus on how old babies are when they "turn" six months and then frame the age range in terms of that: e.g., go from 181 - 14 to 184 + 14 days, or 167 to 198 days, and describe this as being "within two weeks before or after their six-month 'birthday'."
 
+.. _study_participation_criteria:
+
 =============================
 Must (not) have participated
 =============================
 
 These fields allow you to specify that participants are only eligibile for this study if they **have** participated in a certain study or set of studies, and/or **have not** participated in a certain study or set of studies. This can be useful for making sure that samples do not overlap across a set of studies, or recruiting specific participants for longitudinal follow-up studies.
+
+For each of these fields, you can click on a study to select it, and click it again to remove it. You can select multiple studies. The list of currently-selected studies will appear below the selection box.
+
+.. image:: _static/img/study_edit_must_have_participated.png
+    :alt: Study 'must have participated' and 'must not have participated' eligibility fields, with two studies selected.
+
+If you select more than one study in the 'Must have participated' field, the child must have participated in ALL of the studies in order to be considered eligible. If you select more than one study in the 'Must not have participated' field, the child must not have participated in ANY of the studies in order to be considered eligible.
+
+.. admonition:: What counts as 'participated'?
+    :name: what-counts-as-participated
+
+    Researchers may have different preferences and requirements about what counts as having 'participated' in a study; some researchers want to exclude children who have had any exposure to the study's stimuli, while others may only care about excluding children who have completed the whole session.
+
+    We have chosen to treat participation in the strictest sense: **once a child begins a study by clicking the 'Participate Now' button, they are treated as having 'participated' in that study**, regardless of how far they get through the study session. For internal studies, we also check that the participant at least reaches the first frame (as opposed to clicking to start and then closing the page before it loads).
+
+If you want to prevent a child from doing your study more than once, you can add the study itself to the 'must not have participated' list. However, keep in mind that as soon as a child clicks on the 'Participate now' button, they will be treated as having 'particpated' (even if they don't finish) and will see an eligibility warning if they try to start the study again (see :ref:`What counts as 'participated' <what-counts-as-participated>`).
+
+As with all of the eligibility criteria, if the child is not eligible due to the study's prior participation requirements, they can still choose to participate in the study, but they will see a warning below the 'Participate Now' button when the ineligible child is selected (see image below). The purpose of this warning is to make sure that families know that they may not be compensated and their data may not be used.
+
+.. image:: _static/img/study_eligibility_warning.png
+    :alt: Family-facing study detail page with an ineligible child selected and red ineligibility warning text.
 
 .. _study_eligibility_criteria:
 
@@ -175,6 +198,7 @@ Providing this expression allows you to specify more detailed eligibility criter
 
 - The child is under the minimum age specified (see `minimum and maximum age cutoffs`_)
 - The child is over the maximum age specified (see `minimum and maximum age cutoffs`_)
+- The child does not meet the prior study participation requirements (see :ref:`Must (not) have participated' <study_participation_criteria>`).
 - The child is within the specified age range, but doesn't meet the eligibility criteria defined in this expression
 
 Note that while a warning is displayed, ineligible participants are not actually prevented from participating; this is deliberate, to remove any motivation for a curious parent to fudge the details to see what the study is like.
