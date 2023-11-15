@@ -132,7 +132,15 @@ This should give the name of the PI for your study, and an email address where t
 ================================
 Minimum and maximum age cutoffs
 ================================
-Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days. Participants under the age range see a warning indicating that their data may not be used, and suggesting that they wait until they're in the age range. Participants over the age range just see a warning indicating that their data may not be used. Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age. 
+Integer fields specifying minimum/maximum ages of participants (inclusive). Eligibility is calculated based on the child's current age in days; this is compared to the minimum/maximum ages in days, calculated as 365*years + 30*months + days.
+
+Participants under the age range see a warning indicating that they may not be compensated and their data may not be used, and suggesting that they wait until they're in the age range (see screenshot below). Participants over the age range just see a warning indicating that they may not be compensated and their data may not be used (see screenshot below). Participants are never actually prevented from starting the study, to remove motivation for a curious parent to fudge the child's age.
+
+.. image:: _static/img/study_too_young_warning.png
+    :alt: Family-facing study detail page with a child selected who is below the age range, and red ineligibility warning text.
+
+.. image:: _static/img/study_too_old_warning.png
+    :alt: Family-facing study detail page with a child selected who is above the age range, and red ineligibility warning text.
 
 Note that these ages do **not** in all cases correspond exactly to the child's age in 'calendar months' or 'calendar years' (e.g., 'one month' if that month is February). In general, you want to avoid a situation where the parent thinks their child should be eligible based on the participant eligibility string (e.g., "my child is one month old, she was born February 3rd and it's March 4th!") but sees a warning when trying to participate. You can do this by narrowing the eligibility criteria in the freeform string and/or by expanding them in the cutoffs here. If one has to align better with your actual inclusion criteria, in general you want that to be the minimum/maximum age cutoffs.
 
