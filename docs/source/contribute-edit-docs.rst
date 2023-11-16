@@ -21,7 +21,7 @@ The file ``index.rst`` contains the table of contents (look for ``toctree``). Do
 
     pandoc -o outputfile.rst inputfile.md
 
-If you are making substantial changes, you will want to take a look at how those changes look locally by using Sphinx to build your own local copy of the documentation. To do this, first create another virtual environment and install the requirements for Sphinx there::
+If you are making substantial changes, you will want to take a look at how those changes look locally by using Sphinx to build your own local copy of the documentation. To do this, first create another virtual environment and install the requirements for Sphinx there.
 
 You will need Python 3.8 installed (Note: versions of Python 3.9+ have a dependency issue that prevents building these HTML files; you can install 3.8 alongside any other Python versions you might have.)
 
