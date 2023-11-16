@@ -25,16 +25,12 @@ If you are making substantial changes, you will want to take a look at how those
 
 You will need Python 3.8 installed (Note: versions of Python 3.9+ have a dependency issue that prevents building these HTML files; you can install 3.8 alongside any other Python versions you might have.)
 
-If necessary, install Python 3.8 now:
-
-.. code-block:: python3
+If necessary, install Python 3.8 now::
 
     brew install python@3.8
     
 
-Create a virtual environment using Python 3.8, and then install the project dependencies:
-
-.. code-block:: 
+Create a virtual environment using Python 3.8, and then install the project dependencies::
 
     /lookit-docs $ virtualenv denv --python=/opt/homebrew/bin/python3.8
     /lookit-docs $ source denv/bin/activate
