@@ -355,7 +355,7 @@ The ``response`` data contains information concerning this particular session: w
 -  **conditions**: An object containing information about conditions to which the subject was assigned in any frames that do randomization (choice frames). Keys are in the format ``<order>-<frame.id>`` corresponds with the ``<order>`` from the ‘sequence’ of the *original* experiment structure, and the ``<frame.id>`` again corresponds with the identifier of the frame as defined in the ‘frames’ property of the experiment structure. Data will be stored in conditions for the *first* frame created by a randomizer (top-level only for now, i.e. not from nested randomizers). Values are objects containing mappings from condition names to their values for this session. The data stored by a particular randomizer can be found under ``data collected`` in the :ref:`experiment runner docs <elf:randomization>`
 
 
-The ``consent`` key contains information 
+The ``consent`` key contains information about the consent ruling for this study session:
 
 -  **ruling**: Most recent consent video ruling: one of ``accepted`` (consent has been reviewed and judged to indidate informed consent), ``rejected`` (consent has been reviewed and judged not to indicate informed consent -- e.g., video missing or parent did not read statement), or ``pending`` (no current judgement, e.g. has not been reviewed yet or waiting on parent email response')
 -  **arbiter**: Name associated with researcher account that made the most recent consent ruling
