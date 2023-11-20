@@ -186,7 +186,7 @@ If you select more than one study in the 'Must have participated' field, the chi
 .. admonition:: What counts as 'participated'?
     :name: what-counts-as-participated
 
-    Researchers may have different preferences and requirements about what counts as having 'participated' in a study; some researchers want to exclude children who have had any exposure to the study's stimuli, while others may only care about excluding children who have completed the whole session.
+    Researchers may have different preferences and requirements about what counts as having 'participated' in a study; some researchers want to exclude children who have had any exposure to the study's stimuli, while others may only care about excluding children who have completed the whole session. Since the definition for these criteria has to be used for every study on the site, we have to use a definition of "participated" that operates in the same way for all studies.
 
     We have chosen to treat participation in the strictest sense: **once a child begins a study by clicking the 'Participate Now' button, they are treated as having 'participated' in that study**, regardless of how far they get through the study session. For internal studies, we also check that the participant at least reaches the first frame (as opposed to clicking to start and then closing the page before it loads).
 
