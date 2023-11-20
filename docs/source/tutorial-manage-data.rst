@@ -238,4 +238,4 @@ Returning to your "message participants" tab, let's create another email. This t
     
 Like before, paste in your ID, write your message, send it, and make sure you receive it. (Don't actually send yourself a gift card. Unless you really want to.)
 
-Congratulations! We've covered all the basic functionality you'll need to manage your studies. Finally, we'll wrap up by briefly noting some of the advanced features you might want to use later and revisiting :ref:`Github issues<Github issues>` now that you may have some feature requests or bug reports.
+Congratulations! We've covered all the basic functionality you'll need to manage your studies. Finally, we'll wrap up by briefly noting some of the advanced features you might want to use later and revisiting :ref:`Github issues<github_issues>` now that you may have some feature requests or bug reports.

@@ -1,6 +1,7 @@
 .. _features:
+
 Features
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================
 
 
 Here are some of the features and advantages researchers using Lookit
