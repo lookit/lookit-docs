@@ -18,9 +18,10 @@ the new improved Children Helping Science platform, here's how you get started!
     (e.g. Calendly). A researcher meets the family on a video call to conduct the 
     session.
   - Lookit Experiment: You build a study in the Lookit experiment builder, which is
-    customized for developmental studies and includes :ref:`features <features>`
+    customized for developmental studies and has :ref:`features <features>`
     including webcam recording. Families take the study on their own time, without 
     a researcher present.
+
 
 
 Join the Slack workspace
@@ -35,7 +36,8 @@ technical support requests, and for peer review from other researchers.
 There are a lot of participating researchers
 (over 800 at last count!) who may be able to help!
 
-If you also want to receive updates about Lookit via email, please join the `lookit-research <https://mailman.mit.edu/mailman/listinfo/lookit-research>`__ list as well.
+If you also want to receive updates via email, please join the 
+`lookit-research <https://mailman.mit.edu/mailman/listinfo/lookit-research>`__ list as well.
 
 
 Overview - 15 minute to your first study!
@@ -56,13 +58,19 @@ If your institution is not listed, the form you need is `here <https://github.co
 Go `here <https://lookit.mit.edu/registration/>`__ to make a new researcher account. 
 
 Please don't use a single login for your whole lab - even if you use a single email 
-for lab communications (like mydevelopmentallab@gmail.com). Every person should have
-their own account.
+for lab communications (like mydevelopmentallab@gmail.com). Sharing login 
+informatoin presents a security risk for participants' data.
+
+Each researcher using the platform should `create their own account <https://lookit.mit.edu/registration/>`__.
 
 3. Create (~5 minutes) or join (~1 minute) your lab account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If you are the first user in your lab, go `here <https://lookit.mit.edu/exp/labs/create/>`__ to 
-create your own “lab” on the platform, and `here <https://docs.google.com/forms/d/e/1FAIpQLScg6geDk8iDYfTBtuNPyfNaTyGfROuXiSw6jUPHv3b5KSWC0Q/viewform>`__ to review the terms of use.
+If you are the first user from your lab, go `here <https://lookit.mit.edu/exp/labs/create/>`__ to 
+create your own “lab” on the platform.
+
+Visit `this link <https://docs.google.com/forms/d/e/1FAIpQLScg6geDk8iDYfTBtuNPyfNaTyGfROuXiSw6jUPHv3b5KSWC0Q/viewform>`__ 
+to review and take a short quiz on our terms of use. One person from your lab needs to 
+complete this quiz before your lab is approved to submit studies.
 
 You will use your lab to manage access to your group's studies. Every lab has 
 its own public page that shows the studies that are active right now. (Example:
@@ -102,9 +110,7 @@ the platform works.
 5. What happens next?
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-a) Go to your study page and choose Submit under the Study Status heading. Then send an email 
-to Melissa (mekline@mit.edu) to let her know your study is ready to post. NB: you have to both
-click submit and let Melissa know. Studies are reviewed to make sure they meet 
+a) Go to your study page and choose Submit under the Study Status heading. Studies are reviewed to make sure they meet 
 our `terms of use <https://docs.google.com/forms/d/e/1FAIpQLScg6geDk8iDYfTBtuNPyfNaTyGfROuXiSw6jUPHv3b5KSWC0Q/viewform>`__ and 
 :ref:`basic requirements <basic_review_checklist>` for all links posted on the platform.
 
@@ -114,8 +120,9 @@ you are posting to an individual webpage with no university affiliation or witho
 your IRB approval.)
 
 c) After you've received the email saying your study is approved, go to your study page and hit 
-“Start” under the Study Status heading. Be sure you are ready to start because your study will 
-appear on the main study Children Helping Science page (and your lab's page) immediately! 
+“Start” under the Study Status heading. Be sure you are ready to go, because your study will immediately
+appear on the `studies page <ADD LINK>`__!
+
 You can pause and re-start data collection whenever you need to.
 
 6. Recruiting participants for your study
@@ -124,9 +131,61 @@ You can pause and re-start data collection whenever you need to.
 
 Yes. As soon as you start data collection, emails advertising your study will 
 start going out to a random subset of families eligible for your study in 
-our >9,000+ family database. (Families decide if they want to be contacted at 
+our >10,000+ family database. (Families decide if they want to be contacted at 
 all, and we limit the number of emails families receive so that no one family 
 is overwhelmed with messages.)
+
+**What are the rules about paying participants?**
+
+Studies on the platform may be either compensated or uncompensated; the most important
+thing is to be clear with potential participants about the rules you'll apply and how 
+compensation will work. 
+
+You may limit compensation for reasons of eligibility (e.g. will only pay if the child 
+is in the specified age range, will only pay once per child) or to avoid paying people
+who do not participate in good faith (see below). 
+
+However, payment needs to be for participants' time and effort - without prior approval 
+by Lookit, payment may *not* depend on the child's behavior or performance, even if 
+that behavior renders data unusable (e.g., if an infant fusses and his parent ends
+the session early). Similarly, payment may not depend on the parent's video privacy 
+selections.
+
+Beginning December 2023, new studies are required to confirm that study participants are 
+acting in good faith (i.e. that a child of the correct age is present and the family is 
+attempting to participate in the study as designed) prior to compensating them. 
+
+This is being required because we have experienced spam participants (e.g. people making 
+many accounts and trying to get paid over and over again.) Our participant pool is 
+extremely high quality, with the vast majority representing real families who are truthful
+about their information and working hard to participate to the best of their abilities.
+
+*Keeping* it this way by keeping bad-faith participants out of your datasets is a shared 
+responsibility, and studies that don't screen their participants teach the scammers 
+that they can get paid by lying about their information on CHS!
+
+The most straightforward 
+way to meet this requirement is to use the Lookit video consent form, and to require the 
+child to be visible either in the consent video, or in other video data that you 
+collect during the session. This can be in addition to or in place of the consent 
+process that you are already using (e.g. if your institution requires a specific
+consent form platform.)
+
+Information for specific study types:
+
+  - Bring-your-own Study Links: The easiest way to meet this requirement is to prepare a 'hybrid' study that
+    uses the Lookit experiment builder to present the consent form, and then redirects to your external study.  `Here
+    is an example study template <https://lookit.mit.edu/exp/studies/3067/>`__ that you can copy and use.
+  - Bring-your-own Meeting: Visual confirmation of the participating family during the video session counts for this purpose.
+  - Lookit Experiment: The video consent form is built into the design of the Lookit platform, and there are a number of tools
+    that you can use for reviewing and tracking valid consent already available to researchers. This is covered in other parts of
+    this documentation, and most example Lookit experiments include the consent process so you can see how it works. 
+
+The goal of this requirement is to ensure independent confirmation that the family is
+being basically truthful about their children's information, beyond just whatever they 
+chose to input when creating their account. If you can't or don't want to use the procedures 
+described above, you are very welcome to propose another method for verifying good-faith
+participation! Please ask any questions you might have about this on `the Slack channel <https://forms.gle/WVapAncBwRPR7pLX9>`__.
 
 **Can I recruit participants directly to my study rather than the platform as a whole?**
 
@@ -148,15 +207,15 @@ help others?**
 Every lab's recruitment effort helps expand the participant pool for all of us. 
 Families interested in participating in research are usually interested in many 
 different studies. Thus, even if you are a first-time researcher setting up 
-your first study and you haven’t yet advertised at all, you are reaching 
+your first study and you haven't yet advertised at all, you are reaching 
 roughly 10,000 families already interested in developmental science because 
-other researchers have contributed to this community. Please join us!
+other researchers have contributed to this community. Please do your part!
 
 Even if you aren't currently recruiting for a study, you can help by promoting 
 the platform broadly. Put a link to Children Helping Science on a family-facing 
 part of your lab or personal researcher website. This might look like this:
 
-"Did you know that you can participate in our research from the comfort of
+"Did you know that you can participate in research from the comfort of
 your own home? `Click here to check out Children Helping Science, an online platform
 for developmental research. <https://lookit.mit.edu>`__ Families can
 participate in our studies on their home computers, any time they want!"
@@ -176,9 +235,8 @@ we recommend that you take:
    needed (e.g., verbal instructions, voiceover/questions, demos), and
    collect your stimuli. See :ref:`advice here <stim_prep>`.
 
-3. Set up your study on Lookit and get it working just how you want it
-   to! You’ll need to :ref:`set each of these
-   fields <study fields>`
+3. Set up your study on Children Helping Science and get it working just how you want it
+   to! You’ll need to :ref:`set each of these fields <study fields>`
    and write and test your study protocol.
 
 4. Gather :ref:`peer feedback <peer review>` on your study to improve it; edit and 
