@@ -91,13 +91,16 @@ the collection of email addresses for other compliance reasons, you can add
 an additional survey page to your study to ask for the participant's email,
 as long as it is clear that that information will only be used to send payment. 
 
-Participant compensation should never depend on the child’s behavior -
+Participant compensation should never depend on the child's behavior -
 *even if the child fusses out and/or the data is unusable*. In general,
 this means we try to pay anyone who submits a valid consent video.
-Payment for the parent’s/child’s time is ethical; accidentally paying
+Payment for the parent's/child's time is ethical; accidentally paying
 the parent to take extraordinary measures to get their child to sit
-through the study because they think that’s necessary to get paid is not
+through the study because they think that's necessary to get paid is not
 :)
+
+Very rarely, you may have people take your study who are not operating in
+good faith - XXX START HERE. 
 
 The exception to the above guideline is that if someone tries the study
 but only gets a very short way in (maybe only consent), then comes back
@@ -115,18 +118,18 @@ min/max used for automatic warnings; see `the
 docs <https://lookit.readthedocs.io/en/develop/researchers-using-platform.html#creating-a-study>`__.)
 If a parent participates with a child well outside the age range, you
 might want to email them to thank them for participating, let them know
-it’s fine to check out the study and you hope they found it interesting
-but since this is for x-month-olds you won’t be able to use their data
+it's fine to check out the study and you hope they found it interesting
+but since this is for x-month-olds you won't be able to use their data
 or provide compensation.
 
 Rarely, adults without children may check out a study and even make a
 consent recording. We tell our students not to do this but you never
 know :) To avoid feeling obligated to pay them (which would probably be
-surprising to them too) you’re welcome to state in your compensation
-info that the child needs to be visible in the consent video. (You don’t
+surprising to them too) you're welcome to state in your compensation
+info that the child needs to be visible in the consent video. (You don't
 actually have to enforce that for people who get the kid later, which is
 reasonable - but this way if someone ONLY submits the consent video and
-doesn’t have a child present, you don’t have to pay them.)
+doesn't have a child present, you don't have to pay them.)
 
 Parents who ran into a technical problem and want to try again
 ----------------------------------------------------------------
