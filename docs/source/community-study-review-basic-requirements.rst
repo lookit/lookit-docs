@@ -30,6 +30,8 @@ guide<study fields>` to each of the fields on the study form.
    participants - but you must clearly state what compensation is offered, including
    any limitations on who can receive compensation.
 
+   **Beginning in December 2023, START HERE **
+
 
 Terms of use
 ------------
