@@ -80,7 +80,7 @@ Missing consent videos
 If you come across a record that's missing a consent video, please (a) try refreshing the page to make sure it doesn't show up and then (b) notify Lookit staff, including the response UUID. If you're using a version of the experiment runner prior to 2.2.2 / 1.4.1 (see `releases <https://github.com/lookit/ember-lookit-frameplayer/releases>`) then this is probably an instance of `this bug <https://github.com/lookit/lookit-api/issues/598>`__. We can
 fix particular instances for you but recommend updating following the instructions in `this Slack post <https://lookit-mit.slack.com/archives/CDV2ULHC5/p1608305924056900>`__.
 
-.. _compensation:
+
 
 Compensating participants
 ----------------------------------------
@@ -140,7 +140,7 @@ the particular circumstances and your study design, but on a technical
 level it’s fine - you can let the parent know they may see a warning
 about having already participated but that they can safely ignore it.
 
-.. _confirm_consent:
+
 
 Confirming consent
 ----------------------------------------
