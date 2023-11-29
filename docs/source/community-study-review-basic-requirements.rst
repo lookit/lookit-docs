@@ -62,7 +62,7 @@ Information for specific study types:
     this documentation, and most example Lookit experiments include the consent process so you can see how it works. 
 
 To learn more about how to check for red flags (and green flags) for distinguishing
-spammers from honestly confused families, please see XXXX NEW PAGE. 
+spammers from honestly confused families, please see the page on :ref:`spam prevention<spam_prevention>`. 
 
 The goal of this requirement is to ensure independent confirmation that the family is
 being basically truthful about their children's information, beyond just whatever they 

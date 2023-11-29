@@ -1,3 +1,5 @@
+.. _spam_prevention:
+
 Day-to-day study operation
 ==============================
 
