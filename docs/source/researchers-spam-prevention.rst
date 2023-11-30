@@ -1,6 +1,6 @@
 .. _spam_prevention:
 
-Spam prevention
+Preventing spam
 ==============================
 
 Starting and stopping data collection and advertising

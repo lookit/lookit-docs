@@ -96,17 +96,30 @@ Participant compensation should never depend on the child's behavior -
 this means we try to pay anyone who submits a valid consent video.
 Payment for the parent's/child's time is ethical; accidentally paying
 the parent to take extraordinary measures to get their child to sit
-through the study because they think that's necessary to get paid is not
-:)
-
-Very rarely, you may have people take your study who are not operating in
-good faith - XXX START HERE. 
-
-The exception to the above guideline is that if someone tries the study
+through the study because they think that's necessary to get paid is not.
+The exception to this guideline is that if someone tries the study
 but only gets a very short way in (maybe only consent), then comes back
 and does the study again, you would generally pay them just once - even
 if you might have erred on the side of caution and paid them even for
 the first attempt.
+
+.. admonition:: Spam users and fraud on CHS
+  
+  Very rarely, you may have people take your study who are not operating in
+  good faith - the most egregious example is someone attempting to participate
+  without a child present, but we have also seen cases where the same person 
+  makes several accounts to get paid multiple times, or where people lie about
+  their location or child's age to make themselves 'eligible' for studies. 
+
+  **Every member of your research team** who is involved in compensating families
+  for participation must be aware of this issue and the steps that researchers
+  are expected to take to avoid this.  Because CHS is a shared platform 
+  with a shared reputation and shared participant pool, it is **everyone's** 
+  responsibility to avoid paying the small number of people to try to take
+  advantage of this resouce to the detriment of our research goals. 
+
+  See :ref:`this page <spam_prevention>` for information on procedures
+  related to discouraging scammer participants on Children Helping Science. 
 
 You are free to put limits on how many times / how often people can
 participate and be compensated, and to require that the child be, say,
