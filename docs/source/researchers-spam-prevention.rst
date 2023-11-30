@@ -3,18 +3,51 @@
 Preventing spam
 ==============================
 
-Starting and stopping data collection and advertising
-------------------------------------------------------
+Participants attempting to 'game the system' have been a reality of (adult) remote
+research for years.  Children Helping Science has remained relatively free of
+this issue because of (a) the higher barrier for participation - only families with
+children are invited to participate, and families have to 
+create an account before starting a study and (b) the stronger verification methods
+we use - studies that use webcam video to analyze the central data also document that
+a family with a child of roughly the expected age is present. 
 
-At any time, you can change either whether your study is active and whether it is discoverable.
+As Lookit/CHS has grown, it has become a more attractive target for fake participants. 
+The Children Helping Science strategy is that "totally fake participants" 
+(e.g., someone who is participating in a child study without a child) should have 
+a 0% success rate in receiving compensation. Importantly, even a low success rate 
+(e.g., 5%) could encourage more fake participation, especially since the motivation 
+for some people is not just profit but also just the challenge and satisfaction of
+successfully hacking a system.
 
-Active vs. paused
-~~~~~~~~~~~~~~~~~~
+The CHS philosophy on scammers and bad-faith participation in studies
+----------------------------------------------------------------------
 
-You can start and stop data collection independently and whenever you
-want. On your study detail page, go to “change state” -> “Start” or “Pause.”
+Monitoring for potential fraud on CHS is a tricky balance, between preventing 
+scammers from finding a foothold and maintaining a central value of the 
+platform - creating a welcoming environment for families of all kinds, including 
+those who don't already know the norms for participating in studies, and who 
+may have a wide variety of technical challenges. By the numbers, confused 
+families are significantly more common than scammer participants.
 
-When your study is active, participants can access it at the direct link shown on your study page. If the study is also discoverable, it will be listed on the Lookit "studies" page and advertised by email to eligible families.
+As an open community resource, Children Helping Science depends on researchers 
+to do their part to maintain the high quality of both participant experiences and
+research quality that we have enjoyed together over the past several years. 
 
-When your study is paused, participants can't access it even if they have the direct link. If participants follow a direct link to your study and it is paused, they will see a message `like this <https://lookit.mit.edu/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
+.. admonition:: Your responsibility
+   
+   As researchers using CHS, it is your responsibility to treat participating 
+   families with respect and an assumption of good faith, *and* to maintain 
+   lab practices that are alert to the possibility of scammers and prevent 
+   giving payments to people who are participating in bad faith.
+
+The staff of Children Helping Science is working hard to contain the impact of
+fake participants, whose behavior is sometimes most evident over multiple studies 
+across multiple labs. Doing this depends on researchers following the steps described
+on the rest of this page. 
+
+Video verification for paid studies
+------------------------------------
+
+Managing and reporting scam participants
+-----------------------------------------
 
