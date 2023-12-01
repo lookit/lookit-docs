@@ -48,6 +48,52 @@ on the rest of this page.
 Video verification for paid studies
 ------------------------------------
 
+Beginning in December 2023, studies are required to implement a visual check that study participants are 
+acting in good faith (i.e. that a child of the correct age is present and the family is 
+attempting to participate in the study as designed) prior to compensating them. 
+
+This is being required because we have experienced spam participants (e.g. people making 
+many accounts and trying to get paid over and over again.) Our participant pool is 
+extremely high quality, with the vast majority representing real families who are truthful
+about their information and working hard to participate to the best of their abilities.
+
+*Keeping* it this way by keeping bad-faith participants out of your datasets is a shared 
+responsibility, and studies that don't screen their participants teach the scammers 
+that they can get paid by lying about their information on CHS!
+
+The goal of this requirement is to ensure independent confirmation that the family is
+being basically truthful about their children's information, beyond just whatever they 
+chose to input when creating their account. If you can't or don't want to use the procedures 
+described below, you are very welcome to propose another method for verifying good-faith
+participation! Please ask any questions you might have about this on `the Slack channel <https://forms.gle/WVapAncBwRPR7pLX9>`__.
+
+Option 1: Don't pay participants
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The most straightforward 
+way to meet this requirement is to use the Lookit video consent form, and to require the 
+child to be visible either in the consent video, or in other video data that you 
+collect during the session. This can be in addition to or in place of the consent 
+process that you are already using (e.g. if your institution requires a specific
+consent form platform.)
+
+Information for specific study types:
+
+  - Bring-your-own Study Links: The easiest way to meet this requirement is to prepare a 'hybrid' study that
+    uses the Lookit experiment builder to present the consent form, and then redirects to your external study.  `Here
+    is an example study template <https://lookit.mit.edu/exp/studies/3067/>`__ that you can copy and use.
+  - Bring-your-own Meetings: Visual confirmation of the participating family during the video session counts for this purpose.
+  - Lookit Experiments: The video consent form is built into the design of the Lookit platform, and there are a number of tools
+    that you can use for reviewing and tracking valid consent already available to researchers. This is covered in other parts of
+    this documentation, and most example Lookit experiments include the consent process so you can see how it works. 
+
+
+
+
+
 Managing and reporting scam participants
 -----------------------------------------
+
+
+text
 

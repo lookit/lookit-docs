@@ -156,8 +156,7 @@ acting in good faith (i.e. that a child of the correct age is present and the fa
 attempting to participate in the study as designed) prior to compensating them. This can be 
 done by using our built-in video consent process to review participants for any red flags
 prior to paying them, or by checking eligibility information during live Zoom meetings with families.
-You can learn more about this process on the :ref:`basic study requirements<basic_review_checklist>` page, 
-and more about preventing spam participation on :ref:`this page<spam_prevention>`.
+You can learn more about this process and about preventing spam participation on :ref:`this page<spam_prevention>`.
 
 **Can I recruit participants directly to my study rather than the platform as a whole?**
 

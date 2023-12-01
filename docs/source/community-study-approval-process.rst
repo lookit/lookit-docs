@@ -44,8 +44,8 @@ experiment itself takes place elsewhere. This opens up the possibility for
 researchers to run "asynchronous" studies with any desired platform 
 (e.g., Qualtrics) or "synchronous" studies (e.g., scheduled Zoom sessions).
 
-Beginning in May 2023 (in conjunction with the Children Helping Science/Lookit 
-merger), we conducting an experiment with expedited reviewing for external studies. 
+In conjunction with the Children Helping Science/Lookit 
+merger, we are expediting reviewing for external studies. 
 Under this process, peer review is *optional* (but highly recommended) and 
 admin review will be expedited; however, all external studies must still meet 
 :ref:`basic requirements<basic_review_checklist>`.
