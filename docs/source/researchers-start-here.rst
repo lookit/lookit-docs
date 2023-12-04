@@ -59,7 +59,7 @@ Go `here <https://lookit.mit.edu/registration/>`__ to make a new researcher acco
 
 Please don't use a single login for your whole lab - even if you use a single email 
 for lab communications (like mydevelopmentallab@gmail.com). Sharing login 
-informatoin presents a security risk for participants' data.
+information presents a security risk for participants' data.
 
 Each researcher using the platform should `create their own account <https://lookit.mit.edu/registration/>`__.
 
