@@ -80,6 +80,7 @@ Families may take part in studies from multiple labs over time. Having one centr
    researchers-manage-consent
    researchers-experiment-data
    researchers-day-to-day-study-operation.md
+   researchers-spam-prevention.md
    community-participant-recruitment.md
    researchers-use-api
 

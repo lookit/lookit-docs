@@ -39,6 +39,18 @@ Consent rulings can be changed after an initial ruling is made; for instance, yo
 
 The most recent consent ruling, the time of that ruling, any comment, and the name of the researcher who made the ruling, will be included in the JSON/CSV data for this response.
 
+-----------------------------------
+Consenting and 'fake participants'
+-----------------------------------
+
+Occasionally, people make a CHS account (or multiple accounts!!) in order to try 
+and collect payments without participating in good faith. In addition to the 
+video itself, the account information shown below the video is designed to be 
+helpful in evaluating and reporting potential fake participants.
+
+For information on dealing with this, please see our page on :ref:`spam prevention<spam_prevention>`. 
+
+
 --------------------
 Response statistics
 --------------------

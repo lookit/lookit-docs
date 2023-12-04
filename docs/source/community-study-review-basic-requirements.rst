@@ -3,19 +3,17 @@
 Basic review requirements
 ==========================
 
-In May 2023, we are beginning a reviewing experiment for external studies, in 
-conjunction with the merger of the Children Helping Science and Lookit platforms. 
-
-During this period, external studies will be expedited for posting, but must 
-still meet some basic requirements in 
+To accomodate the growing research community and meet the needs of different
+kinds of studies, external studies (Bring-your-own Study Link, Bring-your-own Meeting)
+will be expedited for posting, but must still meet some basic requirements in 
 order to be approved. If you have questions about any of these
-requirements, please ask them on Slack or email Melissa at mekline@mit.edu. 
+requirements, please ask them on Slack. 
 
 In addition to the requirements listed below, you are also strongly encouraged
 to review the :ref:`study guidelines<self_review_checklist>` 
 that we use for reviewing Lookit experiments. You are also welcome to give and 
 solicit peer review for your studies on Slack, 
-and we recommend that all studies consider doing this!
+and we recommend that all studies do this!
 
 Study form
 -----------
@@ -24,12 +22,28 @@ You must provide complete information for each of the fields on the study form,
 including compensation information and eligibility.  :ref:`Here is a detailed
 guide<study fields>` to each of the fields on the study form. 
 
+Paying participants
+--------------------
+
 .. admonition:: Note
    
    You are not required to pay participants - some studies ask for volunteer 
    participants - but you must clearly state what compensation is offered, including
    any limitations on who can receive compensation.
 
+Beginning December 2023, studies are required to implement a visual check that study participants are 
+acting in good faith (i.e. that a child of the correct age is present and the family is 
+attempting to participate in the study as designed) prior to compensating them. 
+
+This is being required because we have experienced spam participants (e.g. people making 
+many accounts and trying to get paid over and over again.) Our participant pool is 
+extremely high quality, and *keeping* it this way by keeping bad-faith participants out of your datasets is a shared 
+responsibility. Studies that don't screen their participants teach the scammers 
+that they can get paid by lying about their information on CHS!
+
+To learn how to implement this requirement for different kinds of studies, and for more 
+information about how to check for red flags (and green flags) to distinguish
+spammers from honestly confused families, please see the page on :ref:`spam prevention<spam_prevention>`. 
 
 Terms of use
 ------------

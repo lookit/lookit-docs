@@ -88,7 +88,16 @@ Explain the purpose of your study here (1-3 sentences). This should address what
 =============================
 Compensation
 =============================
-Provide a description of any compensation for participation, including when and how participants will receive it and any limitations or eligibility criteria (e.g., only one gift card per participant, being in age range for study, child being visible in consent video). Please see the `Terms of Use <https://lookit.mit.edu/termsofuse/>`_ for details on allowable compensation and restrictions. If this field is left blank (which is okay if you're not providing compensation beyond the joy of participation) it will not be displayed to participants.
+Provide a description of any compensation for participation, including when and how 
+participants will receive it and any limitations or eligibility criteria (e.g., only one 
+gift card per participant, being in age range for study, child being visible in consent 
+video). Please see the `Terms of Use <https://lookit.mit.edu/termsofuse/>`_ for details 
+on allowable compensation and restrictions. If this field is left blank (which is okay 
+if you're not providing compensation beyond the joy of participation) it will not be 
+displayed to participants.
+
+Studies which compensate participants are responsible for following our :ref:`spam prevention<spam_prevention>`
+policies.
 
 =============================
 Exit URL
