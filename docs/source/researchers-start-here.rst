@@ -121,7 +121,7 @@ your IRB approval.)
 
 c) After you've received the email saying your study is approved, go to your study page and hit 
 “Start” under the Study Status heading. Be sure you are ready to go, because your study will immediately
-appear on the `studies page <ADD LINK>`__!
+appear on the `studies page <https://childrenhelpingscience.com/studies/>`__!
 
 You can pause and re-start data collection whenever you need to.
 
