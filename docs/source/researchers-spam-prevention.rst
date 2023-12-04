@@ -146,8 +146,9 @@ they even get to your study and the consent your study uses).
 
 If you discover that none of the above
 options is workable for you, we encourage you to think creatively about how else you
-could meet the requirement to verify that your participants are who they say they are (or consider Option 1, volunteer participants.)
-It may help to remind your IRB that other methods of identitiy verification (such as requiring a picture of a 
+could meet the requirement to verify that your participants are who they say they 
+are (or consider Option 1, volunteer participants.) It may help to inform your 
+IRB that other methods of identitiy verification (such as requiring a picture of a 
 driver's license or a social media account) would constitute a *greater* risk to 
 families, compared to short webcam video which does not reveal e.g. families'
 full names or location information to the researcher. However, if something like the 
@@ -156,24 +157,109 @@ latter is what your IRB will approve, we're happy to talk about this option with
 Managing and reporting scam participants
 -----------------------------------------
 
-XXX START HERE
+The compensation statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The first tool in your toolkit for managing scammers is a clear 
-statement of when and how participants will be compensated.  The
-compensation statement....
+The first tool in your toolkit for managing scammers is a clear statement of when 
+and how participants will be compensated. In addition to basic parameters
+(especially for eligibility criteria that can't be automatically screened, e.g.
+"must be a middle or youngest sibling"), it is also wise to include a statement that
+each family/child can only be paid once for participating, if this is true of your study.
 
-Your compensation information in the Lookit/CHS posting should likewise say something like “To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you during the study. Each child will only receive a gift card once for participating.”
+Providing false information is a violation of our platform's Terms of Use, so you should
+feel comfortable rejecting participation by people who are clearly not following the
+rules. However, it can help well-meaning families know what to do, and discourage scammers, 
+to explicitly include ground rules in your compensation statement, which you can then 
+point out to participants if the need arises. Here is an example of a compensation
+statement with some of this language:
 
-## REVIEWING PARTICIPANTS FOR SCAMS 
+*After you participate, we'll email you a $5 Amazon gift code
+within five days to thank you for your time (only one per child). To be eligible for compensation we ask that
+you (1) provide a valid consent video (we will show you how!), (2) make sure your child 
+is in the age range specified above and (3) ensure that your child is visible during 
+the recorded videos. Your child does not need to finish the entire study in order to be 
+eligible for compensation.*
 
-Link to rogues gallery goes here. 
-Include screenshot of consent video from MKS fake child. 
+Reviewing for consent, compensation, and analysis inclusion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here are the steps I recommend you take:* **DO NOT** pay for any of these sessions, or communicate further with these accounts.  I have already blocked them, but in the event they do contact you asking for payment, please forward anything to me.  
-* Please **review** all of your sessions on the same experiment between August 15 and the present.  Red flags to look for based on the patterns we've seen include many children with identical birth dates (same or different year), more than one child per family (often normal, but I suggest checking the videos to ensure they are really two separate children), and short guardian or child nicknames like "cacs" or "noky"  
-* Please **report** any new user global IDs back to this channel.  For my sanity and that of your fellow researchers, please first search this channel to see if an ID has been shared before  
+In most labs, there are several things you need to review about each session that 
+comes in. Many items on a 'quality checklist' serve multiple functions (a video
+with no child present is one that both you won't pay for, *and* won't include
+in your analysis), and it is important to make sure that your lab's workflow
+is set up to avoid paying participants before you have a chance to check if 
+they should be paid! Because you are required to pay your participants in a 
+timely fashion, this means that you need to be prepared to conduct these 
+quality checks quickly and accurately within your lab. 
 
-## REPORTING SCAMS
+The specific things you need to check for (including photos of some known
+people who make many accounts to 'hit' especially brand new studies) will
+change over time, in the eternal race between researchers attempting to 
+protect their studies, and scammers trying to get fraudulent payments. We
+don't want the scammers to know what we know, so information about *specific*
+red flags is kept in  `a separate document <https://docs.google.com/document/d/1cXCYmT-ddIKOQCaJFbBDc9e7wYfB01R0MFqyILAQBns/>`__
+that you need to request access to. When you request access, you must include 
+a message with enough information to prove you are a current CHS/Loookit researcher. 
+
+It is your responsibility to ensure that everyone who issues payments for 
+your studies is familiar with the scammer problem and has read the CHS/Lookit 
+documentation (and/or the lab manual that has the specific steps that you use 
+to implement these suggestions.) At a minimum, these procedures should:
+
+- Detect potential scams (and reporting/responding as below) *before* communicating
+  with those participants - any 'signs of life' are an encouragement to continue.
+  If participants determined to be scammers contact you, messages should be saved
+  but ignored. 
+- Ensure coordination between lab members, including between different studies - 
+  you must be able to detect if the same account is behaving oddly across sessions
+  (the same child appearing under two different names), and if the same person is
+  using more than one account. 
+- Ensure that potential scams are reported to a single responsible individual in your
+  lab, and to CHS when necessary, as quickly as you can. 
+
+Whether you are conducting an internal or external study, the CHS website saves information
+that you can use to review participants and check for patterns that may indicate spam. 
+
+Internal experiments and hybrid experiments that use the Lookit video consent frame
+can use the Consent Manager to screen for potential signs of bad-faith participation. 
+
+.. image:: _static/img/spam_prevention_consent.png
+    :alt: Consent manager image showing participant information
+
+ADD DESCRIPTION OF INFO AVAILABLE 
+
+All experiment types also response data available that provides basic information about
+each user, child, and session in your study.  Whether your study is internal or 
+external, you should be using this information to confirm the details of each session, 
+and if your study is external, you should compare the data you have from CHS and the
+data you have from your own study site to check for inconsistencies. See WHAT PAGE for
+details on how to access and use this information. 
+
+Reporting suspected scam participants
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+RAs/people confirming consent should be trained to immediately report any red flags to their project leader for review. 
+
+When you suspect fraud, immediately post a message in the #researchers channel on the Lookit Slack to ask about the behavior you’re concerned about (no identifying information please!). 
+
+This is the best way to get feedback from the community about their CHS-specific experiences!  
+
+You can also search the channel for past conversations to see if the issue has come up before (e.g. “hats”, “time zone”)
+
+Do NOT include personal information (names, ID strings) in this channel. Mark or Melissa will add you to the private channel to share ID strings when necessary.
+
+If you are confident that you’re dealing with a specific probably-scam account (or if an admin asks you to do so), fill out the “Report Suspicious Participants” form. 
+
+Either way, DO NOT compensate the participant until an admin has had a chance to review your case(s). Once you’ve heard back from an admin, you will know whether that participant has been blocked from Lookit, whether they have concluded that the participant should be compensated, or whether there is another outcome needed.
+
+Keep a running list of potentially problematic red flags you find in your lab –when it’s an individual or small group, the same red flags will tend to repeat!
+
+As you discover patterns of red flags, or if you’ve determined with Mark or Melissa that you have detected scammers, share information with the rest of the GARDEN team on the #garden-project Slack channel.
+
+
+
+
 
 - Join the spam slack channel
 - Have a lab process that keeps you within the other rules 
@@ -182,10 +268,14 @@ Here are the steps I recommend you take:* **DO NOT** pay for any of these sess
 
 When you think you have identified a fake participant (or obvious violation of eligibility, or any other reason to deny compensation) you should report it via [this google form](https://forms.gle/SsMjfLQf5nqRNiALA). Someone from the CHS/Lookit core team will follow up with you within a few business days.
 
-## (4) We will test researcher defense against fake participants with “white hat” attempts
+Enforcement of scam prevention policies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  
+Beginning in December 2023, we will be returning submitted studies that don't meet the 
+payment verification requirements for revision. Existing studies that don't meet these criteria 
+are also asked to pause data collection, and may be paused/retracted by CHS staff. 
 
+In addition, 
 Starting soon after the announcement of this policy, we will have [white hat](https://en.wikipedia.org/wiki/White_hat_(computer_security)) attempts to get compensated for studies across Lookit/CHS. In other words, there will be a small amount of “fraudulent” activity on CHS that we are arranging.
 
   
