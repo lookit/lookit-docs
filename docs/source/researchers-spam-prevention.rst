@@ -132,11 +132,11 @@ Option 4: Propose something else
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We understand that the procedures we describe here may not work for every study, or may
-require you to request a modification from your IRB. We encorage you to think about how
+require you to request a modification from your IRB. We encourage you to think about how
 to frame this requirement to your IRB, because it may well be considered a small or 
 negligible change from their perspective. For example, you could continue to use 
 whatever consent process you have for your study as being the official consent 
-from your IRBs perspective, while *also* having them do the video consent frame 
+from your IRB's perspective, while *also* having them do the video consent frame 
 on Lookit/CHS (thus, you are not changing what counts as consent for your study, 
 you are merely implementing a platform-required fraud-prevention step before
 they even get to your study and the consent your study uses).
@@ -145,7 +145,7 @@ If you discover that none of the above
 options is workable for you, we encourage you to think creatively about how else you
 could meet the requirement to verify that your participants are who they say they 
 are (or consider Option 1, volunteer participants.) It may help to inform your 
-IRB that other methods of identitiy verification (such as requiring a picture of a 
+IRB that other methods of identity verification (such as requiring a picture of a 
 driver's license or a social media account) would constitute a *greater* risk to 
 families, compared to short webcam video which does not reveal e.g. families'
 full names or location information to the researcher. However, if something like the 
