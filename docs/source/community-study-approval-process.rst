@@ -122,7 +122,7 @@ This is the point where you'll need to have your access agreement set up.
 
 When you submit the study, you will be prompted to note any non-standard elements 
 that require specific approval per the Terms of Use (e.g., integration of
-additional about participants from another source) as well as what
+additional information about participants from another source) as well as what
 changes you made based on peer feedback.
 
 At this point, Lookit staff will review your study, focusing
