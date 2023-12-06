@@ -307,6 +307,7 @@ List of tutorial participants
 - Nikki Elliott (MIT)
 - Ariel Fuchs (MIT)
 - Adani Abutto (Stanford)
+- Ethan Sitzes (University of Chicago)
 
 Checking for and creating issues on Github
 -------------------------------------------
