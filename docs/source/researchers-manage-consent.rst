@@ -10,13 +10,13 @@ At the start of a Lookit study, the parent is asked to provide a verbal statemen
 
 For this reason it is critical that you confirm informed consent before using any data from a response! This is baked into the Lookit experimenter interface: you actually do not receive access to responses, or to the associated child, account, or demographic data, until you confirm consent using the consent manager. 
 
-Responses submitted on Lookit start out with a consent status of 'Pending.' Then a researcher working on this study can either 'approve' or 'reject' the consent video.  
+Responses to your Lookit study will first appear in your study's 'Consent Manager' page, and they start out with a consent status of 'Pending'. Then a researcher working on this study can either 'Approve' or 'Reject' the consent video. Responses with approved consent become available to the researcher through the study's 'Study Responses' page.
 
 ==============================
 Managing consent rulings
 ==============================
 
-From your study detail page, click 'Review Consent' and you will be taken to the 'Consent manager' view. 
+From your study detail page, click 'Review Consent' and you will be taken to the 'Consent Manager' view.
 
 .. image:: _static/img/consent_manager.png
     :alt: Consent manager image
