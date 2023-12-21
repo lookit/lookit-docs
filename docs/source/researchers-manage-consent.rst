@@ -21,9 +21,14 @@ From your study detail page, click 'Review Consent' and you will be taken to the
 .. image:: _static/img/consent_manager.png
     :alt: Consent manager image
     
-At the left, you will see a list of responses. By default the responses with 'Pending' consent status are displayed; you can use the dropdown menu to show 'Accepted' or 'Rejected' consent videos instead. 
+On the left, you will see a list of responses. By default the responses with 'Pending' consent status are displayed; you can use the dropdown menu at the top of this section to show 'Accepted' or 'Rejected' consent videos instead. Note that you may need to use the scroll bar on the right side of the list to see all of the responses listed.
 
-Data from previewing your study is displayed here too, but any preview responses are in gray and say "[PREVIEW]".
+.. image:: _static/img/consent_manager_response_list.png
+    :alt: Response list on consent manager page
+    :align: center
+    :width: 40%
+
+If you are previewing your study and have included a consent form, then the preview response will be displayed here too with "[Preview]" under the timestamp. If you are using a survey-consent frame in your study, then that will also be flagged in the response with "[Survey consent]".
 
 -----------------------
 Making consent rulings
