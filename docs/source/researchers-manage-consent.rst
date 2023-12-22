@@ -59,7 +59,7 @@ The most recent consent ruling, the time of that ruling, any comment, and the na
 Managing responses that use survey consent
 ----------------------------------------------
 
-In general, all studies on CHS should use the video recordings for consent. However there may be studies that collect consent through survey-style questions - for instance, in rare cases when, for legal reasons, it is not possible to collect video consent. In internal Lookit studies, this is done using the ``survey-consent`` frame. 
+In general, all studies on CHS should use video recordings for consent. However there may be studies that collect consent through survey-style questions - for instance, in rare cases when, for legal reasons, it is not possible to collect video consent. In internal Lookit studies, this is done using the ``survey-consent`` frame. 
 
 When a study uses survey questions for consent, researchers are still responsible for verifying that the family has actually consented by checking their answers to the consent question(s). On the Consent Manager page, any sessions in the response list that contain a ``survey-consent`` frame will be flagged with "[Survey consent]". When such a response is selected, a warning message will also appear at the top of the Video area. Depending on the study, there may or may not also be a consent video associated with the response session; if so then it will appear in the Video area, otherwise there will another warning message saying "No video found for this response".
 
