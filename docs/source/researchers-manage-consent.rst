@@ -55,6 +55,30 @@ Consent rulings can be changed after an initial ruling is made; for instance, yo
 
 The most recent consent ruling, the time of that ruling, any comment, and the name of the researcher who made the ruling, will be included in the JSON/CSV data for this response.
 
+----------------------------------------------
+Managing responses that use survey consent
+----------------------------------------------
+
+In general, all studies on CHS should use the video recordings for consent. However there may be studies that collect consent through survey-style questions - for instance, in rare cases when, for legal reasons, it is not possible to collect video consent. In internal Lookit studies, this is done using the ``survey-consent`` frame. 
+
+When a study uses survey questions for consent, researchers are still responsible for verifying that the family has actually consented by checking their answers to the consent question(s). On the Consent Manager page, any sessions in the response list that contain a ``survey-consent`` frame will be flagged with "[Survey consent]". When such a response is selected, a warning message will also appear at the top of the Video area. Depending on the study, there may or may not also be a consent video associated with the response session; if so then it will appear in the Video area, otherwise there will another warning message saying "No video found for this response".
+
+.. image:: _static/img/consent_manager_response_selected_survey_consent_no_video.png
+    :alt: Response that contains survey consent questions and no video
+
+Responses that contain survey consent trials present a tricky case for the CHS data management workflow, because the consent information is only available from within the response data, but researchers should not have access to that data unless consent has been verified. (We do not pull the consent questions/answers out of the response and present them in the Consent Mangaer, in the way that we do with consent videos, though this may be something we can add in the future.) For this reason, there are some best practices that we ask researchers to follow to make it as easy as possible to tell whether a family has consented using survey questions, and to make sure that researchers aren't inadvertently accessing un-consented data. You set up your study in one of the following ways:
+
+* **Make it impossible to move on from the consent survey page if the participant has not consented.** This means using the survey consent form's validation tools to produce an error when a participant tries to move on from the survey-consent trial without agreeing to the terms of the study.
+
+Or:
+
+* **Make the study sequence conditional based on responses to the consent questions.** This might mean that participants who do not consent are sent to a separate 'no-consent' trial, which shows a message like 'The study has ended because you indicated that you do not wish to participate. Thank you for your interest!'.
+
+With both of the above approaches, when you select a response in the Consent Manager, you should be able to tell whether the participant has consented by looking at the trials listed in their Session Info 'Sequence'. If the participant was able to move past the consent survey questions and onto your study, then they must have agreed to all of the consent questions. Therefore you can 'accept' the consent for that response.
+
+If for some reason these approaches don't work for your study, you can always accept the consent for responses that contain survey consent questions, then *check actual consent responses in the data* and change the consent ruling if necessary.
+
+
 -----------------------------------
 Consenting and 'fake participants'
 -----------------------------------
