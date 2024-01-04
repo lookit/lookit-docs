@@ -33,6 +33,9 @@ Who should I list as a contact in case our contracts/sponsored programs/legal/et
 
 Melissa Kline Struhl, lookit@mit.edu
 
+(Note: In early 2024 while Melissa is on maternity leave, these messages will still be recieved by 
+another member of the CHS team.)
+
 Is there an IRB protocol at MIT that covers Lookit staff’s use of the data on the platform?
 -------------------------------------------------------------------------------------------
 
