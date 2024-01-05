@@ -308,6 +308,7 @@ List of tutorial participants
 - Ariel Fuchs (MIT)
 - Adani Abutto (Stanford)
 - Ethan Sitzes (University of Chicago)
+- Saideeka Jones (University of Wisconsin)
 - Brian Leonard (MIT)
 
 Checking for and creating issues on Github
