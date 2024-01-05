@@ -125,8 +125,10 @@ As with all study types, you should be checking over the family's information fo
 prior to releasing payment. 
 
 If you are currently running an asynchronous study and don't want to use the video consent
-process (Option 2), you could also arrange to have a quick zoom call with families *after*
-they complete your study but *before* you release payment. 
+process (Option 2), you could also arrange to have a quick zoom call with families before you release 
+payment. For most lab workflows, it probably makes the most sense to first schedule the zoom call, and then
+give the study link to participants who pass that check. Make sure to explain how this process will work
+to families in the study information! 
 
 Option 4: Propose something else
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
