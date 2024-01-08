@@ -49,9 +49,9 @@ Approximately 100 institutions have already signed agreements.
 
 a)	Check whether your institution is listed `here <https://docs.google.com/spreadsheets/d/1n3LKOIEStI4kYn0G4dXjaFmQ9B99RIg-8LvSMQRd6gw/edit?usp=sharing>`__.
 
-b) Send an email to Melissa (mekline@mit.edu) to be added to an existing agreement.
+b) Send an email to the CHS team (childrenhelpingscience@gmail.com) to be added to an existing agreement.
 
-If your institution is not listed, the form you need is `here <https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20Institutional%20Agreement.pdf>`__, and feel free to email Melissa for help.
+If your institution is not listed, the form you need is `here <https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20Institutional%20Agreement.pdf>`__, and feel free to email CHS staff (childrenhelpingscience@gmail.com) for help.
 
 2. Create a new researcher account (~1 minute)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
