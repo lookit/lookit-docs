@@ -298,6 +298,7 @@ List of tutorial participants
 - Norman Zeng (University of Toronto) 
 - Molly Rathbun (University of Virginia)
 - Marib Malik (University of Texas at Dallas)
+- Ben Jacobs (Minerva)
 - Paula Contreras Nino (MIT)
 - Kristine Zheng (MIT)
 - Jack Horgen (MIT)
