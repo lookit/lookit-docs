@@ -778,7 +778,7 @@ That's great, but it hard-codes in the stimuli for this counterbalancing conditi
             "video": {
                 "loop": false,
                 "position": "fill",
-                "source": "VIDEO1" <-- THIS IS THE PLACEHOLDER FOR THE VIDEO FILE WE'LL USE
+                "source": "VIDEO1" //<-- THIS IS THE PLACEHOLDER FOR THE VIDEO FILE WE'LL USE
             },
             "doRecording": true,
             "requireVideoCount": 1,

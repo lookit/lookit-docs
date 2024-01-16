@@ -58,7 +58,7 @@ study details, the experiment runner version, etc. - your study will be
 automatically “rejected” and will require review by Lookit staff again
 before you can make it active. This is quick but does still require manual
 action on our part. In general these are reviewed the same business day as submitted, often within
-an hour, but this is subject to whether Melissa is working / in a meeting / etc. Feel free to
+an hour, but this is subject to whether staff is working / in a meeting / etc. Feel free to
 contact us ahead of time to coordinate a time if you need immediate turnaround.
 
 There are a few exceptions to changes triggering review, including changes to the age range and formatting of the study protocol configuration, which are listed when you save changes to a study.
