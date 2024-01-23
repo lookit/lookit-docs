@@ -312,6 +312,7 @@ List of tutorial participants
 - Ethan Sitzes (University of Chicago)
 - Saideeka Jones (University of Wisconsin)
 - Brian Leonard (MIT)
+- Shine Seon (Northwestern University)
 
 Checking for and creating issues on Github
 -------------------------------------------
