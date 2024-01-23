@@ -6,6 +6,8 @@ Lookit platform: https://lookit.readthedocs.io/en/develop/
 
 Ember Lookit Frameplayer (experiment runner): https://lookit.readthedocs.io/projects/frameplayer/en/latest/
 
+---
+
 ## Contributing
 
 Have you spotted an error in the documentation, or have other suggestions for improvement? We'd love your contributions! If you're not sure whether we'll want to incorporate your changes, please open an Issue in this repository so that we can discuss it first.
@@ -15,6 +17,8 @@ If you are not part of the Lookit team and would like to contribute changes to t
 2. Set up your local environment, following the Installation steps below.
 3. Make your changes, commit them, and push to your fork/branch.
 4. Submit a pull request from your fork/branch targeted at the `develop` branch for this repository.
+
+---
 
 ## Installation
 
@@ -141,9 +145,9 @@ If you've successfully activated your virtual environment, you should see the na
 
 You can de-activate it at any time by running: `deactivate`. You will need this virtual environment running in order to (1) install the rest of the project dependencies, and (2) build the HTML versions of the documentation files to review (see next section).
 
-## Install project dependencies in virtual environment (Mac and Windows)
+## Finishing the installation (Mac and Windows)
 
-After activating your virtual environment, you can install the project dependencies inside your environment using the requirements doc. This must be done while your virtual environment is running (note the `(denv)` in your terminal/command prompt):
+After activating your virtual environment, you need to install the project dependencies inside your environment using the requirements doc. This must be done while your virtual environment is running (note the `(denv)` in your terminal/command prompt):
 
 ```
 (denv) /lookit-docs $ pip install -r docs/requirements.txt
@@ -163,6 +167,8 @@ You should now be able to build the documentation files. First, move to the `doc
 ```
 
 The above command should create (or overwrite) HTML files in `docs/build/html`. 
+
+---
 
 ## Editing the documentation
 
@@ -232,7 +238,11 @@ Once you're on the branch, you can follow the same steps as above for making cha
 (denv) /lookit-docs $ git pull origin branch-name
 ```
 
-## Windows Installation Troubleshooting
+---
+
+## Resources
+
+### Windows Installation Troubleshooting
 
 Here are some tips if you run into any of the following types of errors while trying to set up your environment:
 
@@ -246,7 +256,7 @@ Here are some tips if you run into any of the following types of errors while tr
 - In your command prompt, if you're able to access Python (e.g. `python --version` works) but you can't run any of the Python package commands (`pip`, `virtualenv`), then try adding `python -m ` to the start of the command, e.g. `python -m pip install virtualenv` and `python -m virtualenv denv`. Since this could be a symptom of problems with installation locations and your PATH variable, you could also try installing Python using Chocolatey.
 - File/path not found: You may need to use back slashes rather than forward slashes in your file path, and you may need to use two slashes rather than one (e.g. `cd C:\\my\\file\\path`).
 
-## Git/Github Tips and Resources
+### Git/Github Tips
 
 While making edits, you might find it useful to use the `git status` command. This will tell you (1) what branch you're on, and (2) what files have been added, modified, or staged for commit.
 
@@ -266,18 +276,16 @@ You can also add a file name/path, which will just show you the changes made to 
 (denv) /lookit-docs $ git diff README.md
 ```
 
-### More Git/Github resources:
+[Cheat sheet of useful commands (Github)](https://education.github.com/git-cheat-sheet-education.pdf)
 
-[Cheat sheet of useful commands (Github)][https://education.github.com/git-cheat-sheet-education.pdf]
+[Git commands and glossary (Atlassian)](https://www.atlassian.com/git/glossary#commands)
 
-[Git commands and glossary (Atlassian)][https://www.atlassian.com/git/glossary#commands]
+[Intro to Git (W3 Schools)](https://www.w3schools.com/git/git_intro.asp?remote=github)
 
-[Intro to Git (W3 Schools)][https://www.w3schools.com/git/git_intro.asp?remote=github]
-
-[Creating a pull request (Github)][https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request]
+[Creating a pull request (Github)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 
-## Sphinx Resources
+### Sphinx
 
 The Sphinx documentation can be found here: https://www.sphinx-doc.org/en/master/index.html
 
