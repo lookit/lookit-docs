@@ -20,15 +20,25 @@ Commit SHA: [COMMIT SHA]
 
 Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/349
 
-The latest version of the Lookit experiment runner switched from using a third-party service (called `'Pipe' <https://addpipe.com/>`__) for participant video recordings to our new 'in-house' system. Our reasons for removing Lookit's dependence on the external Pipe service are: 
+**Key Information**
 
-* Removing unnecessary third-party access to private and sensitive research data, thereby also reducing the changes of data leaks and improper data use/access.
+* We are switching how participant videos are handled by Lookit from a third-party service called 'Pipe' to a new system called 'RecordRTC' that works on Lookit servers.
+* This change will affect all new studies by default. Existing studies will have the opportunity to update to the new system.
+* If you download participant videos, be aware that in the new system, the default file format for the videos is changing from .mp4 to .webm. We provide information on how to convert .webm files to .mp4s if needed.
+* Please let us know if you experience any problems using the new system. It is possible to switch back to the old Pipe system for a limited time if you experience issues.
+
+**Detailed Notes**
+
+The latest version of the Lookit experiment runner switched from using a third-party service (called `'Pipe' <https://addpipe.com/>`__) for participant video recordings to our new 'in-house' system called "RecordRTC". Our reasons for removing Lookit's dependence on the external Pipe service are: 
+
+* Simplifying participant video handling and reducing the likelihood of video rendering issues, as videos will now be processed on Lookit's own servers rather than via a third-party service.
 * Lowering the website's running costs. Pipe usage accounts for a large proportion of CHS/Lookit's expenses, and these costs grow with increasing use of the website.
 * Preventing problems caused by unexpected updates to Pipe that we have no control over.
+* Removing third-party access to private and sensitive research data. Although this service was secure, this reduces the theoretical chances of data leaks and improper data use/access by keeping this data only on Lookit servers.
 
-.. admonition:: All studies will eventually need to switch!
+.. admonition:: All studies will eventually need to switch! Moving forward, all new studies will use RecordRTC but existing studies will continue to use Pipe unless their experiment runners are updated.
 
-   The old Pipe system will be discontinued in the future (exact timing of this is still TBD). For the time being, we are running the new and old systems in parallel. This is to allow ongoing studies to continue to use the Pipe system for the remainder of their data collection, and to allow a fallback option in case of unforeseen problems with the new system. But we strongly recommend that you :ref:`update your experiment runner <recortdrtc-how-to-switch>` to use the new system so that you can test your experiment before the support for Pipe ends!
+   The old Pipe system will be discontinued in the future (exact date TBD; we will announce ahead of time). For the time being, we are running the new and old systems in parallel. This is to allow ongoing studies to continue to use the Pipe system for the remainder of their data collection, and to allow a fallback option in case of unforeseen problems with the new system. For any studies you will be using or copying in the future, we strongly recommend that you :ref:`update your experiment runner <recortdrtc-how-to-switch>` to test this new system before the support for Pipe ends!
 
 
 .. _recortdrtc-check-system:
@@ -66,7 +76,7 @@ We have worked to minimize the impact that this new recording system has on rese
 
 * Video file format is webm rather than mp4 (see section :ref:`'Converting webm to mp4' <recordrtc-convert-files>`)
 * Video file size may be larger
-* Pipe Id is no longer included in the response data
+* Pipe Id is no longer included in the response data. This category was previously included because the Pipe system renamed video files during processing and we needed to know both the original name and the Pipe name for troubleshooting issues. Now, video file names will be the same throughout all processes.
 
 .. _recordrtc-convert-files:
 
