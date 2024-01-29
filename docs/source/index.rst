@@ -59,6 +59,7 @@ Families may take part in studies from multiple labs over time. Having one centr
    researchers-prep-stimuli
    researchers-style-guide
    researchers-lag-issues
+   Experiment runner releases <researchers-runner-releases>
 
 .. toctree::
    :maxdepth: 2
