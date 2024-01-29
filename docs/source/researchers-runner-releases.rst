@@ -22,9 +22,9 @@ Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/349
 
 **Key Information**
 
-* We are switching how participant videos are handled by Lookit from a third-party service called 'Pipe' to a new system called 'RecordRTC' that works on Lookit servers.
+* We are switching how participant videos are handled by Lookit from a third-party service called 'Pipe' to a new system called 'RecordRTC' that is managed by the Lookit development team.
 * This change will affect all new studies by default. Existing studies will have the opportunity to update to the new system.
-* If you download participant videos, be aware that in the new system, the default file format for the videos is changing from .mp4 to .webm. We provide information on how to convert .webm files to .mp4s if needed.
+* If you download participant videos, be aware that in the new system, the default file format for the videos is changing from .mp4 to .webm. We provide information on how to convert .webm files to .mp4s below, if needed.
 * Please let us know if you experience any problems using the new system. It is possible to switch back to the old Pipe system for a limited time if you experience issues.
 
 **Detailed Notes**
@@ -36,7 +36,9 @@ The latest version of the Lookit experiment runner switched from using a third-p
 * Preventing problems caused by unexpected updates to Pipe that we have no control over.
 * Removing third-party access to private and sensitive research data. Although this service was secure, this reduces the theoretical chances of data leaks and improper data use/access by keeping this data only on Lookit servers.
 
-.. admonition:: All studies will eventually need to switch! Moving forward, all new studies will use RecordRTC but existing studies will continue to use Pipe unless their experiment runners are updated.
+.. admonition:: All studies will eventually need to switch! 
+
+   Moving forward, all new studies will use RecordRTC but existing studies will continue to use Pipe, unless the researcher decides to update their experiment runner version.
 
    The old Pipe system will be discontinued in the future (exact date TBD; we will announce ahead of time). For the time being, we are running the new and old systems in parallel. This is to allow ongoing studies to continue to use the Pipe system for the remainder of their data collection, and to allow a fallback option in case of unforeseen problems with the new system. For any studies you will be using or copying in the future, we strongly recommend that you :ref:`update your experiment runner <recortdrtc-how-to-switch>` to test this new system before the support for Pipe ends!
 
@@ -82,13 +84,28 @@ We have worked to minimize the impact that this new recording system has on rese
 
 .. rubric:: Converting webm to mp4
 
-Webm is the ''native' format that the web browser uses when creating webcam recordings. By providing you with these raw data files, we can ensure that you're getting the most detailed video data possible. Webm files can be opened and viewed in many video playback programs, including web browsers and VLC. 
+Webm is the 'native' format that the web browser uses when creating webcam recordings. By providing you with these raw data files, we can ensure that you're getting the most detailed video data possible. Webm files can be opened and viewed in many video playback programs, including web browsers and VLC. 
 
-However, we are aware that the change in file formats might cause problems for some researchers who require mp4 format for their data processing and analysis. And because the webm files are larger than the files produced by the old system, you may decide to compress your video files into mp4 format so that they take up less disk space. We recommend using the `ffmpeg <https://www.ffmpeg.org/>`__ software to convert your files. The examples below show the most basic webm -> mp4 file conversion, but the ffmpeg command offers a number of `other options <https://www.ffmpeg.org/ffmpeg.html#Main-options>`__ that you might find useful, such as adjusting the bitrate/resolution/quality. 
+However, we are aware that the change in file formats might cause problems for some researchers who require mp4 format for their data processing and analysis. And because the webm files are larger than the files produced by the old system, you may decide to compress your video files into mp4 format so that they take up less disk space. 
 
-**On a Mac:**
+**Handbrake (GUI)**
 
-Open a terminal window and install ffmpeg like this::
+For a free GUI-based file conversion tool, we suggest using `Handbrake <https://handbrake.fr/>`__. After downloading and installing Handbrake: 
+
+1. Open your .webm video file in Handbrake (click "Open Source", or drag and drop the file).
+2. In the "Format" drop-down, select "MP4".
+3. Set your file output location (Shown at the bottom next to "Save As" - change the location by clicking "Browse...").
+4. Click the "Start" button at the top.  
+
+To batch convert several files at once, you can open all the .webm files you want to convert by clicking 'Open Source' and selecting multiple files (by holding down CTRL/CMD or Shift). Then, just follow the steps above (select the file format and output location, and then click "Start").
+
+For more information, see the `Handbrake quick start guide <https://handbrake.fr/docs/en/1.7.0/introduction/quick-start.html>`__.
+
+**ffmpeg (command line)**
+
+For converting files on the command line, we recommend using the `ffmpeg <https://www.ffmpeg.org/>`__ software. The examples below show the most basic webm -> mp4 file conversion, but the ffmpeg command offers a number of `other options <https://www.ffmpeg.org/ffmpeg.html#Main-options>`__ that you might find useful, such as adjusting the bitrate/resolution/quality. 
+
+On a Mac, open a terminal window and install ffmpeg like this::
 
    brew install ffmpeg
 
@@ -102,9 +119,7 @@ To batch convert a directory of files::
 
 The above code will save the mp4 files to the same directory. You can save them to a different directory by editing to the 'output' file path, e.g. ``"mp4_files/${i%.*}.mp4"`` will put the mp4 files into a subdirectory called 'mp4_files'.
 
-**On Windows:**
-
-You will need to download the ffmpeg exe file to install it. See `the ffmpeg website <https://ffmpeg.org/download.html#build-windows>`__ for downloads and `here <https://phoenixnap.com/kb/ffmpeg-windows>`__ for more instructions.
+On Windows, you will need to download the ffmpeg exe file to install it. See `the ffmpeg website <https://ffmpeg.org/download.html#build-windows>`__ for downloads and `here <https://phoenixnap.com/kb/ffmpeg-windows>`__ for more instructions.
 
 To convert a single file::
 
