@@ -13,8 +13,8 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
-[DATE]: New Recording System
-----------------------------
+Jan 30, 2024: New Recording System
+-----------------------------------
 
 Commit SHA: [COMMIT SHA]
 
@@ -47,7 +47,10 @@ The latest version of the Lookit experiment runner switched from using a third-p
 
 .. rubric:: Checking which recording system your study is using
 
-The easiest way to check is to go to the Study Details page for your study, find the “About this version” section, and look for the commit SHA and date (see screenshot below). If your version date is before [DATE], then your experiment is using the old Pipe system. If your version date is on or after [DATE], then your experiment is using the new system.
+The easiest way to check is to go to the Study Details page for your study, find the “About this version” section, and look for the commit SHA and date (see screenshot below). 
+
+* Before January 30th 2024 (**2024-01-30**): old **Pipe** system
+* On or after January 30th 2024 (**2024-01-30**): new **RecordRTC** system
 
 .. image:: _static/img/efp-releases-about-version.png
     :alt: Study Details page with information about the study's experiment runner version.
@@ -138,9 +141,23 @@ The above code will save the mp4 files to the same directory. You can save them 
 
 If you experience any issues that you think might be related to the new recording system, please let us know immediately by posting in the Slack tech_support channel! Give us a short description of the problem and a link to your study. 
 
-If you're in the middle of data collection or need to start quickly, remember that you always have the option to switch your study back to the old Pipe recording system. The commit SHA for the last version of the experiment runner that uses the Pipe system is: edae6bfe88b0c699246f6b77af2a2df0163452a4. On your 'Study Details' page, you can paste this commit SHA into the 'Experiment runner version' textbox, save the changes, and rebuild your experiment runner.
+If you're in the middle of data collection or need to start quickly, remember that you always have the option to switch your study back to the old Pipe recording system. The commit SHA for the last version of the experiment runner that uses the Pipe system is: ba09c18f6f04d3fe6017722a0388e100378faef3. On your 'Study Details' page, you can paste this commit SHA into the 'Experiment runner version' textbox, save the changes, and rebuild your experiment runner.
 
 Keep in mind that we are transitioning away from the old Pipe system, so the option to revert back will only be available for a limited time. You might decide to continue using the Pipe system if you have already begun collecting data and will finish soon, or if you have experienced problems with the new system that are interfering with your data collection. Otherwise, we strongly suggest using the new system so that you have time to test it with your study before we discontinue support for Pipe.
+
+----
+
+Jan 29, 2024: Fix survey-consent; update translations
+-----------------------------------------------------------
+
+Commit SHA: ba09c18f6f04d3fe6017722a0388e100378faef3
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/357
+
+This update did two things:
+
+* Fixed a problem with the ``survey-consent`` frame that made response data collected this frame unavailable through the Consent Manager page.  
+* Updated the Brazilian Portuguese translations.
 
 ----
 
