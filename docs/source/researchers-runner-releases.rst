@@ -29,7 +29,7 @@ Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/349
 
 **Detailed Notes**
 
-The latest version of the Lookit experiment runner switched from using a third-party service (called `'Pipe' <https://addpipe.com/>`__) for participant video recordings to our new 'in-house' system called "RecordRTC". Our reasons for removing Lookit's dependence on the external Pipe service are: 
+The latest version of the Lookit experiment runner switched from using a third-party service (called `'Pipe' <https://addpipe.com/>`__) for participant video recordings to our new 'in-house' system called 'RecordRTC'. Our reasons for removing Lookit's dependence on the external Pipe service are: 
 
 * Simplifying participant video handling and reducing the likelihood of video rendering issues, as videos will now be processed on Lookit's own servers rather than via a third-party service.
 * Lowering the website's running costs. Pipe usage accounts for a large proportion of CHS/Lookit's expenses, and these costs grow with increasing use of the website.
