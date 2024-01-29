@@ -59,7 +59,7 @@ You can also click the “Check for updates” button (see screenshot above) to 
 
 By default, newly-created experiments will use our new recording system. However, with any new or existing study, you can change the experiment runner version at any time (see the section ":ref:`Switching an existing experiment to the new system <recortdrtc-how-to-switch>`" and the page ":ref:`Updating the experiment runner <updating-frameplayer-code>`").
 
-The first commit SHA that uses the new recording version is: [COMMITSHA]. All future updates (commits on the ``master`` branch) to our experiment version will also use the new system. You can find an up-to-date list of all versions and associated commit SHAs `here <https://github.com/lookit/ember-lookit-frameplayer/commits/master>`__. 
+The first commit SHA that uses the new recording version is: [COMMITSHA]. All future updates (commits on the ``master`` branch) to our experiment runner will also use the new recording system. You can find an up-to-date list of all versions and associated commit SHAs `here <https://github.com/lookit/ember-lookit-frameplayer/commits/master>`__.
 
 .. _recortdrtc-how-to-switch:
 
