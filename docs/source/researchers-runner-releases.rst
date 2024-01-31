@@ -157,7 +157,7 @@ Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/357
 This update did two things:
 
 * Fixed a problem with the ``survey-consent`` frame that made response data collected this frame unavailable through the Consent Manager page.  
-* Updated the Brazilian Portuguese translations.
+* Updated the Brazilian Portuguese translations - thanks Nevena Klobucar!
 
 ----
 
