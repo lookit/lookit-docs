@@ -16,7 +16,7 @@ The Lookit experiment runner is regularly updated in order to add new features a
 Jan 30, 2024: New Recording System
 -----------------------------------
 
-Commit SHA: [COMMIT SHA]
+Commit SHA: 5f358868aade7689071565d881c9dd9050620d87
 
 Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/349
 
@@ -59,7 +59,7 @@ You can also click the “Check for updates” button (see screenshot above) to 
 
 By default, newly-created experiments will use our new recording system. However, with any new or existing study, you can change the experiment runner version at any time (see the section ":ref:`Switching an existing experiment to the new system <recortdrtc-how-to-switch>`" and the page ":ref:`Updating the experiment runner <updating-frameplayer-code>`").
 
-The first commit SHA that uses the new recording version is: [COMMITSHA]. All future updates (commits on the ``master`` branch) to our experiment runner will also use the new recording system. You can find an up-to-date list of all versions and associated commit SHAs `here <https://github.com/lookit/ember-lookit-frameplayer/commits/master>`__.
+The first commit SHA that uses the new recording version is: 5f358868aade7689071565d881c9dd9050620d87. All future updates (commits on the ``master`` branch) to our experiment runner will also use the new recording system. You can find an up-to-date list of all versions and associated commit SHAs `here <https://github.com/lookit/ember-lookit-frameplayer/commits/master>`__.
 
 .. _recortdrtc-how-to-switch:
 
@@ -157,7 +157,7 @@ Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/357
 This update did two things:
 
 * Fixed a problem with the ``survey-consent`` frame that made response data collected this frame unavailable through the Consent Manager page.  
-* Updated the Brazilian Portuguese translations.
+* Updated the Brazilian Portuguese translations - thanks Nevena Klobucar!
 
 ----
 
