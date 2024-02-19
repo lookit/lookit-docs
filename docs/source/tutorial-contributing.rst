@@ -313,6 +313,7 @@ List of tutorial participants
 - Saideeka Jones (University of Wisconsin)
 - Brian Leonard (MIT)
 - Shine Seon (Northwestern University)
+- Hannah Kramer (University of Wisconsin)
 
 Checking for and creating issues on Github
 -------------------------------------------
