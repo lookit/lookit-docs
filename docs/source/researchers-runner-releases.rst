@@ -13,6 +13,22 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+Feb 21, 2024: Fix recording bug in Chrome [CRITICAL]
+-------------------------------------------------------------
+
+Commit SHA: b6567ade6674c245c69157361111e94250ab3b77
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/365
+
+This change fixes a problem with the new recording system in Chrome, where initiating a recording with "video/webm" as the mime type (without specifying the codec) was sometimes producing recordings that could not be replayed by the participant or viewed by researchers in the web browser. This meant that participants were sometimes not able to replay their own recordings, and researchers were sometimes unable to view consent videos on the Consent Manager page. This update fixes the problem by checking the browser's support for specific codecs and setting this accordingly when recording begins. 
+
+.. important::
+
+   If you are already using the new RecordRTC system, please update your experiment runner to this version (or newer) immediately.
+   
+
+----
+
 Jan 30, 2024: New Recording System
 -----------------------------------
 
