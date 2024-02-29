@@ -314,7 +314,7 @@ List of tutorial participants
 - Brian Leonard (MIT)
 - Shine Seon (Northwestern University)
 - Hannah Kramer (University of Wisconsin)
-
+- Tanvi Patel (New York University)
 Checking for and creating issues on Github
 -------------------------------------------
 
