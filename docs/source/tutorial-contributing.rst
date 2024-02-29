@@ -304,6 +304,7 @@ List of tutorial participants
 - Kristine Zheng (MIT)
 - Jack Horgen (MIT)
 - Teddy Schoenfeld (MIT)
+- Riya Sapkal (New York University)
 - Megan Eberts (MIT)
 - Rita Zambrano (MIT)
 - Nikki Elliott (MIT)
@@ -314,6 +315,7 @@ List of tutorial participants
 - Brian Leonard (MIT)
 - Shine Seon (Northwestern University)
 - Hannah Kramer (University of Wisconsin)
+
 
 Checking for and creating issues on Github
 -------------------------------------------
