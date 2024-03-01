@@ -316,6 +316,8 @@ List of tutorial participants
 - Shine Seon (Northwestern University)
 - Hannah Kramer (University of Wisconsin)
 - Sascha Krause (University of Wisconsin - Madison)
+- Nalinda Wanikpun (NYU)
+
 
 Checking for and creating issues on Github
 -------------------------------------------
