@@ -317,6 +317,7 @@ List of tutorial participants
 - Hannah Kramer (University of Wisconsin)
 - Sascha Krause (University of Wisconsin - Madison)
 - Nalinda Wanikpun (NYU)
+- Christina Moutsiana (University of Westminster)
 
 
 Checking for and creating issues on Github
