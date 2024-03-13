@@ -318,6 +318,7 @@ List of tutorial participants
 - Sascha Krause (University of Wisconsin - Madison)
 - Nalinda Wanikpun (NYU)
 - Christina Moutsiana (University of Westminster)
+- Gissell Duran (New York University)
 
 
 Checking for and creating issues on Github
