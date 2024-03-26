@@ -320,6 +320,7 @@ List of tutorial participants
 - Christina Moutsiana (University of Westminster)
 - Gissell Duran (New York University)
 - Arisha Kashif (Sabanci University)
+- Mariyam Azmat (Sabanci University)
 
 
 Checking for and creating issues on Github
