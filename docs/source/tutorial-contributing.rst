@@ -321,6 +321,7 @@ List of tutorial participants
 - Gissell Duran (New York University)
 - Arisha Kashif (Sabanci University)
 - Mariyam Azmat (Sabanci University)
+- Jocelyn Chow (NYU)
 
 
 Checking for and creating issues on Github
