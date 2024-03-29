@@ -322,7 +322,7 @@ List of tutorial participants
 - Arisha Kashif (Sabanci University)
 - Mariyam Azmat (Sabanci University)
 - Jocelyn Chow (NYU)
-
+- Anuj Jain (New York University)
 
 Checking for and creating issues on Github
 -------------------------------------------
