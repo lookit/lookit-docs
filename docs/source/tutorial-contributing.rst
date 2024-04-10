@@ -323,6 +323,7 @@ List of tutorial participants
 - Mariyam Azmat (Sabanci University)
 - Jocelyn Chow (NYU)
 - Anuj Jain (New York University)
+- Tanvi Patel (NYU) 
 
 Checking for and creating issues on Github
 -------------------------------------------
