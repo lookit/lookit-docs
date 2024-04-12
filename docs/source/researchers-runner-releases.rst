@@ -13,6 +13,19 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+Apr 11, 2024: Add Hungarian and Basque translations
+-----------------------------------------------------------
+
+Commit SHA: 6c5bcdcb2cd97b4ddcb33aed04ab6c825bd590da
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/369
+
+This update adds the Hungarian (hu) and Basque/Euskera (eu) translation options to the Lookit experiment runner - thanks Nevena Klobucar!
+
+Please see the Lookit experiment runner :ref:`language parameter documentation<elf:translation>` for more information.
+
+----
+
 Feb 21, 2024: Fix recording bug in Chrome [CRITICAL]
 -------------------------------------------------------------
 
