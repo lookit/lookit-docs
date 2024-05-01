@@ -325,6 +325,7 @@ List of tutorial participants
 - Anuj Jain (New York University)
 - Tanvi Patel (NYU)
 - Esra Turhal (Marmara University)
+- Brian Leahy (MIT)
 
 Checking for and creating issues on Github
 -------------------------------------------
