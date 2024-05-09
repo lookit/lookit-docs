@@ -13,6 +13,21 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+May 8, 2024: iframe improvements; maximum recording durations
+-----------------------------------------------------------
+
+Commit SHA: 3a0056ecf62fc819b83993949a634e3d91a177b7
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/378
+
+There are two main changes in this update. First, the `iframe` frame now works with scheduling/booking sites and other forms. Second, for all experiments we have set a new default maximum recording duration to prevent extremely long videos. Details below and in the pull request link above.
+
+* The `iframe` frame now allows forms to be submitted inside the iframe element. This enables researchers to use booking sites and other forms inside the iframe (e.g., Calendly).
+* The `iframeSrc` parameter can now be generated through the `generateProperties` parameter, which allows researchers to add custom URL parameter names/values to their `iframeSrc` URL. This change allows the iframe URL to pass the child/response IDs to websites that require specific names for custom query parameters (e.g. Calendly, where these must be called 'a1', 'a2' etc.). See the examples in the `iframe` :ref:`documentation <elf:exp-lookit-iframe>` for more information.
+* This update fixes a bug in previous experiment runner versions, where the default maximum recording duration was too high. Now the default maximum recording duration is correctly set to 7200 seconds, which is also the upper limit. Researchers can change the maximum recording duration to any value between 1 and 7200 seconds.
+
+----
+
 Apr 11, 2024: Add Hungarian and Basque translations
 -----------------------------------------------------------
 
