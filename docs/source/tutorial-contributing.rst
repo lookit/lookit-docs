@@ -327,6 +327,7 @@ List of tutorial participants
 - Esra Turhal (Marmara University)
 - Brian Leahy (MIT)
 - Jada Beal (East Tennessee State University)
+- Balthazar Lauzon (Ulster University)
 
 Checking for and creating issues on Github
 -------------------------------------------
