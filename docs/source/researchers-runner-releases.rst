@@ -13,8 +13,31 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+June 5, 2024: iframe improvements; consent/assent recording bug fix
+---------------------------------------------------------------------------------------
+
+Commit SHA: a5adee43e2f2498598369850dbc2d4ba1536ee6c
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/390
+
+This update includes two important changes: (1) ``iframe`` frame parameter changes and functionality improvements that allow for more researcher customization of the participant experience and (2) bug fixes for ``video-consent`` and ``video-assent`` frames to prevent missing consent/assent recordings. Details about these changes are included below.
+
+**1. iframe parameter changes and functionality improvements**
+
+  - You can now use the parameter ``nextButtonText`` to modify the "Next" button text.
+  - The parameter ``optionalText`` has been renamed ``instructionText`` and displays above (rather than below) the iframe, so that participants can see the instructions before beginning the task. **IMPORTANT**: when updating existing iframes to the this Experiment Runner release (or a later version), make sure to replace the ``optionalText`` parameter name in your JSON with ``instructionText`` to ensure that your instructions are preserved.
+  - To prevent participants from accidentally advancing past an iframe prematurely, a red warning message now appears above the next button the first time it's clicked. When the warning appears, the "Next" button is disabled for 2 seconds to give participants the chance to see/read the warning message and check their progress within the iframe before advancing.
+  - The default warning asks participants to confirm that they've finished the iframe task before clicking this button. This warning text is customizable; you can change the message with the ``warningMessageText`` parameter.
+  - The ``iframe`` documentation has been updated to reflect the above changes and provide new examples.
+
+**2. Recording bug fix for video-consent and video-assent frames**
+
+  - We have fixed bugs in the ``video-consent`` and ``video-assent`` frames to prevent participants from being able to start their consent recording before the recorder is ready. This fixes a problem where participants produced a blank consent video and were nonetheless able to continue on with the experiment.
+
+----
+
 May 8, 2024: iframe improvements; maximum recording durations
------------------------------------------------------------
+------------------------------------------------------------------------------
 
 Commit SHA: 3a0056ecf62fc819b83993949a634e3d91a177b7
 
