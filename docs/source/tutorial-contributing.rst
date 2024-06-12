@@ -328,6 +328,7 @@ List of tutorial participants
 - Brian Leahy (MIT)
 - Jada Beal (East Tennessee State University)
 - Balthazar Lauzon (Ulster University)
+- Anabel Almonte (NYU)
 
 Checking for and creating issues on Github
 -------------------------------------------
