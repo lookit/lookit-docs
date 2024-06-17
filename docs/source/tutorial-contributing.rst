@@ -329,6 +329,7 @@ List of tutorial participants
 - Jada Beal (East Tennessee State University)
 - Balthazar Lauzon (Ulster University)
 - Anabel Almonte (NYU)
+- Aaron Wang (University of Toronto)
 
 Checking for and creating issues on Github
 -------------------------------------------
