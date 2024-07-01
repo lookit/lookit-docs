@@ -330,6 +330,7 @@ List of tutorial participants
 - Balthazar Lauzon (Ulster University)
 - Anabel Almonte (NYU)
 - Aaron Wang (University of Toronto)
+- Ellen Habteyonas (Vanderbilt University)
 
 Checking for and creating issues on Github
 -------------------------------------------
