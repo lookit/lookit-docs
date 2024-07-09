@@ -13,6 +13,19 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+Jun 20, 2024: Fix clipped recordings
+-------------------------------------------------------------
+
+Commit SHA: c12289257140f2b3ca777701714785620721f7dc
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/393
+
+This change fixes a problem with the recording system where the recordings were sometimes missing the last part (1-2 seconds) of webcam data. This problem was most noticeable in the consent videos, because the end of the consent statement would be cut-off. However this problem would've had a similar affect the trial/session recordings.
+
+If you are already using the new RecordRTC system, please update your experiment runner to this version (or newer).
+
+----
+
 June 5, 2024: iframe improvements; consent/assent recording bug fix
 ---------------------------------------------------------------------------------------
 

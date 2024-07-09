@@ -331,6 +331,7 @@ List of tutorial participants
 - Anabel Almonte (NYU)
 - Aaron Wang (University of Toronto)
 - Ellen Habteyonas (Vanderbilt University)
+- Hayato Ono (University of Tokyo)
 
 Checking for and creating issues on Github
 -------------------------------------------
