@@ -330,6 +330,7 @@ List of tutorial participants
 - Balthazar Lauzon (Ulster University)
 - Anabel Almonte (NYU)
 - Aaron Wang (University of Toronto)
+- Molly Langer (Northwestern University)
 - Ellen Habteyonas (Vanderbilt University)
 - Hayato Ono (University of Tokyo)
 
