@@ -30,7 +30,7 @@ Although we hope this tutorial has provided a solid introduction to designing an
 
 - :ref:`Use the API to programmatically download study data<API>`
 
-- :ref:`Set up conditional logic in your studies<Conditional logic>`
+- :ref:`Set up conditional logic in your studies<elf:conditional_logic>`
 
 - :ref:`Contribute a new feature to the codebase<Contributor Guidelines>`
 
