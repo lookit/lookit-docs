@@ -13,6 +13,19 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+Jul 17, 2024: Fix webcam display in video-assent with no recording
+--------------------------------------------------------------------
+
+Commit SHA: c12289257140f2b3ca777701714785620721f7dc
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/399
+
+This fixes a problem with the webcam display in ``video-assent`` that was introduced in the June 5th update (a5adee43e2f2498598369850dbc2d4ba1536ee6c). Specifically, the webcam display option (``showWebcam: true``) was not working when there was no recording during the trial (``recordLastPage`` and ``recordWholeProcedure`` are both ``false``). This update fixes that problem.
+
+This update also modifies the ``video-assent`` frame to center the webcam feed in the "page" content.
+
+----
+
 Jun 20, 2024: Fix clipped recordings
 -------------------------------------------------------------
 
