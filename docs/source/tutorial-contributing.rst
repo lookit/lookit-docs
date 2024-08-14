@@ -334,6 +334,7 @@ List of tutorial participants
 - Ellen Habteyonas (Vanderbilt University)
 - Hayato Ono (University of Tokyo)
 - Ashima Sood (Ulster University)
+- Ana Rinzler (Rutgers University)
 
 Checking for and creating issues on Github
 -------------------------------------------
