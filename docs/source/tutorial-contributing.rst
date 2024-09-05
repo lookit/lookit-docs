@@ -335,6 +335,7 @@ List of tutorial participants
 - Hayato Ono (University of Tokyo)
 - Ashima Sood (Ulster University)
 - Ana Rinzler (Rutgers University)
+- Divya Sundar (University of California, Berkeley)
 
 Checking for and creating issues on Github
 -------------------------------------------
