@@ -338,6 +338,7 @@ List of tutorial participants
 - Divya Sundar (University of California, Berkeley)
 - Lauren Howard (Franklin & Marshall College)
 - Annie Schwartzstein (University of California, Santa Cruz)
+- Emma Smith (University of Wisconsin-Madison)
 Checking for and creating issues on Github
 -------------------------------------------
 
