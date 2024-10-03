@@ -13,6 +13,23 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+Oct **TBC** 2024: French and Japanese translations; video ID logging
+------------------------------------------------------------------------
+
+Commit SHA: **TBC**
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/408
+
+This latest version of the experiment runner contains the following changes to translation options:
+- Adds a French (fr) translation option to the experiment runner. Thanks Balthazar Lauzon!
+- Updates the Japanese (ja) translations. Thanks Sho Tsuji and Rhodri Cusack!
+
+It also makes a few changes to the event logs in the data produced by an experiment:
+- Adds the video file name (``videoId``) to the experiment data for any recording-releated events, and events that occur while recording is in progress (either trial or session recording).
+- Renames the ``pipeId`` property that stores the video name to ``videoId``.
+
+----
+
 Jul 17, 2024: Fix webcam display in video-assent with no recording
 --------------------------------------------------------------------
 
