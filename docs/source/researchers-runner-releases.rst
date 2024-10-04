@@ -13,10 +13,10 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
-Oct **TBC** 2024: French and Japanese translations; video ID logging
+Oct 4th, 2024: French and Japanese translations; video ID logging
 ------------------------------------------------------------------------
 
-Commit SHA: **TBC**
+Commit SHA: afb2fda97f9325476da70e2bc0e4602816011c60
 
 Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/408
 
