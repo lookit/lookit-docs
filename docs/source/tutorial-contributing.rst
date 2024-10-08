@@ -1,5 +1,5 @@
 ##################################
-2. Contributing to the codebase
+2. Contributing to the codebase 
 ##################################
 
 Lookit is an open-source project, meaning that the code is freely available and anyone can contribute. This includes the actual Lookit platform, the components used in studies, AND the documentation you're reading now. Community contributions and input are critical to the project!
@@ -339,6 +339,7 @@ List of tutorial participants
 - Lauren Howard (Franklin & Marshall College)
 - Annie Schwartzstein (University of California, Santa Cruz)
 - Emma Smith (University of Wisconsin-Madison)
+- Claudia Lewis (Stanford University)
 Checking for and creating issues on Github
 -------------------------------------------
 
