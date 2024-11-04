@@ -4,7 +4,7 @@
 Setting study details
 ##################################
 
-When creating or editing a study, you can set the value of the following fields. Below is more information about each field. This form is used for both internal Lookit studies and both synchronous and asychronous external studies. 
+When creating or editing a study, you can set the value of the following fields. Below is more information about each field. This form is used for both Lookit and jsPsych internal studies, and both synchronous and asychronous external studies. 
 
 
 =============================
@@ -30,20 +30,20 @@ Setting your study's priority value to 99 (the default) will mean it is shown *f
 =============================
 External
 =============================
-Will you be providing a link to a study (or study scheduling page) rather than using the Lookit experiment builder? If so, then check this box to show the form fields that are relevant to these types of studies, such as the study/scheduling link (see :ref:`study-url`). Checking this box will also hide fields of this form that are only applicable for internal studies. Leave this box unchecked if you are building a protocol specification to be conducted inside the Lookit architecture (i.e. an 'internal' study; see `Building an Experiment`_ for more information).  
+Will you be providing a link to a study (or study scheduling page) rather than using the Lookit or jsPsych experiment builders? If so, then check this box to show the form fields that are relevant to these types of studies, such as the study/scheduling link (see :ref:`study-url`). Checking this box will also hide fields of this form that are only applicable for internal Lookit/jsPsych studies. Leave this box unchecked if you are building an experiment to be conducted inside the CHS architecture (i.e. an 'internal' study; see `Building an Experiment`_ for more information).  
 
 =============================
 Scheduled
 =============================
-The Lookit experiment builder doesn't have the capacity for video chat studies, so this box is greyed out unless the External box is checked.  If you are running an external study, leave this box unchecked if participants will click a link and participate in a study right away, without any back-and-forth or live interaction with a researcher.  Check this box if participants will wind up scheduling and attending a video chat with a researcher.
+The internal experiment builders, Lookit and jsPsych, don't have the capacity for video chat studies, so this box is greyed out unless the External box is checked.  If you are running an external study, leave this box unchecked if participants will click a link and participate in a study right away, without any back-and-forth or live interaction with a researcher.  Check this box if participants will wind up scheduling and attending a video chat with a researcher.
 
 .. _discoverability:
 
 =============================
 Discoverable
 =============================
-Do you want this study to be listed on the Lookit studies page when it's active, and 
-eligible participants in the Lookit database to receive email invitations to participate? If so, check this box to make the study discoverable. Email invitations will go out to families with eligible children at a rate of up to 50 emails per day as long as the study is active and discoverable.
+Do you want this study to be listed on the CHS studies page when it's active, and 
+eligible participants in the CHS database to receive email invitations to participate? If so, check this box to make the study discoverable. Email invitations will go out to families with eligible children at a rate of up to 50 emails per day as long as the study is active and discoverable.
 
 If the box is unchecked, the study will be 'non-discoverable' and participants will only be able to get to it by following a direct link with your study ID. This may be helpful if, for instance, you want to run a follow-up study (with in-lab or online participants) and want to send the link to a limited number of people, or if your inclusion criteria are very limited (e.g., a rare genetic disorder) and you want to recruit specifically without getting any random curious families stopping by. 
 
@@ -54,13 +54,13 @@ We recommend **starting** studies as non-discoverable, so that you can pilot wit
 =============================
 Share preview
 =============================
-Do you want other researchers to be able to preview your study? Check this box to make it possible for any logged-in Lookit researcher to try out your study. If you check the box, you will be able to share your preview link - e.g. on the Slack channel - to ask for feedback on your study from other researchers. This is generally a good idea as we could all use another pair of eyes to check on directions, stimuli, debriefing text, etc. Getting peer feedback ahead of time will generally substantially speed up the Lookit review process too. You can leave this unchecked if you're very concerned about being scooped. (My personal feeling is that no one has the time or energy to scoop you. See also: every line of our code is publicly available and has been for years...)
+Do you want other researchers to be able to preview your study? Check this box to make it possible for any logged-in CHS researcher to try out your study. If you check the box, you will be able to share your preview link - e.g. on the Slack channel - to ask for feedback on your study from other researchers. This is generally a good idea as we could all use another pair of eyes to check on directions, stimuli, debriefing text, etc. Getting peer feedback ahead of time will generally substantially speed up the CHS review process too. You can leave this unchecked if you're very concerned about being scooped. (My personal feeling is that no one has the time or energy to scoop you. See also: every line of our code is publicly available and has been for years...)
 
 =============================
 Study image
 =============================
 
-Thumbnail image that will be displayed to participants on Lookit's studies page.  File must be an image-type and the dimensions must be square. Please keep the file size reasonable (<1 MB). If you submit too large an image file you may see an error "413 Request Entity Too Large."
+Thumbnail image that will be displayed to participants on CHS's studies page.  File must be an image-type and the dimensions must be square. Please keep the file size reasonable (<1 MB). If you submit too large an image file you may see an error "413 Request Entity Too Large."
 
 Sometimes your stimuli are a good basis for creating this image, or it can be something that conceptually represents your study or shows what it looks like to participate.
 
@@ -91,7 +91,7 @@ Compensation
 Provide a description of any compensation for participation, including when and how 
 participants will receive it and any limitations or eligibility criteria (e.g., only one 
 gift card per participant, being in age range for study, child being visible in consent 
-video). Please see the `Terms of Use <https://lookit.mit.edu/termsofuse/>`_ for details 
+video). Please see the `Terms of Use <https://childrenhelpingscience.com/termsofuse/>`_ for details 
 on allowable compensation and restrictions. If this field is left blank (which is okay 
 if you're not providing compensation beyond the joy of participation) it will not be 
 displayed to participants.
@@ -197,11 +197,11 @@ If you select more than one study in the 'Must have participated' field, the chi
 
     Researchers may have different preferences and requirements about what counts as having 'participated' in a study; some researchers want to exclude children who have had any exposure to the study's stimuli, while others may only care about excluding children who have completed the whole session. Since the definition for these criteria has to be used for every study on the site, we have to use a definition of "participated" that operates in the same way for all studies.
 
-    We have chosen to treat participation in the strictest sense: **once a child begins a study by clicking the 'Participate Now' button, they are treated as having 'participated' in that study**, regardless of how far they get through the study session. For internal studies, we also check that the participant at least reaches the first frame (as opposed to clicking to start and then closing the page before it loads).
+    We have chosen to treat participation in the strictest sense: **once a child begins a study by clicking the 'Participate Now' button, they are treated as having 'participated' in that study**, regardless of how far they get through the study session. For internal studies, we also check that the participant at least reaches the first frame/trial (as opposed to clicking to start and then closing the page before it loads).
 
 If you want children to become ineligible for your study after doing it once, you can add the study itself to the 'must not have participated' list. However, keep in mind that as soon as the family starts a study session, the child will be treated as having 'particpated' (even if they don't finish; see :ref:`What counts as 'participated'? <what-counts-as-participated>`).
 
-If you are running an internal (Lookit) study then you have another option for warning families about participating in your study multiple times: you can implement a custom check at the beginning of the study session. Internal studies have access to all previous responses for that child and study through the :ref:`protocol generator function <elf:generators>`. Using this function, you can check whether the child has already 'participated' (using your own definition, e.g. completed all frames, or reached a particular point in the study), and use that information to conditionally warn families about ineligibility (see this example in the :ref:`experiment runner protocol generator documentation <elf:generators-checking-for-completion>`). If you implement your own check using the protocol generator, then you should not add the study itself to the 'must not have participated' criteria.
+If you are running an internal Lookit study then you have another option for warning families about participating in your study multiple times: you can implement a custom check at the beginning of the study session. Internal Lookit studies have access to all previous responses for that child and study through the :ref:`Lookit protocol generator function <elf:generators>`. Using this function, you can check whether the child has already 'participated' (using your own definition, e.g. completed all frames, or reached a particular point in the study), and use that information to conditionally warn families about ineligibility (see this example in the :ref:`experiment runner protocol generator documentation <elf:generators-checking-for-completion>`). If you implement your own check using the protocol generator, then you should not add the study itself to the 'must not have participated' criteria.
 
 As with all of the eligibility criteria, if the child is not eligible due to the study's prior participation requirements, they can still choose to participate in the study, but they will see a warning below the 'Participate Now' button when the ineligible child is selected (see image below). The purpose of this warning is to make sure that families know that they may not be compensated and their data may not be used.
 
@@ -227,7 +227,7 @@ If the child is not eligible based on the study's criteria expression, they will
 
 You may want to use the criteria expression to specify additional eligibility criteria beyond an age range - for instance, if your study is for a special population like kids with ASD or bilingual kids. In general, do **not** specify your age range here; participant eligibility checks will require the child meet the `minimum and maximum age cutoffs`_ AND these critera.
 
-Every child in the Lookit database has a number of fields associated with it, ranging from gestational age to languages spoken in the home, which can be used in determining eligibility. In the study edit and create views, you can formulate your criteria expression as a boolean expression with embedded relational expressions, using a domain specific query language. 
+Every child in the CHS database has a number of fields associated with it, ranging from gestational age to languages spoken in the home, which can be used in determining eligibility. In the study edit and create views, you can formulate your criteria expression as a boolean expression with embedded relational expressions, using a domain specific query language. 
 
 You can put together your expressions using the query fields below; the operators `AND`, `OR`, `NOT`, `<`, `<=`, `=`, `>`, and `>=`; and parentheses. If your expression is invalid you will see an error when you try to save your study.
 
@@ -413,12 +413,12 @@ Language codes
 
 
 =========================================================
-Study protocol configuration (Internal studies)
+Study protocol configuration (Lookit studies)
 =========================================================
 This needs to be a valid JSON block describing the different frames (pages) of your study, and the sequence. This can be left blank at the time you initially create your study. For detailed information about specifying your study protocol, see `Building an Experiment`_.
 
 =========================================================
-Experiment runner code URL and version (Internal studies)
+Experiment runner code URL and version (Lookit studies)
 =========================================================
 The "Experiment runner code URL" is a link to the application you're using to enable participants to take a study. Right now, we just have one option, the `Ember Frame Player <https://github.com/lookit/ember-lookit-frameplayer>`_.  It's an ember app that can talk to our API. All the frames in the experiment are defined in Ember and there is an exp-player component that can cycle through these frames. For details, see `Editing study type`_. You should leave this link as is, unless you have forked the Ember Frame Player Github repository (for instance, to create custom frame types) and want to use your fork instead.
 
@@ -431,11 +431,11 @@ Study URL (External studies)
 =============================
 The link that families should be redirected to when they click the "Participate now" button on a study detail page. For unscheduled/unmoderated studies, this will be the study itself (e.g. a Qualtrics survey). For moderated studies, it should be a link to a scheduling system (e.g. Calendly). 
 
-When the family clicks the "Participate now" button for external studies, the link will automatically include two pieces of information as URL query parameters: the hashed child ID ('child') and the response ID ('response'). This will allow you to automatically capture and record this information on the study/scheduling page, so that you can link the study responses and child's Lookit account without having to ask the family to enter addintional information. For example, if your Study URL is "\https://example.com", then the family will be directed to a link that has this format:
+When the family clicks the "Participate now" button for external studies, the link will automatically include two pieces of information as URL query parameters: the hashed child ID ('child') and the response ID ('response'). This will allow you to automatically capture and record this information on the study/scheduling page, so that you can link the study responses and child's CHS account without having to ask the family to enter addintional information. For example, if your Study URL is "\https://example.com", then the family will be directed to a link that has this format:
 
   \https://example.com/?child=SG7JLN&response=d5c8f502-6588-46c8-84fa-a9657a44fe47
 
-It is up to the researcher to capture and record the URL query parameter values on the external website. Many online experiment/survey tools have documentation on how to do this (e.g. `Qualtrics <https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/passing-information-through-query-strings/#PassingInformationIntoASurvey>`_). You can include your own URL query parameters in your Study URL and they will be retained along with the Lookit parameters.
+It is up to the researcher to capture and record the URL query parameter values on the external website. Many online experiment/survey tools have documentation on how to do this (e.g. `Qualtrics <https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/passing-information-through-query-strings/#PassingInformationIntoASurvey>`_). You can include your own URL query parameters in your Study URL and they will be retained along with the CHS parameters.
 
 ===========================================
 Scheduling Platform (External studies)

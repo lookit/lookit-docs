@@ -1,8 +1,15 @@
 FAQ
 =====
 
-What is the name of this platform? LoOkIt, Look!t, LooKit?
-----------------------------------------------------------
+What is the name of this platform? Children Helping Science or Lookit?
+---------------------------------------------------------------------------
+
+Children Helping Science (CHS) is the name of the website, and Lookit is the name of the 'default' experiment runner.
+
+The whole platform was called Lookit when it was first created. In May 2023, it merged with a separate-but-similar project called Children Helping Science. Now, the platform (website) is called Children Helping Science (CHS), and the internal experiment runner is called Lookit. So if you're used to using the "Lookit" name for the whole site, you'll still see that term used to refer to a specific study type, i.e. studies that use the ember-lookit-frameplayer. You'll also see some remnants of the previous naming system in, for instance, the names of our open-source code repositories - the codebase for the CHS website is "lookit-api" and the CHS documentation is "lookit-docs".
+
+What is the name of the internal experiment runner? LoOkIt, Look!t, LooKit?
+--------------------------------------------------------------------------------------
 
 It is called ``Lookit``. Like the exclamation. In particular it is not
 called ``LookIt`` or ``Lookit!``, although the latter does sound extra
@@ -18,7 +25,7 @@ Does my study need to be approved by MIT’s IRB?
 
 Nope! You need ethical approval only from your own institution. You’re
 responsible for getting that, although there is example language here
-for common elements of Lookit studies.
+for common elements of CHS studies.
 
 Separately, your lab and institution will need to sign a one-time
 institutional agreement with MIT.
@@ -31,12 +38,9 @@ MIT
 Who should I list as a contact in case our contracts/sponsored programs/legal/etc. office has questions?
 --------------------------------------------------------------------------------------------------------
 
-Melissa Kline Struhl, lookit@mit.edu
+Melissa Kline Struhl, childrenhelpingscience@gmail.com
 
-(Note: In early 2024 while Melissa is on maternity leave, these messages will still be recieved by 
-another member of the CHS team.)
-
-Is there an IRB protocol at MIT that covers Lookit staff’s use of the data on the platform?
+Is there an IRB protocol at MIT that covers CHS staff’s use of the data on the platform?
 -------------------------------------------------------------------------------------------
 
 No, because we only use the data for a limited set of purposes that
@@ -63,12 +67,12 @@ you want:
    
 -  You'll likely need to write a translation file for your language for the components 
    in the studies - e.g., consent, setup. Once that's available, you can specify a 
-   language for your study and any hard-coded text will be translated. (See the experiment runner's :ref:`language parameter<elf:translation>`.)
+   language for your study and any hard-coded text will be translated. (See the Lookit experiment runner's :ref:`language parameter<elf:translation>` and the lookit-jsPsych locale parameters).
    
 -  We haven’t currently set up to flag which language a study is in and
    let participants filter (or get the right version of a study) by
    language. So non-English studies in general will usually to be set up
-   as “non-discoverable” - not listed on lookit.mit.edu/studies, just
+   as “non-discoverable” - not listed on childrenhelpingscience.com/studies, just
    accessible by direct link - to avoid confusion.
    
 -  You will need to handle any tech support for your participants
@@ -89,8 +93,8 @@ Where are the data stored?
 
 A1: In the USA.
 
-A2: Videos are stored primarily on Amazon S3. Lookit (including databases with 
-participant and session data) is hosted on Google Cloud Platform.
+A2: Videos are stored primarily on Amazon S3. The CHS site, including databases with 
+participant and session data, is hosted on Google Cloud Platform.
 
 How is participant data secured?
 --------------------------------
@@ -104,17 +108,17 @@ Google infrastructure. For an extensive treatment of the
 security-related provisions of this cloud infrastructure, please see
 `Google’s white paper <https://cloud.google.com/security/infrastructure/design/resources/google_infrastructure_whitepaper_fa.pdf>`__.
 Service Accounts are used for all services provided by the Google Cloud
-Platform project instance. Permissions for access to data via the Lookit
+Platform project instance. Permissions for access to data via the CHS
 interface and API are handled using Django Guardian according to best
 practices.
 
-User passwords on Lookit are required to be 16+ characters. Participants
+User passwords on CHS are required to be 16+ characters. Participants
 can access only their own video data; however, as researchers may be
 able to access video and other data from many participants in studies
-they have run, access to the Experimenter section of Lookit requires
+they have run, access to the Experimenter section of CHS requires
 two-factor authentication. Researchers are responsible for the security
-of their Lookit credentials and for the security of data that they
-download using Lookit, although the platform is engineered with a focus
+of their CHS credentials and for the security of data that they
+download using CHS, although the platform is engineered with a focus
 on making it more difficult to accidentally disclose sensitive
 information. (For instance, consent must be confirmed before session
 data or video are accessible; child names and birthdates are by default
@@ -129,7 +133,7 @@ stored in the etcd database of a Google Kubernetes Engine instance, per
 the defaults provided by the platform. Video data are encrypted at rest
 on S3 using AES-256.
 
-All dependencies for the Lookit-api and Ember-lookit-frameplayer
+All dependencies for the website (lookit-api), Lookit experiment runner (ember-lookit-frameplayer) and jsPsych experiment runner (lookit-jspsych)
 repositories are continuously scanned by Github for security
 vulnerabilities, and the unit tests conducted as part of our CI/CD
 pipeline whenever code is updated cover many of the platform-specific
@@ -148,9 +152,9 @@ addresses (unless participants email them).
 We hired an external security consulting firm to conduct detailed manual
 penetration and a security risk assessment prior to launch, in spring
 2020. Results of this assessment are available upon request (email
-lookit@mit.edu).
+childrenhelpingscience@gmail.com).
 
-Does Lookit collect IP addresses?
+Does CHS collect IP addresses?
 ---------------------------------
 
 No.
@@ -161,13 +165,13 @@ How is re-identification prevented?
 There are several measures in place to *discourage* re-identification,
 including:
 
-- Researchers using the Lookit platform do not receive direct access to participant email addresses. They can contact participants using the Lookit interface based on the participant’s random ID, but see an email address only if a participant contacts them.
-- Although each child and each family registered on Lookit is associated with a global unique random identifier, they are also associated with a different random identifier specific to each study, and the latter is the primary ID used by researchers. Per the Terms of Use, researchers may not publish the global identifiers, as these could link data across studies in ways that could lead to unanticipated re-identification potential. 
+- Researchers using the CHS platform do not receive direct access to participant email addresses. They can contact participants using the CHS interface based on the participant’s random ID, but see an email address only if a participant contacts them.
+- Although each child and each family registered on CHS is associated with a global unique random identifier, they are also associated with a different random identifier specific to each study, and the latter is the primary ID used by researchers. Per the Terms of Use, researchers may not publish the global identifiers, as these could link data across studies in ways that could lead to unanticipated re-identification potential. 
 - Default data downloads minimize the amount of personally identifiable information included: e.g., researchers have to specifically request columns for the child name, birthdate, parent name, etc. By default, neither the child’s birthdate nor exact age at time of participation (which could be combined with timestamps to produce a birthdate) are included, and a rounded age is provided for ease of responsibly publishing raw data. 
 - Per the Terms of Use, no participant demographic information may be published in such a way that individual responses can be linked to participant video.
 
 However, we cannot fully *prevent* re-identification using solely
-technical means, as some of the data collected on Lookit is by nature
+technical means, as some of the data collected on CHS is by nature
 potentially identifying (e.g., video of faces). All researchers using
 the platform must have IRB approval for data collection, which includes
 assurances that they will not attempt to re-identify participants. The

@@ -1,7 +1,7 @@
 .. _updating-frameplayer-code:
 
 #############################################
-Updating the experiment runner
+Updating the Lookit experiment runner
 #############################################
 
 In the future, there may be changes in the Lookit experiment runner that you want your study to use - for instance, a bug fix for an issue your participants are encountering or a new frame you want to use. (By default, your study keeps chugging along using exactly the same code, so that updates can't change how your study works without your knowledge.) 
@@ -69,7 +69,7 @@ Here's how to update the code used:
        :alt: Example sha value filled in
 
     
-4. Click "Save Changes". You will see a warning pop up if your study has already been approved, telling you it will be rejected automatically and require re-review. This is so that Lookit staff can review any new code you're using (in particular if you're using your own repo).
+4. Click "Save Changes". You will see a warning pop up if your study has already been approved, telling you it will be rejected automatically and require re-review. This is so that CHS staff can review any new code you're using (in particular if you're using your own repo).
 
    .. image:: _static/img/update_code/click_save.png
        :alt: Save button

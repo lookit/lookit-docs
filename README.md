@@ -1,10 +1,14 @@
 # lookit-docs
 
-Documentation for Lookit project, including use of platform and lookit-api and ember-lookit-frameplayer repos.
+Documentation for Children Helping Science (formerly "Lookit") project, including use of the CHS platform, the internal Lookit and jsPsych experiment runners, and associated repositories.
 
-Lookit platform: https://lookit.readthedocs.io/en/develop/
+CHS platform: https://lookit.readthedocs.io/en/develop/
 
-Ember Lookit Frameplayer (experiment runner): https://lookit.readthedocs.io/projects/frameplayer/en/latest/
+Experiment runners:
+
+Lookit (Ember Lookit Frameplayer): https://lookit.readthedocs.io/projects/frameplayer/en/latest/
+
+jsPsych: https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/
 
 ---
 
@@ -12,7 +16,7 @@ Ember Lookit Frameplayer (experiment runner): https://lookit.readthedocs.io/proj
 
 Have you spotted an error in the documentation, or have other suggestions for improvement? We'd love your contributions! If you're not sure whether we'll want to incorporate your changes, please open an Issue in this repository so that we can discuss it first.
 
-If you are not part of the Lookit team and would like to contribute changes to the Lookit documentation, you will follow the same Installation and Editing steps listed below except that you will *make changes on your own fork of this repository*. Here is a summary of the process:
+If you are not part of the CHS/Lookit team and would like to contribute changes to the documentation, you will follow the same Installation and Editing steps listed below except that you will *make changes on your own fork of this repository*. Here is a summary of the process:
 1. Fork this repository.
 2. Set up your local environment, following the Installation steps below.
 3. Make your changes, commit them, and push to your fork/branch.
@@ -298,7 +302,7 @@ Below are references for embedded/reusable links and footnotes (see https://gith
 [sphinx-rst]: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 [^forkfootnote]:
-    If you are not part of the core Lookit team then you should *fork this repository* first (fork button in upper-right corner of this page), then clone your fork:
+    If you are not part of the core CHS/Lookit team then you should *fork this repository* first (fork button in upper-right corner of this page), then clone your fork:
     ```
     / $ git clone https://github.com/<your-username>/lookit-docs.git
     / $ cd lookit-docs

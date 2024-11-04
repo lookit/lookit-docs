@@ -4,12 +4,12 @@
 Using Github issues
 ==================================
 
-We use Github Issues to plan Lookit development. This is a central tool where we keep information about known bugs, planned new features, and what's going to be addressed when.
+We use Github Issues to plan CHS development. This is a central tool where we keep information about known bugs, planned new features, and what's going to be addressed when.
 
 .. image:: _static/img/tutorial/issues_tab.png
     :alt: See all issues on GitHub
 
-If you report a problem or mention an idea you have to improve Lookit through some other channel, we will probably ask that you make a Github issue so we can keep track of your idea and get feedback from any other researchers affected.
+If you report a problem or mention an idea you have to improve CHS through some other channel, we will probably ask that you make a Github issue so we can keep track of your idea and get feedback from any other researchers affected.
 
 To request a feature or report a bug, first search the existing issues to see if your idea is already there.
 
@@ -18,13 +18,15 @@ To request a feature or report a bug, first search the existing issues to see if
 
 Depending on the type of problem you are encountering or idea you have, you will want to check in one of the following repositories or "repos":
 
-- `lookit-api <https://github.com/lookit/lookit-api/issues>`_ is the repo for the Lookit site: issues with anything to do with participant login or data, how current and past studies are displayed to participants, how you view data and manage your studies
+- `lookit-api <https://github.com/lookit/lookit-api/issues>`_ is the repo for the CHS site: issues with anything to do with participant login or data, how current and past studies are displayed to participants, how you view data and manage your studies
 
-- `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer/issues>`_ is the repo for the experiment components themselves: issues with how particular frames behave, frames you'd find useful, counterbalancing/condition assignment, etc.
+- `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer/issues>`_ is the repo for the Lookit experiment runner: issues with how particular frames behave, frames you'd find useful, counterbalancing/condition assignment, etc.
+
+- `lookit-jspsych <https://github.com/lookit/lookit-jspsych/issues>`_ is the repo for the jsPsych experiment runner.
 
 - `lookit-docs <https://github.com/lookit/lookit-docs>`_ is the repo for the documentation: anything about the docs you're reading now!
 
-If you find a relevant issue already exists, please comment on it or add a thumbs-up reaction so Lookit staff know there's more interest! If not, click the green "New issue" button at the top right.
+If you find a relevant issue already exists, please comment on it or add a thumbs-up reaction so CHS staff know there's more interest! If not, click the green "New issue" button at the top right.
 
 .. image:: _static/img/tutorial/new_issue.png
     :alt: Create new issue on GitHub
@@ -44,4 +46,4 @@ Your issue will now have a number assigned to it and will be listed in the issue
 .. image:: _static/img/tutorial/issue.png
     :alt: Issue on GitHub
     
-Lookit staff may respond to ask for further information, schedule it for future development, and/or wait for community feedback about the idea to gauge demand.
+CHS staff may respond to ask for further information, schedule it for future development, and/or wait for community feedback about the idea to gauge demand.

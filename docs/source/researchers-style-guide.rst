@@ -4,7 +4,7 @@
 Style guide
 ##################################
 
-We try to conform to some common stylistic, writing, and study design guidelines to provide a familiar and friendly experience across Lookit studies.
+We try to conform to some common stylistic, writing, and study design guidelines to provide a familiar and friendly experience across CHS studies.
 
 ================================================
 General language usage
@@ -36,7 +36,7 @@ When choosing music or nursery rhymes for stimuli or background music, please co
 Eligibility criteria
 ==========================
 
-In general, keep eligibility criteria as broad as possible for a positive family experience. The "hard" eligibility criteria you list on Lookit will include your age range and any characteristics that are critical to the study design or that are necessary for the study to make any sense to the child/family. For instance, if you have a question specifically about bilingual vs. trilingual kids, go ahead and require n_languages >= 2. But if you just routinely exclude premature babies or kids with trisomies from analysis, you can do that after the fact if needed since the study experience won't be affected.
+In general, keep eligibility criteria as broad as possible for a positive family experience. The "hard" eligibility criteria you list on CHS will include your age range and any characteristics that are critical to the study design or that are necessary for the study to make any sense to the child/family. For instance, if you have a question specifically about bilingual vs. trilingual kids, go ahead and require n_languages >= 2. But if you just routinely exclude premature babies or kids with trisomies from analysis, you can do that after the fact if needed since the study experience won't be affected.
 
 Your eligibility criteria description should "translate" the minimum / maximum ages and any eligibility criteria expression into regular language, starting with "For..." - for example, "for 3-year-olds" or "for 8- through 12-month-olds who are exposed to least two languages at home." You can also include hard criteria that are not possible to check for programmatically, for instance if your IRB requires that participants live in a certain country.
 

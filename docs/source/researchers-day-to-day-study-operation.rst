@@ -12,9 +12,9 @@ Active vs. paused
 You can start and stop data collection independently and whenever you
 want. On your study detail page, go to “change state” -> “Start” or “Pause.”
 
-When your study is active, participants can access it at the direct link shown on your study page. If the study is also discoverable, it will be listed on the Lookit "studies" page and advertised by email to eligible families.
+When your study is active, participants can access it at the direct link shown on your study page. If the study is also discoverable, it will be listed on the CHS "studies" page and advertised by email to eligible families.
 
-When your study is paused, participants can't access it even if they have the direct link. If participants follow a direct link to your study and it is paused, they will see a message `like this <https://lookit.mit.edu/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
+When your study is paused, participants can't access it even if they have the direct link. If participants follow a direct link to your study and it is paused, they will see a message `like this <https://childrenhelpingscience.com/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
 
 Discoverable vs. non-discoverable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,13 +23,13 @@ You can also independently switch your study between discoverable
 
 When your study is **discoverable** and active, it is:
 
-- Listed at lookit.mit.edu/studies
+- Listed at childrenhelpingscience.com/studies
 - Advertised to eligible families via announcement emails that include a direct link to the study, sent each day at 4am
 - Accessible at the direct link
 
 When your study is **non-discoverable** and active, it is:
 
-- Not listed at lookit.mit.edu/studies
+- Not listed at childrenhelpingscience.com/studies
 - Not advertised by announcement emails
 - Still accessible at the direct link!
 
@@ -40,7 +40,7 @@ We also recommend making studies non-discoverable to do some initial piloting - 
 Announcement emails
 ~~~~~~~~~~~~~~~~~~~~
 
-Announcement emails are sent out to families with eligible children to let them know about new studies on Lookit:
+Announcement emails are sent out to families with eligible children to let them know about new studies on CHS:
 
 - Emails are only sent about studies that are **discoverable** and **active**.
 - Emails are only sent to families whose email preference specifies that they want to hear about new studies.
@@ -54,8 +54,8 @@ Making changes to your study
 ----------------------------------------
 
 If you make changes to your study - updating the fields in the
-study details, the experiment runner version, etc. - your study will be
-automatically “rejected” and will require review by Lookit staff again
+study details, the Lookit experiment runner version, etc. - your study will be
+automatically “rejected” and will require review by CHS staff again
 before you can make it active. This is quick but does still require manual
 action on our part. In general these are reviewed the same business day as submitted, often within
 an hour, but this is subject to whether staff is working / in a meeting / etc. Feel free to
@@ -75,7 +75,7 @@ new version of Firefox, etc.!)
 Missing consent videos
 -------------------------
 
-If you come across a record that's missing a consent video, please (a) try refreshing the page to make sure it doesn't show up and then (b) notify Lookit staff, including the response UUID. If you're using a version of the experiment runner prior to 2.2.2 / 1.4.1 (see `releases <https://github.com/lookit/ember-lookit-frameplayer/releases>`) then this is probably an instance of `this bug <https://github.com/lookit/lookit-api/issues/598>`__. We can
+If you come across a record that's missing a consent video, please (a) try refreshing the page to make sure it doesn't show up and then (b) notify CHS staff, including the response UUID. If you're using a version of the Lookit experiment runner prior to 2.2.2 / 1.4.1 (see `releases <https://github.com/lookit/ember-lookit-frameplayer/releases>`) then this is probably an instance of `this bug <https://github.com/lookit/lookit-api/issues/598>`__. We can
 fix particular instances for you but recommend updating following the instructions in `this Slack post <https://lookit-mit.slack.com/archives/CDV2ULHC5/p1608305924056900>`__.
 
 .. _compensation:
@@ -84,7 +84,7 @@ Compensating participants
 ----------------------------------------
 
 If you are compensating participants, in most cases you will be 
-messaging them through the Lookit email interface to give them gift
+messaging them through the CHS email interface to give them gift
 cards, using the user IDs you can see in the consent manager and/or the
 response data. If your institution requires direct compensation or requires 
 the collection of email addresses for other compliance reasons, you can add
@@ -169,7 +169,7 @@ collected during the session.
 If you come across a video where you think a parent meant to consent to
 participate, but you do not have an adequate recording, you can email
 the participant to ask for confirmation. See the ‘informed consent
-guidelines’ in the `Terms of Use <https://lookit.mit.edu/termsofuse/>`__
+guidelines’ in the `Terms of Use <https://childrenhelpingscience.com/termsofuse/>`__
 for guidance. Here is an example of an email we have sent to confirm
 consent:
 
@@ -190,7 +190,7 @@ consent:
 Sending child-related data to families
 ----------------------------------------
 
-Parents are able to review their study video in the Lookit interface. If
+Parents are able to review their study video in the CHS interface. If
 you would like to send them additional information related to their
 participation, please try to do so using the “Message Participants”
 interface. That interface supports html but does not allow attachments.
@@ -201,8 +201,8 @@ password-protected with an expiration date.
 If a parent requests video deleted, or you need to delete video for any other reason
 -------------------------------------------------------------------------------------
 
-Please contact Lookit staff and we will delete the video(s). You'll need to provide the 
+Please contact CHS staff and we will delete the video(s). You'll need to provide the 
 response UUID.
 
 If a parent invokes GDPR specifically in their request, again please
-contact Lookit (complying is straightforward but we’ll notify OGC).
+contact CHS (complying is straightforward but we’ll notify OGC).

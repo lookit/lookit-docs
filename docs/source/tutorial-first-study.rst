@@ -1,15 +1,15 @@
-##################################
-3. Setting up your first study
-##################################
+######################################
+3. Setting up your first Lookit study
+######################################
 
-In this section, you will be creating your first study on Lookit. You will learn how to find and use experiment components, specify your protocol, and test out and troubleshoot your study. 
+In this section, you will be creating your first Lookit study. You will learn how to find and use experiment components, specify your protocol, and test out and troubleshoot your study. 
 
-This section is designed for researchers planning to build an internal Lookit study. If your first study involves a link to an experiment hosted somewhere else, skip to part 6 of this tutorial.
+This section is designed for researchers planning to build an internal Lookit study. If your first study will be written with jsPsych, then you can see the :ref:`jspsych tutorial <jspsych-tutorial>`. Or if your study involves a link to an experiment hosted somewhere else, skip to part 6 of this tutorial.
 
 Step 1: Clone the 'Lookit tutorial part 1' study
 -------------------------------------------------
 
-To get started, log in to Lookit as an experimenter. (Go to `<https://lookit.mit.edu/login/>`_ to log in.)
+To get started, log in to CHS as an experimenter. (Go to `<https://childrenhelpingscience.com/login/>`_ to log in.)
 
 You should see a few studies you automatically have access to, including one called "Lookit tutorial part 1". Click on that to open up the study detail page:
 
@@ -63,7 +63,7 @@ Step 2: Preview your study (and learn a bit about JSON on the way)
 
 .. _Building study dependencies:
 
-You may have noticed that below your thumbnail and basic study info, there's a section about the "status" of your study. This section is where you will submit your study for approval by Lookit staff when it's ready, and start and stop data collection. 
+You may have noticed that below your thumbnail and basic study info, there's a section about the "status" of your study. This section is where you will submit your study for approval by CHS staff when it's ready, and start and stop data collection. 
 
 This section also shows whether your "experiment runner" is "built" yet. You should see a bar like this:
 
@@ -75,9 +75,9 @@ Click the "Build experiment runner" button. You should see a notification at the
 .. image:: _static/img/tutorial/scheduled_for_preview.png
     :alt: Scheduled for build notification
 
-What is this "experiment runner"? When you create a study on Lookit, you specify what types of pages or "frames" to use, and provide parameters for each - for example you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit frame player interprets this information and turns it into an interactive study families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing that code, each study gets its own siloed little environment called a Docker image where it will run. 
+What is this "experiment runner"? When you create a Lookit study, you specify what types of pages or "frames" to use, and provide parameters for each - for example you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit frameplayer interprets this information and turns it into an interactive study families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing that code, each study gets its own siloed little environment called a Docker image where it will run. 
 
-When you click "Build experiment runner," you are creating that Docker image and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it, unless you choose to update what code your study uses and build dependencies again - for instance to take advantage of a new feature or a bug fix. You also have the advanced option of telling Lookit to use your own code instead of the standard Lookit code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
+When you click "Build experiment runner," you are creating that Docker image and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it, unless you choose to update what code your study uses and build dependencies again - for instance to take advantage of a new feature or a bug fix. You also have the advanced option of telling the CHS platform to use your own code instead of the standard Lookit experiment runner code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
 
 It will probably take about 10 minutes to build the experiment runner (you can wait for the email or refresh the page to see if it's done yet). 
 
@@ -161,7 +161,7 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
         <p>There are several things to fix here - if you changed something and got a different error message, you're probably on the right track! Work down the list of requirements for JSON from the overview, and note that the "true" value is all lowercase.</p>
     </details>
 
-OK, congrats on learning all about JSON! Your study should be ready to preview by now. You should have an email in your inbox from Lookit about this, and if you refresh the page you're on, you should see something like this:
+OK, congrats on learning all about JSON! Your study should be ready to preview by now. You should have an email in your inbox from CHS about this, and if you refresh the page you're on, you should see something like this:
 
 .. image:: _static/img/tutorial/preview_built.png
     :alt: Preview built status display
@@ -171,11 +171,11 @@ Click on "Preview study" near the top of the page:
 .. image:: _static/img/tutorial/preview_button.png
     :alt: Preview button
     
-This will take you to a "study detail" page just like the one participants see when they click on a study at lookit.mit.edu/studies. You will need to register at least one child and respond to the demographic survey (you don't need to respond to all questions, or use real information). Then you will be able to click "Preview now" to proceed through the study as a participant. It's a rough, abbreviated  implementation of one condition from `Schulz, Bonawitz, and Griffiths (2007) <http://dx.doi.org/10.1037/0012-1649.43.5.1124>`_ - you'll read through a storybook about Bunny, who sometimes gets a tummyache, and eventually answer a question about what makes her tummy hurt.
+This will take you to a "study detail" page just like the one participants see when they click on a study at childrenhelpingscience.com/studies. You will need to register at least one child and respond to the demographic survey (you don't need to respond to all questions, or use real information). Then you will be able to click "Preview now" to proceed through the study as a participant. It's a rough, abbreviated  implementation of one condition from `Schulz, Bonawitz, and Griffiths (2007) <http://dx.doi.org/10.1037/0012-1649.43.5.1124>`_ - you'll read through a storybook about Bunny, who sometimes gets a tummyache, and eventually answer a question about what makes her tummy hurt.
 
 .. admonition:: Note
 
-   Video is collected during previews! Like other data, it's only accessible to people who have appropriate permissions. That does include a few Lookit staff in addition to researchers working on your study. We don't do anything with the video and are very unlikely to even see it, but it *is* in principle possible - so please wear clothes while testing, don't sit in front of your really cool poster of your social security number, etc. Or cover your webcam. 
+   Video is collected during previews! Like other data, it's only accessible to people who have appropriate permissions. That does include a few CHS staff in addition to researchers working on your study. We don't do anything with the video and are very unlikely to even see it, but it *is* in principle possible - so please wear clothes while testing, don't sit in front of your really cool poster of your social security number, etc. Or cover your webcam. 
 
 
 Step 3: Get comfortable making changes to how your study works
@@ -419,7 +419,7 @@ You should see something like this:
 
 .. admonition:: Browser-dependent behavior
 
-   Webcam access functionality, external resource loading, or other features may work slightly differently across web browsers, especially as they are updated over time. It is always worth previewing your studies in both Firefox and Chrome, which are the browsers Lookit currently officially supports. For your own privacy, we strongly recommend not using Chrome more than you have to. (We also recommend flossing and having Easter egg hunts as a year-round activity, but these are getting further from our domain.)
+   Webcam access functionality, external resource loading, or other features may work slightly differently across web browsers, especially as they are updated over time. It is always worth previewing your studies in both Firefox and Chrome, which are the browsers CHS currently officially supports. For your own privacy, we strongly recommend not using Chrome more than you have to. (We also recommend flossing and having Easter egg hunts as a year-round activity, but these are getting further from our domain.)
    
 .. admonition:: Advanced developer tool features
    
@@ -427,7 +427,7 @@ You should see something like this:
 
 Now that you've gotten your web console open, you'll see a bunch of information in it. This is generally of most interest if something is going wrong and you're not sure what. You can see events that are being logged as you proceed through the study as well as any errors. Some of these errors are ok to ignore - e.g. here are a few current ones due to known but harmless bugs:
 
-* On the staging server there is a known bug that the fontawesome library doesn't load properly (but it does on "production" - the real Lookit site) - so you may see some errors that a resource failed to load properly, like this:
+* On the staging server there is a known bug that the fontawesome library doesn't load properly (but it does on "production" - the real CHS site) - so you may see some errors that a resource failed to load properly, like this:
 
 .. image:: _static/img/tutorial/fa_error.png
     :alt: Fontawesome error example
@@ -532,7 +532,7 @@ Each frame you define on Lookit has to have a property called ``kind`` which say
 * the ``storybook-causal`` frame has kind ``group`` (this is a special kind of frame, documented :ref:`here <elf:frame groups>`)
 * the frames **within** the ``storybook-causal`` frame have kind ``exp-lookit-images-audio`` (this is added to each frame in the ``frameList`` as part of the ``commonFrameProperties``)
 
-In addition to this tutorial and the information in this documentation about how to set up a study on Lookit, there is detailed information available about each of the "frames" you can use in your Lookit study. In the :ref:`experiment runner docs <elf:index>` you can browse the options and learn about options for customizing each type of frame.
+In addition to this tutorial and the information in this documentation about how to set up a Lookit study on CHS, there is detailed information available about each of the "frames" you can use in your Lookit study. In the :ref:`experiment runner docs <elf:index>` you can browse the options and learn about options for customizing each type of frame.
 
 Let's take a look at the ``exp-lookit-images-audio`` documentation to see what options we have. Find it on the left sidebar and click on it. Here's what you'll see:
 
