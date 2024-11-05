@@ -1,5 +1,5 @@
 ##########################################
-5. Lookit study protocol exercises
+3. Lookit study protocol exercises
 ##########################################
 
 Now that you've walked through the process of creating your own studies, it's time to try out what you've learned! At the end of this section, you will:

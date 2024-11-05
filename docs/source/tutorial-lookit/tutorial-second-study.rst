@@ -1,5 +1,5 @@
 #####################################################
-4. A study from the ground up
+2. A Lookit study from the ground up
 #####################################################
 
 Now that you've gotten your feet wet and are comfortable using Lookit's experimenter interface to modify your study protocol configuration, it's time to take a closer look at how to build your own study. 
@@ -28,12 +28,12 @@ Creating the study and filling out study fields
 
 This time, instead of copying an existing study, we're going to create our own from scratch so that we see every field. Go to `<https://childrenhelpingscience.com/exp/studies/>`_ and click the green "Create Study" button at top right:
 
-.. image:: _static/img/tutorial/create_study_button.png
+.. image:: ../_static/img/tutorial/create_study_button.png
     :alt: Create Study button
     
 This will bring you to a screen with a bunch of fields to fill out:
 
-.. image:: _static/img/tutorial/create_study.png
+.. image:: ../_static/img/tutorial/create_study.png
     :alt: Study creation view
 
 In a separate tab, open up the documentation about these fields for fuller explanations of what each one should contain: :ref:`study fields`. Below is the study-specific information you'll need to fill out each field.
@@ -109,19 +109,19 @@ We'll start with a standard setup frame called "exp-video-config".
 
 Take a look at the documentation for this frame :ref:`here <elf:exp-video-config>`. You'll see a screenshot of what it looks like, and under "Examples" you'll see examples of how to define this frame in your study protocol:
 
-.. image:: _static/img/tutorial/exp_video_config.png
+.. image:: ../_static/img/tutorial/exp_video_config.png
     :alt: Exp-video-config frame docs
     
 Copy one of the definitions of the "video-config" frame (``"video-config": { ... }``, as shown highlighted above), and open up your study's protocol editor. Paste this into the "frames" value, like this:
 
-.. image:: _static/img/tutorial/video_config_added_to_frames.png
+.. image:: ../_static/img/tutorial/video_config_added_to_frames.png
     :alt: Adding the video-config example to frames
     
 Edit the text if you'd like, so it references your own lab and an appropriate contact method!
 
 That defines a frame that's now available for us to use. In order to actually use it, add it to your "sequence" as well:
 
-.. image:: _static/img/tutorial/video_config_added_to_sequence.png
+.. image:: ../_static/img/tutorial/video_config_added_to_sequence.png
     :alt: Adding the video-config example to sequence
     
 .. admonition:: The key for your frame can be whatever you want
@@ -139,14 +139,14 @@ Unless you receive specific permission from CHS, you'll be asked to use the stan
 
 This study is for babies, so we don't need to collect child assent, just parental consent. Go to the frame docs and select 'exp-lookit-video-consent' on the sidebar. Just like you did for the setup frame, copy the sample frame definition (``"video-consent": {...}``) and add it to your study protocol frames and sequence, like this:
 
-.. image:: _static/img/tutorial/adding_video_consent.png
+.. image:: ../_static/img/tutorial/adding_video_consent.png
     :alt: Adding the video-consent example to sequence
 
 Note that you will need to add commas between the previous and new items in both "frames" and "sequence", as circled above.
 
 Save and preview again. Now when you click "Next" from the video config page, you'll see a consent page. The sample text is pretty silly, though! Change each of the following fields to more appropriate text for this study, substituting in your own information for the things shown in ``<brackets like this>``. For more information on what each of these fields is, click on "Parameters" in the frame documentation:
 
-.. image:: _static/img/tutorial/frame_docs_properties.png
+.. image:: ../_static/img/tutorial/frame_docs_properties.png
     :alt: Properties as displayed in frame docs
 
 PIName
@@ -196,7 +196,7 @@ Go to the frame documentation, and select the "exp-lookit-text" frame. Just like
 
 For convenience, this time, let's put "study-intro" FIRST in the sequence, so that when we preview our study it's easy for us to see the changes we make to customize the text on this frame:
 
-.. image:: _static/img/tutorial/study_intro_first.png
+.. image:: ../_static/img/tutorial/study_intro_first.png
     :alt: Putting the study-intro frame first
 
 Save your protocol and go ahead and preview your study. You should see a simple text frame first. Let's change the ``blocks`` value to show an appropriate overview for this study: copy and paste the section below to replace the existing ``"blocks": [...]`` piece:
