@@ -1,5 +1,5 @@
 ##################################
-7. Finishing steps
+5. Finishing steps
 ##################################
 
 You're in the home stretch! Thanks for sticking with it. We'll wrap up by revisiting Github issues and briefly mentioning some of the advanced features you might use in the future.
