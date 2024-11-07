@@ -87,16 +87,15 @@ Families may take part in studies from multiple labs over time. Having one centr
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    :hidden:
+   :includehidden:
    :glob:
    :caption: Tutorial
 
-   tutorial-access
+   1. Accessing CHS site and community <tutorial-access>
    tutorial-contributing
-   tutorial-first-study
-   tutorial-second-study
-   tutorial-protocol-exercises
+   tutorial-create-study
    tutorial-manage-data
    tutorial-next-steps
 
