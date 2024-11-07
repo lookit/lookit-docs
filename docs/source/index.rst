@@ -46,6 +46,8 @@ Families may take part in studies from multiple labs over time. Having one centr
    researchers-manage-org
    researchers-manage-studies
    researchers-study-permissions
+   researchers-set-study-fields
+   researchers-edit-design
 
 .. toctree::
    :maxdepth: 2
@@ -53,7 +55,6 @@ Families may take part in studies from multiple labs over time. Having one centr
    :glob:
    :caption: Lookit studies
 
-   researchers-set-study-fields
    researchers-create-experiment
    researchers-update-code
    researchers-prep-stimuli
