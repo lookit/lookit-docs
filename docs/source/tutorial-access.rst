@@ -7,7 +7,7 @@
 Welcome
 ----------
 
-Welcome to the Children Helping Scienc (CHS) tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own Lookit study on the CHS platform. By the end of the tutorial, you will be able to create a participant-friendly study that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
+Welcome to the Children Helping Science (CHS) tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own Lookit study on the CHS platform. By the end of the tutorial, you will be able to create a participant-friendly study that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
 
 This tutorial was written for researchers who will be building a Lookit study, but most steps are also applicable for researchers who will be building a jsPsych study or sharing a link to an external study instead.
 
