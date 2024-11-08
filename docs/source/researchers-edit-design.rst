@@ -31,7 +31,7 @@ jsPsych
 jsPsych Experiment Code
 =============================
 
-This is where you enter your jsPsych experiment code. This is the JavaScript code used to generate a jsPsych study, not the surrounding HTML. Please see our :ref:`CHS jsPsych documentation <jspsych-intro>` and :ref:`tutorial <jspsych-tutorial-first-study>` for more information about what jsPsych plugins and versions are automatically loaded for you to use, and how to load stimuli files.
+This is where you enter your jsPsych experiment code. This is the JavaScript code used to generate a jsPsych study, not the surrounding HTML. Please see our CHS jsPsych documentation and :ref:`tutorial <jspsych-tutorial-first-study>` for more information about what jsPsych plugins and versions are automatically loaded for you to use, and how to load stimuli files.
 
 .. _`Building an Experiment`: researchers-create-experiment.html
 
