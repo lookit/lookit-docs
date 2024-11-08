@@ -7,7 +7,7 @@ Using the API
 =======================
 What is the API for?
 =======================
-Using the Lookit API allows you to programatically retrieve or update data (other than video data), rather than manually downloading JSON or CSV files from the Experimenter site.
+Using the Children Helping Science API allows you to programatically retrieve or update data (other than video data), rather than manually downloading JSON or CSV files from the Experimenter site.
 
 Researchers do not need to use the API, but it is available if preferred to downloading
 data via the experimenter app. 
@@ -109,7 +109,7 @@ Authentication
 ---------------
 We are using a token-based HTTP Authentication scheme.
 
-- Ask Lookit staff for a token. 
+- Ask CHS staff for a token. 
 
   - Tokens are currently created via the Admin app accessible to staff only. Go to ``/__CTRL__/authtoken/token/add/``:
 
@@ -131,13 +131,13 @@ We are using a token-based HTTP Authentication scheme.
 
 .. code-block:: bash
 
-    curl -X GET https://lookit.mit.edu/api/v1/users/ -H 'Authorization: Token 123456789abcdefghijklmnopqrstuvwxyz'
+    curl -X GET https://childrenhelpingscience.com/api/v1/users/ -H 'Authorization: Token 123456789abcdefghijklmnopqrstuvwxyz'
 
 - Here is an example of a POST request using curl, note the presence of the content-type header as well as the authorization header:
 
 .. code-block:: bash
 
-    curl -X POST  http://lookit.mit.edu/api/v1/feedback/ -H "Content-Type: application/vnd.api+json" -H 'Authorization: Token abcdefghijklmnopqrstuvwxyzyour-token-here' -d '{"data": {"attributes": {"comment": "Test comment"}, "relationships": {"response": {"data": {"type": "responses","id": "91c15b81-bb25-437a-8299-13cf4c83fed6"}}},"type": "feedback"}}'
+    curl -X POST  http://childrenhelpingscience.com/api/v1/feedback/ -H "Content-Type: application/vnd.api+json" -H 'Authorization: Token abcdefghijklmnopqrstuvwxyzyour-token-here' -d '{"data": {"attributes": {"comment": "Test comment"}, "relationships": {"response": {"data": {"type": "responses","id": "91c15b81-bb25-437a-8299-13cf4c83fed6"}}},"type": "feedback"}}'
 
 ------------
 Pagination
@@ -177,11 +177,11 @@ Permissions: Must be authenticated.  You can only view children that have respon
 
 Ordering: Children can be sorted by birthday using the *ordering* query parameter.  For example, to sort oldest to youngest:
 
-GET http://lookit.mit.edu/api/v1/children/?ordering=birthday
+GET http://childrenhelpingscience.com/api/v1/children/?ordering=birthday
 
 Add a '-' before birthday to sort youngest to oldest:
 
-GET http://lookit.mit.edu/api/v1/children/?ordering=-birthday
+GET http://childrenhelpingscience.com/api/v1/children/?ordering=-birthday
 
 *Sample Response:*
 
@@ -595,8 +595,8 @@ Permissions: Must be authenticated.
 
     {
         "links": {
-            "first": "https://lookit-staging.mit.edu/api/v1/labs/?page=1",
-            "last": "https://lookit-staging.mit.edu/api/v1/labs/?page=1",
+            "first": "https://babieshelpingscience.com/api/v1/labs/?page=1",
+            "last": "https://babieshelpingscience.com/api/v1/labs/?page=1",
             "next": null,
             "prev": null,
             "meta": {
@@ -611,15 +611,15 @@ Permissions: Must be authenticated.
                 "id": "a2a7383c-cb58-4d78-ac00-23283a762dec",
                 "attributes": {
                     "name": "Demo lab",
-                    "institution": "Lookit",
+                    "institution": "Children Helping Science",
                     "principal_investigator_name": "Sample Name",
-                    "lab_website": "https://lookit.mit.edu/",
-                    "description": "This is a sample lab researchers are added to upon joining Lookit. It contains several demo\r\n                studies you will be able to see.",
+                    "lab_website": "https://childrenhelpingscience.com/",
+                    "description": "This is a sample lab researchers are added to upon joining CHS. It contains several demo\r\n                studies you will be able to see.",
                     "approved_to_test": true,
                     "pk": 2
                 },
                 "links": {
-                    "self": "https://lookit-staging.mit.edu/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
+                    "self": "https://babieshelpingscience.com/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
                 }
             },
             {
@@ -635,7 +635,7 @@ Permissions: Must be authenticated.
                     "pk": 3
                 },
                 "links": {
-                    "self": "https://lookit-staging.mit.edu/api/v1/labs/1c54bccd-5f3d-4dd1-967a-0f7c0565d76d/"
+                    "self": "https://babieshelpingscience.com/api/v1/labs/1c54bccd-5f3d-4dd1-967a-0f7c0565d76d/"
                 }
             }
         ]
@@ -657,15 +657,15 @@ Permissions: Must be authenticated.
             "id": "a2a7383c-cb58-4d78-ac00-23283a762dec",
             "attributes": {
                 "name": "Demo lab",
-                "institution": "Lookit",
+                "institution": "Children Helping Science",
                 "principal_investigator_name": "Sample Name",
-                "lab_website": "https://lookit.mit.edu/",
-                "description": "This is a sample lab researchers are added to upon joining Lookit. It contains several demo\r\n                studies you will be able to see.",
+                "lab_website": "https://childrenhelpingscience.com/",
+                "description": "This is a sample lab researchers are added to upon joining CHS. It contains several demo\r\n                studies you will be able to see.",
                 "approved_to_test": true,
                 "pk": 2
             },
             "links": {
-                "self": "https://lookit-staging.mit.edu/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
+                "self": "https://babieshelpingscience.com/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
             }
         }
     }

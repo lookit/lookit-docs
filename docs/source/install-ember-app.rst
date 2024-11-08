@@ -1,14 +1,14 @@
 Installation: ember-lookit-frameplayer (Ember app)
 ==================================================
 
-``ember-lookit-frameplayer`` is a small Ember application that allows both researchers to
-preview an experiment and users to participate in an experiment. This is
+``ember-lookit-frameplayer`` is the Lookit experiment runner. It is a small Ember application that allows researchers to design experiments, and then
+preview or participate in the experiment. This is
 meant to be used in conjunction with the `Lookit API Django
 project <https://github.com/lookit/lookit-api>`__, which contains the
-Experimenter and Lookit applications. The Django application will proxy
-to these Ember routes for previewing/participating in an experiment.
+rest of the code for the CHS site. The Django application will proxy
+to these Ember routes for previewing/participating in a Lookit experiment.
 
-In order to run the frame player as it works on Lookit, you will need to
+In order to run the Lookit experiment runner as it works on CHS, you will need to
 additionally install the Django app ``lookit-api`` and then follow the
 local frame development instructions to make sure it communicates with
 the Ember app. This way, for instance, an experiment frame will be able

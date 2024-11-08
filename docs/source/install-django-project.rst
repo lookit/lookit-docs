@@ -1,13 +1,12 @@
 Installation: lookit-api (Django project)
 =========================================
 
-``lookit-api`` is the codebase for Experimenter and Lookit, excluding the actual
+``lookit-api`` is the codebase for everything on the CHS website, excluding the actual
 studies themselves. Any functionality you see as a researcher or a
 participant (e.g., signing up, adding a child, editing or deploying a
 study, downloading data) is part of the ``lookit-api`` repo. 
-This project is built using Django and PostgreSQL. (The studies
-themselves use Ember.js; see Ember portion of codebase,
-`ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`__.),
+This project is built using Django and PostgreSQL. The internal studies themselves are written with front-end experiment building frameworks (see the Lookit Ember.js portion of codebase here:
+`ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`__ and the jsPsych portion here: `lookit-jspsych <https://github.com/lookit/lookit-jspsych>`__).
 It was initially developed by the `Center for Open Science <https://cos.io/>`__.
 
 If you install only the ``lookit-api`` project locally, you will be able
@@ -150,7 +149,22 @@ the superuser you created earlier using manage.py.
 Handling video
 ~~~~~~~~~~~~~~
 
-This project includes an incoming webhook handler for an event generated
+Both the jsPsych and Lookit experiment runners require AWS credentials for uploading video to AWS S3 buckets during experiments and retrieving those video files through the website. This works slightly differently for the two experiment runners.
+
+For the Lookit experiment runner, the video uploading credentials stored in the lookit-api .env file are AWS S3 region: ``S3_REGION``, bucket name: ``S3_BUCKET``, secret key ID: ``S3_ACCESS_KEY_ID``, and secret access key: ``S3_SECRET_ACCESS_KEY``. The IAM user/role associated with these credentials needs permission to access and upload objects into the corresponding bucket.
+
+For the jsPsych experiment runner, the .env file must contain the AWS S3 region: ``JSPSYCH_S3_REGION`` and bucket name: ``JSPSYCH_S3_BUCKET``. The secret credentials that are needed for uploading videos during the experiment are temporary and generated "on the fly" when a user starts the experiment.
+
+You will also need separate AWS credentials that the site uses for retrieving videos and generating the jsPsych temporary uploading credentials. This information is stored in the .env file, and includes a secret key ID: ``AWS_ACCESS_KEY_ID`` and a secret key: ``AWS_SECRET_ACCESS_KEY``. The AWS IAM user/role associated with these credentials must have permission to access the two video storage buckets and retrieve objects - this allows the site to display consent videos and make the session recordings available to researchers (only if they have all of the required permissions!). This IAM user/role also needs permissions for generating the temporary credentials that are needed for jsPsych experiments, which includes permission to access and upload objects into the jsPsych bucket.
+
+After a video is uploaded to an AWS S3 bucket, it triggers an AWS Lambda function that notifies the website about the video. This is how information about videos is stored in our database. The Lambda function uses a secret key to create a signature that is added to the header of the video POST request, which the lookit-api must verify before accepting the POST request. Therefore the lookit-api requires the same secret key that is accessed by the Lambda function in order to generate the signature. This key is stored in the .env file as ``AWS_LAMBDA_SECRET_ACCESS_KEY``.
+
+Older versions of Lookit Studies
+-----------------------------------
+
+Older versions of the Lookit experiment runner (prior to Jan 30 2024) upload videos through an out-of-network service called Pipe. If you are not worried about running studies that use this older experiment runner version, then you can skip this set up.
+
+The older Lookit experiment runner versions require an incoming webhook handler for an event generated
 by the Pipe video recording service used by ember-lookit-frameplayer when video is transferred to our S3
 storage. This requires a webhook key for authentication. It can be
 generated via our Pipe account and, for local testing, stored in

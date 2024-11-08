@@ -164,7 +164,7 @@ Tips and tricks (advanced)
 Setting up a CDN (optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are very concerned with optimizing speed of delivery of your stimuli for users worldwide, best practice is to use a Content Delivery Network (CDN). You can read a description of what this is and when it might be helpful `here <https://gtmetrix.com/why-use-a-cdn.html>`__. This is unlikely to be necessary for most Lookit researchers, but if you do choose to set one up, it's cheap and reasonably straightforward. One option we have used successfully is Amazon CloudFront.
+If you are very concerned with optimizing speed of delivery of your stimuli for users worldwide, best practice is to use a Content Delivery Network (CDN). You can read a description of what this is and when it might be helpful `here <https://gtmetrix.com/why-use-a-cdn.html>`__. This is unlikely to be necessary for most CHS researchers, but if you do choose to set one up, it's cheap and reasonably straightforward. One option we have used successfully is Amazon CloudFront.
 
 Making dummy stimuli
 ~~~~~~~~~~~~~~~~~~~~~~

@@ -1,5 +1,5 @@
 ##########################################
-5. Study protocol exercises
+3. Lookit study protocol exercises
 ##########################################
 
 Now that you've walked through the process of creating your own studies, it's time to try out what you've learned! At the end of this section, you will:
@@ -123,13 +123,13 @@ You'd like to include a training section where parents are asked a multiple-choi
 7. Draft a parent-facing study description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write a :ref:`purpose` field for a Lookit study. The study can be:
+Write a :ref:`purpose` field for a CHS study. The study can be:
 
-* Something you're planning to run on Lookit
+* Something you're planning to run on CHS
 * Something you've run in your lab before, or a favorite study from another lab that you're familiar with
 * Or if you don't have anything in mind: try writing a purpose field for a study about `infant-directed speech preference <https://psyarxiv.com/s98ab>`_.
 
-Post your draft description of the study purpose in the Lookit Slack workspace (#researchers) for feedback (yes, really!). 
+Post your draft description of the study purpose in the Lookit/CHS Slack workspace (#researchers) for feedback (yes, really!). 
 
 Look for other tutorial participants' drafts to give feedback on too! As you read, consider:
 

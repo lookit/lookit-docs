@@ -4,13 +4,13 @@
 Contributor Guidelines
 ==================================
 
-Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
+Interested in helping write the code behind the CHS platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
 
-The content of this page applies to all three Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments & components to use), and  ``lookit-docs`` (the documentation you're reading now).
+The content of this page applies to all four CHS repos: ``lookit-api`` (CHS site), ``ember-lookit-frameplayer`` (Lookit experiment runner), ``lookit-jspsych`` (jsPsych experiment runner), and ``lookit-docs`` (the documentation you're reading now).
 
 .. admonition:: Where's the code I need?
 
-   If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to `ember-lookit-frameplayer`.
+   If you only want to change something about the CHS site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run ``lookit-api`` and can follow the Django project installation steps. If you want to develop Lookit experiment frames or change how that experiment runner, you will need to follow the steps for local Lookit experiment runner development, installing *both* ``lookit-api`` and ``ember-lookit-frameplayer`` and telling them how to talk to each other. Your changes, however, will likely be limited to ``ember-lookit-frameplayer``. For the lookit-jspsych experiment runner, you will also need to install *both* ``lookit-api`` and ``lookit-jspsych``, and set up your local ``lookit-api`` to import your local ``lookit-jspsych`` packages. However, if you you want to develop your own jsPsych plugins (trials), you can do without installing any CHS code - just follow the jsPsych documentaton for `setting up your environment <https://www.jspsych.org/latest/developers/configuration/>`_ and `developing plugins <https://www.jspsych.org/latest/developers/plugin-development/>`_.
 
 Prerequisites
 ~~~~~~~~~~~~~~~
@@ -24,9 +24,9 @@ Getting started
 
 At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`__.
 
-You should plan to make feature-specific branches off of the ``develop`` branch (for lookit-api, lookit-docs) or ``master`` branch (for ember-lookit-frameplayer) of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
+You should plan to make feature-specific branches off of the ``develop`` branch (for ``lookit-api``, ``lookit-docs``), ``master`` branch (for ``ember-lookit-frameplayer``), or ``main`` branch (for ``lookit-jspsych``) of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
 
-First create your own fork of lookit-api, ember-lookit-frameplayer, and/or lookit-docs. Follow the directions for installation of lookit-api or ember-lookit-frameplayer if needed. 
+First create your own fork of ``lookit-api``, ``ember-lookit-frameplayer``, ``lookit-jspsych``, and/or ``lookit-docs``. Follow the directions for installation of ``lookit-api`` or ``ember-lookit-frameplayer`` if needed. 
 
 
 Ignoring some files
@@ -94,9 +94,9 @@ Next, push all your local changes to your own fork. You should push your code (m
 
 Prior to finalizing your commit, make sure to clean up your code to comply with PEP8. Since both black and isort are included in our development dependencies, you should just be able to run ``isort -rc . --skip venv`` to fix your imports, and similarly ``black . --exclude=venv`` to "blacken" your changes. With both commands, replace ``venv`` with the actual name of your virtual env directory so that you don't blacken/isort your dependencies.
 
-When your branch is ready (you've tested your changes out, and your code has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), then click ``new pull request``.   Change the base to ``develop`` and the compare to ``feature/my-validation-feature``. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by Lookit staff; changes may be requested before changes are merged into the develop branch. To allow Lookit staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
+When your branch is ready (you've tested your changes out, and your code has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), then click ``new pull request``.   Change the base to ``develop`` and the compare to ``feature/my-validation-feature``. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by CHS staff; changes may be requested before changes are merged into the develop branch. To allow CHS staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
 
-IMPORTANT: WHEN YOUR PR IS ACCEPTED, stop using your branch right away (or delete it altogether).  New features (or enhanced versions of your existing feature) should be created on brand new branches (after pulling in all the fresh changes from ``develop``).
+IMPORTANT: WHEN YOUR PR IS ACCEPTED, stop using your branch right away (or delete it altogether).  New features (or enhanced versions of your existing feature) should be created on brand new branches based off the most up-to-date versions of the repository's 'base' branch (i.e. ``develop`` for ``lookit-api`` and ``lookit-docs``, ``master`` branch for ``ember-lookit-frameplayer``, or ``main`` branch for ``lookit-jspsych``).
 
 Writing your tests
 ~~~~~~~~~~~~~~~~~~~~
@@ -114,8 +114,10 @@ In ``ember-lookit-frameplayer``, you should generally add a test file under ``te
 
 To learn more about how testing is supposed to work for ``ember-lookit-frameplayer``, see https://guides.emberjs.com/v2.11.0/testing/.
 
+For ``lookit-jspsych``, we use the `Jest framework <https://jestjs.io/>`_ and have re-used much of the `jsPsych test configuration <https://www.jspsych.org/latest/developers/configuration/#testing>`_. If you add or modify any ``lookit-jspsych`` code, you will likely need to add/edit tests that live alongside the source code in the ``.spec.ts`` files.
 
-Creating a release (ember-lookit-frameplayer)
+
+Creating a Lookit experiment runner release
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ember-lookit-frameplayer repo is semantically versioned. 
@@ -150,3 +152,9 @@ To create a new bugfix release for an older version:
 2. Apply appropriate patch and increment version on new bugfix branch.
 
 3. Create a new release on GitHub, exactly matching new version name. Include release notes explaining what has been fixed.
+
+
+Creating a jsPsych experiment runner release
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Coming soon!

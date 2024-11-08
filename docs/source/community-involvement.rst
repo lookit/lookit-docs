@@ -1,11 +1,11 @@
 Community involvement
 ================================================
 
-Currently Lookit is run by three people working at home during a
+Currently the Children Helping Science (CHS) project is run by three people working at home during a
 pandemic. We had a description here of all the things we do, but really,
 enough said.
 
-Ways *all* Lookit researchers contribute
+Ways *all* CHS researchers contribute
 ----------------------------------------
 
 1. Peer-to-peer support
@@ -18,27 +18,27 @@ that were confusing!
 2. Provide peer feedback on studies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before submitting a study to Lookit, researchers gather peer feedback
+Before submitting a study to CHS, researchers gather peer feedback
 (see :ref:`Study approval process <study_approval>`).
 This is a quick and lightweight process, not scientific peer review, but
 it does a lot to improve the participant experience! As a researcher on
-Lookit, you will help to review other studies as well as posting your
+CHS, you will help to review other studies as well as posting your
 own for feedback.
 
 3. Recruitment
 ~~~~~~~~~~~~~~
 
 Once you start running your study, you will need to actively recruit
-participants. There’s a shared Lookit participant pool, but we need
+participants. There’s a shared CHS participant pool, but we need
 everyone’s combined efforts to build it.
 
 If you have programming experience (or employ someone who does)
 ---------------------------------------------------------------
 
-Lookit is an open-source project, but struggles with the problem that relatively few of 
+CHS is an open-source project, but struggles with the problem that relatively few of 
 its primary stakeholders (developmental researchers) feel equipped to contribute to 
 feature development. If you have experience programming in Python, the most helpful way 
-to contribute is to :ref:`Set up for local development <Local dev setup>` on the Lookit codebase, take 
+to contribute is to :ref:`Set up for local development <Local dev setup>` on the CHS codebase, take 
 ownership of an issue in the lookit-api repo and make a PR with your implementation 
 (and your unit tests ;) ).
 
@@ -65,9 +65,9 @@ The existence of the Working Groups has many advantages, including:
   and only by those who (e.g.,) happen to be paying attention to a general
   email listserv at that time.
 
-Anyone involved with a current study on Lookit, or who is developing
+Anyone involved with a current study on CHS, or who is developing
 one, is very welcome to join a Working Group! We also have an
-expectation that **any research team hosting a study on Lookit will have
+expectation that **any research team hosting a study on CHS will have
 at least one member who is a member of at least one Working Group**,
 with a flexible time commitment of about 2 hours/week. The person
 meeting this requirement for their research group should be a “main”
@@ -80,7 +80,7 @@ Here are the current working groups:
 Best Practices for Video Chat Studies
 --------------------------------------------------------------------------------
 
-The goal of this Working Group is to develop best practices (and, rarely, rules) about running video chat studies (also called "synchronous" studies, these are typically "Zoom" studies). Over the past couple of years, there have been many groups independently identifying great ways to do video chat studies, and we hope to discuss and iterate on what a diverse group of researchers have done. As we develop resources for best practices, members of Lookit (and others) may choose to follow them because they are ideas that have been refined over time by a large and diverse group of people, and also just because consistency can be inherently valuable (e.g., even if a practice is not inherently better than some alternative, being consistent with our participants can make things easier and more predictable for them). See a draft of some ideas `here <https://docs.google.com/document/d/1t5MY6tfA_o9MVGSBa0j_2hXfDRpRq5mSLnoayUjBLUA/edit?usp=sharing>`_.
+The goal of this Working Group is to develop best practices (and, rarely, rules) about running video chat studies (also called "synchronous" studies, these are typically "Zoom" studies). Over the past couple of years, there have been many groups independently identifying great ways to do video chat studies, and we hope to discuss and iterate on what a diverse group of researchers have done. As we develop resources for best practices, members of CHS (and others) may choose to follow them because they are ideas that have been refined over time by a large and diverse group of people, and also just because consistency can be inherently valuable (e.g., even if a practice is not inherently better than some alternative, being consistent with our participants can make things easier and more predictable for them). See a draft of some ideas `here <https://docs.google.com/document/d/1t5MY6tfA_o9MVGSBa0j_2hXfDRpRq5mSLnoayUjBLUA/edit?usp=sharing>`_.
 
 Recruitment (social media, etc.)
 --------------------------------------------------------------------------------
@@ -98,17 +98,17 @@ Eliciting and organizing feature feedback from researchers
 
 The goal of this Working Group is to gather information from researchers
 in multiple ways (e.g., surveys, focus groups, monitoring of questions
-on Slack and GitHub issues) about potential new features for Lookit, and
+on Slack and GitHub issues) about potential new features for CHS, and
 work towards prioritizing them. This requires synthesizing information
 about what would best benefit researchers and what is easiest for the
 programmers to implement, and so this group will work with the
 programmers as well.
 
-Advise and support new Lookit researchers (“Researcher onboarding”)
+Advise and support new CHS researchers (“Researcher onboarding”)
 --------------------------------------------------------------------------------
 
 The goal of this Working Group is to help new researchers who are
-designing their first Lookit study. This can involve creating additional
+designing their first CHS study. This can involve creating additional
 tutorials/samples/documentation, providing 1-on-1 mentoring, and
 monitoring a Slack channel where new researchers ask questions.
 
@@ -116,7 +116,7 @@ Parent-facing “first 10 minutes”
 --------------------------------------------------------------------------------
 
 The goal of this Working Group is to maximize the parent-facing
-experience, from finding Lookit to finishing the consent for the child’s
+experience, from finding CHS to finishing the consent for the child’s
 first study. Example work might include revising the homepage and doing
 focus group (user experience) studies of naive parents navigating it,
 creating informational videos about what participation entails and
@@ -138,15 +138,15 @@ Researcher-facing “first 10 minutes”
 --------------------------------------------------------------------------------
 
 The goal of this Working Group is to maximize the researcher-facing
-experience, from discovering Lookit to deciding whether or not it might
+experience, from discovering CHS to deciding whether or not it might
 be a good fit for their research. For example, this group might create a
 webpage that is directed towards PIs, to determine in 3-5 minutes
-whether joining Lookit might be a good use of a graduate student’s time.
+whether joining CHS might be a good use of a graduate student’s time.
 Another webpage might be directed towards graduate students, to get a
-sense of the types of research Lookit is a good fit for, and what types
-of skills would be necessary to conduct that research via Lookit. Much
+sense of the types of research CHS is a good fit for, and what types
+of skills would be necessary to conduct that research via CHS. Much
 of this information already exists, but optimizing it for different
-audiences could make a big difference in the uptake of Lookit by
+audiences could make a big difference in the uptake of CHS by
 research teams.
 
 The A-Team
@@ -154,11 +154,11 @@ The A-Team
 
 Named after a TV show about mercenaries for hire: “If you have a
 problem, if no one else can help, and if you can find them, maybe you
-can hire… the A-Team.” For Lookit, this Working Group will work on all
+can hire… the A-Team.” For CHS, this Working Group will work on all
 of the miscellaneous tasks that are shorter term (so they don’t have
 their own working group) but totally essential for the development of
-Lookit. Maybe a couple of weeks working on legal and ethical issues to
-build a knowledge base for getting Lookit access agreement signed. And
+CHS. Maybe a couple of weeks working on legal and ethical issues to
+build a knowledge base for getting CHS access agreement signed. And
 then the next project might be exploring non-monetary compensation for
 families (certificates? personalized information?). All skill sets
 welcome for a well-balanced group of problem solvers.

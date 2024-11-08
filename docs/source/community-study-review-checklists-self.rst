@@ -4,7 +4,7 @@ Self review checklist
 =====================
 
 Here is a checklist to work through as you prepare to submit your study.
-Lookit staff will look through these categories as well during internal
+CHS staff will look through these categories as well during internal
 review, so you can avoid unnecessary rounds of review by thinking
 through each item before submission.
 
@@ -79,10 +79,10 @@ Discoverable
 
 When you start a new study, we recommend making it non-discoverable while you pilot. That 
 way you can take your time fixing any issues that come up during piloting. Once 
-it's discoverable, it will be listed on the Lookit "studies" page and email announcements
+it's discoverable, it will be listed on the CHS "studies" page and email announcements
 will be sent out to all families with a child who's eligible. 
 
--  If you want your study posted on the Lookit studies page once you start collecting data,
+-  If you want your study posted on the CHS studies page once you start collecting data,
    is the “discoverable” box checked?  If you don’t (because you want to pilot or recruit
    only from your own database), is it unchecked?
 
@@ -94,7 +94,7 @@ Researcher contact information
 Exit URL
 --------
 
--  Is this someplace reasonable (e.g. https://lookit.mit.edu/studies/history)? Make sure it’s not the
+-  Is this someplace reasonable (e.g. https://childrenhelpingscience.com/studies/history)? Make sure it’s not the
    staging server/localhost/etc.
 
 Purpose / “What we’re studying”
@@ -143,13 +143,13 @@ Compensation
    said three days, that means that you have through Monday for
    participants from Friday. They may be counting on the money.
 
-Eligibility description, min/max ages, eligibility criteria expression (all self-review & Lookit review only)
--------------------------------------------------------------------------------------------------------------
+Eligibility description, min/max ages, eligibility criteria expression
+-----------------------------------------------------------------------------
 
 -  Are any eligibility criteria beyond age either language-based (e.g., speaking English
-   or being bilingual) or rare (e.g., ASD)? We :ref:`generally ask that other 
-   criteria be implemented as part of analysis, rather than preventing families from
-   participating.<style_guide_eligibility>`.
+   or being bilingual) or rare (e.g., ASD)? We generally ask that other 
+   criteria be :ref:`implemented as part of analysis, rather than preventing families from
+   participating<style_guide_eligibility>`.
    
 -  Don’t specify the age range in the criteria expression in addition to
    the min/max ages (it just introduces some potential for confusion if
@@ -182,12 +182,12 @@ Protocol configuration
 
 -  Is your study being randomized correctly? (e.g., you have the right
    audio and videos for the conditions they’re intended to be for) Note:
-   this is NOT something Lookit staff will confirm for you during
+   this is NOT something CHS staff will confirm for you during
    review; we will generally run through one random condition focusing
    on communication and any technical issues.
 -  Are the audio/videos running the way you want them to? (e.g. video is
    located in the right place on the screen) Again, this is NOT
-   something Lookit staff will confirm for you as we don’t know how you
+   something CHS staff will confirm for you as we don’t know how you
    wanted them to look!
 -  Are all stimuli hosted at URLs starting with https://, not http://?
    (Insecure hosts won’t be allowed for both security and performance

@@ -3,7 +3,7 @@
 Setup for local development
 ===================================
 
-These instructions will walk you through setting up to run Lookit locally.
+These instructions will walk you through setting up to run CHS locally.
 
 Overview
 --------
@@ -14,18 +14,18 @@ For a full local development setup, we will need to install *both* the the Djang
 (``lookit-api``) and the Ember app (``ember-lookit-frameplayer``), tell
 them how to talk to each other, and run both of those servers locally.
 
-- On Lookit, we will add some basic information to our superuser, and then add a child and demographic data. 
+- On CHS, we will add some basic information to our superuser, and then add a child and demographic data. 
 - We then create a study locally.
-- In ember-lookit-frameplayer, we'll add a token which gets added to the headers of the API requests so that Lookit knows about the logged-in user making the request. 
+- In ember-lookit-frameplayer, we'll add a token which gets added to the headers of the API requests so that CHS knows about the logged-in user making the request. 
 - We can then navigate directly to the study from the Ember app to bypass the build process locally.
 
 Option 2:
 ~~~~~~~~~~~~~~~~
-If you are only making changes to the experiment runner (ember-lookit-frameplayer), you have the option of running only the Ember app locally, and having it talk to the Lookit staging server instead of a local Lookit server. 
+If you are only making changes to the Lookit experiment runner (ember-lookit-frameplayer), you have the option of running only the Ember app locally, and having it talk to the CHS staging server instead of a local CHS server. 
 
 Either way, you will be able to make changes to frames locally and immediately see
 the results of those changes, participating in a study just as if you
-were a participant on the Lookit website. You will edit the study definitions, and see
+were a participant on the CHS website. You will edit the study definitions, and see
 the collected data, on your local instance or on the staging server, depending on the option you choose. 
 
 
@@ -37,7 +37,7 @@ Note: this is optional if you are only making changes to ember-lookit-frameplaye
 1. Follow the instructions to install the `django
    app <install-django-project.html>`__ locally. Run the server.
 
-2. Navigate to https://localhost:8000/login/ to log in to Lookit. Use the superuser
+2. Navigate to https://localhost:8000/login/ to log in to CHS. Use the superuser
    credentials created in the django installation steps, and set up 2-factor 
    authentication so you'll be able to access the researcher and admin interfaces
 
@@ -102,9 +102,9 @@ Ember App steps
 
 3. Add your token and lookit-api local host address 
    to the ember-lookit-frameplayer/.env file. This will allow your Ember app to talk
-   to your local API or to the Lookit staging server, depending on the option you chose
+   to your local API or to the CHS staging server, depending on the option you chose
    above. If you are using a local installation of lookit-api, insert the token you saved
-   earlier. If you are using the Lookit staging server, please contact the admins for 
+   earlier. If you are using the CHS staging server, please contact the admins for 
    an API token for your account. Your .env file will now look like this:
 
    .. code:: bash
@@ -114,8 +114,8 @@ Ember App steps
       LOOKIT_API_KEY='Token <token here>'
       LOOKIT_API_HOST='https://localhost:8000'
 
-   If you are using the Lookit staging server, this will be identical except that the
-   last line should be ``LOOKIT_API_HOST='https://lookit-staging.mit.edu'``.
+   If you are using the CHS staging server, this will be identical except that the
+   last line should be ``LOOKIT_API_HOST='https://babieshelpingscience.com'``.
 
 4. Run the ember server: 
    
