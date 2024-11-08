@@ -1,6 +1,6 @@
 # lookit-docs
 
-Documentation for Children Helping Science (formerly "Lookit") project, including use of the CHS platform, the internal Lookit and jsPsych experiment runners, and associated repositories.
+Documentation for Children Helping Science (aka "Lookit") project, including use of the CHS platform, the internal Lookit and jsPsych experiment runners, and associated repositories.
 
 CHS platform: https://lookit.readthedocs.io/en/develop/
 
