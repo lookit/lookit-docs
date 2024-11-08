@@ -66,6 +66,16 @@ Families may take part in studies from multiple labs over time. Having one centr
    :maxdepth: 2
    :hidden:
    :glob:
+   :caption: jsPsych studies
+
+   researchers-jspsych-intro
+   Limitations <researchers-jspsych-limitations>
+   Releases <researchers-jspsych-releases>
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :glob:
    :caption: Reviewing your study
 
    community-study-approval-process
