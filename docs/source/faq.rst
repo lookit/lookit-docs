@@ -4,9 +4,10 @@ FAQ
 What is the name of this platform? Children Helping Science or Lookit?
 ---------------------------------------------------------------------------
 
-Children Helping Science (CHS) is the name of the website, and Lookit is the name of the 'default' experiment runner.
+Children Helping Science (CHS) is the name of the website, and is the primary name that participants see when they are recruited to studies. The whole platform was called Lookit when it was first created, but in May 2023, it merged with a separate-but-similar project called Children Helping Science. Now, the platform (website) is called Children Helping Science (CHS), and the 'default' internal experiment runner is called Lookit. 
 
-The whole platform was called Lookit when it was first created. In May 2023, it merged with a separate-but-similar project called Children Helping Science. Now, the platform (website) is called Children Helping Science (CHS), and the internal experiment runner is called Lookit. So if you're used to using the "Lookit" name for the whole site, you'll still see that term used to refer to a specific study type, i.e. studies that use the ember-lookit-frameplayer. You'll also see some remnants of the previous naming system in, for instance, the names of our open-source code repositories - the codebase for the CHS website is "lookit-api" and the CHS documentation is "lookit-docs".
+The Lookit name is also still used in other places, for instance, the names of our open-source code repositories - the codebase for the CHS website is "lookit-api" and the CHS documentation is "lookit-docs". Old links and email addresses are also still functioning, so don't worry about backwards compatibility: links like lookit.mit.edu/whatever - forward to childrenhelpingscience.com/whatever. Lookit is also still the official name of the project for things like the access agreements and some grants. 
+
 
 What is the name of the internal experiment runner? LoOkIt, Look!t, LooKit?
 --------------------------------------------------------------------------------------
