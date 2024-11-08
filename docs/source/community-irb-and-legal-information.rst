@@ -6,9 +6,9 @@ IRB and legal info
 Overview
 ---------
 
-Before you can run a study on CHS, there are three things you'll need to do:
+Before you can run a study on CHS/Lookit, there are three things you'll need to do:
 
-1) Sign and return the access agreement (details below). This covers your entire lab. You only have to do this once.
+1) Sign and return the Lookit access agreement (details below). This covers your entire lab. You only have to do this once.
 
 2) Get IRB approval at your own institution (details below).
 
@@ -20,7 +20,7 @@ Access agreement
 What it is
 ~~~~~~~~~~
 
-In order to use CHS for data collection, the principal investigator (PI) of a research group must first sign
+In order to use CHS/Lookit for data collection (including posting studies that run on other platforms/video chat studies), the principal investigator (PI) of a research group must first sign
 an `institutional 
 agreement <https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20Institutional%20Agreement.pdf>`__
 with MIT that lays out each institution’s rights and responsibilities.
