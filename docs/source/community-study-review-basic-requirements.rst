@@ -11,7 +11,7 @@ requirements, please ask them on Slack.
 
 In addition to the requirements listed below, you are also strongly encouraged
 to review the :ref:`study guidelines<self_review_checklist>` 
-that we use for reviewing Lookit experiments. You are also welcome to give and 
+that we use for reviewing internal Lookit and jsPsych experiments. You are also welcome to give and 
 solicit peer review for your studies on Slack, 
 and we recommend that all studies do this!
 
@@ -49,7 +49,7 @@ Terms of use
 ------------
 
 Your study (including the entire experience that families go through after clicking 
-on the external link) must follow the `Terms of Use <https://lookit.mit.edu/termsofuse/>`__.
+on the external link) must follow the `Terms of Use <https://childrenhelpingscience.com/termsofuse/>`__.
 
 Below are some highlights from these terms that researchers will need to be aware of:
 
@@ -60,7 +60,7 @@ Below are some highlights from these terms that researchers will need to be awar
 - Researchers may not use email addresses or other participant information for any purpose
   other than conducting that specific study. (In fact, we recommend that you don't collect 
   email addresses at all, and instead 
-  :ref:`use the Lookit messaging system<contacting_participants>` to contact families!) 
+  :ref:`use the CHS messaging system<contacting_participants>` to contact families!) 
 
 .. admonition:: Lab contact databases
   

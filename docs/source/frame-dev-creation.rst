@@ -1,7 +1,7 @@
 
 
-Creating custom frames
-==========================
+Creating custom Lookit frames
+======================================
 
 Getting Started
 ~~~~~~~~~~~~~~~

@@ -6,11 +6,11 @@ Coding consent
 Overview
 ===========
 
-At the start of a Lookit study, the parent is asked to provide a verbal statement of informed consent. Unlike in the lab (or at least to a greater extent), it is technically possible for you to end up collecting data from a parent who did NOT consent to participate - e.g., someone idly clicking through who may not understand that this is a research study to do with a child. 
+At the start of an internal study on Children Helping Science, the parent is asked to provide a verbal statement of informed consent. Unlike in the lab (or at least to a greater extent), it is technically possible for you to end up collecting data from a parent who did NOT consent to participate - e.g., someone idly clicking through who may not understand that this is a research study to do with a child. 
 
-For this reason it is critical that you confirm informed consent before using any data from a response! This is baked into the Lookit experimenter interface: you actually do not receive access to responses, or to the associated child, account, or demographic data, until you confirm consent using the consent manager. 
+For this reason it is critical that you confirm informed consent before using any data from a response! This is baked into the CHS experimenter interface: you actually do not receive access to responses, or to the associated child, account, or demographic data, until you confirm consent using the consent manager. 
 
-Responses to your Lookit study will first appear in your study's 'Consent Manager' page, and they start out with a consent status of 'Pending'. Then a researcher working on this study can either 'Approve' or 'Reject' the consent video. Responses with approved consent become available to the researcher through the study's 'Study Responses' page.
+Responses to your study will first appear in your study's 'Consent Manager' page, and they start out with a consent status of 'Pending'. Then a researcher working on this study can either 'Approve' or 'Reject' the consent video. Responses with approved consent become available to the researcher through the study's 'Study Responses' page.
 
 ==============================
 Managing consent rulings
@@ -42,7 +42,7 @@ When you click on any response in the list to the left, more information about t
 .. tip::
    It is possible, although rare, for there to be multiple consent videos associated with a single response. This would occur, for instance, when researchers are collecting both parental consent and child assent videos, which would be judged together. In these cases, you will see more than one number inside the arrow buttons below the video, and you can use the buttons to navigate across all consent videos for that session. Even with multiple videos, there will only be one comment allowed per session (since the comment box is intended for notes about the overall decision, rather than notes on individual videos).
 
-For each response session in your list, you should watch the video and decide whether it shows informed consent. You can choose to 'Accept' or 'Reject' a response by changing the value in that response's dropdown box. You can also add a comment about that response or consent decision, if desired, to keep track of any additional information. You can enter a comment without changing the consent ruling (e.g., to say "Emailed this family to confirm consent"). In general, you should 'accept' consent only when the consent video shows an adult reading the consent statement audibly (or signing in ASL), but see the `Terms of Use <https://lookit.mit.edu/termsofuse/>`_ for details (for instance, you may be able to contact a family to confirm consent by email in some cases).
+For each response session in your list, you should watch the video and decide whether it shows informed consent. You can choose to 'Accept' or 'Reject' a response by changing the value in that response's dropdown box. You can also add a comment about that response or consent decision, if desired, to keep track of any additional information. You can enter a comment without changing the consent ruling (e.g., to say "Emailed this family to confirm consent"). In general, you should 'accept' consent only when the consent video shows an adult reading the consent statement audibly (or signing in ASL), but see the `Terms of Use <https://childrenhelpingscience.com/termsofuse/>`_ for details (for instance, you may be able to contact a family to confirm consent by email in some cases).
 
 .. image:: _static/img/consent_manager_change_ruling.png
     :alt: Response list showing a comment and the dropdown consent ruling options
@@ -59,9 +59,9 @@ The most recent consent ruling, the time of that ruling, any comment, and the na
 Managing responses that use survey consent
 ----------------------------------------------
 
-In general, all studies on CHS should use video recordings for consent. However there may be studies that collect consent through survey-style questions - for instance, in rare cases when, for legal reasons, it is not possible to collect video consent. In internal Lookit studies, this is done using the ``survey-consent`` frame. 
+In general, all studies on CHS should use video recordings for consent. However there may be studies that collect consent through survey-style questions - for instance, in rare cases when, for legal reasons, it is not possible to collect video consent. In internal Lookit and jsPsych studies, this is done using the ``survey-consent`` frame (Lookit) and the ``chsRecord.VideoConsentPlugin`` (jsPsych). 
 
-When a study uses survey questions for consent, researchers are still responsible for verifying that the family has actually consented by checking their answers to the consent question(s). On the Consent Manager page, any sessions in the response list that contain a ``survey-consent`` frame will be flagged with "[Survey consent]". When such a response is selected, a warning message will also appear at the top of the Video area. Depending on the study, there may or may not also be a consent video associated with the response session; if so then it will appear in the Video area, otherwise there will another warning message saying "No video found for this response".
+When a study uses survey questions for consent, researchers are still responsible for verifying that the family has actually consented by checking their answers to the consent question(s). On the Consent Manager page, any sessions in the response list that contain a ``survey-consent`` frame (Lookit) or ``chsRecord.VideoConsentPlugin`` (jsPsych) will be flagged with "[Survey consent]". When such a response is selected, a warning message will also appear at the top of the Video area. Depending on the study, there may or may not also be a consent video associated with the response session; if so then it will appear in the Video area, otherwise there will another warning message saying "No video found for this response".
 
 .. image:: _static/img/consent_manager_response_selected_survey_consent_no_video.png
     :alt: Response that contains survey consent questions and no video
@@ -98,7 +98,7 @@ A summary of responses is shown to the right of the consent manager, providing s
 Withdrawn responses
 --------------------
 
-If a parent chooses to withdraw video data at the end of the study, that will be noted in the list item for the response (before the comment it will say 'Withdrawn' and the response will be crossed out). All video data beyond consent will be inaccessible to researchers, and it will be deleted automatically from Lookit servers after seven days. 
+If a parent chooses to withdraw video data at the end of the study, that will be noted in the list item for the response (before the comment it will say 'Withdrawn' and the response will be crossed out). All video data beyond consent will be inaccessible to researchers, and it will be deleted automatically from CHS servers after seven days. 
 
 However, you are still able to make a consent ruling about the consent video; this will still impact access to the remaining non-video response data as well as associated child, demographic, and account data. 
 

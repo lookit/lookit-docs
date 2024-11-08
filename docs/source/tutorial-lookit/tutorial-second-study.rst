@@ -1,5 +1,5 @@
 #####################################################
-4. A study from the ground up
+2. A Lookit study from the ground up
 #####################################################
 
 Now that you've gotten your feet wet and are comfortable using Lookit's experimenter interface to modify your study protocol configuration, it's time to take a closer look at how to build your own study. 
@@ -17,23 +17,23 @@ Introduction: intermodal matching study
 
 Imagine you're looking to replicate the finding that infants can detect which moving face "goes with" a speech stream, an ability known as intermodal matching. In your study, babies will watch several short videos of two women's faces - one face on the left and one on the right. Both women are talking, but babies only hear the audio from one of them in each clip. (There are four trials, and who's talking is counterbalanced - babies either hear left, right, right, left audio or right, left, left, right audio.) 
 
-You plan to code the video collected on Lookit for preferential looking - whether the child is looking to the left of the screen, right of the screen, or away. Because you are eventually hoping to develop a measure that can be used to detect individual differences linked to social development, you are also including a short survey on parenting beliefs.
+You plan to code the video collected on CHS for preferential looking - whether the child is looking to the left of the screen, right of the screen, or away. Because you are eventually hoping to develop a measure that can be used to detect individual differences linked to social development, you are also including a short survey on parenting beliefs.
 
-.. admonition:: This is a real study that was run on Lookit!
+.. admonition:: This is a real study that was run on CHS!
 
    The study stimuli and protocol have been generously shared by Halie Olson and Rebecca Saxe for use as an example. Slight modifications have been made for teaching purposes.
 
 Creating the study and filling out study fields
 -----------------------------------------------
 
-This time, instead of copying an existing study, we're going to create our own from scratch so that we see every field. Go to `<https://lookit.mit.edu/exp/studies/>`_ and click the green "Create Study" button at top right:
+This time, instead of copying an existing study, we're going to create our own from scratch so that we see every field. Go to `<https://childrenhelpingscience.com/exp/studies/>`_ and click the green "Create Study" button at top right:
 
-.. image:: _static/img/tutorial/create_study_button.png
+.. image:: ../_static/img/tutorial/create_study_button.png
     :alt: Create Study button
     
 This will bring you to a screen with a bunch of fields to fill out:
 
-.. image:: _static/img/tutorial/create_study.png
+.. image:: ../_static/img/tutorial/create_study.png
     :alt: Study creation view
 
 In a separate tab, open up the documentation about these fields for fuller explanations of what each one should contain: :ref:`study fields`. Below is the study-specific information you'll need to fill out each field.
@@ -60,7 +60,7 @@ Compensation
   Here's the actual compensation description that was used - you can copy it: "After you participate, we'll email you a $4 Amazon gift card as a thank-you. (One gift card per child; child must be in the age range for the study.)"
 
 Exit URL
-  After the study let's send families to their study history, where they can see their videos right away! Use "https://lookit.mit.edu/studies/history/"
+  After the study let's send families to their study history, where they can see their videos right away! Use "https://childrenhelpingscience.com/studies/history/"
 
 Participant Eligibility Description
   "For babies ages 4-18 months"
@@ -109,24 +109,24 @@ We'll start with a standard setup frame called "exp-video-config".
 
 Take a look at the documentation for this frame :ref:`here <elf:exp-video-config>`. You'll see a screenshot of what it looks like, and under "Examples" you'll see examples of how to define this frame in your study protocol:
 
-.. image:: _static/img/tutorial/exp_video_config.png
+.. image:: ../_static/img/tutorial/exp_video_config.png
     :alt: Exp-video-config frame docs
     
 Copy one of the definitions of the "video-config" frame (``"video-config": { ... }``, as shown highlighted above), and open up your study's protocol editor. Paste this into the "frames" value, like this:
 
-.. image:: _static/img/tutorial/video_config_added_to_frames.png
+.. image:: ../_static/img/tutorial/video_config_added_to_frames.png
     :alt: Adding the video-config example to frames
     
 Edit the text if you'd like, so it references your own lab and an appropriate contact method!
 
 That defines a frame that's now available for us to use. In order to actually use it, add it to your "sequence" as well:
 
-.. image:: _static/img/tutorial/video_config_added_to_sequence.png
+.. image:: ../_static/img/tutorial/video_config_added_to_sequence.png
     :alt: Adding the video-config example to sequence
     
 .. admonition:: The key for your frame can be whatever you want
 
-   There's nothing magical about the "video-config" key given to this frame - you can change it to whatever you want, as long as the key in ``frames`` matches what you call it in ``sequence``. Just don't put an underscore in it (see the :ref:`experiment runner documentation <elf:protocol configuration>`).
+   There's nothing magical about the "video-config" key given to this frame - you can change it to whatever you want, as long as the key in ``frames`` matches what you call it in ``sequence``. Just don't put an underscore in it (see the :ref:`Lookit experiment runner documentation <elf:protocol configuration>`).
    
 Close the editor, save your protocol, and preview your study. Make sure to click "build experimenter runner" if you have not already done so; you will be emailed when it is built and then you can preview your study. You should see the setup frame, looking just like the screenshot in the docs.
 
@@ -135,18 +135,18 @@ Close the editor, save your protocol, and preview your study. Make sure to click
 
 Now that your participants have their webcam set up, the very first thing you need to do - before starting any study procedures - is collect informed consent. Consent frames are treated somewhat specially: you will only see any data from participants who get through your consent page, and videos collected on the consent page will be available for you to review and confirm before you can access the remaining data from the corresponding sessions.
 
-Unless you receive specific permission from Lookit, you'll be asked to use the standard video consent (and/or assent) frames to keep the experience for participants consistent.
+Unless you receive specific permission from CHS, you'll be asked to use the standard video consent (and/or assent) frames to keep the experience for participants consistent.
 
 This study is for babies, so we don't need to collect child assent, just parental consent. Go to the frame docs and select 'exp-lookit-video-consent' on the sidebar. Just like you did for the setup frame, copy the sample frame definition (``"video-consent": {...}``) and add it to your study protocol frames and sequence, like this:
 
-.. image:: _static/img/tutorial/adding_video_consent.png
+.. image:: ../_static/img/tutorial/adding_video_consent.png
     :alt: Adding the video-consent example to sequence
 
 Note that you will need to add commas between the previous and new items in both "frames" and "sequence", as circled above.
 
 Save and preview again. Now when you click "Next" from the video config page, you'll see a consent page. The sample text is pretty silly, though! Change each of the following fields to more appropriate text for this study, substituting in your own information for the things shown in ``<brackets like this>``. For more information on what each of these fields is, click on "Parameters" in the frame documentation:
 
-.. image:: _static/img/tutorial/frame_docs_properties.png
+.. image:: ../_static/img/tutorial/frame_docs_properties.png
     :alt: Properties as displayed in frame docs
 
 PIName
@@ -196,7 +196,7 @@ Go to the frame documentation, and select the "exp-lookit-text" frame. Just like
 
 For convenience, this time, let's put "study-intro" FIRST in the sequence, so that when we preview our study it's easy for us to see the changes we make to customize the text on this frame:
 
-.. image:: _static/img/tutorial/study_intro_first.png
+.. image:: ../_static/img/tutorial/study_intro_first.png
     :alt: Putting the study-intro frame first
 
 Save your protocol and go ahead and preview your study. You should see a simple text frame first. Let's change the ``blocks`` value to show an appropriate overview for this study: copy and paste the section below to replace the existing ``"blocks": [...]`` piece:
@@ -482,7 +482,7 @@ It will have the same format and possible answers as the others. You can copy an
 8. Exit survey
 ~~~~~~~~~~~~~~
 
-Finally, to wrap up our study we need to include an "exp-lookit-exit-survey" frame. (This is required of all Lookit studies to keep the experience for parents fairly consistent.) This is where parents have an option to choose how you may share their video, if at all, and to give you some feedback if they want to. It's also where you'll provide some "debriefing" information, just like you might when chatting with the family after they came into the lab. There are more guidelines about what your debriefing should contain under :ref:`the sample study outline <debriefing-info>`. 
+Finally, to wrap up our study we need to include an "exp-lookit-exit-survey" frame. (This is required of all internal CHS studies to keep the experience for parents fairly consistent.) This is where parents have an option to choose how you may share their video, if at all, and to give you some feedback if they want to. It's also where you'll provide some "debriefing" information, just like you might when chatting with the family after they came into the lab. There are more guidelines about what your debriefing should contain under :ref:`the sample study outline <debriefing-info>`. 
 
 You guessed it - copy and paste the frame below into ``frames`` in your protocol, and add "exit-survey" to your ``sequence``. Put the frames in your ``sequence`` in order and try out the entire study! 
 
@@ -918,10 +918,10 @@ It is HARD, for instance, to write a few-sentence "elevator pitch" for your stud
 
 It's also very hard to condense text instructions into something concise, non-condescending, and complete. (The examples above aren't perfect!) You may realize there's more than you thought to explain about how to do your study (e.g. how to avoid biasing the child), and that you want to add some training trials with feedback, video instructions, or more detailed audio instructions. 
 
-So this is a general note of caution: yes, in some respects it's easy to "throw a study up on Lookit." (Or at least we're trying to make it easy!) But it will likely take you longer than you expect to go from "We know exactly how we want our study to work" to "We're up and running," in large part because of these sorts of details. And it is absolutely worth putting in the time to come up with a study protocol that doesn't just "work" but is clear and easy to follow for parents - not least because we're all sharing the same subject pool and reputation as a fun place to do studies. 
+So this is a general note of caution: yes, in some respects it's easy to "throw a study up on CHS." (Or at least we're trying to make it easy!) But it will likely take you longer than you expect to go from "We know exactly how we want our study to work" to "We're up and running," in large part because of these sorts of details. And it is absolutely worth putting in the time to come up with a study protocol that doesn't just "work" but is clear and easy to follow for parents - not least because we're all sharing the same subject pool and reputation as a fun place to do studies. 
 
 Using the documentation to learn about more advanced features
 --------------------------------------------------------------
 
-We hope that working through some examples has been helpful, but the Lookit documentation goes beyond just the tutorial! You can explore using the sidebar on the left to view detailed guides to preparing your study (including advanced topics not covered in this tutorial), managing your data, and developing your own custom frames. We recommend using the search function within the documentation, which ensures your results come only from the current, up-to-date version of the docs, rather than any archived older versions that might pop up on Google.
+We hope that working through some examples has been helpful, but the CHS documentation goes beyond just the tutorial! You can explore using the sidebar on the left to view detailed guides to preparing your study (including advanced topics not covered in this tutorial), managing your data, and developing your own custom frames. We recommend using the search function within the documentation, which ensures your results come only from the current, up-to-date version of the docs, rather than any archived older versions that might pop up on Google.
 

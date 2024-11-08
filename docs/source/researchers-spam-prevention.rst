@@ -94,21 +94,21 @@ successfully on CHS, so this is certainly an option to consider if your institut
 has an absolute ban on collecting visual or other corroborating evidence about your
 remote participants. 
 
-Option 2: The standard Lookit video consent process
+Option 2: The standard video consent process
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The most straightforward way to meet this requirement, which the majority of studies
-are currently using, is the Lookit video consent form, which captures 
+are currently using, is the video consent form, which captures 
 webcam video of the parent/guardian stating that they agree to participate in the 
-study. In your compensation description, you can state that you require the child to 
+study. This option is available in Lookit and jsPsych studies. In your compensation description, you can state that you require the child to 
 be visible in the consent video, or you can use other video data that you 
 collect during the session. 
 
 If you are running an external, asynchronous
 study (Bring-your-own Study Link), the easiest way to meet 
-this requirement is to prepare a 'hybrid' study that uses the Lookit experiment 
-builder to present the consent form, and then redirects to your external study.  
-`Here is an example study template <https://lookit.mit.edu/exp/studies/3067/>`__ 
+this requirement is to prepare a 'hybrid' study that uses the either the Lookit or jsPsych experiment 
+builder to present the video consent form, and then redirects to your external study.  
+`Here is an example study template <https://childrenhelpingscience.com/exp/studies/3067/>`__ 
 that you can copy and use. There is also the option to record video of the 
 entire session by using `the iframe method <https://lookit.readthedocs.io/projects/frameplayer/en/develop/components/exp-lookit-iframe/doc.html>`__
 to display your experiment in the same tab, without leaving the Children Helping Science
@@ -223,7 +223,7 @@ procedures you use has to implement these suggestions. At a minimum, these proce
 Whether you are conducting an internal or external study, the CHS website saves information
 that you can use to review participants and check for patterns that may indicate spam. 
 
-**Consent manager:** Internal experiments and hybrid experiments that use the Lookit video consent frame
+**Consent manager:** Internal experiments and hybrid experiments that use a video consent frame/trial
 can use the Consent Manager to screen for potential signs of bad-faith participation. 
 
 .. image:: _static/img/spam_prevention_consent.png
@@ -277,7 +277,7 @@ Use the following process to monitor and report potentially fraudulent participa
    us know when you submit a report. 
 #. *DO NOT compensate the participant* until an admin has had a chance to review your case(s). 
    Once you've heard back from an admin, you will know whether that participant has 
-   been blocked from Lookit, whether they have concluded that the participant should 
+   been blocked from CHS, whether they have concluded that the participant should 
    be compensated, or whether there is another outcome needed.
 #. In your lab/research group, keep a running list of potentially problematic 
    red flags you find in your lab - when it's an individual or small group causing

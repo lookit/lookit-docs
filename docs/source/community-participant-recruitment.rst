@@ -10,7 +10,7 @@ See `this Google doc <https://docs.google.com/document/d/1l0NcZLKQYdHJgZ71Tk849j
 
 Here are some general observations:
 
--  Substantial carryover effects to other studies (in different age range) when one group advertises a study! We’re getting benefits of cooperation, and really not seeing “competition” between Lookit studies at this point.
+-  Substantial carryover effects to other studies (in different age range) when one group advertises a study! We’re getting benefits of cooperation, and really not seeing “competition” between CHS studies at this point.
 
 -  Paying participants makes a huge difference in ability to recruit, as well as diversity of participants. Separately, we believe it’s ethical to pay families for their time & contribution. We currently aim for ~$15/hour for the expected duration of the study. Currently done by researchers manually sending gift cards post-study; eventual plans to provide centralized compensation functionality.
 
@@ -21,7 +21,7 @@ Existing avenues for online outreach:
 
    -  Posting to AcademicMamas w/ babies born 2017 page (and tagging specific moms with kids in age range) has had the most success (but still very small-scale - a total of maybe 10 kids)
    -  Occasional attempts at ‘boosting’ posts advertising studies (most recently, ~6000 views from new parents) has never yielded participants for unpaid studies
-   -  Interested labs may advertise via the Lookit page - we send an invite to be an editor, you may need to double check at https://www.facebook.com/pages/?category=invites to find it. There are known problems about the invites being hard to find: https://www.facebook.com/business/help/community/question/?id=1249301125083191
+   -  Interested labs may advertise via the CHS page - we send an invite to be an editor, you may need to double check at https://www.facebook.com/pages/?category=invites to find it. There are known problems about the invites being hard to find: https://www.facebook.com/business/help/community/question/?id=1249301125083191
    -  Experimenting with interest targeting and recording results would be a helpful contribution!
 
 Potential approaches:
@@ -38,7 +38,7 @@ Potential approaches:
 
    -  Advance testing of new studies
    -  Providing more detailed feedback on studies & parent-facing text
-   -  Occasional joint meetings, or involvement in other Lookit meetings
+   -  Occasional joint meetings, or involvement in other CHS meetings
    -  Share with parent groups online
    -  “Office hours” - easy to join group video chat
    -  Schedule participants (even though it’s unnecessary) to provide
@@ -60,7 +60,7 @@ Potential approaches:
 
 -  In-person local advertising (see Rianna’s `Cambridge/Boston map <https://www.google.com/maps/d/edit?mid=1eeO41SXUID-NqTRba_xuFybEKowkuMIY>`__).
    Put up flyers and/or talk to local institutions/people that work with
-   kids to get them excited about Lookit, ask them to mention it to
+   kids to get them excited about CHS, ask them to mention it to
    families, maintain relationships. Examples of places we've looked when advertising 
    locally in Cambridge:
 
@@ -71,7 +71,7 @@ Potential approaches:
    -  Pediatricians’ offices
    -  Parks
    -  Daycares, preschools, elementary schools, afterschool programs
-   -  MIT museum (not because they get a ton of kids but because we already have a connection via MIT, and in the future maybe they’d like to host an interactive Lookit display...)
+   -  MIT museum (not because they get a ton of kids but because we already have a connection via MIT, and in the future maybe they’d like to host an interactive CHS display...)
    -  `Cambridge Family Resource Center <http://www.cpsd.us/cms/one.aspx?pageId=3474753>`__
    -  `Baby U, Center for Families playgroups, other parent ed <https://www.cambridgema.gov/DHSP/programsforfamilies>`__
 
@@ -88,9 +88,9 @@ Potential approaches:
 
 -  Media/online outreach
 
-   -  Talk to groups that do online research with adults (e.g. LabInTheWild, TestMyBrain) to see if they’d be up for linking to Lookit
+   -  Talk to groups that do online research with adults (e.g. LabInTheWild, TestMyBrain) to see if they’d be up for linking to CHS
    -  Talk to groups that do online research with kids -  e.g. https://www.babysleepstudy.org/studysignup,
-   -  Ask institutions that might be interested about featuring/linking to Lookit, or publishing content we provide - examples:
+   -  Ask institutions that might be interested about featuring/linking to CHS, or publishing content we provide - examples:
 
       -  Boston Children’s Museum
       -  https://www.parentingscience.com/online-parenting-studies.html

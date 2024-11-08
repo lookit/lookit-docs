@@ -1,8 +1,8 @@
 ##################################
-Timing accuracy on Lookit
+Timing accuracy in Lookit studies
 ##################################
 
-Lookit data provides detailed timing information which allows a researcher to
+Data from Lookit experiments provides detailed timing information which allows a researcher to
 identify the part of each video recording that corresponds to a set of stimuli
 being displayed to a participant.
 
@@ -17,7 +17,7 @@ These differences can have two kinds of impacts on the data that is collected:
 
 How much noise or lag you can tolerate is up to your sample size and study. The larger your sample size, the less likely that noise will obscure the effect you are interested in. The more precise your study design is in its timing, the smaller a lag may be a problem for your analysis.
 
-Thanks to recent work by Lookit researchers, we have some more specific information about how Lookit studies using audio & video stimuli (i.e. vs. text, image, etc.) are affected by lag. **In particular, studies using video stimuli will tend to have a 150-450ms lag, i.e. appearing to the participant later than the Lookit frame data will indicate.**
+Thanks to recent work by CHS researchers, we have some more specific information about how Lookit studies using audio & video stimuli (i.e. vs. text, image, etc.) are affected by lag. **In particular, studies using video stimuli will tend to have a 150-450ms lag, i.e. appearing to the participant later than the Lookit frame data will indicate.**
 
 ================================================
 Descriptions of lag with video stimuli
@@ -26,9 +26,9 @@ Descriptions of lag with video stimuli
 This section reports findings by Aaron Becker, Christian Harms, Lisa Oakes,
 Yi Lin, and Michaela DeBolt.
 
-In response to a Slack conversation with Yi Lin and Jenny Wang, initiated by Yi on 9/2/2021, the Oakes lab did extensive testing of the timing of stimulus onset and compared when the stimulus actually started compared to when the frame data in lookit indicated that the stimulus appeared.
+In response to a Slack conversation with Yi Lin and Jenny Wang, initiated by Yi on 9/2/2021, the Oakes lab did extensive testing of the timing of stimulus onset and compared when the stimulus actually started compared to when the frame data in Lookit indicated that the stimulus appeared.
 
-They tested this by running their experiments in Lookit and holding a mirror up to the camera. Thus the video recorded during the lookit session was the reflection of what appeared on the monitor, rather than the infants’ face (thanks to Yi Lin for pointing out this way of testing).
+They tested this by running their experiments in Lookit and holding a mirror up to the camera. Thus the video recorded during the Lookit session was the reflection of what appeared on the monitor, rather than the infants’ face (thanks to Yi Lin for pointing out this way of testing).
 
 The team tested several browsers, internet speeds, and experiments and  observed that there is a consistent discrepancy of between 150 and 450 ms on every trial, including the calibration trials and the experimental trials.
 
@@ -48,7 +48,7 @@ This github issue documents the observed problem in more detail. One consequence
 Affected browsers and experiment frames
 ================================================
 
-The two officially supported browsers for Lookit are Chrome and Firefox. In the testing above, Chrome was generally found to have smaller lags than Firefox.
+The two officially supported browsers for Lookit studies are Chrome and Firefox. In the testing above, Chrome was generally found to have smaller lags than Firefox.
 
 The following experiment frames are known to be impacted by one of these issues:
 

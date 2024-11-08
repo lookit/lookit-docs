@@ -13,6 +13,102 @@ The Lookit experiment runner is regularly updated in order to add new features a
 
 ----
 
+Oct 4th, 2024: French and Japanese translations; video ID logging
+------------------------------------------------------------------------
+
+Commit SHA: afb2fda97f9325476da70e2bc0e4602816011c60
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/408
+
+This latest version of the experiment runner contains the following changes to translation options:
+
+- Adds a French (fr) translation option to the experiment runner. Thanks Balthazar Lauzon!
+- Updates the Japanese (ja) translations. Thanks Sho Tsuji and Rhodri Cusack!
+
+It also makes a few changes to the event logs in the data produced by an experiment:
+
+- Adds the video file name (``videoId``) to the experiment data for any recording-releated events, and events that occur while recording is in progress (either trial or session recording).
+- Renames the ``pipeId`` property that stores the video name to ``videoId``.
+
+----
+
+Jul 17, 2024: Fix webcam display in video-assent with no recording
+--------------------------------------------------------------------
+
+Commit SHA: c12289257140f2b3ca777701714785620721f7dc
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/399
+
+This fixes a problem with the webcam display in ``video-assent`` that was introduced in the June 5th update (a5adee43e2f2498598369850dbc2d4ba1536ee6c). Specifically, the webcam display option (``showWebcam: true``) was not working when there was no recording during the trial (``recordLastPage`` and ``recordWholeProcedure`` are both ``false``). This update fixes that problem.
+
+This update also modifies the ``video-assent`` frame to center the webcam feed in the "page" content.
+
+----
+
+Jun 20, 2024: Fix clipped recordings
+-------------------------------------------------------------
+
+Commit SHA: c12289257140f2b3ca777701714785620721f7dc
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/393
+
+This change fixes a problem with the recording system where the recordings were sometimes missing the last part (1-2 seconds) of webcam data. This problem was most noticeable in the consent videos, because the end of the consent statement would be cut-off. However this problem would've had a similar affect the trial/session recordings.
+
+If you are already using the new RecordRTC system, please update your experiment runner to this version (or newer).
+
+----
+
+June 5, 2024: iframe improvements; consent/assent recording bug fix
+---------------------------------------------------------------------------------------
+
+Commit SHA: a5adee43e2f2498598369850dbc2d4ba1536ee6c
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/390
+
+This update includes two important changes: (1) ``iframe`` frame parameter changes and functionality improvements that allow for more researcher customization of the participant experience and (2) bug fixes for ``video-consent`` and ``video-assent`` frames to prevent missing consent/assent recordings. Details about these changes are included below.
+
+**1. iframe parameter changes and functionality improvements**
+
+  - You can now use the parameter ``nextButtonText`` to modify the "Next" button text.
+  - The parameter ``optionalText`` has been renamed ``instructionText`` and displays above (rather than below) the iframe, so that participants can see the instructions before beginning the task. **IMPORTANT**: when updating existing iframes to the this Experiment Runner release (or a later version), make sure to replace the ``optionalText`` parameter name in your JSON with ``instructionText`` to ensure that your instructions are preserved.
+  - To prevent participants from accidentally advancing past an iframe prematurely, a red warning message now appears above the next button the first time it's clicked. When the warning appears, the "Next" button is disabled for 2 seconds to give participants the chance to see/read the warning message and check their progress within the iframe before advancing.
+  - The default warning asks participants to confirm that they've finished the iframe task before clicking this button. This warning text is customizable; you can change the message with the ``warningMessageText`` parameter.
+  - The ``iframe`` documentation has been updated to reflect the above changes and provide new examples.
+
+**2. Recording bug fix for video-consent and video-assent frames**
+
+  - We have fixed bugs in the ``video-consent`` and ``video-assent`` frames to prevent participants from being able to start their consent recording before the recorder is ready. This fixes a problem where participants produced a blank consent video and were nonetheless able to continue on with the experiment.
+
+----
+
+May 8, 2024: iframe improvements; maximum recording durations
+------------------------------------------------------------------------------
+
+Commit SHA: 3a0056ecf62fc819b83993949a634e3d91a177b7
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/378
+
+There are two main changes in this update. First, the `iframe` frame now works with scheduling/booking sites and other forms. Second, for all experiments we have set a new default maximum recording duration to prevent extremely long videos. Details below and in the pull request link above.
+
+* The `iframe` frame now allows forms to be submitted inside the iframe element. This enables researchers to use booking sites and other forms inside the iframe (e.g., Calendly).
+* The `iframeSrc` parameter can now be generated through the `generateProperties` parameter, which allows researchers to add custom URL parameter names/values to their `iframeSrc` URL. This change allows the iframe URL to pass the child/response IDs to websites that require specific names for custom query parameters (e.g. Calendly, where these must be called 'a1', 'a2' etc.). See the examples in the `iframe` :ref:`documentation <elf:exp-lookit-iframe>` for more information.
+* This update fixes a bug in previous experiment runner versions, where the default maximum recording duration was too high. Now the default maximum recording duration is correctly set to 7200 seconds, which is also the upper limit. Researchers can change the maximum recording duration to any value between 1 and 7200 seconds.
+
+----
+
+Apr 11, 2024: Add Hungarian and Basque translations
+-----------------------------------------------------------
+
+Commit SHA: 6c5bcdcb2cd97b4ddcb33aed04ab6c825bd590da
+
+Github pull request: https://github.com/lookit/ember-lookit-frameplayer/pull/369
+
+This update adds the Hungarian (hu) and Basque/Euskera (eu) translation options to the Lookit experiment runner - thanks Nevena Klobucar!
+
+Please see the Lookit experiment runner :ref:`language parameter documentation<elf:translation>` for more information.
+
+----
+
 Feb 21, 2024: Fix recording bug in Chrome [CRITICAL]
 -------------------------------------------------------------
 

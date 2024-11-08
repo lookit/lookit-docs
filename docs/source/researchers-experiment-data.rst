@@ -16,7 +16,7 @@ You can access:
 
 .. admonition:: How does it work when participants withdraw video?
    
-   If the participant selected the 'withdraw video' option in an exit-survey frame at the end of the study, all video except for the consent video is unavailable (and will be deleted from Lookit servers as well in 7 days). You will still be able to see the consent video in the consent manager. The fact that video has been withdrawn is included in the response data.
+   If the participant selected the 'withdraw video' option in an exit-survey frame at the end of the study, all video except for the consent video is unavailable (and will be deleted from CHS servers as well in 7 days). You will still be able to see the consent video in the consent manager. The fact that video has been withdrawn is included in the response data.
    
    There is a potential rare edge case where you access video while the participant is still doing the study, and then they withdraw, so you should still verify that none of your participants have withdrawn video.
 
@@ -62,7 +62,7 @@ There are "global IDs" you can download for **account**, **child**, and **demogr
 Why two different IDs?
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Lookit participants may take part in studies from a variety of labs. This means that if researchers directly use the unique database identifiers ("global IDs") for accounts, children, and demographic data snapshots, different labs will be using the same identifiers for the same children. That's important to allow collaboration in cases where you have IRB approval to combine data from different studies, but it also means that if you and another lab both published those global IDs, someone else could come along and link data from a participant who did both studies. Usually this would be ok, but in some cases information that wasn't sensitive on its own in either study could be combined to produce more sensitive or identifying information. So we provide "hashed IDs" which are study-specific and can be published.
+CHS participants may take part in studies from a variety of labs. This means that if researchers directly use the unique database identifiers ("global IDs") for accounts, children, and demographic data snapshots, different labs will be using the same identifiers for the same children. That's important to allow collaboration in cases where you have IRB approval to combine data from different studies, but it also means that if you and another lab both published those global IDs, someone else could come along and link data from a participant who did both studies. Usually this would be ok, but in some cases information that wasn't sensitive on its own in either study could be combined to produce more sensitive or identifying information. So we provide "hashed IDs" which are study-specific and can be published.
 
 What if we do need to link participants across studies and want to publish the data?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ If you do this and come up with scripts that help with the workflow, please shar
 What are the regular IDs?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The regular hashed IDs are six-character strings (like `6RYE3U`) that uniquely identify an account, child, or demographic snapshot **within a particular study**. The same child will always have the same hashed ID within a particular Lookit study, but that child would have a different hashed ID in a different study, even one you were running.
+The regular hashed IDs are six-character strings (like `6RYE3U`) that uniquely identify an account, child, or demographic snapshot **within a particular study**. The same child will always have the same hashed ID within a particular CHS study, but that child would have a different hashed ID in a different study, even one you were running.
 
 These hashed IDs are shown in the consent manager, individual responses, all responses, and email participant views, and may be called simply IDs.
 
@@ -109,7 +109,7 @@ To limit the potential for accidental disclosure of identifying information abou
 
 .. admonition:: What can and can't I publish?
 
-    The main items you need to avoid publishing are global IDs, birthdates, names, and demographic survey responses if they can be linked to video also published. For convenience, we note specific fields that must be redacted for publication in the CSV data dictionaries. However, if any of this is unfamiliar, please review the Lookit `Terms and Conditions <https://lookit.mit.edu/termsofuse>`_!
+    The main items you need to avoid publishing are global IDs, birthdates, names, and demographic survey responses if they can be linked to video also published. For convenience, we note specific fields that must be redacted for publication in the CSV data dictionaries. However, if any of this is unfamiliar, please review the CHS `Terms and Conditions <https://childrenhelpingscience.com/termsofuse>`_!
 
 On the left are options for downloading information about the age of the participant. You can choose to download actual birthdates, exact ages in days, and/or a rounded age. The rounded age is rounded to the nearest 10 days for children under 365 days and to the nearest 30 days after that. 
 
@@ -354,7 +354,7 @@ The ``response`` data contains information concerning this particular session: w
 -  **databrary**: Whether the parent agreed to share video data on Databrary - ``yes`` or ``no``. If missing, you must treat the video as if ``no`` were selected. If ``yes``, the video privacy selections also apply to authorized Databrary users.
 -  **is_preview**: A ``true``/ ``false`` flag indicating whether or not this response was generated by a researcher previewing the experiment. Preview data should not be used in any actual analyses.
 -  **sequence**: A list containing the sequence of **frames** the subject actually saw (after running randomization, etc.). If the participant ended the study early, then this list will not contain all the frames in the study. The frame names follow the pattern ``<order>-<frame.id>``, where ``<order>`` is the order in the overall sequence where this **frame** appeared, and ``<frame.id>`` is the identifier of the frame as defined in the ‘frames’ property of the experiment structure.
--  **conditions**: An object containing information about conditions to which the subject was assigned in any frames that do randomization (choice frames). Keys are in the format ``<order>-<frame.id>`` corresponds with the ``<order>`` from the ‘sequence’ of the *original* experiment structure, and the ``<frame.id>`` again corresponds with the identifier of the frame as defined in the ‘frames’ property of the experiment structure. Data will be stored in conditions for the *first* frame created by a randomizer (top-level only for now, i.e. not from nested randomizers). Values are objects containing mappings from condition names to their values for this session. The data stored by a particular randomizer can be found under ``data collected`` in the :ref:`experiment runner docs <elf:randomization>`
+-  **conditions**: An object containing information about conditions to which the subject was assigned in any frames that do randomization (choice frames). Keys are in the format ``<order>-<frame.id>`` corresponds with the ``<order>`` from the ‘sequence’ of the *original* experiment structure, and the ``<frame.id>`` again corresponds with the identifier of the frame as defined in the ‘frames’ property of the experiment structure. Data will be stored in conditions for the *first* frame created by a randomizer (top-level only for now, i.e. not from nested randomizers). Values are objects containing mappings from condition names to their values for this session. The data stored by a particular randomizer can be found under ``data collected`` in the :ref:`Lookit experiment runner docs <elf:randomization>`
 
 
 The ``consent`` key contains information about the consent ruling for this study session:

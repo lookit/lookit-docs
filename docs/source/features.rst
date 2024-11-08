@@ -3,8 +3,7 @@
 Features
 ==================================
 
-
-Here are some of the features and advantages researchers using Lookit
+Here are some of the features and advantages researchers using CHS
 benefit from:
 
 Common resources and processes
@@ -28,7 +27,7 @@ Community and documentation
 
 - Active research **user community** and responsive **technical support**.
 
-- 100% **open source**, forever. That means all of the source code that Lookit uses
+- 100% **open source**, forever. That means all of the source code that CHS uses
   is publicly available, and you are free to extend and use it for your
   own purposes.
 
@@ -48,7 +47,7 @@ Study management tools designed for developmental researchers
 - Built-in **consent video management**: review consent videos in the
   web browser and confirm that the parent provided informed consent
   to participate. Information about this confirmation is stored on
-  the Lookit server and only data from sessions with confirmed
+  the CHS server and only data from sessions with confirmed
   consent are available for viewing or download.
 
   .. image:: _static/img/wiki/consent_manager.png
@@ -71,7 +70,7 @@ Study management tools designed for developmental researchers
 
 - **Contact participants** to invite them to another session of a
   longitudinal study, provide compensation, or ask clarifying
-  questions. Email records for each study are accessible on Lookit
+  questions. Email records for each study are accessible on CHS
   and you can download them for your records.
 
 - For **longitudinal studies**, determine which tasks and stimuli to use
@@ -89,10 +88,10 @@ Study management tools designed for developmental researchers
 - **Preview** exactly how your study will work ahead of starting data
   collection, including collecting sample data so you can set up
   analysis workflows ahead of time. You control which researchers
-  can preview your study, and can share it by link with all Lookit
+  can preview your study, and can share it by link with all CHS
   researchers to get feedback if you choose.
 
-- Create your own lab on Lookit to share studies among your lab
+- Create your own lab on CHS to share studies among your lab
   members. **Easily collaborate** on studies with fine-grained
   permission roles for individual studies.
 
@@ -104,14 +103,14 @@ Study management tools designed for developmental researchers
   participants or members of a registry) to participate based on a
   unique study link.
 
-- Studies are deployed in their **own containers**, using a snapshot of
-  the experiment runner codebase. Updates to the code never affect
+- Lookit studies are deployed in their **own containers**, using a snapshot of
+  the Lookit experiment runner codebase. Updates to the code never affect
   how your existing study works unless you choose to update!
   
 An experiment runner custom-designed for developmental paradigms
 -----------------------------------------------------------------
 
-(although we’re also interested in supporting other experiment building systems you may be familiar with!)
+(Although we also support the jsPsych experiment runner, and we're interested in supporting other experiment building systems you may be familiar with!)
 
 - Use a growing library of `built-in
   components <https://lookit.readthedocs.io/projects/frameplayer/>`__
@@ -146,15 +145,15 @@ An experiment runner custom-designed for developmental paradigms
 Limitations
 -----------------
 
-Lookit won’t be the right approach for all online developmental
+CHS and Lookit won’t be the right approach for all online developmental
 research! Here are some cases where other tools will likely be a better
 fit:
 
--  Medical research conducted by HIPAA-covered entities or individuals. Lookit is not
+-  Medical research conducted by HIPAA-covered entities or individuals. CHS is not
    yet HIPAA compliant. (Note that HIPAA applies based on the status of
    the researcher/healthcare provider - not just on the type of information collected.
    Academic researchers can generally collect health information without
-   being covered by HIPAA, and more than one hospital-based research labs have successfully negotiated data agreements allowing them to use Lookit for some types of studies.)
+   being covered by HIPAA, and more than one hospital-based research labs have successfully negotiated data agreements allowing them to use CHS for some types of studies.)
 
 -  Short one-off survey studies where you want to minimize time required
    to participate, and even asking families to create a login would be

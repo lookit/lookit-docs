@@ -10,6 +10,11 @@ Learning materials
 
 Here are some slides and videos you may want to check out while getting started or when training other lab members!
 
+.. admonition:: "Children Helping Science" vs "Lookit"
+
+   Note that most of these materials were created prior to the merger between Children Helping Science and Lookit, and therefore use the "Lookit" term to refer to the entire site infrastructure. We now refer to the "Lookit" website/platform as "Children Helping Science" (CHS), and we still use the "Lookit" term for the internal experiment runner.
+
+
 [PDF] `Introduction to Lookit: a 20-minute overview (Jenna Croteau) <https://github.com/lookit/research-resources/raw/master/Training/IntroductionToLookit.pdf>`__
 
 [Video] `CBMM Tutorial: Using Lookit to run developmental studies online (Maddie Pelz) <https://cbmm.mit.edu/video/using-lookit-run-developmental-studies-online>`_
@@ -26,17 +31,17 @@ Here are some slides and videos you may want to check out while getting started 
 
 [Code] `Some example FFMPEG commands (Kim Scott) <https://github.com/kimberscott/ffmpeg-stimuli-generation>`_
 
-If you give a presentation about using Lookit or prepare training materials for your lab, please share them here! You can :ref:`propose that change directly<First PR>` or email lookit@mit.edu.
+If you give a presentation about using CHS or prepare training materials for your lab, please share them here! You can :ref:`propose that change directly<First PR>` or email childrenhelpingscience@gmail.com.
 
 -----------------------
 Other helpful resources
 -----------------------
 
-- Most communication among Lookit researchers happens via a Slack workspace. Fill out `this form  <https://docs.google.com/forms/d/e/1FAIpQLScI2h7G6aUSJb-I3fGHw2nB8HcuaomuNLiwta2CXhGGF2ZL-Q/viewform>`_ to receive an invite. This is the best place to ask general questions or get tech support! 
+- Most communication among CHS researchers happens via a Slack workspace. Fill out `this form  <https://docs.google.com/forms/d/e/1FAIpQLScI2h7G6aUSJb-I3fGHw2nB8HcuaomuNLiwta2CXhGGF2ZL-Q/viewform>`_ to receive an invite. This is the best place to ask general questions or get tech support! 
 
-- The documentation for individual experiment 'frames' lives :ref:`here <elf:index>` in the "Experiment runner" tab.
+- The documentation for individual experiment 'frames' lives :ref:`here <elf:index>` in the "Lookit experiment runner" tab.
 
-- Running into a problem and want to check if it's a known issue, or have an idea for a handy new feature? Check out and/or add to the issues listed for the `Lookit platform <https://github.com/lookit/lookit-api/issues>`_ and for the `experiment components/player <https://github.com/lookit/ember-lookit-frameplayer/issues>`_. Or check out `projects <https://github.com/orgs/lookit/projects>`_ to take a look at what's coming up in terms of development!
+- Running into a problem and want to check if it's a known issue, or have an idea for a handy new feature? Check out and/or add to the issues listed for the `CHS platform <https://github.com/lookit/lookit-api/issues>`_, for the `Lookit experiment components/player <https://github.com/lookit/ember-lookit-frameplayer/issues>`_, and for the `lookit-jspsych experiment runner <https://github.com/lookit/lookit-jspsych/issues>`_. Or check out `projects <https://github.com/orgs/lookit/projects>`_ to take a look at what's coming up in terms of development!
 
 -  Join the `Lookit-research email
    list <http://mailman.mit.edu/mailman/listinfo/lookit-research>`__ for
@@ -44,14 +49,14 @@ Other helpful resources
    
 -  Our March 2020 `APS Observer
    article <https://www.psychologicalscience.org/observer/kids-in-their-comfort-zones>`__
-   which describes the current status of Lookit and how you can get your
+   which describes the current status of Lookit (now CHS) and how you can get your
    study ready!
 
--  Lookit papers
+-  Lookit (now CHS) papers
    (`1 <http://www.mitpressjournals.org/doi/full/10.1162/OPMI_a_00002>`__,
    `2 <http://www.mitpressjournals.org/doi/full/10.1162/OPMI_a_00001>`__)
    
--  `Lookit overview
+-  `Lookit (now CHS) overview
    video <https://www.youtube.com/watch?v=CcoHO5-NDwM>`__
    
 -  `Video data from test studies <https://osf.io/mbcu2/>`__
@@ -66,11 +71,12 @@ Other helpful resources
 Codebase
 -----------------------
 
-All Lookit code is open-source (MIT License - this is a liberal
+All CHS code is open-source (MIT License - this is a liberal
 open-source license, not related to us being at MIT) and publicly
 available. It will stay that way.
 
 -  https://github.com/lookit/ember-lookit-frameplayer
+-  https://github.com/lookit/lookit-jspsych
 -  https://github.com/lookit/lookit-api
 -  https://github.com/lookit/lookit-docs
 -  https://github.com/orgs/lookit/projects - software development

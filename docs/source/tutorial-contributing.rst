@@ -1,18 +1,18 @@
 ##################################
-2. Contributing to the codebase
+2. Contributing to the codebase 
 ##################################
 
-Lookit is an open-source project, meaning that the code is freely available and anyone can contribute. This includes the actual Lookit platform, the components used in studies, AND the documentation you're reading now. Community contributions and input are critical to the project!
+Children Helping Science (CHS) is an open-source project, meaning that the code is freely available and anyone can contribute. This includes the actual CHS platform, the components used in Lookit and jsPsych studies, AND the documentation you're reading now. Community contributions and input are critical to the project!
 
 In this section, you'll make your first "Pull request" (PR) to propose a change to the documentation [#]_. Your change will just be to add yourself to a list of tutorial participants. This way, you'll be comfortable making substantive changes whenever you're ready!
 
-Later on in the tutorial, if you come across something confusing or you have an idea to improve the instructions or exercises, you can follow these same instructions to fix it. Although we recognize that most Lookit users will not be ready to contribute to the code that makes Lookit run, editing the documentation is something everyone can do! We need your help to keep it up-to-date and constantly improving!
+Later on in the tutorial, if you come across something confusing or you have an idea to improve the instructions or exercises, you can follow these same instructions to fix it. Although we recognize that most CHS users will not be ready to contribute to the code that makes CHS run, editing the documentation is something everyone can do! We need your help to keep it up-to-date and constantly improving!
 
 .. _First PR: 
 
 Making your first pull request (PR)
 ------------------------------------
-All of the code that makes Lookit run is stored on GitHub, which makes it easy to keep track of changes over time and merge changes from many collaborators. There are several code repositories or "repos" that house different pieces of the project. Here we are going to walk through making a change to the documentation repo, `lookit-docs <https://github.com/lookit/lookit-docs>`_. Making a "pull request" or PR is a way to ask that your edits be incorporated into the main codebase. It's actually not too hard, and it's a great way to contribute! 
+All of the code that makes CHS run is stored on GitHub, which makes it easy to keep track of changes over time and merge changes from many collaborators. There are several code repositories or "repos" that house different pieces of the project. Here we are going to walk through making a change to the documentation repo, `lookit-docs <https://github.com/lookit/lookit-docs>`_. Making a "pull request" or PR is a way to ask that your edits be incorporated into the main codebase. It's actually not too hard, and it's a great way to contribute! 
 
 Don't worry about making a mistake and somehow messing up the documentation - you can't directly edit the "official" version of the files! There is always a review process before your changes are merged in. 
 
@@ -56,7 +56,7 @@ Don't worry about making a mistake and somehow messing up the documentation - yo
    .. image:: _static/img/tutorial/pr_view.png
       :alt: PR view on GitHub
 
-The PR will now be in a list for Lookit staff to review. You can return to this page to check on it; if you have allowed Github to send notifications via email (the default), you will also get an email about any activity. You can also see your PR in the list by going to https://github.com/lookit/lookit-docs and clicking on "Pull requests": 
+The PR will now be in a list for CHS staff to review. You can return to this page to check on it; if you have allowed Github to send notifications via email (the default), you will also get an email about any activity. You can also see your PR in the list by going to https://github.com/lookit/lookit-docs and clicking on "Pull requests": 
 
 .. image:: _static/img/tutorial/pr_tab.png
     :alt: See all PRs on GitHub
@@ -304,6 +304,7 @@ List of tutorial participants
 - Kristine Zheng (MIT)
 - Jack Horgen (MIT)
 - Teddy Schoenfeld (MIT)
+- Riya Sapkal (New York University)
 - Megan Eberts (MIT)
 - Rita Zambrano (MIT)
 - Nikki Elliott (MIT)
@@ -315,28 +316,56 @@ List of tutorial participants
 - Shine Seon (Northwestern University)
 - Hannah Kramer (University of Wisconsin)
 - Tanvi Patel (New York University)
+- Sascha Krause (University of Wisconsin - Madison)
+- Nalinda Wanikpun (NYU)
+- Christina Moutsiana (University of Westminster)
+- Gissell Duran (New York University)
+- Arisha Kashif (Sabanci University)
+- Mariyam Azmat (Sabanci University)
+- Jocelyn Chow (NYU)
+- Anuj Jain (New York University)
+- Tanvi Patel (NYU)
+- Esra Turhal (Marmara University)
+- Brian Leahy (MIT)
+- Jada Beal (East Tennessee State University)
+- Balthazar Lauzon (Ulster University)
+- Anabel Almonte (NYU)
+- Aaron Wang (University of Toronto)
+- Molly Langer (Northwestern University)
+- Ellen Habteyonas (Vanderbilt University)
+- Hayato Ono (University of Tokyo)
+- Ashima Sood (Ulster University)
+- Ana Rinzler (Rutgers University)
+- Divya Sundar (University of California, Berkeley)
+- Lauren Howard (Franklin & Marshall College)
+- Annie Schwartzstein (University of California, Santa Cruz)
+- Emma Smith (University of Wisconsin-Madison)
+- Claudia Lewis (Stanford University)
+
 Checking for and creating issues on Github
 -------------------------------------------
 
-What if you notice a problem while using Lookit, or something unclear in the documentation, but it's not something you know how to fix? Or what if you find yourself wishing there were a particular feature that would make your research easier? 
+What if you notice a problem while using CHS, or something unclear in the documentation, but it's not something you know how to fix? Or what if you find yourself wishing there were a particular feature that would make your research easier? 
 
 .. image:: _static/img/tutorial/issues_tab.png
     :alt: See all issues on GitHub
 
 To track bug reports and feature requests, we use GitHub **issues**. You can see issues by clicking on the "Issues" tab in the appropriate repository or "repo":
 
-- `lookit-api <https://github.com/lookit/lookit-api>`_ is the repo for the Lookit site: issues with anything to do with participant login or data, how current and past studies are displayed to participants, how you view data and manage your studies
+- `lookit-api <https://github.com/lookit/lookit-api>`_ is the repo for the CHS site: issues with anything to do with participant login or data, how current and past studies are displayed to participants, how you view data and manage your studies.
 
-- `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`_ is the repo for the experiment components themselves: issues with how particular frames behave, frames you'd find useful, counterbalancing/condition assignment, etc.
+- `ember-lookit-frameplayer <https://github.com/lookit/ember-lookit-frameplayer>`_ is the repo for the Lookit experiment components: issues with how particular Lookit frames behave, frames you'd find useful, counterbalancing/condition assignment, etc.
+
+- `lookit-jspsych <https://github.com/lookit/lookit-jspsych>`_ is the repo for the CHS-specific parts of jsPsych experiments: issues with how jsPsych studies run *on CHS*, and CHS-specific features such as the consent and exit surveys and video recording features.
 
 - `lookit-docs <https://github.com/lookit/lookit-docs>`_ is the repo for the documentation: anything about the docs you're reading now!
 
-To request a feature or report a bug, first search the existing issues to see if your idea is already there.
+To request a feature or report a bug, first search the existing issues to see if your problem or idea is already there.
 
 .. image:: _static/img/tutorial/search_issues.png
     :alt: Search issues on GitHub
 
-If so, comment on it or add a thumbs-up reaction so Lookit staff know there's more interest! If not, click the green "New issue" button at the top right.
+If so, comment on it or add a thumbs-up reaction so CHS staff know there's more interest! If not, click the green "New issue" button at the top right.
 
 .. image:: _static/img/tutorial/new_issue.png
     :alt: Create new issue on GitHub
@@ -356,7 +385,7 @@ Your issue will now have a number assigned to it and will be listed in the issue
 .. image:: _static/img/tutorial/issue.png
     :alt: Issue on GitHub
     
-Lookit staff may respond to ask for further information, schedule it for future development, and/or wait for community feedback about the idea to gauge demand.
+CHS staff may respond to ask for further information, schedule it for future development, and/or wait for community feedback about the idea to gauge demand.
 
 Exercises
 ----------

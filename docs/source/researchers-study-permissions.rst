@@ -74,7 +74,7 @@ Admin
 Adding researchers to your study
 ---------------------------------
 
-You can only give permissions to people in the Lab associated with this study. (If you're creating a study in the Sandbox Lab, you will be able to share with anyone on Lookit.) 
+You can only give permissions to people in the Lab associated with this study. (If you're creating a study in the Sandbox Lab, you will be able to share with anyone on CHS.) 
 
 Halfway down the study detail page, you can see the researchers that have been added to your study.
 On the left, you can see researchers in this study's lab and search for a specific researcher. 
@@ -115,7 +115,7 @@ WRITE_STUDY_DETAILS
     Can make changes to the study using the edit study form - e.g., changing the protocol or age range. Note that if the study is already approved, making changes would automatically reject it; in this case, someone with WRITE_STUDY_DETAILS but not CHANGE_STUDY_STATUS would not be able to make changes.
     
 CHANGE_STUDY_STATUS
-    Can change the status of the study - starting or stopping data collection, submitting/retracting it for Lookit review, etc.
+    Can change the status of the study - starting or stopping data collection, submitting/retracting it for CHS review, etc.
     
 MANAGE_STUDY_RESEARCHERS
     Can add and remove other researchers in this lab to the various study groups, editing their permissions.
@@ -138,7 +138,7 @@ CODE_STUDY_PREVIEW_CONSENT
     Can submit rulings about whether consent videos from preview data demonstrate valid informed consent. (They don’t really, but you might mock up the entire workflow from start to finish with preview data while planning your analyses and testing out your study.)
     
 CONTACT_STUDY_PARTICIPANTS
-    Can send email to participants via the Lookit platform. (This still does not grant direct access to participant email addresses.)
+    Can send email to participants via the CHS platform. (This still does not grant direct access to participant email addresses.)
     
 EDIT_STUDY_FEEDBACK
     Can create and edit feedback associated with participant responses, which is displayed to participants on the study history page.

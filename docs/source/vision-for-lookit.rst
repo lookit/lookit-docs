@@ -1,13 +1,13 @@
 Project overview
 ==========================
 
-Lookit is a platform for doing developmental research run by a small academic group at MIT.
+Children Helping Science (CHS) is a platform for doing developmental research run by a small academic group at MIT.
 Our vision is of **a collaborative online lab**:
 
 -  Large collaborative “online lab” run by group at MIT
 -  Single participant interface; shared participant pool, servers;
    central & shared recruitment in addition to individual labs’ efforts
--  Lookit team provides training, IRB coordination, study
+-  CHS team provides training, IRB coordination, study
    implementation, design support, ongoing development, documentation
 -  Researchers independent, but with centralized approval of studies
    (covering technical problems, basic compliance with ethical

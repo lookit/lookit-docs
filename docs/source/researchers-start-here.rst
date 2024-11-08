@@ -17,11 +17,13 @@ the new improved Children Helping Science platform, here's how you get started!
   - Bring-your-own Meeting: You provide a link to a scheduling page for families 
     (e.g. Calendly). A researcher meets the family on a video call to conduct the 
     session.
-  - Lookit Experiment: You build a study in the Lookit experiment builder, which is
-    customized for developmental studies and has :ref:`features <features>`
+  - Build it here: You build an 'internal' study using one of our experiment builders, which have been
+    customized for developmental studies and have :ref:`features <features>`
     including webcam recording. Families take the study on their own time, without 
     a researcher present.
 
+     * Lookit: This is our original experiment runner software that was custom built for developmental studies.
+     * jsPsych: This uses our `customized version <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/>`_ of the `jsPsych <https://www.jspsych.org/latest/>`_ experiment building software.
 
 
 Join the Slack workspace
@@ -34,7 +36,7 @@ Slack is our primary means of communication about new features, best
 practices, etc. It’s also where you should go with any questions or
 technical support requests, and for peer review from other researchers. 
 There are a lot of participating researchers
-(over 800 at last count!) who may be able to help!
+(over 2500 at last count!) who may be able to help!
 
 If you also want to receive updates via email, please join the 
 `lookit-research <https://mailman.mit.edu/mailman/listinfo/lookit-research>`__ list as well.
@@ -43,9 +45,9 @@ If you also want to receive updates via email, please join the
 Overview - 15 minute to your first study!
 -------------------------------------------
 
-1. Check to see if we already have an agreement with your institution to use the online testing platform (~1 minute) 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Approximately 100 institutions have already signed agreements.
+1. Check to see if we already have an agreement with your institution (~1 minute)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+An institutional agreement is required to use our online testing platform. Over 100 institutions have already signed agreements.
 
 a)	Check whether your institution is listed `here <https://docs.google.com/spreadsheets/d/1n3LKOIEStI4kYn0G4dXjaFmQ9B99RIg-8LvSMQRd6gw/edit?usp=sharing>`__.
 
@@ -55,18 +57,17 @@ If your institution is not listed, the form you need is `here <https://github.co
 
 2. Create a new researcher account (~1 minute)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Go `here <https://lookit.mit.edu/registration/>`__ to make a new researcher account. 
+Go `here <https://childrenhelpingscience.com/registration/>`__ to make a new researcher account.
 
 Please don't use a single login for your whole lab - even if you use a single email 
 for lab communications (like mydevelopmentallab@gmail.com). Sharing login 
 information presents a security risk for participants' data.
 
-Each researcher using the platform should `create their own account <https://lookit.mit.edu/registration/>`__.
+Each researcher using the platform should `create their own account <https://childrenhelpingscience.com/registration/>`__.
 
 3. Create (~5 minutes) or join (~1 minute) your lab account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If you are the first user from your lab, go `here <https://lookit.mit.edu/exp/labs/create/>`__ to 
-create your own “lab” on the platform.
+If you are the first user from your lab, go `here <https://childrenhelpingscience.com/exp/labs/create/>`__ to create your own “lab” on the platform.
 
 Visit `this link <https://docs.google.com/forms/d/e/1FAIpQLScg6geDk8iDYfTBtuNPyfNaTyGfROuXiSw6jUPHv3b5KSWC0Q/viewform>`__ 
 to review and take a short quiz on our terms of use. One person from your lab needs to 
@@ -74,17 +75,14 @@ complete this quiz before your lab is approved to submit studies.
 
 You will use your lab to manage access to your group's studies. Every lab has 
 its own public page that shows the studies that are active right now. (Example:
-https://lookit.mit.edu/studies/early-childhood-cognition-lab/)
+https://childrenhelpingscience.com/studies/early-childhood-cognition-lab/)
 
 If your lab already has an account, go 
-to `this page <https://lookit.mit.edu/exp/labs/?page=1&set=all>`__, find your lab and click 
-"Request to join".
+to `this page <https://childrenhelpingscience.com/exp/labs/?page=1&set=all>`__, find your lab and click "Request to join".
 
-4. Create a study (~10 minutes if you already have a study set up that you want to post)
+4. Create a study (~10 minutes if you already have a study ready to post)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-To create a study, go `here <https://lookit.mit.edu/exp/studies/create>`__ and check
-the “External” checkbox if you are posting a link to an existing study you have 
-already set up (bring-your-own study link or bring-your-own meeting.)
+If you are posting a link to an existing study you have already set up (bring-your-own study link or bring-your-own meeting), go `here <https://childrenhelpingscience.com/exp/studies/create>`__ to create a new study, and select the “External” option under "Experiment Type".
 
 Any studies you run will need to be approved by your institution's IRB (just like 
 studies you run in person). If you do not already have permission to conduct 
@@ -98,14 +96,11 @@ IRB of the amendment.
 
 .. admonition:: Human subjects approval on the platform
   
-  The Lookit platform is run through MIT, but MIT's IRB is not involved in any 
-  studies from other institutions (unless an MIT researcher is your actual research
-  collaborator on a study!)
+  The Children Helping Science platform is run through MIT, but MIT's IRB is not involved in any studies from other institutions (unless an MIT researcher is your actual research collaborator on a study!)
 
 If you do not yet have a study design and want to learn how to use the platform to create
 studies (including asynchronous studies with no experimenter present that will collect webcam 
-data of your participants) visit the :ref:`Lookit tutorial <tutorial>` to learn how 
-the platform works.
+data of your participants) visit the :ref:`Lookit tutorial <tutorial>` or the :ref:`jsPsych tutorial <jspsych-tutorial-first-study>`.
 
 5. What happens next?
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -146,10 +141,7 @@ is in the specified age range, will only pay once per child) or to avoid paying 
 who do not participate in good faith (see below). 
 
 However, payment needs to be for participants' time and effort - without prior approval 
-by Lookit, payment may *not* depend on the child's behavior or performance, even if 
-that behavior renders data unusable (e.g., if an infant fusses and his parent ends
-the session early). Similarly, payment may not depend on the parent's video privacy 
-selections.
+by CHS, payment may *not* depend on the child's behavior or performance, even if that behavior renders data unusable (e.g., if an infant fusses and his parent ends the session early). Similarly, payment may not depend on the parent's video privacy selections.
 
 Beginning December 2023, new studies are required to confirm that study participants are 
 acting in good faith (i.e. that a child of the correct age is present and the family is 
@@ -162,7 +154,7 @@ You can learn more about this process and about preventing spam participation on
 
 Yes. You can ensure that any families you recruit go directly to your study page 
 on the website by including a direct link to that study anywhere you advertise 
-for participants. `Here <https://lookit.mit.edu/studies/ae84a776-77a5-4ca1-843f-4bdda2710a8d/>`__ is an example of a direct link. 
+for participants. `Here <https://childrenhelpingscience.com/studies/ae84a776-77a5-4ca1-843f-4bdda2710a8d/>`__ is an example of a direct link.
 
 **Do some studies have priority over others on the platform?**
 
@@ -188,7 +180,7 @@ part of your lab or personal researcher website. This might look like this:
 
 "Did you know that you can participate in research from the comfort of
 your own home? `Click here to check out Children Helping Science, an online platform
-for developmental research. <https://lookit.mit.edu>`__ Families can
+for developmental research. <https://childrenhelpingscience.com>`__ Families can
 participate in our studies on their home computers, any time they want!"
 
 
@@ -198,8 +190,7 @@ Recommendations for your first online study
 If you are in the process of planning your first online study, here is an ordering of steps
 we recommend that you take:
 
-1. For internal studies, complete the :ref:`Lookit tutorial <tutorial>` to get familiar with how the platform 
-   works and how to implement a study on it.
+1. For internal studies, complete the :ref:`tutorial <tutorial>` to get familiar with how the platform works and how to implement a study on it. During this tutorial, you can choose to create your first study using either the :ref:`Lookit EFP <lookit-tutorial-first-study>` or :ref:`jsPsych <jspsych-tutorial-first-study>` experiment runner.
 
 2. Figure out the details of how your study will work - counterbalancing, 
    practice trials, etc. Draft the parent-facing instructions, record any audio and video

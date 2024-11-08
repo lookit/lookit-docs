@@ -1,11 +1,11 @@
 .. _study_protocol:
 
-Protocol specification
+Lookit protocol specification
 ===================================
 
-The rest of this section is specific to internal Lookit studies that use the experiment builder (rather than sending participants to an external website.) Researchers specify how these studies work by writing a "protocol configuration" for their study. This configuration is written in JSON, which stands for JavaScript Object Notation - this is just a special text format, not code. 
+The rest of this section is specific to internal studies that use the Lookit experiment builder (rather than the jsPsych experiment builder or sending participants to an external website). Researchers specify how these studies work by writing a "protocol configuration" for their study. This configuration is written in JSON, which stands for JavaScript Object Notation - this is just a special text format, not code. 
 
-In the configuration, you essentially tell Lookit what sequence of "frames" to use in your study, and set all the options for those frames like what pictures or videos to show and for how long. You can see the available frames in the :ref:`experiment runner docs <elf:index>`.
+In the configuration, you essentially tell Lookit what sequence of "frames" to use in your study, and set all the options for those frames like what pictures or videos to show and for how long. You can see the available frames in the :ref:`Lookit experiment runner docs <elf:index>`.
 
 
 Experiment structure
@@ -21,7 +21,7 @@ Click on this field to bring up the experiment editor view.  Here is where you
 define the structure of your experiment using a JSON document. (Advanced users can choose
 to instead provide a :ref:`'protocol generator function'<generators>`, written in Javascript, which *returns* a JSON document to use as the study protocol.)
 
-Studies on Lookit are broken into a set of fundamental units called
+Lookit studies are broken into a set of fundamental units called
 **frames**, which can also be thought of as “pages” of the study. A
 single experimental trial (e.g. looking time measurement) would
 generally be one frame, as are the video consent procedure and exit survey. 
@@ -29,7 +29,7 @@ Your study protocol will define a set of ``frames`` and also a ``sequence`` sayi
 order in which to use those frames.
 
 For detailed information about how to specify your study protocol, see the 
-:ref:`experiment runner documentation <elf:protocol configuration>`.
+:ref:`Lookit experiment runner documentation <elf:protocol configuration>`.
 
 .. _add a protocol generator:
 
@@ -37,7 +37,7 @@ How to add a protocol generator function
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Although your study protocol JSON can be configured to handle a wide range of common condition assignment, counterbalancing, and conditional logic schemes, in some cases it may still be more natural to programmatically generate the protocol. For examples and details about how to write a study protocol generator function, see the 
-:ref:`experiment runner documentation <elf:generators>`.
+:ref:`Lookit experiment runner documentation <elf:generators>`.
 
 On your study edit form, check the "Use protocol generator (advanced)" box to use a protocol generator function in place of your study protocol:
 
@@ -85,7 +85,7 @@ Finding and using specific frames
 ------------------------------------
 
 For the most current documentation of individual frames available to
-use, please see :ref:`the experiment runner documentation <elf:index>`.
+use, please see :ref:`the Lookit experiment runner documentation <elf:index>`.
 
 For each frame, you will find an **example** of using it in a JSON
 schema; documentation of the **properties** which can be defined in the
