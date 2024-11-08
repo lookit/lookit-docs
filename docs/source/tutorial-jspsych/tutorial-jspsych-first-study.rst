@@ -333,7 +333,7 @@ Check out the jsPsych "hello world" tutorial if you want to start from the basic
 
 There are also lots of examples on the jsPsych plugin documentation pages (e.g. `html-button-response plugin <https://www.jspsych.org/latest/plugins/html-button-response/>`__, `survey plugin <https://www.jspsych.org/latest/plugins/survey/>`__), as well as in the `jsPsych repository "examples" folder <https://github.com/jspsych/jsPsych/tree/main/examples>`__.
 
-Keep in mind that our internal CHS jsPsych experiment runner offers a limited set of jsPsych packages (core library and plugins/extensions) and package versions. In the future, we plan to expand this set. Please see our :ref:`CHS jsPsych limitations page <jspsych-limitations>` for information one what jsPsych packages are currently available.
+Keep in mind that our internal CHS jsPsych experiment runner offers a limited set of jsPsych packages (core library and plugins/extensions) and package versions. In the future, we plan to expand this set. Please see our :ref:`CHS jsPsych limitations page <jspsych-limitations>` for information on what jsPsych packages are currently available.
 
 
 Bonus: Translate your experiment into another language
@@ -345,7 +345,7 @@ Keep in mind that this ``locale`` parameter only affects the "hard-coded" text t
 
 Also, all of the "official" jsPsych plugins/extensions already parameterize all of the text, which makes this translation parameter unnecessary.
 
-Try converting your tutorial experiment into another langauge! Here's what our tutorial code looks like with a French translation:
+Try converting your tutorial experiment into another language! Here's what our tutorial code looks like with a French translation:
 
 .. code:: javascript
 
