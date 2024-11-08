@@ -315,6 +315,7 @@ List of tutorial participants
 - Brian Leonard (MIT)
 - Shine Seon (Northwestern University)
 - Hannah Kramer (University of Wisconsin)
+- Tanvi Patel (New York University)
 - Sascha Krause (University of Wisconsin - Madison)
 - Nalinda Wanikpun (NYU)
 - Christina Moutsiana (University of Westminster)
