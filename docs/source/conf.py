@@ -52,7 +52,7 @@ source_parsers = {
 master_doc = 'index'
 
 # General information about the project.
-project = 'Lookit'
+project = 'CHS/Lookit'
 copyright = '2017, Center for Open Science and MIT'
 author = 'Center for Open Science, MIT'
 
