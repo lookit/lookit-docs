@@ -6,7 +6,7 @@ chardet==4.0.0
 charset-normalizer==3.3.2
 commonmark==0.8.1
 docutils==0.20.1
-future==0.18.2
+future==0.18.3
 idna==3.7
 imagesize==1.4.1
 importlib-resources==6.1.1
