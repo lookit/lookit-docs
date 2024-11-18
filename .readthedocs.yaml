@@ -11,7 +11,7 @@ formats:
 
 # Specify which OS to use when building docs
 build:
-  os: "ubuntu-22.04"
+  os: "ubuntu-lts-latest"
   tools:
     python: "3.12"
   jobs:
