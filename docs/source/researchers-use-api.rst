@@ -1,3 +1,5 @@
+.. _API:
+
 #################
 Using the API
 #################
@@ -5,9 +7,10 @@ Using the API
 =======================
 What is the API for?
 =======================
-Using the Lookit API allows you to programatically retrieve or update data (other than video data), rather than manually downloading JSON or CSV files from the Experimenter site. It is also currently the only way to update feedback to participants, although a way to do that via the experimenter interface is coming soon!
+Using the Children Helping Science API allows you to programatically retrieve or update data (other than video data), rather than manually downloading JSON or CSV files from the Experimenter site.
 
-Researchers do not in general need to use the API in order to use Lookit to run their studies, but it is available if needed. 
+Researchers do not need to use the API, but it is available if preferred to downloading
+data via the experimenter app. 
 
 =========
 API Tips
@@ -106,15 +109,17 @@ Authentication
 ---------------
 We are using a token-based HTTP Authentication scheme.
 
-- Go to Experimenter's admin app to create a token `/admin/authtoken/token/add/` (Only users marked as "Staff" can access the admin app; for now please ask Kim to provide you with a token.)
+- Ask CHS staff for a token. 
 
-.. image:: _static/img/add_token.png
-    :alt: Add token image
+  - Tokens are currently created via the Admin app accessible to staff only. Go to ``/__CTRL__/authtoken/token/add/``:
 
-- Select your user from the dropdown and hit 'Save'. Copy the token.
+    .. image:: _static/img/add_token.png
+        :alt: Add token image
 
-.. image:: _static/img/specific_token.png
-    :alt: Copy token image
+    Select the user from the dropdown and hit 'Save'. Copy the token.
+
+    .. image:: _static/img/specific_token.png
+        :alt: Copy token image
 
 -  Include this token in your Authorization HTTP header.  The word "Token" should come before it.
 
@@ -126,13 +131,13 @@ We are using a token-based HTTP Authentication scheme.
 
 .. code-block:: bash
 
-    curl -X GET https://localhost:8000/api/v1/users/ -H 'Authorization: Token 123456789abcdefghijklmnopqrstuvwxyz'
+    curl -X GET https://childrenhelpingscience.com/api/v1/users/ -H 'Authorization: Token 123456789abcdefghijklmnopqrstuvwxyz'
 
 - Here is an example of a POST request using curl, note the presence of the content-type header as well as the authorization header:
 
 .. code-block:: bash
 
-    curl -X POST  http://localhost:8000/api/v1/feedback/ -H "Content-Type: application/vnd.api+json" -H 'Authorization: Token abcdefghijklmnopqrstuvwxyzyour-token-here' -d '{"data": {"attributes": {"comment": "Test comment"}, "relationships": {"response": {"data": {"type": "responses","id": "91c15b81-bb25-437a-8299-13cf4c83fed6"}}},"type": "feedback"}}'
+    curl -X POST  http://childrenhelpingscience.com/api/v1/feedback/ -H "Content-Type: application/vnd.api+json" -H 'Authorization: Token abcdefghijklmnopqrstuvwxyzyour-token-here' -d '{"data": {"attributes": {"comment": "Test comment"}, "relationships": {"response": {"data": {"type": "responses","id": "91c15b81-bb25-437a-8299-13cf4c83fed6"}}},"type": "feedback"}}'
 
 ------------
 Pagination
@@ -172,11 +177,11 @@ Permissions: Must be authenticated.  You can only view children that have respon
 
 Ordering: Children can be sorted by birthday using the *ordering* query parameter.  For example, to sort oldest to youngest:
 
-GET http://localhost:8000/api/v1/children/?ordering=birthday
+GET http://childrenhelpingscience.com/api/v1/children/?ordering=birthday
 
 Add a '-' before birthday to sort youngest to oldest:
 
-GET http://localhost:8000/api/v1/children/?ordering=-birthday
+GET http://childrenhelpingscience.com/api/v1/children/?ordering=-birthday
 
 *Sample Response:*
 
@@ -575,12 +580,12 @@ DELETE /api/v1/feedback/<feedback_id>/
 METHOD NOT ALLOWED.  Not permitted via the API.
 
 -------------
-Organizations
+Labs
 -------------
 
-Viewing the list of organizations
+Viewing the list of labs
 ---------------------------------
-GET /api/v1/organizations/
+GET /api/v1/labs/
 
 Permissions: Must be authenticated.
 
@@ -590,33 +595,55 @@ Permissions: Must be authenticated.
 
     {
         "links": {
-            "first": "http://localhost:8000/api/v1/organizations/?page=1",
-            "last": "http://localhost:8000/api/v1/organizations/?page=1",
+            "first": "https://babieshelpingscience.com/api/v1/labs/?page=1",
+            "last": "https://babieshelpingscience.com/api/v1/labs/?page=1",
             "next": null,
             "prev": null,
             "meta": {
                 "page": 1,
                 "pages": 1,
-                "count": 1
+                "count": 2
             }
         },
         "data": [
             {
-                "type": "organizations",
-                "id": "665c4457-a02e-4842-bd72-7043de3d66d0",
+                "type": "labs",
+                "id": "a2a7383c-cb58-4d78-ac00-23283a762dec",
                 "attributes": {
-                    "name": "MIT"
+                    "name": "Demo lab",
+                    "institution": "Children Helping Science",
+                    "principal_investigator_name": "Sample Name",
+                    "lab_website": "https://childrenhelpingscience.com/",
+                    "description": "This is a sample lab researchers are added to upon joining CHS. It contains several demo\r\n                studies you will be able to see.",
+                    "approved_to_test": true,
+                    "pk": 2
                 },
                 "links": {
-                    "self": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
+                    "self": "https://babieshelpingscience.com/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
+                }
+            },
+            {
+                "type": "labs",
+                "id": "1c54bccd-5f3d-4dd1-967a-0f7c0565d76d",
+                "attributes": {
+                    "name": "Early Childhood Cognition Lab",
+                    "institution": "MIT",
+                    "principal_investigator_name": "Laura Schulz",
+                    "lab_website": "http://eccl.mit.edu/",
+                    "description": "We study how children construct a commonsense understanding of the physical and social world. \n                Current lab members are especially interested in how children generate new ideas and choose which problems \n                are worth working on.\n                Research in the lab often addresses 1) how children figure out cause-and-effect relations so that they can \n                predict, explain, and themselves cause things to happen; 2) influences on curiosity and exploration; and 3) \n                how these abilities interact with social cognition to help children understand themselves and other people. \n                ",
+                    "approved_to_test": true,
+                    "pk": 3
+                },
+                "links": {
+                    "self": "https://babieshelpingscience.com/api/v1/labs/1c54bccd-5f3d-4dd1-967a-0f7c0565d76d/"
                 }
             }
         ]
     }
 
-Retrieving a single organization
+Retrieving a single lab
 ---------------------------------
-GET /api/v1/organizations/<organization_id>/
+GET /api/v1/labs/<lab_id>/
 
 Permissions: Must be authenticated.
 
@@ -626,35 +653,41 @@ Permissions: Must be authenticated.
 
     {
         "data": {
-            "type": "organizations",
-            "id": "665c4457-a02e-4842-bd72-7043de3d66d0",
+            "type": "labs",
+            "id": "a2a7383c-cb58-4d78-ac00-23283a762dec",
             "attributes": {
-                "name": "MIT"
+                "name": "Demo lab",
+                "institution": "Children Helping Science",
+                "principal_investigator_name": "Sample Name",
+                "lab_website": "https://childrenhelpingscience.com/",
+                "description": "This is a sample lab researchers are added to upon joining CHS. It contains several demo\r\n                studies you will be able to see.",
+                "approved_to_test": true,
+                "pk": 2
             },
             "links": {
-                "self": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
+                "self": "https://babieshelpingscience.com/api/v1/labs/a2a7383c-cb58-4d78-ac00-23283a762dec/"
             }
         }
     }
 
 
-Creating an Organization
+Creating a lab
 ---------------------------------
-POST /api/v1/organizations/
+POST /api/v1/labs/
 
 METHOD NOT ALLOWED.  Not permitted via the API.
 
 
-Updating an Organization
+Updating a lab
 ---------------------------------
-PUT /api/v1/organizations/<organization_id>/
+PUT /api/v1/lab/<lab_id>/
 
 METHOD NOT ALLOWED.  Not permitted via the API.
 
 
-Deleting an Organization
+Deleting a Lab
 ---------------------------------
-DELETE /api/v1/organizations/<organization_id>/
+DELETE /api/v1/labs/<lab_id>/
 
 METHOD NOT ALLOWED.  Not permitted via the API.
 
@@ -894,11 +927,6 @@ Sort Order: By default, studies are sorted reverse date_modified, meaning the mo
                     "public": true
                 },
                 "relationships": {
-                    "organization": {
-                        "links": {
-                            "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
-                        }
-                    },
                     "creator": {
                         "links": {
                             "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/"
@@ -950,11 +978,6 @@ Permissions: Must be authenticated.  You can fetch an active study or a study yo
                 "public": true
             },
             "relationships": {
-                "organization": {
-                    "links": {
-                        "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
-                    }
-                },
                 "creator": {
                     "links": {
                         "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/"
@@ -1045,11 +1068,6 @@ Endpoint can return both participants and researchers, if you have permission to
                             "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/demographics/"
                         }
                     },
-                    "organization": {
-                        "links": {
-                            "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
-                        }
-                    },
                     "children": {
                         "links": {
                             "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/children/"
@@ -1089,11 +1107,6 @@ Permissions: Must be authenticated.  You can view participants that have respond
                 "demographics": {
                     "links": {
                         "related": "http://localhost:8000/api/v1/users/834bbf33-b249-4737-a041-43574cd137a7/demographics/"
-                    }
-                },
-                "organization": {
-                    "links": {
-                        "related": "http://localhost:8000/api/v1/organizations/665c4457-a02e-4842-bd72-7043de3d66d0/"
                     }
                 },
                 "children": {

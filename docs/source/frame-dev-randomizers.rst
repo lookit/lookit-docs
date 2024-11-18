@@ -1,5 +1,5 @@
 Custom randomizer frames
-========================
+================================================
 
 Experimenter supports a special kind of frame called ‘choice’ that
 defers determining what sequence of frames a participant will see until
@@ -24,12 +24,10 @@ Generally the structure for a ‘choice’ type frame takes the form:
        ]
    }
 
-Where: - **sampler** indicates which ‘randomizer’ to use. This must
-correspond with the values defined in
-``lib/exp-player/addon/randomizers/index.js`` - **options**: an array of
-options to sample from. These should correspond with values from the
-``frames`` object defined in the experiment structure (for more on this,
-see `the experiments docs <experiments.html>`__)
+Where:
+
+- **sampler** indicates which ‘randomizer’ to use. This must correspond with the values defined in ``lib/exp-player/addon/randomizers/index.js``
+- **options**: an array of options to sample from. These should correspond with values from the ``frames`` object defined in the experiment structure (for more on this, see `the experiments docs <experiments.html>`__)
 
 Making your own
 ~~~~~~~~~~~~~~~
@@ -73,17 +71,16 @@ Which looks like:
    export default randomizer;
 
 The most important thing to note is that this module exports a single
-function. This function takes three arguments: - ``frame``: the JSON
-entry for the ‘choice’ frame in context - ``pastSessions``: an array of
-this participants past sessions of taking this experiment. See `the
-experiments docs <experiments.html>`__ for more explanation of this data
-structure - ``resolveFrame``: a copy of the ExperimentParser’s
-\_resolveFrame method with the ``this`` context of the related
-ExperimentParser bound into the function.
+function. This function takes three arguments:
 
-Additionally, this function should return a two-item array containing: -
-a list of resolved frames - the conditions used to determine that
-resolved list
+- ``frame``: the JSON entry for the ‘choice’ frame in context
+- ``pastSessions``: an array of this participants past sessions of taking this experiment. See `the experiments docs <experiments.html>`__ for more explanation of this data structure
+- ``resolveFrame``: a copy of the ExperimentParser’s \_resolveFrame method with the ``this`` context of the related ExperimentParser bound into the function.
+
+Additionally, this function should return a two-item array containing:
+
+- a list of resolved frames
+- the conditions used to determine that resolved list
 
 Let’s walk through the implementation:
 
@@ -117,7 +114,7 @@ recent to least recent.
        }
 
 Next we look at the conditions for this frame from the last session
-(``pastSessions[0].get(``\ conditions.${frame.id}\ ``)``). If that value
+(``pastSessions[0].get(`conditions.${frame.id}`)``). If that value
 is unspecified, we fall back to the first option in ``frame.options``.
 We calculate the index of that item in the available ``frame.options``,
 and increment that index by one.

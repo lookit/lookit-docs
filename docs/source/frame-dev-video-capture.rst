@@ -11,8 +11,8 @@ Lookit frames that collect video data make use of an Ember mixin
 This object includes methods for showing/hiding the webcam view,
 starting/pausing/resuming/stopping video recording,
 installing/destroying the recorder, and checking the current video
-timestamp (see
-https://lookit.github.io/ember-lookit-frameplayer/classes/VideoRecorderObject.html).
+timestamp.
+
 The programmer designing a new frame can therefore flexibly indicate
 when recording should begin and end, as well as recording video
 timestamps for any events recorded during this frame (e.g., so that
@@ -22,7 +22,7 @@ during a particular frame as included in the session data recorded, to
 facilitate matching sessions to videos; video filenames also include the
 study ID, session ID, frame ID, and a timestamp.
 
-To begin, you will want to add the ``VideoRecord`` mixin to your
+To begin, you will want to add the ``VideoRecord`` :ref:`mixin <elf:video-record>` to your
 experiment frame. This provides, but does not in itself activate, the
 capability for your frame to record videos.
 
@@ -40,10 +40,9 @@ Limitations
 
 One technical challenge imposed by webcam video streaming is that a
 connection to the server must be established before webcam recording can
-be quickly turned on and off, and this process may take up to several
-seconds. Each experiment frame records a separate video clip and
-establishes a separate connection to the server, so frames must be
-designed to wait for recording to begin before proceeding to a portion
+be quickly turned on, and this process may take up to a few
+seconds. If you are setting up your frame to create a separate video clip, you will need to 
+design your frame to wait for recording to begin before proceeding to a portion
 of the trial where video data is required. This fits well with typical
 study designs using looking time or preferential looking, where the
 child’s attention is returned to the center of the screen between
@@ -54,9 +53,9 @@ trial. When collecting verbal responses, the study frame can simply
 pause until the connection is established or, similarly, proceed with an
 initial portion of the trial where video data is not required.
 
-Currently, continuous webcam recording across frames is not possible on
-Lookit; any periods of continuous recording must be within a single
-frame. This is not a hard technical limitation, though.
+You can also plan for users of your frame to turn on continuous recording using multi-frame 
+or 'session' recordings, either using the :ref:`elf:exp-lookit-start-recording` and :ref:`elf:exp-lookit-stop-recording`
+frames or by directly setting the ``startSessionRecording`` and ``endSessionRecording`` parameters.
 
 How it works
 ~~~~~~~~~~~~

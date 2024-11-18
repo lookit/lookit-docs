@@ -1,34 +1,38 @@
+.. _Contributor Guidelines:
+
 ==================================
-Guidelines for contributors
+Contributor Guidelines
 ==================================
 
-Interested in helping write the code behind the Lookit platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
+Interested in helping write the code behind the CHS platform?  Thanks for supporting open source science! This page describes the process any would-be contributor should plan to use.  We have included some beginner-friendly details in case you are new to open source projects.
 
-The content of this page applies to all three Lookit repos: ``lookit-api`` (Lookit site), ``ember-lookit-frameplayer`` (system for displaying experiments & components to use), and  ``lookit-docs`` (specific frames, subrepo of ember-lookit-frameplayer).
+The content of this page applies to all four CHS repos: ``lookit-api`` (CHS site), ``ember-lookit-frameplayer`` (Lookit experiment runner), ``lookit-jspsych`` (jsPsych experiment runner), and ``lookit-docs`` (the documentation you're reading now).
 
->> **Where's the code I need?** If you only want to change something about the Lookit site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run `lookit-api` and can follow the Django project installation steps. If you want to develop experiment frames or change how the experiment player works, you will need to follow the steps for local frame development, installing *both* `lookit-api` and `ember-lookit-frameplayer` and telling them how to talk to each other. Your changes, however, will likely be limited to `ember-lookit-frameplayer`.
+.. admonition:: Where's the code I need?
+
+   If you only want to change something about the CHS site, without touching experiment functionality (for instance, to add a question to the demographic survey or change how studies are sorted), you will only need to run ``lookit-api`` and can follow the Django project installation steps. If you want to develop Lookit experiment frames or change how that experiment runner, you will need to follow the steps for local Lookit experiment runner development, installing *both* ``lookit-api`` and ``ember-lookit-frameplayer`` and telling them how to talk to each other. Your changes, however, will likely be limited to ``ember-lookit-frameplayer``. For the lookit-jspsych experiment runner, you will also need to install *both* ``lookit-api`` and ``lookit-jspsych``, and set up your local ``lookit-api`` to import your local ``lookit-jspsych`` packages. However, if you you want to develop your own jsPsych plugins (trials), you can do without installing any CHS code - just follow the jsPsych documentaton for `setting up your environment <https://www.jspsych.org/latest/developers/configuration/>`_ and `developing plugins <https://www.jspsych.org/latest/developers/plugin-development/>`_.
 
 Prerequisites
 ~~~~~~~~~~~~~~~
 
-To contribute to the `lookit-api` codebase, it will be very helpful to have a (a) a strong grasp of Python and (b) some familiarity with the Django framework. Learning Python is outside the scope of these docs, but if you want someplace to start, we highly recommend `Think Python <http://greenteapress.com/thinkpython2/html/index.html>`_. If you're already familiar with Python but haven't used the web framework Django, we highly recommend taking the time to complete `the official tutorial <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_.
+To contribute to the `lookit-api` codebase, it will be very helpful to have a (a) a strong grasp of Python and (b) some familiarity with the Django framework. Learning Python is outside the scope of these docs, but if you want someplace to start, we highly recommend `Think Python <http://greenteapress.com/thinkpython2/html/index.html>`_. If you're already familiar with Python but haven't used the web framework Django, we highly recommend taking the time to complete `the official Django tutorial <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_.
 
 To contribute to the `ember-lookit-frameplayer` codebase - e.g., when creating your own experiment frames - it will be helpful to have (a) a strong grasp of Javascript and (b) some familiarity with Ember.js. However, we're really not using that much of the functionality of Ember, and if you're just making some new frames, we would recommend getting started by trying out modifications of an existing frame to get your feet wet, rather than trying to learn Ember from scratch.
-
-To contribute to these docs, you'll just need to be able to edit `ReStructured Text  <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ files! You don't need to learn anything in advance - just look up syntax when you're not sure how to make a link, include an image, etc.
 
 Getting started
 ~~~~~~~~~~~~~~~~~~~
 
-At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`_. You should plan to make feature-specific branches off of the ``develop`` branch of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.  Before submitting a PR, merge in the most recent changes from the ``develop`` branch.  
+At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`__.
 
-First create your own fork of lookit-api, ember-lookit-frameplayer, and/or lookit-docs. Follow the directions for installation of lookit-api or ember-lookit-frameplayer if needed. 
+You should plan to make feature-specific branches off of the ``develop`` branch (for ``lookit-api``, ``lookit-docs``), ``master`` branch (for ``ember-lookit-frameplayer``), or ``main`` branch (for ``lookit-jspsych``) of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
+
+First create your own fork of ``lookit-api``, ``ember-lookit-frameplayer``, ``lookit-jspsych``, and/or ``lookit-docs``. Follow the directions for installation of ``lookit-api`` or ``ember-lookit-frameplayer`` if needed. 
 
 
 Ignoring some files
 ~~~~~~~~~~~~~~~~~~~~
 
-You may want to configure a global .gitignore on your machine and include your virtualenv(s) along with any files specific to your system.  A sample global .gitignore is available `here <https://gist.github.com/octocat/9257657>`_ -- you can tell git to globally ignore files specified in a .gitignore file via::
+You may want to configure a global .gitignore on your machine and include your virtualenv(s) along with any files specific to your system.  A sample global .gitignore is available `here <https://gist.github.com/octocat/9257657>`__ -- you can tell git to globally ignore files specified in a .gitignore file via::
 
     git config --global core.excludesfile ~/path/to/your/.gitignore_global
 
@@ -76,61 +80,81 @@ If you are aware of changes in the branch you forked from, rebase your branch fr
     
 and then resolving all merge conflicts.
 
-On `lookit-api`, you should then update dependencies like this::
+On ``lookit-api``, you should then update dependencies like this::
 
     pip install -r requirements/defaults.txt
     python manage.py migrate
     python manage.py test
     
-On `ember-lookit-frameplayer`, you should update dependencies using the package manager yarn.
+On ``ember-lookit-frameplayer``, you should update dependencies using the package manager yarn.
 
-Next, push all your local changes to your own fork. You should push your code (making sure to replace `feature/my-validation-feature` with whatever your branch is actually called)::
+Next, push all your local changes to your own fork. You should push your code (making sure to replace ``feature/my-validation-feature`` with whatever your branch is actually called)::
 
     git push --set-upstream origin feature/my-validation-feature
 
 Prior to finalizing your commit, make sure to clean up your code to comply with PEP8. Since both black and isort are included in our development dependencies, you should just be able to run ``isort -rc . --skip venv`` to fix your imports, and similarly ``black . --exclude=venv`` to "blacken" your changes. With both commands, replace ``venv`` with the actual name of your virtual env directory so that you don't blacken/isort your dependencies.
 
-When your branch is ready (you've tested your changes out, and your code has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), then click `new pull request`.   Change the base to `develop` and the compare to `feature/my-validation-feature`. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by Lookit staff; changes may be requested before changes are merged into the develop branch. To allow Lookit staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
+When your branch is ready (you've tested your changes out, and your code has comments and tests), submit a Pull Request! To do this, go to GitHub, navigate to your fork (in this case the github extension should be /your-username/lookit-api), then click ``new pull request``.   Change the base to ``develop`` and the compare to ``feature/my-validation-feature``. Finally, click `Create pull request` and describe the changes you have made. Your pull request will be reviewed by CHS staff; changes may be requested before changes are merged into the develop branch. To allow CHS staff to add changes directly to your feature branch, follow the directions `here <https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/>`_.
 
-IMPORTANT: WHEN YOUR PR IS ACCEPTED, stop using your branch right away (or delete it altogether).  New features (or enhanced versions of your existing feature) should be created on brand new branches (after pulling in all the fresh changes from ``develop``).
+IMPORTANT: WHEN YOUR PR IS ACCEPTED, stop using your branch right away (or delete it altogether).  New features (or enhanced versions of your existing feature) should be created on brand new branches based off the most up-to-date versions of the repository's 'base' branch (i.e. ``develop`` for ``lookit-api`` and ``lookit-docs``, ``master`` branch for ``ember-lookit-frameplayer``, or ``main`` branch for ``lookit-jspsych``).
 
 Writing your tests
 ~~~~~~~~~~~~~~~~~~~~
 
-In `lookit-api`, you should generally add to or edit the `tests.py` file in the appropriate app (e.g., `exp/tests.py`). You can run tests like this::
+In ``lookit-api``, you should generally add to or edit the ``tests.py`` file in the appropriate app (e.g., ``exp/tests.py``). You can run tests like this::
 
     python manage.py test
 
 For more information see https://docs.djangoproject.com/en/2.1/topics/testing/.
 
-In `ember-lookit-frameplayer` you should generally edit the tests under `tests/`, but as 
+In ``ember-lookit-frameplayer`` you should generally edit the tests under ``tests/``, but as 
 you will see there is currently very little coverage. Just try to leave it better than you found it.
 
-In `ember-lookit-frameplayer`, you should generally add a test file under `tests/unit/components/` if you have created a new frame. As you can see, we do not have a strong convention for this yet except for randomizer frames.
+In ``ember-lookit-frameplayer``, you should generally add a test file under ``tests/unit/components/`` if you have created a new frame. As you can see, we do not have a strong convention for this yet except for randomizer frames.
 
-To learn more about how testing is supposed to work for `ember-lookit-frameplayer`, see https://guides.emberjs.com/v2.11.0/testing/.
+To learn more about how testing is supposed to work for ``ember-lookit-frameplayer``, see https://guides.emberjs.com/v2.11.0/testing/.
 
-If you are editing the documentation, please don't write tests! Just actually try building it so you'll notice if something's not formatted the way you expected.
+For ``lookit-jspsych``, we use the `Jest framework <https://jestjs.io/>`_ and have re-used much of the `jsPsych test configuration <https://www.jspsych.org/latest/developers/configuration/#testing>`_. If you add or modify any ``lookit-jspsych`` code, you will likely need to add/edit tests that live alongside the source code in the ``.spec.ts`` files.
 
-Editing the Lookit documentation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Documentation for use of the Lookit platform (what you're reading now!), including *both* the Django site lookit-api and the Ember application ember-lookit-frameplayer used for the actual studies, lives in the `lookit-docs repo <https://github.com/lookit/lookit-docs/>`_  under ``docs``.
+Creating a Lookit experiment runner release
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The file ``index.rst`` contains the table of contents (look for ``toctree``). Documentation is written using `ReStructured Text (RST) markup <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. It is also possible to add Markdown (.md) files and have them included in the documentation, but for consistency we are trying to keep all documentation in .rst format. If you are more familiar with Markdown, you can convert between formats using `Pandoc <https://pandoc.org/>`_, e.g.::
+The ember-lookit-frameplayer repo is semantically versioned. 
 
-    pandoc -o outputfile.rst inputfile.md
+The release process is relatively manual for now because the expected workflow isn't finalized (it's currently almost entirely a one-person project).
 
-If you are making substantial changes, you will want to take a look at how those changes look locally by using Sphinx to build your own local copy of the documentation. To do this, first create another virtual environment and install the requirements for Sphinx there::
+Work should be completed and tested on a feature branch, then merged into develop.
 
-    /lookit-docs $ virtualenv -p python3 denv
-    /lookit-docs $ source denv/bin/activate
-    (denv) /lookit-docs $ pip install -r docs/requirements.txt
-    
-You can then build the docs from within the ``docs`` directory::
+To create a new major or minor release:
+---------------------------------------
 
-    (denv) /lookit-docs/docs $ make html
+1. When a set of features is ready to release, create a release branch off of develop named ``release/vX.Y.Z`` 
 
-Navigate to ``docs/build/html/index.html`` from your favorite web browser to inspect the docs.
+2. Change version number in package.json in the release branch.
 
-To edit the documentation, please submit a PR to the ``lookit-docs/develop`` branch; when it's merged, the docs served by ReadTheDocs at https://lookit.readthedocs.io will be automatically updated! (Note that it is easy to have ReadTheDocs serve multiple versions of the documentation, from different branches; we just haven't reached the point of that being more useful than confusing yet.)
+3. Turn on readthedocs builds for the release branch.
+
+4. Make PRs from the release branch to master and develop, and merge commit.
+
+5. Create a new release on GitHub, exactly matching the version name used above. Include release notes explaining what has been added/changed. For major versions (backwards-incompatible changes), include  step-by-step instructions for updating study protocols (e.g., "1. If your study contains a frame with ``kind: "exp-lookit-oldsurvey"``, replace "exp-lookit-oldsurvey" with "exp-lookit-survey". It will work the same way, the name has just changed.")
+
+To create a new bugfix release for the latest version:
+------------------------------------------------------
+
+Follow the steps above except don't turn on readthedocs builds. 
+
+To create a new bugfix release for an older version:
+----------------------------------------------------
+
+1. Create a new release branch off of the target release branch (e.g., ``release/v3.1.5``). Increment the version in the new branch name (e.g., ``release/v3.1.6``). 
+
+2. Apply appropriate patch and increment version on new bugfix branch.
+
+3. Create a new release on GitHub, exactly matching new version name. Include release notes explaining what has been fixed.
+
+
+Creating a jsPsych experiment runner release
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Coming soon!
