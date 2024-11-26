@@ -15,7 +15,7 @@ You can filter studies by name or by keywords in the description. Additionally, 
 ===================
 Creating a study
 ===================
-To create a study, click the green "Create Study" button on the study list page or navigate to /exp/studies/create/. You'll need to provide values for the fields as described in `Setting study fields`_.
+To create a study, click the "Create Study" button on the `Study list page`_ or go directly to the `Create study page`_. You'll need to provide values for the fields as described in `Setting study fields`_.
 
 .. image:: _static/img/create_study.png
     :alt: Creating a study
@@ -180,3 +180,7 @@ For external studies, the "Edit Study Design" page allows you to edit the follow
 .. _`Setup for custom frame development`: frame-dev-setup.html
 
 .. _`Setting study fields`: researchers-set-study-fields.html
+
+.. _`study list page`: https://childrenhelpingscience.com/exp/studies/
+
+.. _`create study page`: https://childrenhelpingscience.com/exp/studies/create/
