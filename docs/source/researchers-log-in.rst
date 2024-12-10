@@ -21,27 +21,7 @@ Logging in
 
    .. image:: _static/img/login/login_2fa.png
     :alt: 2FA login prompt
-
-If you created your account via OSF (i.e. before August 2020)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-   The first time you log in to CHS after OSF login is unavailable, you will need to 
-   click "Forgot password?" to request a password reset link.
-   
-    .. image:: _static/img/login/login_password_reset_link.png
-        :alt: Password reset link on login view
-   
-   Follow the link you receive by email to set a new password for your account:
-   
-    .. image:: _static/img/login/login_password_reset.png
-        :alt: Password reset form
-   
-   When you log in again, you will be redirected to two-factor authentication setup so you can use the researcher section of CHS!
-   
-    .. image:: _static/img/login/login_previous_account_redirect.png
-        :alt: Prompt to set up 2FA for previous account
-   
-   
+       
 Creating a researcher account
 --------------------------------------
 
