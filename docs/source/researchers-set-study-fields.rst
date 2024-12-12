@@ -28,11 +28,6 @@ This value affects the order in which studies are listed on your :ref:`custom la
 Setting your study's priority value to 99 (the default) will mean it is shown *first* on your page, while setting the priority to 1 will mean it is shown *last*. You can use any integers between these values for more fine-grained control over ordering. If any of your lab's studies share the same priority value, then presentation order will be random within that set. 
 
 =============================
-External
-=============================
-Will you be providing a link to a study (or study scheduling page) rather than using the Lookit or jsPsych experiment builders? If so, then check this box to show the form fields that are relevant to these types of studies, such as the study/scheduling link (see :ref:`study-url`). Checking this box will also hide fields of this form that are only applicable for internal Lookit/jsPsych studies. Leave this box unchecked if you are building an experiment to be conducted inside the CHS architecture (i.e. an 'internal' study; see `Building an Experiment`_ for more information).  
-
-=============================
 Scheduled
 =============================
 The internal experiment builders, Lookit and jsPsych, don't have the capacity for video chat studies, so this box is greyed out unless the External box is checked.  If you are running an external study, leave this box unchecked if participants will click a link and participate in a study right away, without any back-and-forth or live interaction with a researcher.  Check this box if participants will wind up scheduling and attending a video chat with a researcher.
