@@ -80,7 +80,7 @@ Study management tools designed for developmental researchers
 
 - **Start and stop** data collection at any time.
 
-  .. image:: _static/img/wiki/study_start.png
+  .. image:: _static/img/tutorial/study_start.png
      :alt: study status change screenshot
 
 - Provide :ref:`feedback <leaving_feedback>` to parents on study sessions.
