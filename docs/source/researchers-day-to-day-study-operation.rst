@@ -19,13 +19,15 @@ When your study is **active**, families can participate using the direct link sh
 
 When your study is **paused**, families can't access the study even if they have the direct link. If families follow a direct link to your study and it is paused, they will see a message `like this <https://childrenhelpingscience.com/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
 
+.. _change_discoverability:
+
 Discoverable vs. non-discoverable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also independently switch your study between discoverable and non-discoverable. On the study detail page, go to "Edit Study Ad" and find the section called "'Studies' Card and Study Detail Page". You can check or un-check the "Discoverable" box at any time, and then save the changes. Your study will not need re-approval if you are only changing the discoverability.
+You can also independently switch your study between discoverable and non-discoverable. On the study detail page, go to "Edit Study Ad" and find the section called "'Studies' Card and Study Detail Page". You can check or un-check the "Discoverable" box at any time, and then save the changes. Your study will not need re-approval if you are only changing the :ref:`discoverability <discoverability>`.
 
 .. image:: _static/img/study_discoverable.png
-    :alt: Changing the study state to "start" (active) or "paused".
+    :alt: Study discoverability checkbox.
 
 When your study is **discoverable** and active, it is:
 
@@ -42,6 +44,8 @@ When your study is **non-discoverable** and active, it is:
 You would make your study non-discoverable if you wanted to recruit your own specific participants - e.g., only people who participated in a prior study session, or families in a database for research about a rare disorder.
 
 We also recommend making studies non-discoverable to do some initial piloting - once your study is approved, you can make it active but non-discoverable, and recruit a few participants yourself to try it out. (This is also a good way to get a feel for your recruitment options and how effective they are!)
+
+.. _announcement_emails:
 
 Announcement emails
 ~~~~~~~~~~~~~~~~~~~~
