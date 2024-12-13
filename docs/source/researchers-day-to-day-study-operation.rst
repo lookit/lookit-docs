@@ -1,39 +1,45 @@
 Day-to-day study operation
 ==============================
 
-Starting and stopping data collection and advertising
+Starting, stopping, and advertising your study
 ------------------------------------------------------
 
-At any time, you can change either whether your study is active and whether it is discoverable.
+Once your study has been approved to start data collection, you can change whether your study is **active** (accepting new responses) and whether it is **discoverable** (advertised to CHS families).
 
 Active vs. paused
 ~~~~~~~~~~~~~~~~~~
 
 You can start and stop data collection independently and whenever you
-want. On your study detail page, go to “change state” -> “Start” or “Pause.”
+want. On your study detail page, in the "Study Status" box, go to “Change state” -> “Start” (active) or “Pause.”
 
-When your study is active, participants can access it at the direct link shown on your study page. If the study is also discoverable, it will be listed on the CHS "studies" page and advertised by email to eligible families.
+.. image:: _static/img/tutorial/study_start.png
+    :alt: Changing the study state to "start" (active) or "paused".
 
-When your study is paused, participants can't access it even if they have the direct link. If participants follow a direct link to your study and it is paused, they will see a message `like this <https://childrenhelpingscience.com/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
+When your study is **active**, families can participate using the direct link shown on your study page. If the study is also discoverable (see next section), changing its state to "active" means that it will be listed on the CHS "studies" page and advertised by email to eligible families.
+
+When your study is **paused**, families can't access the study even if they have the direct link. If families follow a direct link to your study and it is paused, they will see a message `like this <https://childrenhelpingscience.com/studies/c7001e3a-cfc5-4054-a8e0-0f5e520950ab/>`__.
 
 Discoverable vs. non-discoverable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also independently switch your study between discoverable
+You can also independently switch your study between discoverable and non-discoverable. On the study detail page, go to "Edit Study Ad" and find the section called "'Studies' Card and Study Detail Page". You can check or un-check the "Discoverable" box at any time, and then save the changes. Your study will not need re-approval if you are only changing the discoverability.
+
+.. image:: _static/img/study_discoverable.png
+    :alt: Changing the study state to "start" (active) or "paused".
 
 When your study is **discoverable** and active, it is:
 
-- Listed at childrenhelpingscience.com/studies
-- Advertised to eligible families via announcement emails that include a direct link to the study, sent each day at 4am
-- Accessible at the direct link
+- Listed on the CHS "studies" page: https://childrenhelpingscience.com/studies.
+- Advertised to eligible families via announcement emails that include a direct link to the study, sent each day around 4am (USA Eastern Time).
+- Accessible using the direct link.
 
 When your study is **non-discoverable** and active, it is:
 
-- Not listed at childrenhelpingscience.com/studies
-- Not advertised by announcement emails
-- Still accessible at the direct link!
+- Not listed on the CHS "studies" page: https://childrenhelpingscience.com/studies.
+- Not advertised by announcement emails.
+- Still accessible using the direct link!
 
-You would make your study non-discoverable if you wanted to recruit your own specific participants - e.g., only people who previously participated in a study in your lab, or families in a database for research about a rare disorder.
+You would make your study non-discoverable if you wanted to recruit your own specific participants - e.g., only people who participated in a prior study session, or families in a database for research about a rare disorder.
 
 We also recommend making studies non-discoverable to do some initial piloting - once your study is approved, you can make it active but non-discoverable, and recruit a few participants yourself to try it out. (This is also a good way to get a feel for your recruitment options and how effective they are!)
 
@@ -46,7 +52,7 @@ Announcement emails are sent out to families with eligible children to let them 
 - Emails are only sent to families whose email preference specifies that they want to hear about new studies.
 - Up to 50 families with at least one eligible child are notified about each study each day. Eligibility is determined each day, so depending on your eligibility criteria you will have a day to a few weeks of sending out 50 emails/day, then a trickle of kids aging in or registering.
 - Families are only notified about a study one time per child. (Emails are bundled together if they have multiple eligible children - "There's a new study for John and Jane!", but they might get a second email if another child ages in.)
-- Emails are currently sent at 4am Eastern Time.
+- Emails are currently sent around 4am Eastern Time.
 
 The limit of 50 is currently hard-coded. If you want to limit how many announcement emails are sent further, you can send out just one day of announcements at a time by making your study discoverable overnight, then making it non-discoverable again. Families who got a direct link in an announcement email will be able to participate in your study, but no more announcements will be sent unless you make the study discoverable again.
 
