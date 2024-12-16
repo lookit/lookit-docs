@@ -173,6 +173,8 @@ If the participant repeats a frame (e.g. by navigating using a "previous" button
     3-exit-survey
 
 
+.. _individual_responses:
+
 Viewing individual study responses
 -----------------------------------
 
