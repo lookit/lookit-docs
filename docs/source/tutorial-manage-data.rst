@@ -194,8 +194,8 @@ You may need to contact participants for a variety of reasons: for instance, to 
 
 You can contact participants in a particular study using the "Message Participants" link at the top of your study, found here under "Take Action":
 
-.. image:: _static/img/tutorial/message_participants_link.png
-    :alt: Message participants link
+.. image:: _static/img/tutorial/message_participants_button.png
+    :alt: Message participants button
     
 That will take you to a page link this where you can see and download previous emails (left side) or compose new emails (right side). This interface is in progress with work planned to make it easier to use, but it's functional! 
 
