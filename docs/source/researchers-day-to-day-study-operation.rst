@@ -230,15 +230,15 @@ actually have to enforce that for people who get the kid later, which is
 reasonable - but this way if someone ONLY submits the consent video and
 doesn't have a child present, you don't have to pay them.)
 
-Parents who ran into a technical problem and want to try again
-----------------------------------------------------------------
+Allowing families to participate again
+----------------------------------------
 
 Sometimes parents may contact you to see if they can try your study
 again because they had a technical problem or their child wasn’t
 interested the first time. Whether you can use the data may depend on
 the particular circumstances and your study design, but on a technical
 level it’s fine - you can let the parent know they may see a warning
-about having already participated but that they can safely ignore it.
+about not being eligibile, but that they can safely ignore it.
 
 .. _confirm_consent:
 
