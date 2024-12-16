@@ -133,6 +133,8 @@ You can also filter the "Previous Messages" table using the search/filter boxes 
     :alt: Filter messages sent to participants
 
 
+.. _sending-a-message:
+
 Sending a message
 ~~~~~~~~~~~~~~~~~~
 
@@ -169,8 +171,7 @@ Once you have added all recipients to your message, write your email "subject" a
 Compensating participants
 ----------------------------------------
 
-If you are compensating participants, in most cases you will be 
-messaging them through the CHS email interface to give them gift
+If you are compensating participants, in most cases you will :ref:`send them a message <sending-a-message>` through the CHS messaging interface to give them gift
 cards, using the user IDs you can see in the consent manager and/or the
 response data. If your institution requires direct compensation or requires 
 the collection of email addresses for other compliance reasons, you can add
@@ -213,8 +214,7 @@ in the age range for the study in order to participate. Basically, stuff
 the parent can know before they get started is fair game. (But be
 careful and err on the side of payment if there is any discrepancy
 between your listed age range - e.g. “for three-year-olds” - and the
-min/max used for automatic warnings; see `the
-docs <https://lookit.readthedocs.io/en/develop/researchers-using-platform.html#creating-a-study>`__.)
+:ref:`min/max ages used for automatic warnings <min_max_ages>`.)
 If a parent participates with a child well outside the age range, you
 might want to email them to thank them for participating, let them know
 it's fine to check out the study and you hope they found it interesting
@@ -245,21 +245,19 @@ about not being eligibile, but that they can safely ignore it.
 Confirming consent
 ----------------------------------------
 
-You will need to review consent videos using the Consent Manager tool
-and determine whether each one represents clear informed consent. (See
-`the
-docs <https://lookit.readthedocs.io/en/develop/researchers-manage-consent.html>`__.)
+You will need to review consent videos using the :ref:`Consent Manager <coding-consent>` tool
+and determine whether each one represents clear informed consent.
 Only after confirming consent do you receive full access to the data
 collected during the session.
 
 If you come across a video where you think a parent meant to consent to
-participate, but you do not have an adequate recording, you can email
+participate, but you do not have an adequate recording, you can :ref:`send a message <sending-a-message>` to
 the participant to ask for confirmation. See the ‘informed consent
 guidelines’ in the `Terms of Use <https://childrenhelpingscience.com/termsofuse/>`__
 for guidance. Here is an example of an email we have sent to confirm
 consent:
 
-   Thanks so much for participating in the Lookit study “Your baby the
+   Thanks so much for participating in the CHS study “Your baby the
    physicist” with your child! We really appreciate your time - and
    you’re one of our first participants, so we’re extra excited :)
 
