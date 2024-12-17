@@ -160,11 +160,14 @@ You may find that some participants are listed in the "Recipients" but their nam
 
 The "Recipients" field will only allow you to add parents who have tried to participate in this study (i.e. clicked the "Participate" button). If you search for a parent name or ID in the "Recipients" box and see "No results found", then this means that either there is a typo in your search text or that parent has not participated.
 
-Once you have added all recipients to your message, write your email "subject" and "body" text and then hit the "Submit" button to send it. Your message should appear in the study's "Previous Messages" section. 
+Once you have added all recipients to your message, write your email "subject" and "body" text and then hit the "Submit" button to send it. You should see a confirmation message about your email having been sent, and it should appear as a new row at the top of the table in the "Previous Messages" section.
+
+.. image:: _static/img/contact_participants_confirmation.png
+    :alt: Confirmation that message has been sent
 
 .. admonition:: Email delivery delays
   
-  Messages are typically sent out immediately, but our messaging system can occasionally get backed up. When that happens, it may take a few hours before the email is actually sent, even though it will immediately appear under "Previous Messages". Please allow 24 hours for email delivery, and contact us on the Slack tech_support channel if you experience longer delays or other messaging problems!
+  Messages are typically sent out immediately, but our messaging system can occasionally get backed up. When that happens, it may take a few hours before the email is *actually* sent, even though it will immediately appear under "Previous Messages". Please allow 24 hours for email delivery, and contact us on the Slack tech_support channel if you experience longer delays or other messaging problems!
 
 .. _compensation:
 
