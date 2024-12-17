@@ -241,7 +241,7 @@ again because they had a technical problem or their child wasn’t
 interested the first time. Whether you can use the data may depend on
 the particular circumstances and your study design, but on a technical
 level it’s fine - you can let the parent know they may see a warning
-about not being eligibile, but that they can safely ignore it.
+about not being eligible, but that they can safely ignore it.
 
 .. _confirm_consent:
 

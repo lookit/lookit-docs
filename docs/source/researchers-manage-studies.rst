@@ -107,7 +107,7 @@ What does "starting" your study do? It allows your study to collect (non-preview
 
 If your study is set as **non-discoverable**, starting the study will allow anyone to participate via a direct link. The study link is shown on your study detail page in the experimenter interface. You are then responsible for distributing this link to participants. This setting is useful for studies intended for a very specific population, for instance, an online follow-up to an in-person study. You can email the direct link to families, without worrying about screening out other families on CHS.
 
-If your study is set as **discoverable** (one of the checkboxes on the "Edit study ad" page), starting the study will also add your study to those displayed at `<https://childrenhelpingscience.com/studies/>`_, and anyone (including you) will be able to participate in it from there. It will also add your study to the list of those advertised to eligibile participants through our :ref:`announcement emails <announcement_emails>`.
+If your study is set as **discoverable** (one of the checkboxes on the "Edit study ad" page), starting the study will also add your study to those displayed at `<https://childrenhelpingscience.com/studies/>`_, and anyone (including you) will be able to participate in it from there. It will also add your study to the list of those advertised to eligible participants through our :ref:`announcement emails <announcement_emails>`.
 
 ===============================================
 Study ad page
