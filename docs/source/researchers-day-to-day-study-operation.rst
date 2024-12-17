@@ -187,6 +187,8 @@ consent:
    If you did NOT mean to consent to participate in the study, no action
    is required. You can ignore this email and we will not use your data.
 
+Once you have confirmation that the parent *did* consent for you to use their data from a particular session, you can accept the consent for that same session, and add a note about it in the "Comments" section underneath the video box. The comment should mention where the parent's consent confirmation can be found.
+
 Sending child-related data to families
 ----------------------------------------
 
