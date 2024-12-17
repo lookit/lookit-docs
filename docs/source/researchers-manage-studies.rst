@@ -100,7 +100,14 @@ Starting and stopping data collection
 
 Starting and pausing data collection can be done instantly at any time after your study is approved, using the same dropdown menu as for submitting your study.
 
-What does "starting" your study do? If your study is set as "discoverable" (one of the checkboxes under "edit study"), starting will add your study to the set of studies displayed at `<https://childrenhelpingscience.com/studies/>`_, and anyone (including you) will be able to participate in it from there. If your study is set as non-discoverable, anyone will be able to participate via a direct link (shown on your study page in the experimenter interface). This is useful for studies intended for a very specific population, for instance if you're doing an online follow-up to an in-person study: you can email the direct link to families, without worrying about screening out other families on CHS.
+.. image:: _static/img/tutorial/study_start.png
+    :alt: Study status dropdown menu.
+
+What does "starting" your study do? It allows your study to collect (non-preview) responses. Your study might also be advertised to potential participants, depending on its :ref:`discoverability <discoverability>` setting. You can :ref:`change the study discoverability <change_discoverability>` at any time, without needing re-approval.
+
+If your study is set as **non-discoverable**, starting the study will allow anyone to participate via a direct link. The study link is shown on your study detail page in the experimenter interface. You are then responsible for distributing this link to participants. This setting is useful for studies intended for a very specific population, for instance, an online follow-up to an in-person study. You can email the direct link to families, without worrying about screening out other families on CHS.
+
+If your study is set as **discoverable** (one of the checkboxes on the "Edit study ad" page), starting the study will also add your study to those displayed at `<https://childrenhelpingscience.com/studies/>`_, and anyone (including you) will be able to participate in it from there. It will also add your study to the list of those advertised to eligible participants through our :ref:`announcement emails <announcement_emails>`.
 
 ===============================================
 Study ad page

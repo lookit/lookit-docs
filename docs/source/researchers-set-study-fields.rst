@@ -178,7 +178,7 @@ Here you might focus on how old babies are when they "turn" six months and then 
 Must (not) have participated
 =============================
 
-These fields allow you to specify that participants are only eligibile for this study if they **have** participated in a certain study or set of studies, and/or **have not** participated in a certain study or set of studies. This can be useful for making sure that samples do not overlap across a set of studies, or recruiting specific participants for longitudinal follow-up studies.
+These fields allow you to specify that participants are only eligible for this study if they **have** participated in a certain study or set of studies, and/or **have not** participated in a certain study or set of studies. This can be useful for making sure that samples do not overlap across a set of studies, or recruiting specific participants for longitudinal follow-up studies.
 
 For each of these fields, you can click on a study to select it, and click it again to remove it. You can select multiple studies. The list of currently-selected studies will appear below the selection box.
 

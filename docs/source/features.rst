@@ -68,9 +68,9 @@ Study management tools designed for developmental researchers
   based on age, gestational age, gender, languages spoken, and other
   characteristics.
 
-- **Contact participants** to invite them to another session of a
+- **Contact participants** using the :ref:`CHS messaging system <contacting_participants>` to invite them to another session of a
   longitudinal study, provide compensation, or ask clarifying
-  questions. Email records for each study are accessible on CHS
+  questions. Message records for each study are accessible on CHS
   and you can download them for your records.
 
 - For **longitudinal studies**, determine which tasks and stimuli to use
@@ -80,7 +80,7 @@ Study management tools designed for developmental researchers
 
 - **Start and stop** data collection at any time.
 
-  .. image:: _static/img/wiki/study_start.png
+  .. image:: _static/img/tutorial/study_start.png
      :alt: study status change screenshot
 
 - Provide :ref:`feedback <leaving_feedback>` to parents on study sessions.

@@ -173,6 +173,8 @@ If the participant repeats a frame (e.g. by navigating using a "previous" button
     3-exit-survey
 
 
+.. _individual_responses:
+
 Viewing individual study responses
 -----------------------------------
 
@@ -347,7 +349,7 @@ The ``response`` data contains information concerning this particular session: w
 -  **date_created**: timestamp for when the response was created (i.e. when the session began)
 -  **completed**: A ``true``/ ``false`` flag indicating whether or not the participant submitted the last frame of the study. Note that this may not line up with your notion of whether the participant completed the study, in two ways: first, ``completed`` will be ``true`` even if the participant leaves early, as long as they submit the exit survey which they skip to when pressing F1. Second, ``completed`` will be ``false`` if they don’t submit that exit survey, even if they completed all of the important experimental parts of the study.
 -  **withdrawn**: A ``true``/ ``false`` flag indicating whether or not the participant withdrew permission for viewing/use of study video (beyond consent video). If ``true``, the video repsonses will not be available and must not be used.
--  **eligibility**: List of eligibility codes, separated by spaces. Can be either ``Eligible`` or one or more of: ``Ineligible_TooYoung``/ ``Ineligible_TooOld``, ``Ineligible_CriteriaExpression``, ``Ineligible_Participation``. These eligibility categories are meant to help researchers determine whether the child was eligibile for the study *at the time that they started the study session*. If this list contains one or more of the 'Ineligible' categories, then the family would've seen some red eligibility warning text on the page when they began the study session.
+-  **eligibility**: List of eligibility codes, separated by spaces. Can be either ``Eligible`` or one or more of: ``Ineligible_TooYoung``/ ``Ineligible_TooOld``, ``Ineligible_CriteriaExpression``, ``Ineligible_Participation``. These eligibility categories are meant to help researchers determine whether the child was eligible for the study *at the time that they started the study session*. If this list contains one or more of the 'Ineligible' categories, then the family would've seen some red eligibility warning text on the page when they began the study session.
 -  **parent_feedback**: Freeform parent feedback entered into the exit survey, if any. This field may incidentally contain identifying or sensitive information depending on what parents say, so it should be scrubbed or omitted from published data.
 -  **birthdate_difference**: Difference in days between birthdate entered in exit survey, if any, and birthdate of registered child participating. Positive values mean that the birthdate from the exit survey is LATER. Blank if no birthdate available from the exit survey.
 -  **video_privacy**: Privacy level for videos selected during the exit survey, if the parent completed the exit survey. Possible levels are ``private`` (only people listed on your IRB protocol can view), ``scientific`` (can share for scientific/educational purposes), and ``public`` (can also share for publicity). In no cases may videos be shared for commercial purposes. If this is missing (e.g., family stopped just after the consent form and did not complete the exit survey), you must treat the video as ``private``.
