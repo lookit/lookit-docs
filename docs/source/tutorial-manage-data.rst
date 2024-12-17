@@ -185,59 +185,59 @@ Exercises
 
 2. What fraction of children who responded at least once live in homes with at least 10 books?
 
-.. _contacting_participants:
+.. _tutorial_contacting_participants:
 
-Contacting participants
------------------------------
+Sending messages to participants
+----------------------------------
 
-You may need to contact participants for a variety of reasons: for instance, to let them know it's time to complete another session of a longitudinal study, to ask for clarification about a problem they reported, or to announce that the results of your study have been published!
+You may need to contact participants using the :ref:`CHS messaging interface <contacting_participants>` for providing compensation or a variety of other reasons. From your main study details page, find the "Message Participants" button on the right-hand side. That will take you to a page where you can see previous messages (left side) and compose new messages (right side). The first thing you will do when you send an email is select the "Message Type". These line up with the email types participants can opt to receive - click on each of the five buttons to see a description of the message type.
 
-You can contact participants in a particular study using the "Message Participants" link at the top of your study, found here under "Take Action":
+Next, you specify the recipient(s). You can do this by searching for the appropriate **Parent name** or **Parent ID**. This is the shorter hashed ID that is unique to each study, which you can find in the "Response Details" section of the :ref:`Individual Responses page <individual_responses>`, or in the response data ("participant": "hashed_id" in JSON files; "participant__hashed_id" in CSV files). 
 
-.. image:: _static/img/tutorial/message_participants_button.png
-    :alt: Message participants button
-    
-That will take you to a page link this where you can see and download previous emails (left side) or compose new emails (right side). This interface is in progress with work planned to make it easier to use, but it's functional! 
-
-.. admonition:: Where are the email addresses?
-
-   You may notice that although you can message participants, you're not being provided with their actual email addresses. We apologize for the inconvenience this causes in implementing some custom workflows, and can discuss providing email permissions with individual labs if necessary. However, obscuring email addresses is deliberate: it allows us to programmatically enforce participants' email selections (so that they don't receive email types they don't want), protects against accidental disclosure, and ensures you have a central record of all communication. Again, this is a matter of sharing a reputation!
-   
-The first thing you will do when you send an email is select the "Message Type". These line up with the email types participants can opt to receive: notifications that it's time for another session of a longitudinal study; notifications that a new study is available for them to participate in; updates about this study (like that results are available); and clarifying questions about their responses.
-
-Next, you specify the recipient(s). You can do this by searching for the appropriate **account** ID. Finally, you write your message subject and body, and hit send! Let's try it out with a few example scenarios.
+Finally, you write your message subject and body, and hit send! Let's try it out with a few example scenarios.
 
 Contact a participant about a consent video issue
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 First, let's imagine that there was an issue with your consent video and you needed to confirm that it was ok to use data from the session. 
 
-In one browser tab, open up the consent manager view for the "Apples to Oranges" study, and find your consent video. Scroll down to the information about the session. You should see a "Participant information" section, separate from "Child information." Copy the (hashed) ID for the participant.
+In one browser tab, open up the Consent Manager page for the "Apples to Oranges" study, and find your consent video. Scroll down to the information about the session. You should see an "Account Information" section. In that box you will find the shorter (hashed) Parent ID - copy this value.
 
-.. image:: _static/img/tutorial/participant_id.png
-    :alt: Participant ID
+.. image:: _static/img/tutorial/account_parent_id.png
+    :alt: Find participant ID in Consent Manager Session Information.
     
-In another browser tab, open up the "Message participants" view for the same study. Choose the message type "response questions" since this is a clarifying question about the response. Under "recipients," deselect all and then paste the participant ID into the box. That should bring up exactly one potential recipient (which is you!) - click to add it.
+In another browser tab, open up the "Message Participants" page for the same study. Choose the message type for "response questions" (4th button) since this is a clarifying question about the response. Under "Recipients", paste the Parent ID into the box. That should bring up exactly one potential recipient, which is you! Click the ID to add it to the recipients list. 
 
-Write a subject and body for your email explaining the problem and asking whether it's ok to use data from this session. (See :ref:`day-to-day study operation <confirm_consent>` for details about what you might say!)
+.. image:: _static/img/tutorial/message_participants_recipients.png
+    :alt: Selecting recipients on contact participants page
 
-Go ahead and send your email, and make sure you receive it!
+.. admonition:: Why is a recipient name/ID grayed-out?
+
+    You may find that some participants appear under "Recipients" but their names are grayed-out and cannot be selected. This means that the participant has opted out of the type of message you are sending. The only message type that can be sent to any participant is the "transactional" type, which must ONLY be used for providing compensation or completing other "transactions".
+
+Write a subject and body for your email explaining the problem and asking whether it's ok to use data from this session. (See :ref:`day-to-day study operation <confirm_consent>` for suggestions about what you might say!)
+
+Go ahead and send your message. You should receive the message as an email.
+
+Finally, on the Consent Manager page, approve your own consent video so that you can access your response data in the next step. See the :ref:`Consent Manager documentation <coding-consent>` for more information on how to approve your consent.
 
 Contact a participant with a gift card code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Second, let's imagine that you're compensating participants with gift cards. (You'll want to take a look at the Terms of Use and :ref:`compensation info here <compensation>` as you make more detailed plans, but essentially, for now researchers are responsible for handling any compensation by messaging participants.)
 
-Instead of the consent manager, switch over to "individual responses" and find your response again. Copy the participant ID from the response JSON:
+From your study details page, click the "Study Responses" button from the menu on the right, then click on the "Individual Responses" tab. Find your response again. Copy the Parent ID from the "Response details" box:
 
-.. image:: _static/img/tutorial/id_in_json.png
-    :alt: Participant ID in response JSON
+.. image:: _static/img/tutorial/response_parent_id.png
+    :alt: Parent ID in the Response Details box
 
-Returning to your "message participants" tab, let's create another email. This time, you can actually select the "transactional email" option, which allows you to reach even people who have opted out of email; this is because you sending the compensation is the completion of a "transaction" they agreed to. You will see a warning which is ok:
+This same Parent ID can be found in the response data. If you download the data as a JSON file, it's under "participant": "hashed_id", and if you download the data as a CSV file, it's called "participant__hashed_id".
 
-.. image:: _static/img/tutorial/transactional.png
-    :alt: Transactional email warning
+Returning to the "Contact Participants" page, let's create another email. This time, you can select the "transactional" button (yellow), which allows you to reach even people who have opted out of email; this is because you sending the compensation is the completion of a "transaction" they agreed to. You will see a warning when you select this option, reminding you that this option is ONLY for completing a transaction.
     
 Like before, paste in your ID, write your message, send it, and make sure you receive it. (Don't actually send yourself a gift card. Unless you really want to.)
+
+.. image:: _static/img/tutorial/transactional.png
+    :alt: Transactional email
 
 Congratulations! We've covered all the basic functionality you'll need to manage your studies. Finally, we'll wrap up by briefly noting some of the advanced features you might want to use later and revisiting :ref:`Github issues<github_issues>` now that you may have some feature requests or bug reports.
