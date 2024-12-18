@@ -602,21 +602,21 @@ You may have noticed that we're asking children why Bunny has a tummyache - beca
 
 Let's set up to counterbalance the question that's asked! Again, at this point you don't need to understand all the details, let's just walk through what we'd do.
 
-We're going to change our "storybook-causal" frame into what's called a randomizer frame, instead of just a group of frames. Find this section and make the changes indicated below:
+We're going to change our "storybook-causal" frame into what's called a :ref:`randomizer frame <elf:randomization>`, instead of just a group of frames. Find the "storybook-causal" frame (inside ``frames``) and make the changes indicated below:
 
 .. code-block:: none
 
    "storybook-causal": {
-        "kind": "group", <-- change this to "choice"
-        "sampler": "random-parameter-set", <-- add this line! 
+        "kind": "group",                         <-- Change this to "choice"
+        "sampler": "random-parameter-set",       <-- Add this line!
         "frameList": [ 
-            ... <--  almost everything in here can stay the same
+            ...                                  <-- Almost everything in here can stay the same
             {
-                "audio": "bunnya01", <-- but change this to "QUESTION_AUDIO"
+                "audio": "bunnya01",             <-- But change this to "QUESTION_AUDIO"
                 "images": [
                     {
                         "id": "storybookIllustration",
-                        "src": "bunnya01.png", <-- and change this to "QUESTION_IMAGE"
+                        "src": "bunnya01.png",   <-- And change this to "QUESTION_IMAGE"
                         "top": 0,
                         "left": 10,
                         "width": 80
@@ -624,12 +624,12 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
                 ],
                 "doRecording": true
             },
-             ...
-             ],
-             "commonFrameProperties": { <-- everything in here can stay the same
-             ...
- },
-            "parameterSets": [ <-- add this section!
+            ...
+        ],
+        "commonFrameProperties": {               <-- Everything in here can stay the same
+            ...
+        },
+        "parameterSets": [                       <-- Add this section!
             {
                 "QUESTION_AUDIO": "bunnya01",
                 "QUESTION_IMAGE": "bunnya01.png"
