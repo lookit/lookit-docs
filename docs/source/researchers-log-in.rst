@@ -76,6 +76,7 @@ You might use the staging server if:
 * You're helping to try out a new feature before it's added to production
 * You're making especially heavy use of CHS while developing your own studies, working on an adapter so you can hook up another type of experiment runner, etc. - to avoid unusual load on the production server we might ask you to do your development using staging. 
 
+.. _managing_2fa:
 
 Managing 2FA credentials
 -------------------------
