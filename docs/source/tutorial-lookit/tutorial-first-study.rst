@@ -532,7 +532,11 @@ We're just going to add one more page to the end. Within the ``frameList`` list,
         ]
    }
    
-Here we're providing the name of an image to use ("bunnyend01.png") and audio to use ("bunnyend01") - if you're curious, the absolute paths to these resources are built using the ``baseDir`` provided to all frames in the list.
+Here we're providing the name of an image to use ("bunnyend01.png") and audio to use ("bunnyend01").
+
+.. admonition:: Where's the full file path?
+
+    If you're curious, the absolute paths to these stimuli files are built using the ``baseDir`` provided to all frames in the list. You can also use full paths for each file, but the ``baseDir`` parameter gives you a shortcut. You read see more about how to use this in the Lookit Framplayer :ref:`expand assets documentation page <elf:expand-assets>`.
 
 Close, save, and refresh your preview. Now after the question, you should see and hear a friendly wrap-up to this thrilling story.
 
