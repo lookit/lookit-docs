@@ -180,7 +180,8 @@ Step 3: Make changes to how your study works
 
 The "meat" of your Lookit study is in the "study protocol". From your study details page, click the "Edit Study Design" button:
 
-
+.. image:: ../_static/img/tutorial/tutorial_study_edit_design_button.png
+    :alt: Edit Study Design button on the study detail page.
 
 And then find the "Protocol configuration" box:
 
