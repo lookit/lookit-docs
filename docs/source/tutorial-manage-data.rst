@@ -4,9 +4,16 @@
 4. Managing study data
 #############################################
 
-Now that you have a good handle on how to set up the study protocol you want, it's time to look at how to manage your study: controlling who has access to what, starting and stopping data collection, reviewing and downloading your data, and contacting your participants. 
+Now that you have a good handle on how to set up the study protocol you want, it's time to look at how to manage your study and data:
 
-A note for external studies: Much of this information applies to your studies as well! External studies do not have consent management or study data for you to download, but you do have demographic snapshot data for each participant/session. Managing data access, downloading, and communicating with participants works the same across all study types. 
+* Controlling other researchers' access to your study and data
+* Starting and stopping data collection
+* Reviewing and downloading your data
+* Contacting your participants
+
+.. admonition:: Who should do this section?
+    
+    Everyone! This information applies to both Lookit and jsPsych internal studies, and much of it applies to external studies as well. External studies do not have consent management or study data, but they do have demographic snapshot data for each participant/session. Managing data access, downloading, and communicating with participants works the same across all study types.
 
 Managing access to your study: add a collaborator
 -------------------------------------------------
@@ -20,17 +27,22 @@ Try it out! Add another person to your tutorial study. On the study page in the 
 .. image:: _static/img/tutorial/manage_researchers.png
     :alt: Manage researchers section
     
-In the search box, type in the first few letters of someone you want to add, and press Enter. Click the green "+" button to add them to your study:
+(In the screenshot above, some researcher email addresses have been obscured for privacy.)
+
+In the search box, type in the name or email of a researcher you want to add, and press Enter to search. Click the "+" button next to the researcher's name/email to add them to your study:
 
 .. image:: _static/img/tutorial/add_researcher.png
     :alt: Adding a researcher
     
-They will show up on the right with "Preview" permissions initially:
+After the researcher has been added to your study, they will show up on the right with "Preview" permissions initially:
 
 .. image:: _static/img/tutorial/new_researcher_with_read_access.png
     :alt: Researcher shows up on right with read access
 
-This means they can see your study in the Experimenter interface, but not see any participant data or make any changes. You can click on "preview" for a drop-down menu to give them different permissions if you want. (:ref:`See this section<study_permissions>` for much more detailed information about the different roles available. ) Or you can click the red "-" button to remove them again.
+This means they can see your study in the Experimenter interface, but they cannot see any participant data or make any changes. You can click on "Preview" for a drop-down menu to give them different permissions if you want. See the :ref:`Study Permissions section<study_permissions>` for much more detailed information about the different roles available. Or you can click the red "-" button to remove them again.
+
+.. image:: _static/img/tutorial/change_researcher_study_permissions.png
+    :alt: Use the drop-down menu to change the researcher's study permissions
 
 Great! Now you know how to give someone else access to your study so you can collaborate.
 
