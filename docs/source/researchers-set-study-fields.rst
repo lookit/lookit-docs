@@ -46,6 +46,8 @@ You can switch the study back and forth from discoverable to non-discoverable an
 
 We recommend **starting** studies as non-discoverable, so that you can pilot with participants you recruit before inviting everyone who's eligible to participate!
 
+.. _share_preview:
+
 =============================
 Share preview
 =============================

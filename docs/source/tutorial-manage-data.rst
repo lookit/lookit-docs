@@ -67,9 +67,9 @@ Understanding previewing vs. participating in a study
 
 So far, we have tried out our studies via the "preview study" button on the study edit page. There are only a few differences between previewing and actually participating in a study:
 
-- When you preview a study, there is an "is_preview" field of the data collected that's set to true - otherwise it's false. Data collected from previewing is marked when you view consent videos or individual responses, and this field is available in the all-response downloads.
+- When you preview a study, there is an "is_preview" field of the data collected that's set to "true", otherwise it's "false". Data collected from previewing is marked when you view consent videos or individual responses, and this field is available in the all-response downloads.
 
-- Only CHS researchers with appropriate permissions can preview the study. (Either the researcher needs to have read permissions for the study, or the study needs to be set to have a shared preview - then any researcher can access it.) Anyone with a child registered on CHS can participate in a study.
+- Only CHS researchers with appropriate permissions can preview the study: either (1) the researcher has "preview" :ref:`permissions for the study <study_permissions>`, or (2) the :ref:`study is set to have a shared preview <share_preview>`, in which case any researcher account can preview it.
 
 Other than that, the experience is exactly the same, by design - so that you know exactly how your study will work. You see the same messages about whether your child is eligible, customization based on the child or past responses works the same way, and you use the same experiment runner.
 
