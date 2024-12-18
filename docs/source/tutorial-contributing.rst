@@ -341,6 +341,7 @@ List of tutorial participants
 - Annie Schwartzstein (University of California, Santa Cruz)
 - Emma Smith (University of Wisconsin-Madison)
 - Claudia Lewis (Stanford University)
+- Brianna McMillan (Smith College)
 
 Checking for and creating issues on Github
 -------------------------------------------
