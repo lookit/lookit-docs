@@ -391,22 +391,22 @@ One of the most powerful tools you have available to troubleshoot any problems a
 
 Click to preview your study, and from that browser window/tab, let's get your web console open so we can see what's going on.
 
-**If you're using Firefox**: Click the "hamburger menu" (three horizontal lines) in the top right corner of your browser and click "Web Developer" (yep, that's you now!):
+**In Firefox**: Click the "hamburger menu" (three horizontal lines) in the top right corner of your browser and click "More tools":
 
-.. image:: ../_static/img/tutorial/firefox_web_developer.png
-    :alt: Firefox hamburger menu
+.. image:: ../_static/img/tutorial/firefox_more_tools.png
+    :alt: Firefox hamburger menu and More tools
     
-Click "Web Console":
+Click "Web Developer Tools":
 
-.. image:: ../_static/img/tutorial/firefox_dev_menu.png
-    :alt: Firefox web developer menu
+.. image:: ../_static/img/tutorial/firefox_web_dev_tools.png
+    :alt: Firefox web developer tools
 
 And you should see something like this:
 
 .. image:: ../_static/img/tutorial/firefox_console.png
     :alt: Firefox console example
 
-**If you're using Chrome**: Click the three dots in the upper right corner, then "More Tools," then "Developer Tools":
+**In Chrome**: Click the three dots in the upper right corner, then "More Tools," then "Developer Tools":
 
 .. image:: ../_static/img/tutorial/chrome_dev_tools_menu.png
     :alt: Chrome developer tools menu
@@ -424,14 +424,16 @@ You should see something like this:
    
    In both Firefox and Chrome, you have access to a bunch of different tools beyond this basic web console, and you have lots of options for filtering out certain events, where to display the console (e.g. separate window vs. bottom vs. side), etc. - we're just going to cover the basics here!
 
-Now that you've gotten your web console open, you'll see a bunch of information in it. This is generally of most interest if something is going wrong and you're not sure what. You can see events that are being logged as you proceed through the study as well as any errors. Some of these errors are ok to ignore - e.g. here are a few current ones due to known but harmless bugs:
+Now that you've gotten your web console open, you'll see a bunch of information in it as you go through your study. This is generally of most interest if something is going wrong and you're not sure what. You can see events that are being logged as you proceed through the study as well as any errors. You'll see some warnings and errors that you can ignore, like these:
 
-* On the staging server there is a known bug that the fontawesome library doesn't load properly (but it does on "production" - the real CHS site) - so you may see some errors that a resource failed to load properly, like this:
+* Uncaught TypeError: a.fn.popover is undefined
+* This page uses the non standard property "zoom"
+* Layout was forced before the page was fully loaded
+* GET 404 errors for apple-touch-icon, favicon, manifest.json
+* InstallTrigger is deprecated and will be removed in the future.
+* downloadable font: Glyph bbox was incorrect 
 
-.. image:: ../_static/img/tutorial/fa_error.png
-    :alt: Fontawesome error example
-
-Leave your preview tab open, and return to the browser tab where you have the "Edit Study " page open. Let's deliberately introduce a problem in our study JSON and see what we can learn from the preview. Try adding something to the "sequence" without defining it in "frames," like this:
+Leave your preview tab open, and return to the browser tab where you have the "Edit Study Design" page open. Let's deliberately introduce a problem in our study JSON and see what we can learn from the preview. Try adding something to the "sequence" without defining it in "frames," like this:
 
 .. code-block:: none
 
@@ -451,32 +453,47 @@ Close, save changes, and then return to your preview tab and refresh it. You'll 
 
 This explains that the problem is that the Lookit frameplayer can't make sense of your study JSON, because it doesn't have a "definition" available in the "frames" value for the frame "new-and-exciting-page" that you added to your sequence.
 
-Return to the study edit page and open up the JSON editor again. Remove that "new-and-exciting-page" from your "sequence" and let's cause another problem instead. Scroll to the section of the ``frames`` object where we give parameters for the consent frame: 
+Return to the study edit page and open up the JSON editor again. Remove that "new-and-exciting-page" from your "sequence" and let's cause another problem instead. Scroll to the section of the ``frames`` object where we give parameters for the "storybook-causal" frame. Let's put a typo in the "baseDir" URL, which is the URL used to load all of the audio and images in the storybook portion of the study. This parameter can be found inside ``storybook-casual``, then under ``commonFrameProperties``. Change it to something like "https\://www.mit.edu/~kimscott/bunnystimuliTYPO/": 
 
 .. code-block:: none
 
-   "video-consent": {
-        "kind": "exp-lookit-video-consent",
-        "template": "consent_005",
-        "PIName": "Lookit Tutorial Participant",
-        "PIContact": "Jane Smith at (123) 456-7890",
-        "datause": "We are interested in how your child uses statistical evidence to figure out the cause of an event. A research assistant will watch your video and mark down your child's answer to the question at the end of the story, and as well as other information such as interactions between you and your child during the story.",
-        "include_databrary": true,
-        "risk_statement": "There are no expected risks to participation."
-        "payment": "After you finish the study, we will email you a $5 BabyStore gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
-        "purpose": "This study is about how children use statistical information to adjust their beliefs about cause and effect.",
-        "procedures": "In this study you child will view a digital 'storybook' about Bunny, who sometimes gets a tummyache. Each day Bunny eats different foods and does different activities, and we hear whether she gets a tummyache. Sometimes, Bunny feels scared because of show-and-tell. We are interested in how the pattern of evidence influences your child's beliefs about what causes Bunny's tummyache. We will ask you (the parent) to avoid discussing why Bunny has a tummyache until the end of the study.",
-        "institution": "Science University"
-    },
-    
-Try deleting one of these lines, like ``"PIContact": "Jane Smith at (123) 456-7890",``. Close, save, and refresh your preview. Once you get to the consent page, you should see an error like this complaining about the missing parameter:
+    "storybook-causal": {
+        "kind": "group",
+        "frameList": [
+            ... lots of objects clipped to save space ...
+        ],
+        "commonFrameProperties": {
+            "kind": "exp-lookit-images-audio",
+            "baseDir": "https://www.mit.edu/~kimscott/bunnystimuliTYPO/",
 
-.. image:: ../_static/img/tutorial/missing_parameter.png
-    :alt: Example missing parameter error
-    
-Note that this doesn't stop the frame from working at all (that bit of text is just missing from the consent form if you look carefully) - but this sort of error can be a useful clue in more complicated situations!
+To make this easier to test, let's also move the storybook portion of the experiment sequence, so that we can see it without having to go through the consent etc.
 
-Go ahead and put back that "PIContact" field, and let's move on to adding some finishing touches to our study.
+.. code-block:: none
+
+    "sequence": [
+        "storybook-causal",
+        "video-consent",
+        "video-config",
+        "instructions",
+        "exit-survey"
+    ]
+
+Close, save, and refresh your preview. You should see an error about being unable to load an image or audio file. The error will be in red, and it might just say "GET" with the link, or it might say something about being unable to load the file.
+
+**Firefox**:
+
+.. image:: ../_static/img/tutorial/firefox_404.png
+    :alt: Firefox 404 error
+
+.. image:: ../_static/img/tutorial/firefox_file_load_error.png
+    :alt: Firefox file loading error
+
+**Chrome**:
+
+.. image:: ../_static/img/tutorial/chrome_file_load_error.png
+    :alt: Chrome file loading error
+
+Let's get everything working again. Go back to your study protocol, fix the typo in the "baseDir" parameter so that the value is "https\://www.mit.edu/~kimscott/bunnystimuli/" and move the "storybook-causal" frame back to where it was in the ``sequence``, after "instructions" and before "exit-survey".
 
 Adding another storybook page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
