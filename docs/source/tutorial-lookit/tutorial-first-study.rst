@@ -552,7 +552,7 @@ Each frame you define on Lookit has to have a property called ``kind`` which say
 * the ``storybook-causal`` frame has kind ``group`` (this is a special kind of frame, documented :ref:`here <elf:frame groups>`)
 * the frames **within** the ``storybook-causal`` frame have kind ``exp-lookit-images-audio`` (this is added to each frame in the ``frameList`` as part of the ``commonFrameProperties``)
 
-In addition to this tutorial and the information in this documentation about how to set up a Lookit study on CHS, there is detailed information available about each of the "frames" you can use in your Lookit study. In the :ref:`experiment runner docs <elf:index>` you can browse the options and learn about options for customizing each type of frame.
+In addition to this tutorial and the information in this documentation about how to set up a Lookit study on CHS, there is detailed information available about each of the "frames" you can use in your Lookit study. In the :ref:`Lookit Frameplayer documentation <elf:index>` you can browse the frame options and learn about the parameters for customizing each type of frame.
 
 Let's take a look at the ``exp-lookit-images-audio`` documentation to see what options we have. Find it on the left sidebar and click on it. Here's what you'll see:
 
@@ -569,9 +569,9 @@ The final three sections are "Parameters," "Data collected," and "Events recorde
 .. image:: ../_static/img/tutorial/frame_doc_3.png
     :alt: Annotated frame documentation page - methods, properties, events
 
-Click on "Parameters" to see all the properties we can add to the frame definition in our protocol. You'll see that some of the things we can set are "audio," "autoProceed," "doRecording," "durationSeconds," "images," "parentTextBlock," and "showProgressBar." Each one includes an explanation of what it does and what format its value needs to be in.
+Click on "Parameters" to see all the properties we can add to the "exp-lookit-images-audio" frame. You'll see that some of the things we can set are "audio," "autoProceed," "doRecording," "durationSeconds," "images," "parentTextBlock," and "showProgressBar." Each one includes an explanation of what it does, what format its value needs to be in, and what the default value is (if there is one).
 
-Let's try changing the value of "autoProceed" on all our storybook pages. To do that we can change it within the "commonFrameProperties" in our study protocol:
+Let's try changing the value of "autoProceed" on all our storybook pages. To do that we can, find the "storybook-casual" object inside "frames", then "commonFrameProperties", then "autoProceed":
 
 .. code-block:: none
 
