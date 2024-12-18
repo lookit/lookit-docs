@@ -46,20 +46,20 @@ This means they can see your study in the Experimenter interface, but they canno
 
 Great! Now you know how to give someone else access to your study so you can collaborate.
 
-Updating the code your study uses
----------------------------------
+Updating the code your study uses (Lookit studies only)
+--------------------------------------------------------
 
-Another thing you'll probably need to do eventually is set your study to use an updated version of the underlying Lookit frameplayer code. 
+If you're running a CHS study that uses the Lookit experiment runner, then another thing you'll probably need to do eventually is set your study to use an updated version of the underlying Lookit frameplayer code. 
 
 Remember when we had to "build an experiment runner" so we could preview the study? ( :ref:`You can review that here.<Building study dependencies>`) That build process took the version of the frameplayer code we specified and bundled it up into a little container for our study to run in. That container includes all the information Lookit needs about what frames are available to use and how they work.
 
-As you fine-tune your study, you will be making lots of edits to your study protocol, saying exactly what stimuli each frame should use, in what order, etc. But the study protocol is still interpreted by that same application. If at some point you want to take advantage of bug fixes, video recording improvements, new frames that have been added to the standard Lookit code, etc., you'll need to tell Lookit to use the new version and build a fresh experiment runner.
+As you fine-tune your study, you will be making lots of edits to your study protocol, saying exactly what stimuli each frame should use, in what order, etc. But the study protocol is still interpreted by that same application, which is the experiment runner. We are always updating the Lookit experiment runner with new versions to fix bugs, improve video recording, add new frames/parameters, etc. However, we do not automatically update your study's experiment runner for you, because we want your experiment to always run exactly how you expect it to. So if at some point you want to take advantage of the :ref:`Lookit experiment runner updates <runner-releases>`, you'll need to tell Lookit to use the new version and build a fresh experiment runner.
 
 One way to think about your current experiment runner is as a Lego set; it has certain types of building blocks that allow you to customize your project with the pieces you have available. But Lego is always making new blocks with interesting shapes and new affordances. If you want access to building blocks beyond what you had in your original set, you can get access to the new and improved set of blocks by rebuilding your experiment runner.
 
 Try it out now! Follow the directions in :ref:`Updating the frameplayer code for your study<updating-frameplayer-code>` to update your tutorial study to use the most recent version of the Lookit frameplayer. 
 
-By design, updating the code shouldn't break anything that currently works - you shouldn't need to change your study protocol! However, it is important to always preview your study after any update to double check, and report any problems you run into.
+By design, updating the code shouldn't break anything that currently works - you shouldn't need to change your study protocol! However, **it is important to always preview your study after updating your experiment runner** to double check that everything works as you expect. If you do run into any problems, please let us know by posting in the tech_support channel on Slack or creating a :ref:`Github issue <github_issues>`.
 
 
 Understanding previewing vs. participating in a study
