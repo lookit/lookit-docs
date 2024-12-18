@@ -321,7 +321,7 @@ Here's what it looks like now. You don't need to understand everything going on 
         "nextButtonText": "Next"
     },
 
-First, let's flesh out the "overview of how to participate" section by replacing the text with more appropriate instruction text like this:
+First, let's flesh out the "overview of how to participate" section by replacing the text with more appropriate instruction text. Inside the "instructions" frame, find the parameter called "blocks" - this is an array (list) of objects, and each object defines a block of text. Let's change the first object inside "blocks" so that it looks like this:
 
 .. code-block:: none
 
@@ -340,7 +340,7 @@ First, let's flesh out the "overview of how to participate" section by replacing
                 ]
             },
             
-Next, let's help guide families through this frame by adding numbers to the sections. (In a real study you might also consider breaking up a page like this into three shorter pages!)
+Next, let's help guide families through this frame by adding numbers to the section titles. (In a real study you might also consider breaking up a page like this into three shorter pages!)
 
 * Find the line ``"title": "Overview of how to participate in this study",`` and change that to ``"title": "1. Overview of how to participate in this study",``
 
