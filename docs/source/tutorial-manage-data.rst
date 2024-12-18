@@ -73,12 +73,12 @@ So far, we have tried out our studies via the "preview study" button on the stud
 
 Other than that, the experience is exactly the same, by design - so that you know exactly how your study will work. You see the same messages about whether your child is eligible, customization based on the child or past responses works the same way, and you use the same experiment runner.
 
-Going live!: the study approval process and starting data collection
+Going live! The study approval process and starting data collection
 --------------------------------------------------------------------
 
-If you just want other researchers to be able to preview your study to give feedback, you can set "shared preview" to true and then share the preview link on Slack. 
+If you just want other researchers to be able to preview your study to give feedback, you can go to "Edit Study Ad" and check your study's :ref:`"share preview" box <share_preview>`, and then share the preview link on Slack.
 
-But what about when you actually want to start data collection? 
+But what about when you actually want to start data collection?
 
 At that point, you will "submit" your study for approval by CHS staff. We won't practice this piece, but so you know what to expect, you can look through the 
 :ref:`information about submitting your study <study status>`.
