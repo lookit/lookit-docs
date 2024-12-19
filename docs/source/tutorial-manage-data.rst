@@ -119,37 +119,63 @@ In the Slack #tutorial channel, post a request for access to the "Apples to oran
 Checking for informed consent and giving feedback
 -------------------------------------------------
 
-The first page you see when you click "View Responses" is called the Consent Manager, and it should look something like this - with your own consent video (and maybe some others) displayed.
+From the study details page, click the "Review Consent" button in the set of buttons on the right. 
+
+.. image:: _static/img/tutorial/review_consent_button.png
+    :alt: The review consent button
+
+This takes you to the Consent Manager page. As data comes in, your first step will always be to check whether the parent provided informed consent. You do that here in the Consent Manager, which by default shows you the "pending" consent videos for review. In the left column, you'll click on each session to bring up the associated consent video(s) at the center and additional information at the bottom of the page. You can use the dropdown menu to decide whether to "accept" (mark this as valid consent) or "reject" (mark as invalid consent) each video. If you want to add any notes about the consent video, you can record comments in the text box beneath the video. For instance, you might note that there was a technical problem with the video, but you contacted the parent to confirm consent for this session (and mention where to find the parent's email that confirms consent).
 
 .. image:: _static/img/tutorial/consent_manager.png
     :alt: The consent manager view
-    
-As data comes in, your first step will always be to check whether the parent provided informed consent. You do that here in the consent manager, which by default shows you the "pending" consent videos for review. In the left column, you'll click on each session to bring up the associated consent video at the center. You can use the dropdown menu to decide whether to "accept" (mark this as valid consent) or "reject" (mark as invalid consent) each video. If you want to add any notes about the consent video, you can record comments in the text box beneath the video - for instance, you might note that there was a technical problem with the video, but you contacted the parent to confirm consent.
 
-For now, just mark your own video that you just made as "Accepted." Then click "Submit Rulings & Comments". This saves your consent coding to the CHS server. (In case it matters to your IRB: A record of which logged-in user made each consent determination and when is also stored.) 
+For now, just mark your own video that you just made as "Accepted." Then click "Submit Rulings & Comments". This saves your consent coding to the CHS server. (In case it matters to your IRB: this also creates a record of which logged-in researcher made each consent determination and when.) 
 
-In the Consent Manager, you can now use the top drop-down menu to view currently "accepted" responses, and you should be able to see your own video there:
+Now if you use the drop-down menu at the top of the "Responses" column to view currently "accepted" responses, and you should be able to see your own video there:
 
 .. image:: _static/img/tutorial/accepted_responses.png
     :alt: Accepted responses in consent manager
     
-If you needed to, you could still change the ruling about this consent video, in case you made a mistake.
+If there was a mistake about the consent ruling for a video, you can always change it again and click "Submit Rulings & Comments" to save your changes.
 
-You may notice that, compared with before, there's now more information displayed beneath your video when you select your consent video and scroll down! That's because, once you mark it as having valid consent, all the session data becomes available to you.
+Individual responses
+-------------------------------------------------
 
-Click the "individual responses" tab to take a look at the data that's been collected on this study in some more detail:
+Once you mark a response as having valid consent, all the data from that session becomes available to you in the Responses pages. Go back to the "Apples to oranges" study detail page and click on the "Study responses" button:
+
+.. image:: _static/img/tutorial/study_responses_button.png
+    :alt: Study responses button
+
+This will take you to the "All Responses" page. You will see some other tabs toward the top of the page - click the "Individual Responses" tab to take a look at the individual session data that's been collected on this study in some more detail:
+
+.. image:: _static/img/tutorial/individual_responses_tab.png
+    :alt: Individual responses tab
+
+On the Individual Responses page, you will see a table where each row represents a single response session. The top (most recent) response will be selected automatically when the page loads. You can click on other rows to view and download information about each response.
+
+Your own response will probably be the top one. To check, with the top row selected, find the "**Response details**" box, and look at the "Parent name" and "Child name" values. This "Response details" box contains various other IDs and some key information taken from the exit survey. Try clicking on other rows in the table to see how the response details change.
 
 .. image:: _static/img/tutorial/individual_responses.png
     :alt: Individual responses view
-    
-The top response in the table will probably be your own response that you accepted just now. With that row selected, you'll see a JSON version of data collected during the session displayed and a list of videos collected during the session. If you scroll to the bottom of the JSON data, you'll see information about the most recent consent ruling and the child who participated, so you can check who this is.
 
-There's also a box where you can provide feedback to the participant. This feedback gets displayed on the participant's "past studies" page and is a good place to leave a short but personal thank-you message that shows a human has seen and appreciates their videos. Try it out! Leave a feedback message on your own video.
+The "**Download response**" box allows you to download the data from the selected response in JSON or CSV format.
+
+The "**Videos**" box allows you to view and download any videos associated with the selected response.
+
+There's also a "**Feedback**" box where you can leave new feedback to the participant and any view existing feedback about this session. The feedback gets displayed to that specific participant on their "Past Studies" page. It's a good place to leave a short but personal thank-you message that shows a human has seen and appreciates their videos. Try it out! Leave a feedback message on your own video.
 
 .. image:: _static/img/tutorial/feedback.png
     :alt: Feedback box
 
-Then go back to the participant-facing site, and find that feedback under "Studies" -> "Your past studies."
+After you create a feedback comment for a response session, you will be able to view and add/edit your feedback comments on this same page.
+
+.. image:: _static/img/tutorial/existing_feedback.png
+    :alt: Feedback box with existing feedback
+
+Go back to the participant-facing site ("CHS Home" button) and find your study history ("My Past Studies" button). You should see the "Apples to oranges" study information, and below that, a "Study Responses" heading with all of the study sessions you've done for that study. This is where families will be able to see your feedback on their session, along with their own videos and other information.
+
+.. image:: _static/img/tutorial/participant_view_feedback.png
+    :alt: Pariticpant view of researcher feedback on studies history page
 
 .. admonition:: For more practice
 
