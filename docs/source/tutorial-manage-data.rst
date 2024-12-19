@@ -184,22 +184,22 @@ Go back to the participant-facing site ("CHS Home" button) and find your study h
 Downloading response data & videos
 ------------------------------------
 
-The consent manager and "individual responses" views can be helpful to get an idea of how data collection is going, but to code your videos and analyze your data you will want to download files that you can work with using your software of choice. 
+The Individual Responses page can be helpful to get an idea of how data collection is going. But to code your videos and analyze your data you will want to download all of your files easily and in a format that you can work with using your software of choice.
 
-To download all videos, you can go to the "videos" tab and click "download all videos." A zip file will be bundled up for you to download, and you will receive a link by email in a few minutes. Try it out, and take a look at some of the video collected!
-
-.. image:: _static/img/tutorial/download_videos.png
-    :alt: Video download
-    
-Note that on this page you can also filter for specific parts of the filename, including the frame name and response ID. 
-
-Videos are named ``videoStream_<study ID>_<frameIndex>-<frame ID>_<response ID>_<timestamp>_<random digits>.mp4``, so you can use the response ID to match videos to other response data even if you only have the filename. The response data will also contain video IDs in the ``expData`` for any frames that recorded video.
-
-Under "All responses," you can download JSON or CSV files with data about all responses from this study. :ref:`You can learn more about these options here.<Response download options>`
+To download all of your (non-video) response data, go to the "**All responses**" tab (this is the page that loads when you click "Study Responses" from your study details page). Here you can download JSON or CSV files with data about all responses from this study. :ref:`You can learn more about these options here.<Response download options>`
 
 .. image:: _static/img/tutorial/all_responses.png
     :alt: All responses view
+
+To download all videos, after clicking "Study Responses" on your study details page, find the "**Videos**" tab, and click "Download all videos". A zip file will be bundled up for you to download, and you will receive a link by email in a few minutes. Try it out, and take a look at some of the video collected!
+
+.. image:: _static/img/tutorial/download_videos.png
+    :alt: Video download button
     
+Note that on this page you can also download all *consent* videos and/or individual video files. The individual files can be filtered for specific parts of the filename, including the frame name and response ID.
+
+Videos are named ``videoStream_<study ID>_<frameIndex>-<frame ID>_<response ID>_<timestamp>_<random digits>.webm``, so you can use the response ID to match videos to other response data even if you only have the filename. The response data will also contain video IDs in the ``expData`` for any frames that recorded video.
+
 Analyzing the data collected is, in general, outside the scope of this tutorial as it will vary substantially by lab/project - although we hope that you will share your scripts and processes for analyzing CHS data to help other researchers! The exercises below can be solved by manual inspection of the CSV (or JSON) data, although you are also welcome to set up a script in your language of choice to get a head start on real data processing.
 
 Exercises
