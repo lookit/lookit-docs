@@ -92,15 +92,19 @@ Create some data to play with (Internal studies)
 
 Because we don't want to clog up the production server with fake responses from researchers trying out CHS, we'll do this section on the staging server, which is a separate sandbox environment that looks a lot like CHS but doesn't have any real participant data. This is also where we try out new features before deploying them to production. 
 
-Go ahead and create an experimenter account on the staging server following the :ref:`login directions <staging server>`. If you did the first part of the tutorial, you'll already have a participant account on the staging server - use a different email address for your staging experimenter account.
+The accounts on the real (production) CHS website and the staging website are completely separate, so you will need to create another researcher account on the staging server following the :ref:`login directions <staging server>`. If you did the first part of the tutorial, you'll already have a participant account on the staging server - use a different email address for your staging researcher account.
 
-First, let's actually participate in another study! Go to the **staging** server studies page, `<https://babieshelpingscience.com/studies/>`_, and select the study "Apples to oranges." This is a short study just to demo the data collection process. You can participate using your experimenter account; you may need to make a child profile and/or fill out a demographic survey before participating. Proceed all the way through this study!
+First, let's actually participate in another study! Go to the `staging server <https://babieshelpingscience.com/>`__ and log in with your researcher account. Then go to the `studies page <https://babieshelpingscience.com/studies/>`__, and select the study "Apples to oranges [TUTORIAL]". This is a short study just to demo the data collection process. You can participate using your researcher account; you may need to make a child profile and/or fill out a demographic survey before participating. Proceed all the way through this study!
 
-Now switch back to the Experimenter interface. Note: you can toggle between the participant-facing and "Experimenter" (researcher-facing) sections of the Children Helping Science website at any time via the top navbar if you are logged in as an experimenter:
+Now switch back to the Experimenter interface. Note: when you are logged in as a researcher, you can toggle between the participant-facing and "Experimenter" (researcher-facing) sections of the Children Helping Science website at any time via the top navbar:
 
-.. image:: _static/img/tutorial/lookit_view.png
+Click "CHS Home" to access the family-facing pages, such as the public "Studies" page:
+
+.. image:: _static/img/tutorial/chs_view.png
     :alt: Participant-facing Apples and Oranges detail page
     
+Click "Experimenter" to access the researcher-only pages, such as the researcher "Manage Studies" page:
+
 .. image:: _static/img/tutorial/exp_view.png
     :alt: Researcher-facing studies view
     
