@@ -111,14 +111,9 @@ Click "Experimenter" to access the researcher-only pages, such as the researcher
 Get access to the "Apples to Oranges" study
 -------------------------------------------------
 
-You are able to **see** the "Apples to Oranges" study listed on the Experimenter site on babieshelpingscience.com because you automatically get read-only permissions for studies within the Demo lab. However, you can't automatically see any participant data! (This is on purpose - it's not possible to grant lab-wide permissions to actual data, you have to actively add people to individual studies.)
+When you go to the `Experimenter "Manage Studies" page on the staging site <https://babieshelpingscience.com/exp/studies/>`__, you are able to **see** the "Apples to Oranges" study because you automatically get read-only permissions for studies within the Demo lab. However, you can't automatically see any participant data! (This is on purpose - it's not possible to grant lab-wide permissions to actual data, you have to actively add people to individual studies.)
 
-Post in the Slack #tutorial channel and we'll add you as a researcher so you can see everything! Then, at the top of the "Apples to oranges" page, click on "View responses":
-
-.. image:: _static/img/tutorial/view_responses.png
-    :alt: View responses link
-    
-This will take you to a view where you can code for informed consent, view individual responses, or download response data, demographic data, and videos.
+In the Slack #tutorial channel, post a request for access to the "Apples to oranges" study and we'll add you as a researcher. Once you've been added as a researcher on this study, you can code for informed consent, view individual responses, and download response data, demographic data, and videos.
 
 
 Checking for informed consent and giving feedback
