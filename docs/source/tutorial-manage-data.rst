@@ -213,7 +213,7 @@ Exercises
 Downloading demographic data 
 ----------------------------
 
-Under 'demographic snapshots', you can also download demographic survey responses from the accounts associated with children who participated in your study (once consent is approved). For each response, you will see demographic survey data for that participant at the time of participation. 
+In the "Study Response" pages, there is a tab called "**Demographic Snapshots**" where you can download demographic survey responses from the accounts associated with children who participated in your study (once consent is approved). For each response, you will see demographic survey data for that participant at the time of participation. 
 
 Exercises
 ~~~~~~~~~~
