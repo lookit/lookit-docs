@@ -22,12 +22,14 @@ To contribute to the `ember-lookit-frameplayer` codebase - e.g., when creating y
 Getting started
 ~~~~~~~~~~~~~~~~~~~
 
-At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow>`__.
+At a high level, we are roughly following a Forking Workflow version of Gitflow `as described here <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>`__.
 
 You should plan to make feature-specific branches off of the ``develop`` branch (for ``lookit-api``, ``lookit-docs``), ``master`` branch (for ``ember-lookit-frameplayer``), or ``main`` branch (for ``lookit-jspsych``) of a local copy of the code running on your own machine. This will keep the codebase as clean as possible.
 
 First create your own fork of ``lookit-api``, ``ember-lookit-frameplayer``, ``lookit-jspsych``, and/or ``lookit-docs``. Follow the directions for installation of ``lookit-api`` or ``ember-lookit-frameplayer`` if needed. 
 
+
+Keep in mind that this project is in active development, and the further your fork is behind our repository, the more complex updating it will be. Please try to keep your code base up to date. If you run into issues with this, feel free to reach out to CHS for help.
 
 Ignoring some files
 ~~~~~~~~~~~~~~~~~~~~
