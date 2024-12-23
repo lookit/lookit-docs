@@ -111,10 +111,17 @@ Click "Experimenter" to access the researcher-only pages, such as the researcher
 Get access to the "Apples to Oranges" study
 -------------------------------------------------
 
-When you go to the `Experimenter "Manage Studies" page on the staging site <https://babieshelpingscience.com/exp/studies/>`__, you are able to **see** the "Apples to Oranges" study because you automatically get read-only permissions for studies within the Demo lab. However, you can't automatically see any participant data! (This is on purpose - it's not possible to grant lab-wide permissions to actual data, you have to actively add people to individual studies.)
+When you go to the `Experimenter "Manage Studies" page on the staging site <https://babieshelpingscience.com/exp/studies/>`__, you are able to **see** the "Apples to oranges" study because you automatically get read-only permissions for studies within the Demo lab. However, you can't automatically see any participant data! (This is on purpose - it's not possible to grant lab-wide permissions to actual data, you have to actively add people to individual studies.) When you click on the "Apples to oranges" study from the "Manage Studies" page, you will see the study detail page, but with a limited set of buttons on the right:
 
-In the Slack #tutorial channel, post a request for access to the "Apples to oranges" study and we'll add you as a researcher. Once you've been added as a researcher on this study, you can code for informed consent, view individual responses, and download response data, demographic data, and videos.
+.. image:: _static/img/tutorial/tutorial_buttons_no_access.png
+    :alt: Study detail buttons with no researcher access.
 
+**In the Slack #tutorial channel, post a request for access to the "Apples to oranges" study and we'll add you as a researcher**. Once you've been added as a researcher on this study, you will see see the "Message Participants" and "Review Consent" buttons in the menu:
+
+.. image:: _static/img/tutorial/tutorial_buttons_after_access.png
+    :alt: Study detail buttons with researcher access.
+
+Now you can code for informed consent, view individual responses, and download response data, demographic data, and videos. (You still will not see the "Edit Study Ad" and "Edit Study Design" buttons, because those are for study admins only).
 
 Checking for informed consent and giving feedback
 -------------------------------------------------
