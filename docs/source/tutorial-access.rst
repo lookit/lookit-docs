@@ -66,8 +66,6 @@ Exercises
 
 1. Say hello in the "tutorial" channel of the Lookit/CHS Slack workspace.
 
-2. Get a feel for the participant experience by trying out one of the "template" studies! At https://childrenhelpingscience.com/exp/studies/, find a study labeled TEMPLATE from the lab "Demo lab." Click on it and then click "Preview study" to see how it would work if you were a 
-participant! You may need to add a child profile and complete your demographic survey, 
-which you can do from https://childrenhelpingscience.com/account/manage/.
+2. Get a feel for the participant experience by trying out one of the "template" studies! From the `"Manage Studies" page <https://childrenhelpingscience.com/exp/studies/>`__, find a study that is part of the "Demo lab" and has "[TEMPLATE]" in the title, such as `"Baby Tetris" <https://childrenhelpingscience.com/exp/studies/236/>`__ or `Can they both be right?" <https://childrenhelpingscience.com/exp/studies/235/>`__. Click on it and then click "Preview study" to see how it would work if you were a participant! You may need to add a child profile and complete your demographic survey, which you can do from the `"Manage Account" page <https://childrenhelpingscience.com/account/manage/>`__ (click your name in the top right, then "Manage Account").
 
 3. [Extra credit] If you have young kids, take part in a currently-running study on the production server (https://childrenhelpingscience.com) - the experience is different with a squirming kid in your lap! Please enter only actual, not made-up, data on the production server - you are participating in real research here. (If you're curious but don't have a child in the age range, feel free to contact the lab and ask if it's ok to check it out--generally they can deal with that easily, but a heads up is helpful.)
