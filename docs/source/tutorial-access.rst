@@ -7,9 +7,14 @@
 Welcome
 ----------
 
-Welcome to the Children Helping Science (CHS) tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own Lookit study on the CHS platform. By the end of the tutorial, you will be able to create a participant-friendly study that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
+Welcome to the Children Helping Science (CHS) tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own study on the CHS platform. By the end of the tutorial, you will be able to create a participant-friendly study that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
 
-This tutorial was written for researchers who will be building a Lookit study, but most steps are also applicable for researchers who will be building a jsPsych study or sharing a link to an external study instead.
+.. admonition:: Who should do this tutorial?
+
+   This tutorial was mostly written for researchers who will be building a Lookit study, but it's also applicable for researchers who will be building a jsPsych study or sharing a link to an external study instead. We've flagged the different points in the tutorial that you may want to do/skip if you're only interested in certain study types. Specifically:
+
+   - In **Step 3: Create a study**, you can choose to create an internal Lookit or jsPsych study, or skip this section if you're running an external study.
+   - In **Step 4: Managing study data**, if you're only interested in running external studies then you'll be able to skip the consent review process and ignore some of the data types, like video recordings and task data.
 
 This tutorial should take between 5 and 10 hours to complete, and does not assume any familiarity with programming. There is a mix of step-by-step directions and exercises to complete. It's the best way to get started with creating and managing a Lookit study, and a good first task to give to an RA who will be designing studies. Note that it does **not** cover issues like participant recruitment and IRB approval, just the technical side of things.
 
