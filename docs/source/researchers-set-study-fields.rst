@@ -222,6 +222,10 @@ If the child is not eligible based on the study's criteria expression, they will
 
 You may want to use the criteria expression to specify additional eligibility criteria beyond an age range - for instance, if your study is for a special population like kids with ASD or bilingual kids. In general, do **not** specify your age range here; participant eligibility checks will require the child meet the `minimum and maximum age cutoffs`_ AND these critera.
 
+.. admonition:: What criteria should I use?
+
+    CHS strongly encourages **inclusive practices** for families that want to participate in research studies. Thus, we suggest that you have inclusion criteria that are as broad as possible, so that many families can participate, knowing that you may need to exclude participants from your analysis after the data has been collected. We will review your inclusion/exclusion criteria as :ref:`part of the study review process <inclusion_exclusion_criteria>`, and you will only be able to use criteria when you make a strong case for it.
+
 Every child in the CHS database has a number of fields associated with it, ranging from gestational age to languages spoken in the home, which can be used in determining eligibility. In the study edit and create views, you can formulate your criteria expression as a boolean expression with embedded relational expressions, using a domain specific query language. 
 
 You can put together your expressions using the query fields below; the operators `AND`, `OR`, `NOT`, `<`, `<=`, `=`, `>`, and `>=`; and parentheses. If your expression is invalid you will see an error when you try to save your study.

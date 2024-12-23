@@ -22,6 +22,8 @@ You must provide complete information for each of the fields on the study form,
 including compensation information and eligibility.  :ref:`Here is a detailed
 guide<study fields>` to each of the fields on the study form. 
 
+.. _inclusion_exclusion_criteria:
+
 Inclusion/Exclusion Criteria
 ---------------------------------
 
