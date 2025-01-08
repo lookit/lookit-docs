@@ -91,19 +91,16 @@ Building on previous advances is a core part of every scientific discipline. The
 
 - [Blog post] `ICIS blog post: What do our participants really see during unmoderated remote studies? <https://infantstudies.org/what-do-our-participants-really-see-during-unmoderated-remote-studies/>`__
 
------------------------
-Codebase
------------------------
+-------------------------------
+CHS code, issues, and features
+-------------------------------
 
-All CHS code is open-source (MIT License - this is a liberal
-open-source license, not related to us being at MIT) and publicly
-available. It will stay that way.
+Running into a problem and want to check if it's a known issue, or have an idea for a handy new feature? Check out and/or add to the Github Issues for the relevant software below. Or check out `projects <https://github.com/orgs/lookit/projects>`_ to take a look at what's coming up in terms of development!
 
--  https://github.com/lookit/ember-lookit-frameplayer
--  https://github.com/lookit/lookit-jspsych
--  https://github.com/lookit/lookit-api
--  https://github.com/lookit/lookit-docs
--  https://github.com/orgs/lookit/projects - software development
-   planning: known issues, planned features, scheduling.
+All CHS code is open-source (MIT License - this is a liberal open-source license, not related to us being at MIT) and publicly available. It will stay that way.
 
-
+-  https://github.com/lookit/lookit-api - the CHS website and API.
+-  https://github.com/lookit/ember-lookit-frameplayer - the Lookit EFP experiment runner.
+-  https://github.com/lookit/lookit-jspsych - the CHS-jsPsych experiment runner.
+-  https://github.com/lookit/lookit-docs - this documentation site.
+-  https://github.com/orgs/lookit/projects - software development planning: known issues, planned features, scheduling.
