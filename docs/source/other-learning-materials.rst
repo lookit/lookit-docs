@@ -67,6 +67,30 @@ Below is a list of more information and resources about CHS. Some of these links
 
    If you've given a presentation about using CHS or prepared training materials for your lab, please share them here! You can add them to this page directly via a :ref:`Github pull request<First PR>`, or contact us on Slack or email (childrenhelpingscience@gmail.com).
 
+---------------------------------
+Online experiments
+---------------------------------
+
+Building on previous advances is a core part of every scientific discipline. There are additional advantages to using standard approaches in online child research: some families will choose to participate in studies from multiple researchers, and using standard approaches can lead to a more consistent experience. This can be especially important when trying to minimize “cognitive load” for young children. Below are links to a variety of groups developing approaches and discussing options. Some of these links are starting points that link to other resources (e.g., example PowerPoint or Keynote slides for consent and warmup).
+
+- [Github repository] `The Social Learning Lab at Stanford <https://github.com/sociallearninglab/online_testing_materials>`__ has posted materials about how to get started, including working with IRBs, how to do online consent, and ideas for different study designs.
+
+- [OSF repostiory] `RAD_DP: A library of Remote Assessment Designs for Developmental Psychology <https://osf.io/2yz6r/>`__ 
+
+- [Blog post] Testing babies online over Zoom (`part 1 <https://medium.com/@shariliued/testing-babies-online-over-zoom-part-1-745e5246b0af>`__, `part 2 <https://medium.com/@shariliued/testing-babies-online-over-zoom-part-2-57ea880a6961>`__)
+
+- [Lab website] `The Princeton/NYU PANDA lab <https://www.discoveriesinaction.org/accounts/home/>`__ hosts unmoderated child studies, and they have some guides for remote research aimed at researchers, e.g. "`Designing studies for remote data collection <http://discoveriesonline.org/design.html#adapt>`__".
+
+- [Journal site] `Rhodes et al. (2020). Advancing Developmental Science via Unmoderated Remote Research with Children. <https://doi.org/10.1080/15248372.2020.1797751>`__
+
+- [Google group] `Discussion Forum about online research (child and adult participants) <https://groups.google.com/forum/#!forum/online-experiments>`__
+
+- [SRCD site, requires registration/login] `Society for Research in Child Development (SRCD) Commons Discussion Forum <https://commons.srcd.org/communities/community-home?CommunityKey=bd3d326e-b7db- 49bf-abbb-73642ac0576c>`__
+
+- [Video] `ICIS Webinar: "Online data collection: Stories of success and challenge in transitioning from lab-based to online research" <https://infantstudies.org/webinar-online-data-collection-stories-of-success-and-challenge-in-transitioning-from-lab-based-to-online-research/>`__
+
+- [Blog post] `ICIS blog post: What do our participants really see during unmoderated remote studies? <https://infantstudies.org/what-do-our-participants-really-see-during-unmoderated-remote-studies/>`__
+
 -----------------------
 Codebase
 -----------------------
