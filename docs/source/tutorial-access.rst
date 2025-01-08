@@ -54,7 +54,7 @@ Where to go for help
 
   Even if you're not totally stumped, it's worth checking in on Slack to get ideas and resources! For example, you might ask if anyone has an R script for analyzing their data that you could use as a starting point, or run a draft debriefing by other researchers to get advice on wording.
     
-* There is a growing collection of training materials contributed by researchers that you can check out under the :ref:`"Other learning materials" section<Training>`!
+* There is a growing collection of training materials contributed by researchers that you can check out under the :ref:`"CHS Learning Materials and Other Resources" section on the Resources page<Training>`!
 
 Exercises
 ----------
