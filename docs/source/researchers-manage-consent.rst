@@ -49,7 +49,6 @@ For each response session in your list, you should watch the video and decide wh
     :align: center
     :width: 40%
 
-|
 Repeat this process for each response session in your list. Any responses that you leave as 'pending' will be available on this page for you to come back to later. When you are done for now, click 'Submit Rulings and Comments' at the bottom of your response list to save your rulings and comments. Any comments you have added will appear inside the relevant response in the response list. Any changes to your 'accepted' responses will be immediately be reflected in the number of responses available on your 'Study Responses' page, as well as with respect to the demographic and participant data you have access to.
 
 Consent rulings can be changed after an initial ruling is made; for instance, you can use the dropdown menu to display 'Accepted' responses and either 'Reject' or 'Revert to pending.'
