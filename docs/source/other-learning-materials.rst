@@ -17,7 +17,7 @@ Staying up-to-date and getting help
 - Join the `Lookit-research email list <http://mailman.mit.edu/mailman/listinfo/lookit-research>`__ for occasional (2-4x/year) progress updates.
 
 --------------------------------------------
-CHS Learning Materials and Other Resources
+CHS learning materials and other resources
 --------------------------------------------
 
 Below is a list of more information and resources about CHS. Some of these links provide a high-level overview of the platform that might be useful, for instance, while getting started, training other lab members, or introducing CHS to colleagues or families. There are also other materials that researchers might find useful for recruitment or learning how to use the site.
