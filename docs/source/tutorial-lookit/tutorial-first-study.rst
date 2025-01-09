@@ -4,14 +4,24 @@
 1. Setting up your first Lookit study
 #########################################
 
-In this section, you will be creating your first Lookit study. You will learn how to find and use experiment components, specify your protocol, and test out and troubleshoot your study. 
+In this section, you will be creating your first CHS study using the Lookit experiment runner. You will learn how to find and use experiment components, specify your protocol, and test out and troubleshoot your study. 
 
-This section is designed for researchers planning to build an internal Lookit study. If your first study will be written with jsPsych, then you can see the :ref:`jspsych tutorial <jspsych-tutorial-first-study>`. Or if your study involves a link to an experiment hosted somewhere else, skip to part 4 of this tutorial.
+.. admonition:: Who should do this section?
+
+    This section is designed for researchers planning to build an **internal Lookit study**. If your first study will be written with jsPsych, then you can see the :ref:`jspsych tutorial <jspsych-tutorial-first-study>`. Or if your study involves a link to an experiment hosted somewhere else, skip to :ref:`part 4 of this tutorial <tutorial-manage-data>`.
 
 Step 1: Clone the 'Lookit tutorial part 1' study
 -------------------------------------------------
 
-To get started, log in to CHS as an experimenter. (Go to `<https://childrenhelpingscience.com/login/>`_ to log in.)
+To get started, go to the `log in to CHS <https://childrenhelpingscience.com/login/>`_ with your researcher account. After logging in, you should be taken directly to the "Manage Studies" page. 
+
+.. admonition:: Troubleshooting tips
+
+    If you're having problems with the two-factor authentication (2FA) part of your log in, then please see the section on :ref:`Managing and Troubleshooting 2FA <managing_2fa>`.
+
+    If you are able to log in but don't see the "Manage Studies" page, try clicking on the "Experimenter" button in the navigation menu at the top of the page. 
+
+    If you don't see the "Experimenter" button at the top, then you might be logged in with a non-researcher (family) account. Make sure that you have a researcher account and are using that one to log in. See the :ref:`Registration and Login page <login>` for more information.
 
 You should see a few studies you automatically have access to, including one called "Lookit tutorial part 1". Click on that to open up the study detail page:
 
@@ -23,24 +33,14 @@ You should see something like this:
 .. image:: ../_static/img/tutorial/tutorial_study_detail.png
     :alt: Tutorial study detail page
     
-At the top right, go to "Take Action" and click "Clone Study":
+In the menu on the right, click "Clone Study":
 
-.. image:: ../_static/img/tutorial/tutorial_study_clone.png
+.. image:: ../_static/img/tutorial/tutorial_study_clone_button.png
     :alt: Clone study button on study detail page
     
-You will be taken directly to the "clone" or "copy" of your study, which will be named something like "Lookit tutorial part 1 copy." You should see something like this:
-
-.. image:: ../_static/img/tutorial/tutorial_cloned_study.png
-    :alt: Initial view of cloned tutorial study
-    
-Click "edit study" in the top right (circled above) and you'll see the following:
+You will be taken directly to the "Edit" page of your cloned study, which will be named "Copy of Lookit tutorial part 1." Each of these study edit fields is described :ref:`here <study fields>`. For now, we'll just change the name of the study and the thumbnail image that's displayed to participants. Rename your study to something like "[Your name]'s' tutorial study" and upload a different thumbnail image. Note that the new image must be a square (same height and width dimensions).
 
 .. image:: ../_static/img/tutorial/study_edit_view.png
-    :alt: Study edit view
-
-Each of these fields is described :ref:`here<study fields>`. For now, we'll just change the name of the study and the thumbnail image that's displayed to participants. Rename your study to "[Your name]'s awesome tutorial study" and upload a different thumbnail image:
-
-.. image:: ../_static/img/tutorial/study_edit_name.png
     :alt: Study edit view - changing name and image
 
 Then click "Save Changes" down below:
@@ -48,12 +48,12 @@ Then click "Save Changes" down below:
 .. image:: ../_static/img/tutorial/study_edit_save.png
     :alt: Study edit save button
 
-After saving, click the name of your study to return to the study detail view:
+After saving, you will be taken to the "Edit Study Design" page, where you can edit the study protocol. We'll come back to this page later. For now, just click the name of your study in the breadcrumbs at the top to return to the study detail view:
 
 .. image:: ../_static/img/tutorial/return_to_study_detail.png
     :alt: Link back to study detail view
 
-You should see your changes reflected, like this:
+You should see the study details for your tutorial study, with your modified name and image, like this:
 
 .. image:: ../_static/img/tutorial/study_after_save.png
     :alt: Study detail view after changes
@@ -65,25 +65,20 @@ Step 2: Preview your study (and learn a bit about JSON on the way)
 
 .. _Building study dependencies:
 
-You may have noticed that below your thumbnail and basic study info, there's a section about the "status" of your study. This section is where you will submit your study for approval by CHS staff when it's ready, and start and stop data collection. 
-
-This section also shows whether your "experiment runner" is "built" yet. You should see a bar like this:
+You may have noticed that below your thumbnail and basic study info, there's a section about the "status" of your study. This section is where you will submit your study for approval by CHS staff when it's ready, and start and stop data collection. This section also shows whether your "experiment runner" is "built" yet. It looks like this:
 
 .. image:: ../_static/img/tutorial/dependencies_not_built.png
     :alt: Dependency status area
     
-Click the "Build experiment runner" button. You should see a notification at the top of the screen, something like this:
+Click the "Build experiment runner" button. You should see a notification at the top of the screen telling you that your experiment runner is being built, and your "Study Status" box should now say "Building experiment runner".
 
-.. image:: ../_static/img/tutorial/scheduled_for_preview.png
-    :alt: Scheduled for build notification
+What is this "experiment runner"? When you create a Lookit study, you specify the study protocol, which is the types of pages or "frames" to use and the parameters for each. For example, you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit experiment runner, aka "frameplayer", interprets this information and turns it into an interactive study that families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing the same code, each study gets its own siloed little environment called a Docker image where it will run. 
 
-What is this "experiment runner"? When you create a Lookit study, you specify what types of pages or "frames" to use, and provide parameters for each - for example you supply the text for an instructions page, videos or images to show in a preferential looking trial, audio and images for a storybook page, and so on. The Lookit frameplayer interprets this information and turns it into an interactive study families can participate in. There's code behind the scenes, which you don't have to deal with, to handle that interpretation and to make each page "go" (saying what each button should do and what data to collect, arranging and starting/stopping video, etc.) Rather than all studies sharing that code, each study gets its own siloed little environment called a Docker image where it will run. 
+When you click "Build experiment runner," you are creating that Docker image and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it. If and when you want to, you can choose to update what experiment runner code your study uses and build dependencies again - for instance, to take advantage of a new feature or a bug fix. You also have the advanced option of telling the CHS platform to use your own code instead of the standard Lookit experiment runner code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
 
-When you click "Build experiment runner," you are creating that Docker image and installing all the necessary code on it - the Lookit frameplayer and the other libraries it depends on. This way, as we continue expanding the Lookit frameplayer code, your study will continue to run exactly as you initially designed and tested it, unless you choose to update what code your study uses and build dependencies again - for instance to take advantage of a new feature or a bug fix. You also have the advanced option of telling the CHS platform to use your own code instead of the standard Lookit experiment runner code - for instance if your work needs a very specialized type of test trial that you want to write your own frame for.
+It will probably take about 10 minutes to build the experiment runner. You'll be notified via email when it's done, or you can refresh the study details page to see if the status has changed to "built".
 
-It will probably take about 10 minutes to build the experiment runner (you can wait for the email or refresh the page to see if it's done yet). 
-
-While you're waiting, go read :ref:`section on the JSON format<JSON Overview>`, which you will need for the next step. 
+While you're waiting, you can read our Lookit documentation :ref:`section on the JSON format<JSON Overview>`, which you will need for the next step. 
 
 Exercises
 ~~~~~~~~~~~~
@@ -163,37 +158,37 @@ Here are several things that are almost, but not quite, valid JSON objects. Copy
         <p>There are several things to fix here - if you changed something and got a different error message, you're probably on the right track! Work down the list of requirements for JSON from the overview, and note that the "true" value is all lowercase.</p>
     </details>
 
-OK, congrats on learning all about JSON! Your study should be ready to preview by now. You should have an email in your inbox from CHS about this, and if you refresh the page you're on, you should see something like this:
+OK, congrats on learning all about JSON! Your experiment runner should be built by now, which means that your study should be ready to preview. You should have an email in your inbox from CHS about this, and if you refresh your study details page, you should see something like this:
 
-.. image:: ../_static/img/tutorial/preview_built.png
-    :alt: Preview built status display
+.. image:: ../_static/img/tutorial/tutorial_study_built.png
+    :alt: Built status display
     
-Click on "Preview study" near the top of the page:
+Now that your experiment runner has been built, you can click on "Preview study" near the top of the page:
 
-.. image:: ../_static/img/tutorial/preview_button.png
+.. image:: ../_static/img/tutorial/tutorial_study_preview_button.png
     :alt: Preview button
     
-This will take you to a "study detail" page just like the one participants see when they click on a study at childrenhelpingscience.com/studies. You will need to register at least one child and respond to the demographic survey (you don't need to respond to all questions, or use real information). Then you will be able to click "Preview now" to proceed through the study as a participant. It's a rough, abbreviated  implementation of one condition from `Schulz, Bonawitz, and Griffiths (2007) <http://dx.doi.org/10.1037/0012-1649.43.5.1124>`_ - you'll read through a storybook about Bunny, who sometimes gets a tummyache, and eventually answer a question about what makes her tummy hurt.
+This will take you to the same sort of page that participants see when they click on a study at childrenhelpingscience.com/studies, except that you will see a button that says "Preview now!" instead of "Participate now!". You will need to register at least one child and respond to the demographic survey (you don't need to respond to all questions, or use real information). Then you will be able to click "Preview now" to proceed through the study as a participant. It's a rough, abbreviated  implementation of one condition from `Schulz, Bonawitz, and Griffiths (2007) <http://dx.doi.org/10.1037/0012-1649.43.5.1124>`_ - you'll read through a storybook about Bunny, who sometimes gets a tummyache, and eventually answer a question about what makes her tummy hurt.
 
-.. admonition:: Note
+.. admonition:: Video is collected during previews! 
 
-   Video is collected during previews! Like other data, it's only accessible to people who have appropriate permissions. That does include a few CHS staff in addition to researchers working on your study. We don't do anything with the video and are very unlikely to even see it, but it *is* in principle possible - so please wear clothes while testing, don't sit in front of your really cool poster of your social security number, etc. Or cover your webcam. 
+   Like other data, videos are only accessible to the researchers who have appropriate permissions. That does include a few CHS staff in addition to researchers working on your study. We don't do anything with the video and are very unlikely to even see it, but it *is* in principle possible - so please wear clothes while testing, don't sit in front of your really cool poster of your social security number, etc. Or cover your webcam. 
 
 
-Step 3: Get comfortable making changes to how your study works
+Step 3: Make changes to how your study works
 ---------------------------------------------------------------
 
-The "meat" of your study is in the "Study protocol configuration", which you can change from the Edit Study view. Scroll down and click on the text here:
+The "meat" of your Lookit study is in the "study protocol". From your study details page, click the "Edit Study Design" button:
+
+.. image:: ../_static/img/tutorial/tutorial_study_edit_design_button.png
+    :alt: Edit Study Design button on the study detail page.
+
+And then find the "Protocol configuration" box:
 
 .. image:: ../_static/img/tutorial/click_to_edit_json.png
     :alt: JSON as shown on study edit view
     
-This opens up an editor. It will show a scary amount of text like this:
-
-.. image:: ../_static/img/tutorial/ugly_json.png
-    :alt: Unformatted JSON
-
-Click the "Beautify" button to format it nicely:
+This opens up a larger editor so that you can view and edit study protocol. This editor has a "Beautify" button, which will help fix your indentation, and a "Close" button, which brings you back to the "Edit Study Design" page so that you can save your changes.
 
 .. image:: ../_static/img/tutorial/pretty_json.png
     :alt: Formatted JSON
@@ -203,15 +198,23 @@ This whole "protocol" is a JSON document, like we learned about while you were w
 .. image:: ../_static/img/tutorial/collapsed.png
     :alt: Formatted JSON collapsed into high level keys
 
-There are two high-level keys: ``frames`` and ``sequence``. The ``sequence`` list says what frames should be in your study, in what order. The ``frames`` object is like a dictionary where the Lookit frameplayer will go to understand what each frame in the sequence should be like. Notice that each of the strings in the ``sequence`` is itself a key in ``frames``. For instance, the sequence starts with ``video-config``. We can expand the ``video-config`` key in ``frames`` to see more about that frame:
+There are two high-level keys: ``frames`` and ``sequence``. The ``sequence`` list says what frames should be in your study, in what order. The ``frames`` object is like a dictionary where the Lookit frameplayer will go to understand what each frame in the sequence should be like. The order of objects inside ``frames`` doesn't matter.
+
+Notice that each of the strings in the ``sequence`` is itself a key in ``frames``. This is because the experiment runner will go through the values in the ``sequence``, and for each one, look up its definition inside ``frames``. This means that any string in the ``sequence`` list MUST be defined in the ``frames``.
+
+The sequence starts with ``video-config``. We can expand the ``video-config`` key in ``frames`` to see more about that frame:
 
 .. image:: ../_static/img/tutorial/video_config_expanded.png
     :alt: Formatted JSON collapsed into high level keys with one frame expanded
 
-Making a change to the sequence
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+There are just two parameters in the "video-config" frame: "kind" and "troubleshootingIntro". Each frame has a parameter called "kind", which tells the experiment runner which type of frame it should use (``exp-video-config`` in this case). The "troubleshootingIntro" parameter controls some optional troubleshooting text on the video configuration page. 
 
-Let's change the ``sequence``` to see how it affects the study. In the editor, move ``"instructions"`` to the start of the ``sequence`` list. It should end up looking like this:
+In general, there are some parameters that are available in all Lookit frames, and many others that are specific to each frame type. We'll come back to this topic later, but you can go to the "Lookit Ember Frameplayer" documentation site if you'd like to see the :ref:`parameters available in all frames <elf:base frame>`, or you can click on the specific frames to see the list of parameters for that frame, e.g. :ref:`exp-video-config <elf:exp-video-config>`.
+
+Making a change to the sequence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Let's change the ``sequence`` to see how it affects the study. In the editor, move ``"instructions"`` to the start of the ``sequence`` list. It should end up looking like this:
 
 .. code-block:: none
 
@@ -228,23 +231,17 @@ Now click "Close" at the top right to exit the editor:
 .. image:: ../_static/img/tutorial/click_to_close.png
     :alt: Where to click to close editor
 
-This will return you to the Edit Study page, but your changes aren't saved yet. Scroll down and click "Save Changes":
+This will take you back to the "Edit Study Design" page, but your changes aren't saved yet. Scroll down and click "Save Changes":
 
 .. image:: ../_static/img/tutorial/click_to_save_json.png
     :alt: Where to click to save JSON
 
-You should see a message at the top like the following. (If not, click on your protocol again and resolve any problems that are preventing it from saving.)
+After your study design is saved, you will be taken back to the study details page. Now you can preview your edited study by clicking the "Preview" button again:
 
-.. image:: ../_static/img/tutorial/changes_saved.png
-    :alt: Changes saved message
-    
-Now you can preview your edited study by clicking on the blue "Preview" button again:
-
-.. image:: ../_static/img/tutorial/preview_button.png
+.. image:: ../_static/img/tutorial/tutorial_study_preview_button.png
     :alt: Preview button
 
-This time, you should be right at the instructions, instead of starting with the video configuration frame! If you back and click "Preview study" and then "Preview now" again, 
-you should go right away to a page like this:
+This time, the study should start with instructions instead the video configuration frame:
 
 .. image:: ../_static/img/tutorial/instructions_page.png
     :alt: Instructions frame
@@ -253,14 +250,14 @@ That's because we moved the "instructions" frame to the start of our sequence. I
 
 .. admonition:: Speed up the process a bit
 
-   You may want to bookmark the URL you're at when you see that instructions page. That's the URL to preview this study with the child you selected. You can refresh this page to see your updated preview right away, without having to click through the study detail page and select a child. 
+   You may want to copy or bookmark the URL you're at when you start your study. That's the URL to preview this study with the child you selected. You can refresh this page to see your updated preview right away, without having to click through the study detail page to "Preview Study", select a child, and "Preview now!". 
 
 Making a change to an individual frame
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 While we have that instructions page "front and center," let's edit the text so it looks more like real instructions for the study! 
 
-From the Edit Study page, click on your study protocol to open up the editor again. Click "Beautify" to make it easier to read. Find the section that defines the "instructions" frame (starting on line 10).
+From the "Edit Study Design" page, click on your study protocol box to open up the editor again. Find the section that defines the "instructions" frame (starting on line 10).
 
 .. admonition:: Tip
 
@@ -280,7 +277,7 @@ Here's what it looks like now. You don't need to understand everything going on 
                         "text": "This is an 'exp-lookit-instructions' frame."
                     },
                     {
-                        "text": "See https://lookit.readthedocs.io/projects/frameplayer/components/exp-lookit-instructions/doc.html"
+                        "text": "See https://lookit.readthedocs.io/projects/frameplayer/en/latest/components/exp-lookit-instructions/doc.html"
                     },
                     {
                         "text": "You can display any text, audio, images, and video you want, and can optionally require participants to play audio/video segments to move on. You can also choose whether to display the webcam."
@@ -325,7 +322,7 @@ Here's what it looks like now. You don't need to understand everything going on 
         "nextButtonText": "Next"
     },
 
-First, let's flesh out the "overview of how to participate" section by replacing the text with more appropriate instruction text like this:
+First, let's flesh out the "overview of how to participate" section by replacing the text with more appropriate instruction text. Inside the "instructions" frame, find the parameter called "blocks" - this is an array (list) of objects, and each object defines a block of text. Let's change the first object inside "blocks" so that it looks like this:
 
 .. code-block:: none
 
@@ -344,7 +341,7 @@ First, let's flesh out the "overview of how to participate" section by replacing
                 ]
             },
             
-Next, let's help guide families through this frame by adding numbers to the sections. (In a real study you might also consider breaking up a page like this into three shorter pages!)
+Next, let's help guide families through this frame by adding numbers to the section titles. (In a real study you might also consider breaking up a page like this into three shorter pages!)
 
 * Find the line ``"title": "Overview of how to participate in this study",`` and change that to ``"title": "1. Overview of how to participate in this study",``
 
@@ -352,14 +349,14 @@ Next, let's help guide families through this frame by adding numbers to the sect
 
 * Find the line ``"title": "Make sure we can see you",,`` and change that to ``"title": "3. Make sure we can see you",``
 
-Click "Close" in the top right corner of the editor, and then scroll down and click "Save Changes." (Make sure you see the message at the top that changes were saved successfully - fix any problems with the protocol not being valid JSON if not!) Now click "Preview study" again to see your new and improved instructions page!
+Click "Close" in the top right corner of the editor, and then scroll down and click "Save Changes." Now click "Preview study" again to see your new and improved instructions page!
 
 Put the instructions back in order
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now that we've made our changes to the instructions frame, let's put it back where it belongs, after the video configuration and consent frames.
 
-Open the protocol editor and find the ``sequence`` way at the end. Right not it should still look like this:
+Open the protocol editor and find the ``sequence`` at the bottom. Right now it should still look like this:
 
 .. code-block:: none
 
@@ -371,7 +368,7 @@ Open the protocol editor and find the ``sequence`` way at the end. Right not it 
       "exit-survey"
    ]
    
-Move ``"instructions"`` back so it looks like:
+Move ``"instructions"`` so that it is placed after "video-consent", like this:
 
 .. code-block:: none
 
@@ -383,33 +380,33 @@ Move ``"instructions"`` back so it looks like:
       "exit-survey"
    ]
    
-Close, save changes, and preview it again. After proceeding through video configuration and video consent, you should see your new and improved instructions. 
+Close the editor, click "Save changes", and preview it again. After proceeding through video configuration and video consent, you should see your new and improved instructions. 
 
 .. _browser-console:  
 
 Using the Javascript console in your browser to learn more about any problems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One of the most powerful tools you have available to troubleshoot any problems as you set up your study is called the "web console" or "Javascript console" in your web browser. 
+One of the most powerful tools you have available to troubleshoot any problems as you set up your study is called the "web console" or "Javascript console" in your web browser. This is part of the browser's larger set of "Developer tools". 
 
 Click to preview your study, and from that browser window/tab, let's get your web console open so we can see what's going on.
 
-**If you're using Firefox**: Click the "hamburger menu" (three horizontal lines) in the top right corner of your browser and click "Web Developer" (yep, that's you now!):
+**In Firefox**: Click the "hamburger menu" (three horizontal lines) in the top right corner of your browser and click "More tools":
 
-.. image:: ../_static/img/tutorial/firefox_web_developer.png
-    :alt: Firefox hamburger menu
+.. image:: ../_static/img/tutorial/firefox_more_tools.png
+    :alt: Firefox hamburger menu and More tools
     
-Click "Web Console":
+Click "Web Developer Tools":
 
-.. image:: ../_static/img/tutorial/firefox_dev_menu.png
-    :alt: Firefox web developer menu
+.. image:: ../_static/img/tutorial/firefox_web_dev_tools.png
+    :alt: Firefox web developer tools
 
 And you should see something like this:
 
 .. image:: ../_static/img/tutorial/firefox_console.png
     :alt: Firefox console example
 
-**If you're using Chrome**: Click the three dots in the upper right corner, then "More Tools," then "Developer Tools":
+**In Chrome**: Click the three dots in the upper right corner, then "More Tools," then "Developer Tools":
 
 .. image:: ../_static/img/tutorial/chrome_dev_tools_menu.png
     :alt: Chrome developer tools menu
@@ -427,14 +424,16 @@ You should see something like this:
    
    In both Firefox and Chrome, you have access to a bunch of different tools beyond this basic web console, and you have lots of options for filtering out certain events, where to display the console (e.g. separate window vs. bottom vs. side), etc. - we're just going to cover the basics here!
 
-Now that you've gotten your web console open, you'll see a bunch of information in it. This is generally of most interest if something is going wrong and you're not sure what. You can see events that are being logged as you proceed through the study as well as any errors. Some of these errors are ok to ignore - e.g. here are a few current ones due to known but harmless bugs:
+Now that you've gotten your web console open, you'll see a bunch of information in it as you go through your study. This is generally of most interest if something is going wrong and you're not sure what. You can see events that are being logged as you proceed through the study as well as any errors. You'll see some warnings and errors that you can ignore, like these:
 
-* On the staging server there is a known bug that the fontawesome library doesn't load properly (but it does on "production" - the real CHS site) - so you may see some errors that a resource failed to load properly, like this:
+* Uncaught TypeError: a.fn.popover is undefined
+* This page uses the non standard property "zoom"
+* Layout was forced before the page was fully loaded
+* GET 404 errors for apple-touch-icon, favicon, manifest.json
+* InstallTrigger is deprecated and will be removed in the future.
+* downloadable font: Glyph bbox was incorrect 
 
-.. image:: ../_static/img/tutorial/fa_error.png
-    :alt: Fontawesome error example
-
-Leave your preview tab open, and return to the browser tab where you have the "Edit Study " page open. Let's deliberately introduce a problem in our study JSON and see what we can learn from the preview. Try adding something to the "sequence" without defining it in "frames," like this:
+Leave your preview tab open, and return to the browser tab where you have the "Edit Study Design" page open. Let's deliberately introduce a problem in our study JSON and see what we can learn from the preview. Try adding something to the "sequence" without defining it in "frames," like this:
 
 .. code-block:: none
 
@@ -454,32 +453,47 @@ Close, save changes, and then return to your preview tab and refresh it. You'll 
 
 This explains that the problem is that the Lookit frameplayer can't make sense of your study JSON, because it doesn't have a "definition" available in the "frames" value for the frame "new-and-exciting-page" that you added to your sequence.
 
-Return to the study edit page and open up the JSON editor again. Remove that "new-and-exciting-page" from your "sequence" and let's cause another problem instead. Scroll to the section of the ``frames`` object where we give parameters for the consent frame: 
+Return to the study edit page and open up the JSON editor again. Remove that "new-and-exciting-page" from your "sequence" and let's cause another problem instead. Scroll to the section of the ``frames`` object where we give parameters for the "storybook-causal" frame. Let's put a typo in the "baseDir" URL, which is the URL used to load all of the audio and images in the storybook portion of the study. This parameter can be found inside ``storybook-casual``, then under ``commonFrameProperties``. Change it to something like "https\://www.mit.edu/~kimscott/bunnystimuliTYPO/": 
 
 .. code-block:: none
 
-   "video-consent": {
-        "kind": "exp-lookit-video-consent",
-        "template": "consent_005",
-        "PIName": "Lookit Tutorial Participant",
-        "PIContact": "Jane Smith at (123) 456-7890",
-        "datause": "We are interested in how your child uses statistical evidence to figure out the cause of an event. A research assistant will watch your video and mark down your child's answer to the question at the end of the story, and as well as other information such as interactions between you and your child during the story.",
-        "include_databrary": true,
-        "risk_statement": "There are no expected risks to participation."
-        "payment": "After you finish the study, we will email you a $5 BabyStore gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
-        "purpose": "This study is about how children use statistical information to adjust their beliefs about cause and effect.",
-        "procedures": "In this study you child will view a digital 'storybook' about Bunny, who sometimes gets a tummyache. Each day Bunny eats different foods and does different activities, and we hear whether she gets a tummyache. Sometimes, Bunny feels scared because of show-and-tell. We are interested in how the pattern of evidence influences your child's beliefs about what causes Bunny's tummyache. We will ask you (the parent) to avoid discussing why Bunny has a tummyache until the end of the study.",
-        "institution": "Science University"
-    },
-    
-Try deleting one of these lines, like ``"PIContact": "Jane Smith at (123) 456-7890",``. Close, save, and refresh your preview. Once you get to the consent page, you should see an error like this complaining about the missing parameter:
+    "storybook-causal": {
+        "kind": "group",
+        "frameList": [
+            ... lots of objects clipped to save space ...
+        ],
+        "commonFrameProperties": {
+            "kind": "exp-lookit-images-audio",
+            "baseDir": "https://www.mit.edu/~kimscott/bunnystimuliTYPO/",
 
-.. image:: ../_static/img/tutorial/missing_parameter.png
-    :alt: Example missing parameter error
-    
-Note that this doesn't stop the frame from working at all (that bit of text is just missing from the consent form if you look carefully) - but this sort of error can be a useful clue in more complicated situations!
+To make this easier to test, let's also move the storybook portion of the experiment sequence, so that we can see it without having to go through the consent etc.
 
-Go ahead and put back that "PIContact" field, and let's move on to adding some finishing touches to our study.
+.. code-block:: none
+
+    "sequence": [
+        "storybook-causal",
+        "video-consent",
+        "video-config",
+        "instructions",
+        "exit-survey"
+    ]
+
+Close, save, and refresh your preview. You should see an error about being unable to load an image or audio file. The error will be in red, and it might just say "GET" with the link, or it might say something about being unable to load the file.
+
+**Firefox**:
+
+.. image:: ../_static/img/tutorial/firefox_404.png
+    :alt: Firefox 404 error
+
+.. image:: ../_static/img/tutorial/firefox_file_load_error.png
+    :alt: Firefox file loading error
+
+**Chrome**:
+
+.. image:: ../_static/img/tutorial/chrome_file_load_error.png
+    :alt: Chrome file loading error
+
+Let's get everything working again. Go back to your study protocol, fix the typo in the "baseDir" parameter so that the value is "https\://www.mit.edu/~kimscott/bunnystimuli/" and move the "storybook-causal" frame back to where it was in the ``sequence``, after "instructions" and before "exit-survey".
 
 Adding another storybook page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -518,7 +532,11 @@ We're just going to add one more page to the end. Within the ``frameList`` list,
         ]
    }
    
-Here we're providing the name of an image to use ("bunnyend01.png") and audio to use ("bunnyend01") - if you're curious, the absolute paths to these resources are built using the ``baseDir`` provided to all frames in the list.
+Here we're providing the name of an image to use ("bunnyend01.png") and audio to use ("bunnyend01").
+
+.. admonition:: Where's the full file path?
+
+    If you're curious, the absolute paths to these stimuli files are built using the ``baseDir`` provided to all frames in the list. You can also use full paths for each file, but the ``baseDir`` parameter gives you a shortcut. You read see more about how to use this in the Lookit Framplayer :ref:`expand assets documentation page <elf:expand-assets>`.
 
 Close, save, and refresh your preview. Now after the question, you should see and hear a friendly wrap-up to this thrilling story.
 
@@ -534,7 +552,7 @@ Each frame you define on Lookit has to have a property called ``kind`` which say
 * the ``storybook-causal`` frame has kind ``group`` (this is a special kind of frame, documented :ref:`here <elf:frame groups>`)
 * the frames **within** the ``storybook-causal`` frame have kind ``exp-lookit-images-audio`` (this is added to each frame in the ``frameList`` as part of the ``commonFrameProperties``)
 
-In addition to this tutorial and the information in this documentation about how to set up a Lookit study on CHS, there is detailed information available about each of the "frames" you can use in your Lookit study. In the :ref:`experiment runner docs <elf:index>` you can browse the options and learn about options for customizing each type of frame.
+In addition to this tutorial and the information in this documentation about how to set up a Lookit study on CHS, there is detailed information available about each of the "frames" you can use in your Lookit study. In the :ref:`Lookit Frameplayer documentation <elf:index>` you can browse the frame options and learn about the parameters for customizing each type of frame.
 
 Let's take a look at the ``exp-lookit-images-audio`` documentation to see what options we have. Find it on the left sidebar and click on it. Here's what you'll see:
 
@@ -551,9 +569,9 @@ The final three sections are "Parameters," "Data collected," and "Events recorde
 .. image:: ../_static/img/tutorial/frame_doc_3.png
     :alt: Annotated frame documentation page - methods, properties, events
 
-Click on "Parameters" to see all the properties we can add to the frame definition in our protocol. You'll see that some of the things we can set are "audio," "autoProceed," "doRecording," "durationSeconds," "images," "parentTextBlock," and "showProgressBar." Each one includes an explanation of what it does and what format its value needs to be in.
+Click on "Parameters" to see all the properties we can add to the "exp-lookit-images-audio" frame. You'll see that some of the things we can set are "audio," "autoProceed," "doRecording," "durationSeconds," "images," "parentTextBlock," and "showProgressBar." Each one includes an explanation of what it does, what format its value needs to be in, and what the default value is (if there is one).
 
-Let's try changing the value of "autoProceed" on all our storybook pages. To do that we can change it within the "commonFrameProperties" in our study protocol:
+Let's try changing the value of "autoProceed" on all our storybook pages. To do that we can, find the "storybook-casual" object inside "frames", then "commonFrameProperties", then "autoProceed":
 
 .. code-block:: none
 
@@ -584,21 +602,21 @@ You may have noticed that we're asking children why Bunny has a tummyache - beca
 
 Let's set up to counterbalance the question that's asked! Again, at this point you don't need to understand all the details, let's just walk through what we'd do.
 
-We're going to change our "storybook-causal" frame into what's called a randomizer frame, instead of just a group of frames. Find this section and make the changes indicated below:
+We're going to change our "storybook-causal" frame into what's called a :ref:`randomizer frame <elf:randomization>`, instead of just a group of frames. Find the "storybook-causal" frame (inside ``frames``) and make the changes indicated below:
 
 .. code-block:: none
 
    "storybook-causal": {
-        "kind": "group", <-- change this to "choice"
-        "sampler": "random-parameter-set", <-- add this line! 
+        "kind": "group",                         <-- Change this to "choice"
+        "sampler": "random-parameter-set",       <-- Add this line!
         "frameList": [ 
-            ... <--  almost everything in here can stay the same
+            ...                                  <-- Almost everything in here can stay the same
             {
-                "audio": "bunnya01", <-- but change this to "QUESTION_AUDIO"
+                "audio": "bunnya01",             <-- But change this to "QUESTION_AUDIO"
                 "images": [
                     {
                         "id": "storybookIllustration",
-                        "src": "bunnya01.png", <-- and change this to "QUESTION_IMAGE"
+                        "src": "bunnya01.png",   <-- And change this to "QUESTION_IMAGE"
                         "top": 0,
                         "left": 10,
                         "width": 80
@@ -606,12 +624,12 @@ We're going to change our "storybook-causal" frame into what's called a randomiz
                 ],
                 "doRecording": true
             },
-             ...
-             ],
-             "commonFrameProperties": { <-- everything in here can stay the same
-             ...
- },
-            "parameterSets": [ <-- add this section!
+            ...
+        ],
+        "commonFrameProperties": {               <-- Everything in here can stay the same
+            ...
+        },
+        "parameterSets": [                       <-- Add this section!
             {
                 "QUESTION_AUDIO": "bunnya01",
                 "QUESTION_IMAGE": "bunnya01.png"
