@@ -22,6 +22,27 @@ You must provide complete information for each of the fields on the study form,
 including compensation information and eligibility.  :ref:`Here is a detailed
 guide<study fields>` to each of the fields on the study form. 
 
+.. _inclusion_exclusion_criteria:
+
+Inclusion/Exclusion Criteria
+---------------------------------
+
+Our website strongly encourages **inclusive practices** for families that want to participate in research studies. Our goals are to support great experiences for all families and wide-reaching science outreach. Importantly, there can be a difference between (1) who you allow to experience your study and (2) who you include in your final dataset.
+
+Thus, we suggest that you have inclusion criteria that are as broad as possible. In general:
+
+- Most studies on our website should only have age as a criteria (or, rarely, grade in school).
+- Due to logistics (e.g., the geographic scope of some ethics approvals), some studies may list country requirements.
+- When a study is about language in particular then it is allowable to include language requirements (e.g., “Because this study is about native language learning, we are only recruiting monolingual English speakers” or “Because this study is about knowing exactly two languages, we are only recruiting bilingual English and French speakers”). But studies should not list language in any other cases, and it is assumed that visitors to our site will know enough English to have a good experience with English-language studies. (Likewise, we have some studies where the study is listed in another language — such as Spanish — and then it is assumed that families signing up for such a study will speak Spanish well enough to participate!)
+
+A guiding principle you can use is to consider what percent of your potential participants a criteria would exclude. For example, you might want to exclude children with “History of head injury” but this can almost certainly be done in your dataset AFTER participation has occurred; you would allow children to participate without any mention of this, but then at the end ask a question about head injury (and any other similar questions) and exclude the data from your dataset in whatever way you pre-planned. 
+
+In contrast, imagine that you were specifically recruiting children WITH a history of head injury. This would be appropriate to list as an inclusion criterion, because to recruit your sample without stating this you would need to recruit a massive sample and then exclude the vast majority of the children who had participated (and who did not have a history of head injury).
+
+In short, you will only be able to list criteria on CHS when you make a strong case for it, including that it would be impractical/impossible to allow families to participate and then exclude their data from your dataset at the point of data analysis.
+
+All of this means that you might choose to not list your study on CHS if you are going to turn away many families rather than allowing them to experience your study.
+
 Paying participants
 --------------------
 
