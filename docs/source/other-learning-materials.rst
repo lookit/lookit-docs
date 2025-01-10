@@ -29,6 +29,8 @@ Below is a list of more information and resources about CHS. Some of these links
 
 - :ref:`The CHS "About" page <about>` contains a summary of this project and its mission statement.
 
+- [Atlantic article] `A Paradigm Shift in How Scientists Study Kids <https://www.theatlantic.com/family/archive/2024/02/chs-lookit-developmental-psychology/677458/>`__ from February 2024, which discusses CHS's mission, logic/tradeoffs of online work, etc.
+
 - [APS Observer Article] `Kids in Their Comfort Zones: Conducting Online Developmental Research with Lookit <https://www.psychologicalscience.org/observer/kids-in-their-comfort-zones>`__ from March 2020, which describes Lookit (now CHS) and how you can get your study ready!
 
 - Original publications about Lookit (now CHS):
