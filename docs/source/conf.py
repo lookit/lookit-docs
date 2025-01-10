@@ -125,3 +125,12 @@ html_context = {
     "github_version": "develop",  # Version
     "conf_py_path": "/docs/source/",  # Path in the checkout to the docs root
 }
+
+# This is a hack to get Sphinx to copy static content into the build directory
+# https://github.com/sphinx-doc/sphinx/issues/2090#issuecomment-572902572
+
+def env_get_outdated(app, env, added, changed, removed):
+    return ['index']
+
+def setup(app):
+    app.connect('env-get-outdated', env_get_outdated)
