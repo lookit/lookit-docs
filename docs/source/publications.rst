@@ -30,7 +30,6 @@ Here's some of the research that's come out of the CHS (formerly "Lookit") platf
     </div>
 
 
-
 ------------------------------------------
 Conference symposia, talks, and posters
 ------------------------------------------
@@ -45,4 +44,6 @@ Conference symposia, talks, and posters
 - Casey K., Scott K., Ashton K., Gill J., Simpson E., & Bayet L. (2020) Neonatal imitation of caregivers: A feasibility pilot. The CogSci 2020 Virtual Conference.
 - Yoon, E. J., Frank, M. C. (2019). Preschool children's understanding of polite requests. Proceedings of the 41st Annual Conference of the Cognitive Science Society. `[pdf] <https://psyarxiv.com/r9zf4>`__, `[repository] <https://github.com/ejyoon/polcon>`__. 
 
-If you give a presentation or publish a paper using CHS data, please share it here! You can :ref:`propose that change directly<First PR>` or email childrenhelpingscience@gmail.com with the citation (and a PDF or video link if you want to share it here).
+.. admonition:: Please help us add to this list!
+
+    If you've given a presentation or published a paper using CHS data, please share it here! You can add to this page by completing `this Google docs form <https://docs.google.com/forms/d/e/1FAIpQLScy0DBdFNvDPsd-YkqiDkykoUmpjEfZCObOBefW7w-ekw5v0w/viewform?usp=sf_link>`__, or contact us on Slack or email (childrenhelpingscience@gmail.com).
