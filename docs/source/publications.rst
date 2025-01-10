@@ -4,27 +4,18 @@ Publications
 
 .. _Publications:
 
----------------------------------------
-Publications using CHS data
----------------------------------------
+-----------------------
+Published articles
+-----------------------
 
-Here's some of the research that's come out of the CHS (formerly "Lookit") platform! There's a lot more in prep, so 
-if you're interested in questions like whether someone's tried X task on CHS and how it 
-went, we recommend asking in the #researchers channel on Slack for more up-to-date info.
+Here's some of the research that's come out of the CHS (formerly "Lookit") platform! There's a lot more in prep, soif you're interested in questions like whether someone's tried X task on CHS and how it went, we recommend asking in the #researchers channel on Slack for more up-to-date info.
 
-- Beckner, A.G., Voss, A.T., Oakes, L.M., Casasola, M. (2021, April). Assessing the robustness of the mental rotation change detection procedure: the importance of task and context. In symposium: Infants’ learning about object properties and categories in diverse environments. Symposium conducted at the biennial Society for Research in Child Development (Virtual).
+.. raw:: html
 
-- Bochynska, A., Scott, K., and Dillon, M. (2021, April). Bringing home Baby Euclid: Evaluating infants’ basic shape discrimination using the online platform Lookit. In symposium: Infants’ learning about object properties and categories in diverse environments. Symposium conducted at the biennial meeting of the Society for Research in Child Development (Virtual).
+    <div id="zotero-publication-list" class="lookit-center-text lookit-error-message-text">
+        Please wait while the publication list loads...
+    </div>
 
-- Casey, K., Scott, K., Ashton, K., Gill, J., Simpson, E., and Bayet, L. (2021, April). Neonatal imitation of caregivers at home: Pre-registered analyses. Poster at the biennial meeting of the Society for Research in Child Development (Virtual).
-
-- Cassamajor, K., Chu, J., Scott, K., and Schulz, L. (2021, April). A large-scale study of infant intuitive physics. Poster at the biennial meeting of the Society for Research in Child Development (Virtual).
-
-- Chalik (2021, April). Moral behavior within and across social groups. In J. Dunlea (Chair), The role of social relationships in shaping children’s socio-moral reasoning. Symposium conducted at the biennial meeting of the Society for Research in Child Development (Virtual).
-
-- Casey K., Scott K., Ashton K., Gill J., Simpson E., & Bayet L. (2020) Neonatal imitation of caregivers: A feasibility pilot. The CogSci 2020 Virtual Conference.
-
-- Yoon, E. J., Frank, M. C. (2019). Preschool children's understanding of polite requests. Proceedings of the 41st Annual Conference of the Cognitive Science Society. `[pdf] <https://psyarxiv.com/r9zf4>`__, `[repository] <https://github.com/ejyoon/polcon>`__. 
 
 If you give a presentation or publish a paper using CHS data, please share it here! You can :ref:`propose that change directly<First PR>` or email childrenhelpingscience@gmail.com with the citation (and a PDF or video link if you want to share it here).
 

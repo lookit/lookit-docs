@@ -97,3 +97,15 @@ ul.tutorial-participants {
 ul.tutorial-participants li {
     padding: 0;
 }
+
+div#zotero-publication-list {
+    margin-bottom: 1em;
+}
+
+.lookit-center-text {
+    text-align: center;
+}
+
+.lookit-error-message-text {
+    color:#9a9a9a
+}
