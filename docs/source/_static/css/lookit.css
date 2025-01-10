@@ -102,6 +102,20 @@ div#zotero-publication-list {
     margin-bottom: 1em;
 }
 
+.rst-content ul.lookit-publication-list {
+    padding: 0;
+    text-indent: -1em;
+}
+
+.rst-content ul.lookit-publication-list li {
+    list-style-type: none !important;
+    padding-bottom: 0;
+}
+
+.rst-content ul.lookit-publication-list p {
+    line-height: 2 !important;
+}
+
 .lookit-center-text {
     text-align: center;
 }
