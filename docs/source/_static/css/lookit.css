@@ -105,6 +105,7 @@ div#zotero-publication-list {
 .rst-content ul.lookit-publication-list {
     padding: 0;
     text-indent: -1em;
+    margin-bottom: 1em;
 }
 
 .rst-content ul.lookit-publication-list li {
