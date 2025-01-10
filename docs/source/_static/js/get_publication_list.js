@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const pub_div = document.getElementById('zotero-publication-list');
 
+    // Use "format=json" and "include=bib" instead of "format=bib", because the latter doesn't allow sorting by date.
+    // https://www.zotero.org/support/dev/web_api/v3/basics
     const url = "https://api.zotero.org/groups/5819486/items?format=json&include=bib&linkwrap=1&style=apa&sort=date&direction=desc&v=3";
 
     try {
