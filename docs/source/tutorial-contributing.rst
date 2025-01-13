@@ -342,6 +342,7 @@ List of tutorial participants
 - Emma Smith (University of Wisconsin-Madison)
 - Claudia Lewis (Stanford University)
 - Marija Bolic (University of Toronto)
+- Tanatswa Mangena (Minerva University)
 
 Checking for and creating issues on Github
 -------------------------------------------
