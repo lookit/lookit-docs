@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         pub_div.innerHTML = item_bib_info;
     } catch (error) {
         console.error(error.message);
-        pub_div.innerHTML = `<p class="lookit-error-message-text">Something went wrong retrieving the publications. Please try again later.</p>`;
+        pub_div.innerHTML = `<p class="lookit-error-message-text">Something went wrong retrieving the publications. Please try again later.<br/></p>`;
     }
 
 });

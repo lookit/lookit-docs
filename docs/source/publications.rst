@@ -27,6 +27,7 @@ Here's some of the research that's come out of the CHS (formerly "Lookit") platf
 
     <div id="zotero-publication-list" class="lookit-center-text lookit-error-message-text">
         Please wait while the publication list loads...
+        <br/>
     </div>
 
 
