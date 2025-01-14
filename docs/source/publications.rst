@@ -21,7 +21,7 @@ However, the platform itself has been renamed to "Children Helping Science" and 
 Published articles
 -----------------------
 
-Here's some of the research that's come out of the CHS (formerly "Lookit") platform! There's a lot more in prep, soif you're interested in questions like whether someone's tried X task on CHS and how it went, we recommend asking in the #researchers channel on Slack for more up-to-date info.
+Here's some of the research that's come out of the CHS (formerly "Lookit") platform! There's a lot more in prep, so if you're interested in questions like whether someone's tried X task on CHS and how it went, we recommend asking in the #researchers channel on Slack for more up-to-date info.
 
 .. raw:: html
 
