@@ -343,6 +343,7 @@ List of tutorial participants
 - Claudia Lewis (Stanford University)
 - Marija Bolic (University of Toronto)
 - Tanatswa Mangena (Minerva University)
+- Chantal Valdivia-Moreno (Princeton University)
 
 Checking for and creating issues on Github
 -------------------------------------------
