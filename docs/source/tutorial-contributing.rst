@@ -69,6 +69,7 @@ List of tutorial participants
 
 .. rst-class:: tutorial-participants
 
+- Mohanad Abdelhakem (Minerva University)
 - Katie Nguyen (Univeristy of Maryland)
 - Olivia Lowman (American University)
 - Alexander Maksiaev (University of Virginia)
