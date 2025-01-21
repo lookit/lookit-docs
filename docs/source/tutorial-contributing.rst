@@ -344,6 +344,7 @@ List of tutorial participants
 - Marija Bolic (University of Toronto)
 - Tanatswa Mangena (Minerva University)
 - Chantal Valdivia-Moreno (Princeton University)
+- Njeri Mwenjwa (Minerva University)
 
 Checking for and creating issues on Github
 -------------------------------------------
