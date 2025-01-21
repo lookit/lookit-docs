@@ -23,6 +23,7 @@ The CHS jsPsych experiment runner automatically loads a set of packages from the
 - `Image keyboard response plugin <https://www.jspsych.org/v8/plugins/image-keyboard-response/>`__ v2.0.0: ``jsPsychImageKeyboardResponse``
 - `HTML button response plugin <https://www.jspsych.org/v8/plugins/html-button-response>`__ v2.0.0: ``jsPsychHtmlButtonResponse``
 - `Image button response plugin <https://www.jspsych.org/v8/plugins/image-button-response/>`__ v2.0.0: ``jsPsychImageButtonResponse``
+- `Video button response plugin <https://www.jspsych.org/v8/plugins/video-button-response/>`__ v2.0.0: ``jsPsychVideoButtonResponse``
 - `Preload plugin <https://www.jspsych.org/v8/plugins/preload/>`__ v2.0.0: ``jsPsychPreload``
 
 We will likely add more options in the future. If there are any specific jsPsych plugins/extensions that your experiment needs, please let us know! The best way to request access to a standard jsPsych package is by creating a ``lookit-api`` `Github issue <https://github.com/lookit/lookit-api/issues>`__, but you can also let us know on Slack.
