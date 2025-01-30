@@ -69,6 +69,7 @@ List of tutorial participants
 
 .. rst-class:: tutorial-participants
 
+- Mohanad Abdelhakem (Minerva University)
 - Katie Nguyen (Univeristy of Maryland)
 - Olivia Lowman (American University)
 - Alexander Maksiaev (University of Virginia)
@@ -344,6 +345,8 @@ List of tutorial participants
 - Marija Bolic (University of Toronto)
 - Tanatswa Mangena (Minerva University)
 - Chantal Valdivia-Moreno (Princeton University)
+- Njeri Mwenjwa (Minerva University
+- Alexandre Lucas (Harvard Univeristy)
 
 Checking for and creating issues on Github
 -------------------------------------------
