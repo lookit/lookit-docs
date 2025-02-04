@@ -31,6 +31,12 @@ Before you can begin setting your local environment, we'll need to install a cou
 
 #. Install `Docker Desktop <https://www.docker.com/products/docker-desktop/>`__.
 
+#. Install PostgreSQL.  If you're on macOS, you can install it through brew:
+
+   .. code-block:: shell
+
+      brew install postgresql
+
 Local Environment
 ~~~~~~~~~~~~~~~~~
 
