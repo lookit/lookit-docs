@@ -347,6 +347,7 @@ List of tutorial participants
 - Chantal Valdivia-Moreno (Princeton University)
 - Njeri Mwenjwa (Minerva University
 - Alexandre Lucas (Harvard Univeristy)
+- Deborah Foucault (UMass Amherst)
 
 Checking for and creating issues on Github
 -------------------------------------------
