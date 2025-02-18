@@ -348,6 +348,7 @@ List of tutorial participants
 - Njeri Mwenjwa (Minerva University
 - Alexandre Lucas (Harvard Univeristy)
 - Deborah Foucault (UMass Amherst)
+- Assyl Zhanuzak (Minerva University)
 
 Checking for and creating issues on Github
 -------------------------------------------
