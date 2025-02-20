@@ -349,6 +349,7 @@ List of tutorial participants
 - Alexandre Lucas (Harvard Univeristy)
 - Deborah Foucault (UMass Amherst)
 - Assyl Zhanuzak (Minerva University)
+- Jamie Sloves (Wesleyan University)
 
 Checking for and creating issues on Github
 -------------------------------------------
