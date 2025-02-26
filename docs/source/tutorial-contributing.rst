@@ -351,6 +351,7 @@ List of tutorial participants
 - Deborah Foucault (UMass Amherst)
 - Assyl Zhanuzak (Minerva University)
 - Jamie Sloves (Wesleyan University)
+- Bethany Rutkowski (Wesleyan University)
 
 Checking for and creating issues on Github
 -------------------------------------------
