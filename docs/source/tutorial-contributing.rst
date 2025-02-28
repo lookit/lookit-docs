@@ -352,6 +352,7 @@ List of tutorial participants
 - Assyl Zhanuzak (Minerva University)
 - Jamie Sloves (Wesleyan University)
 - Bethany Rutkowski (Wesleyan University)
+- Meghan Callahan (Rutgers University - Newark)
 
 Checking for and creating issues on Github
 -------------------------------------------
