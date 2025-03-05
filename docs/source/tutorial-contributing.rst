@@ -353,6 +353,7 @@ List of tutorial participants
 - Jamie Sloves (Wesleyan University)
 - Bethany Rutkowski (Wesleyan University)
 - Meghan Callahan (Rutgers University - Newark)
+- Melanie Luximon (Harvard University)
 
 Checking for and creating issues on Github
 -------------------------------------------
