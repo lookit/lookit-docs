@@ -354,6 +354,7 @@ List of tutorial participants
 - Bethany Rutkowski (Wesleyan University)
 - Meghan Callahan (Rutgers University - Newark)
 - Melanie Luximon (Harvard University)
+- Sana Kulkarni (The University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
