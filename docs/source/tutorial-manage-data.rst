@@ -160,16 +160,19 @@ This will take you to the "All Responses" page. You will see some other tabs tow
 
 On the Individual Responses page, you will see a table where each row represents a single response session. The top (most recent) response will be selected automatically when the page loads. You can click on other rows to view and download information about each response.
 
-Your own response will probably be the top one. To check, with the top row selected, find the "**Response details**" box, and look at the "Parent name" and "Child name" values. This "Response details" box contains various other IDs and some key information taken from the exit survey. Try clicking on other rows in the table to see how the response details change.
+.. image:: _static/img/tutorial/individual_responses_1.png
+    :alt: Individual responses view - top of page.
 
-.. image:: _static/img/tutorial/individual_responses.png
-    :alt: Individual responses view
+Your own response will probably be the top one. To check, with the top row selected, scroll down to the "**Response details**" box below the table, and look at the "Parent name" and "Child name" values. This "Response details" box contains various other IDs and some key information taken from the exit survey. Try clicking on other rows in the table to see how the response details change.
+
+.. image:: _static/img/tutorial/individual_responses_2.png
+    :alt: Individual responses view - bottom of page.
 
 The "**Download response**" box allows you to download the data from the selected response in JSON or CSV format.
 
-The "**Videos**" box allows you to view and download any videos associated with the selected response.
+The "**Download videos**" box allows you to view and download any videos associated with the selected response.
 
-There's also a "**Feedback**" box where you can leave new feedback to the participant and any view existing feedback about this session. The feedback gets displayed to that specific participant on their "Past Studies" page. It's a good place to leave a short but personal thank-you message that shows a human has seen and appreciates their videos. Try it out! Leave a feedback message on your own video.
+There's also a "**Give new feedback**" box where you can leave new feedback to the participant and any view existing feedback about this session. The feedback gets displayed to that specific participant on their "Past Studies" page. It's a good place to leave a short but personal thank-you message that shows a human has seen and appreciates their videos. Try it out! Leave a feedback message on your own video.
 
 .. image:: _static/img/tutorial/feedback.png
     :alt: Feedback box
