@@ -273,18 +273,37 @@ Contact a participant with a gift card code
 
 Second, let's imagine that you're compensating participants with gift cards. (You'll want to take a look at the Terms of Use and :ref:`compensation info here <compensation>` as you make more detailed plans, but essentially, for now researchers are responsible for handling any compensation by messaging participants.)
 
-From your study details page, click the "Study Responses" button from the menu on the right, then click on the "Individual Responses" tab. Find your response again. Copy the Parent ID from the "Response details" box:
+From your study details page, click the "Study Responses" button from the menu on the right, then click on the "Individual Responses" tab. Find your response in the table. With your own response selected, in the box to the top-right of the table, you will see a link that says "Send a message to this family":
 
-.. image:: _static/img/tutorial/response_parent_id.png
-    :alt: Parent ID in the Response Details box
+.. image:: _static/img/tutorial/response_message_family.png
+    :alt: Send message to this family link above the Individual Responses table.
 
-This same Parent ID can be found in the response data. If you download the data as a JSON file, it's under "participant": "hashed_id", and if you download the data as a CSV file, it's called "participant__hashed_id".
 
-Returning to the "Contact Participants" page, let's create another email. This time, you can select the "transactional" button (yellow), which allows you to reach even people who have opted out of email; this is because you sending the compensation is the completion of a "transaction" they agreed to. You will see a warning when you select this option, reminding you that this option is ONLY for completing a transaction.
+.. admonition:: Or copy/paste the Parent ID
+
+    Alternatively, you can copy the Parent ID, go to your study's "Contact Particpants" page, and paste the ID into the Recipients field. The Parent ID can be found in the "Response details" box and in the response data. If you download the data as a JSON file, it's under "participant": "hashed_id", and if you download the data as a CSV file, it's called "participant__hashed_id".
+
+Clicking the "Send a message to this family" link will open the "Contact Participants" page in a new tab, with this family as the recipient for a new email.
+
+.. image:: _static/img/tutorial/after_clicking_message_this_family.png
+    :alt: Contact Participants page after clicking "Send message to this family".
+
+By default, the message type that is selected is for sending **questions about their response**. This message type should be used if you need to follow up about a technical problem or clarify something about their response.
+
+.. admonition:: Why did I get this warning when I clicked "Send a message to this family"?
+
+    If the family account that you're trying to contact has opted out of the default message type (questions about their response), then when you click the "Send a message to this family" link, the website will not be able to add that family as a recipient. Instead, you will see a message at the top of the screen letting you know that they have opted out of this message type.
+
+    .. image:: _static/img/tutorial/user_opted_out_of_emails.png
+        :alt: Warning message when user has opted out of the default email type.
+
+    If you want to send a different message type, then select the appropriate type with the recipients filter buttons and try pasting the Parent ID into the "Recipients" field. You can read more about the message types in the :ref:`"Sending a message" <sending-a-message>` section.
     
-Like before, paste in your ID, write your message, send it, and make sure you receive it. (Don't actually send yourself a gift card. Unless you really want to.)
+However, because we are sending a gift card, you can select the **transactional** message type (yellow button), which allows you to reach even people who have opted out of email; this is because you sending the compensation is the completion of a "transaction" they agreed to. You will see a warning when you select this option, reminding you that this option is ONLY for completing a transaction.
 
 .. image:: _static/img/tutorial/transactional.png
     :alt: Transactional email
+
+Like before, write your message, send it, and make sure you receive it. (Don't actually send yourself a gift card. Unless you really want to.)
 
 Congratulations! We've covered all the basic functionality you'll need to manage your studies. Finally, we'll wrap up by briefly noting some of the advanced features you might want to use later and revisiting :ref:`Github issues<github_issues>` now that you may have some feature requests or bug reports.
