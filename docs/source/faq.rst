@@ -1,3 +1,5 @@
+.. _faq:
+
 FAQ
 =====
 
@@ -146,8 +148,8 @@ to view data. Session, child, and family data are only possible to view
 after consent has been confirmed. The permissions granted to researchers
 are quite granular, so that researchers can be granted access to only
 the minimum functions needed for their role, without any unnecessary
-risk to participant personal data. Researchers can contact participants
-through the platform, but do not receive access to participant email
+risk to participant personal data. Researchers can :ref:`contact participants
+through the platform <contacting_participants>`, but do not receive access to participant email
 addresses (unless participants email them).
 
 We hired an external security consulting firm to conduct detailed manual

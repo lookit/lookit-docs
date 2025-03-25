@@ -14,7 +14,7 @@ Making your first pull request (PR)
 ------------------------------------
 All of the code that makes CHS run is stored on GitHub, which makes it easy to keep track of changes over time and merge changes from many collaborators. There are several code repositories or "repos" that house different pieces of the project. Here we are going to walk through making a change to the documentation repo, `lookit-docs <https://github.com/lookit/lookit-docs>`_. Making a "pull request" or PR is a way to ask that your edits be incorporated into the main codebase. It's actually not too hard, and it's a great way to contribute! 
 
-Don't worry about making a mistake and somehow messing up the documentation - you can't directly edit the "official" version of the files! There is always a review process before your changes are merged in. 
+Don't worry about making a mistake and somehow messing up the documentation - you can't directly edit the "official" version of the files! There is always a review process before your changes are merged in. For further instructions on how to create PRs, please see the `GitHub documentation <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>`_.
 
 1. In a separate tab, go to https://github.com/lookit/lookit-docs and click "Fork" in the top right corner. You'll need to make an account on GitHub if you don't have one already. You only need to do this once - for future changes you can skip this step.
 
@@ -36,12 +36,12 @@ Don't worry about making a mistake and somehow messing up the documentation - yo
    .. image:: _static/img/tutorial/new_branch_message.png
       :alt: New branch message on GitHub
     
-4. Make your changes! For this PR, just add your name and institution to the list of tutorial participants. Click the "Preview changes" tab to make sure everything looks the way you want it to. You can go back and forth between the "Edit file" and "Preview changes" tabs as you make more involved changes.
+4. Make your changes! For this PR, just add your name and institution to the list of tutorial participants. Click the "Preview" button to make sure everything looks the way you want it to. You can go back and forth between the "Edit" and "Preview" selections as you make more involved changes.  
 
    .. image:: _static/img/tutorial/preview_tab.png
       :alt: Preview changes and edit file tabs on GitHub
 
-5. Scroll down to "Propose file change." Enter a short description of your change, and then click the green "Propose file change" button:
+5. Once you're satisfied with your changes, click the green button "Commit changes..." and a pop up window will appear.  Enter a short description of your change, and then click the green "Propose changes" button:
 
    .. image:: _static/img/tutorial/propose_file_change.png
       :alt: Propose file change section on GitHub
@@ -69,6 +69,8 @@ List of tutorial participants
 
 .. rst-class:: tutorial-participants
 
+- Sara Yilmaz (Rutgers University-Newark)
+- Mohanad Abdelhakem (Minerva University)
 - Katie Nguyen (Univeristy of Maryland)
 - Olivia Lowman (American University)
 - Alexander Maksiaev (University of Virginia)
@@ -341,6 +343,18 @@ List of tutorial participants
 - Annie Schwartzstein (University of California, Santa Cruz)
 - Emma Smith (University of Wisconsin-Madison)
 - Claudia Lewis (Stanford University)
+- Marija Bolic (University of Toronto)
+- Tanatswa Mangena (Minerva University)
+- Chantal Valdivia-Moreno (Princeton University)
+- Njeri Mwenjwa (Minerva University
+- Alexandre Lucas (Harvard Univeristy)
+- Deborah Foucault (UMass Amherst)
+- Assyl Zhanuzak (Minerva University)
+- Jamie Sloves (Wesleyan University)
+- Bethany Rutkowski (Wesleyan University)
+- Meghan Callahan (Rutgers University - Newark)
+- Melanie Luximon (Harvard University)
+- Sana Kulkarni (The University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------

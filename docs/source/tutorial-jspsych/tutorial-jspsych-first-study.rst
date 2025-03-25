@@ -212,19 +212,19 @@ We'll start by adding session recording that starts before our hello world trial
 
     .. code:: javascript
 
-        const startRec = { type: chsRecord.StartRecordPlugin };
+        const start_rec = { type: chsRecord.StartRecordPlugin };
 
 2. Add a "stop recording" trial using the ``StopRecordPlugin`` from the `CHS Record package <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#session-recording>`__.
 
     .. code:: javascript
 
-        const stopRec = { type: chsRecord.StopRecordPlugin };
+        const stop_rec = { type: chsRecord.StopRecordPlugin };
 
 3. Put these trials into the experiment timeline, before and after the "hello world" trial.
 
     .. code:: javascript
 
-        jsPsych.run([video_config, video_consent, start, hello_trial, stop, exit_survey]);
+        jsPsych.run([video_config, video_consent, start_rec, hello_trial, stop_rec, exit_survey]);
 
 Here's the full experiment code now:
 
@@ -244,7 +244,7 @@ Here's the full experiment code now:
         purpose: "Why do babies love cats? This study will help us find out whether babies love cats because of their soft fur or their twitchy tails."
     };
 
-    const start = { type: chsRecord.StartRecordPlugin };
+    const start_rec = { type: chsRecord.StartRecordPlugin };
 
     const hello_trial = {
       type: jsPsychHtmlButtonResponse,
@@ -252,11 +252,11 @@ Here's the full experiment code now:
       choices: ['Next']
     };
 
-    const stop = { type: chsRecord.StopRecordPlugin };
+    const stop_rec = { type: chsRecord.StopRecordPlugin };
 
     const exit_survey = { type: chsSurvey.ExitSurveyPlugin };
 
-    jsPsych.run([video_config, video_consent, start, hello_trial, stop, exit_survey]);
+    jsPsych.run([video_config, video_consent, start_rec, hello_trial, stop_rec, exit_survey]);
 
 
 Step 7: Switch to trial recording
@@ -367,7 +367,7 @@ Try converting your tutorial experiment into another language! Here's what our t
         locale: "fr"
     };
 
-    const start = {
+    const start_rec = {
         type: chsRecord.StartRecordPlugin,
         locale: "fr"
     };
@@ -378,7 +378,7 @@ Try converting your tutorial experiment into another language! Here's what our t
       choices: ['Next']
     };
 
-    const stop = {
+    const stop_rec = {
         type: chsRecord.StopRecordPlugin,
         locale: "fr"
     };
@@ -388,4 +388,4 @@ Try converting your tutorial experiment into another language! Here's what our t
         locale: "fr"
     };
 
-    jsPsych.run([video_config, video_consent, start, hello_trial, stop, exit_survey]);
+    jsPsych.run([video_config, video_consent, start_rec, hello_trial, stop_rec, exit_survey]);

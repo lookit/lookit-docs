@@ -28,11 +28,6 @@ This value affects the order in which studies are listed on your :ref:`custom la
 Setting your study's priority value to 99 (the default) will mean it is shown *first* on your page, while setting the priority to 1 will mean it is shown *last*. You can use any integers between these values for more fine-grained control over ordering. If any of your lab's studies share the same priority value, then presentation order will be random within that set. 
 
 =============================
-External
-=============================
-Will you be providing a link to a study (or study scheduling page) rather than using the Lookit or jsPsych experiment builders? If so, then check this box to show the form fields that are relevant to these types of studies, such as the study/scheduling link (see :ref:`study-url`). Checking this box will also hide fields of this form that are only applicable for internal Lookit/jsPsych studies. Leave this box unchecked if you are building an experiment to be conducted inside the CHS architecture (i.e. an 'internal' study; see `Building an Experiment`_ for more information).  
-
-=============================
 Scheduled
 =============================
 The internal experiment builders, Lookit and jsPsych, don't have the capacity for video chat studies, so this box is greyed out unless the External box is checked.  If you are running an external study, leave this box unchecked if participants will click a link and participate in a study right away, without any back-and-forth or live interaction with a researcher.  Check this box if participants will wind up scheduling and attending a video chat with a researcher.
@@ -50,6 +45,8 @@ If the box is unchecked, the study will be 'non-discoverable' and participants w
 You can switch the study back and forth from discoverable to non-discoverable any time after it's approved, without triggering re-review.
 
 We recommend **starting** studies as non-discoverable, so that you can pilot with participants you recruit before inviting everyone who's eligible to participate!
+
+.. _share_preview:
 
 =============================
 Share preview
@@ -183,7 +180,7 @@ Here you might focus on how old babies are when they "turn" six months and then 
 Must (not) have participated
 =============================
 
-These fields allow you to specify that participants are only eligibile for this study if they **have** participated in a certain study or set of studies, and/or **have not** participated in a certain study or set of studies. This can be useful for making sure that samples do not overlap across a set of studies, or recruiting specific participants for longitudinal follow-up studies.
+These fields allow you to specify that participants are only eligible for this study if they **have** participated in a certain study or set of studies, and/or **have not** participated in a certain study or set of studies. This can be useful for making sure that samples do not overlap across a set of studies, or recruiting specific participants for longitudinal follow-up studies.
 
 For each of these fields, you can click on a study to select it, and click it again to remove it. You can select multiple studies. The list of currently-selected studies will appear below the selection box.
 
@@ -226,6 +223,10 @@ If the child is not eligible based on the study's criteria expression, they will
     :alt: Family-facing study detail page with an ineligible child selected and red ineligibility warning text.
 
 You may want to use the criteria expression to specify additional eligibility criteria beyond an age range - for instance, if your study is for a special population like kids with ASD or bilingual kids. In general, do **not** specify your age range here; participant eligibility checks will require the child meet the `minimum and maximum age cutoffs`_ AND these critera.
+
+.. admonition:: What criteria should I use?
+
+    CHS strongly encourages **inclusive practices** for families that want to participate in research studies. Thus, we suggest that you have inclusion criteria that are as broad as possible, so that many families can participate, knowing that you may need to exclude participants from your analysis after the data has been collected. We will review your inclusion/exclusion criteria as :ref:`part of the study review process <inclusion_exclusion_criteria>`, and you will only be able to use criteria when you make a strong case for it.
 
 Every child in the CHS database has a number of fields associated with it, ranging from gestational age to languages spoken in the home, which can be used in determining eligibility. In the study edit and create views, you can formulate your criteria expression as a boolean expression with embedded relational expressions, using a domain specific query language. 
 

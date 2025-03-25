@@ -7,9 +7,14 @@
 Welcome
 ----------
 
-Welcome to the Children Helping Science (CHS) tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own Lookit study on the CHS platform. By the end of the tutorial, you will be able to create a participant-friendly study that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
+Welcome to the Children Helping Science (CHS) tutorial! In this tutorial you will work through a series of exercises intended to build all the skills you'll need to run your own study on the CHS platform. By the end of the tutorial, you will be able to create a participant-friendly study that includes a survey and test trials, assign children to different experimental conditions, test and troubleshoot your study, download study data, contact participants, use and even edit this documentation!
 
-This tutorial was written for researchers who will be building a Lookit study, but most steps are also applicable for researchers who will be building a jsPsych study or sharing a link to an external study instead.
+.. admonition:: Who should do this tutorial?
+
+   This tutorial was mostly written for researchers who will be building a Lookit study, but it's also applicable for researchers who will be building a jsPsych study or sharing a link to an external study instead. We've flagged the different points in the tutorial that you may want to do/skip if you're only interested in certain study types. Specifically:
+
+   - In **Step 3: Create a study**, you can choose to create an internal Lookit or jsPsych study, or skip this section if you're running an external study.
+   - In **Step 4: Managing study data**, if you're only interested in running external studies then you'll be able to skip the consent review process and ignore some of the data types, like video recordings and task data.
 
 This tutorial should take between 5 and 10 hours to complete, and does not assume any familiarity with programming. There is a mix of step-by-step directions and exercises to complete. It's the best way to get started with creating and managing a Lookit study, and a good first task to give to an RA who will be designing studies. Note that it does **not** cover issues like participant recruitment and IRB approval, just the technical side of things.
 
@@ -54,15 +59,13 @@ Where to go for help
 
   Even if you're not totally stumped, it's worth checking in on Slack to get ideas and resources! For example, you might ask if anyone has an R script for analyzing their data that you could use as a starting point, or run a draft debriefing by other researchers to get advice on wording.
     
-* There is a growing collection of training materials contributed by researchers that you can check out under the :ref:`"Other learning materials" section<Training>`!
+* There is a growing collection of training materials contributed by researchers that you can check out under the :ref:`"CHS Learning Materials and Other Resources" section on the Resources page<Training>`!
 
 Exercises
 ----------
 
 1. Say hello in the "tutorial" channel of the Lookit/CHS Slack workspace.
 
-2. Get a feel for the participant experience by trying out one of the "template" studies! At https://childrenhelpingscience.com/exp/studies/, find a study labeled TEMPLATE from the lab "Demo lab." Click on it and then click "Preview study" to see how it would work if you were a 
-participant! You may need to add a child profile and complete your demographic survey, 
-which you can do from https://childrenhelpingscience.com/account/manage/.
+2. Get a feel for the participant experience by trying out one of the "template" studies! After logging with your researcher account, click the "Experimenter" button at the top to get to the `"Manage Studies" page <https://childrenhelpingscience.com/exp/studies/>`__. Then find a study that is part of the "Demo lab" and has "[TEMPLATE]" in the title, such as `Baby Tetris <https://childrenhelpingscience.com/exp/studies/236/>`__ or `Can they both be right? <https://childrenhelpingscience.com/exp/studies/235/>`__. Click on it and then click "Preview study" to see how it would work if you were a participant! You may need to add a child profile and complete your demographic survey, which you can do from the `"Manage Account" page <https://childrenhelpingscience.com/account/manage/>`__ (click your name in the top right, then "Manage Account").
 
-3. [Extra credit] If you have young kids, take part in a currently-running study on the production server (https://childrenhelpingscience.com) - the experience is different with a squirming kid in your lap! Please enter only actual, not made-up, data on the production server - you are participating in real research here. (If you're curious but don't have a child in the age range, feel free to contact the lab and ask if it's ok to check it out--generally they can deal with that easily, but a heads up is helpful.)
+3. [Extra credit] If you have young kids, take part in a currently-running study as a real participant! You can log in with your researcher account, but make sure that you're on the family-facing part of the website by clicking "CHS Home" at the top, then go to the `"Studies" page <https://childrenhelpingscience.com/studies/>`__. The experience is different with a squirming kid in your lap! Please enter only actual, not made-up, data on the production website - you are participating in real research here. (If you're curious but don't have a child in the age range, feel free to contact the lab and ask if it's ok to check it out - generally they can deal with that easily, but a heads up is helpful.)

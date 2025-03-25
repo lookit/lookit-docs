@@ -1,5 +1,12 @@
 {%- extends "!layout.html" %}
 
+{%- block extrahead %}
+    <meta name="sourcename" content="{{ sourcename }}" />
+    {% if "publications" in sourcename %}
+        <script type="text/javascript" src="./_static/js/get_publication_list.js"></script>
+    {% endif %}
+{% endblock %}
+
 {% block sidebartitle %}
 
     {# From the sphinx-rtd-theme layout: https://github.com/simonw/sphinx_rtd_theme/blob/master/sphinx_rtd_theme/layout.html #}

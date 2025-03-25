@@ -2,7 +2,7 @@ Participant recruitment
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Current efforts & past results
-==============================
+===============================
 
 The Recruitment :ref:`Working Group <working_groups>` is actively exploring and testing out recruitment approaches!
 
@@ -14,7 +14,7 @@ Here are some general observations:
 
 -  Paying participants makes a huge difference in ability to recruit, as well as diversity of participants. Separately, we believe it’s ethical to pay families for their time & contribution. We currently aim for ~$15/hour for the expected duration of the study. Currently done by researchers manually sending gift cards post-study; eventual plans to provide centralized compensation functionality.
 
-Existing avenues for online outreach:
+Existing avenues for online outreach
 =====================================
 
 -  Facebook page
@@ -24,7 +24,7 @@ Existing avenues for online outreach:
    -  Interested labs may advertise via the CHS page - we send an invite to be an editor, you may need to double check at https://www.facebook.com/pages/?category=invites to find it. There are known problems about the invites being hard to find: https://www.facebook.com/business/help/community/question/?id=1249301125083191
    -  Experimenting with interest targeting and recording results would be a helpful contribution!
 
-Potential approaches:
+Potential approaches
 =====================
 
 -  Ask participants to tell their friends
@@ -111,3 +111,38 @@ Potential approaches:
 -  Better organize efforts across labs
 -  Piggyback on local efforts to send out mailings
 -  Actual advertising - e.g. Facebook, Google AdWords, magazine or public transit ad space
+
+Social media guidelines
+===============================
+
+This page has guidelines for researchers posting on social media about the Children Helping Science website, and about studies on CHS.
+
+Here are the most important points:
+
+- If you have already posted a study on CHS, you can advertise your study directly with a link to your study's page on the CHS website. This way, parents can not only participate in your study but also help science by participating in other studies on CHS. 
+- Use the study link on your study details page (see screenshot below). Even if the family needs to create a CHS account, they'll be redirected back to your study page after registering!
+
+   .. image:: ../_static/img/study_link.png
+    :alt: Study link on study details page
+
+- When you advertise your study and the website, consider using our slogan “Fun for families, serious for science”. Both parts of that are good messages: we hope families enjoy these activities, and families should know that they are making a difference to developmental science!
+
+- There are many studies available on the website from many universities: this is an exciting development for the entire field worldwide, rather than something about any individual study or university.
+
+- There are a wide variety of study topics, and opportunities for nearly any child!
+
+- If you post on Facebook or Twitter/X, feel free to share/retweet our posts, or to mention our accounts: `"helping_science" on Twitter/X <http://x.com/helping_science>`__ and `"ChildrenHelpingScience" on Facebook <http://facebook.com/ChildrenHelpingScience>`__.
+
+- You can also use the hashtag #ChildrenHelpingScience.
+
+If you have a study on CHS, here are examples of how you might post about it:
+
+**Sample Twitter/X Post**
+
+.. image:: ../_static/img/sample_twitter_post.png
+    :alt: Sample Twitter/X post for a CHS study
+
+**Sample Facebook Post**
+
+.. image:: ../_static/img/sample_facebook_post.png
+    :alt: Sample Facebook post for a CHS study

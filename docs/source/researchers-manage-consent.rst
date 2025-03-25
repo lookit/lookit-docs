@@ -1,3 +1,5 @@
+.. _coding-consent:
+
 ##################################
 Coding consent
 ##################################
@@ -42,7 +44,7 @@ When you click on any response in the list to the left, more information about t
 .. tip::
    It is possible, although rare, for there to be multiple consent videos associated with a single response. This would occur, for instance, when researchers are collecting both parental consent and child assent videos, which would be judged together. In these cases, you will see more than one number inside the arrow buttons below the video, and you can use the buttons to navigate across all consent videos for that session. Even with multiple videos, there will only be one comment allowed per session (since the comment box is intended for notes about the overall decision, rather than notes on individual videos).
 
-For each response session in your list, you should watch the video and decide whether it shows informed consent. You can choose to 'Accept' or 'Reject' a response by changing the value in that response's dropdown box. You can also add a comment about that response or consent decision, if desired, to keep track of any additional information. You can enter a comment without changing the consent ruling (e.g., to say "Emailed this family to confirm consent"). In general, you should 'accept' consent only when the consent video shows an adult reading the consent statement audibly (or signing in ASL), but see the `Terms of Use <https://childrenhelpingscience.com/termsofuse/>`_ for details (for instance, you may be able to contact a family to confirm consent by email in some cases).
+For each response session in your list, you should watch the video and decide whether it shows informed consent. You can choose to 'Accept' or 'Reject' a response by changing the value in that response's dropdown box. You can also add a comment about that response or consent decision, if desired, to keep track of any additional information. You can enter a comment without changing the consent ruling (e.g., to say "Emailed this family to confirm consent"). In general, you should 'accept' consent only when the consent video shows an adult reading the consent statement audibly (or signing in ASL), but see the `Terms of Use <https://childrenhelpingscience.com/termsofuse/>`_ for details. For instance, you may need to contact a family to :ref:`confirm consent by email <confirm_consent>`. If this happens, be sure to leave a comment stating where their consent can be found (e.g. "This participant confirmed their consent in an email sent to lab\@university.edu on MM/DD/YY.").
 
 .. image:: _static/img/consent_manager_change_ruling.png
     :alt: Response list showing a comment and the dropdown consent ruling options
