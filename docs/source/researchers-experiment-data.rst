@@ -178,17 +178,73 @@ If the participant repeats a frame (e.g. by navigating using a "previous" button
 Viewing individual study responses
 -----------------------------------
 
-To inspect single responses to your study, navigate to your study and click 'View Responses,' then 'Individual responses'. You must have permission to view this study's responses, which means you must have a Study admin, researcher, or analysis role. (If you can view preview responses, you will be able to access this same page, but only preview data will be included.)
+To inspect single responses to your study, navigate to your study and click 'View Responses,' then click the 'Individual Responses' tab. You must have permission to view this study's responses, which means you must have a Study admin, researcher, or analysis role. (If you can view preview responses, you will be able to access this same page, but only preview data will be included.)
 
 Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. Both preview and real responses will show up here (depending on your permissions), but preview responses are marked with a "P" and say "PREVIEW" in the background of the row. 
 
-On the left, you have a list responses to your study, with the child ID, response ID, the study's completion status, and the date they started the study. When you click on a response, the data from that response is shown on the right. You can 
-download the data from that response in one of several formats: JSON (JavaScript Object Notation, a structured text format); a CSV summary (a "wide format" overview with basic information about the participant and response, such as condition assignment); or CSV frame data (a "long format" detailed list of data collected in each frame during this response, complementary to the CSV summary).
+At the top left of the page, you will see information about the number of responses that are available (approved consent), with rejected consent, and that are pending consent judgement. There is also a link to the :ref:`Consent Manager page <coding-consent>` for your study.
 
-.. image:: _static/img/responses.png
-    :alt: View responses
+.. image:: _static/img/view_individual_responses_1.png
+    :alt: View individual responses (top of page).
 
-Beneath the CSV/JSON response data are any individual videos that are linked to that participant's response. 
+The table contains information about all responses to your study. The box at the top-right of the page lets you know which response is currently selected. This box shows you any feedback left by the parent during the exit frame (internal studies only). It also contains a link to easily send the family a message about this response (opens the :ref:`Contact Participants page <contacting_participants>` in a new browser tab).
+
+.. image:: _static/img/view_individual_responses_2.png
+    :alt: View individual responses table.
+
+.. _box_above_ind_resp_table:
+When you click on a response row in the table, details about that response are updated in the box above the table as well as in the "Response details" box at the bottom-right of the page. The bottom-left the page contains options for downloading video and data from this particular response, and for viewing/creating feedback for the family (see section :ref:`"Leaving feedback" <leaving_feedback>`).
+
+.. image:: _static/img/view_individual_responses_3.png
+    :alt: View individual responses table.
+
+Any videos linked to this response will be shown in the "Download videos" box.
+
+The "Download response" box allows you to download the data from that particular response in one of several formats:
+
+- **JSON**: JavaScript Object Notation, a structured text format.
+- **CSV summary**: a "wide format" overview with basic information about the participant and response, such as condition assignment.
+- **CSV frame data**: a "long format" detailed list of data collected in each frame during this response, complementary to the CSV summary.
+
+.. _using_the_ind_responses_table:
+
+Using the Individual Responses table
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The table contains the following information about each response: 
+
+- **Child ID**: Child's hashed (study-specific) ID and first name.
+- **Response ID**
+- **Date**: The date/time when the response was first created, in Coordinated Universal Time (UTC).
+- **Time Elapsed**: Time passed since the response was first created.
+- **Exit Frame Status**: Whether or not the participant completed the exit frame during this session. Possible values are "Complete" and "Incomplete". Note that this only applies to Internal studies - for external studies it will always be "Incomplete".
+- **Payment Status**: Optional, researcher-editable field for tracking the payment status for each session. The possible values are (blank), "Needs review", "To pay", "Do not pay", and "Paid".
+- **Session Status**: Optional, researcher-editable field for tracking the session status. The possible values are (blank), "To schedule", "Scheduled", "Session attended", "Session complete", "Follow up", "Communication complete", "Withdrawn or closed".
+- **Star**: Optional, researcher-editable field for flagging responses. The stars toggle between an "on" (yellow) and "off" (gray) state.
+
+**Researcher-editable fields**
+
+The last three columns in the list above ("Payment Status", "Session Status", "Star") are researcher-editable and completely optional. These columns are meant to help researchers manage the various states of their responses throughout data collection. You can filter/sort/search the table for these values, and they will appear in the response data downloads. These column values do not have any effect on other parts of the platform (e.g. what the participant sees about their response, whether the child is :ref:`counted as "having participated"<what-counts-as-participated>` in your study). Feel free to use these columns however makes sense for your study and work flow, or just ignore them!
+
+**Search, filter, and sort**
+
+The "Search" bar at the top-right of the table will search *all* of the text values in the table, including dates/times and drop-down values, and display any rows that contain a match. The search is case-insensitive and will match partial strings. For example, searching for "john" will match "John", "john", "Johnson", etc.
+
+You may want to narrow down your search to a specific column. For most columns, you can filter the responses for specific values using the input boxes at the bottom of the column. For "Child ID", "Response ID", and "Time Elapsed", you can start typing and the responses will be filtered based on any partial matches. For "Date", you can click on the empty box to bring up the built-in date range options, or enter a custom date range (select the "None" option to remove the filter). For "Exit Frame Status", "Payment Status", and "Session Status", you can filter using the drop-down options (select the first empty option in the drop-down to remove the filter).
+
+You can combine multiple search/filters, and they will continue to be applied until you delete or un-select them. The text below the table that tells you your total number of responses will also remind you whenever you are searching/filtering your responses.
+
+.. image:: _static/img/individual_responses_table_filtered.png
+    :alt: Text beneath the individual responses table that says "Showing 1 to 8 of 8 entries (filtered from 40 total entries)."
+
+Similarly, the :ref:`box above the table <box_above_ind_resp_table>` will remind you which response is currently selected. This is useful since the selected response might not be visible if you have searched/filtered the responses.
+
+There is no way to search on or filter for Preview status or Star column values. However, you can sort the table according to these column values to get e.g. all of the Starred or preview responses at the top of the table.
+
+.. image:: _static/img/individual_responses_table_sorted.png
+    :alt: Individual responses table sorting on the preview and star columns.
+
+Click on the column header to sort the table by that column. Clicking once will sort in ascending order, clicking again will sort in descending order, and clicking a third time will un-sort. The column that is currently sorted will have a small arrow next to the column name.
 
 .. _leaving_feedback:
 
