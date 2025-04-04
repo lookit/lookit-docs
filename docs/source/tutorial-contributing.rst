@@ -355,6 +355,7 @@ List of tutorial participants
 - Meghan Callahan (Rutgers University - Newark)
 - Melanie Luximon (Harvard University)
 - Sana Kulkarni (The University of Texas at Dallas)
+- Ian Ferrucci (University of California, Santa Cruz)
 
 Checking for and creating issues on Github
 -------------------------------------------
