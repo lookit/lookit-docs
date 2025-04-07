@@ -122,7 +122,7 @@ Here are the most important points:
 - If you have already posted a study on CHS, you can advertise your study directly with a link to your study's page on the CHS website. This way, parents can not only participate in your study but also help science by participating in other studies on CHS. 
 - Use the study link on your study details page (see screenshot below). Even if the family needs to create a CHS account, they'll be redirected back to your study page after registering!
 
-   .. image:: ../_static/img/study_link.png
+   .. image:: _static/img/study_link.png
     :alt: Study link on study details page
 
 - When you advertise your study and the website, consider using our slogan “Fun for families, serious for science”. Both parts of that are good messages: we hope families enjoy these activities, and families should know that they are making a difference to developmental science!
@@ -139,10 +139,10 @@ If you have a study on CHS, here are examples of how you might post about it:
 
 **Sample Twitter/X Post**
 
-.. image:: ../_static/img/sample_twitter_post.png
+.. image:: _static/img/sample_twitter_post.png
     :alt: Sample Twitter/X post for a CHS study
 
 **Sample Facebook Post**
 
-.. image:: ../_static/img/sample_facebook_post.png
+.. image:: _static/img/sample_facebook_post.png
     :alt: Sample Facebook post for a CHS study
