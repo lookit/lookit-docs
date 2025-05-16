@@ -356,6 +356,7 @@ List of tutorial participants
 - Melanie Luximon (Harvard University)
 - Sana Kulkarni (The University of Texas at Dallas)
 - Ian Ferrucci (University of California, Santa Cruz)
+- Vanessa Lazaro (University of Chicago)
 
 Checking for and creating issues on Github
 -------------------------------------------
