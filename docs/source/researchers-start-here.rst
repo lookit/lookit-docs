@@ -49,7 +49,7 @@ Overview - 15 minute to your first study!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 An institutional agreement is required to use our online testing platform. Over 100 institutions have already signed agreements.
 
-a)	Check whether your institution is listed `here <https://docs.google.com/spreadsheets/d/1n3LKOIEStI4kYn0G4dXjaFmQ9B99RIg-8LvSMQRd6gw/edit?usp=sharing>`__.
+a)	Check whether your institution is listed `here <https://airtable.com/appXsllHhmFxyka0l/shr6sWFywRTSyit8k>`__.
 
 b) Send an email to the CHS team (childrenhelpingscience@gmail.com) to be added to an existing agreement.
 
