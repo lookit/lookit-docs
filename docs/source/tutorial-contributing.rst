@@ -357,6 +357,7 @@ List of tutorial participants
 - Sana Kulkarni (The University of Texas at Dallas)
 - Ian Ferrucci (University of California, Santa Cruz)
 - Vanessa Lazaro (University of Chicago)
+- Samarrann Sivaloganathan (University of Toronto)
 
 Checking for and creating issues on Github
 -------------------------------------------
