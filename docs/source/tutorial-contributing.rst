@@ -358,6 +358,7 @@ List of tutorial participants
 - Ian Ferrucci (University of California, Santa Cruz)
 - Vanessa Lazaro (University of Chicago)
 - Samarrann Sivaloganathan (University of Toronto)
+- Denisse Lopez (Harvard University)
 
 Checking for and creating issues on Github
 -------------------------------------------
