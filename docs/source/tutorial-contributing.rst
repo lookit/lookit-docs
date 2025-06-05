@@ -69,6 +69,7 @@ List of tutorial participants
 
 .. rst-class:: tutorial-participants
 
+- Fiona DeBernardi (University of Oregon)
 - Sara Yilmaz (Rutgers University-Newark)
 - Mohanad Abdelhakem (Minerva University)
 - Katie Nguyen (Univeristy of Maryland)
