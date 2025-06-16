@@ -69,6 +69,7 @@ List of tutorial participants
 
 .. rst-class:: tutorial-participants
 
+- Fiona DeBernardi (University of Oregon)
 - Sara Yilmaz (Rutgers University-Newark)
 - Mohanad Abdelhakem (Minerva University)
 - Katie Nguyen (Univeristy of Maryland)
@@ -355,6 +356,10 @@ List of tutorial participants
 - Meghan Callahan (Rutgers University - Newark)
 - Melanie Luximon (Harvard University)
 - Sana Kulkarni (The University of Texas at Dallas)
+- Ian Ferrucci (University of California, Santa Cruz)
+- Vanessa Lazaro (University of Chicago)
+- Samarrann Sivaloganathan (University of Toronto)
+- Denisse Lopez (Harvard University)
 
 Checking for and creating issues on Github
 -------------------------------------------
