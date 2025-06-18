@@ -360,6 +360,7 @@ List of tutorial participants
 - Vanessa Lazaro (University of Chicago)
 - Samarrann Sivaloganathan (University of Toronto)
 - Denisse Lopez (Harvard University)
+- Judy Watts (University of Kansas)
 
 Checking for and creating issues on Github
 -------------------------------------------
