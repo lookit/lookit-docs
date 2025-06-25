@@ -362,6 +362,7 @@ List of tutorial participants
 - Samarrann Sivaloganathan (University of Toronto)
 - Denisse Lopez (Harvard University)
 - Judy Watts (University of Kansas)
+- Litzy Castañeda (Harvard University)
 
 Checking for and creating issues on Github
 -------------------------------------------
