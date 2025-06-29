@@ -69,6 +69,7 @@ List of tutorial participants
 
 .. rst-class:: tutorial-participants
 
+- Kara Medina (University of California Santa Cruz)
 - Kacper Malinowski (Minerva University)
 - Fiona DeBernardi (University of Oregon)
 - Sara Yilmaz (Rutgers University-Newark)
