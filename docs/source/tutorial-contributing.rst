@@ -364,6 +364,7 @@ List of tutorial participants
 - Denisse Lopez (Harvard University)
 - Judy Watts (University of Kansas)
 - Litzy Castañeda (Harvard University)
+- Mysha Amir (University of Southern California)
 
 Checking for and creating issues on Github
 -------------------------------------------
