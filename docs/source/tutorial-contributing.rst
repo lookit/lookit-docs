@@ -1,3 +1,4 @@
+Aahana Bitla, Rutgers University
 ##################################
 2. Contributing to the codebase 
 ##################################
