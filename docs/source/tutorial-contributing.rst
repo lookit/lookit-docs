@@ -365,6 +365,7 @@ List of tutorial participants
 - Judy Watts (University of Kansas)
 - Litzy Castañeda (Harvard University)
 - Mysha Amir (University of Southern California)
+- Sarah Kiefer (Brown University)
 
 Checking for and creating issues on Github
 -------------------------------------------
