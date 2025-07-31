@@ -366,6 +366,7 @@ List of tutorial participants
 - Litzy Castañeda (Harvard University)
 - Mysha Amir (University of Southern California)
 - Sarah Kiefer (Brown University)
+- Olivia Maltz (Temple University)
 
 Checking for and creating issues on Github
 -------------------------------------------
