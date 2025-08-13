@@ -193,6 +193,7 @@ The table contains information about all responses to your study. The box at the
     :alt: View individual responses table.
 
 .. _box_above_ind_resp_table:
+
 When you click on a response row in the table, details about that response are updated in the box above the table as well as in the "Response details" box at the bottom-right of the page. The bottom-left the page contains options for downloading video and data from this particular response, and for viewing/creating feedback for the family (see section :ref:`"Leaving feedback" <leaving_feedback>`).
 
 .. image:: _static/img/view_individual_responses_3.png
