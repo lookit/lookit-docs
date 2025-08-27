@@ -367,6 +367,7 @@ List of tutorial participants
 - Mysha Amir (University of Southern California)
 - Sarah Kiefer (Brown University)
 - Olivia Maltz (Temple University)
+- Madeline Ephraim (University of Rochester)
 
 Checking for and creating issues on Github
 -------------------------------------------
