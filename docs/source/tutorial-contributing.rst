@@ -69,6 +69,8 @@ List of tutorial participants
 
 .. rst-class:: tutorial-participants
 
+- Kara Medina (University of California Santa Cruz)
+- Kacper Malinowski (Minerva University)
 - Fiona DeBernardi (University of Oregon)
 - Sara Yilmaz (Rutgers University-Newark)
 - Mohanad Abdelhakem (Minerva University)
@@ -360,6 +362,12 @@ List of tutorial participants
 - Vanessa Lazaro (University of Chicago)
 - Samarrann Sivaloganathan (University of Toronto)
 - Denisse Lopez (Harvard University)
+- Judy Watts (University of Kansas)
+- Litzy Castañeda (Harvard University)
+- Mysha Amir (University of Southern California)
+- Sarah Kiefer (Brown University)
+- Olivia Maltz (Temple University)
+- Madeline Ephraim (University of Rochester)
 
 Checking for and creating issues on Github
 -------------------------------------------
