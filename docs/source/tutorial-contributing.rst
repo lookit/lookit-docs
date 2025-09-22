@@ -368,6 +368,7 @@ List of tutorial participants
 - Sarah Kiefer (Brown University)
 - Olivia Maltz (Temple University)
 - Madeline Ephraim (University of Rochester)
+- Emma Reddy (University of Maryland, College Park)
 
 Checking for and creating issues on Github
 -------------------------------------------
