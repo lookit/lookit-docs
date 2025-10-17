@@ -369,6 +369,7 @@ List of tutorial participants
 - Olivia Maltz (Temple University)
 - Madeline Ephraim (University of Rochester)
 - Emma Reddy (University of Maryland, College Park)
+- Wilder Hartwell (University of California, San Diego)
 
 Checking for and creating issues on Github
 -------------------------------------------
