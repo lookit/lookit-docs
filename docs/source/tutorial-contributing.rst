@@ -1,5 +1,5 @@
 ##################################
-2. Contributing to the codebase 
+2. Contributing to the codebase (yay!) 
 ##################################
 
 Children Helping Science (CHS) is an open-source project, meaning that the code is freely available and anyone can contribute. This includes the actual CHS platform, the components used in Lookit and jsPsych studies, AND the documentation you're reading now. Community contributions and input are critical to the project!
@@ -416,7 +416,7 @@ Your issue will now have a number assigned to it and will be listed in the issue
     
 CHS staff may respond to ask for further information, schedule it for future development, and/or wait for community feedback about the idea to gauge demand.
 
-Exercises
+Exercises (wow...)
 ----------
 
 1. Suppose you would like to be able to download a file with scrambled or random data of the same form as your actual data, so that you could get your analysis scripts working without contaminating your real dataset. Which GitHub repo should you create an issue in?
