@@ -21,9 +21,12 @@ The CHS jsPsych experiment runner automatically loads a set of packages from the
 - `Core jsPsych library <https://www.jspsych.org/v8/>`__ v8.0.3
 - `HTML keyboard response plugin <https://www.jspsych.org/v8/plugins/html-keyboard-response/>`__ v2.0.0: ``jsPsychHtmlKeyboardResponse``
 - `Image keyboard response plugin <https://www.jspsych.org/v8/plugins/image-keyboard-response/>`__ v2.0.0: ``jsPsychImageKeyboardResponse``
+- `Video keyboard response <https://www.jspsych.org/latest/plugins/video-keyboard-response/>`__ v2.1.0: ``jsPsychVideoKeyboardResponse``
 - `HTML button response plugin <https://www.jspsych.org/v8/plugins/html-button-response>`__ v2.0.0: ``jsPsychHtmlButtonResponse``
 - `Image button response plugin <https://www.jspsych.org/v8/plugins/image-button-response/>`__ v2.0.0: ``jsPsychImageButtonResponse``
 - `Video button response plugin <https://www.jspsych.org/v8/plugins/video-button-response/>`__ v2.0.0: ``jsPsychVideoButtonResponse``
+- `Image hotspots <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-image-hotspots/docs/plugin-image-hotspots.md>`__ v1.0.0: ``jsPsychImageHotspots```
+- `Video hotspots <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-video-hotspots/docs/plugin-video-hotspots.md>`__ v1.0.0: ``jsPsychVideoHotspots``
 - `Preload plugin <https://www.jspsych.org/v8/plugins/preload/>`__ v2.0.0: ``jsPsychPreload``
 - `Survey text plugin <https://www.jspsych.org/latest/plugins/survey-text/>`__ v2.1.0: ``jsPsychSurveyText``
 - `Survey multi-choice plugin <https://www.jspsych.org/latest/plugins/survey-multi-choice/>`__ v2.1.0: ``jsPsychSurveyMultiChoice``
