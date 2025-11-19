@@ -100,7 +100,7 @@ The custom CHS-jsPsych packages/versions are listed below, along with links to d
 
 **CHS Record package**
 
-Current version: 4.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/develop/packages/record/CHANGELOG.md>`__)
+Current version: 4.1.0 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/main/packages/record/CHANGELOG.md>`__)
 
 .. rst-class:: jspsych-plugins-extensions
 
@@ -126,7 +126,7 @@ Current version: 4.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych
 
 **CHS Surveys package**
 
-Current version: v4.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/develop/packages/surveys/CHANGELOG.md>`__)
+Current version: v4.0.1 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/main/packages/surveys/CHANGELOG.md>`__)
 
 .. rst-class:: jspsych-plugins-extensions
 
