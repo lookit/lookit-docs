@@ -70,7 +70,6 @@ Families may take part in studies from multiple labs over time. Having one centr
 
    researchers-jspsych-intro
    Limitations <researchers-jspsych-limitations>
-   Releases <researchers-jspsych-releases>
 
 .. toctree::
    :maxdepth: 2
