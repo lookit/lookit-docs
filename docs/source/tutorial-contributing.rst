@@ -368,6 +368,9 @@ List of tutorial participants
 - Sarah Kiefer (Brown University)
 - Olivia Maltz (Temple University)
 - Madeline Ephraim (University of Rochester)
+- Emma Reddy (University of Maryland, College Park)
+- Wilder Hartwell (University of California, San Diego)
+- Kaitlin Dobkowski (Boston University)
 
 Checking for and creating issues on Github
 -------------------------------------------

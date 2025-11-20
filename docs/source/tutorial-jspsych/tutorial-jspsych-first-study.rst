@@ -199,7 +199,12 @@ The full code so far:
 Step 6: Add session recording
 -------------------------------------------------
 
-We now have a bare-bones CHS experiment structure: webcam/mic configuration, video-recorded consent, our "experiment" (hello world trial), and an exit survey. The only thing we're missing for typical CHS experiments is webcam recordings that are captured during the experiment. We can do that using either: (a) session recording, where a webcam recording starts at a specified point in the experiment's trial sequence and ends at another point, with any number of experimental trials in between, or (b) trial recording, where a webcam recording is created at the start of a particular trial and ends when that trial finishes.
+We now have a bare-bones CHS experiment structure: webcam/mic configuration, video-recorded consent, our "experiment" (hello world trial), and an exit survey. The only thing we're missing for typical CHS experiments is webcam recordings that are captured during the experiment. We can do that using either:
+
+.. rst-class:: jspsych-plugins-extensions
+
+- **session recording**, where a webcam recording starts at a specified point in the experiment's trial sequence and ends at another point, with any number of experimental trials in between, or 
+- **trial recording**, where a webcam recording is created at the start of a particular trial and ends when that trial finishes.
 
 .. admonition:: When should/shouldn't I use trial and session recording?
 
@@ -258,6 +263,17 @@ Here's the full experiment code now:
 
     jsPsych.run([video_config, video_consent, start_rec, hello_trial, stop_rec, exit_survey]);
 
+Now when you save your code and preview the experiment, your experiment will run as it did before, but you will also get a video recording that captures the duration between your ``start_rec`` and ``stop_rec`` trials. To see your recording, you will need to approve your own consent statement: from the study details page, click "Review Consent", find your most recent session, change it from "pending" to "accept", then click "Submit Rulings & Comments". Then go back to your study details page, click "Study Responses", click "Individual Responses", and find your most recent session in the table. With that response selected, you should see two videos listed in the "Download videos" box - one is your consent video and the other is your session recording.
+
+**Bonus step**: Use the ``wait_for_upload_message`` parameter to override the ``stop_rec`` trial's default message ("uploading video, please wait...") and present some custom HTML content instead. The example below will display some text and play a video.
+
+.. code:: javascript
+
+    const stop_rec = {
+        type: chsRecord.StopRecordPlugin,
+        wait_for_upload_message: "<p style='font-size: 30px; color: blue;'>Please wait while we upload your video!</p><video src='https://www.mit.edu/~kimscott/placeholderstimuli/webm/attentiongrabber.webm' autoplay />",
+    };
+
 
 Step 7: Switch to trial recording
 -------------------------------------------------
@@ -271,7 +287,7 @@ We now we'll switch to trial-level recording during our hello world trial. To do
         jsPsych.run([video_config, video_consent, hello_trial, exit_survey]);
 
 
-2. Add the `chsRecord.TrialRecordExtension` to the parameters that are passed into ``initJsPsych``. This is the `jsPsych initialization function <https://www.jspsych.org/latest/reference/jspsych/#initjspsych>`__, which takes an optional settings object and parameters. So far we haven't needed any of these setting parameters, but now we do need to tell jsPsych that we're planning to use the trial recording extension at some point during the experiment.
+2. Add the ``chsRecord.TrialRecordExtension`` to the parameters that are passed into ``initJsPsych``. This is the `jsPsych initialization function <https://www.jspsych.org/latest/reference/jspsych/#initjspsych>`__, which takes an optional settings object and parameters. So far we haven't needed any of these setting parameters, but now we do need to tell jsPsych that we're planning to use the trial recording extension at some point during the experiment.
 
     .. code:: javascript
 
@@ -280,8 +296,7 @@ We now we'll switch to trial-level recording during our hello world trial. To do
         });
 
 
-
-3. Add the `chsRecord.TrialRecordExtension` to the configuration for the trial that we want to be recorded. This tells jsPsych to run trial recording for that particular trial. Here we are just adding trial recording to the "hello_world" trial.
+3. Add the ``chsRecord.TrialRecordExtension`` to the configuration for the trial that we want to be recorded. This tells jsPsych to run trial recording for that particular trial. Here we are just adding trial recording to the "hello_world" trial.
 
     .. code:: javascript
 
@@ -323,8 +338,50 @@ Here's what the whole experiment looks like now:
 
     jsPsych.run([video_config, video_consent, hello_trial, exit_survey]);
 
+You can follow the instructions at the end of the previous step to see your session recordings. Now for your most recent session, you should still see two videos listed in the "Download videos" box - one is your consent video and the other is your trial recording. If you edit your study code to add another ``hello_trial``, then you will end up with three videos: a consent recording and two trial recordings.
 
-Step 8: Learn more on the jsPsych website
+**Bonus step**: Use the ``wait_for_upload_message`` parameter to override the default uploading message ("uploading video, please wait...") that is shown at the end of the ``hello_trial``, and present some custom HTML content instead. To do this, we need to add a new property called "params" alongside the trial recording extension. The value of "params" is an object that contains the parameter names and values that should be passed to the extension.
+
+The example below will display some custom text and a video while the webcam recording is uploading at the end of the ``hello_trial``.
+
+.. code:: javascript
+
+    const hello_trial = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: 'Hello world!',
+        choices: ['Next'],
+        extensions: [{
+            type: chsRecord.TrialRecordExtension,
+            params: { wait_for_upload_message: "<p style='font-size: 30px; color: blue;'>Please wait while we upload your video!</p><video src='https://www.mit.edu/~kimscott/placeholderstimuli/webm/attentiongrabber.webm' autoplay />" }
+        }],
+    };
+
+Step 8: Move participants in and out of fullscreen
+------------------------------------------------------
+
+Typically you'll want your participant's browser to be in fullscreen mode during your experiment, which you can do using `jsPsych's fullscreen plugin <https://www.jspsych.org/latest/plugins/fullscreen/>`__. You can create a trial that will let participants know that they will enter fullscreen when they click the "Continue" button (with parameters that allow you to change the message and button label). You can also create a trial that will automatically exit fullscreen mode.
+
+.. code:: javascript
+
+    const enter_fullscreen = {
+        type: jsPsychFullscreen,
+        fullscreen_mode: true
+    };
+
+    const exit_fullscreen = {
+        type: jsPsychFullscreen,
+        fullscreen_mode: false,
+        delay_after: 0
+    };
+
+Once you've created these trials, you can put them anywhere in your experiment timeline.
+
+.. code:: javascript
+
+    jsPsych.run([enter_fullscreen, video_config, video_consent, hello_trial, exit_fullscreen, exit_survey]);
+
+
+Step 9: Learn more on the jsPsych website
 -------------------------------------------------
 
 Well done! You've learned how to create a jsPsych experiment on CHS! You can use this tutorial code as a starting point for your real experiment, and replace the hello world trial with some actual jsPsych experiment code. 
