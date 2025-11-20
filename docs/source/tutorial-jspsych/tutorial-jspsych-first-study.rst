@@ -199,7 +199,12 @@ The full code so far:
 Step 6: Add session recording
 -------------------------------------------------
 
-We now have a bare-bones CHS experiment structure: webcam/mic configuration, video-recorded consent, our "experiment" (hello world trial), and an exit survey. The only thing we're missing for typical CHS experiments is webcam recordings that are captured during the experiment. We can do that using either: (a) session recording, where a webcam recording starts at a specified point in the experiment's trial sequence and ends at another point, with any number of experimental trials in between, or (b) trial recording, where a webcam recording is created at the start of a particular trial and ends when that trial finishes.
+We now have a bare-bones CHS experiment structure: webcam/mic configuration, video-recorded consent, our "experiment" (hello world trial), and an exit survey. The only thing we're missing for typical CHS experiments is webcam recordings that are captured during the experiment. We can do that using either:
+
+.. rst-class:: jspsych-plugins-extensions
+
+- **session recording**, where a webcam recording starts at a specified point in the experiment's trial sequence and ends at another point, with any number of experimental trials in between, or 
+- **trial recording**, where a webcam recording is created at the start of a particular trial and ends when that trial finishes.
 
 .. admonition:: When should/shouldn't I use trial and session recording?
 
@@ -258,6 +263,15 @@ Here's the full experiment code now:
 
     jsPsych.run([video_config, video_consent, start_rec, hello_trial, stop_rec, exit_survey]);
 
+**Bonus step**: Use the ``wait_for_upload_message`` parameter to override the ``stop_rec`` trial's default message ("uploading video, please wait...") and present some custom HTML content instead. The example below will display some text and play a video.
+
+.. code:: javascript
+
+    const stop_rec = {
+        type: chsRecord.StopRecordPlugin,
+        wait_for_upload_message: "<p style='font-size: 30px; color: blue;'>Please wait while we upload your video!</p><video src='https://www.mit.edu/~kimscott/placeholderstimuli/webm/attentiongrabber.webm' autoplay />",
+    };
+
 
 Step 7: Switch to trial recording
 -------------------------------------------------
@@ -278,7 +292,6 @@ We now we'll switch to trial-level recording during our hello world trial. To do
         const jsPsych = initJsPsych({
             extensions: [{ type: chsRecord.TrialRecordExtension }]
         });
-
 
 
 3. Add the `chsRecord.TrialRecordExtension` to the configuration for the trial that we want to be recorded. This tells jsPsych to run trial recording for that particular trial. Here we are just adding trial recording to the "hello_world" trial.
@@ -322,6 +335,22 @@ Here's what the whole experiment looks like now:
     const exit_survey = { type: chsSurvey.ExitSurveyPlugin };
 
     jsPsych.run([video_config, video_consent, hello_trial, exit_survey]);
+
+**Bonus step**: Use the ``wait_for_upload_message`` parameter to override the default uploading message ("uploading video, please wait...") that is shown at the end of the ``hello_trial``, and present some custom HTML content instead. To do this, we need to add a new property called "params" alongside the trial recording extension. The value of "params" is an object that contains the parameter names and values that should be passed to the extension.
+
+The example below will display some custom text and a video while the webcam recording is uploading at the end of the ``hello_trial``.
+
+.. code:: javascript
+
+    const hello_trial = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: 'Hello world!',
+        choices: ['Next'],
+        extensions: [{
+            type: chsRecord.TrialRecordExtension,
+            params: { wait_for_upload_message: "<p style='font-size: 30px; color: blue;'>Please wait while we upload your video!</p><video src='https://www.mit.edu/~kimscott/placeholderstimuli/webm/attentiongrabber.webm' autoplay />" }
+        }],
+    };
 
 
 Step 8: Learn more on the jsPsych website
