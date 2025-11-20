@@ -285,7 +285,7 @@ We now we'll switch to trial-level recording during our hello world trial. To do
         jsPsych.run([video_config, video_consent, hello_trial, exit_survey]);
 
 
-2. Add the `chsRecord.TrialRecordExtension` to the parameters that are passed into ``initJsPsych``. This is the `jsPsych initialization function <https://www.jspsych.org/latest/reference/jspsych/#initjspsych>`__, which takes an optional settings object and parameters. So far we haven't needed any of these setting parameters, but now we do need to tell jsPsych that we're planning to use the trial recording extension at some point during the experiment.
+2. Add the ``chsRecord.TrialRecordExtension`` to the parameters that are passed into ``initJsPsych``. This is the `jsPsych initialization function <https://www.jspsych.org/latest/reference/jspsych/#initjspsych>`__, which takes an optional settings object and parameters. So far we haven't needed any of these setting parameters, but now we do need to tell jsPsych that we're planning to use the trial recording extension at some point during the experiment.
 
     .. code:: javascript
 
@@ -294,7 +294,7 @@ We now we'll switch to trial-level recording during our hello world trial. To do
         });
 
 
-3. Add the `chsRecord.TrialRecordExtension` to the configuration for the trial that we want to be recorded. This tells jsPsych to run trial recording for that particular trial. Here we are just adding trial recording to the "hello_world" trial.
+3. Add the ``chsRecord.TrialRecordExtension`` to the configuration for the trial that we want to be recorded. This tells jsPsych to run trial recording for that particular trial. Here we are just adding trial recording to the "hello_world" trial.
 
     .. code:: javascript
 
