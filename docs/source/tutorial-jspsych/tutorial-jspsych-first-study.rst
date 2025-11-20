@@ -352,8 +352,32 @@ The example below will display some custom text and a video while the webcam rec
         }],
     };
 
+Step 8: Move participants in and out of fullscreen
+------------------------------------------------------
 
-Step 8: Learn more on the jsPsych website
+Typically you'll want your participant's browser to be in fullscreen mode during your experiment, which you can do using `jsPsych's fullscreen plugin <https://www.jspsych.org/latest/plugins/fullscreen/>`__. You can create a trial that will let participants know that they will enter fullscreen when they click the "Continue" button (with parameters that allow you to change the message and button label). You can also create a trial that will automatically exit fullscreen mode.
+
+.. code:: javascript
+
+    const enter_fullscreen = {
+        type: jsPsychFullscreen,
+        fullscreen_mode: true
+    };
+
+    const exit_fullscreen = {
+        type: jsPsychFullscreen,
+        fullscreen_mode: false,
+        delay_after: 0
+    };
+
+Once you've created these trials, you can put them anywhere in your experiment timeline.
+
+.. code:: javascript
+
+    jsPsych.run([enter_fullscreen, video_config, video_consent, hello_trial, exit_fullscreen, exit_survey]);
+
+
+Step 9: Learn more on the jsPsych website
 -------------------------------------------------
 
 Well done! You've learned how to create a jsPsych experiment on CHS! You can use this tutorial code as a starting point for your real experiment, and replace the hello world trial with some actual jsPsych experiment code. 
