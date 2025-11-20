@@ -263,6 +263,8 @@ Here's the full experiment code now:
 
     jsPsych.run([video_config, video_consent, start_rec, hello_trial, stop_rec, exit_survey]);
 
+Now when you save your code and preview the experiment, your experiment will run as it did before, but you will also get a video recording that captures the duration between your ``start_rec`` and ``stop_rec`` trials. To see your recording, you will need to approve your own consent statement: from the study details page, click "Review Consent", find your most recent session, change it from "pending" to "accept", then click "Submit Rulings & Comments". Then go back to your study details page, click "Study Responses", click "Individual Responses", and find your most recent session in the table. With that response selected, you should see two videos listed in the "Download videos" box - one is your consent video and the other is your session recording.
+
 **Bonus step**: Use the ``wait_for_upload_message`` parameter to override the ``stop_rec`` trial's default message ("uploading video, please wait...") and present some custom HTML content instead. The example below will display some text and play a video.
 
 .. code:: javascript
@@ -335,6 +337,8 @@ Here's what the whole experiment looks like now:
     const exit_survey = { type: chsSurvey.ExitSurveyPlugin };
 
     jsPsych.run([video_config, video_consent, hello_trial, exit_survey]);
+
+You can follow the instructions at the end of the previous step to see your session recordings. Now for your most recent session, you should still see two videos listed in the "Download videos" box - one is your consent video and the other is your trial recording. If you edit your study code to add another ``hello_trial``, then you will end up with three videos: a consent recording and two trial recordings.
 
 **Bonus step**: Use the ``wait_for_upload_message`` parameter to override the default uploading message ("uploading video, please wait...") that is shown at the end of the ``hello_trial``, and present some custom HTML content instead. To do this, we need to add a new property called "params" alongside the trial recording extension. The value of "params" is an object that contains the parameter names and values that should be passed to the extension.
 
