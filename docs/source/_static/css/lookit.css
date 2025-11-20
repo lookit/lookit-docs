@@ -94,7 +94,7 @@ ul.tutorial-participants {
     column-count: 2;
 }
 
-ul.tutorial-participants li {
+ul.tutorial-participants li, ul.jspsych-plugins-extensions li {
     padding: 0;
 }
 
