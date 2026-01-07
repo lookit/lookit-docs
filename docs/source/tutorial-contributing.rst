@@ -371,6 +371,7 @@ List of tutorial participants
 - Emma Reddy (University of Maryland, College Park)
 - Wilder Hartwell (University of California, San Diego)
 - Kaitlin Dobkowski (Boston University)
+- Arielle Belluck (Yale University)
 
 Checking for and creating issues on Github
 -------------------------------------------
