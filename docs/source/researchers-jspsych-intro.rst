@@ -56,12 +56,12 @@ The CHS jsPsych experiment runner automatically loads a set of packages from the
 
 - `Image hotspots <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-image-hotspots/docs/plugin-image-hotspots.md>`__
 
-  - v1.0.0 (`see changelog <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-image-hotspots/CHANGELOG.md>`__)
+  - v1.1.0 (`see changelog <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-image-hotspots/CHANGELOG.md>`__)
   - ``jsPsychImageHotspots``
 
 - `Video hotspots <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-video-hotspots/docs/plugin-video-hotspots.md>`__
 
-  - v1.0.0 (`see changelog <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-video-hotspots/CHANGELOG.md>`__)
+  - v1.1.0 (`see changelog <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-video-hotspots/CHANGELOG.md>`__)
   - ``jsPsychVideoHotspots``
 
 - `Preload plugin <https://www.jspsych.org/v8/plugins/preload/>`__
