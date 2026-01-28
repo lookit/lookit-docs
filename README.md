@@ -157,6 +157,14 @@ After activating your virtual environment, you need to install the project depen
 (denv) /lookit-docs $ pip install -r docs/requirements.txt
 ```
 
+> [!NOTE]
+> After running `pip install -r docs/requirements.txt`, you might see an error about the alabaster package:
+> 
+> > ERROR: Could not find a version that satisfies the requirement alabaster==1.0.0 (from versions: 0.1.0, 0.2.0, 0.3.0, 0.3.1, 0.4.0, 0.4.1, 0.5.0, 0.5.1, 0.6.0, 0.6.1, 0.6.2, 0.6.3, 0.7.1, 0.7.2, 0.7.3, 0.7.4, 0.7.5, 0.7.6, 0.7.7, 0.7.8, 0.7.9, 0.7.10, 0.7.11, 0.7.12, 0.7.13)<br>
+> > ERROR: No matching distribution found for alabaster==1.0.0
+> 
+> You can ignore this warning.
+
 If you see an error about needing to install sphinx RTD theme, then run the following:
 
 ```
