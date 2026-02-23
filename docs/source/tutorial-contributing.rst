@@ -372,6 +372,7 @@ List of tutorial participants
 - Wilder Hartwell (University of California, San Diego)
 - Kaitlin Dobkowski (Boston University)
 - Arielle Belluck (Yale University)
+- Kemariya Davis (University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
