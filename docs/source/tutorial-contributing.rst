@@ -373,6 +373,7 @@ List of tutorial participants
 - Kaitlin Dobkowski (Boston University)
 - Arielle Belluck (Yale University)
 - Kemariya Davis (University of Texas at Dallas)
+- Amy Miyahara (Washington University in St. Louis)
 
 Checking for and creating issues on Github
 -------------------------------------------
