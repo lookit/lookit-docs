@@ -374,6 +374,7 @@ List of tutorial participants
 - Arielle Belluck (Yale University)
 - Kemariya Davis (University of Texas at Dallas)
 - Amy Miyahara (Washington University in St. Louis)
+- Laura Shneidman (Pacific Lutheran University) 
 
 Checking for and creating issues on Github
 -------------------------------------------
