@@ -375,6 +375,7 @@ List of tutorial participants
 - Kemariya Davis (University of Texas at Dallas)
 - Amy Miyahara (Washington University in St. Louis)
 - Laura Shneidman (Pacific Lutheran University) 
+- Hannah Ding (MIT)
 
 Checking for and creating issues on Github
 -------------------------------------------
