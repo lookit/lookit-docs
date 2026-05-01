@@ -376,6 +376,7 @@ List of tutorial participants
 - Amy Miyahara (Washington University in St. Louis)
 - Laura Shneidman (Pacific Lutheran University) 
 - Anushri Ghoshal (University of North Carolina, Chapel Hill)
+- Hannah Ding (MIT)
 
 Checking for and creating issues on Github
 -------------------------------------------
