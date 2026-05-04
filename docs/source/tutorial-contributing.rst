@@ -377,6 +377,7 @@ List of tutorial participants
 - Laura Shneidman (Pacific Lutheran University) 
 - Anushri Ghoshal (University of North Carolina, Chapel Hill)
 - Hannah Ding (MIT)
+- Sarah Williams (Brown University)
 
 Checking for and creating issues on Github
 -------------------------------------------
