@@ -412,6 +412,29 @@ Language codes
     |yue |Yue                   |
     +----+----------------------+
 
+.. _response_limit:
+
+=============================
+Set a Response Limit
+=============================
+
+Check this box to set a target number of tallied responses for this study, and enter an integer value in the **Maximum Responses** field. When this limit is set, the study will automatically pause whenever the number of tallied responses reaches (or surpasses) the limit. Sessions already in progress when the limit is reached are permitted to complete. You can add/remove/change the study's response limit at any time. Leave the box unchecked for no response limit.
+
+A **tallied response** is one that counts toward your response limit. A response is tallied if it meets all of the following criteria:
+
+- ``is_preview`` is ``False`` (preview sessions are never tallied)
+- ``eligibility`` is "Eligible" or is blank (blank is treated as eligible for backwards compatibility)
+
+For internal studies (Lookit and jsPsych), a response must also meet these additional criteria:
+
+- ``completed`` is ``True``
+- ``completed_consent_frame`` is ``True``
+- The most recent consent ruling is not "rejected"
+
+External study responses are tallied based only on the ``is_preview`` and ``eligibility`` criteria above.
+
+You can override the automatic tallied/untallied status for any individual response on the :ref:`Individual Responses <individual_responses>` page. If the study's tallied response count later drops back below the limit (e.g. because a response was changed from tallied to untallied), the study will **not** automatically re-start - you will need to re-start the study manually if you want data collection to continue.
+
 =============================
 Experiment Type
 =============================
