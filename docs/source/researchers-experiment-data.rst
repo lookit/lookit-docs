@@ -180,7 +180,7 @@ Viewing individual study responses
 
 To inspect single responses to your study, navigate to your study and click 'View Responses,' then click the 'Individual Responses' tab. You must have permission to view this study's responses, which means you must have a Study admin, researcher, or analysis role. (If you can view preview responses, you will be able to access this same page, but only preview data will be included.)
 
-Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. Both preview and real responses will show up here (depending on your permissions), but preview responses are marked with a "P" and say "PREVIEW" in the background of the row. 
+Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. Both preview and real responses will show up here (depending on your permissions), but preview responses are marked with a "P". If the study has a :ref:`response limit <response_limit>` set, each non-preview response will also show a green checkmark (tallied) or red X (untallied) in the same left-hand column.
 
 At the top left of the page, you will see information about the number of responses that are available (approved consent), with rejected consent, and that are pending consent judgement. There is also a link to the :ref:`Consent Manager page <coding-consent>` for your study.
 
@@ -218,7 +218,7 @@ The table contains the following information about each response:
 - **Response ID**
 - **Date**: The date/time when the response was first created, in Coordinated Universal Time (UTC).
 - **Time Elapsed**: Time passed since the response was first created.
-- **Exit Frame Status**: Whether or not the participant completed the exit frame during this session. Possible values are "Complete" and "Incomplete". Note that this only applies to Internal studies - for external studies it will always be "Incomplete".
+- **Exit Frame Status**: (Internal studies only). Whether or not the participant completed the exit frame during this session. Possible values are "Complete" and "Incomplete".
 - **Payment Status**: Optional, researcher-editable field for tracking the payment status for each session. The possible values are (blank), "Needs review", "To pay", "Do not pay", and "Paid".
 - **Session Status**: Optional, researcher-editable field for tracking the session status. The possible values are (blank), "To schedule", "Scheduled", "Session attended", "Session complete", "Follow up", "Communication complete", "Withdrawn or closed".
 - **Star**: Optional, researcher-editable field for flagging responses. The stars toggle between an "on" (yellow) and "off" (gray) state.
