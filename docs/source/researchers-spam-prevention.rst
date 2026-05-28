@@ -107,9 +107,11 @@ collect during the session.
 If you are running an external, asynchronous
 study (Bring-your-own Study Link), the easiest way to meet 
 this requirement is to prepare a 'hybrid' study that uses the either the Lookit or jsPsych experiment 
-builder to present the video consent form, and then redirects to your external study.  
-`Here is an example study template <https://childrenhelpingscience.com/exp/studies/3067/>`__ 
-that you can copy and use. There is also the option to record video of the 
+builder to present the video consent form, and then redirects to your external study.  We have example study templates showing how to do this with the `Lookit <https://childrenhelpingscience.com/exp/studies/3067/>`__ and with `jsPsych <https://childrenhelpingscience.com/exp/studies/5701/>`__ experiment runners. You can clone either of these template studies and then edit it to create your own hybrid study.
+
+In the jsPsych template study, you'll notice that the consent form language is slightly different. This is because we have created a separate consent template for hybrid studies in jsPsych, which removes/modifies references to additional webcam recordings during the session. This makes it clear to participants that their webcam/mic is only being used to record consent, and that they will not be recorded during the rest of the study session. It also removes the statements about how CHS handles the participant's data/responses, since no other data is collected on CHS in this example. However, if your hybrid study _does_ collect some data/responses on CHS (other than consent), then you can change this by setting the ``only_consent_on_chs`` parameter to ``false``. For more information about thse video-consent trial options for hybrid studies, see our `CHS jsPsych video-consent documentation <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#video-consent>`__.
+
+There is also the option to record video of the 
 entire session by using `the iframe method <https://lookit.readthedocs.io/projects/frameplayer/en/develop/components/exp-lookit-iframe/doc.html>`__
 to display your experiment in the same tab, without leaving the Children Helping Science
 platform. 
