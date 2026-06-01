@@ -115,6 +115,10 @@ If your study is set as **non-discoverable**, starting the study will allow anyo
 
 If your study is set as **discoverable** (one of the checkboxes on the "Edit study ad" page), starting the study will also add your study to those displayed at `<https://childrenhelpingscience.com/studies/>`_, and anyone (including you) will be able to participate in it from there. It will also add your study to the list of those advertised to eligible participants through our :ref:`announcement emails <announcement_emails>`.
 
+.. note::
+    
+    If you set a :ref:`Response Limit <response_limit>` for your study and it has reached the limit, then you will not be able to re-start your study until the number of tallied responses is below the limit. First, make sure that you have reviewed all existing responses to ensure that they should be tallied, and handled all pending consents (if the study is internal), as this may open up slots. Then, if the number of tallied responses is still at/over the limit, you can increase the response limit in the Study Ad and start the study again. Changing the response limit for an approved study will NOT trigger an automatic rejection.
+
 ===============================================
 Study ad page
 ===============================================
