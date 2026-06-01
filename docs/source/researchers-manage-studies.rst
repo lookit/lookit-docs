@@ -46,7 +46,13 @@ But if you have a study preview role, for example, you will only see some of the
 On this page, you can also view and edit study status, view and manage researchers who have access to the study. Study logs of when the study changed state are at the bottom of the page.
 
 .. image:: _static/img/study_detail.png
-    :alt: Viewing studies
+    :alt: Study detail page
+
+If you've set a :ref:`Response Limit <response_limit>` for your study, then you will also see a progress bar under the study link on the study details page. This shows the current number of tallied responses out of the maximum.
+
+.. image:: _static/img/study_detail_tallied.png
+    :alt: Tallied response count on the study detail page
+
 
 .. _study status:
 
