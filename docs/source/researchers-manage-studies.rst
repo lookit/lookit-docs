@@ -46,7 +46,13 @@ But if you have a study preview role, for example, you will only see some of the
 On this page, you can also view and edit study status, view and manage researchers who have access to the study. Study logs of when the study changed state are at the bottom of the page.
 
 .. image:: _static/img/study_detail.png
-    :alt: Viewing studies
+    :alt: Study detail page
+
+If you've set a :ref:`Response Limit <response_limit>` for your study, then you will also see a progress bar under the study link on the study details page. This shows the current number of tallied responses out of the maximum.
+
+.. image:: _static/img/study_detail_tallied.png
+    :alt: Tallied response count on the study detail page
+
 
 .. _study status:
 
@@ -108,6 +114,10 @@ What does "starting" your study do? It allows your study to collect (non-preview
 If your study is set as **non-discoverable**, starting the study will allow anyone to participate via a direct link. The study link is shown on your study detail page in the experimenter interface. You are then responsible for distributing this link to participants. This setting is useful for studies intended for a very specific population, for instance, an online follow-up to an in-person study. You can email the direct link to families, without worrying about screening out other families on CHS.
 
 If your study is set as **discoverable** (one of the checkboxes on the "Edit study ad" page), starting the study will also add your study to those displayed at `<https://childrenhelpingscience.com/studies/>`_, and anyone (including you) will be able to participate in it from there. It will also add your study to the list of those advertised to eligible participants through our :ref:`announcement emails <announcement_emails>`.
+
+.. note::
+    
+    If you set a :ref:`Response Limit <response_limit>` for your study and it has reached the limit, then you will not be able to re-start your study until the number of tallied responses is below the limit. First, make sure that you have reviewed all existing responses to ensure that they should be tallied, and handled all pending consents (if the study is internal), as this may open up slots. Then, if the number of tallied responses is still at/over the limit, you can increase the response limit in the Study Ad and start the study again. Changing the response limit for an approved study will NOT trigger an automatic rejection.
 
 ===============================================
 Study ad page

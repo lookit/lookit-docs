@@ -57,6 +57,13 @@ Consent rulings can be changed after an initial ruling is made; for instance, yo
 
 The most recent consent ruling, the time of that ruling, any comment, and the name of the researcher who made the ruling, will be included in the JSON/CSV data for this response.
 
+.. note::
+
+   If your study has a :ref:`response limit <response_limit>` set, responses with pending consent judgments are counted as tallied (assuming they meet all other tally criteria) when calculating progress toward the limit. That is, a response with pending consent will be treated as though it will be accepted. This means:
+
+   - If a pending consent is **rejected**, the study's tallied response count may **decrease** 
+   - If a rejected consent is changed back to **pending or accepted**, the study's tallied response count may **increase**
+
 ----------------------------------------------
 Managing responses that use survey consent
 ----------------------------------------------
