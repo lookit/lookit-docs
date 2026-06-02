@@ -180,7 +180,7 @@ Viewing individual study responses
 
 To inspect single responses to your study, navigate to your study and click 'View Responses,' then click the 'Individual Responses' tab. You must have permission to view this study's responses, which means you must have a Study admin, researcher, or analysis role. (If you can view preview responses, you will be able to access this same page, but only preview data will be included.)
 
-Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. Both preview and real responses will show up here (depending on your permissions), but preview responses are marked with a "P" and say "PREVIEW" in the background of the row. 
+Responses only show up in this view once you have confirmed that the participant provided informed consent to participate using the Consent Manager. Both preview and real responses will show up here (depending on your permissions), but preview responses are marked with a "P". If the study has a :ref:`response limit <response_limit>` set, each non-preview response will also show a green checkmark (tallied) or red X (untallied) in the same left-hand column.
 
 At the top left of the page, you will see information about the number of responses that are available (approved consent), with rejected consent, and that are pending consent judgement. There is also a link to the :ref:`Consent Manager page <coding-consent>` for your study.
 
@@ -218,7 +218,7 @@ The table contains the following information about each response:
 - **Response ID**
 - **Date**: The date/time when the response was first created, in Coordinated Universal Time (UTC).
 - **Time Elapsed**: Time passed since the response was first created.
-- **Exit Frame Status**: Whether or not the participant completed the exit frame during this session. Possible values are "Complete" and "Incomplete". Note that this only applies to Internal studies - for external studies it will always be "Incomplete".
+- **Exit Frame Status**: (Internal studies only). Whether or not the participant completed the exit frame during this session. Possible values are "Complete" and "Incomplete".
 - **Payment Status**: Optional, researcher-editable field for tracking the payment status for each session. The possible values are (blank), "Needs review", "To pay", "Do not pay", and "Paid".
 - **Session Status**: Optional, researcher-editable field for tracking the session status. The possible values are (blank), "To schedule", "Scheduled", "Session attended", "Session complete", "Follow up", "Communication complete", "Withdrawn or closed".
 - **Star**: Optional, researcher-editable field for flagging responses. The stars toggle between an "on" (yellow) and "off" (gray) state.
@@ -246,6 +246,38 @@ There is no way to search on or filter for Preview status or Star column values.
     :alt: Individual responses table sorting on the preview and star columns.
 
 Click on the column header to sort the table by that column. Clicking once will sort in ascending order, clicking again will sort in descending order, and clicking a third time will un-sort. The column that is currently sorted will have a small arrow next to the column name.
+
+.. _tallied_response_status:
+
+Tallied response status
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If your study has a :ref:`response limit <response_limit>` set, a green checkmark or red X will appear in the same table column as the preview indicator, showing whether each (non-preview) response is **tallied** or **untallied**. 
+
+.. image:: _static/img/individual_responses_tallied_icons.png
+    :alt: Individual responses table showing green checkmark (tallied) and red X (untallied) icons alongside the preview indicator.
+
+When you select a response row, a **"Tallied response status"** box appears beneath the table. Clicking on the tallied/untallied icon will cause the page to scroll down to this box. This box shows:
+
+- Whether the response meets each individual criterion for being tallied (see :ref:`Set a Response Limit <response_limit>` for the full list of criteria).
+- Whether a researcher has manually overridden the automatically-determined tallied/untallied status for this response.
+
+.. image:: _static/img/individual_responses_tallied_details.png
+    :alt: Tallied response status box beneath the Individual Responses table, showing criteria breakdown and override status.
+
+To change the tallied/untallied status for the selected response, click the **"Change tallied status of this response"** button in this box. You will see a pop-up box asking you to confirm the change. The pop-up contents will vary depending on whether the study is internal or external, and whether you are changing to tallied or untallied.
+
+.. image:: _static/img/individual_responses_change_to_untallied.png
+    :alt: Notifications for tally status change.
+
+After you click Update to save the change, a small notification at the bottom of the page will confirm the update, and both the icon in the response row and the tallied/untallied counts above the table will update to reflect the new status. If the change causes the study to reach its response limit (triggering an automatic pause) or causes the count to drop back below the limit, you will also see a notification about this.
+
+.. image:: _static/img/individual_responses_tally_change_confirmation.png
+    :alt: Notifications for tally status change.
+
+.. note::
+
+    If for some reason a tallied status update fails, try refreshing the page to make sure that the data on the page is up-to-date, and then try making the change again. You can change the tallied status of a response any number of times.
 
 .. _leaving_feedback:
 

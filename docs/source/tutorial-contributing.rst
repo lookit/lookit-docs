@@ -372,6 +372,13 @@ List of tutorial participants
 - Wilder Hartwell (University of California, San Diego)
 - Kaitlin Dobkowski (Boston University)
 - Arielle Belluck (Yale University)
+- Kemariya Davis (University of Texas at Dallas)
+- Amy Miyahara (Washington University in St. Louis)
+- Laura Shneidman (Pacific Lutheran University) 
+- Anushri Ghoshal (University of North Carolina, Chapel Hill)
+- Hannah Ding (MIT)
+- Sarah Williams (Brown University)
+- Daisy Wang (Princeton University)
 
 Checking for and creating issues on Github
 -------------------------------------------
