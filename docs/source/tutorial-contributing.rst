@@ -378,6 +378,7 @@ List of tutorial participants
 - Anushri Ghoshal (University of North Carolina, Chapel Hill)
 - Hannah Ding (MIT)
 - Sarah Williams (Brown University)
+- Daisy Wang (Princeton University)
 
 Checking for and creating issues on Github
 -------------------------------------------
