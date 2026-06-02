@@ -247,6 +247,38 @@ There is no way to search on or filter for Preview status or Star column values.
 
 Click on the column header to sort the table by that column. Clicking once will sort in ascending order, clicking again will sort in descending order, and clicking a third time will un-sort. The column that is currently sorted will have a small arrow next to the column name.
 
+.. _tallied_response_status:
+
+Tallied response status
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If your study has a :ref:`response limit <response_limit>` set, a green checkmark or red X will appear in the same table column as the preview indicator, showing whether each (non-preview) response is **tallied** or **untallied**. 
+
+.. image:: _static/img/individual_responses_tallied_icons.png
+    :alt: Individual responses table showing green checkmark (tallied) and red X (untallied) icons alongside the preview indicator.
+
+When you select a response row, a **"Tallied response status"** box appears beneath the table. Clicking on the tallied/untallied icon will cause the page to scroll down to this box. This box shows:
+
+- Whether the response meets each individual criterion for being tallied (see :ref:`Set a Response Limit <response_limit>` for the full list of criteria).
+- Whether a researcher has manually overridden the automatically-determined tallied/untallied status for this response.
+
+.. image:: _static/img/individual_responses_tallied_details.png
+    :alt: Tallied response status box beneath the Individual Responses table, showing criteria breakdown and override status.
+
+To change the tallied/untallied status for the selected response, click the **"Change tallied status of this response"** button in this box. You will see a pop-up box asking you to confirm the change. The pop-up contents will vary depending on whether the study is internal or external, and whether you are changing to tallied or untallied.
+
+.. image:: _static/img/individual_responses_change_to_untallied.png
+    :alt: Notifications for tally status change.
+
+After you click Update to save the change, a small notification at the bottom of the page will confirm the update, and both the icon in the response row and the tallied/untallied counts above the table will update to reflect the new status. If the change causes the study to reach its response limit (triggering an automatic pause) or causes the count to drop back below the limit, you will also see a notification about this.
+
+.. image:: _static/img/individual_responses_tally_change_confirmation.png
+    :alt: Notifications for tally status change.
+
+.. note::
+
+    If for some reason a tallied status update fails, try refreshing the page to make sure that the data on the page is up-to-date, and then try making the change again. You can change the tallied status of a response any number of times.
+
 .. _leaving_feedback:
 
 Leaving feedback
