@@ -121,6 +121,10 @@ Current version: 7.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych
 
   - ``chsRecord.VideoConsentPlugin``
 
+- `Video assent plugin <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#video-assent-plugin>`__
+
+  - ``chsRecord.VideoAssentPlugin``
+
 - `Start session recording plugin <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#session-recording>`__
 
   - ``chsRecord.StartRecordPlugin``
