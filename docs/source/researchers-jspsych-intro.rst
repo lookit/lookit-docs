@@ -84,6 +84,15 @@ The CHS jsPsych experiment runner automatically loads a set of packages from the
   - v2.1.0 (`see changelog <https://github.com/jspsych/jsPsych/blob/main/packages/plugin-fullscreen/CHANGELOG.md>`__)
   - ``jsPsychFullscreen``
 
+We also welcome community-developed jsPsych plugins/extensions from the `jsPsych-contrib Github repository <https://github.com/jspsych/jspsych-contrib>`__. If you have a custom plugin/extension you want to use, please submit it to jspsych-contrib for review and publishing on NPM, and then we can add it to CHS!
+
+.. rst-class:: jspsych-plugins-extensions
+
+- `Tangram game plugin <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-tangram-game/docs/plugin-tangram-game.md>`__
+
+  - v1.0.0 (`see changelog <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-tangram-game/CHANGELOG.md>`__)
+  - ``jsPsychTangram``
+
 .. admonition:: Need something else?
 
    If there are any specific jsPsych plugins/extensions that your experiment needs, please let us know! The best way to request access to a standard jsPsych package is by creating a ``lookit-api`` `Github issue <https://github.com/lookit/lookit-api/issues>`__, but you can also let us know on Slack.
