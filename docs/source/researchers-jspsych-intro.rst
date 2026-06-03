@@ -54,12 +54,12 @@ The CHS jsPsych experiment runner automatically loads a set of packages from the
   - v2.0.0 (`see changelog <https://github.com/jspsych/jsPsych/blob/main/packages/plugin-video-button-response/CHANGELOG.md>`__)
   - ``jsPsychVideoButtonResponse``
 
-- `Image hotspots <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-image-hotspots/docs/plugin-image-hotspots.md>`__
+- `Image hotspots plugin <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-image-hotspots/docs/plugin-image-hotspots.md>`__
 
   - v1.1.0 (`see changelog <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-image-hotspots/CHANGELOG.md>`__)
   - ``jsPsychImageHotspots``
 
-- `Video hotspots <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-video-hotspots/docs/plugin-video-hotspots.md>`__
+- `Video hotspots plugin <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-video-hotspots/docs/plugin-video-hotspots.md>`__
 
   - v1.1.0 (`see changelog <https://github.com/jspsych/jspsych-contrib/blob/main/packages/plugin-video-hotspots/CHANGELOG.md>`__)
   - ``jsPsychVideoHotspots``
@@ -100,15 +100,15 @@ The custom CHS-jsPsych packages/versions are listed below, along with links to d
 
 **CHS Record package**
 
-Current version: 6.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/main/packages/record/CHANGELOG.md>`__)
+Current version: 7.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/main/packages/record/CHANGELOG.md>`__)
 
 .. rst-class:: jspsych-plugins-extensions
 
-- `Video config plugin <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#video-configuration>`__
+- `Video config plugin <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#video-configuration-plugin>`__
 
   - ``chsRecord.VideoConfigPlugin``
 
-- `Video consent plugin <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#video-consent>`__
+- `Video consent plugin <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#video-consent-plugin>`__
 
   - ``chsRecord.VideoConsentPlugin``
 
@@ -120,13 +120,13 @@ Current version: 6.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych
 
   - ``chsRecord.StopRecordPlugin``
 
-- `Trial recording extension <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#trial-recording>`__
+- `Trial recording extension <https://lookit.readthedocs.io/projects/chs-jspsych/en/latest/record/#trial-recording-extension>`__
 
   - ``chsRecord.TrialRecordExtension``
 
 **CHS Surveys package**
 
-Current version: v6.0.1 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/main/packages/surveys/CHANGELOG.md>`__)
+Current version: v7.0.0 (`see changelog <https://github.com/lookit/lookit-jspsych/blob/main/packages/surveys/CHANGELOG.md>`__)
 
 .. rst-class:: jspsych-plugins-extensions
 
