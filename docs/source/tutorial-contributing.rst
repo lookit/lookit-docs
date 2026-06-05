@@ -68,7 +68,7 @@ List of tutorial participants
 ------------------------------
 
 .. rst-class:: tutorial-participants
-
+- Lexi Van Winkle (University of Texas at Dallas)
 - Kara Medina (University of California Santa Cruz)
 - Kacper Malinowski (Minerva University)
 - Fiona DeBernardi (University of Oregon)
