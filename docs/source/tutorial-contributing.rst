@@ -379,6 +379,7 @@ List of tutorial participants
 - Hannah Ding (MIT)
 - Sarah Williams (Brown University)
 - Daisy Wang (Princeton University)
+- Kaelin Main (Stanford University)
 
 Checking for and creating issues on Github
 -------------------------------------------
