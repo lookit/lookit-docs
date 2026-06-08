@@ -380,6 +380,7 @@ List of tutorial participants
 - Sarah Williams (Brown University)
 - Daisy Wang (Princeton University)
 - Kaelin Main (Stanford University)
+- Sarah Kleppinger (George Mason University)
 
 Checking for and creating issues on Github
 -------------------------------------------
