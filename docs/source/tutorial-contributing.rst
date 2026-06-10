@@ -381,6 +381,7 @@ List of tutorial participants
 - Daisy Wang (Princeton University)
 - Kaelin Main (Stanford University)
 - Sarah Kleppinger (George Mason University)
+- Meiling Liu (Harvard University)
 
 Checking for and creating issues on Github
 -------------------------------------------
