@@ -382,6 +382,7 @@ List of tutorial participants
 - Kaelin Main (Stanford University)
 - Sarah Kleppinger (George Mason University)
 - Meiling Liu (Harvard University)
+- Lydia Coules (Harvard University)
 
 Checking for and creating issues on Github
 -------------------------------------------
