@@ -383,6 +383,7 @@ List of tutorial participants
 - Sarah Kleppinger (George Mason University)
 - Meiling Liu (Harvard University)
 - Lydia Coules (Harvard University)
+- Esther Shuai (MIT, Wellesley College)
 
 Checking for and creating issues on Github
 -------------------------------------------
