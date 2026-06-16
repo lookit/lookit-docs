@@ -384,6 +384,7 @@ List of tutorial participants
 - Meiling Liu (Harvard University)
 - Lydia Coules (Harvard University)
 - Esther Shuai (MIT, Wellesley College)
+- Alma Erro (MIT, Wellesley College)
 - Eva Schilling (MIT,Gonzaga University)
 
 Checking for and creating issues on Github
