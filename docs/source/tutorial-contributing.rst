@@ -386,6 +386,7 @@ List of tutorial participants
 - Esther Shuai (MIT, Wellesley College)
 - Alma Erro (MIT, Wellesley College)
 - Eva Schilling (MIT,Gonzaga University)
+- Romina Ruiz (University of Texas at Dallas) 
 
 Checking for and creating issues on Github
 -------------------------------------------
