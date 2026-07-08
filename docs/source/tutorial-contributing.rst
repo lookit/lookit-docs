@@ -68,7 +68,7 @@ List of tutorial participants
 ------------------------------
 
 .. rst-class:: tutorial-participants
-
+- Lexi Van Winkle (University of Texas at Dallas)
 - Kara Medina (University of California Santa Cruz)
 - Kacper Malinowski (Minerva University)
 - Fiona DeBernardi (University of Oregon)
@@ -379,6 +379,14 @@ List of tutorial participants
 - Hannah Ding (MIT)
 - Sarah Williams (Brown University)
 - Daisy Wang (Princeton University)
+- Kaelin Main (Stanford University)
+- Sarah Kleppinger (George Mason University)
+- Meiling Liu (Harvard University)
+- Lydia Coules (Harvard University)
+- Esther Shuai (MIT, Wellesley College)
+- Alma Erro (MIT, Wellesley College)
+- Eva Schilling (MIT,Gonzaga University)
+- Romina Ruiz (University of Texas at Dallas) 
 
 Checking for and creating issues on Github
 -------------------------------------------

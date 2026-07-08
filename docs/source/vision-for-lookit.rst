@@ -37,3 +37,19 @@ We are committed to
 -  Respecting participants’ time and parents as partners in discovery
 -  Enabling non-traditional developmental researchers and supporting
    work that benefits children or families
+
+Funding
+-------------------------
+
+There are two types of funding for CHS: (1) funding for individual studies and (2) funding for the CHS platform and organization. Each individual study is run by a specific organization (e.g. a lab at a university) and typically funded by the researchers' own grants or institutional support.
+
+The Children Helping Science team gratefully thanks our platform funders, including:
+
+- The National Science Foundation (through grants 1122374, 1429216, 1823919, 2209756 and 2346214)
+- The National Institutes of Health (through grant 1RF1MH132747-01)
+- MIT Center for Brains, Minds, and Machines (CBMM)
+- MIT Siegel Family Quest for Intelligence
+- foundry10
+- The Halis Family Foundation
+- Platform funding from researchers including subawards and platform revenue
+- Individual donations from researchers, parents and other supporters of CHS
