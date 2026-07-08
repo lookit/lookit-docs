@@ -79,6 +79,11 @@ The CHS jsPsych experiment runner automatically loads a set of packages from the
   - v2.1.0 (`see changelog <https://github.com/jspsych/jsPsych/blob/main/packages/plugin-survey-multi-choice/CHANGELOG.md>`__)
   - ``jsPsychSurveyMultiChoice``
 
+- `Survey Likert plugin <https://www.jspsych.org/latest/plugins/survey-likert//>`__
+
+  - v2.2.0 (`see changelog <https://github.com/jspsych/jsPsych/blob/main/packages/plugin-survey-likert/CHANGELOG.md>`__)
+  - ``jsPsychSurveyLikert``
+
 - `Fullscreen plugin <https://www.jspsych.org/latest/plugins/fullscreen/>`__
 
   - v2.1.0 (`see changelog <https://github.com/jspsych/jsPsych/blob/main/packages/plugin-fullscreen/CHANGELOG.md>`__)
