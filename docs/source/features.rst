@@ -31,7 +31,7 @@ Community and documentation
   is publicly available, and you are free to extend and use it for your
   own purposes.
 
-- **Free** to use.
+- Subscription-based or pay-as-you-go pricing (free for current users until 2026-12-31)
 
 - Extensive and actively maintained **documentation** (you're looking at it!),
   including a step-by-step tutorial to get started.
