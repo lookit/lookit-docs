@@ -18,15 +18,15 @@ It is called ``Lookit``. Like the exclamation. In particular it is not
 called ``LookIt`` or ``Lookit!``, although the latter does sound extra
 exciting!
 
-We’ll respond to whatever you call us*, this is just for folks writing
+We'll respond to whatever you call us*, this is just for folks writing
 up results or designing recruitment materials, to avoid confusion.
 
 \*Maybe not LooKit, that sounds like a different thing.
 
-Does my study need to be approved by MIT’s IRB?
+Does my study need to be approved by MIT's IRB?
 -----------------------------------------------
 
-Nope! You need ethical approval only from your own institution. You’re
+Nope! You need ethical approval only from your own institution. You're
 responsible for getting that, although there is example language here
 for common elements of CHS studies.
 
@@ -43,23 +43,23 @@ Who should I list as a contact in case our contracts/sponsored programs/legal/et
 
 Melissa Kline Struhl, childrenhelpingscience@gmail.com
 
-Is there an IRB protocol at MIT that covers CHS staff’s use of the data on the platform?
+Is there an IRB protocol at MIT that covers CHS staff's use of the data on the platform?
 -------------------------------------------------------------------------------------------
 
 No, because we only use the data for a limited set of purposes that
-aren’t considered human subjects research by MIT. See the `determination
+aren't considered human subjects research by MIT. See the `determination
 letter <https://github.com/lookit/research-resources/blob/master/Legal/MIT%20non%20human%20research%20determination%20letter.pdf>`__
 and `corresponding
 protocol <https://github.com/lookit/research-resources/raw/master/Legal/Standard%20Application%20Lookit%20protocol%20ruled%20non%20human%20subject%20research.doc>`__.
 
-Most of my participants don’t speak English. Can I test in another language?
+Most of my participants don't speak English. Can I test in another language?
 ----------------------------------------------------------------------------
 
 Short answer: Yes, but.
 
 Longer answer: Yes, and we want to support this much more fully in the
-future. For now, there will be some complications, but if you’re up for
-dealing with them, you’re welcome to design your study in any language
+future. For now, there will be some complications, but if you're up for
+dealing with them, you're welcome to design your study in any language
 you want:
 
 -  The sitewide registration and demographic forms are currently in
@@ -72,7 +72,7 @@ you want:
    in the studies - e.g., consent, setup. Once that's available, you can specify a 
    language for your study and any hard-coded text will be translated. (See the Lookit experiment runner's :ref:`language parameter<elf:translation>` and the lookit-jsPsych locale parameters).
    
--  We haven’t currently set up to flag which language a study is in and
+-  We haven't currently set up to flag which language a study is in and
    let participants filter (or get the right version of a study) by
    language. So non-English studies in general will usually to be set up
    as “non-discoverable” - not listed on childrenhelpingscience.com/studies, just
@@ -86,9 +86,9 @@ you want:
    we may not be able to tell much about the tone and clarity of your
    instructions.
 
-We’re thinking about this long-term but it hasn’t been an immediate
-priority, especially as we’re largely funded by the US government.
-Ideas/comments on how it’d ideally be set up are very welcome
+We're thinking about this long-term but it hasn't been an immediate
+priority, especially as we're largely funded by the US government.
+Ideas/comments on how it'd ideally be set up are very welcome
 `here <https://github.com/lookit/lookit-api/issues/181>`__.
 
 Where are the data stored?
@@ -102,14 +102,14 @@ participant and session data, is hosted on Google Cloud Platform.
 How is participant data secured?
 --------------------------------
 
-Non-video data, including PI/SPI such as children’s birthdates and
+Non-video data, including PI/SPI such as children's birthdates and
 nicknames, are stored using the Google Cloud SQL service of the Google
 Cloud Platform; the data security measures implemented by the Google
 Cloud Platform transitively apply to these data. All data are encrypted
 at rest using AES-256, and encrypted in transit when moving outside
 Google infrastructure. For an extensive treatment of the
 security-related provisions of this cloud infrastructure, please see
-`Google’s white paper <https://cloud.google.com/security/infrastructure/design/resources/google_infrastructure_whitepaper_fa.pdf>`__.
+`Google's white paper <https://cloud.google.com/security/infrastructure/design/resources/google_infrastructure_whitepaper_fa.pdf>`__.
 Service Accounts are used for all services provided by the Google Cloud
 Platform project instance. Permissions for access to data via the CHS
 interface and API are handled using Django Guardian according to best
@@ -168,9 +168,9 @@ How is re-identification prevented?
 There are several measures in place to *discourage* re-identification,
 including:
 
-- Researchers using the CHS platform do not receive direct access to participant email addresses. They can contact participants using the CHS interface based on the participant’s random ID, but see an email address only if a participant contacts them.
+- Researchers using the CHS platform do not receive direct access to participant email addresses. They can contact participants using the CHS interface based on the participant's random ID, but see an email address only if a participant contacts them.
 - Although each child and each family registered on CHS is associated with a global unique random identifier, they are also associated with a different random identifier specific to each study, and the latter is the primary ID used by researchers. Per the Terms of Use, researchers may not publish the global identifiers, as these could link data across studies in ways that could lead to unanticipated re-identification potential. 
-- Default data downloads minimize the amount of personally identifiable information included: e.g., researchers have to specifically request columns for the child name, birthdate, parent name, etc. By default, neither the child’s birthdate nor exact age at time of participation (which could be combined with timestamps to produce a birthdate) are included, and a rounded age is provided for ease of responsibly publishing raw data. 
+- Default data downloads minimize the amount of personally identifiable information included: e.g., researchers have to specifically request columns for the child name, birthdate, parent name, etc. By default, neither the child's birthdate nor exact age at time of participation (which could be combined with timestamps to produce a birthdate) are included, and a rounded age is provided for ease of responsibly publishing raw data. 
 - Per the Terms of Use, no participant demographic information may be published in such a way that individual responses can be linked to participant video.
 
 However, we cannot fully *prevent* re-identification using solely
