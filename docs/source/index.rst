@@ -31,6 +31,7 @@ Families may take part in studies from multiple labs over time. Having one centr
    Getting started guide <researchers-start-here>
    Features <features>
    About <vision-for-lookit>
+   Pricing <pricing>
    Progress updates <progress-updates>
    FAQ <faq>
    other-learning-materials
