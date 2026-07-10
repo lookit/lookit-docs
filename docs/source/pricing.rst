@@ -78,9 +78,47 @@ Putting this together, licenses on CHS are based on studies and points:
 
 Thus, in most cases an internal study session would be worth two points, while an external study session would be worth one point. But notably, if you recruit a new participant to CHS, **you will not be charged for either the “match” or the session[1]**. And if you match a CHS participant into a study and then test them over multiple sessions of that study, you will only pay 1 point for the subsequent session. 
 
-Labs that run lots of studies on CHS are eligible for a discount in the form of a membership that includes unlimited studies and a bank of points shared across all studies. These memberships make sense if your lab will run more than three studies in a year:
+Labs that run lots of studies on CHS are eligible for a discount in the form of a membership that includes unlimited studies and a bank of points shared across all studies. In most cases, these memberships make sense if your lab will run more than three studies in a year:
 
-TABLE HERE. 
+.. list-table::
+   :header-rows: 1
+   :widths: 1 20 15 20 15
+
+   * - Plan
+     - Cost
+     - Studies
+     - Points included
+     - Additional points
+   * - | Unlimited 
+       | Membership
+     - | $10,207/year 
+       | (or $1,021/month)
+     - | Unlimited 
+       | (any type)
+     - | 1200 
+       | (600 internal sessions)
+     - $6.39
+   * - | External-only 
+       | Membership
+     - | $5,832/year 
+       | (or $583/month)
+     - | Unlimited 
+       | (external)
+     - 600 
+     - $6.39
+   * - | Single internal 
+       | study license
+     - $2,807
+     - 1 (any type)
+     - | 200 
+       | (100 internal sessions)
+     - $11.04
+   * - | Single external 
+       | study license
+     - $1,604
+     - 1 (external)
+     - 100
+     - $11.04
 
 We will also offer a free intro package (1 study, 20 points), which is designed to allow a new research group to determine whether CHS will work for their project before committing to a study license. 
 
@@ -110,7 +148,7 @@ In developmental psychology, it is a basic reality that we have to compensate pa
 
 However, not every session recorded on the CHS platform is one you should be charged for.  To reflect this, instead of the total number of session instances (which can include someone clicking into a study and then immediately leaving), we tally up the number of “real” sessions in the ways our systems can automatically detect.
 
-The same tallying system is used to automatically pause your studies if you set a session cap, which you can read more about :ref:`here <researchers-set-study-fields#set-a-response-limit>`. In other words, the decisions you make about how long to continue data collection will also be used to determine which sessions spend points from your labs point bank. 
+The same tallying system is used to automatically pause your studies if you set a session cap, which you can read more about :ref:`here <response_limit>`. In other words, the decisions you make about how long to continue data collection will also be used to determine which sessions spend points from your labs point bank. 
 
 Our system will also attempt to keep a correct tally of your sessions (for instance, removing a count if you mark a consent video as invalid or a participant is determined to be a spammer). But if an individual session has been incorrectly categorized, you will also have the ability to override the status.  Here are two examples of when this might happen: 
 
