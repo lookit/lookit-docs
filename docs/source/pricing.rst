@@ -125,11 +125,14 @@ We will also offer a free intro package (1 study, 20 points), which is designed 
 [1] In fact, you will receive bonus points credited to your lab balance! Please see the related questions below for details, especially if you are interested in lowering your costs for using CHS. 
 
 
-
 Who is eligible for these academic licenses?
 ^^^^^^^^^^^^^^^^
 Researchers in labs at universities and other nonprofit institutions conducting studies for publication in scientific journals. If you are interested in conducting another type of research with children & adolescents, please reach out to melissa@childrenhelpingscience.org to discuss pricing options. 
 
+There are several labs at my university, can we get a site license or group discount?
+^^^^^^^^^^^^^^^^
+
+We'd love to work with you on this! Please reach out to melissa@childrenhelpingscience.org
 
 How will licenses and points actually start working, and what happens with existing studies?
 ^^^^^^^^^^^^^^^^
