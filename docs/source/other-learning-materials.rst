@@ -67,7 +67,7 @@ Below is a list of more information and resources about CHS. Some of these links
 
 .. admonition:: Please help us add to this list!
 
-   If you've given a presentation about using CHS or prepared training materials for your lab, please share them here! You can add them to this page directly via a :ref:`Github pull request<First PR>`, or contact us on Slack or email (childrenhelpingscience@gmail.com).
+   If you've given a presentation about using CHS or prepared training materials for your lab, please share them here! You can add them to this page directly via a :ref:`Github pull request<First PR>`, or contact us on Slack or email (researchers@childrenhelpingscience.org).
 
 ---------------------------------
 Online experiments
