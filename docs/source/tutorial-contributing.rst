@@ -387,6 +387,7 @@ List of tutorial participants
 - Alma Erro (MIT, Wellesley College)
 - Eva Schilling (MIT,Gonzaga University)
 - Romina Ruiz (University of Texas at Dallas) 
+- Kierstin Riels (Emory University)
 
 Checking for and creating issues on Github
 -------------------------------------------
