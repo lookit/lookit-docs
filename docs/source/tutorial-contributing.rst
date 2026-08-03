@@ -388,6 +388,7 @@ List of tutorial participants
 - Eva Schilling (MIT,Gonzaga University)
 - Romina Ruiz (University of Texas at Dallas) 
 - Kierstin Riels (Emory University)
+- Laura Jett (University of Wisconsin, Madison)
 
 Checking for and creating issues on Github
 -------------------------------------------
