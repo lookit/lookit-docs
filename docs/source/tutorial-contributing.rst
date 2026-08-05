@@ -389,6 +389,7 @@ List of tutorial participants
 - Romina Ruiz (University of Texas at Dallas) 
 - Kierstin Riels (Emory University)
 - Laura Jett (University of Wisconsin, Madison)
+- Lynna Tran (University of California, San Diego)
 
 Checking for and creating issues on Github
 -------------------------------------------
