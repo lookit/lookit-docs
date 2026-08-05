@@ -49,7 +49,7 @@ If you are planning a CHS study, getting the access agreement signed
 should be your first step because it takes a highly variable amount of
 time (record so far is under two weeks, but it can take a few months). The access agreement doesn't require any customization on your part - you just need to send it off to someone at your institution who’s authorized to sign on behalf of the institution.
 
-First, check whether your institution already has an access agreement set up. You can  check the list `here <https://childrenhelpingscience.com/scientists/>`__ or email childrenhelpingscience@gmail.com. If so, you'll be able to just add yourself (newer form of agreement) or get in touch with the person who signed off previously (older form of agreement). If there were any modifications to the standard agreement made for your institution, you'll be able to just use the modified form instead of having to re-negotiate the same changes.
+First, check whether your institution already has an access agreement set up. You can check the list `here <https://childrenhelpingscience.com/scientists/>`__ or email researchers@childrenhelpingscience.org. If so, you'll be able to just add yourself (newer form of agreement) or get in touch with the person who signed off previously (older form of agreement). If there were any modifications to the standard agreement made for your institution, you'll be able to just use the modified form instead of having to re-negotiate the same changes.
 
 If there isn't an existing agreement, you'll need to figure out which office to send it to for approval. Unfortunately the appropriate office varies by institution. If you’ve previously set up to use Databrary, try contacting the office that signed off on that. As examples, the following offices have approved the access agreement: Contracts, VP Finance, Partnerships, University/Industry Liason, Department head, Provost, Sponsored programs. 
 
@@ -76,7 +76,7 @@ unable* to agree to MA governing law, or to allow UK ethics committee approval i
 to "US-equivalent" IRBs). 
 
 If it looks like some clause would be a deal-breaker for your
-institution, please get in touch with CHS staff (childrenhelpingscience@gmail.com) and general
+institution, please get in touch with CHS staff (researchers@childrenhelpingscience.org) and general
 counsel lawyer Jason Baletsa (jbaletsa at mit.edu) for advice. 
 
 Please note that approval of changes happens on the MIT General Counsel office's 
@@ -89,7 +89,7 @@ Once you have the user agreement signed by the PI and institution’s
 authorized signer, please: 
 
 - Make sure you or someone in your group has completed `this quick quiz about the Terms of Use <https://forms.gle/Eom9bTERGcc2EcY86>`__ 
-- Send the PDF of the signed agreement to childrenhelpingscience@gmail.com, noting that you have also completed the quiz
+- Send the PDF of the signed agreement to researchers@childrenhelpingscience.org, noting that you have also completed the quiz
 
 .. _irb:
 
