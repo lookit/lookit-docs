@@ -4,11 +4,20 @@
 Updating the Lookit experiment runner
 #############################################
 
-In the future, there may be changes in the Lookit experiment runner that you 
-want your study to use - for instance, a bug fix for an issue your participants 
-are encountering or a new frame you want to use. (By default, your study keeps 
-chugging along using exactly the same code, so that updates can't change how 
-your study works without your knowledge.) 
+In the future, there may be changes in the Lookit experiment runner that you
+want your study to use - for instance, a bug fix for an issue your participants
+are encountering or a new frame you want to use. (By default, your study keeps
+chugging along using exactly the same code, so that updates can't change how
+your study works without your knowledge.)
+
+.. warning::
+
+   Experiment runner versions from before **January 30, 2024** are no longer
+   supported, because they rely on a deprecated third-party video service. If
+   your study is set to one of these older versions, you won't be able to save,
+   build, submit, or start it until you update. The quickest way to update is
+   "Option 1: latest version" below — clear the ``Experiment runner version
+   (commit SHA)`` field and save the form.
 
 Checking what's changed
 -------------------------
@@ -48,10 +57,13 @@ different repository entirely, like your own fork. The steps are the same
 regardless of which repo you're using, but pointing to your own code is more 
 advanced. 
 
-   **Option 1: latest version**: You can delete the value in 
-   ``Experiment runner version (commit SHA)`` and leave it blank to use the 
-   default value, which is the most recent version of the Lookit frameplayer 
-   code.
+   **Option 1: latest version**: You can delete the value in
+   ``Experiment runner version (commit SHA)`` and leave it blank to use the
+   most recent version of the Lookit frameplayer code. When you save the form,
+   the system looks up the latest version, fills this field in for you, and
+   "pins" your study to that version (so a future update can't change your study
+   without your knowledge). This is the easiest way to update, and the
+   recommended way to move a study off an unsupported older version.
 
    .. image:: _static/img/update_code/blank_sha.png
        :alt: Blank sha value to use default
