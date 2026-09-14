@@ -394,6 +394,7 @@ List of tutorial participants
    - Kai Arizabal (University of California, San Diego)
    - Ishya Atkuri (University of Texas at Dallas)
    - Ira Tendulkar (University of Texas at Dallas)
+   - Aathira Suresh (University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
