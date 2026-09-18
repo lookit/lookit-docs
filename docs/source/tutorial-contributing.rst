@@ -395,6 +395,7 @@ List of tutorial participants
    - Ishya Atkuri (University of Texas at Dallas)
    - Ira Tendulkar (University of Texas at Dallas)
    - Aathira Suresh (University of Texas at Dallas)
+   - Quanhui Lin (Tufts University)
 
 Checking for and creating issues on Github
 -------------------------------------------
