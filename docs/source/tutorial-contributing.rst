@@ -393,6 +393,9 @@ List of tutorial participants
    - Lynna Tran (University of California, San Diego)
    - Kai Arizabal (University of California, San Diego)
    - Ishya Atkuri (University of Texas at Dallas)
+   - Ira Tendulkar (University of Texas at Dallas)
+   - Aathira Suresh (University of Texas at Dallas)
+   - Quanhui Lin (Tufts University)
 
 Checking for and creating issues on Github
 -------------------------------------------
