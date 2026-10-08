@@ -396,6 +396,7 @@ List of tutorial participants
    - Ira Tendulkar (University of Texas at Dallas)
    - Aathira Suresh (University of Texas at Dallas)
    - Quanhui Lin (Tufts University)
+   - Noemi Nava Romero (University of Texas at Dallas)
 
 Checking for and creating issues on Github
 -------------------------------------------
