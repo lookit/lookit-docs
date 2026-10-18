@@ -51,9 +51,9 @@ An institutional agreement is required to use our online testing platform. Over 
 
 a)	Check whether your institution is listed `here <https://airtable.com/appXsllHhmFxyka0l/shr6sWFywRTSyit8k>`__.
 
-b) Send an email to the CHS team (childrenhelpingscience@gmail.com) to be added to an existing agreement.
+b) Send an email to the CHS team (researchers@childrenhelpingscience.org) to be added to an existing agreement.
 
-If your institution is not listed, the form you need is `here <https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20Institutional%20Agreement.pdf>`__, and feel free to email CHS staff (childrenhelpingscience@gmail.com) for help.
+If your institution is not listed, the form you need is `here <https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20Institutional%20Agreement.pdf>`__, and feel free to email CHS staff (researchers@childrenhelpingscience.org) for help.
 
 2. Create a new researcher account (~1 minute)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
